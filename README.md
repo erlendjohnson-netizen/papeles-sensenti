@@ -27,8 +27,10 @@ git push -u origin main
 ## Estructura
 
 ```
-index.html        portada: el archivo (introducción) y la lista de los 31 expedientes
+index.html        portada: el archivo, las tres figuras y la lista de los 31 expedientes
+personas.html     índice onomástico: 317 menciones y los nombres que vuelven
 metodo.html       convenciones de transcripción y correcciones al catálogo
+seal.svg          el sello de la cabecera, calcado de IMG_1498
 doc/*.html        una página por expediente (estudio + relevancia y contexto)
 img/<doc>/*.jpg   las láminas
 .nojekyll         evita que GitHub procese el sitio con Jekyll
