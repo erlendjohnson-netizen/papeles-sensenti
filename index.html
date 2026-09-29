@@ -110,11 +110,12 @@ h2{font:600 clamp(24px,4vw,34px)/1.18 inherit;letter-spacing:-.015em;margin:60px
 .fold>summary:hover{color:var(--accent)}
 .fold>summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
 .fold .fb{padding:2px 0 22px;max-width:68ch}
-.fold .fig{padding-block:6px 0}
+.fold .fig{padding-block:10px 0}
+.fold .fig figcaption{margin:0 0 20px}
+.fold .fig h3{font-size:19px;margin:0 0 8px}
+.fold .keyw{margin-bottom:7px}
 .fold .fb p{margin:0 0 15px}
 .fold .fb p:last-child{margin-bottom:0}
-.fold summary .fkey{flex:none;font:600 11.5px/1.5 ui-monospace,Menlo,monospace;
- letter-spacing:.09em;text-transform:uppercase;color:var(--ink3)}
 .ffold .fig{padding-block:6px 0}
 code{font:400 14px ui-monospace,Menlo,monospace;background:var(--panel2);padding:1px 5px;border-radius:2px}
 blockquote{margin:16px 0;padding:12px 18px;background:var(--panel);border-left:3px solid var(--rule2);
@@ -479,9 +480,8 @@ y su lectura en español de hoy.</p>
 <div class="panel" id="p-fon" role="tabpanel" aria-labelledby="t-fon" hidden><div class="wrap">
 <section id="archivo">
 <h2>El archivo</h2>
-<p class="sec-intro">Qué es este fondo, cómo llegaron estas fotografías y qué hay dentro. Las tres
-últimas leen el fondo entero —cuándo, dónde y de qué—, y sus marcas llevan a la página de cada
-expediente.</p>
+<p class="sec-intro">Qué es este fondo, cómo llegaron estas fotografías y qué hay dentro. Cada sección se abre por
+separado, y las tres primeras traen una figura cuyas marcas llevan a la página de cada expediente.</p>
 <div class="prose">
 <p>Sensentí es hoy un municipio del departamento de Ocotepeque, en el occidente de Honduras, cerca de
 la frontera con Guatemala y El Salvador. En el periodo colonial fue cabecera de partido, con jurisdicción
@@ -496,62 +496,19 @@ El proyecto PARCS lo fotografió en 2012: <strong>385 planas</strong>, de las qu
 
 <div class="folds" id="figuras">
 
-<details class="fold">
-<summary>Qué clase de papeles son</summary>
-<div class="fb">
-<p>Casi todo es actuación judicial de primera instancia: el alcalde ordinario del partido, o un
-comisionado suyo, sustanciando un pleito con testigos de asistencia «a falta de escribano». Causas
-criminales por riñas, homicidios y hurtos de ganado; pleitos civiles por tierras, por reses y por deudas;
-mortuales con inventario y partición; peticiones de particulares. Desde la Independencia se suman actas
-de juicio verbal, cuentas municipales y órdenes de pago.</p>
-<p>Su valor no está en lo excepcional sino en lo corriente. Dicen la edad de la gente, su calidad
-—«español», «mulato libre», «indio», «forastero»—, su oficio, su vecindad, cuántas reses tenía y si
-sabía firmar. Miden el partido en leguas: cuatro de Sensentí a Cucuyagua, dos de La Labor a la cabecera,
-el camino por la boca de la montaña de Gualcho. Y dejan oír, de vez en cuando, a personas que en ninguna
-otra clase de documento habrían quedado registradas.</p>
-</div>
-</details>
-
-<details class="fold">
-<summary>Los pueblos que aparecen</summary>
-<div class="fb">
-<p>Dentro del partido: Sensentí y su «Nuevo Poblado» —nombrado así en un auto de 8 de febrero de 1794—,
-Cucuyagua, Ocotepeque, Corquín, Gualcho, Cololaca, Guarita, la aldea del Jocomico, el Chinar de San
-Andrés, los Llanos de Santa Flora, la aldea de La Labor, la hacienda de San José de Sulán y el barrio
-de Esquipulas. Fuera de él, pero presentes en los papeles como destino de viajes, recursos y oficios:
-Gracias, Comayagua, Chiquimula, la Antigua Guatemala y San Salvador.</p>
-<p>Los que hoy se pueden situar en el mapa están en la <a href="#fig-mapa">Figura 2</a>.</p>
-</div>
-</details>
-
-<details class="fold">
-<summary>Las fotografías</summary>
-<div class="fb">
-<p>Las tomó Miguel Girón en el propio archivo, en 2012, con la colaboración de la municipalidad de
-Sensentí. Se trabajó donde hubo sitio y luz. Son buenas en general,
-pero tienen dos defectos que conviene conocer antes de usar las transcripciones: en varios expedientes
-el encuadre corta el margen derecho y se pierden los finales de renglón, y algunas planas están
-fotografiadas giradas noventa grados o con la mano del operador sobre el papel. Donde eso afecta a la
-lectura se advierte en la página del documento, plana por plana; las convenciones de transcripción y la
-regla de no conjeturar están en <a href="metodo.html">Método</a>.</p>
-</div>
-<div class="fotos">
-  <figure><img src="img/archivo/camara.jpg" alt="Miguel Girón, con guantes y una cámara réflex, fotografía un libro de actas abierto sobre una mesa, en el zaguán de la alcaldía"
-    loading="lazy" width="1045" height="784">
-    <figcaption><b>Miguel Girón</b> fotografiando un libro de actas, con guantes y a pulso; al fondo,
-    el zaguán de la alcaldía con las motos y las láminas de zinc.</figcaption></figure>
-  <figure><img src="img/archivo/mesa.jpg" alt="Don José Inez Gómez y Erlend M. Johnson sentados a una mesa con un portátil y un fajo de documentos sueltos sobre un paño"
-    loading="lazy" width="1100" height="824">
-    <figcaption><b>Don José Inez Gómez</b>, empleado de la municipalidad de Sensentí, y
-    <b>Erlend M. Johnson</b> en la mesa de trabajo: el portátil para el catálogo y, al lado, el fajo de
-    papeles sueltos sobre un paño oscuro, esperando turno.</figcaption></figure>
-</div>
-</details>
-
 <details class="fold" open>
-<summary><span class="fkey">Figura 1</span>Los treinta y un expedientes en el tiempo</summary>
+<summary>Cuándo se escribieron</summary>
+<div class="fb">
+<p>Veintitrés de los veintiocho expedientes fechados empiezan antes de 1820: el grueso del fondo es
+colonial tardío y se concentra entre 1793 y 1819. Después queda un hilo delgado y ya republicano —una
+reclamación de 1828, una riña de 1851, los libros municipales de 1856 y 1857, un juicio verbal de los
+años sesenta—. Tres piezas no llevan fecha que fijar, y algunos legajos cosen juntas actuaciones de
+años muy distantes: el más extremo va de 1793 a 1882.</p>
+</div>
 <figure class="fig" id="fig-tiempo">
   <figcaption>
+    <p class="keyw">Figura 1</p>
+    <h3>Los treinta y un expedientes en el tiempo</h3>
     <p class="sub">Cada renglón es un expediente. El punto marca un año fechado; la barra, un tramo
     continuo de actuaciones. Los renglones con <b>línea de trazos</b> son legajos que reúnen piezas de
     años distintos, cosidas juntas. Las marcas <b>huecas</b> son fechas que no están escritas en el papel
@@ -570,10 +527,47 @@ regla de no conjeturar están en <a href="metodo.html">Método</a>.</p>
   que se encuadernó: es la pieza intrusa que da título a ese expediente.</p>
 </figure>
 </details>
+
 <details class="fold">
-<summary><span class="fkey">Figura 2</span>La geografía del partido</summary>
+<summary>Qué clase de papeles son</summary>
+<div class="fb">
+<p>Casi todo es actuación judicial de primera instancia: el alcalde ordinario del partido, o un
+comisionado suyo, sustanciando un pleito con testigos de asistencia «a falta de escribano». Causas
+criminales por riñas, homicidios y hurtos de ganado; pleitos civiles por tierras, por reses y por deudas;
+mortuales con inventario y partición; peticiones de particulares. Desde la Independencia se suman actas
+de juicio verbal, cuentas municipales y órdenes de pago.</p>
+<p>Su valor no está en lo excepcional sino en lo corriente. Dicen la edad de la gente, su calidad
+—«español», «mulato libre», «indio», «forastero»—, su oficio, su vecindad, cuántas reses tenía y si
+sabía firmar. Miden el partido en leguas: cuatro de Sensentí a Cucuyagua, dos de La Labor a la cabecera,
+el camino por la boca de la montaña de Gualcho. Y dejan oír, de vez en cuando, a personas que en ninguna
+otra clase de documento habrían quedado registradas.</p>
+</div>
+<figure class="fig" id="fig-temas">
+  <figcaption>
+    <p class="keyw">Figura 3</p>
+    <h3>De qué tratan</h3>
+    <p class="sub">Número de expedientes por materia. Un expediente puede llevar más de una: las
+    54 marcas se reparten entre los 31 expedientes, de modo que la suma no es el total.</p>
+  </figcaption>
+  <div class="bars"><a class="brow" href="index.html#documentos"><span class="bl">criminal</span><span class="bt"><i style="width:100.0%"></i></span><span class="bn">14</span><span class="bg">riñas, homicidios, hurtos de ganado, amistades ilícitas</span></a><a class="brow" href="index.html#documentos"><span class="bl">mujeres</span><span class="bt"><i style="width:71.4%"></i></span><span class="bn">10</span><span class="bg">una mujer es parte, testigo o destinataria</span></a><a class="brow" href="index.html#documentos"><span class="bl">ganado</span><span class="bt"><i style="width:57.1%"></i></span><span class="bn">8</span><span class="bg">reses, marcas de herrar, depósitos y despojos</span></a><a class="brow" href="index.html#documentos"><span class="bl">municipal</span><span class="bt"><i style="width:35.7%"></i></span><span class="bn">5</span><span class="bg">cuentas, órdenes de pago, juicios verbales</span></a><a class="brow" href="index.html#documentos"><span class="bl">tierras</span><span class="bt"><i style="width:21.4%"></i></span><span class="bn">3</span><span class="bg">linderos, aguas, títulos y agrimensuras</span></a><a class="brow" href="index.html#documentos"><span class="bl">mortual</span><span class="bt"><i style="width:21.4%"></i></span><span class="bn">3</span><span class="bg">inventario, avalúo y partición de bienes</span></a><a class="brow" href="index.html#documentos"><span class="bl">milicias</span><span class="bt"><i style="width:14.3%"></i></span><span class="bn">2</span><span class="bg">fuero militar y batallón del partido</span></a><a class="brow" href="index.html#documentos"><span class="bl">cofradía</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">fondos y mayordomos</span></a><a class="brow" href="index.html#documentos"><span class="bl">deudas</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">ejecuciones y crédito entre vecinos</span></a><a class="brow" href="index.html#documentos"><span class="bl">poblamiento</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">fundación y traslado de vecindarios</span></a><a class="brow" href="index.html#documentos"><span class="bl">esclavitud</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">una persona esclavizada</span></a><a class="brow" href="index.html#documentos"><span class="bl">calidad</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">español, mulato libre, indio, forastero</span></a><a class="brow" href="index.html#documentos"><span class="bl">pueblos de indios</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">común, cabildo y justicias de indios</span></a><a class="brow" href="index.html#documentos"><span class="bl">tributo</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">tasación, rebaja y cobro</span></a><a class="brow" href="index.html#documentos"><span class="bl">oficios</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">sastres, carpinteros, arrieros</span></a><a class="brow" href="index.html#documentos"><span class="bl">escuela</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">maestro y salario</span></a></div>
+  <p class="src">Las materias son las del propio catálogo del sitio, las mismas con las que se filtra
+  la rejilla de la portada.</p>
+</figure>
+</details>
+
+<details class="fold">
+<summary>Los pueblos que aparecen</summary>
+<div class="fb">
+<p>Dentro del partido: Sensentí y su «Nuevo Poblado» —nombrado así en un auto de 8 de febrero de 1794—,
+Cucuyagua, Ocotepeque, Corquín, Gualcho, Cololaca, Guarita, la aldea del Jocomico, el Chinar de San
+Andrés, los Llanos de Santa Flora, la aldea de La Labor, la hacienda de San José de Sulán y el barrio
+de Esquipulas. Fuera de él, pero presentes en los papeles como destino de viajes, recursos y oficios:
+Gracias, Comayagua, Chiquimula, la Antigua Guatemala y San Salvador.</p>
+</div>
 <figure class="fig" id="fig-mapa">
   <figcaption>
+    <p class="keyw">Figura 2</p>
+    <h3>La geografía del partido</h3>
     <p class="sub">Los lugares nombrados en los expedientes que hoy se pueden situar, sobre los límites
     municipales actuales. <b>El cuadrado</b> es Sensentí, cabecera de partido; los <b>círculos llenos</b>,
     lugares nombrados cuyo nombre sobrevive en un municipio de hoy; los <b>huecos</b>, identificaciones
@@ -600,17 +594,29 @@ regla de no conjeturar están en <a href="metodo.html">Método</a>.</p>
   pueblo colonial.</p>
 </figure>
 </details>
+
 <details class="fold">
-<summary><span class="fkey">Figura 3</span>De qué tratan</summary>
-<figure class="fig" id="fig-temas">
-  <figcaption>
-    <p class="sub">Número de expedientes por materia. Un expediente puede llevar más de una: las
-    54 marcas se reparten entre los 31 expedientes, de modo que la suma no es el total.</p>
-  </figcaption>
-  <div class="bars"><a class="brow" href="index.html#documentos"><span class="bl">criminal</span><span class="bt"><i style="width:100.0%"></i></span><span class="bn">14</span><span class="bg">riñas, homicidios, hurtos de ganado, amistades ilícitas</span></a><a class="brow" href="index.html#documentos"><span class="bl">mujeres</span><span class="bt"><i style="width:71.4%"></i></span><span class="bn">10</span><span class="bg">una mujer es parte, testigo o destinataria</span></a><a class="brow" href="index.html#documentos"><span class="bl">ganado</span><span class="bt"><i style="width:57.1%"></i></span><span class="bn">8</span><span class="bg">reses, marcas de herrar, depósitos y despojos</span></a><a class="brow" href="index.html#documentos"><span class="bl">municipal</span><span class="bt"><i style="width:35.7%"></i></span><span class="bn">5</span><span class="bg">cuentas, órdenes de pago, juicios verbales</span></a><a class="brow" href="index.html#documentos"><span class="bl">tierras</span><span class="bt"><i style="width:21.4%"></i></span><span class="bn">3</span><span class="bg">linderos, aguas, títulos y agrimensuras</span></a><a class="brow" href="index.html#documentos"><span class="bl">mortual</span><span class="bt"><i style="width:21.4%"></i></span><span class="bn">3</span><span class="bg">inventario, avalúo y partición de bienes</span></a><a class="brow" href="index.html#documentos"><span class="bl">milicias</span><span class="bt"><i style="width:14.3%"></i></span><span class="bn">2</span><span class="bg">fuero militar y batallón del partido</span></a><a class="brow" href="index.html#documentos"><span class="bl">cofradía</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">fondos y mayordomos</span></a><a class="brow" href="index.html#documentos"><span class="bl">deudas</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">ejecuciones y crédito entre vecinos</span></a><a class="brow" href="index.html#documentos"><span class="bl">poblamiento</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">fundación y traslado de vecindarios</span></a><a class="brow" href="index.html#documentos"><span class="bl">esclavitud</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">una persona esclavizada</span></a><a class="brow" href="index.html#documentos"><span class="bl">calidad</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">español, mulato libre, indio, forastero</span></a><a class="brow" href="index.html#documentos"><span class="bl">pueblos de indios</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">común, cabildo y justicias de indios</span></a><a class="brow" href="index.html#documentos"><span class="bl">tributo</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">tasación, rebaja y cobro</span></a><a class="brow" href="index.html#documentos"><span class="bl">oficios</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">sastres, carpinteros, arrieros</span></a><a class="brow" href="index.html#documentos"><span class="bl">escuela</span><span class="bt"><i style="width:7.1%"></i></span><span class="bn">1</span><span class="bg">maestro y salario</span></a></div>
-  <p class="src">Las materias son las del propio catálogo del sitio, las mismas con las que se filtra
-  la rejilla de la portada.</p>
-</figure>
+<summary>Las fotografías</summary>
+<div class="fb">
+<p>Las tomó Miguel Girón en el propio archivo, en 2012, con la colaboración de la municipalidad de
+Sensentí. Se trabajó donde hubo sitio y luz. Son buenas en general,
+pero tienen dos defectos que conviene conocer antes de usar las transcripciones: en varios expedientes
+el encuadre corta el margen derecho y se pierden los finales de renglón, y algunas planas están
+fotografiadas giradas noventa grados o con la mano del operador sobre el papel. Donde eso afecta a la
+lectura se advierte en la página del documento, plana por plana; las convenciones de transcripción y la
+regla de no conjeturar están en <a href="metodo.html">Método</a>.</p>
+</div>
+<div class="fotos">
+  <figure><img src="img/archivo/camara.jpg" alt="Miguel Girón, con guantes y una cámara réflex, fotografía un libro de actas abierto sobre una mesa, en el zaguán de la alcaldía"
+    loading="lazy" width="1045" height="784">
+    <figcaption><b>Miguel Girón</b> fotografiando un libro de actas, con guantes y a pulso; al fondo,
+    el zaguán de la alcaldía con las motos y las láminas de zinc.</figcaption></figure>
+  <figure><img src="img/archivo/mesa.jpg" alt="Don José Inez Gómez y Erlend M. Johnson sentados a una mesa con un portátil y un fajo de documentos sueltos sobre un paño"
+    loading="lazy" width="1100" height="824">
+    <figcaption><b>Don José Inez Gómez</b>, empleado de la municipalidad de Sensentí, y
+    <b>Erlend M. Johnson</b> en la mesa de trabajo: el portátil para el catálogo y, al lado, el fajo de
+    papeles sueltos sobre un paño oscuro, esperando turno.</figcaption></figure>
+</div>
 </details>
 
 </div>
