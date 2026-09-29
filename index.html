@@ -99,8 +99,8 @@ h2{font:600 clamp(24px,4vw,34px)/1.18 inherit;letter-spacing:-.015em;margin:60px
 .prose ul{padding-left:1.15em;margin:0 0 16px}
 .prose li{margin:0 0 7px}
 .fold{border-top:1px solid var(--rule);margin:0}
-.folds{margin:26px 0 0;max-width:68ch}
-.folds .fold:last-child{border-bottom:1px solid var(--rule)}
+.folds{margin:28px 0 0}
+.folds>.fold:last-child{border-bottom:1px solid var(--rule)}
 .fold>summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:11px;
  padding:15px 0;font:600 17.5px/1.35 inherit;color:var(--ink);letter-spacing:-.008em}
 .fold>summary::-webkit-details-marker{display:none}
@@ -110,12 +110,11 @@ h2{font:600 clamp(24px,4vw,34px)/1.18 inherit;letter-spacing:-.015em;margin:60px
 .fold>summary:hover{color:var(--accent)}
 .fold>summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
 .fold .fb{padding:2px 0 22px;max-width:68ch}
+.fold .fig{padding-block:6px 0}
 .fold .fb p{margin:0 0 15px}
 .fold .fb p:last-child{margin-bottom:0}
 .fold summary .fkey{flex:none;font:600 11.5px/1.5 ui-monospace,Menlo,monospace;
  letter-spacing:.09em;text-transform:uppercase;color:var(--ink3)}
-.ffold{border-top:1px solid var(--rule);max-width:none}
-.ffold:last-of-type{border-bottom:1px solid var(--rule)}
 .ffold .fig{padding-block:6px 0}
 code{font:400 14px ui-monospace,Menlo,monospace;background:var(--panel2);padding:1px 5px;border-radius:2px}
 blockquote{margin:16px 0;padding:12px 18px;background:var(--panel);border-left:3px solid var(--rule2);
@@ -480,7 +479,9 @@ y su lectura en español de hoy.</p>
 <div class="panel" id="p-fon" role="tabpanel" aria-labelledby="t-fon" hidden><div class="wrap">
 <section id="archivo">
 <h2>El archivo</h2>
-<p class="sec-intro">Qué es este fondo, cómo llegaron estas fotografías y qué hay dentro.</p>
+<p class="sec-intro">Qué es este fondo, cómo llegaron estas fotografías y qué hay dentro. Las tres
+últimas leen el fondo entero —cuándo, dónde y de qué—, y sus marcas llevan a la página de cada
+expediente.</p>
 <div class="prose">
 <p>Sensentí es hoy un municipio del departamento de Ocotepeque, en el occidente de Honduras, cerca de
 la frontera con Guatemala y El Salvador. En el periodo colonial fue cabecera de partido, con jurisdicción
@@ -493,7 +494,7 @@ El proyecto PARCS lo fotografió en 2012: <strong>385 planas</strong>, de las qu
 <strong>353</strong>, repartidas en <strong>31 expedientes</strong>.</p>
 </div>
 
-<div class="folds">
+<div class="folds" id="figuras">
 
 <details class="fold">
 <summary>Qué clase de papeles son</summary>
@@ -519,7 +520,7 @@ Cucuyagua, Ocotepeque, Corquín, Gualcho, Cololaca, Guarita, la aldea del Jocomi
 Andrés, los Llanos de Santa Flora, la aldea de La Labor, la hacienda de San José de Sulán y el barrio
 de Esquipulas. Fuera de él, pero presentes en los papeles como destino de viajes, recursos y oficios:
 Gracias, Comayagua, Chiquimula, la Antigua Guatemala y San Salvador.</p>
-<p>Los que hoy se pueden situar en el mapa están en la <a href="#figuras">Figura 2</a>.</p>
+<p>Los que hoy se pueden situar en el mapa están en la <a href="#fig-mapa">Figura 2</a>.</p>
 </div>
 </details>
 
@@ -545,13 +546,7 @@ regla de no conjeturar están en <a href="metodo.html">Método</a>.</p>
 </div>
 </details>
 
-</div>
-</section>
-
-<section id="figuras">
-<h2>El fondo de un vistazo</h2>
-<p class="sec-intro">Tres lecturas del conjunto: cuándo, dónde y de qué. Todo sale de los treinta y un expedientes transcritos; las marcas llevan a la página de cada uno.</p>
-<details class="fold ffold" open>
+<details class="fold" open>
 <summary><span class="fkey">Figura 1</span>Los treinta y un expedientes en el tiempo</summary>
 <figure class="fig" id="fig-tiempo">
   <figcaption>
@@ -573,7 +568,7 @@ regla de no conjeturar están en <a href="metodo.html">Método</a>.</p>
   que se encuadernó: es la pieza intrusa que da título a ese expediente.</p>
 </figure>
 </details>
-<details class="fold ffold">
+<details class="fold">
 <summary><span class="fkey">Figura 2</span>La geografía del partido</summary>
 <figure class="fig" id="fig-mapa">
   <figcaption>
@@ -603,7 +598,7 @@ regla de no conjeturar están en <a href="metodo.html">Método</a>.</p>
   pueblo colonial.</p>
 </figure>
 </details>
-<details class="fold ffold">
+<details class="fold">
 <summary><span class="fkey">Figura 3</span>De qué tratan</summary>
 <figure class="fig" id="fig-temas">
   <figcaption>
@@ -615,6 +610,8 @@ regla de no conjeturar están en <a href="metodo.html">Método</a>.</p>
   la rejilla de la portada.</p>
 </figure>
 </details>
+
+</div>
 </section>
 </div></div>
 
