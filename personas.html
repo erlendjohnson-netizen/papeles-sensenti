@@ -16,11 +16,11 @@
   --ink:#13110e; --ink2:#45403a; --ink3:#6a6459;
   --rule:#dcd6c8; --rule2:#c7bfad;
   --accent:#8a3a1c; --accent2:#7a4a2a; --accent-ink:#4a2713;
-  --seal:#5a2f18; --mark:#5a2f18;
+  --seal:#5a2f18;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --seal:#e6b58f; --mark:#6d3d21;
+  --seal:#e6b58f;
   color-scheme:dark;
   --bg:#12110e; --panel:#1b1916; --panel2:#232019;
   --ink:#f0ede6; --ink2:#bdb6a8; --ink3:#948c7e;
@@ -28,7 +28,7 @@
   --accent:#e0a077; --accent2:#cf8f60; --accent-ink:#eab892;
 }}
 :root[data-theme="dark"]{
-  --seal:#e6b58f; --mark:#6d3d21;
+  --seal:#e6b58f;
   color-scheme:dark;
   --bg:#12110e; --panel:#1b1916; --panel2:#232019;
   --ink:#f0ede6; --ink2:#bdb6a8; --ink3:#948c7e;
@@ -104,9 +104,10 @@ blockquote p{margin:0}
 
 footer{margin:70px 0 50px;padding-top:22px;border-top:1px solid var(--rule);
  font-size:14.5px;color:var(--ink3);max-width:72ch}
-.ftmark{flex:none;width:56px;height:56px;display:grid;place-items:center;background:var(--mark);border-radius:2px}
-.ftmark svg,.ftmark img{display:block;height:34px;width:auto}
-footer{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}
+.ftmark{flex:none;height:clamp(76px,9vw,104px);aspect-ratio:1550/2412;background:var(--seal);
+ -webkit-mask:url(logo.svg) no-repeat center/contain;mask:url(logo.svg) no-repeat center/contain}
+@supports not ((-webkit-mask-image:url(a)) or (mask-image:url(a))){.ftmark{display:none}}
+footer{display:flex;gap:clamp(20px,3vw,32px);align-items:flex-start;flex-wrap:wrap}
 .fttxt{flex:1 1 32ch;min-width:0}
 .fttxt>p:first-child{margin-top:0}
 
@@ -214,7 +215,7 @@ la lista de cada expediente; y los tres expedientes sin fecha no aportan cronolo
 </div>
 
 <footer>
-<div class="ftmark"><img src="logo.svg" alt="Guacamaya de La Unión, emblema del PARCS" width="180" height="281" loading="lazy" decoding="async"></div>
+<div class="ftmark" role="img" aria-label="Guacamaya de La Unión, emblema del PARCS"></div>
 <div class="fttxt"><p>Papeles de Sensentí · Proyecto Arqueológico Regional Cucuyagua Sensentí (PARCS) · Erlend M. Johnson</p>
 <p><a href="index.html">← Volver a los documentos</a></p></div>
 </footer>
