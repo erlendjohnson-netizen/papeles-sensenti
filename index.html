@@ -624,6 +624,7 @@ Honduras de 1848— de las 385 fotografiadas.</p>
 <script>
 (function(){
   var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  var SLUG={'t-doc':'documentos','t-fon':'fondo','t-per':'personas','t-cit':'citar'};
   function show(id, push){
     tabs.forEach(function(t){
       var on=(t.id===id);
@@ -631,7 +632,7 @@ Honduras de 1848— de las 385 fotografiadas.</p>
       var p=document.getElementById(t.getAttribute('aria-controls'));
       if(p) p.hidden=!on;
     });
-    if(push) try{history.replaceState(null,'','#'+id.slice(2));}catch(e){}
+    if(push) try{history.replaceState(null,'','#'+(SLUG[id]||''));}catch(e){}
   }
   tabs.forEach(function(t,i){
     t.addEventListener('click',function(){show(t.id,true);});
