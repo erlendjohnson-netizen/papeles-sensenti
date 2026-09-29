@@ -14,30 +14,33 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
 :root{
-  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
-  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
-  --rule:#d7dad2; --rule2:#c3c8bd;
-  --iron:#8c3b24; --iron-soft:#efe2dc;
-  --ok:#3c6b4a; --warn:#8a6a1f;
+  --paper:#f2efe7; --surface:#fbf9f4; --sunk:#e7e2d6;
+  --ink:#13110e; --ink2:#45403a; --ink3:#6a6459;
+  --rule:#dcd6c8; --rule2:#c7bfad;
+  --iron:#8a3a1c; --iron-soft:#f0e3d9;
+  --ok:#35603f; --warn:#7a5c15;
+  color-scheme:light;
   --mx:clamp(16px,4vw,40px);
 }
-:root{ --iron2:#b0553a; }
+:root{ --iron2:#a8532f; }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
-    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
-    --rule:#2d3639; --rule2:#3b4548;
-    --iron-soft:#33241f;
-    --ok:#7fb98d; --warn:#cfa94f;
+    color-scheme:dark;
+    --paper:#12110e; --surface:#1b1916; --sunk:#232019;
+    --ink:#f0ede6; --ink2:#bdb6a8; --ink3:#948c7e;
+    --rule:#34302a; --rule2:#433d34;
+    --iron-soft:#33231a;
+    --ok:#86c093; --warn:#d6b25c;
   }
-  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+  :root:not([data-theme="light"]){ --iron:#e0a077; --iron2:#eab892; }
 }
 :root[data-theme="dark"]{
-  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
-  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
-  --rule:#2d3639; --rule2:#3b4548;
-  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
-  --ok:#7fb98d; --warn:#cfa94f;
+  color-scheme:dark;
+  --paper:#12110e; --surface:#1b1916; --sunk:#232019;
+  --ink:#f0ede6; --ink2:#bdb6a8; --ink3:#948c7e;
+  --rule:#34302a; --rule2:#433d34;
+  --iron:#e0a077; --iron2:#eab892; --iron-soft:#33231a;
+  --ok:#86c093; --warn:#d6b25c;
 }
 *{box-sizing:border-box}
 body{
@@ -150,7 +153,7 @@ dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:
 dialog.lb::backdrop{background:rgba(10,12,11,.9)}
 dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
 .lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
-.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f2efe7;color:#13110e;
   border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
 .lbscroll{overflow:auto;height:100%}
 
@@ -252,12 +255,12 @@ tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--rule) 22%,transpa
 .panel[hidden]{display:none}
 </style>
 </head><body>
-<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="background:#1b1916;border-bottom:1px solid #34302a;font:500 12.5px/1 ui-monospace,Menlo,monospace">
 <div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
-<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
-<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
-<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
-<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+<a href="../index.html" style="color:#f0ede6;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#bdb6a8;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#bdb6a8;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#bdb6a8;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
 </div></div>
 
 <header class="mast wrap">
