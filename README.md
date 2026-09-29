@@ -4,7 +4,7 @@ Edición y transcripción paleográfica de 353 láminas del **Archivo Municipal 
 (Ocotepeque, Honduras), 1787–1857. Treinta y un expedientes: causas criminales, pleitos de
 tierras y de ganado, mortuales, cuentas municipales y peticiones.
 
-Proyecto Arqueológico Río Cucuyagua y Sensentí (PARCS) — Erlend M. Johnson.
+Proyecto Arqueológico Regional Cucuyagua Sensentí (PARCS) — Erlend M. Johnson.
 
 ## Publicar en GitHub Pages
 
