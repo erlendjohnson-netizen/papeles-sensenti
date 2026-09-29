@@ -17,11 +17,11 @@
   --ink:#13110e; --ink2:#45403a; --ink3:#6a6459;
   --rule:#dcd6c8; --rule2:#c7bfad;
   --accent:#8a3a1c; --accent2:#7a4a2a; --accent-ink:#4a2713;
-  --seal:#5a2f18;
+  --seal:#5a2f18; --mark:#5a2f18;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --seal:#e6b58f;
+  --seal:#e6b58f; --mark:#6d3d21;
   color-scheme:dark;
   --bg:#12110e; --panel:#1b1916; --panel2:#232019;
   --ink:#f0ede6; --ink2:#bdb6a8; --ink3:#948c7e;
@@ -29,7 +29,7 @@
   --accent:#e0a077; --accent2:#cf8f60; --accent-ink:#eab892;
 }}
 :root[data-theme="dark"]{
-  --seal:#e6b58f;
+  --seal:#e6b58f; --mark:#6d3d21;
   color-scheme:dark;
   --bg:#12110e; --panel:#1b1916; --panel2:#232019;
   --ink:#f0ede6; --ink2:#bdb6a8; --ink3:#948c7e;
@@ -124,6 +124,12 @@ blockquote p{margin:0}
 
 footer{margin:70px 0 50px;padding-top:22px;border-top:1px solid var(--rule);
  font-size:14.5px;color:var(--ink3);max-width:72ch}
+.ftmark{flex:none;width:56px;height:56px;display:grid;place-items:center;background:var(--mark);border-radius:2px}
+.ftmark svg,.ftmark img{display:block;height:34px;width:auto}
+footer{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}
+.fttxt{flex:1 1 32ch;min-width:0}
+.fttxt>p:first-child{margin-top:0}
+
 footer a{color:var(--accent2)}
 @media(max-width:640px){.wrap{padding-inline:16px}.mast{padding-block:26px 16px}
   .masthead{gap:14px}.seal{width:88px}.lede{font-size:17px}}
@@ -649,13 +655,14 @@ y en cada lámina se declara el grado de confianza de la lectura.</p>
 
 <div class="wrap">
 <footer>
-<p><strong>Papeles de Sensentí</strong> — Proyecto Arqueológico Regional Cucuyagua Sensentí (PARCS),
+<div class="ftmark"><img src="logo.svg" alt="Guacamaya de La Unión, emblema del PARCS" width="180" height="281" loading="lazy" decoding="async"></div>
+<div class="fttxt"><p><strong>Papeles de Sensentí</strong> — Proyecto Arqueológico Regional Cucuyagua Sensentí (PARCS),
 dirigido por Erlend M. Johnson. Las fotografías del archivo municipal las tomó <strong>Miguel
 Girón</strong> en 2012, en el marco del proyecto y con la colaboración de la municipalidad de
 Sensentí, y en particular de <strong>don José Inez Gómez</strong>. Las transcripciones se hicieron
 entre 2025 y 2026.</p>
 <p>De las <strong>385 planas</strong> fotografiadas, este sitio edita <strong>353</strong>. Queda sin
-transcribir un bloque de <strong>31 circulares impresas</strong> del Estado de Honduras de 1848.</p>
+transcribir un bloque de <strong>31 circulares impresas</strong> del Estado de Honduras de 1848.</p></div>
 </footer>
 </div>
 

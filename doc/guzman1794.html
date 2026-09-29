@@ -19,14 +19,14 @@
   --rule:#dcd6c8; --rule2:#c7bfad;
   --iron:#8a3a1c; --iron-soft:#f0e3d9;
   --ok:#35603f; --warn:#7a5c15;
-  --seal:#5a2f18;
+  --seal:#5a2f18; --mark:#5a2f18;
   color-scheme:light;
   --mx:clamp(16px,4vw,40px);
 }
 :root{ --iron2:#a8532f; }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --seal:#e6b58f;
+    --seal:#e6b58f; --mark:#6d3d21;
   color-scheme:dark;
     --paper:#12110e; --surface:#1b1916; --sunk:#232019;
     --ink:#f0ede6; --ink2:#bdb6a8; --ink3:#948c7e;
@@ -37,7 +37,7 @@
   :root:not([data-theme="light"]){ --iron:#e0a077; --iron2:#eab892; }
 }
 :root[data-theme="dark"]{
-  --seal:#e6b58f;
+  --seal:#e6b58f; --mark:#6d3d21;
   color-scheme:dark;
   --paper:#12110e; --surface:#1b1916; --sunk:#232019;
   --ink:#f0ede6; --ink2:#bdb6a8; --ink3:#948c7e;
@@ -149,6 +149,11 @@ body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
 .legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
 .legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
 .foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.ftmark{flex:none;width:52px;height:52px;display:grid;place-items:center;background:var(--mark);border-radius:2px}
+.ftmark img{display:block;height:31px;width:auto}
+.foot{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}
+.fttxt{flex:1 1 40ch;min-width:0}
+
 .foot p{max-width:64ch;margin:0 0 .8em}
 
 /* ---------- lightbox ---------- */
@@ -2191,11 +2196,12 @@ una y otra forma.</p>
 <p>Sobre el estado material: <strong>IMG_1614 y las planas 1617 a 1623 están muy dañadas</strong> por traspaso de tinta del reverso y por tachaduras. En IMG_1633, el encuadre fotográfico corta la columna de cifras de la planilla, de modo que tres partidas quedan sin importe —un hueco de diecinueve reales entre las partidas y el total—. <strong>No se ha repartido ese hueco entre las partidas que lo pudieran llevar</strong>, porque sería inventar. El total, trece pesos siete reales, sí se lee. El sello impreso está cortado en todas las planas del segundo tramo, de modo que el bienio del papel no puede verificarse allí.</p>
 </section>
 <footer class="foot wrap">
-  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+<div class="ftmark"><img src="../logo.svg" alt="Guacamaya de La Unión, emblema del PARCS" width="180" height="281" loading="lazy" decoding="async"></div>
+<div class="fttxt"><p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
   abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
   transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
   conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
-  <p>Proyecto Arqueológico Regional Cucuyagua Sensentí (PARCS). Las fotografías son del proyecto.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua Sensentí (PARCS). Las fotografías son del proyecto.</p></div>
 </footer>
 
 <dialog class="lb" id="lb">
