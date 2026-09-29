@@ -1,6 +1,6 @@
 # Papeles de Sensentí
 
-Edición y transcripción paleográfica de 348 láminas del **Archivo Municipal de Sensentí**
+Edición y transcripción paleográfica de 353 láminas del **Archivo Municipal de Sensentí**
 (Ocotepeque, Honduras), 1787–1857. Treinta y un expedientes: causas criminales, pleitos de
 tierras y de ganado, mortuales, cuentas municipales y peticiones.
 

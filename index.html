@@ -3,9 +3,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Papeles de Sensentí — Archivo Municipal de Sensentí, Honduras</title>
-<meta name="description" content="Transcripción paleográfica de 348 láminas del archivo municipal de Sensentí (Ocotepeque, Honduras), 1787–1857.">
+<meta name="description" content="Transcripción paleográfica de 353 láminas del archivo municipal de Sensentí (Ocotepeque, Honduras), 1787–1857.">
 <meta property="og:title" content="Papeles de Sensentí — Archivo Municipal de Sensentí, Honduras">
-<meta property="og:description" content="Transcripción paleográfica de 348 láminas del archivo municipal de Sensentí (Ocotepeque, Honduras), 1787–1857.">
+<meta property="og:description" content="Transcripción paleográfica de 353 láminas del archivo municipal de Sensentí (Ocotepeque, Honduras), 1787–1857.">
 <meta property="og:type" content="website">
 <link rel="icon" href="seal.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -98,6 +98,25 @@ h2{font:600 clamp(24px,4vw,34px)/1.18 inherit;letter-spacing:-.015em;margin:60px
 .prose h3{font:600 19px/1.3 inherit;margin:30px 0 8px;color:var(--accent-ink)}
 .prose ul{padding-left:1.15em;margin:0 0 16px}
 .prose li{margin:0 0 7px}
+.fold{border-top:1px solid var(--rule);margin:0}
+.folds{margin:26px 0 0;max-width:68ch}
+.folds .fold:last-child{border-bottom:1px solid var(--rule)}
+.fold>summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:11px;
+ padding:15px 0;font:600 17.5px/1.35 inherit;color:var(--ink);letter-spacing:-.008em}
+.fold>summary::-webkit-details-marker{display:none}
+.fold>summary::before{content:"+";flex:none;width:.85em;text-align:center;
+ font:400 17px/1 ui-monospace,Menlo,monospace;color:var(--accent)}
+.fold[open]>summary::before{content:"\2212"}
+.fold>summary:hover{color:var(--accent)}
+.fold>summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.fold .fb{padding:2px 0 22px;max-width:68ch}
+.fold .fb p{margin:0 0 15px}
+.fold .fb p:last-child{margin-bottom:0}
+.fold summary .fkey{flex:none;font:600 11.5px/1.5 ui-monospace,Menlo,monospace;
+ letter-spacing:.09em;text-transform:uppercase;color:var(--ink3)}
+.ffold{border-top:1px solid var(--rule);max-width:none}
+.ffold:last-of-type{border-bottom:1px solid var(--rule)}
+.ffold .fig{padding-block:6px 0}
 code{font:400 14px ui-monospace,Menlo,monospace;background:var(--panel2);padding:1px 5px;border-radius:2px}
 blockquote{margin:16px 0;padding:12px 18px;background:var(--panel);border-left:3px solid var(--rule2);
  font-style:italic;color:var(--ink2)}
@@ -112,7 +131,6 @@ footer a{color:var(--accent2)}
 .seal{flex:none;width:clamp(108px,14vw,176px);color:var(--seal);opacity:.9}
 .seal svg{display:block;width:100%;height:auto}
 .mastxt{min-width:0}
-.sealnote{margin:14px 0 0;font:400 12.5px/1.5 ui-monospace,Menlo,monospace;color:var(--ink3);max-width:60ch}
 @media(max-width:640px){.masthead{flex-direction:column;align-items:flex-start;gap:20px}
   .seal{width:112px}}
 /* ---------- figuras ---------- */
@@ -237,7 +255,7 @@ footer a{color:var(--accent2)}
 <div class="mastxt">
 <p class="kicker">Archivo Municipal de Sensentí · Ocotepeque, Honduras</p>
 <h1>Papeles de Sensentí</h1>
-<p class="lede">Transcripción paleográfica y edición de <strong>348 láminas</strong> del archivo
+<p class="lede">Transcripción paleográfica y edición de <strong>353 láminas</strong> del archivo
 municipal de Sensentí, en el occidente de Honduras. Treinta y un expedientes entre
 <strong>1787 y 1857</strong>, cada lámina con su fotografía, su transcripción renglón a renglón
 y su lectura en español de hoy.</p>
@@ -246,7 +264,7 @@ y su lectura en español de hoy.</p>
 
 <div class="stats">
 <div class="stat"><b>31</b><span>expedientes</span></div>
-<div class="stat"><b>348</b><span>láminas</span></div>
+<div class="stat"><b>353</b><span>láminas</span></div>
 <div class="stat"><b>1787</b><span>el más antiguo</span></div>
 <div class="stat"><b>1857</b><span>el más reciente</span></div>
 </div>
@@ -393,7 +411,7 @@ y su lectura en español de hoy.</p>
   <span class="yr">sin año</span>
   <h3>Carta a Luisa Cartagena</h3>
   <p>Voz privada en un archivo de fórmulas. Va dirigida a la misma Luisa Cartagena que en 1814 litigó por setenta reses sin «doña» y sin saber firmar. Le escribe un padre o tutor desmintiendo una orden que no dio.</p>
-  <div class="foot"><span>1 lámina</span><span class="tag">· ganado</span></div>
+  <div class="foot"><span>2 láminas</span><span class="tag">· ganado</span></div>
 </a>
 <a class="card" href="doc/sen1815.html" data-tags="criminal,ganado">
   <span class="yr">1815</span>
@@ -423,13 +441,13 @@ y su lectura en español de hoy.</p>
   <span class="yr">febrero 1828</span>
   <h3>Cierta cuantilla</h3>
   <p>Felipe Chévez, oriundo de Nicaragua y casado desde 1826 con Macedonia Cartejón, reclama la herencia de su suegra. El alcalde registra que en su archivo no hay ninguno de los documentos citados.</p>
-  <div class="foot"><span>1 lámina</span><span class="tag">· mortual</span></div>
+  <div class="foot"><span>3 láminas</span><span class="tag">· mortual</span></div>
 </a>
 <a class="card" href="doc/rina1851.html" data-tags="criminal,municipal">
   <span class="yr">27 junio 1851</span>
   <h3>Riña a cuchillo en la calle</h3>
   <p>Un juicio verbal completo, de la comparecencia a la notificación, en tres planas seguidas. Es de lo poco del archivo donde se ve el procedimiento republicano entero, con su fundamento legal citado por artículo.</p>
-  <div class="foot"><span>1 lámina</span><span class="tag">· criminal</span></div>
+  <div class="foot"><span>3 láminas</span><span class="tag">· criminal</span></div>
 </a>
 <a class="card" href="doc/libro1856.html" data-tags="municipal">
   <span class="yr">1856–1857</span>
@@ -462,71 +480,81 @@ y su lectura en español de hoy.</p>
 <div class="panel" id="p-fon" role="tabpanel" aria-labelledby="t-fon" hidden><div class="wrap">
 <section id="archivo">
 <h2>El archivo</h2>
-<p class="sec-intro">Qué es este fondo, cómo llegaron estas fotografías, y qué hay dentro.</p>
+<p class="sec-intro">Qué es este fondo, cómo llegaron estas fotografías y qué hay dentro.</p>
 <div class="prose">
 <p>Sensentí es hoy un municipio del departamento de Ocotepeque, en el occidente de Honduras, cerca de
 la frontera con Guatemala y El Salvador. En el periodo colonial fue cabecera de partido, con jurisdicción
-sobre un conjunto de pueblos de indios y de vecindarios de españoles, mulatos libres y ladinos repartidos
-por los valles del río Cucuyagua y del río Sensentí.</p>
-<p>Su archivo municipal conserva papeles que van desde finales del siglo XVIII hasta bien entrada la
-época republicana. No es un fondo grande ni ordenado: son expedientes cosidos unos a otros, a veces
-descabalados, con pliegos de papel sellado viejo reutilizados años después de impresos, carátulas
-separadas de sus cuerpos, y alguna pieza suelta de otro siglo colada en medio. Se fotografiaron
-<strong>385 planas</strong>, y de ellas se han transcrito <strong>354</strong>.</p>
+sobre pueblos de indios y vecindarios de españoles, mulatos libres y ladinos repartidos por los valles
+del río Cucuyagua y del río Sensentí.</p>
+<p>Su archivo municipal guarda papeles que van de finales del siglo XVIII a bien entrada la época
+republicana. No es un fondo grande ni ordenado: expedientes cosidos unos a otros, a veces descabalados,
+carátulas separadas de sus cuerpos, pliegos de papel sellado viejo reutilizados años después de impresos.
+El proyecto PARCS lo fotografió en 2012: <strong>385 planas</strong>, de las que este sitio edita
+<strong>353</strong>, repartidas en <strong>31 expedientes</strong>.</p>
+</div>
 
-<h3>Qué clase de papeles son</h3>
+<div class="folds">
+
+<details class="fold">
+<summary>Qué clase de papeles son</summary>
+<div class="fb">
 <p>Casi todo es actuación judicial de primera instancia: el alcalde ordinario del partido, o un
 comisionado suyo, sustanciando un pleito con testigos de asistencia «a falta de escribano». Causas
 criminales por riñas, homicidios y hurtos de ganado; pleitos civiles por tierras, por reses y por deudas;
-mortuales con inventario y partición; peticiones de particulares. A partir de la Independencia se suman
-actas de juicio verbal, libros de cuentas municipales y órdenes de pago.</p>
-<p>Lo que estos papeles tienen de valioso no es lo excepcional sino lo corriente. Dicen la edad de la
-gente, su calidad —«español», «mulato libre», «indio», «forastero»—, su oficio, su vecindad, cuántas
-reses tenía y si sabía firmar. Dejan ver la geografía cotidiana del partido: cuatro leguas de Sensentí a
-Cucuyagua, dos de la aldea de La Labor a la cabecera, el camino por la boca de la montaña de Gualcho.
-Y dejan oír, de vez en cuando, a personas que en ninguna otra clase de documento habrían quedado
-registradas.</p>
+mortuales con inventario y partición; peticiones de particulares. Desde la Independencia se suman actas
+de juicio verbal, cuentas municipales y órdenes de pago.</p>
+<p>Su valor no está en lo excepcional sino en lo corriente. Dicen la edad de la gente, su calidad
+—«español», «mulato libre», «indio», «forastero»—, su oficio, su vecindad, cuántas reses tenía y si
+sabía firmar. Miden el partido en leguas: cuatro de Sensentí a Cucuyagua, dos de La Labor a la cabecera,
+el camino por la boca de la montaña de Gualcho. Y dejan oír, de vez en cuando, a personas que en ninguna
+otra clase de documento habrían quedado registradas.</p>
+</div>
+</details>
 
-<h3>Los pueblos que aparecen</h3>
-<p>Sensentí y su «Nuevo Poblado» —nombrado como tal en un auto de 8 de febrero de 1794—, Cucuyagua,
-Ocotepeque, Corquín, Gualcho, Cololaca, Guarita, la aldea del Jocomico, el Chinar de San Andrés,
-los Llanos de Santa Flora, la aldea de La Labor, la hacienda de San José de Sulán, el barrio de
-Esquipulas. Y, fuera del partido pero presentes en los papeles, Gracias, Comayagua, Chiquimula,
-la Antigua Guatemala y San Salvador.</p>
+<details class="fold">
+<summary>Los pueblos que aparecen</summary>
+<div class="fb">
+<p>Dentro del partido: Sensentí y su «Nuevo Poblado» —nombrado así en un auto de 8 de febrero de 1794—,
+Cucuyagua, Ocotepeque, Corquín, Gualcho, Cololaca, Guarita, la aldea del Jocomico, el Chinar de San
+Andrés, los Llanos de Santa Flora, la aldea de La Labor, la hacienda de San José de Sulán y el barrio
+de Esquipulas. Fuera de él, pero presentes en los papeles como destino de viajes, recursos y oficios:
+Gracias, Comayagua, Chiquimula, la Antigua Guatemala y San Salvador.</p>
+<p>Los que hoy se pueden situar en el mapa están en la <a href="#figuras">Figura 2</a>.</p>
+</div>
+</details>
 
-<h3>Las fotografías</h3>
-<p>Las tomó el proyecto PARCS en el propio archivo. Son buenas en general, pero tienen dos defectos
-que se repiten y que conviene conocer antes de usar las transcripciones: en varios expedientes
-el encuadre corta el margen derecho, de modo que se pierden los finales de renglón; y
-algunas planas están fotografiadas giradas noventa grados, o con la mano del operador sobre el papel.
-Donde eso afecta a la lectura se dice en la página del documento, plana por plana.</p>
-<p>Sobre las convenciones de transcripción y la regla de no conjeturar, véase <a href="metodo.html">Método</a>.</p>
-<p class="sealnote">El sello de la cabecera está redibujado a partir de la lámina IMG_1498: las
-armas reales de Carlos IV impresas en el papel sellado de 1804 y 1805 — corona real, manto con
-volutas, guirnalda de laurel y escudo cuartelado de Castilla y León con granada en punta y escusón
-de Borbón —, con la leyenda <em>Carolus IV D. G. Hispaniarum Rex</em>. Es una versión en limpio
-de ese sello, no una reproducción fotográfica.</p>
-
+<details class="fold">
+<summary>Las fotografías</summary>
+<div class="fb">
+<p>Se tomaron en el propio archivo, en junio de 2012, donde hubo sitio y luz. Son buenas en general,
+pero tienen dos defectos que conviene conocer antes de usar las transcripciones: en varios expedientes
+el encuadre corta el margen derecho y se pierden los finales de renglón, y algunas planas están
+fotografiadas giradas noventa grados o con la mano del operador sobre el papel. Donde eso afecta a la
+lectura se advierte en la página del documento, plana por plana; las convenciones de transcripción y la
+regla de no conjeturar están en <a href="metodo.html">Método</a>.</p>
 </div>
 <div class="fotos">
   <figure><img src="img/archivo/camara.jpg" alt="Una persona fotografía un libro de actas abierto sobre una mesa, en el zaguán de la alcaldía"
     loading="lazy" width="1045" height="784">
-    <figcaption>Junio de 2012. Un libro abierto sobre la mesa y la cámara encima; al fondo, el zaguán
-    con las motos y las láminas de zinc. Se trabajó donde había sitio y luz.</figcaption></figure>
+    <figcaption>Un libro abierto sobre la mesa y la cámara encima; al fondo, el zaguán con las motos
+    y las láminas de zinc.</figcaption></figure>
   <figure><img src="img/archivo/mesa.jpg" alt="Dos personas sentadas a una mesa con un portátil y un fajo de documentos sueltos sobre un paño"
     loading="lazy" width="1100" height="824">
-    <figcaption>La mesa de trabajo: el portátil para el catálogo y, al lado, el fajo de papeles
-    sueltos sobre un paño oscuro, esperando turno.</figcaption></figure>
+    <figcaption>La mesa de trabajo: el portátil para el catálogo y, al lado, el fajo de papeles sueltos
+    sobre un paño oscuro, esperando turno.</figcaption></figure>
+</div>
+</details>
+
 </div>
 </section>
 
 <section id="figuras">
 <h2>El fondo de un vistazo</h2>
 <p class="sec-intro">Tres lecturas del conjunto: cuándo, dónde y de qué. Todo sale de los treinta y un expedientes transcritos; las marcas llevan a la página de cada uno.</p>
+<details class="fold ffold" open>
+<summary><span class="fkey">Figura 1</span>Los treinta y un expedientes en el tiempo</summary>
 <figure class="fig" id="fig-tiempo">
   <figcaption>
-    <p class="keyw">Figura 1</p>
-    <h3>Los treinta y un expedientes en el tiempo</h3>
     <p class="sub">Cada renglón es un expediente. El punto marca un año fechado; la barra, un tramo
     continuo de actuaciones. Los renglones con <b>línea de trazos</b> son legajos que reúnen piezas de
     años distintos, cosidas juntas. Las marcas <b>huecas</b> son fechas que no están escritas en el papel
@@ -544,10 +572,11 @@ de ese sello, no una reproducción fotográfica.</p>
   <p class="src">El plano de agrimensura de <b>1882</b>, al extremo derecho, no pertenece al pleito con el
   que se encuadernó: es la pieza intrusa que da título a ese expediente.</p>
 </figure>
+</details>
+<details class="fold ffold">
+<summary><span class="fkey">Figura 2</span>La geografía del partido</summary>
 <figure class="fig" id="fig-mapa">
   <figcaption>
-    <p class="keyw">Figura 2</p>
-    <h3>La geografía del partido</h3>
     <p class="sub">Los lugares nombrados en los expedientes que hoy se pueden situar, sobre los límites
     municipales actuales. <b>El cuadrado</b> es Sensentí, cabecera de partido; los <b>círculos llenos</b>,
     lugares nombrados cuyo nombre sobrevive en un municipio de hoy; los <b>huecos</b>, identificaciones
@@ -573,10 +602,11 @@ de ese sello, no una reproducción fotográfica.</p>
   (GADM, WGS 84). Las marcas señalan el municipio que hoy lleva ese nombre, no el asiento exacto del
   pueblo colonial.</p>
 </figure>
+</details>
+<details class="fold ffold">
+<summary><span class="fkey">Figura 3</span>De qué tratan</summary>
 <figure class="fig" id="fig-temas">
   <figcaption>
-    <p class="keyw">Figura 3</p>
-    <h3>De qué tratan</h3>
     <p class="sub">Número de expedientes por materia. Un expediente puede llevar más de una: las
     54 marcas se reparten entre los 31 expedientes, de modo que la suma no es el total.</p>
   </figcaption>
@@ -584,6 +614,7 @@ de ese sello, no una reproducción fotográfica.</p>
   <p class="src">Las materias son las del propio catálogo del sitio, las mismas con las que se filtra
   la rejilla de la portada.</p>
 </figure>
+</details>
 </section>
 </div></div>
 
@@ -616,8 +647,8 @@ y en cada lámina se declara el grado de confianza de la lectura.</p>
 <p><strong>Papeles de Sensentí</strong> — Proyecto Arqueológico Río Cucuyagua y Sensentí (PARCS),
 dirigido por Erlend M. Johnson. Las fotografías del archivo municipal fueron tomadas en el marco
 del proyecto; las transcripciones se hicieron entre 2025 y 2026.</p>
-<p>Quedan <strong>31 láminas sin transcribir</strong> —un bloque de circulares impresas del Estado de
-Honduras de 1848— de las 385 fotografiadas.</p>
+<p>De las <strong>385 planas</strong> fotografiadas, este sitio edita <strong>353</strong>. Queda sin
+transcribir un bloque de <strong>31 circulares impresas</strong> del Estado de Honduras de 1848.</p>
 </footer>
 </div>
 
@@ -646,7 +677,9 @@ Honduras de 1848— de las 385 fotografiadas.</p>
   function fromHash(){
     var h=location.hash.replace('#','');
     if(MAP[h]){ show(MAP[h],false);
-      var el=document.getElementById(h); if(el&&h!=='documentos') el.scrollIntoView(); }
+      var el=document.getElementById(h); if(el&&h!=='documentos'){
+        var d=el.closest?el.closest('details'):null; while(d){d.open=true;d=d.parentElement&&d.parentElement.closest?d.parentElement.closest('details'):null;}
+        el.scrollIntoView(); } }
   }
   fromHash(); window.addEventListener('hashchange',fromHash);
   var bs=document.querySelectorAll('#filtros button'), cards=document.querySelectorAll('#rejilla .card');
