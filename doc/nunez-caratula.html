@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Una carátula sin año — Papeles de Sensentí</title>
+<meta name="description" content="La cubierta de una querella de don Casimiro Núñez contra una mujer y sus hijos. La casilla del año está en blanco: ampliada a seis aumentos, el espacio entre las dos rayas de pauta sigue limpio. Nadie la rellenó nunca.">
+<meta property="og:title" content="Una carátula sin año">
+<meta property="og:description" content="La cubierta de una querella de don Casimiro Núñez contra una mujer y sus hijos. La casilla del año está en blanco: ampliada a seis aumentos, el espacio entre las dos rayas de pauta sigue limpio. Nadie la rellenó nunca.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* tablas dentro del estudio */
+table{border-collapse:collapse;width:100%;margin:20px 0;font-size:.92em;
+  background:var(--card,transparent);display:block;overflow-x:auto}
+@media(min-width:620px){table{display:table}}
+th,td{border:1px solid var(--rule);padding:9px 11px;text-align:left;vertical-align:top;line-height:1.5}
+th{background:var(--rule2);color:var(--ink);font-weight:600;font-size:.86em;
+  letter-spacing:.02em;text-transform:none}
+tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--rule) 22%,transparent)}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Carátula de querella criminal, sin año</p>
+  <h1>Una carátula sin año</h1>
+  <p class="dek">La cubierta de una querella de don Casimiro Núñez contra una mujer y sus hijos. La casilla del año está en blanco: ampliada a seis aumentos, el espacio entre las dos rayas de pauta sigue limpio. Nadie la rellenó nunca.</p>
+  <div class="meta"><span><strong>1 lámina</strong> · IMG_1610</span><span>La casilla del año, vacía</span><span>Juzgado de Sensentí</span><span>Del expediente sólo queda la cubierta</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">1</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+<p>Una <strong>carátula</strong> de querella criminal, escrita en sentido normal pero con la hoja algo girada en la fotografía. Corresponde a una querella de <strong>don Casimiro Núñez</strong> contra una mujer, <strong>doña […]l[o/a]ria Rivera</strong>, y sus hijos, ante el <strong>Juzgado de Sensentí</strong>. Del expediente no queda nada más.</p>
+<p><strong>El año no se puede fijar, y la razón es material, no de lectura.</strong> La cabecera trae la fórmula «Año de» seguida de dos rayas de pauta tiradas a pluma para alojar las cifras, y entre ellas no hay tinta alguna. Ampliada a seis aumentos y con el fondo dividido por desenfoque gaussiano para sacar la tinta débil, el espacio sigue limpio. O el año nunca se escribió, o se escribió con una tinta que ha desaparecido por completo — cosa poco probable, estando legible, aunque tenuísimo, todo el resto de la carátula.</p>
+<p>La única cifra de la plana es la <strong>marca de archivo moderna</strong> del ángulo superior derecho, que no es el año del expediente. Un pliegue vertical pasa exactamente por la inicial del nombre de pila de la demandada, y ése es el punto de lectura más inseguro.</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver esta plana</h2>
+<p>Una carátula es la cubierta que envolvía el expediente y llevaba escritos, por fuera, los datos con que se le buscaba: año, partes, materia, juez. No es documentación del pleito sino su <strong>dispositivo de recuperación</strong>, el equivalente antiguo de una ficha, y por eso es lo primero que se pierde cuando alguien recose un legajo. Que ésta se conserve sin su cuerpo es lo corriente; que se conserve identificable es lo útil.</p>
+<p>La casilla vacía es el dato. El formulario existía —las dos rayas de pauta están tiradas a pluma para alojar las cifras— y nadie lo rellenó nunca. Eso dice algo sobre la práctica archivística del juzgado que ningún expediente completo diría: la cubierta se escribía para identificar partes y materia, y la fecha se daba por sabida o se dejaba para después. Quien trabaje sobre la formación de los archivos judiciales locales tiene aquí una prueba de una rutina incompleta, no una pérdida.</p>
+<p>Lo demás que se saca es prosopográfico y modesto: un querellante con «don» contra una mujer con «doña» y sus hijos. Sin el cuerpo del expediente no se sabe por qué.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="fIMG_1610">
+  <div class="fhead">
+    <div><span class="fnum">La lámina</span><h3>IMG_1610</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1610-0" aria-label="Ampliar la lámina"><img src="../img/sueltas/p009.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Hoja suelta de papel de hilo, <strong>sin sello</strong>, usada como cubierta y plegada en cuatro (los pliegues son visibles como bandas de sombra y uno de ellos, vertical, atraviesa el nombre de la demandada). <strong>Tinta extremadamente tenue y muy oxidada</strong>, casi al nivel del tono del papel: es la plana peor contrastada del lote después de 1611. <strong>Rotura y pérdida de soporte en el borde izquierdo</strong>, con manchón de tinta negra. La carátula está dispuesta en cuatro bloques: cabecera, dos renglones de tenor, una línea suelta y, muy abajo, la mención del juzgado. Sin foliación; al ángulo superior derecho hay una marca de archivo posterior, a lápiz o tinta más negra, que leo como dos caracteres sueltos y no interpreto.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Carátula de una querella criminal</strong>, escrita en sentido normal pero con la hoja algo girada en la foto. Corresponde a una <strong>querella de don Casimiro Núñez contra una mujer, doña […]l[o/a]ria Rivera, y sus hijos</strong>, ante el <strong>Juzgado de Sensentí</strong>. El catálogo acierta en el contenido.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">A<u class="exp" title="abreviatura desarrollada">[ñ]</u>o de ————————    ————————          <u class="exp" title="abreviatura desarrollada">[marca posterior: A[?]</u> 5<u class="exp" title="abreviatura desarrollada">[?]</u>]</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Quer]</u>ella Criminal de D<u class="exp" title="abreviatura desarrollada">[on]</u> Casimiro Nu<u class="exp" title="abreviatura desarrollada">[ñez]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[contr]</u>a D<u class="exp" title="abreviatura desarrollada">[oñ]</u>a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>l<u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿o?]</u></u>ria Rivera, y sus hijos</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Juez.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Juzg<u class="exp" title="abreviatura desarrollada">[a]</u>do de Sensenti</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Año de ————. Querella criminal de don Casimiro Núñez contra doña […]loria Rivera y sus hijos […] Juez. Juzgado de Sensentí.</p>
+<p><strong>Quién firma y quién no.</strong> <strong>Carátula sin firma ni rúbrica.</strong></p>
+<p><strong>Sobre el año (encargo expreso).</strong> <strong>No se puede fijar, y la razón es material, no de lectura: la casilla está vacía.</strong> La cabecera trae la fórmula <strong>«Año de»</strong> seguida de <strong>dos rayas de pauta tiradas a pluma</strong> para alojar las cifras, y <strong>entre ellas no hay tinta alguna</strong>: ampliada a seis aumentos y con el fondo dividido por desenfoque gaussiano para sacar la tinta débil, el espacio sigue limpio. O el año <strong>nunca se escribió</strong>, o se escribió con una tinta que ha desaparecido por completo, cosa poco probable estando legible —aunque tenuísimo— todo el resto de la carátula. La única cifra de la plana es la marca de archivo moderna del ángulo superior derecho, que no es el año del expediente. <strong>Dejo la carátula sin año.</strong></p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media para el tenor (los nombres <strong>Casimiro Nu[ñez]</strong> y <strong>Rivera</strong>, la calificación <strong>querella criminal</strong> y la sede <strong>Juzgado de Sensentí</strong> son seguros). <strong>Baja</strong> para el nombre de pila de la demandada: un pliegue vertical pasa exactamente por la inicial y sólo se ve con certeza un asta alta seguida de «-oria/-aria» — caben <em>Gloria</em>, <em>Hilaria</em>, <em>Ylaria</em>; <strong>no lo fijo</strong>. <strong>Nula</strong> para el año, por la razón dicha.
+
+---</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Las personas nombradas en esta plana, con lo que el propio papel dice de ellas.</p>
+  <div class="plist"><div class="persona"><h4>Don Casimiro Núñez</h4><p class="papel">querellante criminal contra una mujer y sus hijos</p><p class="calidad">carátula sin año</p></div><div class="persona"><h4>Doña […]l[o/a]ria Rivera</h4><p class="papel">demandada, con sus hijos</p><p class="calidad">el pliegue pasa por la inicial del nombre</p></div></div>
+</section>
+
+
+
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

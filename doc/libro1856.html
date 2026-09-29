@@ -1,0 +1,1105 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ochenta y dos pesos seis reales — Papeles de Sensentí</title>
+<meta name="description" content="El libro de cargo y data del tesorero de Sensentí para 1856, completo. De qué vive un municipio rural hondureño a mediados del siglo XIX: multas, ejidos, el fondo comunal, lo recogido en la fiesta de la Candelaria — y, gasto tras gasto, el sueldo atrasado del preceptor de la escuela. Contiene además">
+<meta property="og:title" content="Ochenta y dos pesos seis reales">
+<meta property="og:description" content="El libro de cargo y data del tesorero de Sensentí para 1856, completo. De qué vive un municipio rural hondureño a mediados del siglo XIX: multas, ejidos, el fondo comunal, lo recogido en la fiesta de la Candelaria — y, gasto tras gasto, el sueldo atrasado del preceptor de la escuela. Contiene además">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* tablas dentro del estudio */
+table{border-collapse:collapse;width:100%;margin:20px 0;font-size:.92em;
+  background:var(--card,transparent);display:block;overflow-x:auto}
+@media(min-width:620px){table{display:table}}
+th,td{border:1px solid var(--rule);padding:9px 11px;text-align:left;vertical-align:top;line-height:1.5}
+th{background:var(--rule2);color:var(--ink);font-weight:600;font-size:.86em;
+  letter-spacing:.02em;text-transform:none}
+tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--rule) 22%,transparent)}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Libro de cuentas municipales, 1856</p>
+  <h1>Ochenta y dos pesos seis reales</h1>
+  <p class="dek">El libro de cargo y data del tesorero de Sensentí para 1856, completo. De qué vive un municipio rural hondureño a mediados del siglo XIX: multas, ejidos, el fondo comunal, lo recogido en la fiesta de la Candelaria — y, gasto tras gasto, el sueldo atrasado del preceptor de la escuela. Contiene además un topónimo que sigue sin resolverse.</p>
+  <div class="meta"><span><strong>10 láminas</strong> · IMG_1600 – IMG_1609</span><span>Febrero de 1856 a enero de 1857</span><span>Sello del Gobierno Político y Militar del Departamento de Gracias</span><span>Sensentí · Chucuyu[…] · los Gualtava[s]</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">10</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>Diez planas: el <strong>libro de cargo y data del tesorero municipal de Sensentí para 1856</strong>, completo de principio a fin. Lo habilita <strong>J. Medina</strong> en Sensentí el 2[¿4?] de febrero de 1856, con dieciséis fojas útiles y el sello del <strong>Gobierno Político y Militar del Departamento de Gracias</strong>. Sigue el cargo (IMG_1601–1603), la data (IMG_1604–1608), la demostración final y la aprobación de la municipalidad (IMG_1608), y la providencia del Jefe Político que lo revisa y aprueba (IMG_1609), ésta ya de 24 de enero de 1857, «del año de 856».</p>
+<p><strong>Las cifras cuadran, casi.</strong> Cargo <strong>82 pesos 6 reales</strong>; data <strong>77 pesos 4 reales</strong>; existencia <strong>5 pesos 2 reales</strong>. Las sumas de IMG_1603, 1604, 1606 y 1608 y la demostración final concuerdan entre sí. Hay dos cosas que no, y se dejan señaladas sin corregir: en IMG_1607 una partida de medio real y otra de «veinte y…» son incompatibles con el salto del margen de 42-7 a 76-3; y en IMG_1606 las fechas van desordenadas —julio 4, agosto 2, julio 30, agosto 31—. Son errores del tesorero, no de la lectura, y como tales valen.</p>
+<p><strong>De qué vive un municipio rural hondureño en 1856.</strong> Por el lado del cargo: enteros hechos por los alcaldes auxiliares de las aldeas, lo recogido en la <strong>fiesta de la Candelaria</strong>, multas impuestas —«los multados no firman por no saber»—, lo recaudado de <strong>ejidos</strong>, nueve pesos un real del <strong>fondo comunal</strong>, y mil pesos enterados por el señor Julián Mejía. Por el lado de la data: papel y obleas, correos y veredas, el sueldo del <strong>secretario municipal</strong>, entregas al alcalde 1.º, y sobre todo el sueldo del <strong>preceptor de la escuela</strong>, que aparece una y otra vez en partidas de nueve reales, catorce reales, un peso, veinte reales por dos mesadas atrasadas. Una escuela pagada a plazos cortos y con retraso, pero pagada.</p>
+<p>## El topónimo de IMG_1601, y por qué sigue abierto</p>
+<p>En la partida de <strong>22 de febrero de 1856</strong> —cuatro pesos cuatro reales, con las firmas de los enterantes al pie— el libro dice que el entero lo hicieron «el Alc[ald]e ausiliar de <strong>Chu-/cuyu[…]</strong>, y el Alc[ald]e de los <strong>Gualtava[s]</strong>».</p>
+<p>Esa palabra importaba, porque el proyecto buscaba rastro de <strong>Xocoyuco</strong> —el pueblo que en 1579 el licenciado Valverde tasó en quince tributarios bajo la grafía <em>Chocoyoco</em>— y un catálogo previo la había leído como «Chucuyuco». Si fuera Xocoyuco, se tendría el nombre del lugar vivo tres siglos después.</p>
+<p><strong>No se puede afirmar.</strong> Con ampliación fuerte y realce se confirma el arranque <strong>«Chu-»</strong>, con C más h de astil, no «Cu-». Pero <strong>la sílaba final cae exactamente bajo un borrón de tinta agravado por el traspaso del verso</strong>: hay un trazo descendente compatible con una letra tipo <em>g</em>, y nada más. No se distingue <strong>-guá</strong> de <strong>-co</strong>, no se ve la vocal, no se ve si lleva tilde. Y la distinción es justamente la que decide la cuestión, porque <strong>-gua</strong> es terminación lenca —como en Cucuyagua— y <strong>-co</strong> es terminación náhuatl —como en Xocoyuco—. La palabra puede estar diciendo <em>Cucuyagua</em> o puede estar diciendo <em>Xocoyuco</em>, y este papel no lo dice.</p>
+<p>Se transcribe, por tanto, como <strong>Chucuyu[…]</strong>, sin completar. El segundo topónimo, <strong>Gualtava</strong>, se lee con razonable seguridad; su <em>s</em> final queda oculta bajo otro borrón.</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>Un libro de dieciséis fojas con un movimiento anual de <strong>ochenta y dos pesos seis reales</strong> da la escala de la hacienda de la cabecera municipal. No hay presupuesto, ni partidas previstas, ni contabilidad por ramos. Hay un cargo que se anota conforme entra el dinero, una data que se anota conforme sale y una demostración final que deja en caja cinco pesos dos reales.</p>
+<p>El cargo muestra de qué vivía el municipio: enteros de los <strong>alcaldes auxiliares de las aldeas</strong>, multas, <strong>ejidos</strong>, <strong>fondo comunal</strong> y lo recogido en la <strong>fiesta de la Candelaria</strong>. Esta última deja ver una celebración patronal como renta ordinaria; el papel no dice si eran limosnas, derechos de plaza u otra cosa. El libro lo habilita J. Medina con el sello del Gobierno Político y Militar del Departamento de Gracias y lo cierra la providencia aprobatoria del Jefe Político en enero de 1857. La municipalidad decidía sus gastos menudos, pero el departamento abría y cerraba su contabilidad.</p>
+<p>En la data, lo más aprovechable es la escuela. El sueldo del <strong>preceptor</strong> reaparece en partidas cortas y con retraso. Su mesada valía diez reales, la cuarta parte de lo que cobraba el secretario municipal. La instrucción primaria era ya carga municipal y solo se atendía a plazos.</p>
+<p>Sirve para calibrar cifras de gasto municipal o de sueldo docente y para seguir la relación entre cabecera y aldeas por los enteros. Conviene verificar en la imagen la partida que la transcripción lee como mil pesos enterados por el señor Julián Mejía: no cabe en un cargo de ochenta y dos pesos seis reales, y la contradicción queda sin resolver.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#f1600">00</a><a href="#f1601">01</a><a href="#f1602">02</a><a href="#f1603">03</a><a href="#f1604">04</a><a href="#f1605">05</a><a href="#f1606">06</a><a href="#f1607">07</a><a href="#f1608">08</a><a href="#f1609">09</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="f1600">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 10</span><h3>IMG_1600</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1600" aria-label="Ampliar la lámina IMG_1600">
+        <img src="../img/libro1856/p001.jpg" alt="Fotografía de la lámina IMG_1600" loading="lazy">
+      </button>
+      <figcaption>Papel de trapo grueso, agarbanzado, sin filigrana visible en esta toma. Sello en seco/tinta de caja rectangular con leyenda en dos líneas, aplicado a la parte superior izquierda bajo el título; la habilitación consiste en el sello más la firma manuscrita al pie («J Medina»), sin timbre fiscal de valor. Tinta ferrogálica pardo-negra, muy desvaída en el cuerpo del texto y más negra en el título caligráfico. El margen superior está desgarrado y falta un fragmento de la esquina superior derecha; el borde derecho tiene refuerzos/rasgaduras y por él se pierde el final de algunos renglones. Una mancha de humedad oscura ocupa el cuadrante inferior derecho. Perforaciones pequeñas (insectos) repartidas. Sin foliación visible. El encuadre corta el margen izquierdo: el comienzo de los renglones 2 a 6 queda bajo la curva del lomo y del cuaderno anterior, que aparece enrollado a la izquierda de la toma.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Portada y diligencia de apertura del libro, firmada por la autoridad departamental que lo habilita. Es la primera plana del expediente: da el año, el destino del libro (asiento de las partidas de cargo y data del tesorero municipal), el número de fojas útiles y la fórmula de rubricación, y lleva estampado el sello del Gobierno Político y Militar del Departamento de Gracias. Es la plana que fija la fecha del libro entero.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Año de 1856.</span>
+<span class="ln">⟦sello:⟧ GOBNO Pco I MILIT</span>
+<span class="ln">⟦sello:⟧ DEL DPo GRACIAS.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Libro    en que deve sentar las partidas</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[de]</u> cargo y data el Tesorero de esta Mu</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ni]</u>cipalidad en el presente año. Consta de</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[di]</u>ez y seis fojas utiles, rubricadas las del cen</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[tro]</u> y ffirmadas esta y la ultima —</span>
+<span class="ln">Sensenti Febrero 2<u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿4?]</u></u> de</span>
+<span class="ln">1856</span>
+<span class="ln">J Medina</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Año de 1856. [Sello: <em>Gobierno Político y Militar del Departamento de Gracias</em>.]</p>
+<p>Libro en que debe sentar las partidas de cargo y data el Tesorero de esta Municipalidad en el presente año. Consta de dieciséis fojas útiles, rubricadas las del centro y firmadas esta y la última. — Sensentí, febrero 2[¿4?] de 1856. — J. Medina [rúbrica].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> alta. El texto es breve, caligráfico y está completo salvo los arranques de renglón que se van en el lomo, todos ellos restituibles por el sentido y marcados como suplidos. No se dejan fijar dos cosas: el número del día de febrero (un «2» seguido de un trazo volado que tanto puede ser «4» como una abreviatura de ordinal) y si el número de fojas es «diez y seis» o «[otro] y seis», pues la sílaba inicial queda bajo el lomo. El año «1856» del título y el del pie son la misma cifra y ambos se leen sin esfuerzo.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1601">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 10</span><h3>IMG_1601</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1601" aria-label="Ampliar la lámina IMG_1601">
+        <img src="../img/libro1856/p002.jpg" alt="Fotografía de la lámina IMG_1601" loading="lazy">
+      </button>
+      <figcaption>Papel de cuaderno, con rayado horizontal fino a lápiz o tinta muy clara (visible como líneas paralelas de guía, no como renglones impresos). Tinta ferrogálica parda/negra, desvaída de forma desigual: más intensa en el cuerpo del folio, casi invisible en varias palabras de la mitad superior. Hay <strong>borrones</strong> (manchas de tinta) importantes: uno grande sobre la abreviatura de "Al[cal]de" en la línea 1 del pasaje del topónimo, y otro justo donde debería leerse la parte central de la primera palabra del segundo renglón de ese mismo pasaje, y un tercero al final de la palabra "Gualtava[s]". Se aprecia además <strong>traspaso de tinta del verso</strong> (offset/bleed-through): trazos diagonales y un óvalo cerrado que flotan por encima del renglón, sin conexión con la línea de base de la escritura, especialmente visibles en la zona del topónimo y en la cabecera de la plana, donde un número ("...858" o similar) que parece de otra mano/otra cara se superpone en espejo parcial a la escritura propia. El borde superior del folio está <strong>roto y curvado</strong> (falta de papel, fibras sueltas), por lo que las dos primeras partidas (continuación de la plana anterior) están cortadas y con parte del texto perdido. El lomo del cuaderno curva la imagen por la izquierda (zona oscura y deformada del margen de cosido). Hay además varias perforaciones pequeñas (agujeros de polilla o de aguja de encuadernación) que coinciden con manchas oscuras redondeadas repartidas por el folio.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Plana de <strong>cargo</strong> del libro de cuentas del tesorero municipal de Sensentí correspondiente a <strong>1856</strong>. Contiene, de arriba abajo: el final (dañado) de dos partidas que vienen de la plana anterior (un "cargo" de veinte reales y un "recargo" de tres pesos, ambas muy corregidas y con la cifra final ilegible por tachaduras); y, ya en cuerpo completo, tres partidas fechadas el <strong>22, 24 y 28 de febrero de 1856</strong>: un entero hecho por dos alcaldes auxiliares de aldea (con dos firmas y una rúbrica al pie), lo recogido "a la fiesta de Candelaria" (con la firma de Juan Monterosa/Monterola) y un entero de quince pesos hecho por el alcalde auxiliar de una aldea cuyo nombre queda cortado al pie de la imagen.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[M]</u>e cargo veinte reales <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[tachado / ilegible]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y recargo tres pesos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[tachado / ilegible]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Feb<u class="exp" title="abreviatura desarrollada">[rer]</u>o 22 de 1856</span>
+<span class="ln">Me cargo cuatro p<u class="exp" title="abreviatura desarrollada">[eso]</u>s cuatro r<u class="exp" title="abreviatura desarrollada">[eale]</u>s que</span>
+<span class="ln">enteró el Al<u class="exp" title="abreviatura desarrollada">[cal]</u>de aus<u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿i?]</u></u>liar de Ch<u class="exp" title="abreviatura desarrollada">[u]</u>-</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿cu?]</u></u><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y el Al<u class="exp" title="abreviatura desarrollada">[cal]</u>de de los Gualtava<u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿s?]</u></u></span>
+<span class="ln">y se comprueba esta partida</span>
+<span class="ln">con la firma de los enterantes. 4.4</span>
+<span class="ln">Juan Monterola <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Rafael Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Leon Leiva?]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Feb<u class="exp" title="abreviatura desarrollada">[rer]</u>o 24</span>
+<span class="ln">Me cargo tres p<u class="exp" title="abreviatura desarrollada">[eso]</u>s dos r<u class="exp" title="abreviatura desarrollada">[eale]</u>s q<u class="exp" title="abreviatura desarrollada">[ue]</u> se</span>
+<span class="ln">sacaron a la fiest<u class="exp" title="abreviatura desarrollada">[a]</u> de Cand<u class="exp" title="abreviatura desarrollada">[e]</u>laria</span>
+<span class="ln">y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que costeó lo firmo — — 3.2</span>
+<span class="ln">Juan Monterosa<u class="exp" title="abreviatura desarrollada">[s]</u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Feb<u class="exp" title="abreviatura desarrollada">[rer]</u>o 28</span>
+<span class="ln">Me cargo quince p<u class="exp" title="abreviatura desarrollada">[eso]</u>s que <u class="exp" title="abreviatura desarrollada">[entero/recibió]</u></span>
+<span class="ln">el Al<u class="exp" title="abreviatura desarrollada">[cal]</u>de auxiliar a<u class="exp" title="abreviatura desarrollada">[d]</u>e Joco<u class="exp" title="abreviatura desarrollada">[m]</u>i<u class="exp" title="abreviatura desarrollada">[c]</u>o</span>
+<span class="ln">y se comprueba esta p<u class="exp" title="abreviatura desarrollada">[artid]</u>a</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y se compruev<u class="exp" title="abreviatura desarrollada">[a]</u> esta p<u class="exp" title="abreviatura desarrollada">[artid]</u>a</span>
+<span class="ln">con la firma al <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿entinta?]</u></u></span>
+<span class="ln">Juan Montero<u class="exp" title="abreviatura desarrollada">[la]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Dionisio?]</u></u> D<u class="exp" title="abreviatura desarrollada">[i]</u>az <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <table><thead><tr><th>Concepto</th><th>Pesos</th><th>Reales</th></tr></thead><tbody>
+<tr><td>[Continuación de partida anterior: "cargo veinte reales..."]</td><td>[...]</td><td>[...]</td></tr>
+<tr><td>[Continuación de partida anterior: "recargo tres pesos..."]</td><td>[...]</td><td>[...]</td></tr>
+<tr><td>22 feb. 1856 — Enterado por el alcalde auxiliar de Ch[...] y el alcalde de los Gualtava[s]</td><td>4</td><td>4</td></tr>
+<tr><td>24 feb. 1856 — Recaudado en la fiesta de Candelaria</td><td>3</td><td>2</td></tr>
+<tr><td>28 feb. 1856 — Enterado por el alcalde auxiliar de Joco[mico]</td><td>15</td><td>0</td></tr>
+</tbody></table>
+<p>No hay suma total visible en esta plana (las partidas quedan sin totalizar dentro del encuadre fotografiado).</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media para el cuerpo general de la plana (fórmulas y cifras "4.4" y "3.2" se leen con razonable seguridad); <strong>baja</strong> para el nombre del segundo alcalde auxiliar de la partida del 22 de febrero (el topónimo en disputa) y para la palabra final "Joco[mico]" de la partida del 28 de febrero, por borrones, traspaso de tinta y desvanecimiento; <strong>baja</strong> también para las dos partidas superiores, cortadas por la rotura del papel y muy corregidas.
+
+<strong>Sobre el topónimo.</strong>
+
+Examiné letra por letra, con varios recortes a distinta resolución y contraste, el pasaje: "...enteró el Al[cal]de aus[i/¿?]liar de <strong>Ch[u]-</strong> / <strong>[¿cu?]...</strong>, y el Al[cal]de de los <strong>Gualtava[¿s?]</strong>...". Mi veredicto, punto por punto:
+
+- <strong>¿Chu- o Cu-?</strong> En el renglón 1, tras "de", el trazo inicial es un óvalo abierto seguido inmediatamente de un asta alta y recta antes de cualquier curva. Esa secuencia (óvalo + asta alta) es compatible con una <strong>C</strong> mayúscula cursiva seguida de <strong>h</strong> con astil, y no con una simple "c" minúscula enlazada a "u" (que no produciría ese astil alto). Por tanto, <strong>coincido con la lectura "Chu-"</strong> en cuanto a la letra inicial, y no veo apoyo gráfico para "Cu-". Confianza: media-alta.
+
+- <strong>¿-guá (con g) o -co?</strong> Aquí es donde <strong>no puedo confirmar la lectura propuesta</strong>. El comienzo del renglón 2 está afectado por tres problemas simultáneos: (1) un borrón de tinta justo en el tramo central de la palabra; (2) traspaso de tinta del verso, que añade un óvalo cerrado y una diagonal que no pertenecen a esta palabra pero se superponen a ella; (3) posible interferencia de un descendente/ascendente de otra línea. Lo único que puedo afirmar con algo de seguridad es que, bajo el borrón, hay un trazo que <strong>desciende por debajo de la línea de base y vuelve a subir con un pequeño bucle</strong>, compatible con una letra con descendente (como "g" o "y"), lo que hace <strong>algo más verosímil "-gu-" que "-co"</strong> (esta última no generaría ese bucle bajo), pero el borrón impide leer con certeza las letras concretas ("g", "u") ni la vocal final. <strong>No puedo confirmar ni descartar el acento</strong>: la zona donde debería estar la tilde, si la hay, está cubierta por el mismo borrón/traspaso. Transcribo esa sílaba como `[¿gu?][...]` y dejo constancia expresa de que <strong>no doy la lectura "Chucuyuguá" por comprobada</strong>: solo puedo decir que es compatible con lo que veo, no que esté confirmada letra por letra.
+
+- <strong>¿Gualtava, Gualtavas, Gualtaya u otra cosa?</strong> Este segundo topónimo se lee con más claridad. Distingo G mayúscula (bucle), una vocal/hueco (u-a enlazadas), l con astil alto, t, a, v, a: <strong>"Gualtava"</strong> me parece una lectura razonablemente segura (confianza media-alta) — no veo motivo para leer "Gualtaya" (no hay rasgo de "y" con descendente ahí). Justo después de la última "a" hay, sin embargo, un <strong>borrón oscuro</strong> que podría ocultar una "s" final o ser solo una mancha de tinta sin letra; no hay trazo claro de "s" visible por debajo o al lado del borrón. Transcribo por tanto "Gualtava[¿s?]", sin dar la "s" por segura.
+
+<strong>En resumen:</strong> confirmo "Chu-" en el arranque; <strong>no puedo confirmar ni "-guá" ni "-co"</strong> en la sílaba decisiva, por hallarse exactamente bajo un borrón agravado por traspaso de tinta — lo más que puedo decir es que el trazo visible favorece levemente una letra con descendente tipo "g" sobre "co"; y leo "Gualtava" con razonable seguridad, con la "s" final en duda por otro borrón.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1602">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 10</span><h3>IMG_1602</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1602" aria-label="Ampliar la lámina IMG_1602">
+        <img src="../img/libro1856/p003.jpg" alt="Fotografía de la lámina IMG_1602" loading="lazy">
+      </button>
+      <figcaption>Papel de trapo delgado, muy transparente: hay fuerte traspaso de tinta del otro lado del folio, que produce los trazos «fantasma» entre renglones y lo que a primera vista parece una fecha invertida junto a la firma de Monterrosa. Tinta muy negra y empastada, con varias partidas emborronadas por exceso de carga de pluma. El folio está fotografiado abombado sobre el lomo: <strong>toda la columna de importes queda sobre la curva del papel o fuera del encuadre por la derecha, y no es legible</strong>. En la parte superior izquierda de la toma se ven papel de embalaje/pañuelo blanco usado como calce y el borde del cuaderno anterior. Sin foliación visible. Encabezamiento de arrastre en el ángulo superior derecho.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Segunda plana del <strong>cargo</strong> (la primera es IMG_1601, fuera de este tramo). Contiene cuatro asientos de cargo del tesorero, de febrero a julio: dos pesos de multas impuestas, un peso recaudado de ejidos, seis pesos de multa enterados por Julián Mejía, y una partida de julio por multas de varios vecinos cuyo texto continúa en IMG_1603. Cada partida se comprueba «con la firma del enterante», y en efecto los enterantes firman debajo.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Dela Vta</span>
+<span class="ln">Feb. 3</span>
+<span class="ln">Me cargo dos p.s de multas</span>
+<span class="ln">ympuestas y se comprueba esta</span>
+<span class="ln">partida con la firma del en</span>
+<span class="ln">terante  —   —   —   —          <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Juan Monterrosa</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Olaya?]</u></u> Reyes</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Marzo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Me cargo un p.o que se han</span>
+<span class="ln">recaudado de Egidos y para que</span>
+<span class="ln">conste lo firmo  —  —  —        <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Juan Monterrosa</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Mayo 21.</span>
+<span class="ln">Me cargo seis pesos que de</span>
+<span class="ln">multa entero el S.r Julian</span>
+<span class="ln">Mejia, y se comprueva esta</span>
+<span class="ln">partida con la firma del en</span>
+<span class="ln">terante  —  —  —  —            <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Juan Monterrosa</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Julian Mejia</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Julio 6</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Me]</u> cargo treinta p.s <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[de]</u> multas enteraron <u class="exp" title="abreviatura desarrollada">[los]</u> S<u class="exp" title="abreviatura desarrollada">[eño]</u>r<u class="exp" title="abreviatura desarrollada">[e]</u>s <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+<p class="note"><em>(la partida de julio 6 continúa en IMG_1603)</em></p>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <table><thead><tr><th>Concepto</th><th>Pesos</th><th>Reales</th></tr></thead><tbody>
+<tr><td>Feb. 3 — De multas impuestas (enteran Juan Monterrosa y [¿Olaya?] Reyes)</td><td>[no visible]</td><td>[no visible]</td></tr>
+<tr><td>Marzo [...] — Recaudado de ejidos</td><td>[no visible]</td><td>[no visible]</td></tr>
+<tr><td>Mayo 21 — De multa, enterada por el Sr. Julián Mejía</td><td>[no visible]</td><td>[no visible]</td></tr>
+<tr><td>Julio 6 — De multas enteradas por varios vecinos <em>(sigue en IMG_1603)</em></td><td>[no visible]</td><td>[no visible]</td></tr>
+</tbody></table>
+<p>El texto de las partidas sí declara las cantidades en letra: «dos pesos» (feb. 3), «un peso» (marzo), «seis pesos» (mayo 21) y «treinta pesos» (julio 6, con una palabra intercalada que no leo). La columna numérica correspondiente no entra en la fotografía.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media. El texto corrido se lee bien salvo los emborronados; lo que hunde la confianza es que <strong>ningún importe de la columna es legible</strong>, y en un libro de cuentas eso es media plana perdida. Tampoco se dejan fijar: el día de marzo (el guarismo cae en el borrón); el segundo apellido que firma tras Monterrosa en la partida de febrero, que leo «[¿Olaya?] Reyes» y no me atrevo a dar por bueno; y la palabra que sigue a «treinta p.s» en la partida de julio, que parece «ciete» pero que la aritmética del libro desmiente (véase IMG_1603), por lo que la dejo en `[...]`.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1603">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 10</span><h3>IMG_1603</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1603" aria-label="Ampliar la lámina IMG_1603">
+        <img src="../img/libro1856/p004.jpg" alt="Fotografía de la lámina IMG_1603" loading="lazy">
+      </button>
+      <figcaption>Mismo papel. Tinta más aguada y clara que en IMG_1602, de color pardo, con buen contraste. La columna de importes es aquí <strong>perfectamente legible</strong>, con su raya de cierre y el total subrayado. Rayado vertical a lápiz o punta seca que delimita la caja y la columna de pesos y de reales. Un pliegue diagonal cruza el tercio superior, junto a la firma de Pablo Toro. Pequeñas manchas de tinta y de humedad en el tercio inferior derecho; el borde inferior derecho está reforzado con un papel superpuesto. Borde superior con desgarro. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Última plana del <strong>cargo</strong>. Recoge el final de la partida de julio 6 iniciada en IMG_1602, dos asientos más fechados ambos el 31 de diciembre de 1856 (dieciséis pesos de multas y nueve pesos un real del fondo comunal) y la <strong>suma total del cargo: 82 pesos 6 reales</strong>. Es también la plana que fecha el libro sin ambigüedad.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">—  Suma      27-5.</span>
+<span class="ln">Maldonado, Salvador Mejia y</span>
+<span class="ln">Doroteo Espinosa, y se comprue</span>
+<span class="ln">ba esta partida con la firma</span>
+<span class="ln">del enterante  —  —  —        30..</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Pablo Toro          Doroteo Espinosa</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>              <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Dbre 31 de 1856.</span>
+<span class="ln">Son Cargo diez y seis pesos que por</span>
+<span class="ln">Multas entregaron, Cecito Maldonado</span>
+<span class="ln">y Cruz Espinosa y no firmaron por</span>
+<span class="ln">no saber i pero lo hize para que      16..</span>
+<span class="ln">conste  —   —   —</span>
+<span class="ln">Luis Lopez</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Dbre. 31. de 1856.</span>
+<span class="ln">Me Cargo nuebe pesos un real</span>
+<span class="ln">que he recaudado del fondo Comu</span>
+<span class="ln">nal y se comprueba con la lista que</span>
+<span class="ln">tengo presentada á la Municipali-      9.1</span>
+<span class="ln">dad  —                                ————</span>
+<span class="ln">Conste   Luis Lopez           82-6</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <table><thead><tr><th>Concepto</th><th>Pesos</th><th>Reales</th></tr></thead><tbody>
+<tr><td>Suma arrastrada de las planas anteriores</td><td>27</td><td>5</td></tr>
+<tr><td>[Julio 6, viene de IMG_1602] De multas enteradas por […] Maldonado, Salvador Mejía y Doroteo Espinosa</td><td>30</td><td>0</td></tr>
+<tr><td>Dbre. 31 de 1856 — De multas entregadas por Cecito Maldonado y Cruz Espinosa</td><td>16</td><td>0</td></tr>
+<tr><td>Dbre. 31 de 1856 — Recaudado del fondo comunal, según lista presentada a la Municipalidad</td><td>9</td><td>1</td></tr>
+<tr><td><strong>Total del cargo</strong></td><td><strong>82</strong></td><td><strong>6</strong></td></tr>
+</tbody></table>
+<p><strong>La suma cuadra exactamente</strong>: 27-5 + 30 + 16 + 9-1 = 82-6.</p>
+<p>Firman como enterantes Pablo Toro y Doroteo Espinosa. En la partida de los dieciséis pesos se hace constar que los multados <strong>no firmaron</strong>, con esta fórmula: <em>«y no firmaron por no saber i pero lo hize para que conste»</em> (entiendo «y por ellos lo hice», pero la abreviatura no es segura). Las dos últimas partidas las autoriza el tesorero <strong>Luis López</strong>, con rúbrica.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> alta. Es la mejor plana del tramo: texto e importes legibles y suma comprobada. Quedan sin fijar dos cosas: el nombre de pila de «Cecito Maldonado», que se lee así letra por letra pero que probablemente encubra <em>Cecilio</em> —no lo normalizo—, y la palabra «pero» de la fórmula de no firmar, que puede ser «p[o]r e[llo]s».
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1604">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 10</span><h3>IMG_1604</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1604" aria-label="Ampliar la lámina IMG_1604">
+        <img src="../img/libro1856/p005.jpg" alt="Fotografía de la lámina IMG_1604" loading="lazy">
+      </button>
+      <figcaption>Papel muy delgado y translúcido; el traspaso de la tinta del reverso y de la hoja contigua es aquí severísimo y produce el aspecto de renglones tachados que tiene toda la plana: <strong>la mayor parte de los trazos que parecen cancelaciones son en realidad la escritura del otro lado del folio vista al trasluz</strong>. Dos tintas: la del escribano (negra, firme) y unos renglones superiores muy pálidos y lavados. Borrón redondo de tinta al inicio del segundo renglón. Borde superior desgarrado con pérdida de papel en la esquina derecha; el margen derecho está roto y por él se pierden los finales de renglón. Encuadre: el lomo se come el arranque de los renglones. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Primera plana de la <strong>data</strong>. Lleva el encabezamiento «Data» y, tras dos renglones muy desvaídos que no entran en la suma, tres asientos de gasto: febrero 28 (al alcalde 1.º, orden n.º 1), marzo 2 (orden n.º 2) y abril 1.º (al alcalde 1.º municipal, orden n.º 3). Cierra con «Suma $ 13-2». Cada partida remite al número de la orden de pago y se comprueba con la firma del recipiente; las tres las firma Monterrosa.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Data     <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>                        2</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[por]</u> papel de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>              <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">en pago del Secretario Jose <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Soler?]</u></u>    8<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Feb. 28</span>
+<span class="ln">Son data tres p.s dos r.s que se</span>
+<span class="ln">mandaron a entregar al S.r Alc.e</span>
+<span class="ln">1.º p<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Maja<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Mun<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y se com</span>
+<span class="ln">prueva esta partida con la or</span>
+<span class="ln">d.n n.º 1.º y firma del recipiente      3.2</span>
+<span class="ln">Monterrosa</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Mzo 2.</span>
+<span class="ln">Son data cuatro p.s que se han</span>
+<span class="ln">mandado pagar <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y se comprueva esta</span>
+<span class="ln">partida con la ord.n n.º 2 y f.r       4.</span>
+<span class="ln">ma del recipiente</span>
+<span class="ln">Monterrosa</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Abril 1.º</span>
+<span class="ln">Son data seis p.s que se man</span>
+<span class="ln">daron pagar al S.r Alc.e 1.º municipal</span>
+<span class="ln">por m<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> segun la orden <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>           6</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> n.º 3.º y firma del recipte —</span>
+<span class="ln">Monterrosa           Suma $ 13.2</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <table><thead><tr><th>Concepto</th><th>Pesos</th><th>Reales</th></tr></thead><tbody>
+<tr><td>⟦renglones desvaídos de cabecera: papel; «en pago del Secretario José [¿Soler?]»⟧</td><td><em>no entran en la suma</em></td><td></td></tr>
+<tr><td>Feb. 28 — Entregados al Sr. Alcalde 1.º, orden n.º 1</td><td>3</td><td>2</td></tr>
+<tr><td>Marzo 2 — Mandados pagar […], orden n.º 2</td><td>4</td><td>0</td></tr>
+<tr><td>Abril 1.º — Al Sr. Alcalde 1.º municipal, orden n.º 3</td><td>6</td><td>0</td></tr>
+<tr><td><strong>Suma</strong></td><td><strong>13</strong></td><td><strong>2</strong></td></tr>
+</tbody></table>
+<p><strong>La suma cuadra</strong>: 3-2 + 4 + 6 = 13-2. Esto confirma que los renglones pálidos de cabecera (papel y sueldo del secretario) <strong>no forman parte de la data de esta plana</strong>: o son un borrador cancelado o son traspaso de otra hoja.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media. Las tres partidas contadas y sus importes se leen con seguridad, y la suma lo verifica. En cambio los renglones de cabecera no se dejan fijar en absoluto: leo «Data», un «2» suelto al margen, «papel», «en pago del Secretario Jose [¿Soler?]» y un guarismo que puede ser «8» o «8-4», y nada más; el apellido del secretario no lo doy por bueno. Tampoco leo los motivos de pago de las partidas de febrero y marzo, comidos por el traspaso de tinta.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1605">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 10</span><h3>IMG_1605</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1605" aria-label="Ampliar la lámina IMG_1605">
+        <img src="../img/libro1856/p006.jpg" alt="Fotografía de la lámina IMG_1605" loading="lazy">
+      </button>
+      <figcaption>Papel delgado, fotografiado muy abombado sobre el lomo: la plana se curva hacia la derecha y <strong>la columna de importes queda en el filo de la curvatura</strong>, de modo que solo dos de los cuatro importes son legibles («4» y «5»); el de la primera partida y el de la última se pierden, y del total solo se ve «32» y el comienzo del real. Tinta negra, empastada, con abundantes tachaduras aparentes que de nuevo son traspaso del reverso. En el ángulo superior izquierdo de la toma, papel de embalaje blanco como calce; arriba asoma el folio anterior. Encabezamiento de arrastre «De la otra» en el ángulo superior derecho. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Segunda plana de la <strong>data</strong>, con cuatro asientos: mayo (orden n.º 4), junio 17 (orden n.º 5), julio (orden n.º 6) y julio (al alcalde 1.º, orden n.º 7). Los recibos los firma Pablo Toro, que aparece aquí como recipiente habitual. Cierra con «Suma $ 32-[...]».</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">De la Otra</span>
+<span class="ln">Mayo <u class="exp" title="abreviatura desarrollada">[2¿0?]</u></span>
+<span class="ln">Son data cuatro p.s que se man</span>
+<span class="ln">dan pagar al <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en la municip.</span>
+<span class="ln">seg.n la ord.n n.º 4.º y se compue</span>
+<span class="ln">van con la firma del recipiente.    <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Pablo Toro</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Junio 17.</span>
+<span class="ln">Son data <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p.s que se man</span>
+<span class="ln">daron pagar al <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la muni</span>
+<span class="ln">cip. seg.n la ord.n n.º 5.º y se</span>
+<span class="ln">comprueban con la firma del</span>
+<span class="ln">recipiente  —  —  —                 "4</span>
+<span class="ln">Pablo Toro</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Julio <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Son data <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p.s que se mandaron</span>
+<span class="ln">pagar al <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> seg.n la ord.n n.º 6.º y</span>
+<span class="ln">se comprueba en la firma del</span>
+<span class="ln">recipiente  —  —  —                 "5</span>
+<span class="ln">Toro</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Julio <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Son data cinco p.s siete <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿y medio?]</u></u> r.s q.e</span>
+<span class="ln">se mandaron pagar al S.r Alc.e 1.º</span>
+<span class="ln">seg.n la ord.n n.º 7.º y se comprue</span>
+<span class="ln">va con la firma del recipiente     <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Toro                Suma $ 32.<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <table><thead><tr><th>Concepto</th><th>Pesos</th><th>Reales</th></tr></thead><tbody>
+<tr><td>Mayo [2…] — Pagado a […] de la municipalidad, orden n.º 4</td><td>[no visible] (el texto dice «cuatro pesos»)</td><td></td></tr>
+<tr><td>Junio 17 — Pagado a […] de la municipalidad, orden n.º 5</td><td>4</td><td>0</td></tr>
+<tr><td>Julio […] — Pagado a […], orden n.º 6</td><td>5</td><td>0</td></tr>
+<tr><td>Julio […] — Al Sr. Alcalde 1.º, orden n.º 7</td><td>[no visible] (el texto dice «cinco pesos siete [¿y medio?] reales»)</td><td></td></tr>
+<tr><td><strong>Suma</strong></td><td><strong>32</strong></td><td><strong>[...]</strong></td></tr>
+</tbody></table>
+<p><strong>Deducción, no lectura:</strong> la plana siguiente arrastra «Del frente 32-1» y la anterior cerró en 13-2; por tanto las cuatro partidas de esta plana suman 18-7, y las dos cuyo importe no se ve suman entre ambas 9-7. Si la primera es en efecto de 4 pesos, la del alcalde 1.º sería de 5-7 —lo que concuerda con el «cinco p.s siete» del texto y <strong>desmiente el "y medio"</strong> que creo ver. No corrijo nada: dejo constancia de la discrepancia.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media. El armazón (fechas, números de orden, firmantes) es seguro; los importes no. No se dejan fijar: el día de mayo y los dos días de julio; la cantidad en letra de las partidas de junio y julio; y, sobre todo, <strong>la palabra que designa al perceptor en las tres primeras partidas</strong> —una abreviatura de tres o cuatro letras con raya de abreviación encima, que reaparece idéntica en IMG_1606 y que no leo—. No la conjeturo.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1606">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 7 de 10</span><h3>IMG_1606</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1606" aria-label="Ampliar la lámina IMG_1606">
+        <img src="../img/libro1856/p007.jpg" alt="Fotografía de la lámina IMG_1606" loading="lazy">
+      </button>
+      <figcaption>Papel en buen estado, con la caja y las dos columnas (pesos y reales) trazadas a punta seca y visibles. Tinta pardo-negra bien conservada, escritura clara y espaciada. Traspaso del reverso moderado. Mancha de humedad clara en el tercio inferior derecho y una rotura reparada en el margen derecho a la altura del primer asiento. A la izquierda de la toma se ve, de canto, el folio anterior con su propia columna de cifras. Encabezamiento de arrastre «Del frente» arriba, con la cifra arrastrada parcialmente cortada por el borde. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Tercera plana de la <strong>data</strong>, la mejor conservada de esta sección. Cuatro asientos: julio 4 (tres pesos al <strong>Preceptor de la Escuela</strong>, orden n.º 8), agosto 2 (cinco pesos a […] de la municipalidad, orden n.º 9), julio 30 (catorce reales al Preceptor, orden n.º 10) y agosto 31 (un peso, orden n.º 11). Todos los recibe Toro. Cierra con el total 42-7.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Del frente        <u class="exp" title="abreviatura desarrollada">[32]</u>-<u class="exp" title="abreviatura desarrollada">[1]</u></span>
+<span class="ln">Julio 4</span>
+<span class="ln">Son data tres p.s que se manda</span>
+<span class="ln">ron pagar al Precep.r de la Escuela</span>
+<span class="ln">y se comprueva con la orden n.º 8. y</span>
+<span class="ln">firma del recipiente  —  —  —      "3</span>
+<span class="ln">Toro</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Agosto 2.</span>
+<span class="ln">Son data cinco p.s que se mandaron</span>
+<span class="ln">pagar al <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la municip.d y</span>
+<span class="ln">se comprueva esta partida con la</span>
+<span class="ln">ord.n n.º 9.º y firma del recipte —   "5</span>
+<span class="ln">Toro</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Julio 30.</span>
+<span class="ln">Son data, catorce r.s que se mandaron</span>
+<span class="ln">pagar al Precep.r seg.n la ord.n n.º 10</span>
+<span class="ln">y firma del recipte  —  —  —        1.6</span>
+<span class="ln">Toro</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Agosto, 31.</span>
+<span class="ln">Son data un peso que se mando</span>
+<span class="ln">pagar seg.n la ord.n n.º 11. y fir</span>
+<span class="ln">ma del recipiente  —  —  —           1.</span>
+<span class="ln">Toro                    ————</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>                42.7</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <table><thead><tr><th>Concepto</th><th>Pesos</th><th>Reales</th></tr></thead><tbody>
+<tr><td>Del frente (arrastre)</td><td>[32]</td><td>[1]</td></tr>
+<tr><td>Julio 4 — Al Preceptor de la Escuela, orden n.º 8</td><td>3</td><td>0</td></tr>
+<tr><td>Agosto 2 — A […] de la municipalidad, orden n.º 9</td><td>5</td><td>0</td></tr>
+<tr><td>Julio 30 — Al Preceptor, catorce reales, orden n.º 10</td><td>1</td><td>6</td></tr>
+<tr><td>Agosto 31 — Un peso, orden n.º 11</td><td>1</td><td>0</td></tr>
+<tr><td><strong>Suma</strong></td><td><strong>42</strong></td><td><strong>7</strong></td></tr>
+</tbody></table>
+<p><strong>La suma cuadra</strong>: 3 + 5 + 1-6 + 1 = 10-6; y 32-1 + 10-6 = 42-7. Obsérvese que el escribano convierte correctamente los «catorce reales» de la orden n.º 10 en 1 peso 6 reales.</p>
+<p><strong>Anomalía de fechas, sin corregir:</strong> el orden de los asientos es julio 4 → agosto 2 → julio 30 → agosto 31. El tercer encabezamiento dice «Julio 30» con toda claridad, aunque va después de una partida de agosto y lleva número de orden posterior. Lo dejo como está.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> alta. Texto e importes legibles y suma verificada. La única cosa que no se deja fijar es, otra vez, la abreviatura del perceptor en la partida de agosto 2 («al ___ de la municipalidad»), la misma que en IMG_1605: tres trazos con raya de abreviación, que no leo y que no conjeturo. La cifra arrastrada de cabecera está cortada por el borde y la restituyo entre corchetes solo porque la aritmética de las dos planas vecinas la fija.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1607">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 8 de 10</span><h3>IMG_1607</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1607" aria-label="Ampliar la lámina IMG_1607">
+        <img src="../img/libro1856/p008.jpg" alt="Fotografía de la lámina IMG_1607" loading="lazy">
+      </button>
+      <figcaption>Papel delgado y muy translúcido, fotografiado fuertemente abombado: la mitad derecha se curva y <strong>la columna de importes queda casi entera sobre el filo</strong>; solo se lee el «25» de la partida de diciembre 8 y el «76» del total. Dos tintas muy distintas: los dos primeros asientos, en tinta gris muy lavada y casi borrada, sobre un fondo cruzado por el traspaso del reverso; el asiento de diciembre 31, en tinta negra y firme. Grandes rúbricas de adorno ocupan el centro de la plana. Manchas de humedad en el ángulo inferior izquierdo y a lo largo del margen izquierdo. En lo alto de la toma, papel de embalaje blanco de calce y el folio anterior. Encabezamiento de arrastre «D. la V.ta» arriba a la derecha. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Cuarta plana de la <strong>data</strong>, con los pagos del último trimestre: septiembre 30 (al <strong>Preceptor de la Escuela</strong>, orden n.º 12), diciembre 8 (al <strong>Secretario Municipal</strong>, veinticinco pesos) y diciembre 31 (al alcalde 1.º, orden n.º 14). Cierra con el total 76-3.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">S.p.tre 30        D. la Vta</span>
+<span class="ln">Son data veinte y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p.s que se manda</span>
+<span class="ln">ron pagar al Precep.r de la Escuela</span>
+<span class="ln">seg.n la ord.n n.º 12 y firma del re</span>
+<span class="ln">cipiente  —  —  —  —               <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Toro</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Diciembre 8.</span>
+<span class="ln">Son data veinte y cinco p.s <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que</span>
+<span class="ln">se mandaron pagar al Secretario Mu</span>
+<span class="ln">nicipal y se comprueba esta par</span>
+<span class="ln">tida con la orden <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y</span>
+<span class="ln">firma del recipiente  —  —  —       25</span>
+<span class="ln">Luis Lopez</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Dbre 31.</span>
+<span class="ln">Son data cinco p.s siete y medio</span>
+<span class="ln">reales que se le mandaron pagar</span>
+<span class="ln">al S.r Alc.e 1.º segun la orden</span>
+<span class="ln">numero 14. y se comprueba con</span>
+<span class="ln">la firma del recipiente            <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Luis Lopez           ————</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>           76.<u class="exp" title="abreviatura desarrollada">[3]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <table><thead><tr><th>Concepto</th><th>Pesos</th><th>Reales</th></tr></thead><tbody>
+<tr><td>De la vuelta (arrastre)</td><td>[42]</td><td>[7]</td></tr>
+<tr><td>Sept. 30 — Al Preceptor de la Escuela, orden n.º 12</td><td>[no visible] («veinte y […] pesos»)</td><td></td></tr>
+<tr><td>Diciembre 8 — Al Secretario Municipal</td><td>25</td><td>0</td></tr>
+<tr><td>Dbre. 31 — Al Sr. Alcalde 1.º, orden n.º 14</td><td>[no visible] («cinco pesos siete y medio reales»)</td><td></td></tr>
+<tr><td><strong>Suma</strong></td><td><strong>76</strong></td><td><strong>3</strong> <em>(fijado por el «del frente 76-3» de IMG_1608)</em></td></tr>
+</tbody></table>
+<p><strong>Aquí hay un problema y no lo corrijo.</strong> Entre el arrastre de IMG_1606 (42-7) y el total de esta plana (76-3, confirmado al comienzo de IMG_1608) median 33 pesos 4 reales. De esos 33-4, la partida del secretario se lleva 25, de modo que las otras dos suman 8-4 entre ambas. Pero el texto de la primera dice «veinte y […] pesos» —cantidad incompatible con ese margen— y el de la última dice «siete y medio reales», que introduce un medio real que ningún total de esta contabilidad recoge. <strong>O yo leo mal las cantidades en letra, o el tesorero se equivocó al sumar.</strong> Dejo las dos lecturas tal como están en el papel y señalo la contradicción; no invento cifras ni ajusto la suma.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media. Los encabezamientos de fecha, los números de orden, los perceptores (Preceptor de la Escuela, Secretario Municipal, Alcalde 1.º) y los firmantes son seguros. Los importes, no: dos de los tres se pierden en la curvatura. No se dejan fijar: la unidad de «veinte y […]» en la partida de septiembre; el número de orden de la partida de diciembre 8 (se lee «la orden» y luego un trazo que puede ser «primero» o un guarismo); y el real del total, que restituyo entre corchetes únicamente porque IMG_1608 lo repite.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1608">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 9 de 10</span><h3>IMG_1608</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1608" aria-label="Ampliar la lámina IMG_1608">
+        <img src="../img/libro1856/p009.jpg" alt="Fotografía de la lámina IMG_1608" loading="lazy">
+      </button>
+      <figcaption>Papel en buen estado, con caja y columnas de pesos y reales trazadas a punta seca, bien visibles. Tinta pardo-negra clara y firme. Traspaso del reverso moderado pero constante. En el cuadrante central derecho se transparenta, del otro lado del folio, el sello de caja del Gobierno Político. Dos manchones de tinta redondos en el margen derecho, a la altura de la firma de Matías Molina. El borde superior está desgarrado. A la izquierda de la toma asoma, de canto, el folio anterior con su columna («42-7», «2-4», «7-4», «3»). Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Última plana de la <strong>data</strong> y cierre de las cuentas. Contiene el asiento final (Dbre. 31, nueve reales al Preceptor, orden n.º 15), el total de la data (77-4), la <strong>«Demostración»</strong> con el cargo, la data y la existencia que queda, y el acuerdo de la Municipalidad de Sensentí, de 31 de diciembre de 1856, aprobando las cuentas del tesorero y remitiéndolas al Jefe Político. Al pie empieza la providencia del Gobierno Político del Departamento de Gracias, de 24 de enero de 1857, que continúa en IMG_1609.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">del frente     76.3.</span>
+<span class="ln">Dbe. 31.</span>
+<span class="ln">Son data nuebe reales que se</span>
+<span class="ln">mandaron pagar al Preceptor</span>
+<span class="ln">segun la ord. N.º 15. y se com</span>
+<span class="ln">prueba esta partida con la         1. 1</span>
+<span class="ln">firma del recipiente  —  —        ————</span>
+<span class="ln">Luis Lopez             77  4</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Matias Molina</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Demostracion</span>
+<span class="ln">—————————</span>
+<span class="ln">Son Cargo  —  —  —  —        82-6 —</span>
+<span class="ln">Son Data   —  —  —  —        77-4</span>
+<span class="ln">———————</span>
+<span class="ln">Queda de existencia            05-2</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Sala emmunicipal de Sensenti Dbe. 31 de 1856</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Quedan aprovadas las cuentas del</span>
+<span class="ln">Tesorero y pasen al S.or Jefe Politico p.a</span>
+<span class="ln">su aprobacion  ▬▬</span>
+<span class="ln">Ruperto Fuentes    Quirino Mej<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>           <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Gobierno Politico del Departamento de</span>
+<span class="ln">Graciaz  —  Enero veinticuatro de mil</span>
+<span class="ln">ochocientoz cincuenta y siete. Vistaz y re</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <table><thead><tr><th>Concepto</th><th>Pesos</th><th>Reales</th></tr></thead><tbody>
+<tr><td>Del frente (arrastre)</td><td>76</td><td>3</td></tr>
+<tr><td>Dbre. 31 — Nueve reales al Preceptor, orden n.º 15</td><td>1</td><td>1</td></tr>
+<tr><td><strong>Total de la data</strong></td><td><strong>77</strong></td><td><strong>4</strong></td></tr>
+</tbody></table>
+<p><strong>Demostración</strong></p>
+<table><thead><tr><th></th><th>Pesos</th><th>Reales</th></tr></thead><tbody>
+<tr><td>Son Cargo</td><td>82</td><td>6</td></tr>
+<tr><td>Son Data</td><td>77</td><td>4</td></tr>
+<tr><td><strong>Queda de existencia</strong></td><td><strong>5</strong></td><td><strong>2</strong></td></tr>
+</tbody></table>
+<p><strong>Las dos operaciones cuadran</strong>: 76-3 + 1-1 = 77-4 (con la conversión correcta de nueve reales en 1 peso 1 real), y 82-6 − 77-4 = 5-2.</p>
+<p>Sala municipal de Sensentí, 31 de diciembre de 1856. «Quedan aprobadas las cuentas del Tesorero y pasen al Sr. Jefe Político para su aprobación.» — Firman <strong>Ruperto Fuentes</strong> y <strong>Quirino Mej[ía]</strong>, ambos con rúbrica. — Gobierno Político del Departamento de Gracias, 24 de enero de 1857: «Vistas y re[visadas]…» <em>(sigue en IMG_1609)</em>.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> alta. Es, con IMG_1603, la plana más segura del tramo: el asiento, el total, la demostración y la fecha se leen sin dudas y la aritmética se comprueba en los dos sentidos. Solo queda sin fijar el apellido del segundo firmante municipal, «Quirino Mej[...]», cortado por el borde derecho del folio; y la firma «Matias Molina», que leo con confianza pero sin poder decir en qué calidad firma, pues no lleva mención de cargo.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1609">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 10 de 10</span><h3>IMG_1609</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1609" aria-label="Ampliar la lámina IMG_1609">
+        <img src="../img/libro1856/p010.jpg" alt="Fotografía de la lámina IMG_1609" loading="lazy">
+      </button>
+      <figcaption>Papel en buen estado, más limpio que el resto del tramo, con amplio blanco en la mitad inferior. Tinta pardo-negra, fina y muy legible. <strong>Sello de caja xilográfico</strong> en el margen inferior izquierdo: escudo con haz y dos cornetas cruzadas bajo un sol radiante con rostro, y leyenda en dos líneas dentro de recuadro. Dos manchones de tinta en el margen izquierdo. El folio está algo abombado a la derecha: <strong>por ese borde se pierden las últimas dos o tres sílabas de casi todos los renglones</strong>, que es la pérdida principal de esta plana. Al pie se transparenta, del otro lado, escritura de la hoja siguiente. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Continuación y cierre de la providencia del Jefe Político del Departamento de Gracias que había empezado al pie de IMG_1608: aprueba en todas sus partes las cuentas del tesorero municipal de Sensentí del año de 1856, llevadas con intervención del <strong>contador nombrado por la Corporación</strong>, declara solvente al tesorero del fondo que administró y manda dársele copia por no haber papel sellado para la notificación. Lleva el sello de caja del Gobierno Político y Militar del Departamento de Gracias y tres firmas.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">visadaz laz cuentaz que llevó e<u class="exp" title="abreviatura desarrollada">[l Te]</u></span>
+<span class="ln">sorero Municipal de Sensenti, <u class="exp" title="abreviatura desarrollada">[con interven]</u></span>
+<span class="ln">cion del Contador nombrado por <u class="exp" title="abreviatura desarrollada">[dic]</u></span>
+<span class="ln">ha Corporacion, en el año de 85<u class="exp" title="abreviatura desarrollada">[6]</u></span>
+<span class="ln">laz que habiendose encontrado con<u class="exp" title="abreviatura desarrollada">[for]</u></span>
+<span class="ln">mez; por tanto: apruevanse e<u class="exp" title="abreviatura desarrollada">[n to]</u></span>
+<span class="ln">daz suz partez; quedando sol<u class="exp" title="abreviatura desarrollada">[vente]</u></span>
+<span class="ln">el Tesorero del fondo que ad<u class="exp" title="abreviatura desarrollada">[minis]</u></span>
+<span class="ln">tró. Desele copia del presente <u class="exp" title="abreviatura desarrollada">[por]</u></span>
+<span class="ln">no haber papel sellado para la <u class="exp" title="abreviatura desarrollada">[no]</u></span>
+<span class="ln">tificacion que debia darsele — Provei<u class="exp" title="abreviatura desarrollada">[do]</u></span>
+<span class="ln">por ante el S.rio. .</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿P.?]</u></u> Rufi<u class="exp" title="abreviatura desarrollada">[n]</u>o Alvarado</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">⟦sello:⟧ GBNO. POLIT.º I MILITAR</span>
+<span class="ln">⟦sello:⟧ DL. DPTO. D. GRACIAS.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Victor Pineda</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Eulojio <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Arés?]</u></u></span>
+<span class="ln">S.rio</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>«[…Vistas y re]visadas las cuentas que llevó el Tesorero Municipal de Sensentí, con intervención del Contador nombrado por dicha Corporación en el año de [18]56, las que, habiéndose encontrado conformes, por tanto: apruébanse en todas sus partes, quedando solvente el Tesorero del fondo que administró. Dénsele copia del presente por no haber papel sellado para la notificación que debía dársele. — Proveído por ante el Secretario.»</p>
+<p>Firman: <strong>[¿P.?] Rufino Alvarado</strong>; <strong>Víctor Pineda</strong>; <strong>Eulojio [¿Arés?]</strong>, Secretario. Los tres con rúbrica. Sello: <em>Gobierno Político y Militar del Departamento de Gracias</em>.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media-alta. El sentido del auto es seguro y el sello se lee entero. Lo que no se deja fijar son los finales de renglón comidos por la curvatura del borde derecho —los restituyo entre corchetes solo donde la fórmula notarial no admite otra cosa, y en «en el año de 85[6]» el último guarismo está justo en el filo—, la inicial del primer firmante (leo «P.» pero podría ser «J.») y el apellido del secretario, que transcribo «[¿Arés?]» sin darlo por bueno.</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4><strong>J. Medina</strong></h4>
+  <p class="papel">habilita el libro y firma la diligencia de apertura</p>
+  <p class="calidad">Sensentí, 2[¿4?] de febrero de 1856</p>
+</div>
+<div class="persona">
+  <h4><strong>Juan Monterola</strong></h4>
+  <p class="papel">tesorero municipal; firma los enteros</p>
+  <p class="calidad">aparece repetidamente como enterante</p>
+</div>
+<div class="persona">
+  <h4><strong>Rafael Fuentes</strong></h4>
+  <p class="papel">firma un entero</p>
+  <p class="calidad">22 de febrero de 1856</p>
+</div>
+<div class="persona">
+  <h4><strong>[¿León Leiva?]</strong></h4>
+  <p class="papel">tercera rúbrica en el entero del 22 de febrero</p>
+  <p class="calidad">lectura con reservas</p>
+</div>
+<div class="persona">
+  <h4><strong>El alcalde auxiliar de Chucuyu[…]</strong></h4>
+  <p class="papel">entera cuatro pesos cuatro reales</p>
+  <p class="calidad"><strong>topónimo sin resolver</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>El alcalde de los Gualtava[s]</strong></h4>
+  <p class="papel">entera con el anterior</p>
+  <p class="calidad"></p>
+</div>
+<div class="persona">
+  <h4><strong>Julián Mejía</strong></h4>
+  <p class="papel">entera mil pesos</p>
+  <p class="calidad"></p>
+</div>
+<div class="persona">
+  <h4><strong>Matías Molina</strong>, <strong>Ruperto Fuentes</strong></h4>
+  <p class="papel">preceptores de la escuela; reciben sus mesadas</p>
+  <p class="calidad">firman los recibos</p>
+</div>
+<div class="persona">
+  <h4><strong>Marcelo Guzmán</strong></h4>
+  <p class="papel">síndico</p>
+  <p class="calidad"></p>
+</div>
+<div class="persona">
+  <h4><strong>Pablo Toro</strong>, <strong>Luis López</strong>, <strong>Quirino Mesías</strong>, <strong>Francisco Sandoval</strong></h4>
+  <p class="papel">municipalidad y firmantes de recibos</p>
+  <p class="calidad"></p>
+</div>
+<div class="persona">
+  <h4><strong>El Jefe Político del Departamento de Gracias</strong></h4>
+  <p class="papel">revisa y aprueba las cuentas</p>
+  <p class="calidad">providencia de 24 de enero de 1857</p>
+</div></div>
+</section>
+
+<section class="extra wrap">
+  <h2>Nota final sobre el estado de las tomas</h2>
+  <p><strong>En IMG_1602, 1605 y 1607 la columna de importes cae sobre la curva del lomo del libro</strong> y se pierde total o parcialmente; esas cifras van como `[...]`. Es el defecto característico de fotografiar un libro encuadernado sin abrirlo del todo, y es reparable: basta una toma nueva con el volumen mejor abierto o con el lomo apoyado.</p>
+<p><strong>IMG_1601 merece una toma nueva por sí sola</strong>, y con luz rasante, para intentar separar el borrón del trazo que hay debajo. Es una sola plana, y de ella depende un topónimo que el proyecto lleva tiempo persiguiendo.</p>
+</section>
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

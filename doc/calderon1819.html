@@ -1,0 +1,1085 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Un sastre de Guatemala y un carpintero de San Salvador — Papeles de Sensentí</title>
+<meta name="description" content="Dos oficiales de oficio, los dos mulatos y los dos alfabetizados, riñen a cuchillo junto a la iglesia de Sensentí después de beber aguardiente. Uno se acoge a sagrado. Seis semanas después piden juntos que se corte la causa porque son amigos. Doce planas de movilidad artesanal entre tres provincias.">
+<meta property="og:title" content="Un sastre de Guatemala y un carpintero de San Salvador">
+<meta property="og:description" content="Dos oficiales de oficio, los dos mulatos y los dos alfabetizados, riñen a cuchillo junto a la iglesia de Sensentí después de beber aguardiente. Uno se acoge a sagrado. Seis semanas después piden juntos que se corte la causa porque son amigos. Doce planas de movilidad artesanal entre tres provincias.">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* tablas dentro del estudio */
+table{border-collapse:collapse;width:100%;margin:20px 0;font-size:.92em;
+  background:var(--card,transparent);display:block;overflow-x:auto}
+@media(min-width:620px){table{display:table}}
+th,td{border:1px solid var(--rule);padding:9px 11px;text-align:left;vertical-align:top;line-height:1.5}
+th{background:var(--rule2);color:var(--ink);font-weight:600;font-size:.86em;
+  letter-spacing:.02em;text-transform:none}
+tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--rule) 22%,transparent)}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Causa criminal de 1819</p>
+  <h1>Un sastre de Guatemala y un carpintero de San Salvador</h1>
+  <p class="dek">Dos oficiales de oficio, los dos mulatos y los dos alfabetizados, riñen a cuchillo junto a la iglesia de Sensentí después de beber aguardiente. Uno se acoge a sagrado. Seis semanas después piden juntos que se corte la causa porque son amigos. Doce planas de movilidad artesanal entre tres provincias.</p>
+  <div class="meta"><span><strong>12 láminas</strong> · IMG_1651 – IMG_1662</span><span>6 de mayo a junio de 1819</span><span>Papel sellado 3.º de 1804-1805, habilitado, Fernando VII</span><span>Sensentí · Cucuyagua · Antigua Guatemala · San Salvador</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">12</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>Doce planas, una causa criminal entera de mayo a junio de <strong>1819</strong>, desde la carátula hasta la absolución. Y lo que la hace valiosa no es el delito, que es menor, sino quiénes son los dos hombres.</p>
+<p><strong>Lo que pasó.</strong> El 6 de mayo de 1819, junto a la iglesia de Sensentí y después de beber aguardiente, riñeron <strong>Pedro Pablo Calderón</strong> y <strong>José María Alvarado</strong>. Según las confesiones, Alvarado amenazó primero con un machete calabozo y luego, ya armado de cuchillo, tiró dos estocadas; Calderón, que llevaba un cuchillo envainado bajo la camisa desde la madrugada, le hizo una herida en la cara, <strong>«como un dedo abajo del ojo, desde la nariz para el [¿sentido?]»</strong>. Calderón entregó el cuchillo a don Miguel [¿Carrejón?] y <strong>se acogió a sagrado</strong> en la iglesia.</p>
+<p><strong>El asilo, y cómo se levanta.</strong> El juez <strong>Juan José Cartejón</strong> cercó la iglesia con cuatro hombres y nombró a un «[…] de [¿Aldana?]» para reconocer y curar la herida. Desde <strong>Cucuyagua</strong>, el 7 de mayo, <strong>José María Rivera</strong> resolvió que el delito <strong>«no está exceptuado en la Bula Gregoriana»</strong> —es decir, que cae dentro de los casos en que la inmunidad eclesiástica se respeta—, que el reo goce de ella, y que se presente al juez territorial; y libró oficio para extraerlo. La inmunidad se reconoce y se negocia en el mismo acto: el reo sale de la iglesia sin que la iglesia sea violada.</p>
+<p><strong>Cómo acaba.</strong> En junio, en papel de sello tercero de 1804-1805 habilitado para Fernando VII, ambos presos piden juntos que se corte la causa: <strong>«siendo como somos amigos, y no haber habido más motivo que el referido… quedamos en la misma paz y unión anterior»</strong>. El auto los absuelve: sano ya el rasguño, se los pone en libertad pagando costas, con apercibimiento para lo sucesivo.</p>
+<p>## Los dos artesanos, tal como el papel los da</p>
+<p>Ésta es la razón para publicar estas planas.</p>
+<table><thead><tr><th></th><th><strong>Pedro Pablo Calderón</strong></th><th><strong>José María Alvarado</strong></th></tr></thead><tbody>
+<tr><td><strong>Naturaleza</strong></td><td>de la <strong>Antigua Guatemala</strong></td><td>de la ciudad de <strong>San Salvador</strong></td></tr>
+<tr><td><strong>Vecindad</strong></td><td>residente en el partido de Sensentí</td><td>vecino de San Salvador</td></tr>
+<tr><td><strong>Oficio</strong></td><td><strong>sastre</strong></td><td><strong>carpintero</strong></td></tr>
+<tr><td><strong>Calidad</strong></td><td><strong>«de calidad mulato»</strong></td><td><strong>«de calidad mulato»</strong></td></tr>
+<tr><td><strong>Estado</strong></td><td>viudo</td><td>soltero</td></tr>
+<tr><td><strong>Edad</strong></td><td>«[…]enta y cuatro» — la decena tapada por un borrón</td><td>«de [¿veinte?] y […]» — rotura del papel</td></tr>
+<tr><td><strong>¿Firma?</strong></td><td><strong>Sí</strong></td><td><strong>Sí</strong></td></tr>
+</tbody></table>
+<p>Dos oficiales de oficio, uno guatemalteco y otro salvadoreño, los dos mulatos, los dos alfabetizados, encontrándose en un pueblo del occidente de Honduras y riñendo a la puerta de su iglesia. <strong>Ninguno de los dos usa la fórmula de no saber firmar</strong> — y en este archivo, donde en la causa criminal de 1795 no firmó ni uno solo de los cinco declarantes, eso salta a la vista.</p>
+<p><strong>Una corrección al catálogo:</strong> la calidad de mulato se atribuía sólo a Alvarado. <strong>La declaran los dos.</strong></p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>El delito da poco: una riña de aguardiente junto a la iglesia y una absolución un mes después. Da mucho la filiación de los dos hombres, que el escribano anotó completa. Pedro Pablo Calderón, sastre natural de la Antigua Guatemala, y José María Alvarado, carpintero de San Salvador, son ambos «de calidad mulato» y ambos <strong>firman</strong>. Calidad, oficio y alfabetización aparecen en un mismo sujeto, un dato que los padrones no dan.</p>
+<p>Frente al documento anterior de este lote se ve cómo funcionaba el sistema de calidades. En 1795 la Corona exige limpieza de sangre a quien aspire a un oficio. En 1819, en el mismo partido, dos hombres declarados mulatos ejercen oficio, se mueven entre tres capitales del reino, litigan y firman. No hay contradicción: la limpieza de sangre filtraba el acceso a los <strong>oficios de república</strong>, no el trabajo artesanal, la vecindad ni la capacidad de comparecer en juicio. La norma y la vida cotidiana operaban en planos distintos.</p>
+<p>Un sastre guatemalteco y un carpintero salvadoreño coinciden en un pueblo del occidente hondureño, lo que sitúa a Sensentí como punto de paso en un circuito artesanal. La alfabetización acompaña ese perfil: en la causa de 1795 no firmó ninguno de los cinco declarantes, y en el libro municipal de 1856 el síndico y dos regidores firmaron a ruego.</p>
+<p>Es también un caso limpio de asilo eclesiástico: Calderón se acogió a sagrado y se resolvió que el delito «no está exceptuado en la Bula Gregoriana».</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#f1651">51</a><a href="#f1652">52</a><a href="#f1653">53</a><a href="#f1654">54</a><a href="#f1655">55</a><a href="#f1656">56</a><a href="#f1657">57</a><a href="#f1658">58</a><a href="#f1659">59</a><a href="#f1660">60</a><a href="#f1661">61</a><a href="#f1662">62</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="f1651">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 12</span><h3>IMG_1651</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1651" aria-label="Ampliar la lámina IMG_1651">
+        <img src="../img/calderon1819/p001.jpg" alt="Fotografía de la lámina IMG_1651" loading="lazy">
+      </button>
+      <figcaption>Hoja de guarda de papel de trapo grueso, sin sello visible en la parte fotografiada, con el borde derecho (que en la foto queda abajo) deshilachado y con pérdidas. Tinta ferrogálica desvaída a pardo claro, muy diluida; la escritura es una caligrafía cancilleresca de rasgos largos y cuidados, distinta de la mano del cuerpo del proceso. Roturas en el margen. <strong>La plana está fotografiada girada 90°: hay que rotarla en sentido antihorario.</strong> El encuadre incluye por la izquierda el lomo del legajo y, por el borde inferior, la orla de la hoja siguiente, cuyo texto asoma y no pertenece a esta plana. Se trasluce escritura del verso.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Carátula del expediente. Da el año, el título de la causa y el juzgado. Nada más: ni foliación de legajo ni notas de archivero antiguas visibles.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Año        <u class="exp" title="abreviatura desarrollada">[monograma]</u>        1819</span>
+<span class="ln">Criminales Contra Pedro Pablo</span>
+<span class="ln">Calderon dela antigua Guatemala p<u class="exp" title="abreviatura desarrollada">[o]</u>r</span>
+<span class="ln">una herida q<u class="exp" title="abreviatura desarrollada">[ue]</u> executo en Josef M<u class="exp" title="abreviatura desarrollada">[arí]</u>a</span>
+<span class="ln">Albarado Vecino de San Salbador,</span>
+<span class="ln">Jusg<u class="exp" title="abreviatura desarrollada">[a]</u>do de Sensenti</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Año de 1819. Criminales contra Pedro Pablo Calderón, de la Antigua Guatemala, por una herida que ejecutó en Josef María Albarado, vecino de San Salbador. Juzgado de Sensentí.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta para el cuerpo del título; <strong>media-alta para la cifra del año</strong>, porque los cuatro guarismos son de trazo muy fino y el segundo «1» va escrito como asta inclinada. La lectura 1819 queda asegurada por las fechas del interior del expediente, no por la carátula sola.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1652">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 12</span><h3>IMG_1652</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1652" aria-label="Ampliar la lámina IMG_1652">
+        <img src="../img/calderon1819/p002.jpg" alt="Fotografía de la lámina IMG_1652" loading="lazy">
+      </button>
+      <figcaption>Papel sellado; en el ángulo superior izquierdo hay resto de sello de rueda con armas reales y habilitación, muy empastado y no legible en la foto. Tinta ferrogálica parda, bastante desvaída en el tercio superior (la cabecera con el nombre y título del juez es la parte peor conservada de la plana) y más firme en el centro. Manchas de humedad y un borrón de tinta grande sobre la línea donde se nombra al que ha de curar al herido, que oculta justamente el nombre de pila. Roturas y pérdida de esquina en el borde inferior derecho. Escritura derecha, unas 26 líneas, caja llena. La foto está bien orientada; el encuadre deja ver el lomo a la izquierda y, a la derecha, el borde de la hoja contigua.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">El auto cabeza de proceso: la noticia que llega al juez el mismo día del suceso, con la descripción de la riña, la de la herida, la del acogimiento a sagrado y las primeras providencias —custodia de la iglesia, nombramiento de quien reconozca y cure al herido, y orden de pasar a la confesión—. Es la pieza más informativa del tramo. Al pie, un segundo asiento, casi perdido, de notificación o de «lo proveyó y firmó».</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan Jose Cartejon Jues <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Sensenti?]</u></u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Oy?]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> à <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en un Dia siendo las ocho d<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln">la mañana se me da noticia q<u class="exp" title="abreviatura desarrollada">[ue]</u> dos Oficiales el uno de</span>
+<span class="ln">San Salbador nombrado Jose M<u class="exp" title="abreviatura desarrollada">[arí]</u>a Albarado de oficio Carpin-</span>
+<span class="ln">tero, y el otro de Guatemala llamado Pedro Pablo Calde-</span>
+<span class="ln">ron, de oficio Sastre, estaban en riña junto ala Yglecia</span>
+<span class="ln">y haviendo inmediatam<u class="exp" title="abreviatura desarrollada">[en]</u>te mandado Ministros de Justicia à</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> fueran aprendidos, y desarmados, en quanto llegaron <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿ya?]</u></u></span>
+<span class="ln">Calderon se havia introducido en la Yglecia sin ninguna</span>
+<span class="ln">herida, y Albarado Corrio apresentarse, en el Cabildo de-</span>
+<span class="ln">sangrandose de la Erida q<u class="exp" title="abreviatura desarrollada">[ue]</u> recibio en la Cara Como una</span>
+<span class="ln">dedo abajo del ojo, desde la Nariz para el <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Sentido?]</u></u>, siendo las ho-</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿ja?]</u></u>s de uno y otro Cuchillos echisos Como de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Cada uno <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> les fueron Quitados; y p<u class="exp" title="abreviatura desarrollada">[o]</u>r la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de esta Causa, y la fuga q<u class="exp" title="abreviatura desarrollada">[ue]</u> hizo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">el reo Calderon Custodiada la d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha Yglecia con <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿quatro?]</u></u> hom-</span>
+<span class="ln">bres cercandole las Salidas; y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y p<u class="exp" title="abreviatura desarrollada">[ar]</u>a el Reconocim<u class="exp" title="abreviatura desarrollada">[ien]</u>to se le Nombra <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ide de Su Curacion al D<u class="exp" title="abreviatura desarrollada">[o]</u>n <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Aldana?]</u></u>, y p<u class="exp" title="abreviatura desarrollada">[ro]</u>-</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿ce?]</u></u>da luego ala Confecion <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> otro q<u class="exp" title="abreviatura desarrollada">[uan]</u>do <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿haya?]</u></u> lu-</span>
+<span class="ln">gar, Conforme alo Prevenido delo procedido y d<u class="exp" title="abreviatura desarrollada">[e]</u>-</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿ligen?]</u></u>cias q<u class="exp" title="abreviatura desarrollada">[ue]</u> Deban practicarse</span>
+<span class="ln">Juan Jose Cartejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[segundo asiento, al pie, casi perdido:]</span>
+<span class="ln">En el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> antecede lo Prove<u class="exp" title="abreviatura desarrollada">[y]</u>ó y firmó <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> S<u class="exp" title="abreviatura desarrollada">[eño]</u>r D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan Jose <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Conocim<u class="exp" title="abreviatura desarrollada">[ien]</u>to <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Don Juan José Cartejón, juez […] de […]. Hoy, en un día, siendo las ocho de la mañana, se me da noticia de que dos oficiales —el uno de San Salvador, nombrado José María Albarado, de oficio carpintero, y el otro de Guatemala, llamado Pedro Pablo Calderón, de oficio sastre— estaban en riña junto a la iglesia. Y habiendo mandado inmediatamente ministros de justicia a que fuesen prendidos y desarmados, en cuanto llegaron Calderón ya se había introducido en la iglesia sin ninguna herida, y Albarado corrió a presentarse en el cabildo, desangrándose de la herida que recibió en la cara, como un dedo debajo del ojo, desde la nariz hacia la sien; siendo las hojas de uno y otro cuchillos hechizos, como de […] cada uno, que les fueron quitados. Y por […] de esta causa, y la fuga que hizo […] el reo Calderón, custodiada dicha iglesia con cuatro hombres cercándole las salidas; y […]. Y para el reconocimiento se le nombra […] y […] de su curación al don […] de Aldana; y procédase luego a la confesión […] cuando haya lugar, conforme a lo prevenido, de lo procedido y diligencias que deban practicarse. Juan José Cartejón [rúbrica].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta en el cuerpo central (de «se me da noticia» hasta «les fueron Quitados»), que es donde está lo sustantivo y donde la tinta aguanta. <strong>Baja en la cabecera</strong>: el nombre del juez se lee bien, pero su título y jurisdicción no se dejan fijar y los he dejado en `[...]`; no arriesgo lectura. <strong>Baja también</strong> en tres pasajes: (a) la palabra tras «desde la Nariz para el», que leo con reserva «Sentido» (la sien) por la forma del trazo, pero podría ser otra; (b) la medida de las hojas de los cuchillos, ilegible; (c) el nombre del cirujano o curandero, tapado por un borrón: solo se salva lo que parece un apellido «de Aldana», que concuerda con una de las dos firmas de IMG_1653. El asiento del pie es prácticamente ilegible.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1653">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 12</span><h3>IMG_1653</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1653" aria-label="Ampliar la lámina IMG_1653">
+        <img src="../img/calderon1819/p003.jpg" alt="Fotografía de la lámina IMG_1653" loading="lazy">
+      </button>
+      <figcaption>Papel sellado; la plana está muy desvaída, con la tinta lavada y fuerte traslucidez del verso, lo que la hace en su mayor parte ilegible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Un asiento del juzgado con dos firmas al pie, que por lo poco que se lee parece la <strong>declaración o reconocimiento sobre la herida</strong> —se nombra a José María Albarado y se refiere el suceso a «seis de Mayo próximo pasado»—, encajando con el reconocimiento que manda hacer el auto de IMG_1652. Lleva además, en cabeza, una línea de fecha y un breve epígrafe centrado que no se dejan leer.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> [epígrafe centrado, ilegible] <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Domingo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Pedro Pablo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Juan Jose <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Cartejon?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Jose M<u class="exp" title="abreviatura desarrollada">[arí]</u>a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Jose dela <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Comparec<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> dixeron <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la Herida <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a J<u class="exp" title="abreviatura desarrollada">[ose]</u> M<u class="exp" title="abreviatura desarrollada">[arí]</u>a Albarado, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en seis de Mayo p<u class="exp" title="abreviatura desarrollada">[ro]</u>-</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿xi?]</u></u>mo pasado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la Nariz <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Y es <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> dela declaracion <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Alvarado y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> lo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Jose Cartejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Agustin?]</u></u> de Aldana <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>No es posible dar una lectura corrida. Lo único que queda firme: que comparecieron y dijeron algo relativo a <strong>la herida de José María Albarado</strong>, que el hecho ocurrió <strong>en seis de mayo próximo pasado</strong>, que se menciona <strong>la nariz</strong> (como en la descripción de la herida del auto), que se alude a <strong>la declaración</strong> de Alvarado, y que el asiento va firmado por <strong>[Juan] José Cartejón</strong> y por <strong>[¿Agustín?] de Aldana</strong>, apellido que coincide con el del nombrado en IMG_1652 para la curación.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja, y en la mayor parte nula. Fijo con seguridad razonable únicamente: «Albarado», «en seis de Mayo p[ró]ximo pasado», «de la Nariz», «declaracion», y los dos apellidos de las firmas. Todo lo demás queda en `[...]`. El nombre de pila del segundo firmante no se deja fijar: leo un arranque que podría ser «Agustín», pero no lo doy por bueno.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1654">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 12</span><h3>IMG_1654</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1654" aria-label="Ampliar la lámina IMG_1654">
+        <img src="../img/calderon1819/p004.jpg" alt="Fotografía de la lámina IMG_1654" loading="lazy">
+      </button>
+      <figcaption>Media hoja suelta, distinta del papel del juzgado: más limpia, tinta negra bien cargada, letra menuda y muy cursiva, de otra mano. No se ve sello en la parte fotografiada. Sin foliación. Márgenes con pequeños desgarros; el borde inferior derecho tiene pérdida. <strong>La plana está fotografiada girada 90°: hay que rotarla en sentido antihorario.</strong> El encuadre muestra la hoja sobre el conjunto del legajo, con hojas contiguas visibles arriba y abajo.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">La <strong>providencia sobre la inmunidad eclesiástica</strong>, dictada fuera de Sensentí, en <strong>Cucuyagua</strong>, el día siguiente al suceso. Declara que el delito de Calderón no está entre los exceptuados por la <strong>Bula Gregoriana</strong> y, en consecuencia, que goce de la inmunidad y se le presente al juez territorial. Es la pieza que autoriza la entrega del reo acogido a sagrado.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Mediando <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> no estar exceptuad<u class="exp" title="abreviatura desarrollada">[o]</u> en la Bula</span>
+<span class="ln">Gregoriana el delito q<u class="exp" title="abreviatura desarrollada">[ue]</u> cometio Pedro Pablo Cal-</span>
+<span class="ln">deron el Dia 6, del corriente gose dela immu-</span>
+<span class="ln">nidad, y precentese al Jues territorial para</span>
+<span class="ln">el efecto q<u class="exp" title="abreviatura desarrollada">[ue]</u> haya lugar.</span>
+<span class="ln">Cucuyag<u class="exp" title="abreviatura desarrollada">[u]</u>a Mayo 7, de 819,</span>
+<span class="ln">Jose Maria</span>
+<span class="ln">Rivera</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Mediando […] no estar exceptuado en la Bula Gregoriana el delito que cometió Pedro Pablo Calderón el día 6 del corriente, goce de la inmunidad, y preséntese al juez territorial para el efecto que haya lugar. Cucuyagua, mayo 7 de [1]819. José María Rivera [rúbrica].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta. Solo queda sin fijar el verbo que sigue a «Mediando» (algo como «haber» o «hallarse»), que dejo en `[...]`; el sentido de la cláusula —que el delito <strong>no</strong> está exceptuado y por tanto el reo goza de inmunidad— no depende de esa palabra. La fecha se lee con el año abreviado «819», usual en la época para 1819. Firma José María Rivera, con rúbrica; no hay otra firma ni testigos.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1655">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 12</span><h3>IMG_1655</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1655" aria-label="Ampliar la lámina IMG_1655">
+        <img src="../img/calderon1819/p005.jpg" alt="Fotografía de la lámina IMG_1655" loading="lazy">
+      </button>
+      <figcaption>Papel liso, más blanco y de mejor calidad que el del juzgado, con verjura marcada. Sin sello. Tinta negra intensa, letra grande, muy espaciada, de la misma mano que IMG_1654; es la plana mejor conservada y más legible del tramo. Dos pliegues de doblado visibles, uno vertical y otro horizontal en el tercio inferior. Rotura con pérdida en el borde inferior, justo sobre la firma, que se come parte del apellido y de la rúbrica; manchas de tinta alrededor. En el ángulo inferior izquierdo asoma la hoja de debajo con escritura ajena a esta plana. Foto derecha, encuadre holgado.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">El <strong>oficio de remisión</strong> que acompaña a la providencia anterior: Rivera devuelve el papel y consiente en que, a su vista, se extraiga de la iglesia al reo Pedro Pablo Calderón. Misma fecha y mismo lugar que IMG_1654, y forman por tanto un solo envío de dos hojas.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Le acompaño el papel q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">me dice en su Oficio 7, del Corr<u class="exp" title="abreviatura desarrollada">[ien]</u>te</span>
+<span class="ln">p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> en su Vista se extraiga</span>
+<span class="ln">dela Yglecia el reo Pedro Pablo</span>
+<span class="ln">Calderon</span>
+<span class="ln">Dios gu<u class="exp" title="abreviatura desarrollada">[ard]</u>e a V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d m<u class="exp" title="abreviatura desarrollada">[ucho]</u>s a<u class="exp" title="abreviatura desarrollada">[ño]</u>s.</span>
+<span class="ln">Cucuyag<u class="exp" title="abreviatura desarrollada">[u]</u>a y Mayo 7 de 1819,,</span>
+<span class="ln">Jose Maria</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Ri]</u>vera</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Le acompaño el papel que me dice en su oficio de 7 del corriente, para que en su vista se extraiga de la iglesia el reo Pedro Pablo Calderón. Dios guarde a vuestra merced muchos años. Cucuyagua, y mayo 7 de 1819. José María Rivera [rúbrica].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta. El año «1819» se lee aquí en cifra completa y sin ambigüedad. Solo el apellido del firmante queda parcialmente comido por el desgarro del papel, pero se completa sin riesgo con la firma íntegra de IMG_1654.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1656">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 12</span><h3>IMG_1656</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1656" aria-label="Ampliar la lámina IMG_1656">
+        <img src="../img/calderon1819/p006.jpg" alt="Fotografía de la lámina IMG_1656" loading="lazy">
+      </button>
+      <figcaption>Papel sellado del juzgado, muy castigado: <strong>numerosos agujeros de corrosión de la tinta</strong> y quemaduras de tinta ferrogálica, uno de ellos grande justo sobre la palabra que da la edad de Calderón; roturas y pérdida importante en el borde derecho y en el inferior, donde faltan los finales de línea. Manchas de humedad en la mitad superior. Tinta parda, letra menuda y apretada, de la mano habitual del escribiente. Foto derecha; el encuadre deja ver por la izquierda el lomo y la hoja anterior, y por la derecha un plano o croquis de terreno de otro expediente que se trasluce y no pertenece a esta causa.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Dos cosas en una plana. Arriba, el cierre de una diligencia anterior con su salvaguarda de enmiendas («Entre lineas = agregandose el papel, y Oficio q[ue] Secita = Vale») y la firma del testigo de asistencia <strong>Ygnacio María de Molina</strong>. Debajo, el comienzo de la <strong>confesión de Pedro Pablo Calderón</strong>, tomada en Sensentí a once de mayo de 1819: juramento, primera pregunta con la <strong>filiación completa del reo</strong>, y arranque de la segunda sobre la causa de su prisión.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>tacion en <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Sensenti?]</u></u> dia siete de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> sobre el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Dia à <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Prosiguen <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> [al interlineado: agregandose el papel y oficio q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>]</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Con <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> = Entre lineas = agre-</span>
+<span class="ln">gandose el papel, y Oficio q<u class="exp" title="abreviatura desarrollada">[ue]</u> Secita = V<u class="exp" title="abreviatura desarrollada">[al]</u>e =</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[¿Ygn[aci]</u>o?] M<u class="exp" title="abreviatura desarrollada">[arí]</u>a de Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En este Pueblo de Sensenti à los <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿once?]</u></u> dias del Mes de Mayo</span>
+<span class="ln">de mil ochocientos Diez y nuebe, ante mi el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de Gov<u class="exp" title="abreviatura desarrollada">[ernaci]</u>on(?)</span>
+<span class="ln">de este Part<u class="exp" title="abreviatura desarrollada">[i]</u>d<u class="exp" title="abreviatura desarrollada">[o]</u> y testig<u class="exp" title="abreviatura desarrollada">[o]</u>s de asis<u class="exp" title="abreviatura desarrollada">[tenci]</u>a à falta de Es<u class="exp" title="abreviatura desarrollada">[criban]</u>o fue pre-</span>
+<span class="ln">sentado por el Mayor de la Guardia y ministros uno de los</span>
+<span class="ln">dos Reos q<u class="exp" title="abreviatura desarrollada">[ue]</u> el delito cometió el dia seis del Corriente m<u class="exp" title="abreviatura desarrollada">[es]</u></span>
+<span class="ln">à quien se le recibio Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to p<u class="exp" title="abreviatura desarrollada">[or]</u> Dios N<u class="exp" title="abreviatura desarrollada">[uest]</u>ro S<u class="exp" title="abreviatura desarrollada">[eño]</u>r, y una S<u class="exp" title="abreviatura desarrollada">[eña]</u>l</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de Cruz en forma de D<u class="exp" title="abreviatura desarrollada">[e]</u>r<u class="exp" title="abreviatura desarrollada">[ech]</u>o, y haviendole hecho <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> su</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> dicho Como se <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿previene?]</u></u>, y Ofreciole decir verdad <u class="exp" title="abreviatura desarrollada">[en]</u></span>
+<span class="ln">lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> Sup<u class="exp" title="abreviatura desarrollada">[ier]</u>e y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> fue<u class="exp" title="abreviatura desarrollada">[re]</u> p<u class="exp" title="abreviatura desarrollada">[re]</u>g<u class="exp" title="abreviatura desarrollada">[untad]</u>o <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">1 Preguntado Como Se llama, de donde es <u class="exp" title="abreviatura desarrollada">[natu]</u>-</span>
+<span class="ln">ral y becino, q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿estado?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Oficio, y edad tiene, dixo: llamarse</span>
+<span class="ln">Pedro Pablo Calderon, Natural dela Antigua Guatemala y</span>
+<span class="ln">recidente en este Part<u class="exp" title="abreviatura desarrollada">[i]</u>d<u class="exp" title="abreviatura desarrollada">[o]</u> de Sensenti, de Oficio Sastre,</span>
+<span class="ln">Calidad Mulato de estado Viudo, y d<u class="exp" title="abreviatura desarrollada">[e]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>enta, y quatro</span>
+<span class="ln">de Edad y responde</span>
+<span class="ln">2 Preg<u class="exp" title="abreviatura desarrollada">[untad]</u>o q<u class="exp" title="abreviatura desarrollada">[ue]</u> si le <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de orden de quien, en <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> Sea, y p<u class="exp" title="abreviatura desarrollada">[o]</u>r q<u class="exp" title="abreviatura desarrollada">[u]</u>e Causa d<u class="exp" title="abreviatura desarrollada">[ix]</u>o: la presente d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho: q<u class="exp" title="abreviatura desarrollada">[ue]</u> lo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> se <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿havia?]</u></u> Cosido <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la Yglecia p<u class="exp" title="abreviatura desarrollada">[o]</u>r q<u class="exp" title="abreviatura desarrollada">[ue]</u> le <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">dixo q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a p<u class="exp" title="abreviatura desarrollada">[re]</u>nder los Minis<u class="exp" title="abreviatura desarrollada">[tro]</u>s de Justicia <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">cion de Orden del actual Jues, el seis del Corr<u class="exp" title="abreviatura desarrollada">[ien]</u>te <u class="exp" title="abreviatura desarrollada">[mes]</u></span>
+<span class="ln">de Mayo; Que la Causa concidera <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>nido Con Jose M<u class="exp" title="abreviatura desarrollada">[arí]</u>a Albarad<u class="exp" title="abreviatura desarrollada">[o]</u> Con <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> del Dia q<u class="exp" title="abreviatura desarrollada">[ue]</u> dice estab<u class="exp" title="abreviatura desarrollada">[a]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[3]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y de no <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[Cierre de la diligencia anterior, con la salvaguarda:] «Entre líneas: agregándose el papel y oficio que se cita. Vale». Ygnacio María de Molina [rúbrica].</p>
+<p>En este pueblo de Sensentí, a los once días del mes de mayo de mil ochocientos diez y nueve, ante mí, el señor […], y testigos de asistencia a falta de escribano, fue presentado por el mayor de la guardia y ministros uno de los dos reos que cometieron el delito el día seis del corriente mes; a quien se le recibió juramento por Dios Nuestro Señor y una señal de cruz, en forma de derecho, y habiéndolo hecho como se previene, y ofreciendo decir verdad en lo que supiere y le fuere preguntado:</p>
+<ol>
+<li>Preguntado cómo se llama, de dónde es natural y vecino, qué estado, oficio y edad tiene, dijo: <strong>llamarse Pedro Pablo Calderón, natural de la Antigua Guatemala y residente en este partido de Sensentí, de oficio sastre, calidad mulato, de estado viudo, y de […]enta y cuatro años de edad. Y responde.</strong></li>
+</ol>
+<ol>
+<li>Preguntado si lo han traído de orden de quién, […] y por qué causa, dijo […] que se había acogido a la iglesia porque le […]; dijo que […] a prender los ministros de justicia […] de orden del actual juez, el seis del corriente mes de mayo; que la causa considera […] con José María Albarado […].</li>
+</ol>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en la línea de la filiación, que es lo que más importa: «Pedro Pablo Calderon, Natural dela Antigua Guatemala y recidente en este Part[i]d[o] de Sensenti, de Oficio Sastre, Calidad Mulato de estado Viudo» se lee sin reserva. <strong>La edad no se puede fijar</strong>: el borrón se come la decena y solo queda «[…]enta y quatro», de modo que puede ser cuarenta, cincuenta, sesenta o setenta y cuatro; <strong>no la completo</strong>. Media en la data: «once» es probable pero el trazo lleva un borrón encima, y lo marco con duda; el mes y el año, en cambio, están escritos con todas las letras y son seguros. Baja en la segunda pregunta y en todo el pie de la plana, donde la pérdida de papel se lleva los finales de línea. El título del juez ante quien se toma la confesión no se deja fijar.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1657">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 7 de 12</span><h3>IMG_1657</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1657" aria-label="Ampliar la lámina IMG_1657">
+        <img src="../img/calderon1819/p007.jpg" alt="Fotografía de la lámina IMG_1657" loading="lazy">
+      </button>
+      <figcaption>Papel sellado; en el ángulo superior izquierdo, <strong>sello de rueda circular con armas reales coronadas y cifra «4»</strong>, con leyenda perimetral solo en parte legible: es una habilitación estampada sobre el papel. Tinta parda clara, algo desvaída en la mitad superior. Tres agujeros de corrosión de tinta en la mitad inferior izquierda, que se comen palabras; rasgones y pérdida grande en el borde inferior izquierdo. Pliegue vertical marcado a la derecha, donde la hoja se arquea y la escritura se pierde en sombra. Unas 25 líneas. Foto derecha; encuadre con el lomo a la izquierda y la hoja siguiente asomando por la derecha.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Continuación de la confesión de Calderón: su relato de los hechos del 6 de mayo. Aparecen los nombres de <strong>Balencio Gonsales</strong>, que acompañaba a Alvarado, y de <strong>don Juan José Rueda</strong>, a cuya casa iba Calderón a cortar una obra; el machete calabozo con que Alvarado lo amenazó, las tijeras de sastre que iba a buscar a su posada, y el encuentro final en la calle.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el Dia seis del Corriente <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> Se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> las <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en Compañia de</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Con ellas <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>; q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> fue el dia delo acaecido y à las siete dela <u class="exp" title="abreviatura desarrollada">[ma]</u>-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ñana]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en Compañia de otra persona q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿lo?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>tilla, en su propia Casa <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la del <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> Ofreció q<u class="exp" title="abreviatura desarrollada">[ue]</u> havia <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> alli poco q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Se llamado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> rato llego Jose</span>
+<span class="ln">Albarado Con Balencio Gonsales y q<u class="exp" title="abreviatura desarrollada">[ue]</u> desde <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> el tal Jose M<u class="exp" title="abreviatura desarrollada">[arí]</u>a fue tratandole mal <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿asta?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">a Coger un machete Calabozo q<u class="exp" title="abreviatura desarrollada">[ue]</u> halli abia y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">caminando p<u class="exp" title="abreviatura desarrollada">[ar]</u>a Sobre el q<u class="exp" title="abreviatura desarrollada">[ue]</u> habla estubo <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿im?]</u></u>-</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿po?]</u></u>sible <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> quitarle el machete y q<u class="exp" title="abreviatura desarrollada">[ue]</u> aun sin</span>
+<span class="ln">machete teniendo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> intento darle de bofetadas, y</span>
+<span class="ln">Contubieron <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿luego?]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> no <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> retirandose <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el q<u class="exp" title="abreviatura desarrollada">[ue]</u> Declara p<u class="exp" title="abreviatura desarrollada">[ar]</u>a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Caminand<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">a su Posada en Solicitud <u class="exp" title="abreviatura desarrollada">[de]</u> Sacar sus tijeras,</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Casa de D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan Jose Rueda a Cortar<u class="exp" title="abreviatura desarrollada">[le]</u> un <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Que en todo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> encuentro Con el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Albarado</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> lo esp<u class="exp" title="abreviatura desarrollada">[er]</u>a<u class="exp" title="abreviatura desarrollada">[ba]</u> en la Calle de su Posada. y alli</span>
+<span class="ln">le dijo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> aqui no estamos en el Ca<u class="exp" title="abreviatura desarrollada">[mi]</u>-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[n]</u>o, a q<u class="exp" title="abreviatura desarrollada">[ue]</u> le respondio q<u class="exp" title="abreviatura desarrollada">[ue]</u> es lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d quiere aqui es-</span>
+<span class="ln">toy, y entonces le <u class="exp" title="abreviatura desarrollada">[di]</u>jo el d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Albarado aguar-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[da]</u>me un poquito y se entro para adentro Con <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[ro]</u>ntitud y Salio <u class="exp" title="abreviatura desarrollada">[ya]</u> armado de Cuchillo y</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el q<u class="exp" title="abreviatura desarrollada">[ue]</u> Declara y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] el día seis del corriente […]; que fue el día de lo acaecido, y a las siete de la mañana […] en compañía de otra persona […], en su propia casa […]; que ofreció que había […] allí poco […]; que a poco rato llegó José Albarado con <strong>Balencio Gonsales</strong>, y que desde […] el tal José María fue tratándole mal, hasta […] coger un machete calabozo que allí había, y […] caminando hacia sobre el que habla; estuvo imposible quitarle el machete, y que aun sin machete intentó darle de bofetadas, y lo contuvieron; luego, retirándose […] el que declara […] caminando a su posada en solicitud de sacar sus tijeras […] casa de don <strong>Juan José Rueda</strong>, a cortarle una […]. Que en todo […] el encuentro con el dicho Albarado, que lo esperaba en la calle de su posada; y allí le dijo […] que aquí no estamos en el camino, a que le respondió: «¿qué es lo que vuestra merced quiere? Aquí estoy». Y entonces le dijo el dicho Albarado: «aguárdame un poquito», y se entró para adentro con […] prontitud, y salió ya armado de cuchillo y […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta en el relato central, que se sigue sin cortes graves. <strong>Baja en las cinco primeras líneas</strong>, muy desvaídas, donde no consigo fijar con quién iba Calderón ni en casa de quién estaba, y donde dejo `[...]` antes que arriesgar nombres. Los dos nombres propios nuevos —Balencio Gonsales, Juan José Rueda— se leen con seguridad. No hay firmas en esta plana: el texto continúa.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1658">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 8 de 12</span><h3>IMG_1658</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1658" aria-label="Ampliar la lámina IMG_1658">
+        <img src="../img/calderon1819/p008.jpg" alt="Fotografía de la lámina IMG_1658" loading="lazy">
+      </button>
+      <figcaption>Papel sellado, con <strong>sello de rueda circular con armas coronadas y cifra «4»</strong> en el ángulo superior izquierdo, igual al de IMG_1657: las dos planas son del mismo pliego. Tinta parda de trazo firme, la mejor conservada del cuerpo de la confesión. Agujeros de corrosión y quemaduras de tinta a media plana, que se comen palabras en tres líneas seguidas, y <strong>pérdida grande en el ángulo inferior derecho y en el borde derecho</strong>, que amputa el final de las últimas líneas. Manchas de humedad en el margen. Foto derecha; a la izquierda se ve la plana anterior del mismo cuaderno con su texto legible al revés, y arriba a la derecha asoma el croquis de terreno de otro expediente.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Fin del relato de Calderón —las dos estocadas que le tiró Alvarado, el cuchillo que él llevaba envainado dentro de la camisa desde la madrugada, la herida que le dio en la cara, la entrega del cuchillo a <strong>don Miguel [¿Carrejón?]</strong> y su entrada en la iglesia antes de que pudieran prenderlo— y las preguntas de cierre sobre pleitos anteriores, fugas de cárceles y otros delitos, que niega.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Aber lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> quiere este hombre, en q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> se mantubo un tanto y se persuade de aq<u class="exp" title="abreviatura desarrollada">[ue]</u>-</span>
+<span class="ln">llo delo q<u class="exp" title="abreviatura desarrollada">[ue]</u> se hablaba y q<u class="exp" title="abreviatura desarrollada">[ue]</u> hubiend<u class="exp" title="abreviatura desarrollada">[o]</u> Segui-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[do]</u> y llegado al Lugar de la vista q<u class="exp" title="abreviatura desarrollada">[ue]</u> lla <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> le dijo llano es menester Irse mas lejos aqui</span>
+<span class="ln">no mas ade Ser y lla fue tirandole a<u class="exp" title="abreviatura desarrollada">[l]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> habla dos</span>
+<span class="ln">estocadas delas q<u class="exp" title="abreviatura desarrollada">[ue]</u> Recibio estrañandose el Cuerp<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">y pud<u class="exp" title="abreviatura desarrollada">[o]</u> en aquel Acto echar mano al cuchillo q<u class="exp" title="abreviatura desarrollada">[ue]</u> tenia</span>
+<span class="ln">desde la Madrugada embainado dentro de la Camisa.</span>
+<span class="ln">Con Cuya demostracion y Aberle dado la erida en la</span>
+<span class="ln">Cara Segun advierte le Contubo y lla se suspendio</span>
+<span class="ln">la d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha riña y llegando Con prontitud le dio el Cuchi<u class="exp" title="abreviatura desarrollada">[ll]</u>o</span>
+<span class="ln">a D<u class="exp" title="abreviatura desarrollada">[o]</u>n Miguel <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Carrejon?]</u></u>, y lla fue introduciendose en la</span>
+<span class="ln">Yglecia antes de q<u class="exp" title="abreviatura desarrollada">[ue]</u> pudiesen aprenderlo.</span>
+<span class="ln">Preguntado si antes de esto abian tenido algun</span>
+<span class="ln">otro pleito o enemistad q<u class="exp" title="abreviatura desarrollada">[ue]</u> hubiese Ocacionad<u class="exp" title="abreviatura desarrollada">[o]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Con a<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Diga Si a fugado de algunas Carce-</span>
+<span class="ln">les y q<u class="exp" title="abreviatura desarrollada">[ue]</u> Delictos q<u class="exp" title="abreviatura desarrollada">[ue]</u> haya cometido y quales Sean Com<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">aqui respondio: que no habian tenido disgusto al-</span>
+<span class="ln">guno antes a buena armonia de la misma <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">te Albarado no aber Com<u class="exp" title="abreviatura desarrollada">[etido]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> algun delicto de <u class="exp" title="abreviatura desarrollada">[grave]</u>-</span>
+<span class="ln">dad ni menos fugado delas Carceles. Y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">hicieron otras pregun<u class="exp" title="abreviatura desarrollada">[tas]</u> <u class="exp" title="abreviatura desarrollada">[y]</u> Repreguntas Concernientes <u class="exp" title="abreviatura desarrollada">[al]</u></span>
+<span class="ln">Caso en q<u class="exp" title="abreviatura desarrollada">[ue]</u> Se afirma delo q<u class="exp" title="abreviatura desarrollada">[ue]</u> tiene d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho, y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> esta Su Confecion abierta p<u class="exp" title="abreviatura desarrollada">[ar]</u>a Siempre q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Combenga dijo no aber faltado alo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y de no <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] a ver lo que quiere este hombre; en que […] se mantuvo un tanto y se persuade de aquello de lo que se hablaba. Y que habiendo seguido y llegado al lugar de la vista […], le dijo llano: «es menester irse más lejos, aquí no ha de ser», y ya fue tirándole al que habla dos estocadas, de las que se libró extrañando el cuerpo; y pudo en aquel acto echar mano al cuchillo que tenía desde la madrugada envainado dentro de la camisa. Con cuya demostración, y haberle dado la herida en la cara —según advierte—, lo contuvo, y ya se suspendió dicha riña; y llegando con prontitud le dio el cuchillo a <strong>don Miguel [¿Carrejón?]</strong>, y ya fue introduciéndose en la iglesia antes de que pudiesen prenderlo.</p>
+<p>Preguntado si antes de esto habían tenido algún otro pleito o enemistad que hubiese ocasionado […]; diga si ha fugado de algunas cárceles, y qué delitos haya cometido y cuáles sean. Respondió: que no habían tenido disgusto alguno antes, sino buena armonía […]; no haber cometido […] ningún delito de gravedad, ni menos fugado de las cárceles. Y se le hicieron otras preguntas y repreguntas concernientes al caso, en que se afirma de lo que tiene dicho; y […] esta su confesión abierta para siempre que convenga. Dijo no haber faltado a […] el juramento que […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en el núcleo narrativo, desde «le dijo llano» hasta «antes de q[ue] pudiesen aprenderlo». <strong>Media en el apellido del vecino que recoge el cuchillo</strong>: lo leo «Carrejón», pero la mano escribe muy parecido el apellido del juez, «Cartejón», y no descarto que sea el mismo apellido; lo dejo con duda y no lo normalizo. Baja en las últimas cuatro líneas, comidas por la rotura del ángulo.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1659">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 9 de 12</span><h3>IMG_1659</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1659" aria-label="Ampliar la lámina IMG_1659">
+        <img src="../img/calderon1819/p009.jpg" alt="Fotografía de la lámina IMG_1659" loading="lazy">
+      </button>
+      <figcaption>Papel sellado del juzgado. Tinta parda, más firme arriba que abajo. <strong>Rotura larga y pérdida en el borde derecho</strong>, que se lleva los finales de línea justamente donde iba la edad de Alvarado, y desgarros en el borde inferior izquierdo. Una mancha grande de humedad y un agujero de corrosión a media plana. Pliegue horizontal en el tercio inferior. Foto derecha, algo desenfocada en el ángulo inferior; el encuadre incluye por la izquierda la plana anterior y por arriba las hojas revueltas del legajo.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Dos piezas. Arriba, el <strong>cierre y las firmas de la confesión de Calderón</strong>: se ratifica firmando con el juez y los testigos de asistencia. Abajo, el comienzo de la <strong>confesión de José María Alvarado</strong>, tomada en Sensentí a cuatro de junio de 1819, con su <strong>filiación completa</strong> y el arranque de la pregunta sobre la causa de su prisión.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">y <u class="exp" title="abreviatura desarrollada">[se]</u> ratifica firmando conmigo y testigos de asis-</span>
+<span class="ln">tencia a falta de Escriv<u class="exp" title="abreviatura desarrollada">[an]</u>o de q<u class="exp" title="abreviatura desarrollada">[ue]</u> Certifico</span>
+<span class="ln">Pedro Pablo Calderon</span>
+<span class="ln">Cartejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[¿Ygn[aci]</u>o?] M<u class="exp" title="abreviatura desarrollada">[arí]</u>a de Molina        Andres Portillo <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En este d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Pueblo de Sensenti alos quatro <u class="exp" title="abreviatura desarrollada">[dias]</u></span>
+<span class="ln">del Mes de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Junio?]</u></u> de ochocientos dies, y nuebe Yo <u class="exp" title="abreviatura desarrollada">[el]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">t<u class="exp" title="abreviatura desarrollada">[estig]</u>os: Se presento el Reo Jose M<u class="exp" title="abreviatura desarrollada">[arí]</u>a Albarado a q<u class="exp" title="abreviatura desarrollada">[uie]</u>n para <u class="exp" title="abreviatura desarrollada">[su]</u></span>
+<span class="ln">Confecion le Recibi Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to q<u class="exp" title="abreviatura desarrollada">[ue]</u> Lo hiso p<u class="exp" title="abreviatura desarrollada">[or]</u> Dios <u class="exp" title="abreviatura desarrollada">[N[uest]</u>ro]</span>
+<span class="ln">S<u class="exp" title="abreviatura desarrollada">[eño]</u>r y una Señal dela Santa Cruz p<u class="exp" title="abreviatura desarrollada">[or]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[en]</u>tendid<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">fue de Su grabedad ofreciendo decir verdad en qua<u class="exp" title="abreviatura desarrollada">[nto]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[supie]</u>ra, y sele preguntare y <u class="exp" title="abreviatura desarrollada">[sien]</u>dolo Sobre <u class="exp" title="abreviatura desarrollada">[su]</u></span>
+<span class="ln">Nombre, edad, estado, Calidad, oficio, y becindad, <u class="exp" title="abreviatura desarrollada">[dixo]</u></span>
+<span class="ln">llamarse Jose M<u class="exp" title="abreviatura desarrollada">[arí]</u>a Albarado, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿veinte?]</u></u> y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">años, de estado Soltero, de Calidad Mulato, de Oficio Carpin-</span>
+<span class="ln">tero, y Su becindario en la Ciudad de Sansalbador</span>
+<span class="ln">actualm<u class="exp" title="abreviatura desarrollada">[en]</u>te <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en la otra, y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Cargo: Preg<u class="exp" title="abreviatura desarrollada">[untad]</u>o la Causa de Su prision, y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[fue]</u></span>
+<span class="ln">Aprendido dijo: q<u class="exp" title="abreviatura desarrollada">[ue]</u> Su prision fue introduciendose el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en el Cavildo de este Pueblo a q<u class="exp" title="abreviatura desarrollada">[ue]</u> las <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de Su persona, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> la Causa <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ser otra Sino de q<u class="exp" title="abreviatura desarrollada">[ue]</u> el Dia seis del <u class="exp" title="abreviatura desarrollada">[Corriente]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Como alas ocho de la mañana <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Con el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Pedro <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Y se ratifica firmando conmigo y testigos de asistencia a falta de escribano, de que certifico. <strong>Cartejón [rúbrica]. Ygnacio María de Molina [rúbrica]. Pedro Pablo Calderón. Andrés Portillo [rúbrica].</strong></p>
+<p>En este dicho pueblo de Sensentí, a los cuatro días del mes de junio de [mil] ochocientos diez y nueve, yo, el […], con testigos, [ante mí] se presentó el reo José María Albarado, a quien para su confesión le recibí juramento, que lo hizo por Dios Nuestro Señor y una señal de la santa cruz, por […] que quedó entendido de su gravedad, ofreciendo decir verdad en cuanto supiere y se le preguntare. Y siéndolo sobre su nombre, edad, estado, calidad, oficio y vecindad, dijo: <strong>llamarse José María Albarado, […] de veinte y […] años, de estado soltero, de calidad mulato, de oficio carpintero, y su vecindario en la Ciudad de San Salbador</strong>, actualmente […].</p>
+<p>Preguntado la causa de su prisión y […] fue prendido, dijo: que su prisión fue introduciéndose […] en el cabildo de este pueblo, a que […] se asegurasen de su persona; y que la causa […] no ser otra sino que el día seis del corriente […] como a las ocho de la mañana […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en las cuatro firmas y en la línea de la filiación: «de estado Soltero, de Calidad Mulato, de Oficio Carpintero, y Su becindario en la Ciudad de Sansalbador» se lee limpiamente. <strong>La edad no se puede cerrar</strong>: la rotura del borde derecho corta tras «de [¿veinte?] y», de modo que solo consta la decena, y con duda; <strong>no completo la cifra</strong>. Media en la data: «quatro» y el año escrito con letras son seguros; el mes lo leo «Junio», pero el trazo inicial admite otra lectura y lo marco con duda. Baja en las últimas cinco líneas.
+
+<strong>Quién firma.</strong> Calderón <strong>firma de su mano</strong>, «Pedro Pablo Calderon», sin rúbrica visible (la hoja está cortada por ese lado). Firman también el juez —«Cartejon», con rúbrica—, el testigo <strong>Ygnacio María de Molina</strong> y el testigo <strong>Andrés Portillo</strong>. No hay fórmula de «no firmó por no saber» en esta plana.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1660">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 10 de 12</span><h3>IMG_1660</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1660" aria-label="Ampliar la lámina IMG_1660">
+        <img src="../img/calderon1819/p010.jpg" alt="Fotografía de la lámina IMG_1660" loading="lazy">
+      </button>
+      <figcaption>Papel sellado del juzgado; la mitad inferior de la plana está en blanco. Tinta parda clara, escritura algo más suelta que en las planas anteriores. <strong>Rotura con pérdida en el borde derecho</strong>, que amputa los finales de las líneas del cuerpo; agujeros de corrosión y manchas de tinta en la zona de las firmas y por debajo. Pliegue vertical a la izquierda, en el lomo. Foto derecha; a la izquierda se ve, invertida, la plana IMG_1659 del mismo cuaderno.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Fin de la confesión de Alvarado, con lo más citable del expediente en cuanto a la causa de la riña: <strong>que estuvieron bebiendo, que por efecto de la bebida salieron de allí y tuvieron la riña junto a la iglesia</strong>, que reflexionando sobre aquel hecho tiene bastante arrepentimiento, que <strong>no hubo otra causa</strong> y que <strong>siempre han estado en amistad y sin pasión alguna</strong> con Calderón, por lo que no le acompaña ningún agravio y conoce lo mal que hizo. Cierra con la ratificación y las firmas.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en donde Siguieron tomandola <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> los <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> p<u class="exp" title="abreviatura desarrollada">[or]</u> efecto de aberse Cargado nuestro <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">aquella bebida, Salieron de halli y tubieron la riña</span>
+<span class="ln">y pleito q<u class="exp" title="abreviatura desarrollada">[ue]</u> hubo entre Ellos Junto ala Yglecia, q<u class="exp" title="abreviatura desarrollada">[ue]</u> Re-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>nos Refleccionando el q<u class="exp" title="abreviatura desarrollada">[ue]</u> habla de aquel hecho tubo</span>
+<span class="ln">de ello bastante Arrepentim<u class="exp" title="abreviatura desarrollada">[ien]</u>to, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> Solo del modo</span>
+<span class="ln">en q<u class="exp" title="abreviatura desarrollada">[ue]</u> Se hallaban pudieron haberlo executado, pues</span>
+<span class="ln">no hubo otra Causa, q<u class="exp" title="abreviatura desarrollada">[ue]</u> la q<u class="exp" title="abreviatura desarrollada">[ue]</u> Deja referida Respecto</span>
+<span class="ln">de q<u class="exp" title="abreviatura desarrollada">[ue]</u> Siempre An estado en Amistad, y sin pacion</span>
+<span class="ln">alguna Con el Referido Calderon, p<u class="exp" title="abreviatura desarrollada">[or]</u> lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> no le acom-</span>
+<span class="ln">paña ningun agrabio, y Conose lo mal q<u class="exp" title="abreviatura desarrollada">[ue]</u> hiso. Y a<u class="exp" title="abreviatura desarrollada">[un]</u>-</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> Sele An echo otras preguntas, y Repreguntas Con-</span>
+<span class="ln">cernientes al Caso en to<u class="exp" title="abreviatura desarrollada">[do]</u> se remite alo q<u class="exp" title="abreviatura desarrollada">[ue]</u> tiene d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho</span>
+<span class="ln">en q<u class="exp" title="abreviatura desarrollada">[ue]</u> Se afirma, y Ratifica, leida q<u class="exp" title="abreviatura desarrollada">[ue]</u> le <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> esta Su</span>
+<span class="ln">declaracion q<u class="exp" title="abreviatura desarrollada">[ue]</u>dando abierta p<u class="exp" title="abreviatura desarrollada">[ar]</u>a Continuarla q<u class="exp" title="abreviatura desarrollada">[uan]</u>do</span>
+<span class="ln">Combenga <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Conmigo y los referidos t<u class="exp" title="abreviatura desarrollada">[estig]</u>os</span>
+<span class="ln">Jose Maria Alvarado <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[rúbrica del juez]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[¿Ygn[aci]</u>o?] M<u class="exp" title="abreviatura desarrollada">[arí]</u>a de Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] en donde siguieron tomándola […]; y que <strong>por efecto de habérseles cargado aquella bebida, salieron de allí y tuvieron la riña y pleito que hubo entre ellos junto a la iglesia</strong>. Que reflexionando el que habla sobre aquel hecho, tuvo de ello bastante arrepentimiento; y que solo del modo en que se hallaban pudieron haberlo ejecutado, pues no hubo otra causa que la que deja referida, respecto de que <strong>siempre han estado en amistad y sin pasión alguna con el referido Calderón, por lo que no le acompaña ningún agravio, y conoce lo mal que hizo</strong>. Y aunque se le han hecho otras preguntas y repreguntas concernientes al caso, en todo se remite a lo que tiene dicho, en que se afirma y ratifica, leída que le fue esta su declaración, quedando abierta para continuarla cuando convenga. [Firmó] conmigo y los referidos testigos. <strong>José María Alvarado [rúbrica].</strong> [Rúbrica del juez.] <strong>Ygnacio María de Molina [rúbrica].</strong></p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en el cuerpo del descargo, que es la parte mejor conservada. Media-baja en las dos primeras líneas, donde la rotura del margen derecho impide saber hasta qué hora ni con quién siguieron bebiendo, y en la palabra tras «Cargado nuestro», que dejo en `[...]`. <strong>Alvarado firma de su mano, con rúbrica</strong>; no hay fórmula de no saber firmar.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1661">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 11 de 12</span><h3>IMG_1661</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1661" aria-label="Ampliar la lámina IMG_1661">
+        <img src="../img/calderon1819/p011.jpg" alt="Fotografía de la lámina IMG_1661" loading="lazy">
+      </button>
+      <figcaption><strong>Papel sellado impreso, sello tercero de dos reales de los años de 1804 y 1805</strong>, con la leyenda impresa «SELLO TERCERO. DOS REALES. AÑOS DE MIL OCHOCIENTOS QUATRO, Y OCHOCIENTOS CINCO», busto real y leyenda «CAROLUS IV D[EI] G[RATIA]…» en óvalo, y <strong>habilitación estampada en círculo: «VALGA PARA EL REYNADO DEL S[EÑOR] D[ON] [FER]NANDO VII»</strong>, con cifra de año junto al sello. Tinta parda clara y letra distinta de la del juzgado: más redonda, más torpe y con ortografía muy fonética («besino», «desimos», «Mallo», «rajón»). <strong>Daños graves</strong>: desgarro largo en diagonal desde el centro hacia el ángulo inferior derecho, con pérdida de papel y de texto; varios agujeros de corrosión de tinta; falta de esquina inferior derecha; manchas de humedad. Foto derecha; encuadre con lomo a la izquierda.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">La pieza que corta la causa: el <strong>pedimento conjunto de los dos presos</strong>, en que se perdonan mutuamente, declaran que todo nació del aguardiente y que son amigos, y piden al juez que los suelte. Al pie, el decreto de presentación con la fecha de junio. Es papel de distinta procedencia, traído ya escrito.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> SELLO TERCERO. DOS REA-</span>
+<span class="ln">LES, AÑOS DE MIL OCHO-</span>
+<span class="ln">CIENTOS QUATRO, Y OCHO-</span>
+<span class="ln">CIENTOS CINCO.</span>
+<span class="ln">[sello de habilitación, circular:] VALGA / <u class="exp" title="abreviatura desarrollada">[PARA]</u> EL REY<u class="exp" title="abreviatura desarrollada">[NADO]</u> / <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> DEL S. D. / <u class="exp" title="abreviatura desarrollada">[FER]</u>NANDO VII</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">S<u class="exp" title="abreviatura desarrollada">[eño]</u>r J<u class="exp" title="abreviatura desarrollada">[ue]</u>s de P<u class="exp" title="abreviatura desarrollada">[artid]</u>o</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Pedro Pablo Calderon besino de la antigua G<u class="exp" title="abreviatura desarrollada">[uatemal]</u>a de</span>
+<span class="ln">oficio Sastre; y Jose Maria Albarado besino de la Ciu<u class="exp" title="abreviatura desarrollada">[da]</u>d</span>
+<span class="ln">de San Salbador, y oficio Carpintero, Presos en esta C<u class="exp" title="abreviatura desarrollada">[árce]</u>l</span>
+<span class="ln">de Consenti. Ante V<u class="exp" title="abreviatura desarrollada">[uestra]</u> M<u class="exp" title="abreviatura desarrollada">[erced]</u> en la mejor forma que el derecho</span>
+<span class="ln">nos permita; paresemos, y desimos, que el dia seis de Mallo</span>
+<span class="ln">proximo pasado, à efectos de avernos tomados de aguardien-</span>
+<span class="ln">te, tubimos una riña, de la que resultó el segundo con</span>
+<span class="ln">un rajón en la Cara; y siendo como somos amigos, y no</span>
+<span class="ln">aber abido mas motibo que el referido, nos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> à <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> conbenien-</span>
+<span class="ln">cia, y quedamos en la misma paz, y union anterior, à <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">pedimos, y suplicamos <u class="exp" title="abreviatura desarrollada">[se]</u> nos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> por amor de Dios n<u class="exp" title="abreviatura desarrollada">[uest]</u>ro S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la <u class="exp" title="abreviatura desarrollada">[pena]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> por nuestro delito somos acreed<u class="exp" title="abreviatura desarrollada">[ores]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> dando los derechos correspondientes <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Sastre no <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> salir <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">aquellas p<u class="exp" title="abreviatura desarrollada">[er]</u>sonas que se aberiguen <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> à este lugar,</span>
+<span class="ln">y el segundo tiene à su cargo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de beinte varas. —</span>
+<span class="ln">Por tanto à V<u class="exp" title="abreviatura desarrollada">[uestra]</u> M<u class="exp" title="abreviatura desarrollada">[erce]</u>d pedimos, y suplicamos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Justo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> merced, y jura-</span>
+<span class="ln">mos, que en ello recibi<u class="exp" title="abreviatura desarrollada">[remos]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> merced, y juramos <u class="exp" title="abreviatura desarrollada">[no]</u></span>
+<span class="ln">proceder de malicia.</span>
+<span class="ln">Pedro Pablo Calderon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Jose Maria Alvarad<u class="exp" title="abreviatura desarrollada">[o]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[decreto al pie:]</u></span>
+<span class="ln">Sensenti Junio Dia y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>   En do<u class="exp" title="abreviatura desarrollada">[ce]</u> d<u class="exp" title="abreviatura desarrollada">[ia]</u>s <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> mil ochos<u class="exp" title="abreviatura desarrollada">[cientos]</u> Dies y nuebe <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>  <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>— <strong>fórmula del perdón mutuo</strong></p>
+<p>Señor juez de partido: <strong>Pedro Pablo Calderón, vecino de la Antigua Guatemala, de oficio sastre, y José María Albarado, vecino de la ciudad de San Salvador, y de oficio carpintero, presos en esta cárcel de Sensentí, ante vuestra merced, en la mejor forma que el derecho nos permita, parecemos y decimos: que el día seis de mayo próximo pasado, a efecto de habernos tomado de aguardiente, tuvimos una riña, de la que resultó el segundo con un rajón en la cara; y siendo como somos amigos, y no haber habido más motivo que el referido, nos [avenimos] a [esta] conveniencia, y quedamos en la misma paz y unión anterior. A [lo que] pedimos y suplicamos se nos [perdone], por amor de Dios Nuestro Señor, […] la pena de que por nuestro delito somos acreedores, […] dando los derechos correspondientes […]. El sastre no […] salir […] aquellas personas que se averigüen […] a este lugar; y el segundo tiene a su cargo […] de veinte varas.</strong> Por tanto, a vuestra merced pedimos y suplicamos […] que es justo […] merced, y juramos que en ello recibiremos […] bien y merced; y juramos no proceder de malicia. <strong>Pedro Pablo Calderón [rúbrica]. José María Alvarado [rúbrica].</strong></p>
+<p>[Decreto:] Sensentí, junio, día […]. En doce días […] de mil ochocientos diez y nueve […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en el encabezamiento y en el núcleo de la fórmula —desde «Pedro Pablo Calderon besino…» hasta «quedamos en la misma paz, y union anterior»—, que es lo que el encargo pedía transcribir entero y que se lee sin reserva. <strong>Media-baja de ahí abajo</strong>: el desgarro diagonal y los agujeros se llevan palabras enteras en cinco líneas seguidas, y en particular no se dejan fijar ni el verbo del perdón («se nos perdone» es sentido, no lectura segura: lo dejo en `[...]`) ni el pasaje sobre las obras pendientes de cada oficio, del que solo se salva «tiene à su cargo […] de beinte varas». Baja en el decreto del pie, donde solo son firmes «Sensenti», «Junio» y «mil ochos. Dies y nuebe». <strong>Los dos reos firman de su mano, con rúbrica</strong>, y no hay testigo firmante en la petición.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1662">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 12 de 12</span><h3>IMG_1662</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1662" aria-label="Ampliar la lámina IMG_1662">
+        <img src="../img/calderon1819/p012.jpg" alt="Fotografía de la lámina IMG_1662" loading="lazy">
+      </button>
+      <figcaption>Papel sellado del juzgado; el tercio inferior queda en blanco. Tinta parda muy aguada en la mitad superior —las cinco o seis primeras líneas están casi lavadas— y algo más firme hacia el centro. <strong>Desgarro largo con pérdida</strong> que cruza la plana en diagonal a la altura de las firmas, y varios agujeros y manchas de tinta debajo. Falta el ángulo inferior izquierdo. Pliegue vertical en el lomo, con la hoja arqueada y en sombra en el borde derecho, donde se pierden los finales de línea. Foto derecha; encuadre holgado, con las hojas revueltas del legajo arriba y abajo.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">El <strong>auto de absolución</strong> que cierra la causa: en atención a lo manifestado por los reos, a que Alvarado está enteramente sano del rasguño que aparece dado en su cara, y a que no tendrán que producir cosa alguna el uno contra el otro, se los absuelve del delito y <strong>se les pone en libertad</strong>, habiendo de satisfacer, como ofrecen, las costas causadas. Firman el juez, los dos reos y los testigos de asistencia.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> tienen Manifestado Como <u class="exp" title="abreviatura desarrollada">[se]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> ya no accidentados he <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> à bien absolverles del Delito q<u class="exp" title="abreviatura desarrollada">[ue]</u> han</span>
+<span class="ln">Cometido mediante el Conocimiento q<u class="exp" title="abreviatura desarrollada">[ue]</u> han</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> del <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> pedim<u class="exp" title="abreviatura desarrollada">[en]</u>to de q<u class="exp" title="abreviatura desarrollada">[ue]</u> sele ha<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Seria Aprenhencion y Ofrecid<u class="exp" title="abreviatura desarrollada">[o]</u> la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en lo Subsequente: en cuya atencion <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y la de estar enteram<u class="exp" title="abreviatura desarrollada">[en]</u>te Sano del ra<u class="exp" title="abreviatura desarrollada">[sguño]</u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> aparece dado en la Cara a Jose Mar<u class="exp" title="abreviatura desarrollada">[ia]</u></span>
+<span class="ln">Alvarado Como de q<u class="exp" title="abreviatura desarrollada">[ue]</u> no tendran q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">producir Cosa alguna p<u class="exp" title="abreviatura desarrollada">[or]</u> ning<u class="exp" title="abreviatura desarrollada">[un]</u>o de los <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>dos seles pone en libertad haviendo <u class="exp" title="abreviatura desarrollada">[de]</u></span>
+<span class="ln">Satisfacer Como ofrecen las Costas ha<u class="exp" title="abreviatura desarrollada">[sta]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[aqui]</u> Causadas y para Constancia firmar<u class="exp" title="abreviatura desarrollada">[on]</u></span>
+<span class="ln">Conmigo y testigos de asis<u class="exp" title="abreviatura desarrollada">[tencia]</u> à falta de</span>
+<span class="ln">Escrivano de q<u class="exp" title="abreviatura desarrollada">[ue]</u> Certifico</span>
+<span class="ln">Cartejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>          Pedro Pablo Calderon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Jose Maria                       Alvarado <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Paulino <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Taboada?]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] tienen manifestado […]; […] que a bien absolverles del delito que han cometido, mediante el conocimiento que han […] del […] pedimento de que se le hace […]; […] seria aprehensión, y ofrecido […] en lo subsiguiente. En cuya atención […], y la de estar enteramente sano del rasguño que aparece dado en la cara a José María Alvarado, como de que no tendrán que producir cosa alguna por ninguno de los […], <strong>a los dos se les pone en libertad, habiendo de satisfacer, como ofrecen, las costas hasta aquí causadas</strong>. Y para constancia firmaron conmigo y testigos de asistencia, a falta de escribano, de que certifico. <strong>Cartejón [rúbrica]. Pedro Pablo Calderón [rúbrica]. José María Alvarado [rúbrica]. Paulino [¿Taboada?] [rúbrica].</strong></p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta de la línea «y la de estar enteram[en]te Sano» hasta el final, incluidas las firmas. <strong>Baja en las seis primeras líneas</strong>, con la tinta casi perdida: fijo «absolverles del Delito q[ue] han Cometido» y «mediante el Conocimiento», pero el resto queda en `[...]` y no arriesgo reconstrucción. El apellido del último testigo lo leo con duda como «Taboada»; la inicial admite T o F. Notable, y contrario a lo habitual en esta clase de autos: <strong>los dos reos firman de su mano</strong>, y en toda la causa no aparece la fórmula «no firmó por no saber».</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4><strong>Pedro Pablo Calderón</strong></h4>
+  <p class="papel">reo; hiere a Alvarado y se acoge a sagrado</p>
+  <p class="calidad">de la Antigua Guatemala, residente en el partido de Sensentí; sastre; de calidad mulato; viudo. <strong>Firma</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>José María Alvarado</strong></h4>
+  <p class="papel">herido y después codemandante del corte de la causa</p>
+  <p class="calidad">vecino de San Salvador; carpintero; de calidad mulato; soltero. <strong>Firma</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Juan José Cartejón</strong></h4>
+  <p class="papel">juez; cerca la iglesia y sustancia la causa</p>
+  <p class="calidad">actúa con testigos a falta de escribano</p>
+</div>
+<div class="persona">
+  <h4><strong>José María Rivera</strong></h4>
+  <p class="papel">resuelve sobre la inmunidad y libra el oficio de extracción</p>
+  <p class="calidad">actúa desde <strong>Cucuyagua</strong>, 7 de mayo de 1819</p>
+</div>
+<div class="persona">
+  <h4><strong>Don Miguel [¿Carrejón?]</strong></h4>
+  <p class="papel">recibe el cuchillo de manos de Calderón</p>
+  <p class="calidad"></p>
+</div>
+<div class="persona">
+  <h4><strong>[¿Agustín?] de Aldana</strong></h4>
+  <p class="papel">nombrado para reconocer y curar la herida</p>
+  <p class="calidad">lectura del nombre insegura</p>
+</div></div>
+</section>
+
+<section class="extra wrap">
+  <h2>Nota final sobre las tomas y sobre los cortes</h2>
+  <p><strong>Dos correcciones de forma al catálogo.</strong> Sólo <strong>IMG_1651 e IMG_1654</strong> están fotografiadas giradas 90°; IMG_1652 e IMG_1653 están derechas, y el catálogo las daba también giradas. Y <strong>IMG_1653 resulta ilegible en su mayor parte</strong>: la tinta está lavada y el verso traspasa. Es la plana del reconocimiento de la herida y de las diligencias sobre guardias y ministros, de modo que lo que se pierde ahí es la descripción médica; lo que se sabe de la herida viene de las confesiones, no del reconocimiento.</p>
+<p>Se señalan además <strong>costuras materiales</strong> —cambio de pliego o de mano— entre IMG_1653 y 1654, entre 1655 y 1656, y entre 1660 y 1661. La causa es una sola, pero se fue cosiendo por partes.</p>
+<p><strong>La fecha, 1819, está escrita con todas sus letras en dos confesiones distintas</strong>, de modo que no depende del sello. En esto el catálogo acierta.</p>
+</section>
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

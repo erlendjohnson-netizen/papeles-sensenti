@@ -1,0 +1,1203 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Setenta reses y ninguna firma — Papeles de Sensentí</title>
+<meta name="description" content="Luisa Cartagena, vecina de Cucuyagua, sin «doña» y sin saber escribir, demanda a un hombre con tratamiento por haberla despojado de setenta reses que le donó un cura. Maneja la doctrina del despojo violento, y consigue que el asunto suba a la Intendencia de la provincia. El expediente no dice cómo a">
+<meta property="og:title" content="Setenta reses y ninguna firma">
+<meta property="og:description" content="Luisa Cartagena, vecina de Cucuyagua, sin «doña» y sin saber escribir, demanda a un hombre con tratamiento por haberla despojado de setenta reses que le donó un cura. Maneja la doctrina del despojo violento, y consigue que el asunto suba a la Intendencia de la provincia. El expediente no dice cómo a">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* tablas dentro del estudio */
+table{border-collapse:collapse;width:100%;margin:20px 0;font-size:.92em;
+  background:var(--card,transparent);display:block;overflow-x:auto}
+@media(min-width:620px){table{display:table}}
+th,td{border:1px solid var(--rule);padding:9px 11px;text-align:left;vertical-align:top;line-height:1.5}
+th{background:var(--rule2);color:var(--ink);font-weight:600;font-size:.86em;
+  letter-spacing:.02em;text-transform:none}
+tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--rule) 22%,transparent)}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Pleito civil de 1814</p>
+  <h1>Setenta reses y ninguna firma</h1>
+  <p class="dek">Luisa Cartagena, vecina de Cucuyagua, sin «doña» y sin saber escribir, demanda a un hombre con tratamiento por haberla despojado de setenta reses que le donó un cura. Maneja la doctrina del despojo violento, y consigue que el asunto suba a la Intendencia de la provincia. El expediente no dice cómo acabó.</p>
+  <div class="meta"><span><strong>8 láminas</strong> · IMG_1475 – IMG_1482</span><span>Julio a septiembre de 1814</span><span>Papel sellado; las dos últimas planas son de otro expediente</span><span>Cucuyagua · Sensentí · Comayagua</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">8</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>Ocho planas, y no son una sino dos cosas: seis del pleito y dos que no le pertenecen.</p>
+<p><strong>El pleito (IMG_1475–1480).</strong> <strong>Luisa Cartagena, vecina de Cucuyagua</strong>, demanda a <strong>José Antonio Aranda</strong> por haberla despojado violentamente de unas reses que le donó un cura, ya difunto. El 5 de julio de 1814 el juez decreta traslado a Aranda; se le busca y «no se encontró». Ella contesta por escrito y con una definición que vale la pena conservar: <strong>«despojo violento no es otra cosa que quitar sin autoridad judicial lo que otro tiene en posesión»</strong>. Sostiene que poseyó pacíficamente hasta la muerte del donante, niega que la donación sea nula por faltarle instrumento, y acusa a Aranda de irse a Comayagua o de escribir allí a don Pablo Nieto para enredar el asunto. Pide restitución, justicia y costas.</p>
+<p>El auto final no le da ni le quita la razón: <strong>habiéndose ausentado Aranda a Comayagua pese al arraigo que se le había puesto</strong>, el juez se inhibe y remite el expediente al Asesor Ordinario y Gobernador Intendente interino de la provincia. Se notifica a Luisa Cartagena, que «quedó entendida», y el expediente sale del partido.</p>
+<p><strong>La cifra.</strong> La única que se deja fijar es <strong>setenta reses</strong>, y la dan siempre ella y sus escritos, en IMG_1475 y 1476. Se mencionan además «cierto número de reses que tenía enrodadas» y unas «reses del hierro de mi amo». <strong>Las doscientas ochenta reses que el catálogo atribuía a este tramo no aparecen en ningún pasaje legible</strong>, ni de ésta ni de la otra parte.</p>
+<p><strong>Ella.</strong> Litiga sola. El papel no le da «doña», no le da calidad, no le da edad: sólo <strong>«vecina de Cucuyagua de esta jurisdicción»</strong>. Y <strong>no firma</strong>: en IMG_1479 se lee «[n]o se firmar», con la primera letra rota por el borde, <strong>y sin la fórmula de «a su ruego»</strong> que normalmente acompaña a quien no sabe escribir. En IMG_1480 ni siquiera eso: sólo consta que «quedó entendida». Los que firman son el juez Molina y los testigos Salinas y Peña, «en falta de escribano».</p>
+<p>Una mujer sin tratamiento, sin calidad declarada y sin firma, que sostiene un pleito civil contra un hombre con «don», maneja la doctrina del despojo y consigue que el asunto suba a la Intendencia. El expediente no dice cómo acabó.</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>Este tramo vale por dos cosas, y ninguna es el resultado del pleito, que no consta. La primera es doctrinal. Luisa Cartagena, que litiga sola contra un hombre con «don», define el despojo violento como «quitar sin autoridad judicial lo que otro tiene en posesión». Es la doctrina posesoria del derecho castellano: el interdicto protege el hecho de poseer, y quien se toma la justicia por su mano debe restituir antes de discutir el fondo. Sostiene además que la donación no es nula por faltar instrumento: <strong>la posesión pública y la notoriedad valen contra la falta de escritura</strong>.</p>
+<p>La segunda es de arquitectura judicial. Aranda se ausenta a Comayagua pese al arraigo, y el juez <strong>se inhibe</strong> y remite el expediente al Gobernador Intendente interino. El auto muestra los límites de la justicia de partido: el juzgado de Sensentí puede conocer, decretar traslados y poner arraigo, pero no alcanza a un demandado que sale de la jurisdicción. El expediente de 1813 sobre el río Sumpul, donde un demandado se hace vecino de otra jurisdicción para escapar de ésta, muestra la otra cara de la misma debilidad.</p>
+<p>Conviene fijar lo que el papel da. La única cifra sostenible es <strong>setenta reses</strong>, siempre en boca de ella; las doscientas ochenta que el catálogo atribuía a este tramo no aparecen en ningún pasaje legible. La expresión «reses del hierro de mi amo» remite a su condición anterior de sirvienta del cura donante. Ella no firma, y firman el juez y dos testigos «en falta de escribano». Junto con la carta privada que conserva el mismo archivo, permite seguir a una persona iletrada a través de varias piezas.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#f1475">75</a><a href="#f1476">76</a><a href="#f1477">77</a><a href="#f1478">78</a><a href="#f1479">79</a><a href="#f1480">80</a><a href="#f1481">81</a><a href="#f1482">82</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="f1475">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 8</span><h3>IMG_1475</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1475" aria-label="Ampliar la lámina IMG_1475">
+        <img src="../img/cartagena1814b/p001.jpg" alt="Fotografía de la lámina IMG_1475" loading="lazy">
+      </button>
+      <figcaption>Papel de trapo verjurado, tono claro, muy sucio en los bordes. En la
+cabecera, impreso en tipos de imprenta, el encabezamiento del sello: **«Un
+quartillo.»** (sello cuarto, el más barato); el resto de la leyenda del sello
+queda por encima del corte superior del fotograma y no se lee, de modo que **no
+puede comprobarse la habilitación de este sello**. Tinta ferrogálica parda,
+bastante desvaída en la mitad inferior. <strong>Rotura en forma de «T» invertida</strong> que
+atraviesa la plana de arriba abajo por el centro: un desgarro grande de bordes
+festoneados en el tercio superior (que se come el final del decreto y parte de la
+firma del juez) y una fisura larga y estrecha que baja hasta el centro. Es la
+misma rotura que reaparece, decreciente, en 1476, 1477 y 1478: se trata del mismo
+pliego. Ángulo superior derecho <strong>desgarrado y curvado</strong>; sobre ese pliegue hay
+una <strong>cifra de foliación</strong> que no se deja fijar (se ve un «1» y un segundo dígito
+ilegible; la secuencia con el f. 16 de IMG_1479 obliga a un 14, pero eso es
+deducción, no lectura). Manchas de humedad y salpicaduras de tinta. Bajo el
+renglón último hay todavía otro renglón, perdido bajo la curvatura del papel y el
+borde inferior del fotograma.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Primera plana de un pliego de papel sellado. Contiene tres cosas
+seguidas: (1) el final del <strong>decreto de traslado fechado a 5 de julio de 1814</strong>,
+por el que se manda dar traslado a <strong>Luisa Cartagena</strong> de lo expuesto por **José
+Antonio Aranda**, con la firma del juez (Molina) y de dos testigos de asistencia;
+(2) una <strong>diligencia</strong> de la misma fecha o inmediata, en que se solicitó a José
+Antonio Aranda «y no se encontró»; (3) el **encabezamiento y comienzo del escrito
+de Luisa Cartagena** en contestación a ese traslado, donde aparecen las setenta
+reses y el nombre del cura donante. Es, por tanto, el arranque del núcleo del
+pleito.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>y Julio cinco de mil ochos.<u class="exp" title="abreviatura desarrollada">[cientos]</u> Catorce</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Dese traslado a Luisa Cartagena, de lo expuesto p.<u class="exp" title="abreviatura desarrollada">[o]</u>r Jose</span>
+<span class="ln">Antonio Aranda, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>el bien<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q.<u class="exp" title="abreviatura desarrollada">[ue]</u><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>e Casa<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">en este papel q.<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ant.<u class="exp" title="abreviatura desarrollada">[e]</u>s q.<u class="exp" title="abreviatura desarrollada">[ue]</u> hizo<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> lo sacaran do<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">su valor a la Real <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Man.<u class="exp" title="abreviatura desarrollada">[ue]</u>l d.<u class="exp" title="abreviatura desarrollada">[e]</u> Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Jos<u class="exp" title="abreviatura desarrollada">[e]</u> M<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>l <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>l<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Mariano Peña <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;En seguida se solicito p.<u class="exp" title="abreviatura desarrollada">[ar]</u>a q.<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[a]</u> Jose Ant.<u class="exp" title="abreviatura desarrollada">[oni]</u>o Aranda, y no se</span>
+<span class="ln">encontro <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[al margen inferior izquierdo, entrando en el pliegue del lomo: <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>os Conocidos. <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>]</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;S. F. de S.</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;Luisa Cartagena becina <u class="exp" title="abreviatura desarrollada">[de]</u> Cucuyagua de esta Jurisdicion, en con<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">tacion al traslado q.<u class="exp" title="abreviatura desarrollada">[ue]</u> se me <u class="exp" title="abreviatura desarrollada">[ha]</u> dado de la contraria d.<u class="exp" title="abreviatura desarrollada">[o]</u>n Jose<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Aranda Sobre la demanda q.<u class="exp" title="abreviatura desarrollada">[ue]</u> le tengo puesta p.<u class="exp" title="abreviatura desarrollada">[o]</u>r haverme des<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">jado violentam.<u class="exp" title="abreviatura desarrollada">[en]</u>te de la posesion de Setenta reses q.<u class="exp" title="abreviatura desarrollada">[ue]</u> el Señor<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">S.<u class="exp" title="abreviatura desarrollada">[eño]</u>r Cura D.<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Nauio?]</u></u>: me donó, ante V. en la forma q.<u class="exp" title="abreviatura desarrollada">[ue]</u><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">me permita p.<u class="exp" title="abreviatura desarrollada">[o]</u>r d.<u class="exp" title="abreviatura desarrollada">[erech]</u>o paresco, diciendo: q.<u class="exp" title="abreviatura desarrollada">[ue]</u> no obstante lo expu<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">p.<u class="exp" title="abreviatura desarrollada">[o]</u>r d.<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Aranda, se sirva mandar, se me <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ma posecion</span>
+<span class="ln">de dichas reses, y sus producidos, q.<u class="exp" title="abreviatura desarrollada">[ue]</u> assi es de acer en Justicia y lo<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">provaré hasta la hevidencia</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Aprovado en bastante forma la d.<u class="exp" title="abreviatura desarrollada">[ic]</u>ha citada <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>a <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Nubio?]</u></u> me hiso donacion, de las q.<u class="exp" title="abreviatura desarrollada">[ue]</u> el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">[renglón final perdido bajo el borde inferior de la fotografía]</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[...] y julio cinco de mil ochocientos catorce.</p>
+<p>Dese traslado a Luisa Cartagena de lo expuesto por José Antonio Aranda [...] en
+el bien entendido [de] que [...] en este papel que [...] antes que hizo [...], lo
+sacarán [...] su valor a la Real [Hacienda ...].</p>
+<p>[Firmado:] Manuel de Molina [rúbrica]. José M[igue]l [...] [rúbrica]. Mariano
+Peña [rúbrica].</p>
+<p>En seguida se solicitó para que [compareciese] José Antonio Aranda, y no se
+encontró [...] [rúbrica]. [Al margen: ...] conocidos. [rúbrica].</p>
+<p>S. F. de S. [encabezamiento abreviado, de lectura dudosa]</p>
+<p>Luisa Cartagena, vecina de Cucuyagua, de esta jurisdicción, en contestación al
+traslado que se me ha dado de la contraria, don José [Antonio] Aranda, sobre la
+demanda que le tengo puesta por haberme despojado violentamente de la posesión de
+setenta reses que el señor cura don Juan [¿Nauio?] me donó, ante vuestra merced
+en la forma que [más haya lugar y] me permita por derecho parezco, diciendo: que
+no obstante lo expuesto por dicho Aranda, se sirva mandar se me [mantenga en] mi
+posesión de dichas reses y sus producidos, que así es de hacer en justicia, y lo
+probaré hasta la evidencia.</p>
+<p>Aprobado en bastante forma la dicha citada [...] [...] me hizo donación de las
+que dicho [...].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media.</strong> El cuerpo del escrito de Luisa Cartagena se lee bien y
+es seguro en lo sustancial (nombre, vecindad de Cucuyagua, «setenta reses»,
+«despojado violentamente de la posesión», el cura donante). El decreto de
+traslado está mutilado por el desgarro y por el corte derecho: solo se fija con
+seguridad la fecha («Julio cinco de mil ochocientos catorce»), el mandato («Dese
+traslado a Luisa Cartagena, de lo expuesto por José Antonio Aranda») y las
+firmas. <strong>No se deja fijar</strong>: (a) el apellido del cura —se lee un nombre de cinco
+o seis letras que empieza por mayúscula de bucle y acaba en `-io`; `Nauio`,
+`Nanio`, `Rubio` son todas compatibles con el trazo a esta resolución, y **no es
+«Reyes»**, como dice el catálogo; (b) el encabezamiento abreviado `S. F. de S.`
+(¿«Señor Juez de Sensentí»? la segunda letra tiene travesaño de F); (c) el
+segundo firmante de la izquierda, que por comparación con IMG_1480 debe de ser
+José Miguel Salinas, pero aquí está roto; (d) la palabra que sigue a «se me» en
+el penúltimo párrafo (¿«mantenga»?, ¿«restituya»?); (e) la cifra de foliación.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1476">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 8</span><h3>IMG_1476</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1476" aria-label="Ampliar la lámina IMG_1476">
+        <img src="../img/cartagena1814b/p002.jpg" alt="Fotografía de la lámina IMG_1476" loading="lazy">
+      </button>
+      <figcaption>Mismo pliego que 1475 (es su vuelto). Papel más claro y mejor
+iluminado por la derecha, con fuerte sombra en el margen izquierdo y en el lomo.
+La rotura en «T» de 1475 se ve aquí por el otro lado: agujero irregular en el
+tercio superior-centro con un colgajo de papel levantado, y fisura vertical larga
+que desciende hasta media plana. Sin sello impreso (es vuelto). Sin foliación.
+Manchas de tinta gruesas —tres o cuatro trazos negros modernos o borrones—
+cruzando algunos renglones. Borde derecho del texto cortado por la fotografía;
+borde inferior del papel deshilachado y con pérdida.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Vuelto de la plana anterior: **continuación del escrito de Luisa
+Cartagena**. Aquí está el corazón de su argumento de hecho y de derecho: que
+poseyó pacíficamente el ganado hasta después de la muerte de [el donante], que lo
+confesado por Aranda prueba el despojo de las setenta reses, que «despojo
+violento» no significa otra cosa que «quitar sin autoridad judicial lo que otro
+tiene en posesión», que Aranda debe ser compelido a reponerla en la posesión, y
+que por eso ha padecido muchas miserias. Luego ataca la defensa de Aranda: que la
+donación del cura sería nula por no haber instrumento público ni simple que la
+acredite.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ne vivos, de cierto numero de Reses, que tenia enrrodad<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>siendo distinto de la hacienda de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho S.<u class="exp" title="abreviatura desarrollada">[eño]</u>r y las q.<u class="exp" title="abreviatura desarrollada">[ue]</u> tuve en<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">cifica poccicion hasta despues de la muerte de este; <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">bien se pru<u class="exp" title="abreviatura desarrollada">[eva]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p.<u class="exp" title="abreviatura desarrollada">[o]</u>r lo Confesado p.<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Arand<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln">q.<u class="exp" title="abreviatura desarrollada">[ue]</u> me des<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de Setenta reses con otr<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Suprema d<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>; pues p.<u class="exp" title="abreviatura desarrollada">[o]</u>r despojo violen<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">no entendemos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>osa, q.<u class="exp" title="abreviatura desarrollada">[ue]</u> quitar sin autoridad<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">dicial lo q.<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>tro tiene en posecion. Esto es lo que<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">randa ha hecho con migo, y asi es claro, que de<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ser Compelido a que me ponga en posecion de las Reses</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p.<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Cuyo motivo he Sufrido mu-</span>
+<span class="ln">chas micerias.</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Son tan debiles los fundam.<u class="exp" title="abreviatura desarrollada">[en]</u>tos en q.<u class="exp" title="abreviatura desarrollada">[ue]</u> Aranda<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">da su defenza q.<u class="exp" title="abreviatura desarrollada">[ue]</u>: no hera necesario impugnarlo; p.<u class="exp" title="abreviatura desarrollada">[er]</u>o<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">pase de acerlo p.<u class="exp" title="abreviatura desarrollada">[ar]</u>a q.<u class="exp" title="abreviatura desarrollada">[ue]</u> no se piense q.<u class="exp" title="abreviatura desarrollada">[ue]</u> no entiendo<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Su Ynversa dice <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q.<u class="exp" title="abreviatura desarrollada">[ue]</u> la donacion q.<u class="exp" title="abreviatura desarrollada">[ue]</u> me hiso el<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Cura, no tiene ningun fundam.<u class="exp" title="abreviatura desarrollada">[en]</u>to p.<u class="exp" title="abreviatura desarrollada">[o]</u>r no haver doc<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">in<u class="exp" title="abreviatura desarrollada">[strume]</u>n.<u class="exp" title="abreviatura desarrollada">[t]</u>o publico o simple q.<u class="exp" title="abreviatura desarrollada">[ue]</u> lo acredite. p.<u class="exp" title="abreviatura desarrollada">[o]</u>r la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>nda ymporta q.<u class="exp" title="abreviatura desarrollada">[ue]</u> la donacion sea verdadera<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">nula: q.<u class="exp" title="abreviatura desarrollada">[ue]</u> Se me aya hecho, ora Supongamos, q.<u class="exp" title="abreviatura desarrollada">[ue]</u> efectiva<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">es mia, ó q.<u class="exp" title="abreviatura desarrollada">[ue]</u> no se me hiso? y en q.<u class="exp" title="abreviatura desarrollada">[ue]</u> autoridad <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de Aranda ni ninguno p.<u class="exp" title="abreviatura desarrollada">[ar]</u>a q.<u class="exp" title="abreviatura desarrollada">[ue]</u> me despoje de la po<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">on d<u class="exp" title="abreviatura desarrollada">[ic]</u>hos bienes? ninguna p.<u class="exp" title="abreviatura desarrollada">[o]</u>r cierto. y asi era<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">en q.<u class="exp" title="abreviatura desarrollada">[ue]</u> estriva la defenza de Aranda eran devil, y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de asunto q.<u class="exp" title="abreviatura desarrollada">[ue]</u> no puede ser mas</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;Lo cierto, q.<u class="exp" title="abreviatura desarrollada">[ue]</u> la muralla ymprunable, q.<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[...] vivos, de cierto número de reses que tenía enrodad[as ...], siendo distinta
+de la hacienda de dicho señor; y las que tuve en pacífica posesión hasta después
+de la muerte de éste [...]. Bien se prueba [...] por lo confesado por [el mismo]
+Aranda, que me desp[ojó] de setenta reses con otr[as ...]. Suprema [...]; pues
+por despojo violento no entendemos otra cosa que quitar sin autoridad judicial lo
+que otro tiene en posesión. Esto es lo que [A]randa ha hecho conmigo, y así es
+claro que debe ser compelido a que me ponga en posesión de las reses [...], por
+cuyo motivo he sufrido muchas miserias.</p>
+<p>Son tan débiles los fundamentos en que Aranda funda su defensa, que no era
+necesario impugnarlo; pero [no] paso de hacerlo para que no se piense que no
+entiendo [...]. Su [escrito] dice [...] que la donación que me hizo el cura no
+tiene ningún fundamento, por no haber documento ni instrumento público o simple
+que lo acredite. Por [...] importa que la donación sea verdadera [o] nula, que se
+me haya hecho; ahora supongamos que efectivamente es mía o que no se me hizo: ¿y
+con qué autoridad [...] de Aranda ni de ninguno para que me despoje de la
+posesión de dichos bienes? Ninguna, por cierto. Y así era [...] en que estriba la
+defensa de Aranda eran débil[es], y [...] de asunto que no puede ser más [...].</p>
+<p>Lo cierto, que la muralla inexpugnable que [...]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media-alta</strong> para el argumento central (la definición de despojo
+violento, el «compelido a que me ponga en posesión», las «muchas miserias», el
+ataque a la defensa de Aranda por falta de instrumento de la donación) y <strong>media</strong>
+para el resto. La cifra <strong>«Setenta reses»</strong> se lee con seguridad (línea 5). **No
+se deja fijar**: el sujeto del comienzo de plana (la palabra inicial `ne vivos` es
+el final de una palabra partida cuyo arranque se perdió en el borde inferior de
+1475); la expresión tras «pues por despojo violen[to]»; la palabra que empieza
+`Suprema d[...]`; el final del último renglón («la muralla inexpugnable que...»).
+No aparece en esta plana ninguna cifra de doscientas ochenta reses.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1477">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 8</span><h3>IMG_1477</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1477" aria-label="Ampliar la lámina IMG_1477">
+        <img src="../img/cartagena1814b/p003.jpg" alt="Fotografía de la lámina IMG_1477" loading="lazy">
+      </button>
+      <figcaption>Mismo pliego. Papel algo más oscuro y con la iluminación cayendo de
+derecha a izquierda. Vuelve a verse la rotura del pliego: agujero central
+irregular, más pequeño que en 1475-1476, con colgajo levantado, y una fisura
+vertical que baja partiendo los renglones centrales. Margen derecho del papel
+visible como cordón deshilachado, y más allá de él el corte del fotograma.
+Manchas de tinta y algún borrón fuerte (uno bajo «Jose Ant. Aranda»). En el
+extremo izquierdo se transparenta, invertida, la escritura de la plana contigua.
+Sin sello (recto interior del pliego) y sin cifra de foliación legible en el
+ángulo superior derecho, que está roto y curvado.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Recto del segundo folio del mismo pliego: **sigue el escrito de Luisa
+Cartagena<strong>. Es la plana donde entra </strong>don Pablo Nieto<strong> y </strong>Comayagua**: sostiene
+que por la contestación de Aranda consta que hace del depósito que ella hizo un
+enredo malicioso; que antes de [...] apareció en la causa [...] vacas de la
+hacienda de varios de este vecindario, con mucho desmedro; que **fue José Antonio
+Aranda a Comayagua, o escribió a don Pablo Nieto**, informándole que no había
+ocurrido [...] reses del hierro «de mi amo», y que no duda que esto dio motivo a
+la causa. Y añade que el que la favorece en primer lugar es el propio **don Pablo
+Nieto**, que sobre el expresado depósito dijo [...].</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">quan<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> tiene Aranda esta Causa q.<u class="exp" title="abreviatura desarrollada">[ue]</u> acompaña, y p<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">tacion confiesa q.<u class="exp" title="abreviatura desarrollada">[ue]</u> hase del deposito, q.<u class="exp" title="abreviatura desarrollada">[ue]</u> yo hise, y aqu<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>an enciernado todo el malicioso enrrad<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p.<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q.<u class="exp" title="abreviatura desarrollada">[ue]</u> es necesa<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">aio aclarar ante todo, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Sin este deposito.</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Antes q.<u class="exp" title="abreviatura desarrollada">[ue]</u> me <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>it<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q.<u class="exp" title="abreviatura desarrollada">[ue]</u> m<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Peña, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a mas</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>arece en la Ca<u class="exp" title="abreviatura desarrollada">[usa]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> varias de este Verinda<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">rio bacas de la Haci<u class="exp" title="abreviatura desarrollada">[end]</u>a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y mucho des<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de m<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Jose Ant.<u class="exp" title="abreviatura desarrollada">[oni]</u>o Aranda a Comayagua, ó escrivió <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">d.<u class="exp" title="abreviatura desarrollada">[o]</u>n Pablo Nieto informandole q.<u class="exp" title="abreviatura desarrollada">[ue]</u> no abia ocurr<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> reses del Hierro de mi amo; y no dudo esto dio motiv<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">vo á la Causa, q.<u class="exp" title="abreviatura desarrollada">[ue]</u> C<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en este expediente, y lo q<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">da materia a Aranda p.<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> á su enredo; y he aqui <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de cuanto deposito.</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Esto supuesto, en n<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>da favorece la carta al despo-</span>
+<span class="ln">jo violento cometido p.<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="exp" title="abreviatura desarrollada">[d.n]</u> Aranda. en primer lugar</span>
+<span class="ln">dice D.<u class="exp" title="abreviatura desarrollada">[o]</u>n Pablo Nieto, q.<u class="exp" title="abreviatura desarrollada">[ue]</u> sobre el expresado deposito;</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ito el las q.<u class="exp" title="abreviatura desarrollada">[ue]</u> estuvan con el hierro de la Hacienda q<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">en Segundo no dice q.<u class="exp" title="abreviatura desarrollada">[ue]</u> me quite las animales q<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">el S.<u class="exp" title="abreviatura desarrollada">[eño]</u>r Cura me donó; Sino, q.<u class="exp" title="abreviatura desarrollada">[ue]</u> Sele <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> lista de</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> pero no permito p.<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>a, q.<u class="exp" title="abreviatura desarrollada">[ue]</u> de orden de</span>
+<span class="ln">d.<u class="exp" title="abreviatura desarrollada">[o]</u>n Pablo Nieto me despojó; ¿podia acaso<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> á Ser no</span>
+<span class="ln">nar a Añada q.<u class="exp" title="abreviatura desarrollada">[ue]</u> D.<u class="exp" title="abreviatura desarrollada">[o]</u>n Pablo Nieto no hera Juez<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">p.<u class="exp" title="abreviatura desarrollada">[o]</u>r lo consiguiente q.<u class="exp" title="abreviatura desarrollada">[ue]</u> no podia mandar Se me despo-</span>
+<span class="ln">jase de bienes mios <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>iman. ¿qué tambien<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[...] cuanto tiene Aranda esta causa que acompaña; y por [su con]testación
+confiesa que hace del depósito que yo hice —y aquel [...]— todo el malicioso
+enredo; pero lo que es necesario haya de aclarar ante todo [...] sin este
+depósito.</p>
+<p>Antes que me [...] que m[andó] [...] Peña [...]; a más [...] aparece en la causa
+[...] varias de este vecindario, [...] vacas de la hacienda [...] y mucho
+desmedro de [...]. [Fue] José Antonio Aranda a Comayagua, o escribió a don Pablo
+Nieto informándole que no había ocurrido [...] reses del hierro de mi amo; y no
+dudo [que] esto dio motivo a la causa que c[onsta] en este expediente, y lo que
+[...] da materia a Aranda para su enredo; y he aquí [...] de cuanto depósito.</p>
+<p>Esto supuesto, en nada favorece la carta al despojo violento cometido por Aranda.
+En primer lugar dice don Pablo Nieto que sobre el expresado depósito [...] las que
+estaban con el hierro de la hacienda que [...]. En segundo, no dice que me quite
+los animales que el señor cura me donó, sino que se le [dé] lista de [...]; pero
+no permito [...] que de orden de don Pablo Nieto me despojó. ¿Podía acaso [...]?
+[...] a Aranda, que don Pablo Nieto no era juez [...] y por lo consiguiente que no
+podía mandar se me despojase de bienes míos [...]. ¿Qué también [...]?</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media.</strong> Se fijan con seguridad los nombres y topónimos
+decisivos: <strong>Comayagua</strong>, <strong>don Pablo Nieto</strong> (tres veces), **José Antonio
+Aranda**, «el señor cura me donó», «el hierro de la hacienda», «reses del hierro
+de mi amo», «vecindario». La argumentación se sigue en su línea general. **No se
+deja fijar** el párrafo segundo, muy dañado por el agujero: la palabra que sigue a
+«mandó», el apellido «Peña» que aparece suelto (¿es el testigo Mariano Peña, o un
+tercero?), y la mitad derecha de casi todos los renglones. Tampoco se deja fijar
+la palabra que transcribo dubitativamente `Añada` en el penúltimo renglón (por el
+sentido debería ser «Aranda»).
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1478">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 8</span><h3>IMG_1478</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1478" aria-label="Ampliar la lámina IMG_1478">
+        <img src="../img/cartagena1814b/p004.jpg" alt="Fotografía de la lámina IMG_1478" loading="lazy">
+      </button>
+      <figcaption>Mismo pliego, última plana del primer bifolio. Papel más limpio y
+uniforme. Persiste la rotura: agujero en el tercio superior-centro y fisura
+vertical descendente, que aquí llega casi hasta media plana. Tinta más negra y
+letra algo más apretada que en las planas anteriores. Sin sello ni foliación.
+Margen izquierdo con sombra profunda del lomo; en él se transparentan trazos de
+la plana opuesta. Corte del fotograma por la derecha, con pérdida sistemática de
+final de renglón; los dos últimos renglones se ven completos pero muy cerca del
+borde inferior del papel.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Vuelto del segundo folio: **sigue y casi acaba el escrito de Luisa
+Cartagena**, pasando del hecho al derecho. Sostiene que ni Aranda ni Nieto podían
+por autoridad propia despojarla sin ser ella condenada en juicio; que quiere
+decir que hace ya seis o nueve [años] que fue este despojo; que no favorece a
+Aranda la cosa juzgada ni le importa a ella quién sea dueño de la hacienda
+[del A...]castillo; que ha hablado [...] en orden a los fundamentos en que Aranda
+funda su oposición; que el abogado que [...] no contestar; que se le dé traslado
+de nuestra demanda, diciendo [...] indirecta contra los **albaceas de don Pablo
+Nieto**; y que renunciaría mil veces las [tacha]das en esta causa, porque pleitos
+de esta naturaleza [...] de Dios no podían darse le[s] una sola [...]; por la
+brevedad, como lo hizo el señor juez [...]; [...] de Aranda no se extendiese
+fuera de los términos de esta jurisdicción; sería torcer la demanda [...].</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ento tenerse animales de mi <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">p.<u class="exp" title="abreviatura desarrollada">[er]</u>mito q.<u class="exp" title="abreviatura desarrollada">[ue]</u> en efecto tenerse<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">podria Aranda ó Nieto de actoridad propia, Sin<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">hoirme y Sin Ser condenada en Juicio despojarme<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de ellas, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>llos obligados á la Restitu<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">cion del d.<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ma Suerte.</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Quiero d<u class="exp" title="abreviatura desarrollada">[ecir]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> esto yo demanda contra Aran<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">da en Seis u nove<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> años q.<u class="exp" title="abreviatura desarrollada">[ue]</u> abra fue este despo<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">jo, no favorece a <u class="exp" title="abreviatura desarrollada">[A]</u>randa mi cosa per Judica<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Cual tiene la Causa, como ni tan poco q.<u class="exp" title="abreviatura desarrollada">[ue]</u> ynore<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">yo u otro como <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>es Dueño de la Hacienda del A<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Castillo; lo q.<u class="exp" title="abreviatura desarrollada">[ue]</u> no <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ni me importa ni quiero Sa<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ver.</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;He ablado lo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ante en horden a los funda<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">m.<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>en q.<u class="exp" title="abreviatura desarrollada">[ue]</u> Aran<u class="exp" title="abreviatura desarrollada">[da]</u> funda Su hoposicion, resta<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">del abog.<u class="exp" title="abreviatura desarrollada">[ad]</u>o a q.<u class="exp" title="abreviatura desarrollada">[ue]</u> Iracose p.<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> no contestar, y p.<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Sele q.<u class="exp" title="abreviatura desarrollada">[ue]</u> se traslado de huesra demanda, diciendo<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">indirecta contra los albaceas de D.<u class="exp" title="abreviatura desarrollada">[o]</u>n Pablo Nieto. ha<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">viene Aranda de renuncian mil veses las <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">das en esta Causa, p.<u class="exp" title="abreviatura desarrollada">[o]</u>r q.<u class="exp" title="abreviatura desarrollada">[ue]</u> pleitos de esta naturalesa<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">rigen de D.<u class="exp" title="abreviatura desarrollada">[i]</u>os no podia darsele<u class="exp" title="abreviatura desarrollada">[s]</u> una sola <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">p.<u class="exp" title="abreviatura desarrollada">[o]</u>r la hrevidad como lo hiso el S.<u class="exp" title="abreviatura desarrollada">[eño]</u>r Juez p.<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">dad de Aranda no se estendiese fuera de los termin<u class="exp" title="abreviatura desarrollada">[os]</u></span>
+<span class="ln">de esta Jurisdicion. Seria torcer la demanda <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[...] permito que en efecto [...]; podría Aranda o Nieto, de autoridad propia, sin
+oírme y sin ser condenada en juicio, despojarme [...] de ellas, [siendo e]llos
+obligados a la restitución de d[ichas reses de la mis]ma suerte.</p>
+<p>Quiero decir [...] esto: yo [puse] demanda contra Aranda en seis o nueve [...]
+años que habrá fue este despojo; no favorece a Aranda mi cosa juzgada, cual tiene
+la causa, como ni tampoco que ignore yo u otro cómo [...] es dueño de la hacienda
+del A[...]castillo, lo que ni me importa ni quiero saber.</p>
+<p>He hablado lo bastante en orden a los fundamentos en que Aranda funda su
+oposición, resta [...] del abogado, a que [se] acoge para no contestar, y por
+[...] se le [...] que se [dé] traslado de nuestra demanda, diciendo [...]
+indirecta contra los albaceas de don Pablo Nieto. Ha[...] viene Aranda de
+renunciar mil veces las [...]das en esta causa, porque pleitos de esta naturaleza
+[...] rigen de Dios, no podía dárseles una sola [...] por la brevedad, como lo
+hizo el señor juez, por [...]dad de Aranda, no se extendiese fuera de los términos
+de esta jurisdicción: sería torcer la demanda [...].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media-baja</strong> en el detalle, <strong>media</strong> en el hilo. La plana está
+llena de construcciones interrumpidas por el corte derecho, y varias palabras
+clave caen precisamente en él. Se fijan con seguridad: «sin oírme y sin ser
+condenada en juicio despojarme», «seis u nove[...] años que habrá fue este
+despojo», «dueño de la hacienda del A[...]castillo», «los albaceas de don Pablo
+Nieto», «fuera de los términos de esta jurisdicción». <strong>No se deja fijar</strong>: el
+número de años del despojo (se lee «seis u nove...», que puede ser «seis u nueve»
+o el comienzo de «noventa», imposible de decidir); el topónimo de la hacienda
+(«del A[...]castillo»: el fragmento perdido está en el corte); la palabra que
+transcribo `Iracose`; el nombre del juez citado.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1479">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 8</span><h3>IMG_1479</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1479" aria-label="Ampliar la lámina IMG_1479">
+        <img src="../img/cartagena1814b/p005.jpg" alt="Fotografía de la lámina IMG_1479" loading="lazy">
+      </button>
+      <figcaption>Papel sellado nuevo pliego, con el encabezamiento impreso **«Un
+quartillo.»** en la cabecera (igual que 1475), truncado por arriba de modo que no
+se lee el resto de la leyenda ni la habilitación. En el ángulo superior derecho,
+de mano de época, la <strong>foliación «16»</strong>, clara y segura, y debajo de ella una
+palabra breve ilegible. Rotura vertical larga y estrecha, de bordes desgarrados,
+que atraviesa la plana por el centro desde el tercio superior hasta más abajo de
+media plana; a su paso se lleva palabras enteras, entre ellas la primera del
+renglón de la no firma. Tinta parda clara. Borde derecho del papel deshilachado y
+más allá el corte del fotograma. En el margen izquierdo, en la sombra del lomo,
+se lee la escritura transparentada de la plana contigua.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Primera plana de un <strong>segundo pliego sellado</strong>, foliada <strong>16</strong>.
+Contiene tres cosas: (1) el **final y el petitorio del escrito de Luisa
+Cartagena**, con la súplica de que se mande al expresado Aranda su restitución y
+reintegración de los bienes, y que si él no es dueño y tiene que demandar el
+dominio de ellos lo haga después por los trámites y modo que corresponda, «que
+estoy pronta a contestar a cualquiera que sea su acción», pidiendo **justicia con
+costas<strong>; (2) la </strong>cláusula de no firma<strong> y la </strong>data: Sensentí, julio [seis] de
+mil ochocientos catorce<strong>; (3) el </strong>auto** por el que, visto que José Antonio
+Aranda, no obstante el mandamiento de arraigo que se le intimó, se ha ausentado
+del partido a la ciudad de <strong>Comayagua</strong>, se manda dirigir el expediente al señor
+<strong>Asesor Ordinario y Gobernador Intendente interino de la Provincia</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">[al margen superior derecho: 16]</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Dirigiera Contra los albaceas de Nieto; ¿que me gua<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">to eres? ¿i que tanto tuve con el? ninguno. p.<u class="exp" title="abreviatura desarrollada">[o]</u>r tan<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;A V.<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d Suplico Se sirva mandar al expresado Aran<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">da mi Restitucion, y <u class="exp" title="abreviatura desarrollada">[reinteg]</u>racion de los bienes p<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">dueños de q.<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> reses. <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>pojo; y Si el no <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">tiene q.<u class="exp" title="abreviatura desarrollada">[ue]</u> Demandar <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q.<u class="exp" title="abreviatura desarrollada">[ue]</u> el <u class="exp" title="abreviatura desarrollada">[d]</u>ominio d<u class="exp" title="abreviatura desarrollada">[e]</u> ellos, lo ha<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ga despues p.<u class="exp" title="abreviatura desarrollada">[o]</u>r los <u class="exp" title="abreviatura desarrollada">[tr]</u>am<u class="exp" title="abreviatura desarrollada">[ites]</u> y modo q.<u class="exp" title="abreviatura desarrollada">[ue]</u> Corresponda, q.<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">estoy pronta a contestar a cual quiera q.<u class="exp" title="abreviatura desarrollada">[ue]</u> Sea <u class="exp" title="abreviatura desarrollada">[su]</u></span>
+<span class="ln">accion <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Justicia Con Costas</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>o se firmar</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Sensenti Julio <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿seis?]</u></u></span>
+<span class="ln">de ochos.<u class="exp" title="abreviatura desarrollada">[cientos]</u> Catorce</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Visto: y la ausencia ó q.<u class="exp" title="abreviatura desarrollada">[ue]</u> Jose Antonio</span>
+<span class="ln">Aranda, no obstante el Mandam.<u class="exp" title="abreviatura desarrollada">[ien]</u>to de</span>
+<span class="ln">Arraigo q.<u class="exp" title="abreviatura desarrollada">[ue]</u> se le intimó, se ha Ausentado</span>
+<span class="ln">del Part.<u class="exp" title="abreviatura desarrollada">[id]</u>o <u class="exp" title="abreviatura desarrollada">[a]</u> la Ciudad de Comayagua,</span>
+<span class="ln">Seg.<u class="exp" title="abreviatura desarrollada">[ú]</u>n se me avisa, Dirijase este Exp.<u class="exp" title="abreviatura desarrollada">[edien]</u>te</span>
+<span class="ln">diente al S.<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Asesor Ordinario y Gov.<u class="exp" title="abreviatura desarrollada">[ernad]</u>or</span>
+<span class="ln">Yntend.<u class="exp" title="abreviatura desarrollada">[en]</u>te interino de la Provincia, p.<u class="exp" title="abreviatura desarrollada">[ar]</u>a</span>
+<span class="ln">q.<u class="exp" title="abreviatura desarrollada">[ue]</u> con su vista Determine lo q.<u class="exp" title="abreviatura desarrollada">[ue]</u> Corres<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[...] dirigiera contra los albaceas de Nieto; ¿qué me gua[rda]to eres?, ¿y qué
+tanto tuve con él? Ninguno. Por tanto:</p>
+<p>A vuestra merced suplico se sirva mandar al expresado Aranda mi restitución y
+reintegración de los bienes [...], dueños de que [...] reses [...] despojo; y si
+él no [...] tiene que demandar [...] que el dominio de ellos, lo haga después por
+los trámites y modo que corresponda, que estoy pronta a contestar a cualquiera
+que sea su acción, [que es] justicia con costas.</p>
+<p>[No] sé firmar.</p>
+<p>Sensentí, julio [seis] de [mil] ochocientos catorce.</p>
+<p>Visto: y la ausencia, o que José Antonio Aranda, no obstante el mandamiento de
+arraigo que se le intimó, se ha ausentado del partido a la ciudad de Comayagua
+según se me avisa, diríjase este expediente al señor Asesor Ordinario y Gobernador
+Intendente interino de la Provincia, para que con su vista determine lo que
+corres[ponda].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Alta</strong> para el auto y para la data del escrito; <strong>media-alta</strong>
+para el petitorio. La foliación «16» es segura. La frase de la no firma está
+<strong>partida por la rotura</strong>: se conserva con toda claridad `...o se firmar`, y la
+palabra perdida es de dos letras con la última «o». La lectura <strong>«no sé firmar»</strong>
+es la única que cabe por el sentido y por el resto del trazo, pero la primera
+letra <strong>no se ve</strong>; lo consigno así para que quede constancia de que la fórmula no
+está entera en el papel. <strong>No se deja fijar</strong>: el día del mes (`Julio` seguido de
+una palabra breve de cuatro trazos que se acomoda a «seis», pero que podría ser
+otra); la palabra `gua[...]to` del primer renglón; el final del último renglón,
+cortado.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1480">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 8</span><h3>IMG_1480</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1480" aria-label="Ampliar la lámina IMG_1480">
+        <img src="../img/cartagena1814b/p006.jpg" alt="Fotografía de la lámina IMG_1480" loading="lazy">
+      </button>
+      <figcaption>Papel del segundo pliego, vuelto; sin sello impreso ni foliación.
+Fuerte sombra del lomo a la izquierda y del borde derecho. Rotura: un **agujero
+grande, estrellado**, en el tercio superior, que se come el arranque de la firma
+del juez y parte de dos renglones; de él baja una fisura larga y estrecha, con un
+colgajo de papel blanco levantado, que atraviesa el resto de la plana hasta cerca
+del pie. La mitad inferior de la plana está <strong>en blanco</strong>, salvo la diligencia
+final. Tinta parda; rúbricas amplias y bien conservadas. Manchas de humedad
+difusas. Corte del fotograma por la derecha, que se lleva el final de los
+renglones del párrafo último.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Vuelto del folio 16: <strong>cierre de la actuación de Sensentí</strong>. Contiene
+(1) el final del auto —que se ponga en noticia de la interesada para el uso de su
+derecho si fuere conveniente—, con la <strong>firma del juez, [Ju]an de Molina</strong>, y la
+fórmula de autorización <strong>«con testigos en falta de escribano»</strong>, suscrita por los
+dos testigos de asistencia, <strong>José Miguel Salinas</strong> y <strong>Mariano Peña</strong>; (2) la
+<strong>notificación a Luisa Cartagena</strong>: «En el día se le notificó a Luisa Cartagena;
+quedó entendida», con rúbrica —la de quien actúa, no la suya—; (3) la diligencia
+final de remisión del expediente. Es la última plana del expediente de 1814 en
+este tramo.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>porada en la demanda, y al efecto pon-</span>
+<span class="ln">gase en noticia de la interesada p.<u class="exp" title="abreviatura desarrollada">[ar]</u>a el</span>
+<span class="ln">uso de su D.<u class="exp" title="abreviatura desarrollada">[erech]</u>o si fuere Combeniente</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<u class="exp" title="abreviatura desarrollada">[Ju]</u>an de Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Asi lo prov<u class="exp" title="abreviatura desarrollada">[eyó]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y firmó el S.<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Ten.<u class="exp" title="abreviatura desarrollada">[ien]</u>te <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Juez.</span>
+<span class="ln">y Juez de esta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>rona con test.<u class="exp" title="abreviatura desarrollada">[igo]</u>s en falta de</span>
+<span class="ln">Escn.<u class="exp" title="abreviatura desarrollada">[ibano]</u></span>
+<span class="ln">&amp;nbsp;&amp;nbsp;Tes.<u class="exp" title="abreviatura desarrollada">[tig]</u>o Jose Migu.<u class="exp" title="abreviatura desarrollada">[e]</u>l Salinas <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Mariano Peña <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;En el dia se le Notifico á Luisa Cartagena</span>
+<span class="ln">quedo entendida <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;En Seguida se paso este Exped.<u class="exp" title="abreviatura desarrollada">[ien]</u>te al S.<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Ten.<u class="exp" title="abreviatura desarrollada">[ien]</u>te <u class="exp" title="abreviatura desarrollada">[¿G]</u>en.<u class="exp" title="abreviatura desarrollada">[era]</u>l Pro-</span>
+<span class="ln">vincial del Partido p.<u class="exp" title="abreviatura desarrollada">[ar]</u>a los efectos q.<u class="exp" title="abreviatura desarrollada">[ue]</u> llevan</span>
+<span class="ln">el anterior decreto, y demas Conocim.<u class="exp" title="abreviatura desarrollada">[ien]</u>to<u class="exp" title="abreviatura desarrollada">[s]</u> de</span>
+<span class="ln">este Juicio, lo q.<u class="exp" title="abreviatura desarrollada">[ue]</u> siento p.<u class="exp" title="abreviatura desarrollada">[o]</u>r dilig.<u class="exp" title="abreviatura desarrollada">[enci]</u>a p.<u class="exp" title="abreviatura desarrollada">[ar]</u>a Constancia</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[...] [incor]porada en la demanda; y al efecto póngase en noticia de la
+interesada para el uso de su derecho si fuere conveniente. [Ju]an de Molina
+[rúbrica].</p>
+<p>Así lo proveyó, [mandó] y firmó el señor teniente [...] juez, y juez de esta
+[...], con testigos en falta de escribano. Testigo: José Miguel Salinas
+[rúbrica]. Mariano Peña [rúbrica].</p>
+<p>En el día se le notificó a Luisa Cartagena; quedó entendida. [rúbrica]</p>
+<p>En seguida se pasó este expediente al señor teniente [general] provincial del
+partido, para los efectos que llevan el anterior decreto y demás conocimientos de
+este juicio, lo que siento por diligencia para constancia.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Alta</strong> en lo que importa: la <strong>notificación a Luisa Cartagena</strong>
+(«En el día se le notificó a Luisa Cartagena, quedó entendida»), y los nombres de
+los firmantes: <strong>[Ju]an de Molina</strong> (juez), <strong>José Miguel Salinas</strong> y **Mariano
+Peña** (testigos de asistencia). Estas tres firmas son las mismas que en 1475, lo
+que confirma que ambos pliegos pertenecen a una misma actuación. **Quién firma y
+quién no<strong>: firman Molina, Salinas y Peña; </strong>Luisa Cartagena no firma en ninguna
+plana de este tramo** —en IMG_1479 se consigna `[n]o se firmar` y aquí solo se
+deja constancia de que «quedó entendida», seguida de la rúbrica del actuario. No
+hay «a ruego» ni firma de tercero por ella. <strong>No se deja fijar</strong>: el título del
+firmante entre «S.or Ten.te» y «Juez» (roto por el agujero); la palabra que
+transcribo `[...]rona` («esta [Co]rona»? «esta [Vi]lla»?); y si el destinatario de
+la última diligencia es el «Teniente General Provincial» del partido o el
+Gobernador Intendente del auto anterior —los trazos abreviados no se dejan
+resolver a esta resolución.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1481">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 7 de 8</span><h3>IMG_1481</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1481" aria-label="Ampliar la lámina IMG_1481">
+        <img src="../img/cartagena1814b/p007.jpg" alt="Fotografía de la lámina IMG_1481" loading="lazy">
+      </button>
+      <figcaption>Este es el dato principal de la plana. Papel sellado con
+encabezamiento impreso en cuatro líneas de capitales: SELLO TERCERO, DOS REA- · LES, AÑOS DE MIL OCHO- · CIENTOS QVATRO, Y OCHO- · CIENTOS CINCO.
+
+A la izquierda, en columna, <strong>cinco estampillas circulares</strong>: (1) armas reales con
+leyenda `HISPANIARVM REX ... CAROLVS IV D.G.`; (2) busto con leyenda `... VALE 2
+R[EALE]S ...` y cifras a los lados; (3) `VALGA POR EL REYNADO DEL S.D. FERNANDO
+VII` con rúbrica estampada; (4) `A 1809 Y 1810 / VALGA POR EL REYNADO DEL S.D.
+FERNANDO VII` con rúbrica; (5) otra con castillos coronados y `... VALE ... 3
+...`. Es decir: **pliego de sello tercero de 1804-1805, habilitado para el reinado
+de Fernando VII y rehabilitado para 1809 y 1810.** No lleva el «Un quartillo» de
+1475 y 1479. Rotura vertical larga y estrecha por el centro, con colgajo blanco
+levantado. En el ángulo superior derecho hay una cifra de foliación ilegible sobre
+la rotura. Tinta parda clara, muy pálida en algunos renglones. Corte del fotograma
+por la derecha.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Aquí cambia el documento.</strong> Primera plana de un bifolio de papel
+sellado <strong>distinto</strong>, escrito por <strong>otra mano</strong> (letra menuda, cursiva rápida, de
+letrado), con materia <strong>procesal general</strong>: se discute un **juicio de
+conciliación<strong> que se ha propuesto, un </strong>juicio verbal**, el término de prueba, la
+calidad de los testigos, la condena, la audiencia, la <strong>providencia</strong>, la
+<strong>sentencia</strong> y la citación de las partes. No aparece en ningún pasaje legible el
+nombre de Luisa Cartagena, ni el de José Antonio Aranda, ni el de Pablo Nieto, ni
+ninguna cifra de ganado. Es, como dice el catálogo, un **alegato o dictamen
+jurídico sobre procedimiento**; lo que el catálogo no dice es que va en papel de
+otra emisión y de otra década.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[encabezamiento impreso:]</u> SELLO TERCERO, DOS REA- / LES, AÑOS DE MIL OCHO- / CIENTOS QVATRO, Y OCHO- / CIENTOS CINCO.</span>
+<span class="ln">[al margen izquierdo, cinco estampillas: HISPANIARVM REX · CAROLVS IV D.G. — VALE 2 R<u class="exp" title="abreviatura desarrollada">[EALE]</u>S — VALGA POR EL REYNADO DEL S.D. FERNANDO VII — A 1809 Y 1810 VALGA POR EL REYNADO DEL S.D. FERNANDO VII — VALE ... 3 ...]</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>na se ha propuesto Juicio de conciliacion <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>cas q.<u class="exp" title="abreviatura desarrollada">[ue]</u> arreglado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y hizo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>conformes<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q.<u class="exp" title="abreviatura desarrollada">[ue]</u><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el ted<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>sen. <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Juez D<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>cio Verbal exig<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Juicio Verbal <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q.<u class="exp" title="abreviatura desarrollada">[ue]</u><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> pr<u class="exp" title="abreviatura desarrollada">[imer]</u>o. Sacó el Juicio</span>
+<span class="ln">ta, como gradua<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>zg<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y qual claro co<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> conciliacion enunciar<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ovede hacerse baxo el Juicio de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>nidad: dio Juez<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">V.<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d. cuyo haviendo la causa a prueba con termino<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ueveo<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>conclu<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y mejor haber donde el<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ochenta de la ley, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> termino<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la calidad si <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> pruebas q.<u class="exp" title="abreviatura desarrollada">[ue]</u> se pronunciase<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ranuales, ó incom<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> cinco<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ugales, y gracias <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> conveniente: Como debia e<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ante el demandad<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q.<u class="exp" title="abreviatura desarrollada">[ue]</u>: nada del<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ca q.<u class="exp" title="abreviatura desarrollada">[ue]</u> ti ó condena<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>tenue<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y examinado<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">determinó comp<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la Audiencia en que<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">se halló, pero q.<u class="exp" title="abreviatura desarrollada">[ue]</u> q<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>vertido á lo q<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Craurea del Juicio: q.<u class="exp" title="abreviatura desarrollada">[ue]</u> providencia <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> despacho<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">mandado ordinariamente de hoy q.<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">al comparecer como queda dicho <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">acabara diferenciando la iniciacion de este caso<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> V.<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d. al no en cuio ca<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">á <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>sugero el camino de qual<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">á tomar <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q.<u class="exp" title="abreviatura desarrollada">[ue]</u> el Julio C<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ni <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q.<u class="exp" title="abreviatura desarrollada">[ue]</u> ca, tibia <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> publicacion, de exhorbitar los<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">el auto p<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ciendo, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>o de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ó de la publicacion <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[La transcripción de esta plana está tan interrumpida que la lectura corrida solo
+puede darse en resumen sin forzar el texto.]</p>
+<p>[...] se ha propuesto juicio de conciliación [...]; que arreglado [...] e hizo
+[...] conformes [...]; [...] juez [...] juicio verbal [...]; primero sacó el
+juicio [...], como graduado [...]; y cual claro [...] conciliación, enunciar
+[...] debe hacerse bajo el juicio de [solem]nidad [...]. Vuestra merced, [...]
+habiendo [recibido] la causa a prueba con término [...] ochenta de la ley [...],
+la calidad si [...] pruebas que se pronunciase [...]; [...] o incom[patible]
+[...] conveniente, como debía [...] ante el demandado [...] que nada del [...],
+que [...] o condena[r] [...] y examinado [...] determinó comp[arecer ...] de la
+audiencia en que se halló, pero que [...] advertido a lo que [...] del juicio;
+que [la] providencia [...] mandado ordinariamente [el día] de hoy [...] al
+comparecer, como queda dicho [...]; acabará diferenciando la iniciación de este
+caso [...] vuestra merced [...] el camino de [...] a tomar [...]; [...]
+publicación, de exorbitar los [...] el auto [...] o de la publicación [...].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Baja</strong> en el texto, <strong>alta</strong> en el diagnóstico material. Lo que
+queda firme es: (a) el **encabezamiento impreso del sello y las cinco
+habilitaciones**, que se leen con seguridad y fechan el papel en 1804-1805 con
+rehabilitación para 1809 y 1810; (b) el <strong>vocabulario procesal</strong>: «juicio de
+conciliación», «juicio verbal», «la causa a prueba con término», «la ley», «la
+audiencia», «providencia», «publicación», «el auto»; (c) que **no hay en la plana
+ningún nombre ni cifra de los del pleito de Cartagena y Aranda**. Todo el
+desarrollo del razonamiento se pierde entre la rotura central, la palidez de la
+tinta y el corte del margen derecho: las palabras que doy entre `[...]` no deben
+usarse como lectura, sino como indicio del lugar del renglón.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1482">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 8 de 8</span><h3>IMG_1482</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1482" aria-label="Ampliar la lámina IMG_1482">
+        <img src="../img/cartagena1814b/p008.jpg" alt="Fotografía de la lámina IMG_1482" loading="lazy">
+      </button>
+      <figcaption>Mismo pliego que 1481 (sin sello impreso, por ser vuelto). Papel
+claro, muy limpio en la zona en blanco. La misma rotura vertical del pliego,
+aquí muy visible: un desgarro estrellado en el tercio superior, justo bajo el
+texto, del que baja una larga fisura con dos colgajos de papel levantados, hasta
+casi la mitad de la plana. En el margen derecho de la mitad inferior se ven, **en
+negativo y al revés**, las improntas de dos de las estampillas del recto (1481),
+traspasadas por presión y humedad: una confirmación física más de que 1481 y 1482
+son las dos caras de una misma hoja. Algunas picaduras de insecto y salpicaduras
+de tinta. Corte del fotograma por la derecha, que se lleva el final de todos los
+renglones escritos, incluido el año de la data.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Vuelto del bifolio anterior: <strong>cierre del mismo dictamen</strong>. Solo están
+escritos los siete u ocho primeros renglones; el resto de la plana, más de dos
+tercios, está <strong>en blanco</strong>. El texto conservado trata de la facultad de
+<strong>tachar</strong> testigos, de <strong>conceder el término de buena prueba</strong>, de que «hecha la
+publicación» se <strong>consultará la sentencia definitiva</strong>, y de que lo obrado se
+extienda <strong>en papel del sello que es</strong> debido, guardándose la **reposición del
+sello correspondiente**. Sigue la data —día veinte y nueve, mes perdido en el
+corte, «de mil ochocientos ...»— y una <strong>firma abreviada con rúbrica</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de tachar, q.<u class="exp" title="abreviatura desarrollada">[ue]</u> Si no ha de<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">proce<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> del <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> remitirlo, ó <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de q<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Conceder el termino de buena prueba (hecha la publica-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>lcanse de buena prueba <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Sentencia definitiva: Co<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">cion) la consultará <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q.<u class="exp" title="abreviatura desarrollada">[ue]</u> lo obrado en pap.<u class="exp" title="abreviatura desarrollada">[e]</u>l del sello ques<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> guard<u class="exp" title="abreviatura desarrollada">[ándo]</u>se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> reposicion del Sello correspond.<u class="exp" title="abreviatura desarrollada">[ien]</u>te</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>l, y hono<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>te y nuebe de mil ochoc.<u class="exp" title="abreviatura desarrollada">[ientos]</u> ca<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Co<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[...] de tachar, que si no ha de proce[der ...] remitirlo, o [...] de que [...]
+conceder el término de buena prueba; (hecha la publicación) la consultará [...]
+sentencia definitiva; [...] que lo obrado [se extienda] en papel del sello que es
+[debido], guardándose [la] reposición del sello correspondiente [...].</p>
+<p>[...], [a] veinte y nueve de mil ochocientos ca[...]. [Firma abreviada ilegible,
+con rúbrica].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media-baja</strong>. Se fija con seguridad la materia —tacha de
+testigos, término de buena prueba, publicación, consulta de la sentencia
+definitiva, <strong>reposición del sello correspondiente</strong>— y el día de la data, «veinte
+y nueve». <strong>No se deja fijar</strong>: el <strong>mes</strong>, que caía al final del renglón anterior
+y se ha perdido en el corte del fotograma; el <strong>año</strong>, cuya palabra empieza
+inmediatamente después de `mil ochoc.` y se interna en el borde cortado: los
+trazos visibles (`ca...`) son compatibles con <strong>«catorce»</strong>, pero también con otras
+formas, y <strong>no doy la fecha por leída</strong>; y la firma, reducida a un arranque de dos
+letras y una rúbrica. Conviene subrayar que este pliego va en papel habilitado
+para 1809 y 1810 y que el propio texto manda reponer el sello: son dos indicios de
+que aquí se estaba escribiendo en papel que no correspondía al año, lo que impide
+usar el sello como prueba de fecha en un sentido o en otro.</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4><strong>Luisa Cartagena</strong></h4>
+  <p class="papel">demandante</p>
+  <p class="calidad">«vecina de Cucuyagua de esta jurisdicción». Sin «doña», sin calidad, sin edad. <strong>No firma</strong>: «[n]o se firmar», y sin firma a ruego</p>
+</div>
+<div class="persona">
+  <h4><strong>José Antonio Aranda</strong></h4>
+  <p class="papel">demandado</p>
+  <p class="calidad">se ausenta a Comayagua pese al arraigo; no se le encuentra para el traslado</p>
+</div>
+<div class="persona">
+  <h4><strong>El cura donante</strong></h4>
+  <p class="papel">donó las setenta reses; ya difunto al tiempo del pleito</p>
+  <p class="calidad">apellido corto terminado en `-io`, <strong>ilegible</strong>. <strong>No es «Reyes»</strong>, como daba el catálogo</p>
+</div>
+<div class="persona">
+  <h4><strong>Don Pablo Nieto</strong></h4>
+  <p class="papel">de Comayagua; a él escribiría Aranda</p>
+  <p class="calidad">nombrado por Luisa Cartagena en su alegato</p>
+</div>
+<div class="persona">
+  <h4><strong>Molina</strong></h4>
+  <p class="papel">juez del partido</p>
+  <p class="calidad"><strong>Firma</strong>, «en falta de escribano»</p>
+</div>
+<div class="persona">
+  <h4><strong>Salinas</strong> y <strong>Peña</strong></h4>
+  <p class="papel">testigos de asistencia</p>
+  <p class="calidad"><strong>Firman</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>El Asesor Ordinario y Gobernador Intendente interino</strong></h4>
+  <p class="papel">recibe el expediente remitido</p>
+  <p class="calidad">sin nombre en estas planas</p>
+</div></div>
+</section>
+
+<section class="extra wrap">
+  <h2>Nota final: una costura mal puesta y un margen perdido</h2>
+  <p><strong>IMG_1481 e IMG_1482 no pertenecen a este pleito.</strong> El catálogo las daba como su continuación. Son otro documento: pliego de <strong>sello tercero de 1804-1805 habilitado para 1809 y 1810</strong>, otra mano, materia estrictamente procesal —juicio de conciliación no propuesto, términos y ochenta días de la ley, publicación de probanzas, sentencia definitiva y reintegro del papel sellado—, y <strong>ningún nombre del pleito de Luisa Cartagena</strong>. La costura cae entre IMG_1480 y IMG_1481. Se publican aquí por estar físicamente cosidas a continuación, pero deben leerse como pieza aparte.</p>
+<p><strong>Una advertencia material que afecta a las ocho planas.</strong> La fotografía está cortada por el margen derecho en todas ellas, de modo que <strong>se pierden los finales de renglón</strong>. En los escritos de parte, que es donde va el argumento, eso significa que muchas cláusulas quedan sin su cierre. Se han dejado como `[...]` y no se han completado por fórmula. Estas ocho planas son candidatas de primer orden para volver a fotografiar, y la operación es trivial: basta encuadrar el pliego entero.</p>
+</section>
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>El pleito del río Sumpul — Papeles de Sensentí</title>
+<meta name="description" content="Dos vecinos se destrozan las siembras a orillas del Sumpul. Pero bajo el pleito de cercas corre otro: dónde vive realmente Anselmo Pérez, y qué justicia manda sobre él. En el expediente queda su certificación de tributario del pueblo de Chalatenango.">
+<meta property="og:title" content="El pleito del río Sumpul">
+<meta property="og:description" content="Dos vecinos se destrozan las siembras a orillas del Sumpul. Pero bajo el pleito de cercas corre otro: dónde vive realmente Anselmo Pérez, y qué justicia manda sobre él. En el expediente queda su certificación de tributario del pueblo de Chalatenango.">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Litigio de 1813</p>
+  <h1>El pleito del río Sumpul</h1>
+  <p class="dek">Dos vecinos se destrozan las siembras a orillas del Sumpul. Pero bajo el pleito de cercas corre otro: dónde vive realmente Anselmo Pérez, y qué justicia manda sobre él. En el expediente queda su certificación de tributario del pueblo de Chalatenango.</p>
+  <div class="meta"><span><strong>13 láminas</strong> · IMG_1556 – IMG_1568</span><span>1810 a 1816, el grueso en 1813</span><span>Papel sellado habilitado</span><span>Sensentí · río Sumpul · Chalatenango · Tejutla</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">13</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>Lo que se litiga, en su forma más simple, es un <strong>pleito de vecinos por daños recíprocos en las siembras</strong>, a orillas del <strong>río Sumpul</strong>, en el confín oriental del partido de Sensentí. Cresencio Orellana alega una posesión de más de veinte años: casas, cañaveral, trapiche y horno levantados en un paraje entonces despoblado, donde su ganado no podía dañar a nadie. Anselmo Pérez, llegado después —cinco años según él, nueve según Orellana—, alega que fue él quien pidió licencia para asentarse, que ya una vez le mandaron componer su cerca y pasarse al otro lado del río, y que lo hizo. El ganado vacuno rompe las cercas, las cercas no bastan, y de ahí nacen los insultos, los dicterios y las amenazas de muerte. La carátula (IMG_1556) resume el asunto así y sólo así: «perjuicio que experimentan de uno a otro en sus sembrados y fincas», con nueve fojas.</p>
+<p>Pero bajo ese pleito de cercas corre otro, mucho más grave: <strong>dónde está domiciliado Anselmo Pérez y, por tanto, qué juez puede juzgarlo</strong>. Orellana ensancha la demanda acusándolo de tres cosas que no son civiles: que vino huido de <strong>Chalatenango</strong> por haber apaleado al alcalde ordinario don <strong>Juan Coello/Cuello</strong>; que salió con otros cuatro contra su hijo <strong>Juan Florencio</strong>; y que en casa de Anselmo se mató a un hombre y el delito quedó impune. Anselmo responde con su propia versión de la noche de Chalatenango —los dos golpes de <strong>Luciano Herrera</strong> en una <em>chinamita</em>, el barretón de <strong>cacahuananche</strong>, el único golpe a ciegas en la oscuridad— y, sobre todo, con dos <strong>certificaciones traídas de la otra jurisdicción</strong>: la de <strong>Rafael de Reyna</strong> (Tejutla, 8 de mayo de 1810), que lo acredita como indio tributario matriculado en el pueblo de Chalatenango, hombre de bien y buen pagador de tributos; y la de <strong>Juan Bautista Valdiviezo</strong> (Santo Tomás Tejutla, 21 de septiembre de 1813), que declara que en la causa criminal contra <strong>Dionicio Pérez</strong> por el homicidio casual de <strong>Pablo Secundino</strong> en la <strong>montaña de Santa Tecla</strong> no ha resultado complicado Anselmo Pérez. Orellana contraataca en el punto exacto: que Anselmo «se desavecindó del partido de Chalatenango» y <strong>«ha ido a pedir certificados a Tejutla, en donde nunca ha vivido, hasta ahora que ha procurado domiciliarse allí»</strong>. El papeleo de una jurisdicción se está usando para escapar de otra, y eso es lo que Orellana denuncia.</p>
+<p>El expediente discurre con notable orden procesal para un juzgado rural. Escrito de Orellana; contestación de Anselmo con documentos; decreto de traslado (Sensentí, 25 de septiembre de 1813, Carrejón, ante José Ignacio Salazar con testigos a falta de escribano); réplica de Orellana; remisión a letrado (29 de septiembre); dictamen del <strong>licenciado José Santiago Milla</strong>; decreto de conformidad (24 de octubre); notificaciones (28 de octubre). El dictamen de Milla es la pieza más fina: dice que ninguno de los dos tiene derecho exclusivo en el sitio, que por tanto ninguno puede lanzar al otro, que Orellana pruebe los perjuicios, que los certificados desvanecen el cargo de complicidad en la muerte pero <strong>no</strong> el de los palos al alcalde de Chalatenango —sobre el que el propio Pérez se explica con ambigüedad—, y que, antes de resolver, <strong>se oficie a los alcaldes ordinarios de Chalatenango</strong> preguntando si hay causa pendiente.</p>
+<p>Y así acaba lo conservado: <strong>no hay sentencia</strong>. La última plana registra que se libró el oficio a Chalatenango, que se notificó a las dos partes —ninguna de las cuales sabía firmar— y que <strong>el expediente se le entregó en mano a Cresencio Orellana</strong> el 28 de octubre de 1813, a la espera de la contestación de la otra jurisdicción, que no consta en estas trece planas. El auto de IMG_1558, que declara a Anselmo Pérez «domiciliario del partido de Tejutla» y remite lo criminal al juez de allá, es la única decisión firme del legajo, y confirma lo que todo el pleito insinúa: que la raya entre Sensentí y los partidos de Tejutla y Chalatenango —hoy la frontera entre Honduras y El Salvador, por el mismo río Sumpul— era en 1813 una línea que la gente cruzaba para vivir, para sembrar, para huir y, sobre todo, para elegir juez.</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>Bajo el pleito de cercas corren dos asuntos que exceden a los vecinos que litigan. El primero es cómo se acreditaba un derecho sobre la tierra sin exhibir título. Cresencio Orellana no presenta merced, composición ni escritura: alega <strong>más de veinte años</strong> de estar allí. La posesión se demuestra con obra fija y con vecinos que recuerdan quién llegó primero. Anselmo Pérez opone otro título no escrito, la licencia para asentarse y su obediencia a la orden de componer la cerca. En 1813 el derecho útil sobre un paraje se sostiene en la <strong>antigüedad, la mejora y la obediencia a la justicia local</strong>. La cerca es el instrumento probatorio, y su rotura por el ganado convierte la convivencia en litigio, el mismo mecanismo del pleito de la milpa de 1793 recogido en otro expediente de este sitio.</p>
+<p>El segundo asunto es la competencia. Anselmo responde a las imputaciones no civiles con dos certificaciones traídas de fuera, una que lo acredita como indio tributario matriculado en Chalatenango y otra que lo desvincula de un homicidio casual. Orellana ataca ahí: dice que se desavecindó y pidió certificados en Tejutla, donde nunca ha vivido. El expediente deja ver <strong>el uso estratégico de la vecindad y de la matrícula de tributarios</strong> por parte de un hombre que se mueve entre jurisdicciones vecinas.</p>
+<p>Como contexto general que se aporta, y que el documento no dice, esa movilidad es el terreno de los trabajos de Johnson, Gómez Zúñiga y Kelly sobre la frontera lingüística del occidente de Honduras. El pleito sirve como caso de prueba posesoria sin títulos y de litigio sobre domicilio y fuero en una raya jurisdiccional.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#f1556">56</a><a href="#f1557">57</a><a href="#f1558">58</a><a href="#f1559">59</a><a href="#f1560">60</a><a href="#f1561">61</a><a href="#f1562">62</a><a href="#f1563">63</a><a href="#f1564">64</a><a href="#f1565">65</a><a href="#f1566">66</a><a href="#f1567">67</a><a href="#f1568">68</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="f1556">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 13</span><h3>IMG_1556</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1556" aria-label="Ampliar la lámina IMG_1556">
+        <img src="../img/sen1813/p001.jpg" alt="Fotografía de la lámina IMG_1556" loading="lazy">
+      </button>
+      <figcaption>Papel de trapo grueso, sin sello impreso propio en la parte visible: lo que se ve impreso en el borde superior de la fotografía (las palabras «…NOVENTA Y SIETE», al revés) pertenece a otro pliego que está debajo, no a esta cubierta. Tinta ferrogálica muy desvaída, parda; el papel está sucio, con manchas de humedad y los bordes deshilachados. En el ángulo inferior derecho de la toma hay un renglón cortado por el borde de la fotografía, ilegible. La toma es correcta pero el contraste de la tinta sobre el papel es bajo; hubo que forzar el realce para leer.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Carátula o cubierta del expediente. Es la hoja doblada que envolvía los autos, escrita en sentido apaisado (la fotografía está tomada con el papel en horizontal). Lleva el encabezamiento de formulario «Año de ____», con la raya para el año en blanco —nunca se rellenó—, el título del pleito en tres renglones largos y, más abajo, la nota de foliación «Con 9 f[oja]s.», que es el dato que permite saber que el expediente completo constaba de nueve folios útiles.
+
+El título resume de un golpe la materia: un litigio entre dos vecinos por los daños recíprocos que sus ganados y sus cercas causaban en las siembras y las fincas del otro. Que la carátula hable de «perjuicio que experimentan de uno a otro» —y no de la agresión, ni del homicidio, ni de la cuestión de jurisdicción— indica que quien encuadernó el legajo entendió el asunto, en primer término, como un pleito de linderos y de daños en sementeras.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Año de ______</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Expediente ordenado p<u class="exp" title="abreviatura desarrollada">[o]</u>r Litis entre Cresen-</span>
+<span class="ln">cio Orellana y Anselmo Perez por perjuicio</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[u]</u>e experimentan de uno à otro en sus sembrados y</span>
+<span class="ln">fincas</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Con 9 f<u class="exp" title="abreviatura desarrollada">[oja]</u>s.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[al borde inferior, cortado por el margen de la toma:] <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Año de ——</p>
+<p>Expediente formado por el litigio entre Cresencio Orellana y Anselmo Pérez, por el perjuicio que se causan el uno al otro en sus sembrados y fincas.</p>
+<p>Con 9 fojas.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta. El título y la nota de fojas se leen con seguridad; el año quedó en blanco en el original y la línea del borde inferior está cortada por el encuadre de la fotografía, no por deterioro del papel.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1557">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 13</span><h3>IMG_1557</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1557" aria-label="Ampliar la lámina IMG_1557">
+        <img src="../img/sen1813/p002.jpg" alt="Fotografía de la lámina IMG_1557" loading="lazy">
+      </button>
+      <figcaption>Papel sellado. Cabecera impresa completa: «Dos reales. / SELLO TERCERO, DOS REA- / LES, AÑOS DE MIL OCHOCIEN- / TOS Y ONCE, Y MIL OCHOCIEN- / TOS Y DOCE.» A la izquierda, el escudo real con la leyenda circular «FERDIN. VII. D. G. HISP. ET IND. REX». Debajo, el <strong>sello oval de habilitación</strong> con las armas coronadas entre una «S» y un «3», y leyenda circular «HABILITADO … AÑOS DE 1813 Y 1814» (la lectura del año en esta plana es parcial). A la derecha de la cabecera, una anotación manuscrita breve de habilitación, de lectura insegura. Tinta parda, clara y regular en los dos tercios superiores; el tercio inferior está gravemente dañado: un jirón de papel desprendido y doblado cubre y oscurece varias líneas, y hay sombra fuerte de la toma. Foto excelente en la mitad alta, difícil abajo.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">El escrito inicial de demanda: Cresencio Orellana, vecino del partido de Sensentí, se presenta ante el teniente del partido y expone que hace más de veinte años se estableció y «finqué» a orillas del <strong>Río Sumpul</strong>, en un paraje donde entonces no había vecindad alguna, y que allí levantó casas, cañaveral, trapiche y horno. Denuncia que hace unos nueve años llegó <strong>Anselmo Pérez</strong>, huido de la jurisdicción de <strong>Chalatenango</strong> por haber apaleado al alcalde ordinario don <strong>Juan Coello</strong>, y se avecindó a doce o quince cuadras de su casa; que las cercas que pone a sus milpas no bastan para impedir la entrada del ganado vacuno, y que de ahí nacen las quejas, los insultos y las amenazas de muerte.
+
+Para cargar el retrato del contrario, Orellana añade dos hechos: que en marzo de ese año Anselmo salió con otros cuatro contra su hijo Juan Florencio, y que en mayo, en la propia casa de Anselmo, un hijo (o nieto) suyo llamado <strong>Domingo</strong> —en las planas siguientes el homicida es <strong>Dionicio Pérez</strong>— mató a cuchilladas a un hombre, delito que, dice, ha quedado impune.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Dos reales.</span>
+<span class="ln">SELLO TERCERO, DOS REA-</span>
+<span class="ln">LES, AÑOS DE MIL OCHOCIEN-</span>
+<span class="ln">TOS Y ONCE, Y MIL OCHOCIEN-</span>
+<span class="ln">TOS Y DOCE.</span>
+<span class="ln">[sello oval de habilitación: S | 3]   [anotación ms. de habilitación: <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿?]</u></u>]</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Cresencio de Orellana vecino de este Partido, como mas aya lug<u class="exp" title="abreviatura desarrollada">[ar]</u></span>
+<span class="ln">en derecho, y al mio conbenga, ante Vm. por medio de este me</span>
+<span class="ln">presento diciendo: q<u class="exp" title="abreviatura desarrollada">[ue]</u> a Vm. es notorio, y a todo este Partido, q<u class="exp" title="abreviatura desarrollada">[ue]</u> asen</span>
+<span class="ln">mas de veinte años q<u class="exp" title="abreviatura desarrollada">[u]</u>e me establesi, y finqué alas orillas del Rio de</span>
+<span class="ln">Sunpul, parage en donde no avia vecindad ninguna, de q<u class="exp" title="abreviatura desarrollada">[u]</u>e pudiese mi</span>
+<span class="ln">ganado aser perjuicio: con esta satisfacion, formalise mis Casas, finqué</span>
+<span class="ln">Cañaberal, con trapiche y Orno correspondiente: en cuyo estado y pasifi-</span>
+<span class="ln">ca posecion me conservé sin inquietud, ni queja de persona alguna,</span>
+<span class="ln">hasta q<u class="exp" title="abreviatura desarrollada">[u]</u>e Anselmo Perez (abrá nuebe años) vino fugo. de la jurisdicion</span>
+<span class="ln">de Chalatenango. p<u class="exp" title="abreviatura desarrollada">[o]</u>r aver cometido el atentado de darle de palos al S<u class="exp" title="abreviatura desarrollada">[eño]</u>r</span>
+<span class="ln">Alcalde Ordi<u class="exp" title="abreviatura desarrollada">[nari]</u>o. D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan Coe<u class="exp" title="abreviatura desarrollada">[ll]</u>o, con cullo motivo se establecio en</span>
+<span class="ln">esta Jurisdicion, poniendo su Casa como adistancia de dose o quince qua-</span>
+<span class="ln">dras de la mia, en donde aecho sus milpas anualm<u class="exp" title="abreviatura desarrollada">[en]</u>te pero como las</span>
+<span class="ln">sercas q<u class="exp" title="abreviatura desarrollada">[u]</u>e les pone no son como deven ser sufisientes, y bastantes</span>
+<span class="ln">a evitar la entrada del ganado basuno, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>has</span>
+<span class="ln">sercas, con cullo motibo el Anselmo, se queja de mis vienes, y p<u class="exp" title="abreviatura desarrollada">[ro]</u>-</span>
+<span class="ln">rrumpe en dicterios denigrativos contra mi, insultandome con ame-</span>
+<span class="ln">nasas, diciendo q<u class="exp" title="abreviatura desarrollada">[ue]</u> me <u class="exp" title="abreviatura desarrollada">[h]</u>a de matar, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> se mudara; y como tengo a</span>
+<span class="ln">exemplar de q<u class="exp" title="abreviatura desarrollada">[ue]</u> en el mes de M<u class="exp" title="abreviatura desarrollada">[ar]</u>so <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> este año <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho. Anselmo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> â mi hijo Juan Florencio, unido con</span>
+<span class="ln">otros Cuatro insultandole, y queriendole dar, ó talvez matarle, de cuyo</span>
+<span class="ln">echo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> en el mes de Mayo de este año se berificó</span>
+<span class="ln">en la Casa del dicho Anselmo, en donde un hijo Domingo mató</span>
+<span class="ln">con una cuchilla a un llamado <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Fernando?]</u></u>, cullo delito <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Cresencio de Orellana, vecino de este partido, como mejor haya lugar en derecho y convenga a mi derecho, comparezco ante Vuestra Merced por medio de este escrito y digo:</p>
+<p>Que a Vuestra Merced le consta, y a todo este partido, que hace más de veinte años que me establecí y puse finca a orillas del <strong>río Sumpul</strong>, paraje donde no había vecindad ninguna a la que mi ganado pudiera causar perjuicio. Con esa seguridad formalicé mis casas y planté cañaveral, con su trapiche y su horno. En ese estado y en pacífica posesión me mantuve sin inquietud ni queja de nadie, hasta que <strong>Anselmo Pérez</strong> —hará nueve años— vino huido de la jurisdicción de <strong>Chalatenango</strong>, por haber cometido el atrevimiento de dar de palos al señor alcalde ordinario don <strong>Juan Coello</strong>. Con ese motivo se estableció en esta jurisdicción, poniendo su casa a unas doce o quince cuadras de la mía, y allí hace sus milpas todos los años; pero como las cercas que les pone no son las suficientes ni bastantes para impedir la entrada del ganado vacuno, [el ganado rompe] dichas cercas, y por eso Anselmo se queja de mis bienes y prorrumpe en dicterios denigrantes contra mí, insultándome con amenazas y diciendo que me ha de matar y que se mudará.</p>
+<p>Y tengo por muestra lo ocurrido en el mes de marzo de este año […]: el dicho Anselmo salió contra mi hijo <strong>Juan Florencio</strong>, unido con otros cuatro, insultándolo y queriendo golpearlo o quizá matarlo. Y de ese proceder [da prueba] lo que en el mes de mayo de este año ocurrió en la casa del mismo Anselmo, donde un hijo suyo, <strong>Domingo</strong>, mató de una cuchillada a uno llamado [¿Fernando?], delito que […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta en los dos tercios superiores (papel sellado, nombres, topónimos y plazos se leen con seguridad); <strong>baja</strong> en los últimos seis u ocho renglones, donde el jirón de papel desprendido tapa palabras enteras. El nombre del muerto no se deja fijar. El nombre «Juan Florencio» va aquí entre reservas porque el trazo está dañado, pero queda confirmado por la plana IMG_1562, donde Orellana lo escribe con claridad.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1558">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 13</span><h3>IMG_1558</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1558" aria-label="Ampliar la lámina IMG_1558">
+        <img src="../img/sen1813/p003.jpg" alt="Fotografía de la lámina IMG_1558" loading="lazy">
+      </button>
+      <figcaption>Papel sellado; en el margen superior derecho, el <strong>sello oval de habilitación</strong> perfectamente legible: las armas coronadas entre «S» y «3», con la leyenda circular «HABILITADO AÑOS DE 1813 Y 1814». El resto de la plana está en blanco, pero se ve con nitidez la impronta invertida (calco por contacto) del texto de la plana enfrentada. Tinta parda oscura, buena. Toma excelente.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">El final —sólo siete renglones al alto de la plana— de un auto o decreto del juzgado que resuelve la <strong>cuestión de competencia</strong>, que es el nervio de todo el pleito. Declara que, por resultar el acusado Anselmo Pérez <strong>domiciliario del partido de Tejutla</strong>, en cuanto a lo criminal se dé cuenta al juez respectivo de aquel partido, a quien únicamente corresponde su conocimiento y determinación, y que el expediente siga su curso en lo demás según está mandado. Va firmado por <strong>Carrejón</strong>, con una segunda rúbrica.
+
+Es la pieza que convierte un pleito de cercas en un problema de frontera jurisdiccional: lo criminal se remite al otro lado —Tejutla— y sólo lo civil (los daños en sementeras) queda en Sensentí.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[sello oval:]</u> HABILITADO AÑOS DE 1813 Y 1814 | S | 3</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>cusado el Anselmo Perez es domi-</span>
+<span class="ln">ciliario del Partid<u class="exp" title="abreviatura desarrollada">[o]</u> de Tejutla, d<u class="exp" title="abreviatura desarrollada">[e]</u>se-</span>
+<span class="ln">le cuenta en orden à lo Criminal</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[u]</u>e se anota aquel respectivo Juez co-</span>
+<span class="ln">mo à quien corresponde su conocim<u class="exp" title="abreviatura desarrollada">[ien]</u>to p<u class="exp" title="abreviatura desarrollada">[ar]</u>a</span>
+<span class="ln">su determinacion, y siga el curso de este Exped<u class="exp" title="abreviatura desarrollada">[ien]</u>te</span>
+<span class="ln">en quanto à lo demas seg<u class="exp" title="abreviatura desarrollada">[ún]</u> se tiene determinad<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">f<u class="exp" title="abreviatura desarrollada">[ec]</u>ha. ut supra.</span>
+<span class="ln">Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] y siendo el acusado Anselmo Pérez domiciliario del partido de <strong>Tejutla</strong>, dese cuenta, en cuanto a lo criminal, al juez respectivo de aquel partido, como a quien únicamente corresponde su conocimiento y determinación; y siga el curso de este expediente en cuanto a lo demás, según está determinado. Fecha como arriba.</p>
+<p>Carrejón [rúbrica] [rúbrica]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta. La única palabra insegura es la primera, cortada al empezar la plana («…cusado», casi con seguridad «acusado»); el resto del auto y la leyenda del sello se leen sin dificultad.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1559">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 13</span><h3>IMG_1559</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1559" aria-label="Ampliar la lámina IMG_1559">
+        <img src="../img/sen1813/p004.jpg" alt="Fotografía de la lámina IMG_1559" loading="lazy">
+      </button>
+      <figcaption>Papel sellado con la misma cabecera impresa del sello tercero de 1811 y 1812 y el mismo sello oval de habilitación (S | 3). Foliación «3» a tinta en el ángulo superior derecho. Letra de otra mano, más torpe y con ortografía muy fonética (llo por yo, â ser por hacer, trabacar por trabajar, conbengo, quatro). Numerosas correcciones interlineadas y una palabra tachada. Tinta parda clara; papel limpio, con manchas de humedad en el borde; toma muy buena.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Folio 3 del expediente: la <strong>contestación de Anselmo Pérez</strong>, el escrito clave de la defensa. Empieza declarándose «vecino del partido de Tejutla» —exactamente el punto que le interesa fijar— y pasa a desmentir a Orellana punto por punto: dice que hace cinco años que se asentó «en las mismas orillas del río Sumpul», trabajando sin hacer agravio a ningún cristiano, y que cuando llegó a aquel paraje hasta pidió licencia al propio Cresencio, no porque éste tuviera autoridad alguna, sino por evitar discordias.
+
+Sigue el relato de lo ya litigado: que hace cuatro años los ganados de Orellana empezaron a hacerle daño en su siembra; que comparecieron ante el juez; que se le mandó componer su cerca y quitarse de enfrente, y que así lo hizo, pasándose <strong>al otro lado del río</strong>; que para ese efecto se libró comisión para el registro de la cerca al hoy comisario <strong>Domingo Morán</strong>, y que desde entonces trabaja allí con anuencia del juez. Niega el atrevimiento que se le imputa contra Juan Florencio y empieza a contar su versión: que estaba en casa de su hermana <strong>Petrona</strong> cuando se ofreció que quisiera pelear el dicho [Juan]…</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Dos reales.</span>
+<span class="ln">SELLO TERCERO, DOS REA-</span>
+<span class="ln">LES, AÑOS DE MIL OCHOCIEN-</span>
+<span class="ln">TOS Y ONCE, Y MIL OCHOCIEN-</span>
+<span class="ln">TOS Y DOCE.</span>
+<span class="ln">[sello oval de habilitación: S | 3]                              <u class="exp" title="abreviatura desarrollada">[fol.]</u> 3</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Digo llo Anselmo peres vesino del partido, de Tejutla y</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>are, clamado en este; como mas â ya lugar. en derecho, y al</span>
+<span class="ln">mio conbengo, ante Vm. por medio de este me presento en</span>
+<span class="ln">contesto disiendo: que en esta epoca tengo mas fursa y mallor lugar</span>
+<span class="ln">para defender mi inde vido; puestas son, palabras fabolosas, y nu-</span>
+<span class="ln">las, las que â pretestado en su den<u class="exp" title="abreviatura desarrollada">[uncia]</u>do relato Cresensio orellana</span>
+<span class="ln">todo es insierto; como se bera â delante en las sitas de la margen</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[u]</u>e â Vm. es notorio, y â todo este partido, q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[en]</u> â sinco Años q<u class="exp" title="abreviatura desarrollada">[u]</u>e me</span>
+<span class="ln">pasifique en las mismas orillas del Rio de sunpul, trabacando,</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[tachado]</u> â serle el menor â grabio, â ningun Cristiano; y quando â dicho pa-</span>
+<span class="ln">rage llegue, â comensar â trabacar, â un le pedi lisensia, â dicho Cresensio;</span>
+<span class="ln">no p<u class="exp" title="abreviatura desarrollada">[o]</u>r q<u class="exp" title="abreviatura desarrollada">[ue]</u> el tubiera âlguna â utoridad, sino por êvitar discordias;</span>
+<span class="ln">hasta que â ora, quatro Años, êl sitado (Cresen<u class="exp" title="abreviatura desarrollada">[sio]</u> orellana) p<u class="exp" title="abreviatura desarrollada">[o]</u>r êl</span>
+<span class="ln">mucho perjuisio que me comensaron â dar sus ganados en mi <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿siembra?]</u></u>.</span>
+<span class="ln">p<u class="exp" title="abreviatura desarrollada">[o]</u>r lo que conparesimos ante Vm. y me fue ordenado por le gado que</span>
+<span class="ln">con pusiese mi serca, y me quitase de frente del, como es benefic<u class="exp" title="abreviatura desarrollada">[io]</u></span>
+<span class="ln">que lo yse, âsi; y me pase âl otro lado del Rio; como para —</span>
+<span class="ln">dicho êfecto, se libro comision para <u class="exp" title="abreviatura desarrollada">[el]</u> registro de mi serca, <u class="exp" title="abreviatura desarrollada">[al]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[pre]</u>sente comisario Domingo moran; y de êse tiempo â ca ê permane-</span>
+<span class="ln">sido, tra bacando En dicho parage con â nuensia, de Vm. p<u class="exp" title="abreviatura desarrollada">[o]</u>r â-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el â trebimiento, q<u class="exp" title="abreviatura desarrollada">[u]</u>e dise dicho sugeto que tube, queriendole ma<u class="exp" title="abreviatura desarrollada">[tar]</u></span>
+<span class="ln">â su hi<u class="exp" title="abreviatura desarrollada">[j]</u>to Juan florensio; fue âsi, que estando llo en la casa</span>
+<span class="ln">de mi ermana petrona, se ofresio que quisiera pelear dicho</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Digo yo, <strong>Anselmo Pérez</strong>, vecino del <strong>partido de Tejutla</strong> y [de este] lugar, citado en este [expediente], como mejor haya lugar en derecho y convenga a mi derecho, que comparezco ante Vuestra Merced por medio de este escrito en contestación, y digo:</p>
+<p>Que ahora tengo más fuerza y mejor ocasión para defender mi indebido [agravio]. Son palabras fabulosas y nulas las que ha alegado en su relato denunciador Cresencio Orellana; todo es incierto, como se verá adelante en las citas del margen.</p>
+<p>A Vuestra Merced le consta, y a todo este partido, que hace cinco años que me asenté pacíficamente en las mismas orillas del <strong>río Sumpul</strong>, trabajando, sin hacer el menor agravio a ningún cristiano; y cuando llegué a aquel paraje, al empezar a trabajar, aun le pedí licencia al dicho Cresencio —no porque él tuviera autoridad alguna, sino por evitar discordias—, hasta que ahora hace cuatro años el citado Cresencio Orellana [me demandó] por el mucho perjuicio que empezaron a hacerme sus ganados en mi siembra. Por eso comparecimos ante Vuestra Merced, y se me ordenó que compusiera mi cerca y me quitara de enfrente de él; y como era de provecho, así lo hice, y me pasé <strong>al otro lado del río</strong>. Para ese efecto se libró comisión para el registro de mi cerca al hoy comisario <strong>Domingo Morán</strong>; y desde entonces acá he permanecido trabajando en dicho paraje con anuencia de Vuestra Merced.</p>
+<p>En cuanto al atrevimiento que dice este sujeto que tuve, queriendo matarle a su hijo <strong>Juan Florencio</strong>, fue así: estando yo en casa de mi hermana <strong>Petrona</strong>, se ofreció que quisiera pelear el dicho […]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta. La letra es difícil y la ortografía muy irregular, pero el sentido corre. Quedan inseguras tres cosas: la palabra del segundo renglón, tapada por el sello oval; el sustantivo del final del renglón catorce («en mi …», probablemente «siembra» o «sementera»); y la expresión «por le gado» del renglón quince, que por el contexto ha de valer «por el juzgado» o «por lo alegado», pero cuyo trazo no lo decide.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1560">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 13</span><h3>IMG_1560</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1560" aria-label="Ampliar la lámina IMG_1560">
+        <img src="../img/sen1813/p005.jpg" alt="Fotografía de la lámina IMG_1560" loading="lazy">
+      </button>
+      <figcaption>Papel sellado, vuelto (sin cabecera impresa en esta cara). Tinta parda clara de la misma mano del folio anterior. El papel está ondulado y la toma tiene sombra en el margen superior; la mitad inferior está muy bien iluminada. Al pie, el reclamo o palabra de enlace «ô», que anuncia la primera palabra de la plana siguiente. Sin roturas.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Vuelta del folio 3: la contestación de Anselmo Pérez continúa sin interrupción. Es la plana más narrativa de todo el expediente. Anselmo cuenta primero que llegó con sus sobrinos a sosegar la pelea, no a pleitear con el comisario, y reprodujo lo que le dijo a Orellana: que sus quejas ante el comisario eran sólo para inquietarlo, no por el bien común, y que el propio hijo andaba huyendo de su padre y del juez por desobediente, hasta que él lo encontró y se lo llevó a casa.
+
+Luego trata «el atentado de la muerte de <strong>Secundino</strong>», que hizo su nieto <strong>Dionicio</strong>, y remite al certificado que acompaña (el de IMG_1564) para probar que no quedó impune. Y por último narra, con detalle inesperado, el episodio de los palos al alcalde ordinario don <strong>Juan Cuello</strong>: hará seis años, entre las nueve y las diez de la noche, en el <strong>pueblo de Chalatenango</strong>, estando él recostado en una <em>chinamita</em> sobre el filo de la mesa esperando que le sirvieran aguardiente, <strong>Luciano Herrera</strong> le dio dos golpes; aturdido, se volvió metiendo el chamarro, echó mano a un barretón de <strong>cacahuananche</strong> que tenía y tiró un solo golpe —y si le pegó a Luciano Herrera o al señor alcalde don Juan Cuello, dice, no lo sabe, porque estaba oscura la noche.
+
+Acaba pidiendo que se le acredite en justicia todo lo alegado y que vaya un perito o comisario a reconocer uno y otro trabajo, a costa de los culpados.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Juan, con mis sobrinos llegé llo â sosegarlos no â p<u class="exp" title="abreviatura desarrollada">[lei]</u>tar con el com<u class="exp" title="abreviatura desarrollada">[isari]</u>o,</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[le]</u> dije el espresado Cresensio; y quando llegé le dije âsi; ombre p<u class="exp" title="abreviatura desarrollada">[o]</u>r</span>
+<span class="ln">que âses, que mis palabras que ê puesto ante el comi<u class="exp" title="abreviatura desarrollada">[sa]</u>rio. por</span>
+<span class="ln">bos solo, son p<u class="exp" title="abreviatura desarrollada">[ar]</u>a el enquietarte En tus improperios y no por</span>
+<span class="ln">el bien comun; pues por que ba de su mismo padre p<u class="exp" title="abreviatura desarrollada">[o]</u>r â desobedien-</span>
+<span class="ln">te q<u class="exp" title="abreviatura desarrollada">[u]</u>e daba el Juez de averlo En sus manos y remitirlo preso, y</span>
+<span class="ln">por esto andaba ullendo; asta q<u class="exp" title="abreviatura desarrollada">[u]</u>e llo lo encontre, y lo llebé â</span>
+<span class="ln">casa, <u class="exp" title="abreviatura desarrollada">[poniendo]</u> palabras con su padre, y tambien con el Juez; p<u class="exp" title="abreviatura desarrollada">[o]</u>r el</span>
+<span class="ln">atentado de la muerte, de Secundino que yso, mi <u class="exp" title="abreviatura desarrollada">[n]</u>ieto Dionisio,</span>
+<span class="ln">quien contrario dise Cresensio orellana, que sea, quedado in-</span>
+<span class="ln">pugne, hai tiene Vm. el Certificado en forma para</span>
+<span class="ln">seguir el efecto como corresponda; el proseso que me âse</span>
+<span class="ln">â serca de los palos, que dise el referido Cresensio que</span>
+<span class="ln">le di, al S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Alcalde ordinario D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan Cuello. Declaro,</span>
+<span class="ln">y digo que fue deste modo. â ora seis años Entre nueve y</span>
+<span class="ln">dies de la noche En el pueblo de Chalatenango un dia de</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿q.tos?]</u></u> estando llo, En una chinamita recostado En la orilla</span>
+<span class="ln">de la mesa â guardando que me diesen <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de agu-</span>
+<span class="ln">ardiente, en esta elebasion medio dos <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿gichasos?]</u></u> Lusiano e-</span>
+<span class="ln">rera; â turdido de los golpes bolbi, â ver metiendo el</span>
+<span class="ln">chumarro, y lle chando mano â un barreton de caca-</span>
+<span class="ln">guanan<u class="exp" title="abreviatura desarrollada">[s]</u>e que tenia teré un tiro y nomas; si lepegé</span>
+<span class="ln">â Lusiano erera, ô âl S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Alcalde D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan Cuello llo</span>
+<span class="ln">no lo sei, p<u class="exp" title="abreviatura desarrollada">[o]</u>r q<u class="exp" title="abreviatura desarrollada">[u]</u>e estaba oscura la noche: estas retifica-</span>
+<span class="ln">siones que imputa, y prosesa encontra mi el espresado Cre-</span>
+<span class="ln">sensio orellana, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la mala conducta, de mi poca ombri-</span>
+<span class="ln">lla de bien o mal proseder; Señor manifiesta claramente</span>
+<span class="ln">grande ê mulasion â mi persona casa y familia; p<u class="exp" title="abreviatura desarrollada">[o]</u>r lo</span>
+<span class="ln">que pido y suplico, Rendidamente A Vm. que todos <u class="exp" title="abreviatura desarrollada">[es]</u>-</span>
+<span class="ln">tos improperios de mi; que claramente <u class="exp" title="abreviatura desarrollada">[están]</u> pretestados y pre-</span>
+<span class="ln">sentados, ante Vm. pido en Justisia se me acrediten</span>
+<span class="ln">Conforme esta pretestado; y que valla un <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿perito?]</u></u> ô</span>
+<span class="ln">ô</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] Juan. Con mis sobrinos llegué yo a sosegarlos, no a pleitear con el comisario, le dije al expresado Cresencio; y cuando llegué le dije así: «Hombre, ¿por qué haces eso? Las palabras que he puesto ante el comisario, por vos solo, son para inquietarte en tus improperios, y no por el bien común. Si hasta de su mismo padre andaba huyendo por desobediente, porque el juez decía que lo tuviera en sus manos y lo remitiera preso; y por eso andaba huyendo, hasta que yo lo encontré y lo llevé a casa», teniendo palabras con su padre y también con el juez.</p>
+<p>En cuanto al atentado de la muerte de <strong>Secundino</strong> que hizo mi nieto <strong>Dionicio</strong>, y que en contra dice Cresencio Orellana que ha quedado impune, ahí tiene Vuestra Merced el certificado en forma, para que siga el efecto como corresponda.</p>
+<p>Y en cuanto al proceso que me hace acerca de los palos que dice el referido Cresencio que le di al señor alcalde ordinario don <strong>Juan Cuello</strong>, declaro y digo que fue de este modo. Hará seis años, entre las nueve y las diez de la noche, en el <strong>pueblo de Chalatenango</strong>, un día de […], estando yo en una <strong>chinamita</strong> recostado en el filo de la mesa, aguardando a que me sirvieran [un real] de aguardiente, en esa postura me dio dos golpes <strong>Luciano Herrera</strong>. Aturdido de los golpes, me volví, metiendo el chamarro, y echando mano a un <strong>barretón de cacahuananche</strong> que tenía, tiré un solo golpe, y nada más; si le pegué a Luciano Herrera o al señor alcalde don Juan Cuello, yo no lo sé, porque estaba oscura la noche.</p>
+<p>Estas imputaciones que me hace y procesa en contra mía el expresado Cresencio Orellana, [hablando] de mi mala conducta y de mi poca hombría de bien o mal proceder, manifiestan claramente, señor, una gran envidia contra mi persona, casa y familia. Por lo cual pido y suplico rendidamente a Vuestra Merced que todos estos improperios contra mí, que claramente están alegados y presentados ante Vuestra Merced, se me acrediten en justicia conforme está alegado; y que vaya un perito o […]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta. Los hechos, los nombres y los lugares se leen con seguridad. Quedan sin fijar tres palabras: el nombre de la fiesta o del día («un día de …»), el sustantivo de los dos golpes que le dio Luciano Herrera, y el oficio de quien pide que vaya al registro («un peri…», casi con certeza «perito»). El árbol del barretón, <em>cacahuananche</em> (madre cacao), se lee bien y es un dato material de primer orden.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1561">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 13</span><h3>IMG_1561</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1561" aria-label="Ampliar la lámina IMG_1561">
+        <img src="../img/sen1813/p006.jpg" alt="Fotografía de la lámina IMG_1561" loading="lazy">
+      </button>
+      <figcaption>Papel sellado, con foliación «4» a tinta en el margen izquierdo. La cabecera impresa que se ve invertida en el borde superior de la toma («…NOVENTA Y SIETE») pertenece al pliego que está debajo, no a este folio. Tinta parda muy desvaída en los decretos —hubo que trabajar el canal azul de la fotografía para leerlos—, más negra en el escrito de parte. Papel limpio, algo ondulado; toma buena pero con brillo en la parte alta.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Folio 4. Contiene tres cosas seguidas. Primero, el final del escrito de Anselmo Pérez: pide que vaya un perito o comisario al registro de uno y otro trabajo <strong>a costa de los culpados</strong>, se ofrece a justificar en legal forma todos los puntos de su relato, protesta costas y cierra con la fórmula de juramento y la nota «No sé firmar».
+
+Segundo, el <strong>decreto del teniente del partido, fechado en Sensentí a 25 de septiembre de 1813</strong>: manda que se agreguen los documentos que acompaña esta parte y que se dé traslado a Cresencio Orellana. Lo firma <strong>Carrejón</strong>, y lo autoriza, «con testigos a falta de escribano», <strong>José Ignacio Salazar</strong>. Sigue la diligencia de notificación: en el mismo día se le hizo saber a esta parte, quedó entendida y no firmó por no saber.
+
+Tercero, al pie, el arranque del escrito de réplica de Cresencio Orellana, que continúa en la plana siguiente.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[fol.]</u> 4</span>
+<span class="ln">o comisario â registro de uno y otro trabaco, a costa de culpa-</span>
+<span class="ln">dos; esto digo; y si fuere nesesario estoi pronto a Justificar</span>
+<span class="ln">en legal forma todos los puntos q<u class="exp" title="abreviatura desarrollada">[ue]</u> en mi relato se conti-</span>
+<span class="ln">enen, p<u class="exp" title="abreviatura desarrollada">[o]</u>r todo lo que, y protestando costas</span>
+<span class="ln">A Vm. pido y suplico provea, y mande a ser conf<u class="exp" title="abreviatura desarrollada">[or]</u>me a mi</span>
+<span class="ln">reclamo. Juro en forma en lo necesario &amp;<u class="exp" title="abreviatura desarrollada">[etcéte]</u>ra =</span>
+<span class="ln">No se firmar</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Sensenti y S<u class="exp" title="abreviatura desarrollada">[e]</u>pt<u class="exp" title="abreviatura desarrollada">[iemb]</u>re veinte y cinco de ocho<u class="exp" title="abreviatura desarrollada">[cientos]</u> trece.</span>
+<span class="ln">Por p<u class="exp" title="abreviatura desarrollada">[re]</u>s<u class="exp" title="abreviatura desarrollada">[en]</u>t<u class="exp" title="abreviatura desarrollada">[a]</u>do es<u class="exp" title="abreviatura desarrollada">[te]</u> Jusg<u class="exp" title="abreviatura desarrollada">[ad]</u>o. y visto con los documen-</span>
+<span class="ln">tos q<u class="exp" title="abreviatura desarrollada">[ue]</u> acompaña esta parte; agreguesele; y desele en</span>
+<span class="ln">traslado â Cresencio Orellana <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿diciendo, y haser?]</u></u></span>
+<span class="ln">y quedando <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿?]</u></u></span>
+<span class="ln">Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Asi lo proveyó y firmó S<u class="exp" title="abreviatura desarrollada">[u]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d. el S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Ten<u class="exp" title="abreviatura desarrollada">[ien]</u>te de es-</span>
+<span class="ln">te Part<u class="exp" title="abreviatura desarrollada">[id]</u>o. con t<u class="exp" title="abreviatura desarrollada">[esti]</u>g<u class="exp" title="abreviatura desarrollada">[o]</u>s. en falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no.</span>
+<span class="ln">Jose Ygn<u class="exp" title="abreviatura desarrollada">[acio]</u>. Salazar <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En el dia se le hiso saver â esta parte y quedó</span>
+<span class="ln">entendida no firmó p<u class="exp" title="abreviatura desarrollada">[or]</u> no saber.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen:]</u> Queda Conocim<u class="exp" title="abreviatura desarrollada">[iento]</u>.     <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿B.r … de G…o?]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Cresencio Orellana, como <u class="exp" title="abreviatura desarrollada">[mas]</u> halla lugar en d<u class="exp" title="abreviatura desarrollada">[erec]</u>ho. y respondi-</span>
+<span class="ln">endo a la exposicion de Anselmo Peres, ante Vm. digo: Que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">lo niega, y lo desfigura, pretendiendo indemnisarse, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] o comisario, al reconocimiento de uno y otro trabajo, a costa de los culpados. Esto digo; y si fuere necesario, estoy pronto a justificar en legal forma todos los puntos que en mi relato se contienen. Por todo lo cual, y protestando costas, a Vuestra Merced pido y suplico provea y mande hacer conforme a mi reclamo. Juro en forma en lo necesario, etcétera. — No sé firmar.</p>
+<p><strong>Sensentí, 25 de septiembre de 1813.</strong> Por presentado este escrito, y visto con los documentos que acompaña esta parte, agréguense; y dese traslado a Cresencio Orellana, haciéndoselo saber y quedando [enterado]. — Carrejón [rúbrica].</p>
+<p>Así lo proveyó y firmó su merced el señor teniente de este partido, con testigos a falta de escribano. — José Ignacio Salazar [rúbrica].</p>
+<p>En el mismo día se le hizo saber a esta parte, y quedó entendida; no firmó por no saber.</p>
+<p>[Al margen: «Queda conocimiento.»]</p>
+<p><strong>Cresencio Orellana</strong>, como mejor haya lugar en derecho, y respondiendo a la exposición de Anselmo Pérez, ante Vuestra Merced digo: que […] lo niega y lo desfigura, pretendiendo indemnizarse, y que […]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta. La fecha, los nombres y las firmas son seguros. Son inseguras las dos últimas palabras del decreto de traslado y la anotación abreviada del margen, escritas con tinta muy desvaída sobre papel manchado.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1562">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 7 de 13</span><h3>IMG_1562</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1562" aria-label="Ampliar la lámina IMG_1562">
+        <img src="../img/sen1813/p007.jpg" alt="Fotografía de la lámina IMG_1562" loading="lazy">
+      </button>
+      <figcaption>Papel sellado; en el margen superior derecho, el sello oval de habilitación con las armas entre «S» y «3». Foliación no visible en el encuadre. Tinta parda oscura, letra de escribano cursiva y clara. El papel está curvado en el borde derecho y ahí se pierde el final de algunos renglones. Nota de salvedad al pie: «lo […] no [vale]; entre renglones vale». Toma excelente.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Folio 5: el cuerpo de la <strong>réplica de Cresencio Orellana</strong>, y la plana donde el pleito de cercas se vuelve abiertamente una cuestión de domicilio y de frontera.
+
+Orellana se declara pronto a acreditar los puntos que le tocan, y descarta los que no: el homicidio de mayo en casa de Anselmo lo presenciaron sólo ellos, sin persona imparcial que lo viera, y por eso habrán podido figurarlo casual o como hayan querido. En cambio —dice— el hecho contra don Juan Cuello es notorio por más que él diga otra cosa; y para que se vea su servidumbre, <strong>se desavecindó del partido de Chalatenango, a donde no ha vuelto desde entonces</strong>, y por lo mismo <strong>ha ido a pedir certificados a Tejutla, donde nunca ha vivido, hasta ahora que ha procurado domiciliarse allí</strong>. Ésa es, en una frase, la acusación de fondo: que el domicilio en Tejutla es fabricado para escapar del juez de Sensentí.
+
+Luego promete probar lo que sí le toca: el caso de su hijo Juan Florencio, los dicterios y amenazas, y que Anselmo le mató un perro cazador, de lo que se quejó al señor don José de Fi[…]do, que estaba administrando de interino, el cual hizo que se lo pagara y que se fuera de allí o se retirara, para evitar discordias. Pide que se le señale término probatorio y que se le haya por contestado.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">[sello oval de habilitación: S | 3]</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">se quede ilusorio, pero supuesto q<u class="exp" title="abreviatura desarrollada">[ue]</u> el pide</span>
+<span class="ln">que acredite yo los puntos, que constan en</span>
+<span class="ln">mi primer escrito estoi pronto â acre-</span>
+<span class="ln">ditar los puntos q<u class="exp" title="abreviatura desarrollada">[ue]</u> me <u class="exp" title="abreviatura desarrollada">[to]</u>ca<u class="exp" title="abreviatura desarrollada">[n]</u>, y me per-</span>
+<span class="ln">tenesen defender, p<u class="exp" title="abreviatura desarrollada">[o]</u>r q<u class="exp" title="abreviatura desarrollada">[ue]</u> el hecho de la muer-</span>
+<span class="ln">te sucedida en Mayo en su Casa, como solo ellos lo presen-</span>
+<span class="ln">siaron, y no huvo ninguna persona imparcial, q<u class="exp" title="abreviatura desarrollada">[ue]</u> lo vie-</span>
+<span class="ln">se, lo havran figurado Casual, ô como ellos hallan q<u class="exp" title="abreviatura desarrollada">[ue]</u>rí-</span>
+<span class="ln">do. El hecho contra D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan Cuello, es notorio, aunq<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">mas diga, pues p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> se vea su servidumbre, se desaverin-</span>
+<span class="ln">dó del partido de Chalatenango â donde no ha vuelto des-</span>
+<span class="ln">de entonses, y p<u class="exp" title="abreviatura desarrollada">[or]</u> lo mismo â ido â pedir sertificos â</span>
+<span class="ln">Tejuta en donde nunca ha vivido, hasta haora que ha</span>
+<span class="ln">procurado domiciliarse alli; y supuesto q<u class="exp" title="abreviatura desarrollada">[ue]</u> los arriba dichos</span>
+<span class="ln">puntos â mi no me tocan, Justificaré como llevo dicho</span>
+<span class="ln">el Caso q<u class="exp" title="abreviatura desarrollada">[u]</u>e sucedio con mi hijo Juan Florencio quando</span>
+<span class="ln">salió â darle en compañia de otros; los dicterios, y</span>
+<span class="ln">palabras denigrativas, y amenazas que contra</span>
+<span class="ln">mi ha proferido, y de convict<u class="exp" title="abreviatura desarrollada">[o]</u> el haverme matado un</span>
+<span class="ln">perro Casador de q<u class="exp" title="abreviatura desarrollada">[ue]</u> me queje al S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or. D<u class="exp" title="abreviatura desarrollada">[o]</u>n Jose de Fi<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">do, q<u class="exp" title="abreviatura desarrollada">[ue]</u> estava administrando de interino, y este S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or. <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">hizo que me satisfaciese mi d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho. perro, y que se fuese</span>
+<span class="ln">de alli, ô se retirase p<u class="exp" title="abreviatura desarrollada">[ar]</u>a evitar discordias, como con el mis-</span>
+<span class="ln">mo lo acreditaré, en señalandoseme el termino proba-</span>
+<span class="ln">torio, en el qual presentaré los testigos p<u class="exp" title="abreviatura desarrollada">[ar]</u>a credito d<u class="exp" title="abreviatura desarrollada">[e to]</u>-</span>
+<span class="ln">do lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> llevo relacionado, y en tanto ==</span>
+<span class="ln">A Vm<u class="exp" title="abreviatura desarrollada">[d]</u>. pido, y suplico me halla p<u class="exp" title="abreviatura desarrollada">[o]</u>r contestado, p<u class="exp" title="abreviatura desarrollada">[ar]</u>a proseder a lo</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> me conbenga. Juro en lo necesario &amp;<u class="exp" title="abreviatura desarrollada">[etcéte]</u>ra. lo</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> no ba<u class="exp" title="abreviatura desarrollada">[le]</u> entre renglones vale =</span>
+<span class="ln">No se firmar</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] se quede en nada. Pero puesto que él pide que acredite yo los puntos que constan en mi primer escrito, estoy pronto a acreditar los que me tocan y me corresponde defender. Porque el hecho de la muerte sucedida en mayo en su casa, como sólo ellos lo presenciaron y no hubo ninguna persona imparcial que lo viera, lo habrán figurado casual o como ellos hayan querido.</p>
+<p>El hecho contra don <strong>Juan Cuello</strong> es notorio, por más que diga; pues para que se vea su condición, <strong>se desavecindó del partido de Chalatenango</strong>, a donde no ha vuelto desde entonces, y por lo mismo <strong>ha ido a pedir certificaciones a Tejutla, donde nunca ha vivido, hasta ahora que ha procurado domiciliarse allí</strong>.</p>
+<p>Y puesto que los puntos arriba dichos a mí no me tocan, justificaré, como llevo dicho: el caso que sucedió con mi hijo <strong>Juan Florencio</strong>, cuando salió a golpearlo en compañía de otros; los dicterios, palabras denigrantes y amenazas que contra mí ha proferido; y, además, el haberme matado un perro cazador, de lo que me quejé al señor don José de Fi[…]do, que estaba administrando de interino, y este señor hizo que me pagara dicho perro y que se fuera de allí, o se retirara, para evitar discordias —como con él mismo lo acreditaré—, en señalándoseme el término probatorio, en el cual presentaré los testigos para crédito de todo lo que llevo relatado. Y entre tanto,</p>
+<p>a Vuestra Merced pido y suplico me haya por contestado, para proceder a lo que me convenga. Juro en lo necesario, etcétera. Lo [tachado] no vale; lo entre renglones, vale. — No sé firmar.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en la parte sustantiva —la acusación sobre el domicilio en Tejutla, que es lo decisivo, se lee con total claridad—; media en dos puntos: el apellido del administrador interino, que el borde curvado del papel corta («D. José de Fi…do»), y la nota de salvedad final. El topónimo aparece aquí escrito <strong>«Tejuta»</strong>, sin la ele.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1563">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 8 de 13</span><h3>IMG_1563</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1563" aria-label="Ampliar la lámina IMG_1563">
+        <img src="../img/sen1813/p008.jpg" alt="Fotografía de la lámina IMG_1563" loading="lazy">
+      </button>
+      <figcaption>Media hoja de papel sin sello impreso propio (lo que se ve impreso al revés en el borde superior de la toma —«…NOVENTA Y SIETE»— es el pliego de debajo). Tinta parda oscura, letra menuda, apretada y muy regular, de mano formada. El papel está algo ondulado y hay un borrón de tinta que come dos palabras a la altura del renglón del empleo. Conservación buena. La toma es de las mejores del conjunto.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Una <strong>certificación de conducta y de condición tributaria</strong> a favor de Anselmo Pérez, expedida a petición verbal suya por <strong>don Rafael de Reyna, teniente subdelegado</strong> del partido. Es media hoja suelta agregada al expediente como documento de prueba, y es la pieza demográfica y social de mayor valor de todo el legajo.
+
+Reyna certifica que <strong>conoce a Anselmo Pérez, tributario del pueblo de Chalatenango</strong>, desde hace más de doce años; que desde aquella época hasta el presente lo ha tenido y reputado por <strong>indio, hombre de bien, de buena vida y costumbres</strong>, que <strong>paga anualmente los correspondientes tributos a Su Majestad en el expresado pueblo de Chalatenango, donde está matriculado</strong>; y que en los distintos años en que él ha tenido el empleo de <strong>alcalde ordinario</strong> en aquel partido no ha tenido la más leve queja contra el dicho Pérez, sino que, por el contrario, le consta que todos los de aquel partido lo tienen y reputan por hombre de bien y le confían cualesquiera intereses. Firma en <strong>Tejutla, a 8 de mayo de mil ochocientos diez</strong>.
+
+La declaración es, pues, doble y en apariencia contradictoria con lo que Anselmo alega en el pleito: lo acredita como buen vecino, pero lo fija con todas las letras como <strong>tributario matriculado en el pueblo de Chalatenango</strong>, no en Tejutla. Es exactamente el flanco que Orellana ataca en IMG_1562.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n. Rafael de Reyna, Teniente Subdelega-</span>
+<span class="ln">do de este Partido &amp;<u class="exp" title="abreviatura desarrollada">[c]</u>.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Certifico en devida forma conosco <u class="exp" title="abreviatura desarrollada">[â]</u></span>
+<span class="ln">Anselmo Perez Tributario de el Pue-</span>
+<span class="ln">blo de Chalat<u class="exp" title="abreviatura desarrollada">[enang]</u>o; hace el tiempo de mas</span>
+<span class="ln">de doce años, y desde aquella epoca has-</span>
+<span class="ln">ta la pres<u class="exp" title="abreviatura desarrollada">[en]</u>te. lo he tenido y reputado p<u class="exp" title="abreviatura desarrollada">[o]</u>r</span>
+<span class="ln">Yndio Hombre de Vien, de Buena Vi-</span>
+<span class="ln">da y costumbres, pagando anualmen-</span>
+<span class="ln">te los correspon<u class="exp" title="abreviatura desarrollada">[dien]</u>tes; tributos â S<u class="exp" title="abreviatura desarrollada">[u]</u> M<u class="exp" title="abreviatura desarrollada">[ajestad]</u> en</span>
+<span class="ln">el expresado; Pueblo de Chalat<u class="exp" title="abreviatura desarrollada">[enang]</u>o en don-</span>
+<span class="ln">de esta Matriculado, y q<u class="exp" title="abreviatura desarrollada">[u]</u>e en distin-</span>
+<span class="ln">tos años q<u class="exp" title="abreviatura desarrollada">[ue]</u> he <u class="exp" title="abreviatura desarrollada">[obte]</u>nido <u class="exp" title="abreviatura desarrollada">[el]</u> Empleo</span>
+<span class="ln">de Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e Ord<u class="exp" title="abreviatura desarrollada">[inari]</u>o. en aquel Partido; no he</span>
+<span class="ln">tenido la mas leve queja, contra</span>
+<span class="ln">el expresado Perez, y ni por el Con-</span>
+<span class="ln">trario me consta, q<u class="exp" title="abreviatura desarrollada">[u]</u>e todos los de <u class="exp" title="abreviatura desarrollada">[aquel]</u></span>
+<span class="ln">Partido lo tienen y reputan p<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="exp" title="abreviatura desarrollada">[buen]</u></span>
+<span class="ln">Hombre de Vien, y le confian qual-</span>
+<span class="ln">quiera Ynterese<u class="exp" title="abreviatura desarrollada">[s]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> obre los</span>
+<span class="ln">efectos q<u class="exp" title="abreviatura desarrollada">[ue]</u> haya lugar <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> pongo, la</span>
+<span class="ln">pres<u class="exp" title="abreviatura desarrollada">[en]</u>te. â ped<u class="exp" title="abreviatura desarrollada">[imen]</u>to Verbal del expresado</span>
+<span class="ln">Anselmo Perez, q<u class="exp" title="abreviatura desarrollada">[ue]</u> firmo en esta Teju-</span>
+<span class="ln">tla â ocho de Mayo de mil ochoc<u class="exp" title="abreviatura desarrollada">[ien]</u>tos</span>
+<span class="ln">dies años—              Rafael de Reyna <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p><strong>Don Rafael de Reyna, teniente subdelegado de este partido, etc.</strong></p>
+<p>Certifico en debida forma que conozco a <strong>Anselmo Pérez, tributario del pueblo de Chalatenango</strong>, hace el tiempo de <strong>más de doce años</strong>; y que desde aquella época hasta la presente lo he tenido y reputado por <strong>indio, hombre de bien, de buena vida y costumbres</strong>, pagando anualmente los correspondientes <strong>tributos a Su Majestad en el expresado pueblo de Chalatenango, donde está matriculado</strong>.</p>
+<p>Y que en los distintos años en que he tenido el empleo de <strong>alcalde ordinario</strong> en aquel partido, no he tenido la más leve queja contra el expresado Pérez; antes al contrario, me consta que todos los de aquel partido lo tienen y reputan por hombre de bien, y le confían cualesquiera intereses.</p>
+<p>Y para que obre los efectos a que haya lugar, doy la presente a pedimento verbal del expresado Anselmo Pérez, que firmo <strong>en esta Tejutla, a ocho de mayo de mil ochocientos diez</strong>.</p>
+<p><strong>Rafael de Reyna</strong> [rúbrica]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en lo sustantivo. Las palabras que importan —«Tributario de el Pueblo de Chalatenango», «Yndio», «pagando anualmente los correspondientes tributos a S. M.», «en donde está Matriculado», «más de doce años», «Alcalde Ordinario», «ocho de Mayo»— están claras y se han comprobado a gran aumento una por una. Dos advertencias honestas: (1) un borrón tapa una o dos palabras en el renglón del empleo («que he [obte]nido [el] Empleo»), aunque el sentido no cambia; (2) <strong>el año está escrito «dies», es decir mil ochocientos diez (1810), no «diez y seis»</strong>. Lo he comprobado a máximo aumento: la palabra tiene cuatro letras, d‑i‑e‑s, y después de «ochoc.tos» no hay nada más en el renglón. Si el expediente esperaba una certificación de 1816, esta plana no la sostiene: lo que la plana dice es <strong>8 de mayo de 1810</strong>, lo que además encaja bien con un documento antiguo que Anselmo guardaba y presentó en 1813 junto con su contestación.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1564">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 9 de 13</span><h3>IMG_1564</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1564" aria-label="Ampliar la lámina IMG_1564">
+        <img src="../img/sen1813/p009.jpg" alt="Fotografía de la lámina IMG_1564" loading="lazy">
+      </button>
+      <figcaption>Papel sin sello impreso visible en el encuadre, de buena calidad. Tinta parda oscura, letra grande, redonda y suelta, la más legible de todo el expediente. El papel está limpio; sólo una pequeña mancha en el margen. Foliación no visible. Toma excelente.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Folio 6: la segunda certificación que presenta Anselmo Pérez, ésta expedida por <strong>don Juan Bautista Valdiviezo, teniente subdelegado</strong> del partido, en el <strong>pueblo de Santo Tomás Tejutla, a 21 de septiembre de 1813</strong>.
+
+Certifica que en la causa criminal seguida contra <strong>Dionicio Pérez</strong> por el <strong>homicidio casual</strong> que dio a <strong>Pablo Secundino</strong> en la <strong>montaña de Santa Tecla</strong>, término de su jurisdicción, <strong>no ha resultado complicado en el delito Anselmo Pérez</strong>; y que habiéndose presentado éste ante él haciendo presente que Cresencio Orellana le arguye sobre aquella muerte ante el señor subdelegado del partido de Sensentí, le ha pedido el correspondiente certificado para esclarecimiento del cargo, el cual da a pedimento de parte.
+
+Es la pieza con que Anselmo desmonta la insinuación de IMG_1557 de que el homicidio quedó impune y de que él estaba metido en él; y, de paso, confirma que la causa criminal se sustanciaba <strong>al otro lado de la raya</strong>, en Tejutla.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Don Juan Bap<u class="exp" title="abreviatura desarrollada">[tis]</u>ta Valdiviezo Th<u class="exp" title="abreviatura desarrollada">[enien]</u>te Subdelega-</span>
+<span class="ln">do de este Partido. &amp;</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Certifico en devida forma a los Señores.</span>
+<span class="ln">y demas q<u class="exp" title="abreviatura desarrollada">[ue]</u> la presente Vieren como en la</span>
+<span class="ln">Contra Chriminal q<u class="exp" title="abreviatura desarrollada">[ue]</u> contra Dionicio Peres</span>
+<span class="ln">sea seguido por omicidio Casual q<u class="exp" title="abreviatura desarrollada">[ue]</u> a Pablo</span>
+<span class="ln">Secundino dio en la Montaña de Santa Thec-</span>
+<span class="ln">la termino de mi Jurisdicion, no â resultado</span>
+<span class="ln">Complicado en este Delito Anselmo Peres, y pre-</span>
+<span class="ln">sentandose este ante m<u class="exp" title="abreviatura desarrollada">[i]</u>. aciendo presente</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> Crecencio Orellana le arguye sobre la muer-</span>
+<span class="ln">te ante el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Sub<u class="exp" title="abreviatura desarrollada">[delegad]</u>o del Partido <u class="exp" title="abreviatura desarrollada">[d]</u>e Sensenti</span>
+<span class="ln">y para <u class="exp" title="abreviatura desarrollada">[su]</u> esclarecim<u class="exp" title="abreviatura desarrollada">[ien]</u>to del Cargo q<u class="exp" title="abreviatura desarrollada">[ue]</u> este le</span>
+<span class="ln">ace m<u class="exp" title="abreviatura desarrollada">[e h]</u>a pedido el Correspondiente Certifi-</span>
+<span class="ln">cado el qual doy a pedimento de la parte pa-</span>
+<span class="ln">ra q<u class="exp" title="abreviatura desarrollada">[ue]</u> obre los efectos q<u class="exp" title="abreviatura desarrollada">[ue]</u> combenga en este</span>
+<span class="ln">Pueb<u class="exp" title="abreviatura desarrollada">[lo]</u> de Santo Thomas Teju<u class="exp" title="abreviatura desarrollada">[tl]</u>a a 21 de Sep-</span>
+<span class="ln">tiembre de <u class="exp" title="abreviatura desarrollada">[1]</u>813.</span>
+<span class="ln">Juan Bap<u class="exp" title="abreviatura desarrollada">[tis]</u>ta Valdiviezo <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p><strong>Don Juan Bautista Valdiviezo, teniente subdelegado de este partido, etc.</strong></p>
+<p>Certifico en debida forma, a los señores y demás que la presente vieren, cómo en la causa criminal que se ha seguido contra <strong>Dionicio Pérez</strong> por el <strong>homicidio casual</strong> que dio a <strong>Pablo Secundino</strong> en la <strong>montaña de Santa Tecla</strong>, término de mi jurisdicción, <strong>no ha resultado complicado en este delito Anselmo Pérez</strong>. Y presentándose éste ante mí, haciendo presente que <strong>Cresencio Orellana</strong> le arguye sobre aquella muerte ante el señor subdelegado del <strong>partido de Sensentí</strong>, y para esclarecimiento del cargo que éste le hace, me ha pedido el correspondiente certificado, el cual doy a pedimento de la parte para que obre los efectos que convenga.</p>
+<p>En este <strong>pueblo de Santo Tomás Tejutla, a 21 de septiembre de 1813</strong>.</p>
+<p><strong>Juan Bautista Valdiviezo</strong> [rúbrica]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta. Es la plana mejor escrita y mejor conservada del expediente. Dos matices: el topónimo final está escrito con una ligadura que hace dudar entre «Tejutla» y una grafía abreviada —lo doy como Tejutla por el resto del expediente, marcando la sílaba—; y el nombre de la montaña, «Santa Thec‑la», está partido entre dos renglones, aunque las letras «Thec» son firmes.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1565">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 10 de 13</span><h3>IMG_1565</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1565" aria-label="Ampliar la lámina IMG_1565">
+        <img src="../img/sen1813/p010.jpg" alt="Fotografía de la lámina IMG_1565" loading="lazy">
+      </button>
+      <figcaption>Papel sellado con la cabecera impresa íntegra del sello tercero: «Dos reales. / SELLO TERCERO, DOS REA- / LES, AÑOS DE MIL OCHOCIEN- / TOS Y ONCE, Y MIL OCHOCIEN- / TOS Y DOCE», con el escudo real «FERDIN. VII. D. G. HISP. ET IND. REX». Debajo, el sello oval de habilitación con las armas coronadas entre «S» y «3» y la leyenda con el año 1813. Foliación «7» arriba a la derecha. <strong>Rotura importante</strong>: falta un trozo triangular de papel en el centro de la plana, que se llevó dos renglones enteros, y hay una segunda rasgadura horizontal más abajo. Tinta parda clara. Toma muy buena.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Folio 7. Contiene el <strong>decreto de remisión a letrado</strong>, que es el punto en que el juzgado de Sensentí reconoce que el asunto le queda grande. Fechado en <strong>Sensentí, a 29 de septiembre de 1813</strong>, manda: «Pase este expediente a la consulta del <strong>licenciado don José Santiago Milla</strong>, con citación de los litigantes». Lo firma <strong>Carrejón</strong>; lo autoriza, con testigos a falta de escribano, <strong>José Ignacio Salazar</strong>, con <strong>Julio Izquierdo</strong> como segundo testigo.
+
+Siguen las diligencias: se notificó a Cresencio Orellana, quedó entendido y no firmó por no saber; y en seguida se comunicó por oficio a Anselmo Pérez.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Dos reales.</span>
+<span class="ln">SELLO TERCERO, DOS REA-</span>
+<span class="ln">LES, AÑOS DE MIL OCHOCIEN-</span>
+<span class="ln">TOS Y ONCE, Y MIL OCHOCIEN-</span>
+<span class="ln">TOS Y DOCE.</span>
+<span class="ln">[sello oval de habilitación: S | 3 — «…1813…»]                    <u class="exp" title="abreviatura desarrollada">[fol.]</u> 7</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Sen]</u>senti y S<u class="exp" title="abreviatura desarrollada">[e]</u>p<u class="exp" title="abreviatura desarrollada">[tiemb]</u>re veinte y nueve de ochoc<u class="exp" title="abreviatura desarrollada">[ientos]</u> tre<u class="exp" title="abreviatura desarrollada">[ce]</u></span>
+<span class="ln">Pase este Exped<u class="exp" title="abreviatura desarrollada">[ien]</u>te. â la consulta del Licenciad<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n. Jose Santiago Milla con citacion de los</span>
+<span class="ln">litigantes.</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[rotura: falta un renglón]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[rotura: Carre]</u>jon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Lo proveyó y firmó <u class="exp" title="abreviatura desarrollada">[S[u]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d.] el S<u class="exp" title="abreviatura desarrollada">[eñ]</u>o<u class="exp" title="abreviatura desarrollada">[r]</u>. Ten<u class="exp" title="abreviatura desarrollada">[ien]</u>te. de este Part<u class="exp" title="abreviatura desarrollada">[id]</u>o. con</span>
+<span class="ln">t<u class="exp" title="abreviatura desarrollada">[esti]</u>g<u class="exp" title="abreviatura desarrollada">[o]</u>s. en falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no.</span>
+<span class="ln">Jose Ygn<u class="exp" title="abreviatura desarrollada">[acio]</u>. Salazar <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        Julio Yzquierdo <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Se notifico â Cresencio Orellana qued<u class="exp" title="abreviatura desarrollada">[ó]</u> entendid<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">y no firmó por no saver.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En seguida se comunico p<u class="exp" title="abreviatura desarrollada">[o]</u>r Oficio â Anselmo Pe-</span>
+<span class="ln">rez</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>                     <u class="exp" title="abreviatura desarrollada">[al pie, muy desvaído:]</u> S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Ten<u class="exp" title="abreviatura desarrollada">[ien]</u>te <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p><strong>Sensentí, 29 de septiembre de 1813.</strong> Pase este expediente a la consulta del <strong>licenciado don José Santiago Milla</strong>, con citación de los litigantes. — Carrejón [rúbrica].</p>
+<p>Lo proveyó y firmó su merced el señor teniente de este partido, con testigos a falta de escribano. — <strong>José Ignacio Salazar</strong> [rúbrica]. <strong>Julio Izquierdo</strong> [rúbrica].</p>
+<p>Se notificó a Cresencio Orellana; quedó entendido y no firmó por no saber.</p>
+<p>En seguida se comunicó por oficio a Anselmo Pérez.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en el decreto, la fecha, el nombre del letrado y las firmas. Baja en lo que la rotura se llevó (uno o dos renglones entre el decreto y la firma de Carrejón) y en la anotación desvaída del pie, que parece el encabezamiento del oficio.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1566">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 11 de 13</span><h3>IMG_1566</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1566" aria-label="Ampliar la lámina IMG_1566">
+        <img src="../img/sen1813/p011.jpg" alt="Fotografía de la lámina IMG_1566" loading="lazy">
+      </button>
+      <figcaption>Papel sin sello visible en el encuadre. <strong>Daño grave</strong>: un gran desgarro con pérdida de soporte en el centro-izquierda de la plana, con un trozo de papel doblado sobre sí mismo que tapa texto y muestra al revés unas letras de la cara oculta; una segunda rasgadura horizontal en el tercio inferior. Tinta parda clara, letra cursiva de jurista, menuda y rápida, con muchas abreviaturas. La fotografía tiene mucha sombra en los bordes: la lectura ha sido difícil en toda la plana.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">El <strong>dictamen del letrado</strong>, licenciado José Santiago Milla. Es el razonamiento jurídico del expediente y, con mucho, la plana más maltratada.
+
+Milla razona que ninguno de los dos litigantes tiene pleito exclusivo en el sitio que ocupan, y de ahí que ninguno pueda lanzar al otro, a menos que se colinden mutuamente; que quien ocupó el terreno perjudicial es lo que el señor juez podrá hacer presente; y que Cresencio Orellana justifique los perjuicios que dice que se le irrogaron. Observa que, en cuanto a los documentos que Anselmo acompaña, queda desvanecido el cargo de complicidad en la muerte, <strong>pero no así el de los palos que Orellana afirma haberle dado al alcalde ordinario de Chalatenango</strong>, sobre cuya especie el mismo Pérez se explica con ambigüedad en su escrito. Y concluye proponiendo la salida práctica: que Su Señoría pregunte <strong>por oficio al juez de Chalatenango</strong> si hay [causa pendiente]…
+
+Es decir: el letrado no zanja el domicilio, sino que manda escribir a la otra jurisdicción.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> litigan en este expediente, ninguno de</span>
+<span class="ln">ellos tiene <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿pleito?]</u></u> esclusivo, en el citio q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> sin embargo asi q<u class="exp" title="abreviatura desarrollada">[ue]</u> no puede</span>
+<span class="ln">lanzar<u class="exp" title="abreviatura desarrollada">[se]</u> unos a otros, a menos q<u class="exp" title="abreviatura desarrollada">[ue]</u> no co-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[lin]</u>den mutuam<u class="exp" title="abreviatura desarrollada">[en]</u>te q<u class="exp" title="abreviatura desarrollada">[ue]</u> en tomar <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de</span>
+<span class="ln">ocuparon el terreno el perjudicial, lo</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> podrá el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Juez <u class="exp" title="abreviatura desarrollada">[hacer]</u> pres<u class="exp" title="abreviatura desarrollada">[en]</u>te</span>
+<span class="ln">p<u class="exp" title="abreviatura desarrollada">[or]</u> su cargo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Crecencio Orellana jus-</span>
+<span class="ln">tifique <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[perju]</u>icios q<u class="exp" title="abreviatura desarrollada">[ue]</u> dice <u class="exp" title="abreviatura desarrollada">[se]</u> le ino-</span>
+<span class="ln">gó <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Aunq<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en los docum<u class="exp" title="abreviatura desarrollada">[en]</u>tos q<u class="exp" title="abreviatura desarrollada">[ue]</u> acompa-</span>
+<span class="ln">ña â <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de los cargos de com-</span>
+<span class="ln">p<u class="exp" title="abreviatura desarrollada">[lici]</u>dad en la muerte q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[hizo]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">no asi de los palos q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[e]</u>l Orellana afir-</span>
+<span class="ln">ma haverle dado al Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e. Ordinario</span>
+<span class="ln">d<u class="exp" title="abreviatura desarrollada">[e]</u> Chalatenango; sobre cuya especie el</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[mis]</u>mo Perez, se esplica con anbigui-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[d]</u>a<u class="exp" title="abreviatura desarrollada">[d]</u> en su <u class="exp" title="abreviatura desarrollada">[escrito]</u> y p<u class="exp" title="abreviatura desarrollada">[or]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la consideracion, a a<u class="exp" title="abreviatura desarrollada">[cu]</u>dir, p<u class="exp" title="abreviatura desarrollada">[ue]</u>-</span>
+<span class="ln">d<u class="exp" title="abreviatura desarrollada">[a]</u> V<u class="exp" title="abreviatura desarrollada">[uestra]</u>. S<u class="exp" title="abreviatura desarrollada">[eñorí]</u>a. p<u class="exp" title="abreviatura desarrollada">[or]</u>. oficio <u class="exp" title="abreviatura desarrollada">[preguntar]</u> al</span>
+<span class="ln">Juez de Chalatenango, si hai <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] que litigan en este expediente, ninguno de ellos tiene derecho exclusivo en el sitio que ocupan; de modo que ninguno puede lanzar al otro, a menos que no colinden mutuamente. Quién fue el que ocupó el terreno perjudicial es lo que el señor juez podrá hacer presente; y que Cresencio Orellana justifique los perjuicios que dice que se le irrogaron.</p>
+<p>Aunque con los documentos que acompaña [Anselmo Pérez] quedan desvanecidos los cargos de complicidad en la muerte, <strong>no así el de los palos que Orellana afirma haberle dado al alcalde ordinario de Chalatenango</strong>, sobre cuya especie el mismo Pérez se explica con ambigüedad en su escrito. Y por lo mismo […], atendida la consideración, puede Vuestra Señoría <strong>preguntar por oficio al juez de Chalatenango</strong> si hay […]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja a media. El sentido general del dictamen —no hay dominio exclusivo de ninguno; que Orellana pruebe los daños; los certificados desvanecen lo del homicidio pero no lo de los palos; que se oficie al juez de Chalatenango— está firme y se sostiene en las palabras legibles. Pero un tercio del texto se ha perdido con el desgarro y la sombra, y varias de las palabras que aquí se restituyen entre corchetes son reconstrucciones de sentido, no lecturas. Esta plana merecería una segunda toma con luz rasante.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1567">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 12 de 13</span><h3>IMG_1567</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1567" aria-label="Ampliar la lámina IMG_1567">
+        <img src="../img/sen1813/p012.jpg" alt="Fotografía de la lámina IMG_1567" loading="lazy">
+      </button>
+      <figcaption>Papel sin sello visible en el encuadre. <strong>Daño</strong>: un desgarro con pérdida en el centro-derecha, y otro horizontal bajo la firma de Carrejón. En el margen izquierdo se ven, invertidas y en negativo, letras de la plana enfrentada por contacto de la tinta («Orellana», una fecha) — no son notas marginales. Tinta parda, clara; papel ondulado y con sombra. Toma buena.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Tres actuaciones seguidas. Arriba, el final del dictamen del licenciado Milla, con su firma «Lic. Millas», y la data en octubre de 1813.
+
+En medio, el <strong>decreto de conformidad del teniente</strong>, fechado en <strong>Sensentí a 24 de octubre de 1813</strong>: «Hágase como lo propone el letrado, y en su consecuencia póngase en noticia de las partes, para lo que les convenga en su razón, librándose el oficio que se previene <strong>a los alcaldes ordinarios de Chalatenango</strong>, con cuya contestación se dará nueva vista al expediente». Firma <strong>Carrejón</strong>.
+
+Abajo, la fe de la providencia («el anterior decreto proveyó y firmó su merced el señor teniente de este partido, con testigos a falta de escribano»), autorizada por <strong>José Ignacio Salazar</strong>, y el arranque de la diligencia de notificación, que continúa en la plana siguiente.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ex]</u>pediente instruid<u class="exp" title="abreviatura desarrollada">[o]</u> en la materia, y ha-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ci]</u>endol<u class="exp" title="abreviatura desarrollada">[o]</u>, podrá<u class="exp" title="abreviatura desarrollada">[n]</u> afecto a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> con <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ara V<u class="exp" title="abreviatura desarrollada">[uestra]</u>. S<u class="exp" title="abreviatura desarrollada">[eñorí]</u>a. or<u class="exp" title="abreviatura desarrollada">[de]</u>nar. <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Octubre</span>
+<span class="ln">de 813.</span>
+<span class="ln">Lic<u class="exp" title="abreviatura desarrollada">[enciado]</u>. Millas <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Sen]</u>senti y Octubre v<u class="exp" title="abreviatura desarrollada">[eint]</u>e <u class="exp" title="abreviatura desarrollada">[y]</u> quatro de ocho<u class="exp" title="abreviatura desarrollada">[cientos]</u> trece.</span>
+<span class="ln">Hagase como lo <u class="exp" title="abreviatura desarrollada">[propone el]</u> Letrado y en su con-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[se]</u>cuencia, pongase en noticia de las partes, p<u class="exp" title="abreviatura desarrollada">[ara]</u> lo</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> les conbenga en su <u class="exp" title="abreviatura desarrollada">[razón]</u>, librandose el oficio</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> se previene a los Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>es Or<u class="exp" title="abreviatura desarrollada">[dinari]</u>os de Chalatenango</span>
+<span class="ln">con cuya contestacion, se dara nueva vista al</span>
+<span class="ln">Exped<u class="exp" title="abreviatura desarrollada">[ien]</u>te. y demas q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[pide]</u> el mismo Letrado</span>
+<span class="ln">Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">El ant<u class="exp" title="abreviatura desarrollada">[erio]</u>r. decreto proveyo <u class="exp" title="abreviatura desarrollada">[y firmó S[u]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d. el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r. Ten<u class="exp" title="abreviatura desarrollada">[ien]</u>te. de este Part<u class="exp" title="abreviatura desarrollada">[id]</u>o]</span>
+<span class="ln">con t<u class="exp" title="abreviatura desarrollada">[esti]</u>g<u class="exp" title="abreviatura desarrollada">[o]</u>s. en falta de <u class="exp" title="abreviatura desarrollada">[Escribano]</u></span>
+<span class="ln">Jose Ygnacio Salazar <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En la fecha citada se hiso <u class="exp" title="abreviatura desarrollada">[saber]</u> a</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] expediente instruido en la materia; y haciéndolo […] podrá Vuestra Señoría ordenar […]. Octubre de 1813. — <strong>Licenciado Milla</strong> [rúbrica].</p>
+<p><strong>Sensentí, 24 de octubre de 1813.</strong> Hágase como lo propone el letrado, y en su consecuencia póngase en noticia de las partes, para lo que les convenga en su razón, librándose el oficio que se previene <strong>a los alcaldes ordinarios de Chalatenango</strong>, con cuya contestación se dará nueva vista al expediente, y lo demás que pide el mismo letrado. — Carrejón [rúbrica].</p>
+<p>El anterior decreto lo proveyó y firmó su merced el señor teniente de este partido, con testigos a falta de escribano. — <strong>José Ignacio Salazar</strong> [rúbrica].</p>
+<p>En la fecha citada se hizo saber a […]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta en el decreto y las firmas —la fecha, el mandato de oficiar a Chalatenango y el nombre de Salazar son seguros—; <strong>baja</strong> en los cuatro primeros renglones, que son la cola del dictamen y están a la vez desvaídos, en sombra y rotos. La firma del letrado se lee «Lic. Millas», con una ese final que puede ser floritura: se trata del mismo José Santiago Milla nombrado en IMG_1565.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1568">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 13 de 13</span><h3>IMG_1568</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1568" aria-label="Ampliar la lámina IMG_1568">
+        <img src="../img/sen1813/p013.jpg" alt="Fotografía de la lámina IMG_1568" loading="lazy">
+      </button>
+      <figcaption>Papel sellado; en el ángulo superior izquierdo, el sello oval de habilitación con las armas coronadas entre «S» y «3». <strong>Daño grave</strong>: un desgarro amplio con pérdida de soporte en el tercio superior, con un jirón doblado que muestra escritura invertida de la cara oculta, y una segunda rasgadura en la mitad inferior. Tinta muy pálida, casi agotada, sobre papel manchado: es la plana de lectura material más difícil del conjunto, aunque el texto es formulario y por eso reconstruible. Toma correcta pero con fuerte sombra diagonal.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">La última plana conservada: las diligencias de cierre de esta fase del pleito.
+
+Consta que <strong>en 28 del mismo [octubre de 1813]</strong> compareció <strong>Cresencio Orellana</strong>, a quien se le notificó el decreto anterior; quedó entendido y dijo que lo oía, pidiendo que se le [diese] […] respecto de Chalatenango; y no firmó por no saber.
+
+Sigue el decreto: <strong>«Sensentí, 28 de octubre de 1813. Como lo pide, con citación de Anselmo Pérez.»</strong> Firma Carrejón, y lo autoriza José Ignacio Salazar con testigos a falta de escribano.
+
+Y cierran dos diligencias: se puso en noticia de Anselmo Pérez, que quedó entendido y no firmó; y <strong>en seguida se le entregó este expediente a Cresencio Orellana</strong>, sin firmar por no saber.
+
+Ahí se corta lo conservado. El expediente no muestra sentencia: queda pendiente la contestación de los alcaldes ordinarios de Chalatenango, y los autos salen del juzgado en manos del propio demandante.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">[sello oval de habilitación: S | 3]</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> â las partes<u class="exp" title="abreviatura desarrollada">[?]</u> y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En veinte y ocho del mismo pareció Crecencio Ore-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[llana]</u> a q<u class="exp" title="abreviatura desarrollada">[ui]</u>en se le notifico el ant<u class="exp" title="abreviatura desarrollada">[erio]</u>r. decreto <u class="exp" title="abreviatura desarrollada">[y]</u> directam<u class="exp" title="abreviatura desarrollada">[en]</u>te quedó en-</span>
+<span class="ln">tend<u class="exp" title="abreviatura desarrollada">[i]</u>d<u class="exp" title="abreviatura desarrollada">[o]</u> dijo q<u class="exp" title="abreviatura desarrollada">[ue]</u> lo <u class="exp" title="abreviatura desarrollada">[oye]</u>, pidiendo se le <u class="exp" title="abreviatura desarrollada">[pase]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[de]</u> Chalatenango, y no fir-</span>
+<span class="ln">mó p<u class="exp" title="abreviatura desarrollada">[or]</u> no saver.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Sen]</u>senti y Oct<u class="exp" title="abreviatura desarrollada">[ub]</u>re. veinte y <u class="exp" title="abreviatura desarrollada">[ocho]</u> de mil ochoc<u class="exp" title="abreviatura desarrollada">[ientos]</u>. trece.</span>
+<span class="ln">Como lo pide con citacion de Anselmo Peres</span>
+<span class="ln">Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Lo proveyó y firmó el S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or. Ten<u class="exp" title="abreviatura desarrollada">[ien]</u>te. con t<u class="exp" title="abreviatura desarrollada">[esti]</u>g<u class="exp" title="abreviatura desarrollada">[o]</u>s. en falta de</span>
+<span class="ln">Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no.</span>
+<span class="ln">Jose Ygn<u class="exp" title="abreviatura desarrollada">[acio]</u>. Salazar <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Se puso en noticia de Anselmo Perez y qued<u class="exp" title="abreviatura desarrollada">[ó]</u> entendid<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">y no firmó <u class="exp" title="abreviatura desarrollada">[por no saber]</u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[En]</u> seguida se le entregó este Exped<u class="exp" title="abreviatura desarrollada">[ien]</u>te. â Crecencio Ore-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[llana]</u> y no firmó por no saber.</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] a las partes […]</p>
+<p>En <strong>veintiocho del mismo [mes]</strong> compareció <strong>Cresencio Orellana</strong>, a quien se le notificó el decreto anterior; quedó entendido y dijo que lo oía, pidiendo que se le [remitiese] […] de <strong>Chalatenango</strong>; y no firmó por no saber.</p>
+<p><strong>Sensentí, 28 de octubre de 1813.</strong> Como lo pide, con citación de <strong>Anselmo Pérez</strong>. — Carrejón [rúbrica].</p>
+<p>Lo proveyó y firmó el señor teniente, con testigos a falta de escribano. — <strong>José Ignacio Salazar</strong> [rúbrica].</p>
+<p>Se puso en noticia de Anselmo Pérez, y quedó entendido; no firmó por no saber.</p>
+<p>En seguida se le entregó este expediente a Cresencio Orellana; y no firmó por no saber.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media. Las fechas, el decreto y las firmas son seguros. La petición concreta que hace Orellana al ser notificado —los tres o cuatro renglones que siguen a «pidiendo se le…»— está en la zona rota y desvaída y no se deja fijar; por el contexto se relaciona con la comunicación a Chalatenango. Los dos primeros renglones, continuación de la diligencia iniciada al pie de IMG_1567, son prácticamente ilegibles.
+
+---</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4><strong>Cresencio (Crecencio) de Orellana</strong></h4>
+  <p class="papel">Demandante. Alega posesión de más de veinte años a orillas del Sumpul con casas, cañaveral, trapiche y horno; acusa a Pérez de daños, amenazas, agresión a su hijo y de fabricar domicilio en Tejutla. No sabe firmar.</p>
+  <p class="calidad">Vecino del partido de <strong>Sensentí</strong>, fincado en las orillas del <strong>río Sumpul</strong>. No se declara su calidad ni su edad.</p>
+</div>
+<div class="persona">
+  <h4><strong>Anselmo Pérez</strong></h4>
+  <p class="papel">Demandado. Contesta, niega, aporta dos certificaciones de la otra jurisdicción y pide perito o comisario a costa de los culpados. No sabe firmar.</p>
+  <p class="calidad">Se dice <strong>«vecino del partido de Tejutla»</strong>; certificado como <strong>indio tributario matriculado en el pueblo de Chalatenango</strong>, donde paga anualmente sus tributos a Su Majestad (IMG_1563); avecindado de hecho a orillas del Sumpul desde hace cinco años (según él) o nueve (según Orellana).</p>
+</div>
+<div class="persona">
+  <h4><strong>Carrejón</strong></h4>
+  <p class="papel">Juez actuante: teniente del partido de Sensentí. Firma todos los decretos (traslado, remisión a letrado, conformidad, «como lo pide»).</p>
+  <p class="calidad">Teniente (juez) del <strong>partido de Sensentí</strong>. No consta más.</p>
+</div>
+<div class="persona">
+  <h4><strong>José Ignacio Salazar</strong></h4>
+  <p class="papel">Testigo de asistencia que autoriza las providencias «con testigos, en falta de escribano». Firma en IMG_1561, 1565, 1567 y 1568.</p>
+  <p class="calidad">Vecino de <strong>Sensentí</strong>; sabe escribir. Sin más datos.</p>
+</div>
+<div class="persona">
+  <h4><strong>Julio Izquierdo</strong></h4>
+  <p class="papel">Segundo testigo de asistencia en el decreto de 29 de septiembre de 1813.</p>
+  <p class="calidad">Vecino de <strong>Sensentí</strong>; sabe escribir.</p>
+</div>
+<div class="persona">
+  <h4><strong>Lic. José Santiago Milla</strong></h4>
+  <p class="papel">Letrado consultado. Emite el dictamen (IMG_1566) y firma «Lic. Milla[s]» en IMG_1567.</p>
+  <p class="calidad"><strong>Licenciado</strong> (abogado). No consta vecindad.</p>
+</div>
+<div class="persona">
+  <h4><strong>Rafael de Reyna</strong></h4>
+  <p class="papel">Certifica, como teniente subdelegado, la condición tributaria y la buena conducta de Anselmo Pérez (Tejutla, 8 de mayo de 1810). Dice haber sido antes <strong>alcalde ordinario</strong> en aquel partido en distintos años.</p>
+  <p class="calidad"><strong>Teniente subdelegado</strong> del partido; escribe desde <strong>Tejutla</strong>, y certifica sobre el <strong>pueblo de Chalatenango</strong>.</p>
+</div>
+<div class="persona">
+  <h4><strong>Juan Bautista Valdiviezo</strong></h4>
+  <p class="papel">Certifica que Anselmo Pérez no resultó complicado en el homicidio de Pablo Secundino (Santo Tomás Tejutla, 21 de septiembre de 1813).</p>
+  <p class="calidad"><strong>Teniente subdelegado</strong> del partido de <strong>Tejutla</strong>.</p>
+</div>
+<div class="persona">
+  <h4><strong>Juan Coello / Juan Cuello</strong></h4>
+  <p class="papel">Alcalde ordinario de Chalatenango, apaleado hará seis o nueve años; el hecho que, según Orellana, hizo huir a Anselmo Pérez. Milla señala que ese cargo no queda desvanecido.</p>
+  <p class="calidad"><strong>Don</strong>, es decir español o tenido por tal; <strong>alcalde ordinario del pueblo de Chalatenango</strong>.</p>
+</div>
+<div class="persona">
+  <h4><strong>Juan Florencio Orellana</strong></h4>
+  <p class="papel">Hijo de Cresencio Orellana; según la demanda, Anselmo salió contra él en compañía de otros cuatro en marzo. Según Anselmo, andaba huyendo de su padre y del juez por desobediente.</p>
+  <p class="calidad">Hijo del demandante; vecino del mismo paraje del <strong>Sumpul</strong>. Sin edad ni calidad declaradas.</p>
+</div>
+<div class="persona">
+  <h4><strong>Dionicio (Dionisio) Pérez</strong></h4>
+  <p class="papel">Autor del <strong>homicidio casual</strong> de Pablo Secundino en la montaña de Santa Tecla; procesado en Tejutla. Anselmo lo llama «mi nieto».</p>
+  <p class="calidad">Nieto (o hijo) de Anselmo Pérez; causa seguida en la <strong>jurisdicción de Tejutla</strong>.</p>
+</div>
+<div class="persona">
+  <h4><strong>Pablo Secundino</strong></h4>
+  <p class="papel">Víctima del homicidio casual en la <strong>montaña de Santa Tecla</strong>.</p>
+  <p class="calidad">Sin datos de calidad ni vecindad.</p>
+</div>
+<div class="persona">
+  <h4><strong>Domingo</strong></h4>
+  <p class="papel">Nombrado en la demanda (IMG_1557) como el hijo de Anselmo que en mayo mató a cuchilladas a un hombre en casa de su padre; corresponde al homicidio que las certificaciones atribuyen a Dionicio Pérez.</p>
+  <p class="calidad">Hijo de Anselmo Pérez, según Orellana.</p>
+</div>
+<div class="persona">
+  <h4><strong>Domingo Morán</strong></h4>
+  <p class="papel">Comisario. Ejecutó, por comisión del juzgado, el registro de la cerca de Anselmo Pérez cuatro años antes del pleito.</p>
+  <p class="calidad"><strong>Comisario</strong> («el presente comisario») del paraje del <strong>Sumpul</strong>, partido de Sensentí.</p>
+</div>
+<div class="persona">
+  <h4><strong>Luciano Herrera</strong></h4>
+  <p class="papel">Quien, según Anselmo, le dio los dos golpes en la chinamita de Chalatenango, desencadenando el golpe de barretón.</p>
+  <p class="calidad">Vecino o presente en el <strong>pueblo de Chalatenango</strong>.</p>
+</div>
+<div class="persona">
+  <h4><strong>Petrona Pérez</strong></h4>
+  <p class="papel">Hermana de Anselmo Pérez; en su casa empezó el altercado con Juan Florencio.</p>
+  <p class="calidad">Hermana del demandado; vecina del paraje del <strong>Sumpul</strong>.</p>
+</div>
+<div class="persona">
+  <h4><strong>D. José de Fi[…]do</strong></h4>
+  <p class="papel">Administrador interino ante quien Orellana se quejó de que Anselmo le mató un perro cazador; mandó que se lo pagara y que se retirara para evitar discordias.</p>
+  <p class="calidad"><strong>Don</strong>; «estaba administrando de interino». El apellido se pierde en el borde curvado del papel (IMG_1562).</p>
+</div>
+<div class="persona">
+  <h4><strong>Lorenzo Pérez</strong></h4>
+  <p class="papel">No aparece nombrado como tal en estas trece planas.</p>
+  <p class="calidad">—</p>
+</div></div>
+</section>
+
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

@@ -1,0 +1,1177 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Las tres octavas partes de San Juan — Papeles de Sensentí</title>
+<meta name="description" content="Un vecino reclama la parte de la hacienda de San Juan que heredó su mujer, denuncia que le echan los animales y le cierran la salida, y acaba pidiendo que un juez agrimensor señale a cada uno lo suyo.">
+<meta property="og:title" content="Las tres octavas partes de San Juan">
+<meta property="og:description" content="Un vecino reclama la parte de la hacienda de San Juan que heredó su mujer, denuncia que le echan los animales y le cierran la salida, y acaba pidiendo que un juez agrimensor señale a cada uno lo suyo.">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Pleito de tierras, 1818</p>
+  <h1>Las tres octavas partes de San Juan</h1>
+  <p class="dek">Un vecino reclama la parte de la hacienda de San Juan que heredó su mujer, denuncia que le echan los animales y le cierran la salida, y acaba pidiendo que un juez agrimensor señale a cada uno lo suyo.</p>
+  <div class="meta"><span><strong>9 láminas</strong> · IMG_1406 – IMG_1414</span><span>Septiembre y octubre de 1818</span><span>Papel sellado 3.º de 1810 y 1811, habilitado; y papel común, «no [había] papel sellado ningun sello»</span><span>Sensentí, hacienda de San Juan y hacienda del Amate</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">9</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>En septiembre de 1818, don Julio Izquierdo, vecino de Sensentí, se presentó ante el teniente y
+juez del partido con una demanda sobre tierras. Su mujer, doña Francisca Núñez, era hija de don
+Casimiro Núñez; muertos el padre y la madre, quedaron bienes partibles entre los herederos y,
+sobre todo, la hacienda nombrada San Juan. A doña Francisca le tocaban <strong>tres octavas partes</strong> de
+San Juan por sus padres, y otras <strong>tres octavas partes</strong> en la vecina <strong>hacienda del Amate</strong>, que
+su marido había permutado con su cuñado don Timoteo Núñez a cambio de lo que a éste correspondía
+en San Juan. Frente a ellos estaba don Antonio Núñez, casado con una hija entenada del suegro de
+Izquierdo, que se tenía por heredero y a quien el demandante sólo reconocía la tercera parte.</p>
+<p>Lo que encendió el pleito no fue la aritmética de las fracciones, sino un <strong>zanjo</strong>: la zanja de
+linderos que había que abrir en San Juan para que los animales de una parte no entrasen en la
+milpa de la otra. Izquierdo cuenta que con palabras comedidas pidió a Núñez que hiciera el zanjo;
+que Núñez, lejos de hacerlo, levantó su casa pegada a la de su mujer «sólo con la idea de
+perjudicarme»; que lo llenó de injurias y lo deshonró en su propia casa; y que hasta tres veces
+le dijo que lo había de botar de la posesión. Termina pidiendo lo que en el fondo pedían los dos:
+que se nombre un <strong>juez agrimensor</strong> que mida la hacienda, se fijen el zanjo y la caballería de
+aquel cerro, y se señale a cada heredero lo suyo.</p>
+<p>El 4 de septiembre de 1818, en Sensentí, el juez Josef Cornelio Ballesteros —teniente interino
+del partido, que actúa siempre «por ante nos los de asistencia», es decir, con los testigos Juan
+Francisco Molina y José Ignacio Molina, porque en Sensentí no había escribano— mandó dar traslado
+a don Antonio Núñez. Éste respondió el 14 de septiembre: que renunciaba al traslado, que si don
+Julio quería querellarse lo hiciera en juicio verbal y que, si insistía en el papel, afianzase la
+calumnia. Izquierdo replicó el 28: aceptaba afianzar **mil pesos con fiador abonado y especial
+hipoteca de los bienes del fiador**, pero advertía que Núñez no tenía bienes conocidos, «pues los
+que maneja son pertenecientes a una hija menor que tiene».</p>
+<p>En octubre, notificado del auto, Núñez presentó su último escrito, y con él cede: declara que ha
+<strong>suspendido o dejado el trabajo del zanjo</strong> que emprendía en la hacienda de San Juan, admite que
+lo que posee es ajeno, y pide que se corte la causa porque «este asunto está concluido con que el
+juez agrimensor le separe a cada uno lo que es suyo, y vivir con la paz que hermanamente
+solicito». Ahí se interrumpen las planas fotografiadas: no consta el nombramiento del agrimensor
+ni la medida.</p>
+<p>Junto al pleito por la tierra corre un segundo asunto, más humano: muerta doña Gerónima, hermana
+política del demandante, había quedado en poder de don Antonio Núñez una niña de ocho o nueve
+años, ahijada de pila de la difunta. La mujer de Izquierdo la pidió para criarla y Núñez no quiso
+entregarla; y el demandante lo hace constar al juez en el mismo escrito. Vale la pena notar, por
+último, un detalle menudo que dice mucho del rincón donde ocurre todo esto: dos de los escritos
+van en papel común porque en Sensentí, en 1818, no había papel sellado «de ningún sello».</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>Este expediente muestra cómo se repartía una hacienda entre coherederos. Doña Francisca Núñez lleva <strong>tres octavas partes</strong> de San Juan por sus padres. Su marido obtuvo otras tres octavas en la vecina hacienda del Amate permutándolas con su cuñado a cambio de lo que a éste tocaba en San Juan. La permuta enseña que las fracciones hereditarias <strong>circulaban y se canjeaban entre parientes</strong>, para reunir cada quien su parte en una sola finca. El documento no resuelve quién tenía razón en la cuenta con don Antonio Núñez, y no debe suponerse.</p>
+<p>El pleito gira en torno al <strong>zanjo</strong>, la zanja de linderos que impediría que los animales de una parte entren en la milpa de la otra. En una hacienda proindiviso el lindero interior no existe hasta que alguien lo cava, y mientras tanto el ganado decide qué posee cada heredero. Por eso las dos partes piden un <strong>juez agrimensor</strong> que mida la hacienda, fije el zanjo y señale a cada uno lo suyo. La medición convierte una cuota abstracta en un pedazo de tierra.</p>
+<p>Hay dos detalles institucionales. Izquierdo acepta afianzar la calumnia en mil pesos con fiador abonado y especial hipoteca de los bienes del fiador, y advierte que Núñez no tiene bienes conocidos, pues los que maneja pertenecen a una hija menor. Aparece así la administración de bienes de menores por un adulto de la casa, que en este corpus se ve regulada con depositarios en las dos mortuales. El juez actúa «por ante nos los de asistencia» porque el partido no tenía escribano.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#f1406">06</a><a href="#f1407">07</a><a href="#f1408">08</a><a href="#f1409">09</a><a href="#f1410">10</a><a href="#f1411">11</a><a href="#f1412">12</a><a href="#f1413">13</a><a href="#f1414">14</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="f1406">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 9</span><h3>IMG_1406</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1406" aria-label="Ampliar la lámina IMG_1406">
+        <img src="../img/sanjuan1818/p001.jpg" alt="Fotografía de la lámina IMG_1406" loading="lazy">
+      </button>
+      <figcaption>Papel sellado. Encabezamiento impreso en cuatro líneas: «Dos reales.» / «SELLO
+TERCERO, DOS REALES,» / «AÑOS DE MIL OCHOCIENTOS» / «DIEZ Y OCHOCIENTOS ONCE.» A la izquierda,
+el roel con armas reales coronadas y leyenda circular «CAROLUS IV D. G. HI[SPANIARUM REX]».
+Debajo, estampado circular de habilitación: «VALGA / POR EL REY[N]ADO / DEL S. D. / [FE]RNANDO
+VII», y más abajo un sello ovalado con las columnas de Hércules coronadas, las cifras «S» y «4» a
+los lados y leyenda de la que sólo se lee «[...]8 ✱ VALE V[N] [...]» (cotéjese con el de
+IMG_1409, donde se lee «[AÑO DE 18]17 Y 1818 ✱ VALE V[N]...»). La plana está escrita con letra
+cursiva menuda y muy inclinada (las líneas suben hacia la derecha unos 3,5°). El margen derecho
+está deshilachado y roto, y en varias líneas se ha perdido la última palabra o sílaba. Tinta muy
+desvaída en las líneas 11 a 13 y 19 a 25. Los dos últimos renglones se pierden en el doblez
+inferior.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Primera plana del escrito de demanda de don Julio Yzquierdo (Izquierdo), vecino de
+Sensentí, ante el señor teniente y juez del partido. Expone que, por fallecimiento de don
+Casimiro Núñez y de su mujer, padres de doña Francisca Núñez —esposa del demandante—, quedaron
+bienes partibles entre los herederos, y en particular la hacienda nombrada San Juan; y reclama la
+parte que a su mujer tocó por herencia.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> Dos reales.</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> SELLO TERCERO, DOS REALES,</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> AÑOS DE MIL OCHOCIENTOS</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> DIEZ Y OCHOCIENTOS ONCE.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Teni<u class="exp" title="abreviatura desarrollada">[en]</u>te Cap<u class="exp" title="abreviatura desarrollada">[itá]</u>n <u class="exp" title="abreviatura desarrollada">[¿G[uerr]</u>a?] y Just<u class="exp" title="abreviatura desarrollada">[ici]</u>a</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n Julio Ysquierd<u class="exp" title="abreviatura desarrollada">[o]</u> de este Becindario y Le-</span>
+<span class="ln">gitimo Marid<u class="exp" title="abreviatura desarrollada">[o]</u> d<u class="exp" title="abreviatura desarrollada">[e]</u> D<u class="exp" title="abreviatura desarrollada">[oñ]</u>a Francisca Núñes: Como</span>
+<span class="ln">mas halla <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿lu?]</u></u>gar, ante V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d. Paresco, y Digo</span>
+<span class="ln">Q<u class="exp" title="abreviatura desarrollada">[ue]</u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r fallesidos. de D<u class="exp" title="abreviatura desarrollada">[o]</u>n Cacimiro Núñes padr<u class="exp" title="abreviatura desarrollada">[es]</u></span>
+<span class="ln">de la Sitada muger quedaron algunos Vienes</span>
+<span class="ln">partibles, entre sus herederos, y en resumen la</span>
+<span class="ln">Hacienda nombrada San Juan.</span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o Núñes Casó con <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿hija entenada?]</u></u></span>
+<span class="ln">de mi padre politico, y p<u class="exp" title="abreviatura desarrollada">[o]</u>r esta Razon Seguia <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">heredero q<u class="exp" title="abreviatura desarrollada">[ue]</u> hay devo Corresponderle la <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿tersera?]</u></u></span>
+<span class="ln">parte de tierra en la mencionada Hacienda,</span>
+<span class="ln">á mi muger p<u class="exp" title="abreviatura desarrollada">[o]</u>r parte de mi Citado padre politi<u class="exp" title="abreviatura desarrollada">[co]</u></span>
+<span class="ln">y madre Politica tres Octavas par<u class="exp" title="abreviatura desarrollada">[tes]</u>; A mas de es-</span>
+<span class="ln">to é Cambiad<u class="exp" title="abreviatura desarrollada">[o]</u> la tres octavas par<u class="exp" title="abreviatura desarrollada">[tes]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿a?]</u></u> mi mu-</span>
+<span class="ln">ger le tocaban en la Hacienda del Amate Con mi<u class="exp" title="abreviatura desarrollada">[s]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[herm]</u>anos politicos D<u class="exp" title="abreviatura desarrollada">[o]</u>n Timoteo Núñes, p<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">a<u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿qu?]</u></u>el le Correspondían en la Hacienda de San Juan.</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Por?]</u></u> Cuenta de los vienes q<u class="exp" title="abreviatura desarrollada">[ue]</u> a mi muger se le <u class="exp" title="abreviatura desarrollada">[die]</u>ron</span>
+<span class="ln">fueron Algunas <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y otras cosas Como es un p<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> uno, y otro pedaso de tierra, y otras <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de Siembras, y Casas, y D<u class="exp" title="abreviatura desarrollada">[o]</u>n Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o Núñes <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Su Casa Junto á la de mi muger p<u class="exp" title="abreviatura desarrollada">[a]</u>ra solo Con la</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿yd?]</u></u>ea de Perjudicarme, Sin atender á q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de ella Como se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Señor Teniente, Capitán a Guerra y Justicia: Don Julio Izquierdo, de este vecindario y legítimo
+marido de doña Francisca Núñez, como más haya lugar comparezco ante Vuestra Merced y digo que,
+por fallecimiento de don Casimiro Núñez y de su mujer, padres de la citada mi esposa, quedaron
+algunos bienes partibles entre sus herederos, y en resumen la hacienda nombrada San Juan. Don
+Antonio Núñez casó con una hija entenada de mi padre político, y por esta razón [se tenía por]
+heredero; pero lo que debe corresponderle es la tercera parte de tierra en la mencionada
+hacienda. A mi mujer le tocan, por parte de mi citado padre político y de mi madre política, tres
+octavas partes; y además de esto he cambiado las tres octavas partes que a mi mujer le tocaban en
+la hacienda del Amate con mis hermanos políticos —don Timoteo Núñez— por lo que a aquél le
+correspondía en la hacienda de San Juan. Por cuenta de los bienes que a mi mujer se le dieron
+fueron algunas [tierras y] otras cosas, como es un pedazo de [tierra], uno y otro pedazo de
+tierra, y otras [tierras] de siembras, y casas. Y don Antonio Núñez [fabricó] su casa junto a la
+de mi mujer, sólo con la idea de perjudicarme, sin atender a que […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta. Son seguras las palabras que más importan: «Hacienda nombrada San
+Juan», «Hacienda del Amate», «tres Octavas partes» (dos veces, y sin ninguna duda: **no dice
+«brazadas»**), «D[o]n Cacimiro Núñes», «D[o]n Ant[oni]o Núñes», «D[o]n Timoteo Núñes», «D[oñ]a
+Francisca Núñes» y «D[o]n Julio Ysquierdo». Es floja: el título del juez en el encabezamiento
+(abreviado y con un rasgo que tanto puede leerse «G[uerr]a» como «Gov[ernado]r»); la palabra
+«[¿tersera?]» de la línea 11, muy desvaída, y en consecuencia la fracción que el demandante
+reconoce al demandado; «[¿hija entenada?]» de la línea 9; y las líneas 19 a 25, donde la tinta
+casi ha desaparecido y el margen derecho está roto, de modo que la enumeración de los bienes que
+recibió la mujer queda incompleta.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1407">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 9</span><h3>IMG_1407</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1407" aria-label="Ampliar la lámina IMG_1407">
+        <img src="../img/sanjuan1818/p002.jpg" alt="Fotografía de la lámina IMG_1407" loading="lazy">
+      </button>
+      <figcaption>Vuelto del mismo pliego de papel sellado; sin sello impreso en esta cara. Es la plana
+peor fotografiada de las nueve: el pliego está fuertemente combado, las líneas suben hacia la
+derecha unos 6,5° y el tercio derecho se hunde en el doblez y en la sombra del lomo, de modo que
+<strong>el final de casi todas las líneas es ilegible o se pierde en la curvatura</strong>. Hay además una
+rotura con pérdida de soporte hacia la quinta línea. Por todo ello la transcripción que sigue es
+necesariamente fragmentaria, y se ha preferido dejar `[...]` antes que completar de memoria.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Segunda plana (vuelto) del mismo escrito de demanda. Es el corazón del pleito: trata
+del <strong>zanjo</strong> (<em>sanjo</em>) o zanja de linderos que se está abriendo, del ganado que pasa, de las
+amenazas de don Antonio Núñez de «botar» al demandante de la posesión, y termina pidiendo que se
+nombre un <strong>juez agrimensor</strong> que mida la hacienda.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">N<u class="exp" title="abreviatura desarrollada">[o]</u> tiene mas Como he dicho q<u class="exp" title="abreviatura desarrollada">[ue]</u> la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Animales Como Cresiendo, Mis Casas <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>iertos de Casa q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el otro de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">un <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>echo Como q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿está?]</u></u> Cerrada donde N<u class="exp" title="abreviatura desarrollada">[oso]</u>tr<u class="exp" title="abreviatura desarrollada">[os]</u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿ha?]</u></u>cer un Sanjo <u class="exp" title="abreviatura desarrollada">[rotura]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la Sali<u class="exp" title="abreviatura desarrollada">[da]</u></span>
+<span class="ln">malo, y Echándo<u class="exp" title="abreviatura desarrollada">[nos]</u> otro <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Dándoles q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ándo<u class="exp" title="abreviatura desarrollada">[le]</u> Perjuicio <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Por todos m<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y Con palabras Comedidas he Procurad<u class="exp" title="abreviatura desarrollada">[o]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> Núñes aga el Sanjo y q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿asegure?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> pues en Caso de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> quedaria Yo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">la Con tod<u class="exp" title="abreviatura desarrollada">[o]</u>s los Animales, q<u class="exp" title="abreviatura desarrollada">[ue]</u> Piensa <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a Pesar de los esfuersos q<u class="exp" title="abreviatura desarrollada">[ue]</u> he <u class="exp" title="abreviatura desarrollada">[ech]</u>o <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Sino q<u class="exp" title="abreviatura desarrollada">[ue]</u> me llena de Ynjurias aun <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">desonrrarme en mi propria Casa. Continuan<u class="exp" title="abreviatura desarrollada">[do]</u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿es?]</u></u>tan Con la idea de Seguir<u class="exp" title="abreviatura desarrollada">[me]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>éndo<u class="exp" title="abreviatura desarrollada">[me]</u> en mi Casa, Como tambien <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>erse de desirse tres beses q<u class="exp" title="abreviatura desarrollada">[ue]</u> me a de bo<u class="exp" title="abreviatura desarrollada">[tar]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la posesión y q<u class="exp" title="abreviatura desarrollada">[ue]</u> hay motibos Justos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> botar-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Parage, y p<u class="exp" title="abreviatura desarrollada">[o]</u>r este Motibo me qued<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> Se Cierra. V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d mandar<u class="exp" title="abreviatura desarrollada">[á]</u> al <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ga ver las Justas Causas q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿tiene?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">en cuyos terminos, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Sanjo, la Caballería, en aquel Cerro y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Suspen<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de Bienes Como tambien <u class="exp" title="abreviatura desarrollada">[hago]</u> á V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">el Titulo de aquella Hacienda esta <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿en?]</u></u> p<u class="exp" title="abreviatura desarrollada">[o]</u>d<u class="exp" title="abreviatura desarrollada">[e]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> Se Cie<u class="exp" title="abreviatura desarrollada">[rra]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> mandar q<u class="exp" title="abreviatura desarrollada">[ue]</u> todos los herederos</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[Jue]</u>z Agrimensor p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> Medida la Haci<u class="exp" title="abreviatura desarrollada">[enda]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[El demandado] no tiene más, como he dicho, que […]; y sus animales van creciendo [y entran en]
+mis casas […] y en los cercados de la casa […]. [Convendría] hacer un zanjo […] que [cierre] la
+salida […]. Con palabras comedidas he procurado […] que Núñez haga el zanjo y que asegure […],
+pues en caso contrario quedaría yo […] con todos los animales que él apacienta. Y a pesar de los
+esfuerzos que he hecho, no sólo [no ha accedido] sino que me llena de injurias, hasta
+deshonrarme en mi propia casa; y continúan con la idea de seguirme […] en mi casa. Ha llegado a
+decir tres veces que me ha de botar de la posesión, y que hay motivos justos para botarme de
+aquel paraje; y por este motivo me queda […]. Suplico a Vuestra Merced que mande […] ver las
+justas causas que tiene […]; y en cuyos términos [se señale] el zanjo y la caballería en aquel
+cerro […]; y asimismo hago presente a Vuestra Merced que el título de aquella hacienda está en
+poder de […]. Y pido se mande que todos los herederos […] un juez agrimensor, para que, medida la
+hacienda […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja. La fotografía no da para más: el pliego está combado, la escritura sube y el
+lado derecho se pierde en el lomo. Son seguras, sin embargo, las palabras decisivas: <strong>«Sanjo»</strong>
+(la zanja de linderos, que aparece tres veces), <strong>«la Caballería, en aquel Cerro»</strong>, **«[Jue]z
+Agrimensor»**, «Medida la Haci[enda]», «el Titulo de aquella Hacienda», «Animales», «la posesión»
+y «todos los herederos». Lo que no puedo dar por firme es la sintaxis de los pasajes intermedios,
+ni el nombre de la persona en cuyo poder está el título de la hacienda, que se pierde en el
+doblez.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1408">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 9</span><h3>IMG_1408</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1408" aria-label="Ampliar la lámina IMG_1408">
+        <img src="../img/sanjuan1818/p003.jpg" alt="Fotografía de la lámina IMG_1408" loading="lazy">
+      </button>
+      <figcaption>Papel sin sello impreso en esta cara (es cara de continuación). Papel de hilo grueso,
+con una mancha de humedad en el ángulo superior izquierdo y desvaído general de la tinta en el
+tercio superior. En el borde izquierdo y en el derecho asoman los cantos de las hojas contiguas.
+El último renglón de la plana queda cortado por el pliegue inferior.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Tercera y última plana del escrito de demanda, con el <em>otrosí</em>, la firma autógrafa de
+Julio Yzquierdo, y a continuación el primer decreto del juez: Sensentí, 4 de septiembre de 1818,
+«Por presentado y con calidad de reintegro a la Real Hacienda por el valor del papel, córrase
+traslado a don Antonio Núñez», firmado por Josef Cornelio Ballesteros.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Con ello Se logran las utilidades la una q<u class="exp" title="abreviatura desarrollada">[ue]</u> Con el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿es?]</u></u>t<u class="exp" title="abreviatura desarrollada">[a]</u>s medidas, se pueda precaver p<u class="exp" title="abreviatura desarrollada">[o]</u>r el futuro <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">tan Ynnecesarios, y la otra, q<u class="exp" title="abreviatura desarrollada">[ue]</u> Sepa Cada uno, <u class="exp" title="abreviatura desarrollada">[lo]</u></span>
+<span class="ln">y que tanto le Corresponde.</span>
+<span class="ln">Ttam<u class="exp" title="abreviatura desarrollada">[bié]</u>n <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> hago á V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d presente q<u class="exp" title="abreviatura desarrollada">[ue]</u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Fa]</u>llecimi<u class="exp" title="abreviatura desarrollada">[en]</u>to de mi hermana Politica D<u class="exp" title="abreviatura desarrollada">[oñ]</u>a Ger<u class="exp" title="abreviatura desarrollada">[ó]</u>nima <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a quedad<u class="exp" title="abreviatura desarrollada">[o]</u> en poder de D<u class="exp" title="abreviatura desarrollada">[o]</u>n Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o una <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿hijita?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">qual hera ahijada de pila de la d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha D<u class="exp" title="abreviatura desarrollada">[oñ]</u>a Ger<u class="exp" title="abreviatura desarrollada">[ó]</u>nima</span>
+<span class="ln">la qual Se <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿halla?]</u></u> ala f<u class="exp" title="abreviatura desarrollada">[ech]</u>a de ocho ó nuebe Años; <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿en?]</u></u></span>
+<span class="ln">esta Casa no hay Ningun respeto siend<u class="exp" title="abreviatura desarrollada">[o]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> una <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Sola, y la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Segun a<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> oy la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿?]</u></u>ada, y mañana otra de las q<u class="exp" title="abreviatura desarrollada">[ue]</u> D<u class="exp" title="abreviatura desarrollada">[o]</u>n Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> á</span>
+<span class="ln">mi muger q<u class="exp" title="abreviatura desarrollada">[ue]</u> eso le duele p<u class="exp" title="abreviatura desarrollada">[o]</u>r q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Sela ha pedid<u class="exp" title="abreviatura desarrollada">[o]</u> a D<u class="exp" title="abreviatura desarrollada">[o]</u>n Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o, q<u class="exp" title="abreviatura desarrollada">[ue]</u> Sea recivid<u class="exp" title="abreviatura desarrollada">[a]</u> y no la</span>
+<span class="ln">ha querid<u class="exp" title="abreviatura desarrollada">[o]</u> dar, p<u class="exp" title="abreviatura desarrollada">[o]</u>r lo tanto.</span>
+<span class="ln">Otro<u class="exp" title="abreviatura desarrollada">[sí]</u> Suplico mando hacer Como pid<u class="exp" title="abreviatura desarrollada">[o]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> en ello recivi-</span>
+<span class="ln">ré bien, y merced. Juro en <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> forma y lo necesario &amp;c.<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln">Julio Yzquierdo <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Sen]</u>sentí Sep<u class="exp" title="abreviatura desarrollada">[tiemb]</u>re quatro ᵈᵉ Mil ochoc<u class="exp" title="abreviatura desarrollada">[ien]</u>t<u class="exp" title="abreviatura desarrollada">[o]</u>s diez y ocho =</span>
+<span class="ln">Por presentado y con calidad de Reintegro a la R<u class="exp" title="abreviatura desarrollada">[ea]</u>l</span>
+<span class="ln">Hac<u class="exp" title="abreviatura desarrollada">[iend]</u>a p<u class="exp" title="abreviatura desarrollada">[o]</u>r el valor del papel, córrase traslado a D<u class="exp" title="abreviatura desarrollada">[o]</u>n</span>
+<span class="ln">Antonio Núñez</span>
+<span class="ln">Josef Cornelio</span>
+<span class="ln">Ballesteros <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Lo decretó mandó y firmó Su merced el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Con ello se logran dos utilidades: la una, que con estas medidas se puedan precaver en el futuro
+[pleitos] tan innecesarios; y la otra, que sepa cada uno lo que tanto le corresponde. También
+hago presente a Vuestra Merced que, por fallecimiento de mi hermana política doña Gerónima, ha
+quedado en poder de don Antonio una niña, que era ahijada de pila de la dicha doña Gerónima, y
+que se halla a la fecha de ocho o nueve años; [y que] en esa casa no hay ningún respeto […]. Mi
+mujer se la ha pedido a don Antonio, para que sea recibida [por ella], y no la ha querido dar.
+Por lo tanto, otrosí suplico se mande hacer como pido, que en ello recibiré bien y merced. Juro
+en forma y lo necesario, etc. — Julio Izquierdo.</p>
+<p>Sensentí, cuatro de septiembre de mil ochocientos dieciocho. Por presentado, y con calidad de
+reintegro a la Real Hacienda por el valor del papel, córrase traslado a don Antonio Núñez. —
+Josef Cornelio Ballesteros. Lo decretó, mandó y firmó su merced el señor […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en el decreto y en la firma; alta en la fecha («Sep[tiemb]re quatro […] Mil
+ochoc[ien]t[o]s diez y ocho»); alta en el nombre «D[oñ]a Ger[ó]nima» y en la edad «ocho ó nuebe
+Años». Media-baja en las líneas 10 a 14, donde el desvaído y las abreviaturas impiden fijar la
+queja concreta sobre el trato que recibe la niña. El apellido de doña Gerónima no se expresa en
+la plana (sólo consta que era hermana política del demandante).
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1409">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 9</span><h3>IMG_1409</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1409" aria-label="Ampliar la lámina IMG_1409">
+        <img src="../img/sanjuan1818/p004.jpg" alt="Fotografía de la lámina IMG_1409" loading="lazy">
+      </button>
+      <figcaption>Papel sellado: pliego nuevo, con el encabezamiento impreso «Dos reales.» / «SELLO
+TERCERO, DOS RE[ALES],» / «AÑOS DE MIL OCHOCIE[NTOS]» / «DIEZ Y OCHOCIENTOS ON[CE]», el roel
+«CAROLUS IV D. G. HISPAN[IARUM] REX» y, debajo, dos habilitaciones estampadas: la circular
+«VALGA / POR EL REY[N]ADO / DEL S. D. / FERNANDO VII» y la ovalada con columnas coronadas, «S» y
+«4» a los lados, y leyenda «[AÑO DE 18]17 Y 1818 ✱ VALE V[N] [...]». El pliego se curva hacia el
+lomo: el extremo derecho de las líneas se pierde. Hay una pequeña lacuna de soporte que se lleva
+la última letra de la firma «Molin[a]». En el margen izquierdo, de mano del mismo escribiente,
+el epígrafe «Contin[uació]n».</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Cara de continuación con la autorización del decreto por los testigos de asistencia
+y dos diligencias de notificación: la del mismo día 4 de septiembre al demandante, y la de 8 de
+septiembre a don Antonio Núñez.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> Dos reales.</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> SELLO TERCERO, DOS RE<u class="exp" title="abreviatura desarrollada">[ALES]</u>,</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> AÑOS DE MIL OCHOCIE<u class="exp" title="abreviatura desarrollada">[NTOS]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> DIEZ Y OCHOCIENTOS ON<u class="exp" title="abreviatura desarrollada">[CE]</u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n Jose Cornelio Ballesteros Ten<u class="exp" title="abreviatura desarrollada">[ien]</u>te <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de este Partido p<u class="exp" title="abreviatura desarrollada">[o]</u>r ante nos los de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿asistencia?]</u></u></span>
+<span class="ln">de q<u class="exp" title="abreviatura desarrollada">[ue]</u> Certificamos.</span>
+<span class="ln">Juan Fran<u class="exp" title="abreviatura desarrollada">[cis]</u>co Molin<u class="exp" title="abreviatura desarrollada">[a]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Jose Ygn<u class="exp" title="abreviatura desarrollada">[aci]</u>o <u class="exp" title="abreviatura desarrollada">[Molina]</u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En el mismo día lo hice saber al <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">quedó entendido y firma</span>
+<span class="ln">Ballesteros <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>            Julio Yzquierdo <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En ocho de Sep<u class="exp" title="abreviatura desarrollada">[tiemb]</u>re estando presente D<u class="exp" title="abreviatura desarrollada">[o]</u>n Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o Núñez <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿le?]</u></u></span>
+<span class="ln">he hice saber el aut<u class="exp" title="abreviatura desarrollada">[o]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> decreto quedó entendid<u class="exp" title="abreviatura desarrollada">[o]</u> y <u class="exp" title="abreviatura desarrollada">[firmó]</u></span>
+<span class="ln">Ballesteros <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>            Antonio Núñez <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen:]</u> Contin<u class="exp" title="abreviatura desarrollada">[uació]</u>n</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] don José Cornelio Ballesteros, teniente [y juez] de este partido, por ante nos los de
+asistencia, de que certificamos. — Juan Francisco Molina. José Ignacio Molina.</p>
+<p>En el mismo día lo hice saber al [suplicante]; quedó entendido y firma. — Ballesteros. Julio
+Izquierdo.</p>
+<p>En ocho de septiembre, estando presente don Antonio Núñez, le hice saber el auto que se decretó;
+quedó entendido y firmó. — Ballesteros. Antonio Núñez.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en las dos fechas, en los nombres y en las firmas. Media en el final de las
+tres primeras líneas, que se hunden en el lomo: no puedo asegurar el título completo de
+Ballesteros en esta plana (en IMG_1412 se lee «S[eño]r Ten[ient]e Ynterin[o]», que es sin duda el
+mismo cargo). Tampoco puedo leer a quién se notifica en la primera diligencia, aunque firma Julio
+Yzquierdo.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1410">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 9</span><h3>IMG_1410</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1410" aria-label="Ampliar la lámina IMG_1410">
+        <img src="../img/sanjuan1818/p005.jpg" alt="Fotografía de la lámina IMG_1410" loading="lazy">
+      </button>
+      <figcaption>Papel común, sin sello impreso —el propio otrosí lo explica: «por no haber papel
+Sellado Ningun Sello». Hoja muy dañada: una gran rotura en forma de cuña recorre el tercio
+inferior derecho y se ha llevado parte del texto del otrosí y de la fecha; manchas de humedad y
+de tinta corrida en el centro; el canto derecho está deshilachado y ennegrecido. Las líneas suben
+ligeramente hacia la derecha. Encabezamiento abreviado en la cabecera de la plana: «S[eño]r
+T[eniente] C[apitán] y J[ue]z [¿…?]».</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Escrito de respuesta de don Antonio Núñez: renuncia al traslado, pide que si don Julio
+quiere querellarse lo haga en juicio verbal, y que si insiste en seguir por escrito se le mande
+<strong>afianzar la calumnia</strong>. Lleva un otrosí pidiendo que se le admita en papel común por no haber
+papel sellado, y al pie el decreto «Traslado», Sensentí, 14 de septiembre de 1818, de Ballesteros.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">S<u class="exp" title="abreviatura desarrollada">[eño]</u>r T<u class="exp" title="abreviatura desarrollada">[eniente]</u> <u class="exp" title="abreviatura desarrollada">[¿C[apitán]</u>?] <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿y?]</u></u> J<u class="exp" title="abreviatura desarrollada">[ue]</u>z <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n Antonio Núñes de este vezindario Como mas</span>
+<span class="ln">alla lugar ante V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d. paresco y digo: Que habiendo vis-</span>
+<span class="ln">to el Escrito de D<u class="exp" title="abreviatura desarrollada">[o]</u>n Julio Ysquierdo q<u class="exp" title="abreviatura desarrollada">[ue]</u> V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d. Servio dar-</span>
+<span class="ln">me en traslado, debo Desir q<u class="exp" title="abreviatura desarrollada">[ue]</u> Renuncio todo traslado</span>
+<span class="ln">y que Si el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r D<u class="exp" title="abreviatura desarrollada">[o]</u>n Julio tiene que querellarse Contra</span>
+<span class="ln">mi lo haga en Juisio berbal, y dado Caso q<u class="exp" title="abreviatura desarrollada">[ue]</u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho D<u class="exp" title="abreviatura desarrollada">[o]</u>n Ju<u class="exp" title="abreviatura desarrollada">[lio]</u></span>
+<span class="ln">quiera Seguir Su Sistema á q<u class="exp" title="abreviatura desarrollada">[ue]</u> ha de Ser por Escrito, á</span>
+<span class="ln">V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d. Suplico Servirse mandarle q<u class="exp" title="abreviatura desarrollada">[ue]</u> afiance la Calumn<u class="exp" title="abreviatura desarrollada">[ia]</u></span>
+<span class="ln">Con todos aquellos requisitos q<u class="exp" title="abreviatura desarrollada">[ue]</u> Corresponde, por tanto</span>
+<span class="ln">A V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d. pido y Suplico Servirse mandar hacer Como pido, si</span>
+<span class="ln">ques Justicia. Juro en forma y lo necesario &amp;c.</span>
+<span class="ln">Antonio Núñes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Otro Sí digo que sea de Servirse V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d. el admitirme <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿en este?]</u></u></span>
+<span class="ln">papel por no haber papel Sellado Ningun Sello.</span>
+<span class="ln">Núñes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Sen]</u>senti Sep<u class="exp" title="abreviatura desarrollada">[tiemb]</u>re Catorse de Mil ochoc<u class="exp" title="abreviatura desarrollada">[ien]</u>t<u class="exp" title="abreviatura desarrollada">[o]</u>s diez y ochos =</span>
+<span class="ln">Traslado =</span>
+<span class="ln">Ballesteros <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Señor Teniente, Capitán y Juez: Don Antonio Núñez, de este vecindario, como más haya lugar
+comparezco ante Vuestra Merced y digo que, habiendo visto el escrito de don Julio Izquierdo que
+Vuestra Merced se sirvió darme en traslado, debo decir que renuncio a todo traslado; y que si el
+señor don Julio tiene que querellarse contra mí, lo haga en juicio verbal; y dado caso que dicho
+don Julio quiera seguir su sistema de que ha de ser por escrito, a Vuestra Merced suplico se
+sirva mandarle que afiance la calumnia con todos aquellos requisitos que corresponden. Por tanto,
+a Vuestra Merced pido y suplico se sirva mandar hacer como pido, que es justicia. Juro en forma y
+lo necesario, etc. — Antonio Núñez.</p>
+<p>Otrosí digo que Vuestra Merced se sirva admitirme en este papel, por no haber papel sellado de
+ningún sello. — Núñez.</p>
+<p>Sensentí, catorce de septiembre de mil ochocientos dieciocho. Traslado. — Ballesteros.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en todo el cuerpo del escrito y en la fecha. Media en el encabezamiento
+abreviado de la cabecera, que está muy volado, y en las tres o cuatro palabras que se lleva la
+rotura en el otrosí.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1411">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 9</span><h3>IMG_1411</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1411" aria-label="Ampliar la lámina IMG_1411">
+        <img src="../img/sanjuan1818/p006.jpg" alt="Fotografía de la lámina IMG_1411" loading="lazy">
+      </button>
+      <figcaption>Papel común. La fotografía recoge la hoja abierta sobre el lomo, con la mano
+enguantada del fotógrafo sujetando el ángulo superior izquierdo; el tercio superior está en
+sombra y muy combado. Hay pérdidas de soporte pequeñas (una junto a la primera rúbrica) y
+manchas de humedad. Los dos tercios inferiores de la plana están en blanco, aunque transparece
+con fuerza la escritura del otro lado del pliego. El extremo derecho de las líneas se pierde en
+la curvatura.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Vuelto de la plana anterior, con la autorización del decreto por los testigos de
+asistencia y dos diligencias de notificación del auto de 14 de septiembre de 1818, una a cada
+parte. Al margen, el epígrafe «Conosimiento».</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Lo proveyó, mandó y firmó el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de <u class="exp" title="abreviatura desarrollada">[es]</u>te Partido p<u class="exp" title="abreviatura desarrollada">[o]</u>r ante nos los de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿asistencia?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[¿Ygn[aci]</u>o M<u class="exp" title="abreviatura desarrollada">[arí]</u>a?] de Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Juan Fran<u class="exp" title="abreviatura desarrollada">[cis]</u>co <u class="exp" title="abreviatura desarrollada">[Molina]</u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En el mismo dia se hiso saber a D<u class="exp" title="abreviatura desarrollada">[o]</u>n <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">quedó entendido p<u class="exp" title="abreviatura desarrollada">[o]</u>r med<u class="exp" title="abreviatura desarrollada">[i]</u>o de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿oteros?]</u></u> =</span>
+<span class="ln">Ballesteros <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En seguidas lo puse en Noticia de D<u class="exp" title="abreviatura desarrollada">[o]</u>n <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>do y entendido firma y <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿saco?]</u></u> el es<u class="exp" title="abreviatura desarrollada">[cri]</u>b<u class="exp" title="abreviatura desarrollada">[an]</u>o <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Ballesteros <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen:]</u> Conosim<u class="exp" title="abreviatura desarrollada">[ien]</u>to</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Lo proveyó, mandó y firmó el señor [teniente] de este partido, por ante nos los de asistencia. —
+[José] Ignacio de Molina. Juan Francisco Molina.</p>
+<p>En el mismo día se hizo saber a don […]; quedó entendido por medio de […].— Ballesteros.</p>
+<p>Y en seguida lo puse en noticia de don […]; [quedó] entendido, firma […]. — Ballesteros.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja-media. La plana está en sombra y muy curvada, y las dos diligencias pierden
+en el lomo justamente el nombre de la parte notificada, de modo que **no puedo decir con
+seguridad a cuál de los dos litigantes corresponde cada una** (por el orden del expediente debe
+ser primero a Izquierdo y después a Núñez, pero no lo doy por probado). La firma del primer
+testigo la leo «[¿Ygnacio María?] de Molina»: en IMG_1409 y IMG_1413 el mismo testigo firma «Jose
+Ygn[aci]o Molina», y esa es la forma que adopto en el cuadro de personas.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1412">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 7 de 9</span><h3>IMG_1412</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1412" aria-label="Ampliar la lámina IMG_1412">
+        <img src="../img/sanjuan1818/p007.jpg" alt="Fotografía de la lámina IMG_1412" loading="lazy">
+      </button>
+      <figcaption>Papel común (el otrosí lo justifica). Plana muy deteriorada: gran rotura en cuña en
+el tercio inferior derecho, manchas de humedad extensas, tinta muy pálida en el centro y fuerte
+traspaso de la escritura del reverso, que se superpone a la de esta cara y dificulta la lectura.
+Encabezamiento abreviado: «S[eño]r T[enien]t[e] [¿Gov[ernado]r?]». En el margen izquierdo asoma
+el canto de la hoja anterior.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Escrito de réplica de don Julio Yzquierdo. Acepta afianzar, y ofrece **mil pesos con
+fiador abonado y especial hipoteca de los bienes que posee el fiador**; pero advierte que el
+propio Núñez no tiene bienes conocidos, «pues los que maneja son pertenecientes a una hija menor
+que tiene», y pide que Núñez afiance igualmente las costas. Otrosí sobre la falta de papel
+sellado. Al pie, decreto «Traslado», Sensentí, 28 de septiembre de 1818.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">S<u class="exp" title="abreviatura desarrollada">[eño]</u>r T<u class="exp" title="abreviatura desarrollada">[enien]</u>t<u class="exp" title="abreviatura desarrollada">[e]</u> <u class="exp" title="abreviatura desarrollada">[¿Gov[ernado]</u>r?]</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n Julio Yzquierdo de este becindario, enterado el traslado</span>
+<span class="ln">que Se me <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿ha dado?]</u></u> del escrito de D<u class="exp" title="abreviatura desarrollada">[o]</u>n Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o Núñes</span>
+<span class="ln">en que promueb<u class="exp" title="abreviatura desarrollada">[e]</u> articulo Sobre que afiance la</span>
+<span class="ln">Costas, p<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Conve<u class="exp" title="abreviatura desarrollada">[n]</u>cerm<u class="exp" title="abreviatura desarrollada">[e]</u>. Ante escrito de demanda, Com<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[en]</u> mas <u class="exp" title="abreviatura desarrollada">[ha]</u>lla lugar ante V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d digo: que desde luego estoy pron-</span>
+<span class="ln">to á afiansar mil pesos Con fiador abonado; y especial</span>
+<span class="ln">hipoteca de los vienes q<u class="exp" title="abreviatura desarrollada">[ue]</u> p<u class="exp" title="abreviatura desarrollada">[o]</u>see el fiador, pero al mismo tiem<u class="exp" title="abreviatura desarrollada">[po]</u></span>
+<span class="ln">yo debo <u class="exp" title="abreviatura desarrollada">[h]</u>acer presente que el espresad<u class="exp" title="abreviatura desarrollada">[o]</u> Núñes no tiene vien<u class="exp" title="abreviatura desarrollada">[es]</u></span>
+<span class="ln">Conocidos pues los que maneja Son pertenecientes á una</span>
+<span class="ln">hija menor que tiene, y en caso de que Salga Condenad<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">en las Costas pierde p<u class="exp" title="abreviatura desarrollada">[o]</u>r Su rebeldía los q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> halla</span>
+<span class="ln">echo, y para evitarlo.</span>
+<span class="ln">A V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d. Suplico Se sirva mandar Se admita la fianza que</span>
+<span class="ln">ofresco, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> Núñes afiance igualm<u class="exp" title="abreviatura desarrollada">[en]</u>te las Costas p<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de Just<u class="exp" title="abreviatura desarrollada">[ici]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> pido y Juro &amp;c.</span>
+<span class="ln">Otro Sí digo: Se me admita este escrito en este papel Co<u class="exp" title="abreviatura desarrollada">[mún]</u> vi-</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿rri?]</u></u>en<u class="exp" title="abreviatura desarrollada">[t]</u>e p<u class="exp" title="abreviatura desarrollada">[o]</u>r no tocar en este Pueblo del Sello q<u class="exp" title="abreviatura desarrollada">[ue]</u> Corresponde</span>
+<span class="ln">Sin perjuicio de la R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Hacienda.</span>
+<span class="ln">Julio Yzquierdo <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Sensenti Sep<u class="exp" title="abreviatura desarrollada">[tiemb]</u>re veinte y ocho de mil ochoc<u class="exp" title="abreviatura desarrollada">[ien]</u>t<u class="exp" title="abreviatura desarrollada">[o]</u>s diez y ocho =</span>
+<span class="ln">Traslado =</span>
+<span class="ln">Ballesteros <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Lo proveyó mandó y firmó el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Ten<u class="exp" title="abreviatura desarrollada">[ient]</u>e Ynterin<u class="exp" title="abreviatura desarrollada">[o]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Señor Teniente Gobernador: Don Julio Izquierdo, de este vecindario, enterado del traslado que se
+me ha dado del escrito de don Antonio Núñez, en que promueve artículo sobre que afiance las
+costas […], ante Vuestra Merced digo que desde luego estoy pronto a afianzar mil pesos, con
+fiador abonado y especial hipoteca de los bienes que posee el fiador. Pero al mismo tiempo debo
+hacer presente que el expresado Núñez no tiene bienes conocidos, pues los que maneja son
+pertenecientes a una hija menor que tiene; y en caso de que salga condenado en las costas, pierdo
+por su rebeldía los [gastos] que haya hecho. Y para evitarlo, a Vuestra Merced suplico se sirva
+mandar que se admita la fianza que ofrezco, y que Núñez afiance igualmente las costas, por ser de
+justicia, que pido y juro, etc.</p>
+<p>Otrosí digo: que se me admita este escrito en este papel común corriente, por no haber en este
+pueblo del sello que corresponde, sin perjuicio de la Real Hacienda. — Julio Izquierdo.</p>
+<p>Sensentí, veintiocho de septiembre de mil ochocientos dieciocho. Traslado. — Ballesteros. Lo
+proveyó, mandó y firmó el señor teniente interino […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en las frases que importan: «desde luego estoy pronto á afiansar **mil
+pesos** Con fiador abonado; y especial hipoteca de los vienes q[ue] posee el fiador»; «no tiene
+vienes Conocidos pues los que maneja Son pertenecientes á una <strong>hija menor</strong> que tiene»; la fecha
+«Sep[tiemb]re veinte y ocho de mil ochoc[ien]t[o]s diez y ocho»; y «S[eño]r Ten[ient]e
+Ynterin[o]». Media-baja en las líneas 4 y 5, donde la mancha y el traspaso del reverso impiden
+fijar la redacción exacta, y en el encabezamiento abreviado.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1413">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 8 de 9</span><h3>IMG_1413</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1413" aria-label="Ampliar la lámina IMG_1413">
+        <img src="../img/sanjuan1818/p008.jpg" alt="Fotografía de la lámina IMG_1413" loading="lazy">
+      </button>
+      <figcaption>Papel común. La plana está fotografiada con el pliego abierto y algo combado; la
+mitad superior tiene la tinta muy pálida y una lacuna pequeña junto a la primera rúbrica; en el
+ángulo inferior el papel se dobla y los últimos renglones se hunden en el pliegue. Al margen
+izquierdo, el epígrafe «Conosim[ien]to». A la derecha asoma el canto de la hoja siguiente.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Plana doble en contenido: arriba, el cierre del auto de 28 de septiembre (autorización
+por los testigos de asistencia y las dos notificaciones, la segunda a don Antonio Núñez en
+octubre); abajo, el <strong>segundo escrito de don Antonio Núñez</strong>, en que declara que **ha suspendido
+o dejado el trabajo del zanjo que emprendía en la citada hacienda de San Juan**, y pide que se
+corte la causa.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[est]</u>e Partido p<u class="exp" title="abreviatura desarrollada">[o]</u>r ante nos los de mi asis-</span>
+<span class="ln">tencia =    Juan Fran<u class="exp" title="abreviatura desarrollada">[cis]</u>co Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>   Jose Ygn<u class="exp" title="abreviatura desarrollada">[aci]</u>o Mo<u class="exp" title="abreviatura desarrollada">[lina]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En seguidas se hiso Saber a D<u class="exp" title="abreviatura desarrollada">[o]</u>n Julio Ysquierd<u class="exp" title="abreviatura desarrollada">[o quedó en]</u>-</span>
+<span class="ln">tendido y firmó</span>
+<span class="ln">Ballesteros <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        Yzquierdo <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Siete?]</u></u> de Oct<u class="exp" title="abreviatura desarrollada">[ub]</u>re Se hiso Saber el auto decre<u class="exp" title="abreviatura desarrollada">[tado a D[o]</u>n]</span>
+<span class="ln">Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o Núñez firmó =</span>
+<span class="ln">Ballesteros <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        Antonio Núñez <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen:]</u> Conosim<u class="exp" title="abreviatura desarrollada">[ien]</u>to</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">S<u class="exp" title="abreviatura desarrollada">[eño]</u>r T<u class="exp" title="abreviatura desarrollada">[eniente]</u> <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿y?]</u></u> G<u class="exp" title="abreviatura desarrollada">[obernado]</u>r</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Don Antonio Núñez, Vecino de este Partido,</span>
+<span class="ln">respondiendo al Traslado que V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d. Se a servido</span>
+<span class="ln">Correrme Sobre el Escrito presentado por</span>
+<span class="ln">Julio Ysquierdo; En vista de lo que en <u class="exp" title="abreviatura desarrollada">[él]</u></span>
+<span class="ln">espresa, Digo que tengo Suspendido o deja<u class="exp" title="abreviatura desarrollada">[do]</u></span>
+<span class="ln">el travajo del Sanjo que emprendia en <u class="exp" title="abreviatura desarrollada">[la]</u></span>
+<span class="ln">Sitada Hacienda de San Juan; Segunda-</span>
+<span class="ln">mente digo que se <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Cuarte?]</u></u> esta causa y</span>
+<span class="ln">no siga por las rasones q<u class="exp" title="abreviatura desarrollada">[ue]</u> aquí espres<u class="exp" title="abreviatura desarrollada">[aré]</u></span>
+<span class="ln">esta primera la que el mismo Don J<u class="exp" title="abreviatura desarrollada">[uli]</u>o</span>
+<span class="ln">Sita en su Escrito, no tener <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> con que</span>
+<span class="ln">pagar las Costas, pues por la misma rason</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] de este partido, por ante nos los de mi asistencia. — Juan Francisco Molina. José Ignacio
+Molina.</p>
+<p>En seguida se hizo saber a don Julio Izquierdo; quedó entendido y firmó. — Ballesteros.
+Izquierdo.</p>
+<p>En [siete] de octubre se hizo saber el auto decretado a don Antonio Núñez; firmó. — Ballesteros.
+Antonio Núñez.</p>
+<p>Señor Teniente Gobernador: Don Antonio Núñez, vecino de este partido, respondiendo al traslado
+que Vuestra Merced se ha servido correrme sobre el escrito presentado por Julio Izquierdo, en
+vista de lo que en él expresa, digo que tengo suspendido o dejado el trabajo del zanjo que
+emprendía en la citada hacienda de San Juan. Y segundamente digo que se corte esta causa y no
+siga, por las razones que aquí expresaré: esta primera, la que el mismo don Julio cita en su
+escrito, de no tener [bienes] con que pagar las costas, pues por la misma razón […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en el escrito de Núñez, que está escrito con letra grande y clara: «tengo
+Suspendido o deja[do] el travajo del <strong>Sanjo</strong> que emprendia en [la] Sitada **Hacienda de San
+Juan**» es lectura segura, y es la frase que fija el objeto material del pleito. Alta también en
+las firmas de los testigos. Media en el día de la notificación de octubre, que leo «Siete» pero
+que podría ser «Diez»; y baja en la palabra que transcribo «[¿Cuarte?]» (por el sentido, «corte»).
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1414">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 9 de 9</span><h3>IMG_1414</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1414" aria-label="Ampliar la lámina IMG_1414">
+        <img src="../img/sanjuan1818/p009.jpg" alt="Fotografía de la lámina IMG_1414" loading="lazy">
+      </button>
+      <figcaption>Papel común. Sólo está escrito el tercio superior de la plana; los dos tercios
+inferiores quedan en blanco, con una gran mancha de humedad en el centro y una rotura pequeña.
+El margen derecho está deshilachado y ennegrecido, y se lleva la última sílaba de varias líneas.
+A izquierda y derecha asoman los cantos de las hojas contiguas del legajo, con escritura de otras
+planas.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Última plana del expediente fotografiado: cierre del segundo escrito de don Antonio
+Núñez. Alega que pidió fianza de costas considerando que no tiene nada, y que **lo que posee es
+ajeno<strong>; y que el asunto está concluido con que </strong>el juez agrimensor separe a cada uno lo que es
+suyo**, para vivir con la paz que hermanamente solicita. Firma Antonio Núñez.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Pe]</u>dí en mi anterior Escrito que afiansase las Cos-</span>
+<span class="ln">tas Considerando q<u class="exp" title="abreviatura desarrollada">[ue]</u> el Ninguno Conosia q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Ello?]</u></u></span>
+<span class="ln">no tengo nada, y pues loque poseo <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿es?]</u></u> ageno,</span>
+<span class="ln">En segundo lugar porq<u class="exp" title="abreviatura desarrollada">[ue]</u> este asunto esta Con-</span>
+<span class="ln">Concluido Conque el Juez Agrimensor le</span>
+<span class="ln">separe a cada uno lo que es Suyo, y vivir</span>
+<span class="ln">Con la pas que hermanamente Solisito</span>
+<span class="ln">Por tanto</span>
+<span class="ln">A V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d. Pido, y Suplico me tenga por Contestad<u class="exp" title="abreviatura desarrollada">[o]</u> del</span>
+<span class="ln">traslado, y Su Contenido</span>
+<span class="ln">Antonio Núñez <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Pedí en mi anterior escrito que afianzase las costas, considerando que él ninguno conocía; que
+[de] ello no tengo nada, y pues lo que poseo es ajeno. En segundo lugar, porque este asunto está
+concluido con que el juez agrimensor le separe a cada uno lo que es suyo, y vivir con la paz que
+hermanamente solicito. Por tanto, a Vuestra Merced pido y suplico me tenga por contestado del
+traslado y su contenido. — Antonio Núñez.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta. Las frases decisivas —«este asunto esta Concluido Conque el **Juez
+Agrimensor** le separe a cada uno lo que es Suyo», «lo que poseo [es] ageno»— se leen sin
+esfuerzo. Lo único dudoso es la segunda línea («q[ue] el Ninguno Conosia q[ue] Ello»), cuya
+sintaxis es confusa en el propio original, y la última sílaba de las líneas que toca el borde
+roto.
+
+---</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4>Don Julio Yzquierdo (Izquierdo)</h4>
+  <p class="papel">Demandante; marido legítimo de doña Francisca Núñez; pide la parte de tierra de su mujer en la hacienda de San Juan, la apertura del zanjo y el nombramiento de juez agrimensor; ofrece fianza de mil pesos; firma de su mano</p>
+  <p class="calidad">No se consigna calidad (el documento no dice indio, ladino, mulato libre, moreno ni español); tratamiento de «Don»; «de este Becindario» / «vecino de este Partido» (Sensentí); no se da edad</p>
+</div>
+<div class="persona">
+  <h4>Doña Francisca Núñez</h4>
+  <p class="papel">Esposa del demandante; heredera de sus padres; le corresponden tres octavas partes en la hacienda de San Juan y otras tres octavas partes (permutadas) en la hacienda del Amate; pidió a don Antonio Núñez la niña ahijada de doña Gerónima</p>
+  <p class="calidad">Tratamiento de «Doña»; no se consigna calidad ni edad; vecina de Sensentí</p>
+</div>
+<div class="persona">
+  <h4>Don Casimiro Núñez</h4>
+  <p class="papel">Difunto; padre de doña Francisca; de cuyo fallecimiento proceden los bienes partibles y la hacienda de San Juan</p>
+  <p class="calidad">Tratamiento de «Don»; difunto a la fecha del pleito; no se consigna calidad ni edad</p>
+</div>
+<div class="persona">
+  <h4>La madre de doña Francisca (no nombrada)</h4>
+  <p class="papel">Difunta; «la citada muger» / «madre política» del demandante; de ella procede también la herencia</p>
+  <p class="calidad">No se nombra; no se consigna calidad ni edad</p>
+</div>
+<div class="persona">
+  <h4>Don Antonio Núñez</h4>
+  <p class="papel">Demandado; casado con hija entenada del suegro del demandante; abrió y luego suspendió el trabajo del zanjo en San Juan; pide que el demandante afiance la calumnia y que el juez agrimensor separe a cada uno lo suyo; firma de su mano</p>
+  <p class="calidad">Tratamiento de «Don»; «de este vezindario» / «Vecino de este Partido» (Sensentí); no se consigna calidad ni edad; declara que lo que posee es ajeno</p>
+</div>
+<div class="persona">
+  <h4>La mujer de don Antonio Núñez (no nombrada)</h4>
+  <p class="papel">Hija entenada del padre político del demandante; por ella se tiene don Antonio por heredero</p>
+  <p class="calidad">No se nombra; no se consigna calidad ni edad</p>
+</div>
+<div class="persona">
+  <h4>Don Timoteo Núñez</h4>
+  <p class="papel">Hermano político del demandante; coheredero; con él se permutaron las tres octavas partes de la hacienda del Amate por lo que a él tocaba en San Juan</p>
+  <p class="calidad">Tratamiento de «Don»; no se consigna calidad, edad ni vecindad</p>
+</div>
+<div class="persona">
+  <h4>Doña Gerónima [Núñez]</h4>
+  <p class="papel">Hermana política del demandante; difunta; madrina de pila de la niña que quedó en poder de don Antonio Núñez</p>
+  <p class="calidad">Tratamiento de «Doña»; difunta; no se consigna calidad, edad ni vecindad; el apellido no se expresa en el documento</p>
+</div>
+<div class="persona">
+  <h4>La niña ahijada de doña Gerónima (no nombrada)</h4>
+  <p class="papel">Quedó en poder de don Antonio Núñez al morir su madrina; la mujer del demandante la pidió y Núñez no la quiso dar</p>
+  <p class="calidad">«Se halla a la fecha de ocho ó nuebe Años»; no se consigna calidad; no se nombra</p>
+</div>
+<div class="persona">
+  <h4>La hija menor de don Antonio Núñez (no nombrada)</h4>
+  <p class="papel">Dueña, según el demandante, de los bienes que maneja don Antonio Núñez</p>
+  <p class="calidad">«hija menor»; no se nombra; no se consigna calidad ni edad exacta</p>
+</div>
+<div class="persona">
+  <h4>Josef (José) Cornelio Ballesteros</h4>
+  <p class="papel">Juez de la causa; decreta el traslado de 4 de septiembre, el de 14 y el de 28 de septiembre de 1818; firma todas las notificaciones</p>
+  <p class="calidad">«S[eño]r Ten[ient]e Ynterin[o]» y juez «de este Partido» (Sensentí); no se consigna calidad ni edad</p>
+</div>
+<div class="persona">
+  <h4>Juan Francisco Molina</h4>
+  <p class="papel">Testigo de asistencia; autoriza con el juez los autos y certifica, «por falta de escribano»</p>
+  <p class="calidad">No se consigna calidad ni edad; actúa en Sensentí</p>
+</div>
+<div class="persona">
+  <h4>José Ygnacio Molina</h4>
+  <p class="papel">Testigo de asistencia; autoriza con el juez los autos y certifica</p>
+  <p class="calidad">No se consigna calidad ni edad; actúa en Sensentí. En IMG_1411 su firma parece leerse «[¿Ygnacio María?] de Molina»</p>
+</div>
+<div class="persona">
+  <h4>El juez agrimensor (no nombrado)</h4>
+  <p class="papel">Lo piden ambas partes, para que mida la hacienda y separe a cada uno su parte; no llega a nombrarse en estas planas</p>
+  <p class="calidad">No se nombra</p>
+</div>
+<div class="persona">
+  <h4>El fiador ofrecido por Izquierdo (no nombrado)</h4>
+  <p class="papel">Fiador abonado de los mil pesos, con especial hipoteca de los bienes que posee</p>
+  <p class="calidad">No se nombra</p>
+</div></div>
+</section>
+
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

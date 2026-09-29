@@ -1,0 +1,1120 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Treinta y ocho reses entre seis herederos — Papeles de Sensentí</title>
+<meta name="description" content="Ocho planas que el catálogo daba por dos expedientes y son cuatro, con las dos fechas equivocadas. La pieza central es una partición de bienes de 1804 —no de 1793— con el inventario de ganado entero y seis herederos que no saben firmar. Y la palabra que se esperaba encontrar en la otra pieza no está">
+<meta property="og:title" content="Treinta y ocho reses entre seis herederos">
+<meta property="og:description" content="Ocho planas que el catálogo daba por dos expedientes y son cuatro, con las dos fechas equivocadas. La pieza central es una partición de bienes de 1804 —no de 1793— con el inventario de ganado entero y seis herederos que no saben firmar. Y la palabra que se esperaba encontrar en la otra pieza no está">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* tablas dentro del estudio */
+table{border-collapse:collapse;width:100%;margin:20px 0;font-size:.92em;
+  background:var(--card,transparent);display:block;overflow-x:auto}
+@media(min-width:620px){table{display:table}}
+th,td{border:1px solid var(--rule);padding:9px 11px;text-align:left;vertical-align:top;line-height:1.5}
+th{background:var(--rule2);color:var(--ink);font-weight:600;font-size:.86em;
+  letter-spacing:.02em;text-transform:none}
+tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--rule) 22%,transparent)}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Cuatro piezas, 1804 – 185…</p>
+  <h1>Treinta y ocho reses entre seis herederos</h1>
+  <p class="dek">Ocho planas que el catálogo daba por dos expedientes y son cuatro, con las dos fechas equivocadas. La pieza central es una partición de bienes de 1804 —no de 1793— con el inventario de ganado entero y seis herederos que no saben firmar. Y la palabra que se esperaba encontrar en la otra pieza no está.</p>
+  <div class="meta"><span><strong>8 láminas</strong> · IMG_1578 – IMG_1585</span><span>182_ · 27 de agosto de 1804 · 185_</span><span>Papel sellado de 1792-93 con tres habilitaciones encima</span><span>Sensentí</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">8</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>Ocho planas que el catálogo daba como dos piezas y son <strong>cuatro</strong>, y en las que <strong>las dos fechas que traía el catálogo son falsas</strong>. Conviene decirlo antes que nada, porque una de las dos correcciones mueve un inventario de ganado once años.</p>
+<p><strong>La mortual (IMG_1582–1583) no es de 1793 sino de 1804.</strong> El papel es sello tercero de un real del bienio 1792-93, lo que explica el error; pero lleva <strong>tres habilitaciones estampadas encima</strong> —1793-94, 1799-1800 y <strong>1803-04</strong>— y el texto se data por sí solo: «Agosto veinte y siete de <strong>ochocientos quatro</strong>». Es un pliego viejo reutilizado once años después de impreso, que es cosa corriente en este archivo y la trampa en que el catálogo cayó.</p>
+<p><strong>El escrito de Chévez (IMG_1578–1581) no es de 1836.</strong> Se provee en «Sensenti Feb.ro veinte y sinco de mil ochoc.s <strong>bein[te…]</strong>»: el año se corta justo en el borde de la fotografía, pero la decena se lee, y es <strong>veinte y tantos</strong>, no treinta y tantos. Un testigo cita además réditos corridos desde «ochocientos veinte y sinco». Es de los años <strong>182\_</strong>.</p>
+<p><strong>Y no hay una costura, sino tres.</strong> IMG_1578–1581 es el escrito de Chévez. IMG_1582–1583 es la mortual, <strong>y empieza a media cláusula</strong>: falta el pliego anterior, que no está en el archivo. IMG_1584 es el rótulo de un <strong>tercer expediente</strong>, con nombres ajenos a las dos piezas anteriores — «Diligencias Sobre […] Antonio Cruz, é Jose de T…». Y IMG_1585 es una <strong>hoja municipal de Sensentí</strong>, fechada «Feb.o 28 a 185[…]», con el alcalde 1.º y los regidores: medio siglo más tarde. Cuatro cosas distintas en ocho planas.</p>
+<p>## El inventario de 1804, que es lo que importa</p>
+<p>Es una partición de bienes entre seis herederos, y la lista está entera:</p>
+<table><thead><tr><th>Partida</th><th>Cabezas</th></tr></thead><tbody>
+<tr><td>Vacas paridas</td><td>8</td></tr>
+<tr><td>Bueyes de tres años arriba</td><td>20</td></tr>
+<tr><td>Reses de año arriba</td><td>10</td></tr>
+<tr><td><strong>Suma como «treinta y ocho reses»</strong></td><td><strong>38</strong></td></tr>
+<tr><td>Mula vieja</td><td>1</td></tr>
+<tr><td>Caballos ordinarios</td><td>2</td></tr>
+<tr><td>Potro de dos años</td><td>1</td></tr>
+<tr><td>Yegua parida</td><td>1</td></tr>
+<tr><td><strong>Bestias</strong></td><td><strong>5</strong></td></tr>
+</tbody></table>
+<p><strong>No hay toro</strong>, pese a lo que decía el catálogo. Los herederos son <strong>Manuel, Gertrudis, [¿Romigia?], Domingo José, José María y María Mariana</strong>, los dos últimos menores. El reparto da <strong>cinco reses y seis pesos cuatro reales y medio a cada uno</strong>, y se nombran depositarios judiciales para la parte de los menores: <strong>Juan Sanabria</strong> y un segundo nombre que el escribiente tachó y salvó entre renglones como <strong>«Horacio Chinchilla»</strong>, con hipoteca de personas y bienes.</p>
+<p><strong>Ninguno de los herederos firma:</strong> «no firmaron, por no Saber». Firma a ruego <strong>don Manuel Peña[s]</strong>. El juez es <strong>Juan José Carrejón</strong> —el mismo alcalde ordinario que aparece en el expediente de Mariano Guzmán de 1794 y en las actuaciones de 1816— y el testigo de asistencia, <strong>Ambrosio Estrada</strong>.</p>
+<p>## La palabra que no está</p>
+<p>El catálogo decía que el escrito de Chévez reclamaba «la cuadrilla» heredada de su suegra, y esa palabra, en Honduras y en esa fecha, habría sido un dato de peso. <strong>Repasadas las ocho planas banda por banda, la palabra «cuadrilla» no aparece.</strong></p>
+<p>Lo más próximo está en IMG_1579: «las <strong>quantillas</strong> d[ich]as à mi favorecida, Con todo areo, po[…]dor de los depend[ien]tes». Letra por letra: q-u-a-n-t-i-ll-a-s. No hay <em>d</em> ni <em>r</em>. Es otra palabra.</p>
+<p>Hay un segundo candidato en IMG_1578, renglón 7 —«p[o]r lo q[u]e respeta al <strong>C[…]</strong>»— pero está destruido por un desgarro con solapa y sólo sobrevive la inicial. <strong>No se puede afirmar ni descartar desde ahí</strong>, y no se va a completar por conjetura para que diga lo que se esperaba que dijera.</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>Una <strong>mortual</strong> es el expediente que la justicia forma al morir alguien: se inventarían los bienes, se tasan, se deducen las deudas y se reparte el líquido entre los herederos. Obliga a poner por escrito lo que de otro modo no se escribía, y por eso es una fuente densa para la historia económica. Esta, de 27 de agosto de 1804, recoge el hato entero: <strong>treinta y ocho reses</strong>, más cinco bestias.</p>
+<p>El ganado se cuenta <strong>por clase y por edad</strong>, porque cada clase es un bien distinto. La vaca parida es capital reproductivo, el buey de tres años arriba es fuerza de trabajo y la res de año es existencia futura. Que veinte de las treinta y ocho reses sean bueyes indica un caudal orientado a la tracción tanto o más que a la cría. La misma gradación aparece, ya con precios, en la mortual de Sulán de 1816 que también recoge este sitio. Aquí <strong>no hay precios unitarios legibles</strong> en lo transcrito, ni hay toro, pese a lo que decía el catálogo.</p>
+<p>Seis herederos reciben cada uno cinco reses y seis pesos cuatro reales y medio: los animales no se dividen exactos y el dinero iguala las partes. A los dos herederos menores se les nombran <strong>depositarios judiciales</strong> con hipoteca de personas y bienes, mecanismo ordinario de protección del huérfano.</p>
+<p>Advertencia de método: el pliego es sello tercero del bienio 1792-93 con tres habilitaciones estampadas encima, y solo el texto y las habilitaciones dan el año. <strong>El impreso no fecha; la habilitación sí.</strong> El expediente arranca a media cláusula porque falta el pliego anterior.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#f1578">78</a><a href="#f1579">79</a><a href="#f1580">80</a><a href="#f1581">81</a><a href="#f1582">82</a><a href="#f1583">83</a><a href="#f1584">84</a><a href="#f1585">85</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="f1578">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 8</span><h3>IMG_1578</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1578" aria-label="Ampliar la lámina IMG_1578">
+        <img src="../img/mortual1804/p001.jpg" alt="Fotografía de la lámina IMG_1578" loading="lazy">
+      </button>
+      <figcaption>Papel de hilo sin sello visible (el ángulo superior está arrancado y el borde
+superior comido). Tinta ferrogálica pardo-oscura, buena carga, letra cursiva de una sola mano,
+inclinada, de módulo mediano. No se ve foliación. **Roturas importantes en el margen derecho y en
+la zona media-derecha, con una solapa de papel desprendida y doblada sobre el renglón 7**, que
+destruye una palabra entera. Manchas de humedad en la mitad inferior. Escritura en sentido normal
+(vertical). **El encuadre de la fotografía corta el margen derecho: las últimas dos o tres letras
+de casi todos los renglones quedan fuera o sobre el doblez.**</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Primera plana del <strong>escrito de petición de Felipe Chevez</strong>, vecino de la Villa de
+<strong>Nacaome</strong>, dirigido al «C. Alc.[alde]» pidiendo información de testigos sobre la filiación y
+los bienes de su mujer <strong>Macedonia Cartejon</strong>. Contiene la súplica y las **cuatro preguntas del
+interrogatorio**, que ocupan los dos tercios inferiores de la plana.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">C. Al<u class="exp" title="abreviatura desarrollada">[c]</u>.<u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿e?]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Felipe Chevez vz.no de la Villa de Nacaome, Ante</span>
+<span class="ln">V.S en forma de Estilo digo: que, en atencion a</span>
+<span class="ln">no poderse hayar los docum.tos de Seguridad, y jus-</span>
+<span class="ln">tificantes de la l<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ina, y pertenenc.a de mi Muger.</span>
+<span class="ln">segun se me he echo saber; p.a cubrir mi honor,</span>
+<span class="ln">y el de los depend.tes y dimidiar el desorden de mis</span>
+<span class="ln">Anteresor.s p.r lo q.e respeta al C<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>, cuyo derechos</span>
+<span class="ln">no me podra perjudicar mas; <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> quedandome con</span>
+<span class="ln">forma. sino es, con q.e S. V. int<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>a informac.n de los</span>
+<span class="ln">q.e mas ve<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>er y fidedignos —— . A V. Suplico</span>
+<span class="ln">me tenga por presentado y mande hacer como pid<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">y q.e los insert<u class="exp" title="abreviatura desarrollada">[os]</u> declarantes respondan el interrogat<u class="exp" title="abreviatura desarrollada">[orio]</u></span>
+<span class="ln">Siguiente</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">1.º — Digan si Soy leg.mo Marido de la C. Macedonia</span>
+<span class="ln">Cartejon: y si esta es hija de los CC. Bal-</span>
+<span class="ln">tazar y Man.a Rita Molina ya difuntos?</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">2. — Si <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>d. de mi esposa la desaron bienes</span>
+<span class="ln">Muebles y raices, en su testam.to?</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">3.º — Si la desaron, en q.e poder <u class="exp" title="abreviatura desarrollada">[se]</u> hayan, Com<u class="exp" title="abreviatura desarrollada">[o]</u>, y con</span>
+<span class="ln">q.e Condiciones?</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">4. — Si à mas de esto, tiene D.ro à los bienes de la</span>
+<span class="ln">finada M.a Bran, Abuela de d<u class="exp" title="abreviatura desarrollada">[ic]</u>hã. Macedonia?</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Ciudadano Alcalde:</p>
+<p>Felipe Chévez, vecino de la villa de Nacaome, ante Vuestra Señoría en forma de estilo digo: que,
+en atención a no poderse hallar los documentos de seguridad y justificantes de la [línea] y
+pertenencia de mi mujer, según se me ha hecho saber; para cubrir mi honor y el de los
+dependientes, y dirimir el desorden de mis antecesores por lo que respecta al […], cuyos derechos
+no me podrán perjudicar más […], quedándome sin otro modo sino que Vuestra Señoría [reciba]
+información de los [testigos] más […] y fidedignos. A Vuestra Señoría suplico me tenga por
+presentado y mande hacer como pido, y que los declarantes insertos respondan al interrogatorio
+siguiente:</p>
+<p>1.º Digan si soy legítimo marido de la ciudadana Macedonia Cartejón, y si ésta es hija de los
+ciudadanos Baltasar y Manuela Rita Molina, ya difuntos.
+2.ª Si [el finado padre] de mi esposa le dejaron bienes muebles y raíces en su testamento.
+3.º Si se los dejaron, en poder de quién se hallan, cómo y con qué condiciones.
+4.ª Si además de esto tiene derecho a los bienes de la finada María Bran, abuela de dicha
+Macedonia.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta. Las cuatro preguntas y los nombres propios (Felipe Chevez, Nacaome,
+Macedonia Cartejon, Baltazar, Man.a Rita Molina, M.a Bran) se leen con seguridad. No se fijan:
+(a) el encabezamiento, que puede ser «C. Alc.e» o «C. M.»; (b) la palabra del renglón 4 tras
+«la l…ina» (¿«linea»?); (c) <strong>la palabra destruida del renglón 7 tras «al»</strong>, de la que sólo
+queda la inicial —es la que el catálogo pudo leer como «cuadrilla», pero <strong>no se deja leer</strong>;
+(d) los finales de renglón perdidos por el encuadre; (e) el inicio de la pregunta 2.ª, comido por
+una mancha. El apellido de la mujer es <strong>Cartejon</strong> (o Cartejón/Carrejón), <strong>no «Cartagena»</strong>.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1579">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 8</span><h3>IMG_1579</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1579" aria-label="Ampliar la lámina IMG_1579">
+        <img src="../img/mortual1804/p002.jpg" alt="Fotografía de la lámina IMG_1579" loading="lazy">
+      </button>
+      <figcaption>Mismo papel y misma mano en la mitad superior. **La mitad inferior está escrita con
+tinta mucho más diluida y hoy muy desvaída**, apenas por encima del umbral de lectura incluso con
+realce por división de fondo. Borde derecho de nuevo <strong>fuera del encuadre fotográfico</strong>, lo que
+corta justamente el año de la data. Manchas de humedad, pliegue horizontal central. Escritura en
+sentido normal. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Segunda plana del mismo escrito: <strong>cierre de la súplica y firma de Felipe Chevez</strong>;
+debajo, el <strong>auto del juez</strong> admitiendo la información, fechado en Sensentí, y el comienzo de la
+<strong>primera declaración</strong> (recepción de juramento).</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="q" title="lectura insegura">[¿si es asi q.to es? y en q.e terminos? y en cuyo poder?]</u></span>
+<span class="ln">se hayan.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Todo lo q.e Suplico Sea respond.o bajo</span>
+<span class="ln">de juram.to y ebacuadas las declaracion<u class="exp" title="abreviatura desarrollada">[es]</u></span>
+<span class="ln">vir à la mayor brevedad las quantillas</span>
+<span class="ln">d.tas à mi favorecida, Con todo areo, po<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">dor de los depend.tes. Protesto no proceder</span>
+<span class="ln">y juro &amp;.a</span>
+<span class="ln">Felipe Chevez <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Sensenti Feb.ro veinte y sinco de mil ochoc.s bein<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Como lo pide. Sigase la informacion</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y agreguese a las dilig.s</span>
+<span class="ln">Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[En Seguida]</u> fue presentado por testigo el</span>
+<span class="ln">C. <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> se le recivió juram.to por Dios n<u class="exp" title="abreviatura desarrollada">[uest]</u>ro S.r</span>
+<span class="ln">y una Señal de Cruz bajo el qual ofreció hablar berdad en lo q.e sup<u class="exp" title="abreviatura desarrollada">[iere]</u></span>
+<span class="ln">y fuere preguntado: Siendolo con arreglo al In<u class="exp" title="abreviatura desarrollada">[terro]</u>-</span>
+<span class="ln">gatorio q.e antesede à la prim.a pregunta dijo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…si es así, cuánto es, en qué términos y en poder de quién] se hallan.</p>
+<p>Todo lo cual suplico sea respondido bajo juramento, y evacuadas las declaraciones [se sirva
+remi]tir a la mayor brevedad las <strong>«quantillas»</strong> dichas a mi favor, con todo arreo, po[see]dor de
+los dependientes. Protesto no proceder [de malicia] y juro, etc. — Felipe Chévez.</p>
+<p>Sensentí, febrero veinticinco de mil ochocientos veinte y […]: Como lo pide. Sígase la
+información […] y agréguese a las diligencias. — Molina.</p>
+<p>En seguida fue presentado por testigo el ciudadano […] de […], de quien se recibió juramento por
+Dios Nuestro Señor y una señal de cruz, bajo el cual ofreció hablar verdad en lo que supiere y
+fuere preguntado; y siéndolo con arreglo al interrogatorio que antecede, a la primera pregunta
+dijo […]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media. Alta en el bloque superior (firma de Chevez, data, auto, «Molina») salvo
+por <strong>el año, cortado por el encuadre tras «bein-»</strong>. Baja en el bloque inferior, de tinta
+desvaída: no se fija el <strong>nombre, edad ni vecindad del primer testigo</strong>, que quedan ilegibles.
+La voz <strong>«quantillas»</strong> se da por leída letra a letra (véase la advertencia general), pero su
+sentido no se interpreta aquí; lo que la precede y la sigue («d.tas à mi favorecida, con todo
+areo, po[…]dor de los depend.tes») está afectado por el corte del margen.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1580">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 8</span><h3>IMG_1580</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1580" aria-label="Ampliar la lámina IMG_1580">
+        <img src="../img/mortual1804/p003.jpg" alt="Fotografía de la lámina IMG_1580" loading="lazy">
+      </button>
+      <figcaption>Papel muy castigado: **pliegue vertical profundo y rotura con pérdida en el tercio
+superior**, agujeros de insecto, desgarro con solapa en el centro-izquierda. Tinta diluida,
+oxidada y en buena parte evanescente. Fotografía tomada con el pliego alabeado, de manera que el
+tercio superior queda desenfocado y en sombra. Escritura normal.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Tercera plana: <strong>final de la declaración del primer testigo</strong> (respuestas a las
+preguntas 2.ª, 3.ª y 4.ª, con mención de doscientos pesos, réditos, la cuarta parte y los bienes
+de la finada María Bran), su ratificación y firmas; y, al pie, la **comparecencia del segundo
+testigo**.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> sabe, q.e el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> hermano <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q.e llegó la partic<u class="exp" title="abreviatura desarrollada">[ion]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> tubo igualm.te parte</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> los ciento y q.<u class="exp" title="abreviatura desarrollada">[e]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Molina tiene dos<u class="exp" title="abreviatura desarrollada">[cientos]</u> p.s p.r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> termin<u class="exp" title="abreviatura desarrollada">[o]</u>s, Cuyos redit.s <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> estan debengados desde el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de ochocientos v<u class="exp" title="abreviatura desarrollada">[ein]</u>te y sinco y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> desde el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Entregados <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[à la]</u> 1.ª <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Cartejon, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q.e tiene d.ro <u class="exp" title="abreviatura desarrollada">[à la]</u> Criatura <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[à]</u> la quarta <u class="exp" title="abreviatura desarrollada">[parte]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q.e se acaba <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> con el d.ro de</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> es el unico q.e se reserv<u class="exp" title="abreviatura desarrollada">[a]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[la]</u> tierra; y que todo se pued<u class="exp" title="abreviatura desarrollada">[e]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Menor<u class="exp" title="abreviatura desarrollada">[es]</u> ya <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la finada M.a B<u class="exp" title="abreviatura desarrollada">[ran]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> siendo pobre <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> à la quar<u class="exp" title="abreviatura desarrollada">[ta]</u> respondió:</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Que]</u> la quarta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el hijo à <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Muger <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> quedaba en <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> dijo q.e <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> se <u class="exp" title="abreviatura desarrollada">[rati]</u>fica <u class="exp" title="abreviatura desarrollada">[en]</u> lo d<u class="exp" title="abreviatura desarrollada">[icho]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> paren<u class="exp" title="abreviatura desarrollada">[tes]</u>co <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y firmó <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Joss<u class="exp" title="abreviatura desarrollada">[eph]</u> Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        <u class="exp" title="abreviatura desarrollada">[A]</u>g<u class="exp" title="abreviatura desarrollada">[usti]</u>n Pineda <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En Seguida Compare<u class="exp" title="abreviatura desarrollada">[ció]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el C. <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Pineda vec.o de est<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> se le recivió juram.to en forma de d<u class="exp" title="abreviatura desarrollada">[e]</u>r<u class="exp" title="abreviatura desarrollada">[ech]</u>o y bajo</span>
+<span class="ln">de el ofreció <u class="exp" title="abreviatura desarrollada">[decir verdad]</u> en lo q.e supiese <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[rese]</u>ntado y <u class="exp" title="abreviatura desarrollada">[juramenta]</u>d<u class="exp" title="abreviatura desarrollada">[o]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">en Cumplim.to <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">à la <u class="exp" title="abreviatura desarrollada">[primera]</u> pregunta Siendolo con arreglo al ante<u class="exp" title="abreviatura desarrollada">[rior]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] sabe que el […] hermano […] que llegó la partición […] tuvo igualmente parte […] los ciento y
+[…]; […] Molina tiene doscientos pesos por […] términos, cuyos réditos están devengados desde
+el […] de ochocientos veinticinco, y […] entregados […]</p>
+<p>A la primera [dijo]: […] Cartejón […] que tiene derecho […] la criatura […]; a la cuarta parte
+[…] con el derecho de […] es lo único que se reserva […] la tierra, y que todo se puede […]
+menores ya […] la finada María Bran […] siendo pobre […]. A la cuarta respondió: que la cuarta
+[…] el hijo a […] mujer […] quedaba en […]. Y dijo que se ratifica en lo dicho […]; [no le tocan
+las generales de la ley ni tiene] parentesco […]. Y firmó. — José Molina. Agustín Pineda.</p>
+<p>En seguida compareció […] el ciudadano […] Pineda, vecino de esta […], de quien se recibió
+juramento en forma de derecho, y bajo de él ofreció decir verdad en lo que supiese […]; y en
+cumplimiento […] a la primera pregunta, siéndolo con arreglo al [interrogatorio] anterior […]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja. La plana está a la vez desvaída, rota y mal iluminada. Sólo se fijan con
+seguridad: la mención de <strong>«dos[cientos] p.s»</strong>, la de <strong>«ochocientos v[ein]te y sinco»</strong>, la
+recurrencia de <strong>«la quarta»</strong> y de <strong>«la finada M.a Bran»</strong>, las dos firmas del pie y la fórmula
+de comparecencia del segundo testigo. <strong>No se fijan</strong> ni el nombre completo, ni la edad, ni la
+vecindad de ninguno de los dos testigos, ni el sentido corrido de las respuestas. Tampoco se ve
+en esta plana, pese a repasarla banda por banda, la voz «cuadrilla».
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1581">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 8</span><h3>IMG_1581</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1581" aria-label="Ampliar la lámina IMG_1581">
+        <img src="../img/mortual1804/p004.jpg" alt="Fotografía de la lámina IMG_1581" loading="lazy">
+      </button>
+      <figcaption>La peor conservada de las cuatro del expediente Chévez. **Todo el tercio superior
+está cubierto por una solapa de papel arrugada y levantada**, que oculta físicamente los primeros
+renglones; hay <strong>agujeros con pérdida</strong> en el centro y un <strong>desgarro en diagonal</strong> en el tercio
+inferior. Tinta muy desvaída. En el borde derecho de la fotografía **asoma ya el sello impreso del
+pliego siguiente** (el de IMG_1582): se ve la «S» y la orla del sello tercero, prueba material de
+que en el legajo esta hoja descansa inmediatamente sobre la mortual de 1804.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Cuarta plana: <strong>resto de la declaración del segundo testigo</strong>, con la mención de los
+doscientos pesos de Juan Francisco Molina, del cinco por ciento, de la cuarta parte y de ciertos
+bienes «de muy poca cuenta»; ratificación, declaración de edad y firmas.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> respondió: <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Molina <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>tos sing.tos p.s q.e <u class="exp" title="abreviatura desarrollada">[tiene]</u> <u class="exp" title="abreviatura desarrollada">[Juan]</u> Fran.co Molina <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p.s <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">doscientos p.s y todos tienen el d.<u class="exp" title="abreviatura desarrollada">[e]</u>r<u class="exp" title="abreviatura desarrollada">[ech]</u>o <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Cinco p.<u class="exp" title="abreviatura desarrollada">[or ciento]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la quarta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que es a<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>da à cienta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> pertenece à esta q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> misma q<u class="exp" title="abreviatura desarrollada">[ue a]</u>ntes à <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> no tiene ganad<u class="exp" title="abreviatura desarrollada">[o]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> tiene de muy poca cuenta: y q.e</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Cartejon tiene unos Mueblecitos de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ya declara<u class="exp" title="abreviatura desarrollada">[do]</u> se ra<u class="exp" title="abreviatura desarrollada">[tificó]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de treinta y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a<u class="exp" title="abreviatura desarrollada">[ños]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> leido y firma Con migo.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Juan Fran.co de Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Agustin <u class="exp" title="abreviatura desarrollada">[Pineda]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Chinchilla?]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] respondió […] Molina […]; […]tos [cincuenta] pesos que tiene Juan Francisco Molina […];
+doscientos pesos, y todos tienen el derecho […] cinco por ciento […]; […] la cuarta […] que
+pertenece a ésta […], la misma que antes […]; […] no tiene ganado […]; […] tiene [tierras] de muy
+poca cuenta; y que […] Cartejón tiene unos mueblecitos de […]. Y en lo ya declarado se ratificó
+[…]; [dijo ser] de treinta y […] años; […] leído, y firma conmigo. — Juan Francisco de Molina.
+Agustín [Pineda]. [¿Chinchilla?]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja. Se fijan los sintagmas que el catálogo recogía («doscientos pesos», «la
+quarta», «muy poca cuenta», «unos Mueblecitos») y la firma <strong>Juan Fran.co de Molina</strong>; pero el
+hilo del discurso no se reconstruye y <strong>la edad del testigo sólo se lee como «treinta y …»</strong>, sin
+la unidad. Los renglones ocultos bajo la solapa de papel del tercio superior **son físicamente
+inaccesibles en esta fotografía**. Tampoco aquí aparece la voz «cuadrilla».
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1582">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 8</span><h3>IMG_1582</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1582" aria-label="Ampliar la lámina IMG_1582">
+        <img src="../img/mortual1804/p005.jpg" alt="Fotografía de la lámina IMG_1582" loading="lazy">
+      </button>
+      <figcaption>Pliego de **papel sellado: sello tercero, un real, años de mil setecientos noventa y
+dos y noventa y tres**, con cruz sobre el título y la leyenda «Un real.» encima. A la izquierda,
+el <strong>sello de placa redondo</strong> («CAROLUS…», Carlos IV) y, debajo, **estampillas ovales de
+habilitación** («…PARA LOS AÑOS DE 179[3]…», con «S 3»). Tinta parda bien conservada en el cuerpo
+del texto. <strong>Rotura con pérdida y solapa doblada en el centro de la plana</strong>, que come varias
+palabras del bloque final; agujero en la zona del inventario. En el margen izquierdo, **escrito en
+sentido transversal sobre la hoja contigua del legajo**, se lee un rótulo antiguo. Escritura
+normal. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Primera plana conservada de la **mortual y partición de los bienes de Est[e]van
+Peña[s]**: final del auto del juez mandando comparecer a los interesados; comparecencia y
+<strong>nómina de los seis herederos</strong>; e **inventario de los bienes, partida por partida, con su
+número al final de cada renglón**; suma total y entrega a disposición del juzgado.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">[Rótulo transversal visible en el margen izquierdo, sobre la hoja contigua:]</span>
+<span class="ln">179<u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿5?]</u></u>. – Mortual de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Juan Peña, y particion de</span>
+<span class="ln">los bienes de este. —</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Sello impreso:]</u></span>
+<span class="ln">Un real.</span>
+<span class="ln">SELLO TERCERO, VN REAL,</span>
+<span class="ln">AÑOS DE MIL SETECIENTOS</span>
+<span class="ln">NOVENTA Y DOS Y NOVENTA</span>
+<span class="ln">Y TRES.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Texto:]</u></span>
+<span class="ln">mandaba, y mandé comparecer à los Interesa-</span>
+<span class="ln">dos, quienes expresarán qu<u class="exp" title="abreviatura desarrollada">[i]</u>enes son herederos</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[lexi]</u>timos de Estevan Peña, <u class="exp" title="abreviatura desarrollada">[para]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> este conosim.to y pro-</span>
+<span class="ln">ceder à lo que hubiere lugar. <u class="exp" title="abreviatura desarrollada">[Asi lo]</u> proveió, mando y</span>
+<span class="ln">firmo yo el Presen.te Juez de esta Alcaldia con testig.s por</span>
+<span class="ln">falta de Es.no de q.e certifico =</span>
+<span class="ln">Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Ambrosio Estrada <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Jose <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Consequientem.te En virtud de lo mandado en el anterior</span>
+<span class="ln">auto comparecieron los herederos del caudal que se trata q.e son</span>
+<span class="ln">Manuel, Gertrudis, <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Romigia?]</u></u>, Domingo José, José María,</span>
+<span class="ln">y María Mariana; haciendose presente q.e estos dos ul-</span>
+<span class="ln">timos son de menor edad: y los bien.s que hay, y se</span>
+<span class="ln">conformar<u class="exp" title="abreviatura desarrollada">[o]</u>n unanimes à que se partan entre ellos son</span>
+<span class="ln">los Siguientes</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Ocho bacas paridas ------------------------- 008 –</span>
+<span class="ln">Veinte bueyes de tres años arriba ---------- 020 –</span>
+<span class="ln">Diez reses de año arriba ------------------- 010 –</span>
+<span class="ln">Una mula vieja ----------------------------- 001 –</span>
+<span class="ln">Dos Caba<u class="exp" title="abreviatura desarrollada">[ll]</u>os ordinarios ------------------ 002 –</span>
+<span class="ln">Un potro de dos años ----------------------- 001 –</span>
+<span class="ln">Una yegua parida --------------------------- 001 –</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Y que p.r <u class="exp" title="abreviatura desarrollada">[to]</u>dos hacen la Suma de treinta y <u class="exp" title="abreviatura desarrollada">[ocho reses]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[y ...]</u> las mismas que se ponen à disposicion d<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[este Juzgado...]</u> <u class="exp" title="abreviatura desarrollada">[pi]</u>dieron; y no firmaron, por no Saber, hicelo</span>
+<span class="ln">yo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que corrige = entre renglon = son = <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿bale?]</u></u> =</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p><strong>Auto.</strong> …mandaba y mandé comparecer a los interesados, quienes expresarán quiénes son herederos
+legítimos de Esteban Peña[s], para […] este conocimiento y proceder a lo que hubiere lugar. Así lo
+proveyó, mandó y firmó yo, el presente juez de esta alcaldía, con testigos por falta de escribano,
+de que certifico. — Carrejón. Ambrosio Estrada. […] José […]</p>
+<p><strong>Comparecencia.</strong> Consecutivamente, en virtud de lo mandado en el auto anterior, comparecieron
+los herederos del caudal de que se trata, que son **Manuel, Gertrudis, [¿Romigia?], Domingo José,
+José María y María Mariana<strong>, haciéndose presente que </strong>estos dos últimos son de menor edad**; y
+los bienes que hay, y en que se conformaron unánimes en que se partan entre ellos, son los
+siguientes:</p>
+<table><thead><tr><th>Partida</th><th>Cabezas</th></tr></thead><tbody>
+<tr><td>Ocho vacas paridas</td><td>008</td></tr>
+<tr><td>Veinte bueyes de tres años arriba</td><td>020</td></tr>
+<tr><td>Diez reses de año arriba</td><td>010</td></tr>
+<tr><td>Una mula vieja</td><td>001</td></tr>
+<tr><td>Dos caballos ordinarios</td><td>002</td></tr>
+<tr><td>Un potro de dos años</td><td>001</td></tr>
+<tr><td>Una yegua parida</td><td>001</td></tr>
+<tr><td><strong>Suma de reses (vacas + bueyes + reses)</strong></td><td><strong>038</strong></td></tr>
+<tr><td><strong>Bestias (mula, caballos, potro, yegua)</strong></td><td><strong>005</strong></td></tr>
+<tr><td><strong>Total de cabezas</strong></td><td><strong>043</strong></td></tr>
+</tbody></table>
+<p>Y que por todos hacen la suma de <strong>treinta y ocho reses</strong> [y cinco bestias], las mismas que se
+ponen a disposición de [este juzgado]… lo pidieron; <strong>y no firmaron, por no saber</strong>; hícelo yo
+[…] que corrige. Entre renglones: «son». Vale.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta para el sello, los nombres de los seis herederos, las siete partidas del
+inventario y sus cifras, y la fórmula «y no firmaron, por no Saber». <strong>Media</strong> para el nombre del
+causante: se lee <strong>«Estevan Peña»</strong>, pero el rótulo transversal del margen izquierdo —que está
+escrito en la hoja contigua, no en ésta— dice <strong>«Mortual de […] Juan Peña»</strong> y lleva un año
+«179[¿5?]» que <strong>no concuerda</strong> ni con el sello ni con la data de IMG_1583; ese rótulo debe
+tomarse con reserva, pudiendo corresponder a otra pieza del legajo. <strong>Baja</strong> para el tercer
+firmante del auto (bajo el desgarro), para el nombre de la tercera heredera («¿Romigia?,
+¿Homigia?») y para las palabras comidas por la rotura en los tres últimos renglones, incluida la
+que debía decir cuántas bestias eran y la palabra de la salvedad final. El total «treinta y ocho
+reses» se deduce del propio texto y coincide exactamente con 8+20+10; las cinco bestias suman
+1+2+1+1, pero <strong>la palabra «cinco bestias» está bajo la rotura y no se lee</strong>.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1583">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 8</span><h3>IMG_1583</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1583" aria-label="Ampliar la lámina IMG_1583">
+        <img src="../img/mortual1804/p006.jpg" alt="Fotografía de la lámina IMG_1583" loading="lazy">
+      </button>
+      <figcaption>Mismo pliego y mismo sello tercero de 1792-93. En el margen izquierdo, **tres
+estampillas ovales de habilitación superpuestas**, legibles en parte: «…[HABILITADO] PARA … DE
+<strong>1793 Y 1794</strong> · S 3 ·», «…PARA … <strong>1799 Y 1800</strong> · S 3 ·» y «…<strong>1803 Y 1804</strong> … HAVILITA… S 3».
+Tinta parda. <strong>Desgarros con pérdida en el centro y en el tercio inferior</strong>, un borrón grueso que
+tacha un nombre en la línea de los depositarios, y <strong>el margen derecho cortado por el encuadre</strong>,
+que se lleva el final de casi todos los renglones. Escritura normal.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Segunda plana de la mortual: <strong>demostración del reparto</strong> (lo que toca a cada
+heredero), <strong>data</strong> del acto, y <strong>diligencia de depósito judicial</strong> de las porciones de los dos
+menores, con nombramiento de depositarios, obligación e hipoteca de personas y bienes, firma a
+ruego y salvedad de entrerrenglones.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Por la Suma del G<u class="exp" title="abreviatura desarrollada">[anad]</u>o <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> 3<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Demostrac.n</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Nu]</u>m.<u class="exp" title="abreviatura desarrollada">[er]</u>o <u class="exp" title="abreviatura desarrollada">[so]</u>brant.e en los herede<u class="exp" title="abreviatura desarrollada">[ros]</u> ---------- <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿4?]</u></u>6 p. 3 R.s</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[e]</u>l ganado repartido -------------------- 35</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Su]</u>ma que Segun la demostrac.n anterior vie<u class="exp" title="abreviatura desarrollada">[ne]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[à]</u> cada heredero seys pesos quatro y medio r<u class="exp" title="abreviatura desarrollada">[eale]</u>s; y c<u class="exp" title="abreviatura desarrollada">[inco]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[reses]</u>. Sensenti y Agosto veinte y siete de ochocientos quat<u class="exp" title="abreviatura desarrollada">[ro]</u></span>
+<span class="ln">Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En el mismo dia, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> no estan recibidos. Y en atencion à q.e los herederos Mayor.s es<u class="exp" title="abreviatura desarrollada">[tán]</u></span>
+<span class="ln">recibidos, ò emancipados; y q.e los Menores q.e lo son José Maria</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[y M.a]</u> Mariana no pueden por carecer de edad recivirse de lo q.e les <u class="exp" title="abreviatura desarrollada">[pertenece]</u></span>
+<span class="ln">han nombrado p.r sus Depositarios, el primero à Juan Sanabria, y la</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[segunda]</u> à <u class="exp" title="abreviatura desarrollada">[tachado ilegible]</u> p.a en tanto tomen de edad de recivirlos. Y <u class="exp" title="abreviatura desarrollada">[aceptado por]</u></span>
+<span class="ln">los sobredichos p.r ante mi, los nombramientos de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[por excusar]</u> los costos que se causaran en las escrituras <u class="exp" title="abreviatura desarrollada">[públi]</u>-</span>
+<span class="ln">cas que se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> previenen: Por esta misma Dilig.a se d<u class="exp" title="abreviatura desarrollada">[an]</u></span>
+<span class="ln">uno y otro por recividos de las cinco reses, y seys pesos</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[y]</u> quatro <u class="exp" title="abreviatura desarrollada">[reales]</u> y medio que pertenecen à cada uno de los <u class="exp" title="abreviatura desarrollada">[Menores]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de consiguiente ofrecen tener en su pod<u class="exp" title="abreviatura desarrollada">[er]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">responsabilidad de Depositarios Judiciales los consavidos <u class="exp" title="abreviatura desarrollada">[bienes]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la edad de recivirlos, y se le manden <u class="exp" title="abreviatura desarrollada">[entre]</u>-</span>
+<span class="ln">gar por mi, ù otro Juez competente; <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">recividos integram.te de los expresados <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">en favor de sus Menores <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[consiguientem.te]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ypotecando sus personas, y bienes <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> presentes, y futuros</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[para qu]</u>e<u class="exp" title="abreviatura desarrollada">[da]</u>r ser compelibos en todo tiempo, aun<u class="exp" title="abreviatura desarrollada">[que]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> firman, por no</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[saber]</u> rogaron que lo hiciese por ellos àl C.<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> mi<u class="exp" title="abreviatura desarrollada">[smo]</u> de est<u class="exp" title="abreviatura desarrollada">[e]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[Do]</u>n Man<u class="exp" title="abreviatura desarrollada">[uel]</u></span>
+<span class="ln">Peña, que se hayo pr<u class="exp" title="abreviatura desarrollada">[esente]</u>; y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> firmó Con migo, y à falta</span>
+<span class="ln">de Es.no de que Certifico = entre renglon = Horacio Chinchilla = v<u class="exp" title="abreviatura desarrollada">[ale]</u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Juan Jose Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>     Man.<u class="exp" title="abreviatura desarrollada">[ue]</u>l Peña<u class="exp" title="abreviatura desarrollada">[s]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>     H<u class="exp" title="abreviatura desarrollada">[o]</u>racio Chi<u class="exp" title="abreviatura desarrollada">[nchilla]</u></span>
+<span class="ln">Ambrosio Estrada <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p><strong>Demostración del reparto</strong></p>
+<table><thead><tr><th>Concepto</th><th>Cantidad</th></tr></thead><tbody>
+<tr><td>Por la suma del ganado</td><td>3[8]</td></tr>
+<tr><td>Número sobrante en los herederos</td><td>[¿4?]6 pesos 3 reales</td></tr>
+<tr><td>El ganado repartido</td><td>35</td></tr>
+<tr><td><strong>A cada heredero</strong></td><td><strong>6 pesos 4½ reales y 5 reses</strong></td></tr>
+</tbody></table>
+<p>Suma que, según la demostración anterior, viene a cada heredero: seis pesos cuatro y medio reales,
+y cinco reses. <strong>Sensentí, y agosto veintisiete de ochocientos cuatro. — Carrejón.</strong></p>
+<p><strong>Depósito de los menores.</strong> En el mismo día, […] en atención a que los herederos mayores están
+recibidos o emancipados, y que los menores —que lo son <strong>José María</strong> y <strong>María Mariana</strong>— no
+pueden, por carecer de edad, recibirse de lo que les pertenece, han nombrado por sus depositarios:
+<strong>el primero, a Juan Sanabria</strong>; y la <strong>segunda</strong>, a […] (nombre tachado; en el entrerrenglones
+validado al pie se lee <strong>Horacio Chinchilla</strong>), para en tanto tengan edad de recibirlos. Y
+aceptados por los sobredichos ante mí los nombramientos, por excusar los costos que causarían las
+escrituras públicas que se previenen, por esta misma diligencia se dan uno y otro por recibidos de
+**las cinco reses y los seis pesos cuatro y medio reales que pertenecen a cada uno de los
+menores**; y consiguientemente ofrecen tener en su poder, bajo responsabilidad de depositarios
+judiciales, los consabidos bienes […] hasta la edad de recibirlos, y se les manden entregar por mí
+u otro juez competente […] recibidos íntegramente de los expresados […] en favor de sus menores
+[…], <strong>hipotecando sus personas y bienes presentes y futuros</strong> para poder ser compelidos en todo
+tiempo. Y **por no saber firmar rogaron que lo hiciese por ellos … don Manuel Peña[s], que se
+halló presente**; y firmó conmigo, y a falta de escribano, de que certifico. Entre renglones:
+«Horacio Chinchilla». Vale.</p>
+<p>Firman: <strong>Juan José Carrejón</strong> (juez), <strong>Manuel Peña[s]</strong> (a ruego de los que no saben),
+<strong>Horacio Chinchilla</strong>, <strong>Ambrosio Estrada</strong> (testigo de asistencia).</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta para la data (27 de agosto de 1804), para el reparto por cabeza (5 reses
+y 6 pesos 4½ reales a cada heredero), para el nombre del primer depositario (<strong>Juan Sanabria</strong>),
+para la hipoteca de personas y bienes, para la fórmula de firma a ruego y para las firmas.
+<strong>Media-baja</strong> para las dos cifras de la «Demostración»: el «3[8]» de la suma del ganado y el
+«35» del ganado repartido son coherentes con el texto (7 herederos × 5 reses = 35), pero la
+partida «[Nú]mero sobrante en los herederos … [4]6 p. 3 R.s» <strong>no cuadra aritméticamente</strong> con
+«6 pesos 4½ reales a cada heredero» y puede estar mal leída en su primera cifra; se deja como
+está y no se corrige. <strong>Baja</strong> para el nombre tachado de la depositaria de María Mariana: el
+borrón es total, y sólo el entrerrenglones salvado al pie («Horacio Chinchilla») permite suponer
+quién lo sustituyó —pero <strong>eso es inferencia, no lectura</strong>. Los finales de renglón perdidos por el
+encuadre afectan a toda la mitad inferior.
+
+Obsérvese que <strong>los herederos nombrados en IMG_1582 son seis</strong> y el reparto de IMG_1583 supone
+<strong>siete</strong> porciones (35 reses ÷ 5). La discrepancia está en el papel, no en la transcripción: o
+falta un heredero en la nómina, o hay una porción reservada que se explicaba en el pliego perdido.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1584">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 7 de 8</span><h3>IMG_1584</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1584" aria-label="Ampliar la lámina IMG_1584">
+        <img src="../img/mortual1804/p007.jpg" alt="Fotografía de la lámina IMG_1584" loading="lazy">
+      </button>
+      <figcaption>Papel muy deteriorado: **el borde superior (que en la orientación de lectura es el
+lateral) está deshecho, con desgarros grandes, pérdidas y solapas**; hay agujeros en el centro.
+Tinta parda, letra grande y de mucho trazo, con rasgueos caligráficos amplios. En el ángulo se ve
+un fragmento de <strong>texto impreso de sello</strong> («N-», «N-»), probablemente de un papel sellado
+adherido o subyacente. Fotografía tomada con la hoja tendida y el texto girado 90°; el realce por
+división de fondo la hace legible sólo parcialmente.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Rótulo o carátula escrita en sentido transversal</strong> (el texto corre a lo largo del
+lado corto de la hoja, de abajo arriba respecto de la fotografía). Es la cubierta de un
+expediente <strong>cuyos nombres no coinciden con los de ninguna de las dos piezas anteriores</strong>: no
+aparecen ni Chevez, ni Cartejon, ni Molina, ni Peña, sino <strong>Antonio Cruz</strong> y un **José de
+T[…]**. La mitad inferior del pliego está en blanco (dorso de la cubierta).</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>(orientada ya para lectura; la escritura está en sentido transversal)</em></p>
+<div class="dipl">
+<span class="ln">Año <u class="exp" title="abreviatura desarrollada">[de]</u> 18<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Diligencias Sobre <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Ganado?]</u></u> en <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> los</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>los, y Otros q.e Guardaban <u class="exp" title="abreviatura desarrollada">[el]</u> C.<u class="exp" title="abreviatura desarrollada">[iudadan]</u>o Man<u class="exp" title="abreviatura desarrollada">[uel]</u> Jo<u class="exp" title="abreviatura desarrollada">[sé]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[di]</u>cho Antonio Cruz, é José de T<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Año de 18[…]. Diligencias sobre [¿ganado?] en […] los […] y otros que guardaban el ciudadano
+Manuel José […], dicho Antonio Cruz y José de T[…].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja. Se leen con seguridad sólo las palabras <strong>«Diligencias Sobre»</strong>,
+<strong>«y Otros q.e Guardaban»</strong>, <strong>«Antonio Cruz»</strong> y <strong>«é Jose de»</strong>. No se fija: la palabra que
+sigue a «Sobre» (parece empezar por G y podría ser «Ganado», pero <strong>no lo doy por leído</strong>), el
+año, el apellido del ciudadano del segundo renglón, ni el topónimo o apellido que cierra el
+tercero. Lo que sí queda establecido es lo importante para el orden del legajo: **este rótulo no
+corresponde ni al expediente de Felipe Chevez ni a la mortual de Peña**.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1585">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 8 de 8</span><h3>IMG_1585</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1585" aria-label="Ampliar la lámina IMG_1585">
+        <img src="../img/mortual1804/p008.jpg" alt="Fotografía de la lámina IMG_1585" loading="lazy">
+      </button>
+      <figcaption>Papel muy estropeado: <strong>grandes desgarros con pérdida en el lateral derecho</strong> (en la
+orientación de lectura), agujeros, dobleces marcados y suciedad; al fondo asoman otras hojas del
+legajo. Tinta negra intensa, letra menuda y rápida de mediados del XIX, muy distinta de las
+anteriores, con rúbricas de gran desarrollo. Escritura transversal. La iluminación rasante hace
+que el papel domine sobre la tinta en buena parte de la plana.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Hoja suelta escrita en sentido transversal</strong>, de asunto <strong>municipal</strong>: una
+constancia o recibo de la <strong>Municipalidad de Sensentí</strong> relativa a <strong>papel [sellado]</strong>, con
+intervención del <strong>Alcalde 1.º</strong> y de los <strong>regidores</strong>, firmada por varios. Es documento
+<strong>decimonónico avanzado</strong>, ajeno tanto a 1804 como al pleito Chévez.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>(orientada ya para lectura)</em></p>
+<div class="dipl">
+<span class="ln">S.<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Sensenti Feb.<u class="exp" title="abreviatura desarrollada">[er]</u>o 28 a 185<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la et<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>mo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la Municip<u class="exp" title="abreviatura desarrollada">[alidad]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">El Señor de la Municip.<u class="exp" title="abreviatura desarrollada">[al]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> tien<u class="exp" title="abreviatura desarrollada">[e]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>tro Alc.e 1.º de la misma <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a de la misma tu<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">p.a papel q.e ob<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ese nu<u class="exp" title="abreviatura desarrollada">[m]</u>ero <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ara buena entrega <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>              Quirino <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Por los Reg.<u class="exp" title="abreviatura desarrollada">[idore]</u>s Juan Mont<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>                 Jose <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Pablo Sor<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>, y Andres Manuel Guzman</span>
+<span class="ln">y como hi<u class="exp" title="abreviatura desarrollada">[s]</u>o                           <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Mejia <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>     Luis Lop<u class="exp" title="abreviatura desarrollada">[ez]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Se trata de una diligencia de la Municipalidad de Sensentí, fechada a <strong>28 de febrero de 185[…]</strong>,
+en que intervienen el <strong>Alcalde 1.º</strong> y los <strong>regidores</strong>, sobre <strong>papel</strong> [sellado] y su entrega.
+La firman <strong>Ruperto Fuentes</strong>, <strong>Quirino […]</strong>, y por los regidores <strong>Juan Mont[oya?]</strong>, **Pablo
+Sor[…]<strong> y </strong>Andrés Manuel Guzmán<strong>, con </strong>[…] Mejía<strong> y </strong>Luis Lóp[ez]**.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja. Del cuerpo del texto sólo se rescatan palabras sueltas: <strong>«Sensenti»</strong>,
+<strong>«Feb.o 28 a 185[…]»</strong>, <strong>«Municipal»</strong>, <strong>«Alc.e 1.º de la misma»</strong>, <strong>«papel»</strong>, **«buena
+entrega»<strong>. </strong>El año queda incompleto<strong>: se leen los dígitos </strong>1-8-5** y el cuarto se pierde en el
+desgarro; no lo completo. Los nombres de las firmas se leen mejor que el texto, pero varios
+apellidos quedan truncados. **Es un resultado válido decir que esta plana no se deja leer de
+corrido**: está a la vez muy borrada, rota y fotografiada con luz rasante.</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4><strong>Felipe Chévez</strong></h4>
+  <p class="papel">promueve el escrito e interrogatorio</p>
+  <p class="calidad">casado con Macedonia Cartagena; reclama la herencia de la abuela de ella</p>
+</div>
+<div class="persona">
+  <h4><strong>Macedonia Cartagena</strong></h4>
+  <p class="papel">esposa del anterior</p>
+  <p class="calidad">su filiación es objeto del interrogatorio</p>
+</div>
+<div class="persona">
+  <h4><strong>María Bran</strong></h4>
+  <p class="papel">abuela de Macedonia; de ella viene la herencia</p>
+  <p class="calidad">nombrada en el interrogatorio</p>
+</div>
+<div class="persona">
+  <h4><strong>Manuel, Gertrudis, [¿Romigia?], Domingo José</strong></h4>
+  <p class="papel">herederos mayores en la mortual de 1804</p>
+  <p class="calidad">reciben 5 reses y 6 p 4½ r cada uno. <strong>No firman, «por no Saber»</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>José María</strong> y <strong>María Mariana</strong></h4>
+  <p class="papel">herederos <strong>menores</strong></p>
+  <p class="calidad">su parte queda en depósito judicial con hipoteca</p>
+</div>
+<div class="persona">
+  <h4><strong>Est[e]van Peña[s]</strong></h4>
+  <p class="papel">el difunto de cuya mortual se trata</p>
+  <p class="calidad"></p>
+</div>
+<div class="persona">
+  <h4><strong>Don Manuel Peña[s]</strong></h4>
+  <p class="papel">firma a ruego de los herederos</p>
+  <p class="calidad"></p>
+</div>
+<div class="persona">
+  <h4><strong>Juan Sanabria</strong> y <strong>[Horacio Chinchilla]</strong></h4>
+  <p class="papel">depositarios judiciales de la parte de los menores</p>
+  <p class="calidad">el segundo nombre va tachado y salvado entre renglones</p>
+</div>
+<div class="persona">
+  <h4><strong>Juan José Carrejón</strong></h4>
+  <p class="papel">juez</p>
+  <p class="calidad"><strong>Firma</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Ambrosio Estrada</strong></h4>
+  <p class="papel">testigo de asistencia</p>
+  <p class="calidad"><strong>Firma</strong></p>
+</div></div>
+</section>
+
+<section class="extra wrap">
+  <h2>Nota final sobre lo que no se lee</h2>
+  <p><strong>IMG_1580 e IMG_1581 están muy desvaídas y rotas</strong>, y la confianza en ellas es baja: son las dos planas con las declaraciones de los testigos del interrogatorio, y <strong>no se fijan sus nombres, ni sus edades, ni sus vecindades</strong>. Eso es precisamente lo que un interrogatorio sirve para dar, de modo que la pérdida no es menor. Se lee lo suficiente para saber que hablan de doscientos pesos, de una cuarta parte de herencia, de unas tierras «de muy poca cuenta» y de unos mueblecitos; no lo suficiente para saber quién lo dice.</p>
+<p><strong>IMG_1584 e IMG_1585 se leen sólo a trozos</strong>, la primera por ir escrita en sentido transversal y estar borrada, la segunda por lo mismo. Ambas son, de todos modos, piezas ajenas a las dos anteriores.</p>
+<p>De este tramo, las cuatro planas que merecerían una nueva toma son <strong>1580, 1581, 1584 y 1585</strong>; y merecería la pena buscar en el archivo <strong>el pliego que falta al principio de la mortual</strong>, que llevaría la carátula, el nombre completo del difunto y probablemente la fecha de la muerte.</p>
+</section>
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

@@ -1,0 +1,2259 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>El sargento que ganó en Guatemala y perdió en casa — Papeles de Sensentí</title>
+<meta name="description" content="Mariano Guzmán, vecino de Sensentí, pasó un año y dos meses preso en la Real Cárcel de Corte por un hurto del que nadie llegó a acusarle. Llegó hasta la Real Audiencia, volvió con provisión firmada por el regente, y la provisión se estrelló contra el fuero militar del cuerpo al que él mismo pertenec">
+<meta property="og:title" content="El sargento que ganó en Guatemala y perdió en casa">
+<meta property="og:description" content="Mariano Guzmán, vecino de Sensentí, pasó un año y dos meses preso en la Real Cárcel de Corte por un hurto del que nadie llegó a acusarle. Llegó hasta la Real Audiencia, volvió con provisión firmada por el regente, y la provisión se estrelló contra el fuero militar del cuerpo al que él mismo pertenec">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Testimonio de 1794</p>
+  <h1>El sargento que ganó en Guatemala y perdió en casa</h1>
+  <p class="dek">Mariano Guzmán, vecino de Sensentí, pasó un año y dos meses preso en la Real Cárcel de Corte por un hurto del que nadie llegó a acusarle. Llegó hasta la Real Audiencia, volvió con provisión firmada por el regente, y la provisión se estrelló contra el fuero militar del cuerpo al que él mismo pertenecía. Al final le pasaron la cuenta de costas: trece pesos y siete reales.</p>
+  <div class="meta"><span><strong>23 láminas</strong> · IMG_1612 – IMG_1634</span><span>Junio a agosto de 1794</span><span>Papel sellado 2.º de seis reales, 1792-93, habilitado para 1794, Carlos IV</span><span>Nueva Guatemala · Sensentí · Cucuyagua</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">23</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>Veintitrés planas de 1794, y no son un documento sino tres cosidos.</p>
+<p><strong>Primero, lo que viene de Guatemala.</strong> Certificación del escribano de cámara <strong>Juan Hurtado</strong>, dada en la Nueva Guatemala, que inserta dentro de sí el escrito de <strong>Mariano Guzmán</strong> a la Real Audiencia y el auto que la Sala proveyó sobre él —regente Villalengua, con los oidores Vasco, Robledo, Villa Urrutia y del Campo—. Guzmán, vecino de Sensentí, se queja de haber estado preso <strong>«un año y dos meses»</strong> en la Real Cárcel de Corte por una imputación de hurto de la que nadie le ha hecho cargo, y de haber perdido entre tanto, de manera notable, sus bienes muebles y semovientes. Pide que se recoja la causa, que se notifique al alcalde o justicia «o a cualquiera persona blanca que sepa leer y escribir», y que se multe en quinientos pesos a los jueces omisos. La Audiencia le concede tres meses bajo caución juratoria para ir a recaudar sus intereses, y manda recoger la causa. El auto es de <strong>cinco de junio de 1794</strong>; Hurtado lo certifica en julio.</p>
+<p><strong>Segundo, lo que ocurre en Sensentí.</strong> La costura cae <strong>a media plana de IMG_1617</strong>, sin hoja en blanco de por medio: allí, sin aviso, arranca el escrito de Guzmán al alcalde ordinario del partido, <strong>don Juan Josef Carrejón</strong>, presentando la provisión y pidiendo que se le responda al pie. Siguen el auto del alcalde, las firmas con testigos de asistencia «a falta de escribano», las declaraciones de <strong>don Fernando de Molina</strong> —veintisiete años, vecino del partido— sobre la remisión de los autos por el correo de Guatemala, y el oficio de <strong>José Jacinto Mejía</strong>, que contesta el 13 de agosto que dará la certificación cuando Guzmán le remita los doce reales.</p>
+<p><strong>Tercero, el desenlace, que no es el que la Audiencia quería.</strong> La «Razón» de IMG_1623 dice que la causa había pasado al oficio del coronel <strong>Josef de Ballesteros y Nabas</strong> por fuero militar, <strong>por ser Guzmán sargento de su cuerpo</strong>. Y un auto de 16 de agosto advierte que Molina y Mejía «son Militares», y que por eso el juzgado ordinario no puede apremiarlos. <strong>La provisión real no se cumplió.</strong> Guzmán llegó hasta la Audiencia de Guatemala y volvió con papel firmado por el regente, y el papel se estrelló contra el fuero del cuerpo al que él mismo pertenecía.</p>
+<p><strong>Y hay una factura.</strong> El expediente se cierra con la <strong>planilla de derechos judiciales</strong> que se le cobran: autos a seis reales, notificaciones a dos, la declaración a seis, cada oficio despachado a ocho, once fojas a dos reales, el «concuerda» a cuatro, once rúbricas, el papel del sello segundo, cuatro pliegos y medio del sello tercero, y el oficio al escribano de cámara. <strong>Suma trece pesos y siete reales.</strong> Notificado de ella, Guzmán responde que no tiene con qué satisfacerla, por estar embargados sus bienes, y que vendan una de sus reses. Y <strong>se niega a firmar</strong> — no porque no sepa: firma de su mano en todo el resto del expediente.</p>
+<p><strong>Lo que este expediente enseña, y que rara vez se ve.</strong> Un vecino de un partido rural del occidente de Honduras que sabe escribir, que sabe a qué tribunal acudir, que consigue que la Audiencia le dé la razón, y al que aun así el sistema le devuelve una cuenta de costas por el privilegio de haber sido absuelto. El aparato judicial funciona: recibe, provee, certifica, notifica. Lo que no hace es reparar.</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>El interés de estas veintitrés planas está en el choque entre dos justicias, y el delito nunca se formula. Mariano Guzmán obtiene en la Nueva Guatemala lo que un litigante podía desear: un auto de la Sala de la Real Audiencia que manda recoger la causa y le concede tres meses bajo caución juratoria para recaudar sus intereses, tras «un año y dos meses» preso sin que nadie le hiciera cargo. Vuelve a su partido con ese papel y lo presenta al alcalde ordinario. Ahí se detiene.</p>
+<p>Lo detiene el <strong>fuero militar</strong>. La causa había pasado al oficio del coronel por ser Guzmán sargento de su cuerpo, y un auto advierte que los dos hombres a quienes había que apremiar «son Militares», de modo que el juzgado ordinario no puede tocarlos. El documento no explica qué era el fuero, lo aplica. Como contexto ajeno al papel, era el privilegio por el que quien pertenecía a un cuerpo era juzgado por sus propios jueces. El resultado queda a la vista: <strong>el mismo fuero que amparaba a Guzmán como sargento inutiliza la provisión que traía de Guatemala</strong>. Ganó arriba y perdió en casa por el diseño de la planta judicial.</p>
+<p>El segundo eje es material: la justicia costaba dinero. El expediente se cierra con la planilla de derechos, que suma más de trece pesos. Sirve para estudiar el fuero militar en la práctica provincial y para calcular con cifras reales lo que costaba un trámite en un partido sin escribano. <strong>El expediente no dice si Guzmán pagó esas costas, ni si recuperó nada, ni cómo terminó el asunto: se corta ahí.</strong></p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#f1612">12</a><a href="#f1613">13</a><a href="#f1614">14</a><a href="#f1615">15</a><a href="#f1616">16</a><a href="#f1617">17</a><a href="#f1618">18</a><a href="#f1619">19</a><a href="#f1620">20</a><a href="#f1621">21</a><a href="#f1622">22</a><a href="#f1623">23</a><a href="#f1624">24</a><a href="#f1625">25</a><a href="#f1626">26</a><a href="#f1627">27</a><a href="#f1628">28</a><a href="#f1629">29</a><a href="#f1630">30</a><a href="#f1631">31</a><a href="#f1632">32</a><a href="#f1633">33</a><a href="#f1634">34</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="f1612">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 23</span><h3>IMG_1612</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1612" aria-label="Ampliar la lámina IMG_1612">
+        <img src="../img/guzman1794/p001.jpg" alt="Fotografía de la lámina IMG_1612" loading="lazy">
+      </button>
+      <figcaption>Papel de trapo verjurado, de tono claro, muy ondulado por humedad antigua.
+Sello impreso en el ángulo superior izquierdo: escudo coronado con la leyenda circular
+<strong>«CAROLUS IV · D· G· HISPAN· REX»</strong>, y al lado, en tipografía, «Seis reales. / SELLO
+SEGVNDO, SEIS REALES, / AÑOS DE MIL SETECIENTOS / NOVENTA Y DOS Y NOVENTA / Y TRES.», con
+cruz griega arriba y abajo. Sobre el ángulo inferior izquierdo del escudo, **estampilla
+circular de habilitación** con corona y columnas, leyenda «SELLO 2.º · 6 Rs» y, en el arco
+exterior, <strong>«…1794»</strong> perfectamente legible. Tinta ferrogálica parda, ahora desvaída en las
+líneas centrales. La hoja está muy rota por el borde derecho y por todo el margen inferior,
+con pérdidas de papel que no alcanzan a la caja de escritura. Manchas de humedad en la mitad
+derecha. Sin foliación visible. Pequeña rúbrica o lazo de tinta en el margen izquierdo, a
+media altura. La fotografía incluye, a la izquierda, el canto escrito de otra unidad del
+legajo (escritura vertical ajena a esta plana) y, abajo, restos deshechos de otras hojas.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Primera plana del expediente (fol. 1r). Encabezamiento y arranque de la
+certificación del escribano de cámara de la Real Audiencia de Guatemala, don Juan Hurtado,
+que va a insertar el escrito presentado por Mariano Guzmán. Dentro del escrito inserto se
+identifica ya al suplicante —vecino de Sensentí, preso en la Real Cárcel de Corte— y la
+imputación «de causa de ladrón» que dice calumniosa; la plana se corta cuando empieza a
+referir lo respondido por «el Coronel D[o]n Josef de [Ballesteros]».</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> ✠</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> Seis reales.</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> SELLO SEGVNDO, SEIS REALES,</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> AÑOS DE MIL SETECIENTOS</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> NOVENTA Y DOS Y NOVENTA</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[impreso:]</u> Y TRES. ✠</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[estampilla:]</u> SELLO 2.º 6 Rs · AÑO <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> 1794</span>
+<span class="ln">Don Juan Hurtado</span>
+<span class="ln">Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no de Camara de la R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Aud<u class="exp" title="abreviatura desarrollada">[ienci]</u>a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Chancilleria de este Reyno, y <u class="exp" title="abreviatura desarrollada">[del]</u></span>
+<span class="ln">Juzgado Privatibo de tierras <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Cer-</span>
+<span class="ln">tifico que á esta R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Aud<u class="exp" title="abreviatura desarrollada">[ienci]</u>a se pre-</span>
+<span class="ln">sentó el Escrito del tenor siguien-</span>
+<span class="ln">te = Muy Poderoso Señor = Maria-</span>
+<span class="ln">no Guzman vez<u class="exp" title="abreviatura desarrollada">[in]</u>o de Sensenti, preso</span>
+<span class="ln">en esta R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Carcel, de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ba<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>mente mirado temeraria, y</span>
+<span class="ln">calumniosam<u class="exp" title="abreviatura desarrollada">[en]</u>te Causa de Ladron,</span>
+<span class="ln">y suspendidose su curso, p<u class="exp" title="abreviatura desarrollada">[o]</u>r q<u class="exp" title="abreviatura desarrollada">[ue]</u> no ha-</span>
+<span class="ln">viendome justificado, parezco ante</span>
+<span class="ln">V<u class="exp" title="abreviatura desarrollada">[uestra]</u> A<u class="exp" title="abreviatura desarrollada">[lteza]</u> como mas haya lugar, y</span>
+<span class="ln">Digo: Que hace como <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿tres?]</u></u> meses</span>
+<span class="ln">y medio, q<u class="exp" title="abreviatura desarrollada">[ue]</u> me hallo en esta</span>
+<span class="ln">prision esperando los autos, y q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">respondio el Coronel D<u class="exp" title="abreviatura desarrollada">[o]</u>n Josef de</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Don Juan Hurtado, escribano de cámara de la Real Audiencia […] y Real Chancillería de este
+Reino, y del Juzgado Privativo de Tierras, […] certifico que a esta Real Audiencia se
+presentó el escrito del tenor siguiente:</p>
+<p>«Muy Poderoso Señor: Mariano Guzmán, vecino de Sensentí, preso en esta Real Cárcel de […],
+[bajamente] mirado temeraria y calumniosamente [como] causa de ladrón, y suspendiéndose su
+curso porque, no habiéndoseme justificado [el delito], parezco ante Vuestra Alteza como más
+haya lugar y digo: que hace como [tres] meses y medio que me hallo en esta prisión esperando
+los autos, y que respondió el coronel don Josef de […]»</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta. El armazón diplomático (nombre del escribano, sus oficios, la
+fórmula de inserción, el nombre y vecindad del suplicante) se lee sin esfuerzo. Lo impreso y
+la habilitación de 1794 son seguros. No se dejan fijar: el final de la línea «de la R[ea]l
+Aud[ienci]a …» (¿un segundo título?); la palabra abreviada que precede a «Cer-tifico»;
+el final de «en esta R[ea]l Carcel, de …» (esperaríamos «de Corte», pero lo que hay parece
+otra cosa); el adverbio «ba[…]mente» (¿<em>baxamente</em>? ¿<em>bastamente</em>?); y sobre todo el
+numeral <strong>«tres» meses</strong>, que podría leerse también como otro número —importa, porque en
+IMG_1613 el mismo suplicante habla de «un año y dos meses» de prisión sufrida: son dos
+cómputos distintos (lo que lleva esperando los autos frente al total padecido), no una
+contradicción, pero conviene no forzarlos.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1613">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 23</span><h3>IMG_1613</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1613" aria-label="Ampliar la lámina IMG_1613">
+        <img src="../img/guzman1794/p002.jpg" alt="Fotografía de la lámina IMG_1613" loading="lazy">
+      </button>
+      <figcaption>Mismo papel. Plana sin sello (verso del pliego). Tinta parda bien conservada,
+trazo firme, renglones largos y regulares, caja ocupando casi todo el ancho. Una doblez
+diagonal atraviesa la plana de arriba abajo. Raya de cierre al pie. El borde izquierdo está
+en sombra profunda por el lomo; el derecho muestra el canto de la hoja siguiente con cifras
+sueltas que no pertenecen a esta plana. En el ángulo superior izquierdo de la fotografía hay
+un papel de conservación arrugado (relleno moderno). Sin foliación visible. Pequeña marca de
+tinta ovalada en el margen derecho, a la altura del cuarto renglón.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Fol. 1v. Continuación del escrito de Guzmán a la Audiencia. Refiere las
+diligencias hechas para que el licenciado don Diego López remitiese la causa, la carta que se
+le escribió en veinte de mayo, la repetición infructuosa de la diligencia, y el daño que la
+prisión le causa en bienes muebles y semovientes. Es la plana mejor conservada y más legible
+del tramo.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Ballesteros, haver Remitido <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Averigua<u class="exp" title="abreviatura desarrollada">[cio]</u>n al Lizenciado D<u class="exp" title="abreviatura desarrollada">[o]</u>n Dieg<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">Lopez, aquien se le escribio Carta</span>
+<span class="ln">en veinte de Mayo, p<u class="exp" title="abreviatura desarrollada">[o]</u>r la q<u class="exp" title="abreviatura desarrollada">[ue]</u> los dixi-</span>
+<span class="ln">sen á ese mismo tribunal, en</span>
+<span class="ln">caso de estar en su poder, y segun</span>
+<span class="ln">esoi entendido se ha Repetido la</span>
+<span class="ln">misma dilijencia sin q<u class="exp" title="abreviatura desarrollada">[ue]</u> se haya</span>
+<span class="ln">surtido efecto, y en tanto me ha-</span>
+<span class="ln">llo padeciendo sin causa, ni moti-</span>
+<span class="ln">bo tan larga prision, ser la de</span>
+<span class="ln">un año, y dos meses q<u class="exp" title="abreviatura desarrollada">[ue]</u> sufri an-</span>
+<span class="ln">tes de ocurrir a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> V<u class="exp" title="abreviatura desarrollada">[uestra]</u> A<u class="exp" title="abreviatura desarrollada">[lteza]</u> con perdi-</span>
+<span class="ln">da notable de mis bienes, muebles</span>
+<span class="ln">y semovientes, y caciendo q<u class="exp" title="abreviatura desarrollada">[ue]</u> si yo</span>
+<span class="ln">no me muebo, mi prision sera</span>
+<span class="ln">sin termino, p<u class="exp" title="abreviatura desarrollada">[o]</u>r que haviendo</span>
+<span class="ln">sido mi prision Injusta, han</span>
+<span class="ln">de dar modo los mismos que</span>
+<span class="ln">conocieron de la Causa, de q<u class="exp" title="abreviatura desarrollada">[ue]</u> jamas</span>
+<span class="ln">llegue ante la justificacion de V<u class="exp" title="abreviatura desarrollada">[uestra]</u> A<u class="exp" title="abreviatura desarrollada">[lteza]</u>,</span>
+<span class="ln">asi p<u class="exp" title="abreviatura desarrollada">[o]</u>r este motibo, como p<u class="exp" title="abreviatura desarrollada">[o]</u>r aprobe-</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…Ballesteros haber remitido […] la averiguación al licenciado don Diego López, a quien se le
+escribió carta en veinte de mayo, por la que [se le pedía] que los dirigiese a ese mismo
+tribunal en caso de estar en su poder; y según estoy entendido se ha repetido la misma
+diligencia sin que haya surtido efecto, y en tanto me hallo padeciendo sin causa ni motivo
+tan larga prisión —la de un año y dos meses que sufrí antes de ocurrir a […] Vuestra Alteza—,
+con pérdida notable de mis bienes muebles y semovientes; y haciendo [ver] que si yo no me
+muevo mi prisión será sin término, porque, habiendo sido mi prisión injusta, han de dar modo
+los mismos que conocieron de la causa de que jamás llegue ante la justificación de Vuestra
+Alteza. Así por este motivo como por aprove-…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta. Es la plana más segura del tramo: se lee renglón a renglón. Dos puntos
+no se dejan fijar: la palabra o abreviatura entre «ocurrir a» y «V[uestra] A[lteza]»
+(hay un signo largo que podría ser «la R[ea]l» o una fórmula de cortesía), y el giro
+«ser la de un año», donde la primera palabra admite «ser» o «sea». El apellido del coronel se
+confirma aquí como <strong>Ballesteros</strong> (la ligadura <em>st</em> con ese alta se lee limpiamente a 800 %),
+no «Ballenzuela» ni «Valenzuela» como podría sugerir un vistazo rápido.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1614">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 23</span><h3>IMG_1614</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1614" aria-label="Ampliar la lámina IMG_1614">
+        <img src="../img/guzman1794/p003.jpg" alt="Fotografía de la lámina IMG_1614" loading="lazy">
+      </button>
+      <figcaption>Mismo papel. <strong>Plana muy castigada por el traspaso de tinta de la cara opuesta</strong>
+(fol. 2v), que atraviesa la hoja y se superpone a la escritura propia en los ocho primeros
+renglones; a eso se suman tres o cuatro tachaduras espesas del propio redactor. Tinta más
+negra y cargada que en 1612-1613. Raya de cierre al pie. Por encima del borde superior de la
+plana asoma el arco de un sello impreso de armas reales que pertenece a **otra hoja del
+legajo**, no a esta plana. Roturas grandes en el margen inferior y en el derecho. Rúbrica o
+lazo de tinta en el margen izquierdo, a media altura. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Fol. 2r. Sigue el escrito de Guzmán: pide licencia bajo caución juratoria para
+ir por tres meses al lugar de su domicilio, que se le entregue un [despacho] provisional
+dirigido al alcalde o justicia o comisionado que hubiere en <strong>Aguachapa[n]</strong>, o a cualquier
+persona blanca que sepa leer y escribir, a fin de que notifique al licenciado don Diego López
+que entregue la causa y la remita a la Escribanía de Cámara.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">char algo de otros siguientes, que</span>
+<span class="ln">en este mes empiesan á contar, y</span>
+<span class="ln">Recaudar algunas dependencias <u class="exp" title="abreviatura desarrollada">[tachado]</u></span>
+<span class="ln">antes q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> hagan <u class="exp" title="abreviatura desarrollada">[in]</u>cobrable<u class="exp" title="abreviatura desarrollada">[s]</u></span>
+<span class="ln">si, ya <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> suplico á V<u class="exp" title="abreviatura desarrollada">[uestra]</u> A<u class="exp" title="abreviatura desarrollada">[lteza]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">sea mui servido concederme licen-</span>
+<span class="ln">cia baxo de Caucion Juratoria, p<u class="exp" title="abreviatura desarrollada">[o]</u>r</span>
+<span class="ln">ir por tres meses al lugar de mi</span>
+<span class="ln">domicilio <u class="exp" title="abreviatura desarrollada">[tachado]</u> entregandoseme un <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>sional, para el Alcalde ó Justi-</span>
+<span class="ln">cia p<u class="exp" title="abreviatura desarrollada">[rese]</u>nte <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ó Comisionado, q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">hubiere en Aguachapa, ó <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> su</span>
+<span class="ln">efecto para qualquiera persona</span>
+<span class="ln">blanca, q<u class="exp" title="abreviatura desarrollada">[ue]</u> sepa leer, y escribir, á</span>
+<span class="ln">fin de q<u class="exp" title="abreviatura desarrollada">[ue]</u> notifique al esp<u class="exp" title="abreviatura desarrollada">[resa]</u>do</span>
+<span class="ln">Lizenciado D<u class="exp" title="abreviatura desarrollada">[o]</u>n Diego Lopez entre-</span>
+<span class="ln">gue la citada Causa, y la Remita</span>
+<span class="ln">al notificante á la Escrivania</span>
+<span class="ln">de Camara, dandome Recivo de</span>
+<span class="ln">ella, previniendole q<u class="exp" title="abreviatura desarrollada">[ue]</u> en caso de</span>
+<span class="ln">no hallarse alli ponga la dilijen-</span>
+<span class="ln">cia q<u class="exp" title="abreviatura desarrollada">[ue]</u> lo acredite, y me debuelba</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…char algo de otros [meses] siguientes, que en este mes empiezan a contar, y recaudar algunas
+dependencias antes que […] se hagan incobrables […] suplico a Vuestra Alteza […] sea muy
+servido concederme licencia, bajo de caución juratoria, para ir por tres meses al lugar de mi
+domicilio, entregándoseme un [despacho] provisional para el alcalde o justicia presente o
+comisionado que hubiere en Aguachapa[n], o […] su efecto para cualquiera persona blanca que
+sepa leer y escribir, a fin de que notifique al expresado licenciado don Diego López que
+entregue la citada causa y la remita al notificante a la Escribanía de Cámara, dándome recibo
+de ella, previniéndole que en caso de no hallarse allí ponga la diligencia que lo acredite y
+me la devuelva…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media. La mitad inferior (desde «cia baxo de Caucion Juratoria») se lee bien y
+da el contenido dispositivo de la petición, incluido el topónimo <strong>Aguachapa</strong>. La mitad
+superior (renglones 1-5) está cubierta por el traspaso y por tachaduras: «Recaudar» podría ser
+«Recusar»; «[in]cobrable[s]» es lectura por el trazo final, no por la palabra entera; y el
+renglón que empieza «si, ya…» no se deja reconstruir en absoluto. He dejado en `[...]` lo que
+no veo, incluida la palabra que designa el despacho («provisional» aparece completa en
+IMG_1615 y IMG_1616, pero aquí sólo veo su cola).
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1615">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 23</span><h3>IMG_1615</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1615" aria-label="Ampliar la lámina IMG_1615">
+        <img src="../img/guzman1794/p004.jpg" alt="Fotografía de la lámina IMG_1615" loading="lazy">
+      </button>
+      <figcaption>Mismo papel. Plana sin sello. **Los cinco o seis renglones superiores están
+arrasados por borrones gruesos y tachaduras** —tinta muy cargada, salpicaduras— además del
+traspaso de la cara opuesta; la mitad inferior mejora mucho. Doblez diagonal marcada. Raya de
+cierre al pie. Papel de conservación arrugado en el ángulo superior izquierdo de la foto.
+Borde izquierdo en sombra por el lomo. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Fol. 2v. Final del escrito de Guzmán a la Audiencia: pide que el mismo despacho
+sirva para notificar en otro valle, para los jueces que conocieron en la causa, con
+apercibimiento y multa de quinientos pesos; que se hagan todas las diligencias y
+averiguaciones hasta descubrir el paradero de los autos; y cierra con el <em>suplico</em>: quiere
+vindicar su honor y buena conducta «de tan fea calumnia» y resarcir los daños.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">el provisional, para q<u class="exp" title="abreviatura desarrollada">[ue]</u> qual-</span>
+<span class="ln">quiera persona blanca, q<u class="exp" title="abreviatura desarrollada">[ue]</u> tambien</span>
+<span class="ln">sepa leer, y escribir e<u class="exp" title="abreviatura desarrollada">[n]</u> otro Valle</span>
+<span class="ln">notificando á los Jueces q<u class="exp" title="abreviatura desarrollada">[ue]</u> han co-</span>
+<span class="ln">nosido en ella lo Remitan y me-</span>
+<span class="ln">diante a <u class="exp" title="abreviatura desarrollada">[tachado]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> con apercebi-</span>
+<span class="ln">m<u class="exp" title="abreviatura desarrollada">[ien]</u>to de q<u class="exp" title="abreviatura desarrollada">[ue]</u> le ymtimare <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y con Correo</span>
+<span class="ln">aproposito y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> siempre á <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">gas, antes de su Valor <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ó la mul-</span>
+<span class="ln">ta de quinientos pesos, haciendo</span>
+<span class="ln">en caso de no parecer la Causa</span>
+<span class="ln">todas las dilijencias, y aberigua-</span>
+<span class="ln">ciones necesarias, hasta descubrir</span>
+<span class="ln">su paradero, y verificar su Rem<u class="exp" title="abreviatura desarrollada">[i]</u>-</span>
+<span class="ln">sion q<u class="exp" title="abreviatura desarrollada">[ue]</u> al cabo de los tres meses</span>
+<span class="ln">verificaré mi Regreso, como que</span>
+<span class="ln">tanto me combiene vindicar mi</span>
+<span class="ln">honor, y buena conducta de tan fea</span>
+<span class="ln">calumnia, y Resarcir los daños cau-</span>
+<span class="ln">sados, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> se me causaren contra</span>
+<span class="ln">quien haya lugar por tanto = A V<u class="exp" title="abreviatura desarrollada">[uestra]</u> A<u class="exp" title="abreviatura desarrollada">[lteza]</u></span>
+<span class="ln">suplico sea mui servido determin<u class="exp" title="abreviatura desarrollada">[ar]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…el provisional, para que cualquiera persona blanca que también sepa leer y escribir, en otro
+valle, notificando a los jueces que han conocido en ella la remitan; y mediante […] con
+apercibimiento de que le intimaré […] y con correo a propósito, y […] siempre a […], antes de
+su valor […] o la multa de quinientos pesos; haciendo, en caso de no parecer la causa, todas
+las diligencias y averiguaciones necesarias hasta descubrir su paradero y verificar su
+remisión; que al cabo de los tres meses verificaré mi regreso, como que tanto me conviene
+vindicar mi honor y buena conducta de tan fea calumnia y resarcir los daños causados y los
+que se me causaren, contra quien haya lugar. Por tanto, a Vuestra Alteza suplico sea muy
+servido determinar…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta en la mitad inferior, baja en la superior. Desde «ta de quinientos
+pesos» hasta el final se lee con seguridad, incluida la multa, el plazo de tres meses y la
+cláusula de vindicación del honor. No se dejan fijar los renglones 6 a 9: la palabra tras
+«mediante a», el verbo «ymtimare», el sustantivo que precede a «…gas» (¿«cargas»?,
+¿«entregas»?) y lo que hay entre «aproposito y» y «siempre á». La cifra <strong>quinientos pesos</strong>
+sí es segura.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1616">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 23</span><h3>IMG_1616</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1616" aria-label="Ampliar la lámina IMG_1616">
+        <img src="../img/guzman1794/p005.jpg" alt="Fotografía de la lámina IMG_1616" loading="lazy">
+      </button>
+      <figcaption>Mismo papel. Plana de recto: por encima del borde superior asoma el arco de un
+sello impreso de armas de otra hoja del legajo. **Traspaso muy fuerte de la cara opuesta y
+tachaduras densas en los renglones 4 a 9**, justo donde van la fecha del auto y los nombres,
+que quedan en parte cegados. Tinta negra cargada. Borrón grande a la derecha, a la altura del
+séptimo renglón. Raya de cierre al pie. Rotura del borde derecho. Rúbrica o lazo de tinta en
+el margen izquierdo, a media altura. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Fol. 3r. Fin del escrito de Guzmán (con su suscripción) e inserción del **auto de
+la Sala de la Real Audiencia** que lo provee: se le concede permiso por tres meses para ir a
+recaudar sus intereses, bajo caución juratoria y con obligación de presentarse al cabo, y se
+manda librar provisional al juez del pueblo de Aguachapán para que recoja del licenciado don
+Diego López la causa contra Guzmán. Es la plana que da <strong>los nombres de los oidores</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">nar como pido en justicia, y juro</span>
+<span class="ln">lo necesario <u class="exp" title="abreviatura desarrollada">[etc.]</u> = Mariano Guzman =</span>
+<span class="ln">En cuia vista se probeió el Auto</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> dice asi = <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Ju<u class="exp" title="abreviatura desarrollada">[b]</u>io cinco de</span>
+<span class="ln">mil setez<u class="exp" title="abreviatura desarrollada">[ient]</u>os novent<u class="exp" title="abreviatura desarrollada">[a]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> quatro = <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Señores <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Regente D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan Josef</span>
+<span class="ln">Villalengua, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> oidores D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juaquin</span>
+<span class="ln">Vasco, D<u class="exp" title="abreviatura desarrollada">[o]</u>n <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>co Robledo, D<u class="exp" title="abreviatura desarrollada">[o]</u>n Jaco-</span>
+<span class="ln">bo de Villa Urrutia, y D<u class="exp" title="abreviatura desarrollada">[o]</u>n Manuel</span>
+<span class="ln">del Campo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de este Escrito</span>
+<span class="ln">Dixeron: Concedese permiso á</span>
+<span class="ln">Mariano Guzman p<u class="exp" title="abreviatura desarrollada">[or]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r</span>
+<span class="ln">termino de tres meses, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> á</span>
+<span class="ln">pas<u class="exp" title="abreviatura desarrollada">[e]</u> á desempeñ<u class="exp" title="abreviatura desarrollada">[ar]</u> á Recaudar sus</span>
+<span class="ln">yntereses, con calidad de q<u class="exp" title="abreviatura desarrollada">[ue]</u> pasado</span>
+<span class="ln">d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho termino se ha de presentar</span>
+<span class="ln">á este tribunal. Otorgarsele en la</span>
+<span class="ln">R<u class="exp" title="abreviatura desarrollada">[ea]</u>l <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> baxo Caucion Juratoria,</span>
+<span class="ln">y librese provisional al Juez</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>bo el Pueblo de Agua-</span>
+<span class="ln">chapan, para q<u class="exp" title="abreviatura desarrollada">[ue]</u> Recoja <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Lic<u class="exp" title="abreviatura desarrollada">[encia]</u>do</span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n Diego Lopez la causa contra</span>
+<span class="ln">el citado Guzman, y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…nar como pido en justicia, y juro lo necesario, etc. — Mariano Guzmán.</p>
+<p>En cuya vista se proveyó el auto que dice así: «[…] ju[b]io cinco de mil setecientos noventa
+[y] cuatro. […] Señores: […] regente don Juan Josef Villalengua, […] oidores don Joaquín
+Vasco, don [Francis]co Robledo, don Jacobo de Villaurrutia y don Manuel del Campo, […] de
+este escrito dijeron: concédese permiso a Mariano Guzmán […] por término de tres meses […]
+para que pase a desempeñar y recaudar sus intereses, con calidad de que, pasado dicho
+término, se ha de presentar a este tribunal; otórguesele en la Real […] bajo caución
+juratoria; y líbrese provisional al juez […] del pueblo de Aguachapán para que recoja del
+licenciado don Diego López la causa contra el citado Guzmán y […]»</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media. El dispositivo del auto (permiso, tres meses, caución juratoria,
+presentación al cabo del término, provisional al juez de Aguachapán) es seguro. Los nombres
+se leen en parte y con desigual certeza: <strong>Villalengua</strong> (regente Juan Josef de Villalengua),
+<strong>Villa Urrutia</strong> (Jacobo de Villaurrutia) y <strong>del Campo</strong> (Manuel del Campo) son claros;
+«D[o]n Juaquin Vasco» y «D[o]n […]co Robledo» tienen la mitad del nombre bajo borrón —de
+Robledo sólo veo el «…co» final del nombre de pila. **La fecha del auto no se deja cerrar del
+todo**: «cinco de» es seguro, el mes está escrito «Jubio» —que puede ser <em>Junio</em> o <em>Julio</em>—,
+y entre «novent[a]» y «quatro» hay un borrón que se come la conjunción; el año es 1794 y no
+otro, porque encaja con la habilitación del papel y con la data de IMG_1617. No he
+reconstruido nada de esto por conjetura.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1617">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 23</span><h3>IMG_1617</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1617" aria-label="Ampliar la lámina IMG_1617">
+        <img src="../img/guzman1794/p006.jpg" alt="Fotografía de la lámina IMG_1617" loading="lazy">
+      </button>
+      <figcaption>Mismo papel. Plana sin sello. Traspaso fuerte y tachaduras espesas en los
+renglones 1 a 8, que dejan ilegible buena parte del final del auto. La mitad inferior es la
+mejor conservada de la plana. Doblez diagonal. Raya de cierre al pie. El borde izquierdo está
+en sombra por el lomo y hay papel de conservación arrugado arriba a la izquierda. Sin
+foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Fol. 3v. <strong>Plana de la costura.</strong> En su mitad superior acaba el auto de la
+Audiencia (notificación al juez, remisión inmediata) y la certificación de Hurtado, con la
+mención de las rúbricas, la data en la Nueva Guatemala y la suscripción «Juan Hurtado». En su
+mitad inferior, sin solución de continuidad, <strong>empieza un documento nuevo</strong>: el escrito de
+Mariano Guzmán al alcalde ordinario de primera nominación de Sensentí, don Juan Josef
+Carrejón.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">sin perdida de tiempo; y caso de que</span>
+<span class="ln">estuvi<u class="exp" title="abreviatura desarrollada">[er]</u>a en poder del comisionado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>cionado, contestara el proximo</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> al mismo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> mandado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Subdelegado</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la</span>
+<span class="ln">Causa <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> quien la hubiere, y la Re-</span>
+<span class="ln">mita ymmediatamente <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> tribu-</span>
+<span class="ln">nal: Asi lo probeyeron <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> mandaron</span>
+<span class="ln">y Rubricaron de que doy fe =</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Son?]</u></u> cinco Rubricas. Juan Hurtado</span>
+<span class="ln">rado = <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> yo el q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> haga</span>
+<span class="ln">escribo lo mandado p<u class="exp" title="abreviatura desarrollada">[o]</u>r el Juez</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ibo del Pueblo de Agua-</span>
+<span class="ln">chapa<u class="exp" title="abreviatura desarrollada">[n]</u> doy la presente en la</span>
+<span class="ln">Nueba Guatemala á viente y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de</span>
+<span class="ln">Julio de mil setez<u class="exp" title="abreviatura desarrollada">[ient]</u>os nobenta y</span>
+<span class="ln">quatro Años = Juan Hurtado =</span>
+<span class="ln">Señor Alcalde ordinario de Sensen-</span>
+<span class="ln">t<u class="exp" title="abreviatura desarrollada">[í]</u> de prim<u class="exp" title="abreviatura desarrollada">[er]</u>a Nominacion D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan</span>
+<span class="ln">Josef Carrejon = Mariano Guz-</span>
+<span class="ln">man Sargento primero de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…sin pérdida de tiempo; y caso de que estuviera en poder del comisionado […] contestará el
+próximo […] que […] mandado […] subdelegado […] la causa […] quien la hubiere, y la remita
+inmediatamente [a este] tribunal. Así lo proveyeron […] mandaron y rubricaron, de que doy fe.
+[Son] cinco rúbricas. Juan Hurtado.</p>
+<p>…[Y] yo, el que […] escribo lo mandado por el juez […] del pueblo de Aguachapa[n], doy la
+presente en la Nueva Guatemala a veinte y […] de julio de mil setecientos noventa y cuatro
+años. — Juan Hurtado.</p>
+<p>Señor alcalde ordinario de Sensentí de primera nominación, don Juan Josef Carrejón: Mariano
+Guzmán, sargento primero de […] [milicias]…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta en la mitad inferior, baja en la superior. El corte documental, la
+data «Nueba Guatemala … Julio de mil setez. nobenta y quatro», la suscripción de **Juan
+Hurtado<strong> y el encabezamiento del nuevo escrito al alcalde </strong>Juan Josef Carrejón** de
+<strong>Sensentí</strong> son seguros, así como la mención de que el auto llevaba <strong>cinco rúbricas</strong>.
+<strong>El día del mes no se deja fijar</strong>: lo que hay tras «á viente y» está emborronado y admite
+varias lecturas (he mirado la misma línea en dos bandas distintas y en ninguna se resuelve);
+no lo completo. Tampoco se dejan leer los renglones 1 a 8, con la parte final del auto y el
+nombre del comisionado o subdelegado.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1618">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 7 de 23</span><h3>IMG_1618</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1618" aria-label="Ampliar la lámina IMG_1618">
+        <img src="../img/guzman1794/p007.jpg" alt="Fotografía de la lámina IMG_1618" loading="lazy">
+      </button>
+      <figcaption>Mismo papel. Plana de recto: por encima del borde superior asoma el arco de un
+sello impreso de armas de otra hoja del legajo. **Es de las planas más dañadas por el
+traspaso**: los renglones 3 a 9 están casi enteramente cubiertos por la escritura de la cara
+opuesta, sumada a tachaduras propias. La mitad inferior mejora. Raya de cierre al pie.
+Rúbrica o lazo de tinta en el margen izquierdo, a media altura. Roturas en el margen inferior.
+Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Fol. 4r. Cuerpo del escrito de Guzmán al alcalde de Sensentí: expone que salió
+oprimido sin que se le justificase delito, que ocurrió a la Audiencia de Guatemala como
+tribunal de agravios, que salió de la cárcel bajo caución juratoria con la obligación de no
+[litigar/alejarse] hasta adquirir los autos, y que presenta ahora el provisional, cosa que no
+hizo antes por no haber estado el alcalde en su casa; añade que en ese tiempo habló
+verbalmente con su coronel don Josef de Ballesteros para solicitar dichos autos, como quien
+los tenía.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Milicias parezco ante V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d en</span>
+<span class="ln">toda forma de d<u class="exp" title="abreviatura desarrollada">[e]</u>r<u class="exp" title="abreviatura desarrollada">[ech]</u>o y Digo: Que ha-</span>
+<span class="ln">viendo salido <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> oprimido, p<u class="exp" title="abreviatura desarrollada">[o]</u>r</span>
+<span class="ln">no haber<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> justificado mi delito</span>
+<span class="ln">en esta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el publico, aunque</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> tubo ocurri á presen<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> aquella Audiencia</span>
+<span class="ln">de Guatemala conosiendo tribunal</span>
+<span class="ln">de agravios, y haviendo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la Carcel <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> yo cau-</span>
+<span class="ln">sion Juratoria, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> no <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">hasta adquirir los <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que</span>
+<span class="ln">contra mi siguio <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> sabea <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> provi-</span>
+<span class="ln">sional de la R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Aud<u class="exp" title="abreviatura desarrollada">[ienci]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">mente presento lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> no havia</span>
+<span class="ln">hecho Antes, p<u class="exp" title="abreviatura desarrollada">[o]</u>r no haber esta-</span>
+<span class="ln">do V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d en su casa, pues en ese</span>
+<span class="ln">tiempo antes de parecer ante</span>
+<span class="ln">V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d hable verbalmente con</span>
+<span class="ln">mi Coronel D<u class="exp" title="abreviatura desarrollada">[o]</u>n Josef de Balles-</span>
+<span class="ln">teros a fin de solicitar d<u class="exp" title="abreviatura desarrollada">[ic]</u>hos au-</span>
+<span class="ln">tos como quien los tenia</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…[de] milicias, parezco ante Vuestra Merced en toda forma de derecho y digo: que habiendo
+salido […] oprimido, por no habérseme justificado mi delito en esta […] el público, aunque
+[…] ocurrí a presentar[me] […] [en] aquella Audiencia de Guatemala, conociendo [como]
+tribunal de agravios; y habiendo […] de la cárcel […] yo caución juratoria, […] no […] hasta
+adquirir los [autos] que contra mí siguió […], que […] el provisional de la Real Audiencia
+que […] presento, lo que no había hecho antes por no haber estado Vuestra Merced en su casa,
+pues en ese tiempo, antes de parecer ante Vuestra Merced, hablé verbalmente con mi coronel
+don Josef de Ballesteros a fin de solicitar dichos autos, como quien los tenía.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja-media. Sólo el último tercio (desde «mente presento lo q[ue] no havia
+hecho Antes») se lee con seguridad, y ahí está el dato bueno: el nombre del **coronel don
+Josef de Ballesteros** y la razón de la demora (el alcalde no estaba en su casa). El primer
+tercio está tan cubierto de traspaso que no me atrevo a proponer palabras: lo dejo en `[...]`.
+La palabra tras «y haviendo […] de la Carcel» —que debería decir cómo salió— no se ve.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1619">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 8 de 23</span><h3>IMG_1619</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1619" aria-label="Ampliar la lámina IMG_1619">
+        <img src="../img/guzman1794/p008.jpg" alt="Fotografía de la lámina IMG_1619" loading="lazy">
+      </button>
+      <figcaption>Mismo papel. Plana sin sello. **Traspaso muy fuerte y tachaduras en los
+renglones 2 a 13**; el último tercio es limpio y legible. Tinta negra. Doblez diagonal. Raya
+de cierre al pie. Papel de conservación arrugado arriba a la izquierda; borde izquierdo en
+sombra. Marca de tinta en el margen derecho. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Fol. 4v. Sigue el escrito al alcalde: lo que el coronel le respondió sobre el
+paradero de los autos, el correo, y la petición de que se den por presentados el provisional
+y la petición, y de que el alcalde responda al pie de la citada orden de Su Alteza.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">en su poder, y me respondio q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">en aquel mismo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> estaria <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Testi<u class="exp" title="abreviatura desarrollada">[monio]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> los havia <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r</span>
+<span class="ln">al <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la Ciudad <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">d<u class="exp" title="abreviatura desarrollada">[ic]</u>hos con el fin de q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> con</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> con el Correo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">hasta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en aquella <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Aud<u class="exp" title="abreviatura desarrollada">[iencia]</u> de Guatemala y como viendo</span>
+<span class="ln">yo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a fin de solicitar</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r ver mui ym-</span>
+<span class="ln">portante d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho q<u class="exp" title="abreviatura desarrollada">[ue]</u> parescan en</span>
+<span class="ln">aquel tribunal, y V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d al mis-</span>
+<span class="ln">mo tiempo á satisfacer lo man-</span>
+<span class="ln">dado, pido en merito de justi-</span>
+<span class="ln">cia, se sirva de dar p<u class="exp" title="abreviatura desarrollada">[o]</u>r presenta-</span>
+<span class="ln">do, y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> admitido este provi-</span>
+<span class="ln">sional, y juntamente mi peti-</span>
+<span class="ln">cion, para q<u class="exp" title="abreviatura desarrollada">[ue]</u> Respondiendo V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d</span>
+<span class="ln">al pie de la citada orden de</span>
+<span class="ln">Su Altesa, y tambien el Escri-</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…en su poder, y me respondió que en aquel mismo […] que estaría […] dicho testimonio […] los
+había […] por […] de la ciudad […] dichos, con el fin de que […] con el correo […] hasta […]
+en aquella Audiencia de Guatemala. Y como, viendo yo […] a fin de solicitar […] por ver muy
+importante que dichos [autos] parezcan en aquel tribunal, y Vuestra Merced al mismo tiempo
+[proceda] a satisfacer lo mandado, pido en mérito de justicia se sirva de dar por presentado
+y [bien] admitido este provisional, y juntamente mi petición, para que, respondiendo Vuestra
+Merced al pie de la citada orden de Su Alteza y también el escri[to]…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja en los dos primeros tercios, alta en el último. Los nueve primeros
+renglones están cegados por el traspaso y por tachaduras: se distinguen palabras sueltas
+(«Correo», «Ciudad», «Aud. de Guatemala») pero no la frase. Desde «portante d[ic]ho q[ue]
+parescan» hasta el final se lee limpiamente, y ahí está lo sustantivo: la petición de que se
+den por presentados el provisional y la petición, y de que el alcalde responda **al pie de la
+citada orden de Su Alteza**.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1620">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 9 de 23</span><h3>IMG_1620</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1620" aria-label="Ampliar la lámina IMG_1620">
+        <img src="../img/guzman1794/p009.jpg" alt="Fotografía de la lámina IMG_1620" loading="lazy">
+      </button>
+      <figcaption>Mismo papel. Plana de recto: arco de sello impreso de otra hoja asomando sobre
+el borde superior. Traspaso fuerte y tachaduras en los renglones 4 a 8; el resto legible.
+Tinta negra. Raya de cierre al pie. Rúbrica o lazo de tinta en el margen izquierdo, a media
+altura. Roturas en el margen inferior. En la foto asoma a la izquierda el canto de otra hoja
+con cifras. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Fol. 5r. Final de la petición de Guzmán: pide que se le devuelvan ambos
+documentos presentados para verificar y seguir lo mandado, y —punto nuevo e importante— que,
+por no tener el alcalde cómo certificar de oídas lo que el coronel dijo, **se mande llamar a
+tres testigos nominados**: el teniente de milicias don Jacinto Mejía, don Ramón de Molina y
+don Fernando de Molina, delante de quienes el coronel dijo haber mandado los autos a
+Guatemala, para que bajo sus fueros y juramento declaren.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">tas esta mi peticion, se sirva</span>
+<span class="ln">en justicia bolberme ambos docu-</span>
+<span class="ln">mentos presentados, para ve-</span>
+<span class="ln">rificar seguir lo mandado pre-</span>
+<span class="ln">viniendo en <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> suplico á V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> Responda en el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> provisional</span>
+<span class="ln">p<u class="exp" title="abreviatura desarrollada">[o]</u>r no eran <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> declarandome =</span>
+<span class="ln">d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho señor Coronel, y no tener</span>
+<span class="ln">V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d como certificar las voces</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> ami me dijo de haver cami-</span>
+<span class="ln">nado los autos á Guatemala</span>
+<span class="ln">se sirva V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d en justicia de m<u class="exp" title="abreviatura desarrollada">[an]</u>-</span>
+<span class="ln">dar llamar al teniente de Mi-</span>
+<span class="ln">licias D<u class="exp" title="abreviatura desarrollada">[o]</u>n Jacinto Mejia á D<u class="exp" title="abreviatura desarrollada">[o]</u>n</span>
+<span class="ln">Ramon de Molina y á D<u class="exp" title="abreviatura desarrollada">[o]</u>n Fer-</span>
+<span class="ln">nando de Molina delante de</span>
+<span class="ln">quienes d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho mi Coronel me</span>
+<span class="ln">dijo haver mandado los autos</span>
+<span class="ln">citados á Guatemala, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> est<u class="exp" title="abreviatura desarrollada">[os]</u></span>
+<span class="ln">vajo de los fueros q<u class="exp" title="abreviatura desarrollada">[ue]</u> gozan, y</span>
+<span class="ln">solemnidad del juramento, siendo</span>
+<span class="ln">preguntado<u class="exp" title="abreviatura desarrollada">[s]</u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d digan <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…tas esta mi petición, se sirva en justicia devolverme ambos documentos presentados para
+verificar [y] seguir lo mandado, previniendo […]. Suplico a Vuestra Merced que responda en el
+[…] provisional […] declarándome […] dicho señor coronel; y, no teniendo Vuestra Merced cómo
+certificar las voces que a mí me dijo de haber caminado los autos a Guatemala, se sirva
+Vuestra Merced en justicia de mandar llamar al teniente de milicias don Jacinto Mejía, a don
+Ramón de Molina y a don Fernando de Molina, delante de quienes dicho mi coronel me dijo haber
+mandado los autos citados a Guatemala; y que estos, bajo de los fueros que gozan y solemnidad
+del juramento, siendo preguntados por Vuestra Merced, digan […]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta. Los tres nombres —<strong>Jacinto Mejía</strong>, teniente de milicias, y
+<strong>Ramón</strong> y <strong>Fernando de Molina</strong>— se leen con claridad, igual que el tratamiento «don» a
+los tres y la mención de los <strong>fueros que gozan</strong> (militares). No se dejan fijar los
+renglones 5 a 7, tachados y traspasados; en particular la frase que empieza «p[o]r no eran…»
+queda sin sentido seguro.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1621">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 10 de 23</span><h3>IMG_1621</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1621" aria-label="Ampliar la lámina IMG_1621">
+        <img src="../img/guzman1794/p010.jpg" alt="Fotografía de la lámina IMG_1621" loading="lazy">
+      </button>
+      <figcaption>Mismo papel. Plana sin sello. Traspaso y tachaduras espesas en los renglones 3
+a 9. Mitad inferior limpia. Dos rayas horizontales de separación: una corta bajo la firma de
+Guzmán y otra al pie. <strong>Nota marginal izquierda: «Autos»</strong> (o «Auto[s]»), de la misma mano
+del cuerpo. Papel de conservación arriba a la izquierda; borde izquierdo en sombra. Marca de
+tinta en el margen derecho. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Fol. 5v. <strong>Segunda costura de la plana.</strong> En su mitad superior acaba la petición
+de Guzmán y va su <strong>suscripción autógrafa</strong>: «Juro en toda forma de derecho y lo firmo =
+Mariano Guzmán». Debajo, tras una raya de separación y con la llamada marginal «<strong>Autos</strong>»,
+empieza la actuación del juzgado de Sensentí: el alcalde manda agregar el provisional a la
+petición y, **en vista de no poder este juzgado dar cumplimiento a lo mandado por la Real
+Audiencia** de recoger los autos, manda poner a continuación la razón de por qué no ha tenido
+efecto.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">cierto lo d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho, y si mi Coronel dijo</span>
+<span class="ln">haver mandado ya los autos de</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> se hace mencion, p<u class="exp" title="abreviatura desarrollada">[o]</u>r q<u class="exp" title="abreviatura desarrollada">[ue]</u> con d<u class="exp" title="abreviatura desarrollada">[ic]</u>has</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> me despache V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d con</span>
+<span class="ln">los mismos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> llegado lo</span>
+<span class="ln">qual <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en toda <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> es</span>
+<span class="ln">justicia = A V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d pido y suplico</span>
+<span class="ln">sea mui servido <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> mandar ha-</span>
+<span class="ln">ser segun lo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> arriba <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">do, p<u class="exp" title="abreviatura desarrollada">[o]</u>r parecer<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ser mui de</span>
+<span class="ln">justicia, Juro en toda forma de</span>
+<span class="ln">d<u class="exp" title="abreviatura desarrollada">[e]</u>r<u class="exp" title="abreviatura desarrollada">[ech]</u>o y lo firmo = Mariano</span>
+<span class="ln">Guzman</span>
+<span class="ln">______________________________</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen: Autos]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> presentada esta peti-</span>
+<span class="ln">sion, agreguese á ella el pro-</span>
+<span class="ln">visional q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> hize, y en vista</span>
+<span class="ln">de no poderse p<u class="exp" title="abreviatura desarrollada">[o]</u>r este Juzgado</span>
+<span class="ln">dar cumplimiento á lo man-</span>
+<span class="ln">dado p<u class="exp" title="abreviatura desarrollada">[o]</u>r la R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Aud<u class="exp" title="abreviatura desarrollada">[ienci]</u>a de Recojerse</span>
+<span class="ln">los autos seguidos al P<u class="exp" title="abreviatura desarrollada">[resen]</u>t<u class="exp" title="abreviatura desarrollada">[e]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">tado, pongase acontinuacion de</span>
+<span class="ln">este auto la Razon de p<u class="exp" title="abreviatura desarrollada">[o]</u>r q<u class="exp" title="abreviatura desarrollada">[ue]</u> no</span>
+<span class="ln">ha tenido efecto d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…cierto lo dicho, y si mi coronel dijo haber mandado ya los autos de que se hace mención,
+porque con dichas […] me despache Vuestra Merced con los mismos […]; llegado lo cual […] en
+toda […] es justicia. A Vuestra Merced pido y suplico sea muy servido […] mandar hacer según
+lo arriba […], por parecerme ser muy de justicia. Juro en toda forma de derecho, y lo firmo.
+— Mariano Guzmán.</p>
+<p>[Auto.] […] presentada esta petición, agréguese a ella el provisional que […] hice; y, en
+vista de no poderse por este juzgado dar cumplimiento a lo mandado por la Real Audiencia de
+recogerse los autos seguidos al presente […], póngase a continuación de este auto la razón de
+por qué no ha tenido efecto dicho […]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta. <strong>Quién firma es seguro: Mariano Guzmán firma de su mano</strong> («y lo
+firmo = Mariano Guzman»), lo que en este archivo no es trivial: el suplicante es sargento
+primero de milicias y sabe escribir. También es seguro el nervio del auto: el juzgado de
+Sensentí <strong>no puede</strong> cumplir lo mandado y ordena razonar por qué. No se dejan fijar los
+renglones 3 a 9 (tachados) ni la palabra final de la plana tras «no ha tenido efecto d[ic]ho»,
+que parece un sustantivo abreviado y podría ser «Recurso», «Despacho» o similar: lo dejo en
+`[...]`.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1622">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 11 de 23</span><h3>IMG_1622</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1622" aria-label="Ampliar la lámina IMG_1622">
+        <img src="../img/guzman1794/p011.jpg" alt="Fotografía de la lámina IMG_1622" loading="lazy">
+      </button>
+      <figcaption>Mismo papel. Plana de recto: arco de sello impreso de otra hoja asomando sobre
+el borde superior. <strong>Traspaso y tachaduras muy densas en los renglones 2 a 10</strong>; la mitad
+inferior es legible. Tinta negra. Doblez diagonal. Raya de cierre al pie. Rúbrica o lazo de
+tinta en el margen izquierdo, a media altura. Roturas importantes en el margen inferior y en
+el derecho. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Fol. 6r. Continuación del auto del alcalde: por lo que respecta a la
+justificación que Guzmán solicita, manda hacer comparecer a don Fernando Molina para que
+declare lo que le conste, y menciona a don Ramón Molina —estando el primero ausente por causa
+de Indias y el segundo […]—; manda que se le devuelvan a la parte los documentos y que se
+agreguen a este expediente. Cierra con la suscripción del alcalde: «Así lo proveo, mando y
+firmo, yo, don Juan Josef Carrejón, alcalde ordinario de primera nominación del **partido de
+Sensentí<strong>, </strong>con testigos a falta de escribano**», y la data de agosto.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">p<u class="exp" title="abreviatura desarrollada">[o]</u>r d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Supremo tribunal, y p<u class="exp" title="abreviatura desarrollada">[o]</u>r</span>
+<span class="ln">lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> respecta á la justificacion</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> solicita, hagase comparecer</span>
+<span class="ln">á D<u class="exp" title="abreviatura desarrollada">[o]</u>n Fernando Molina, p<u class="exp" title="abreviatura desarrollada">[ar]</u>a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ponga lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> le conste,</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> D<u class="exp" title="abreviatura desarrollada">[o]</u>n Ramon Molina y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> mediante á <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">se el primero ausente <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Causa de Indias y el segundo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> su <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">buelbase <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> con <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Escrito presentado p<u class="exp" title="abreviatura desarrollada">[ar]</u>a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">certificando asi <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> los <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">presedio entre el Coronel D<u class="exp" title="abreviatura desarrollada">[o]</u>n</span>
+<span class="ln">Josef de Ballesteros y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Naba<u class="exp" title="abreviatura desarrollada">[s]</u></span>
+<span class="ln">y esta parte los debuelban <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">agregarlos a este e<u class="exp" title="abreviatura desarrollada">[x]</u>pediente:</span>
+<span class="ln">Asi lo probeo, mando, y firmo</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿yo?]</u></u> D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan Josef Carrejon Al-</span>
+<span class="ln">calde ordinario de primera No-</span>
+<span class="ln">minacion del Part<u class="exp" title="abreviatura desarrollada">[id]</u>o de Sensenti</span>
+<span class="ln">con testigos á falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">dose de Agosto de mil setez<u class="exp" title="abreviatura desarrollada">[ient]</u>os</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…por dicho supremo tribunal; y por lo que […] respecta a la justificación que solicita, hágase
+comparecer a don Fernando Molina para que […] ponga lo que le conste; […] don Ramón Molina y
+[…], mediante a […] estar el primero ausente [por] causa de Indias y el segundo […];
+devuélvase […] el escrito presentado para […], certificando así […] lo que precedió entre el
+coronel don Josef de Ballesteros y Naba[s] y esta parte; [y que] los devuelvan […] [para]
+agregarlos a este expediente. Así lo proveo, mando y firmo, yo, don Juan Josef Carrejón,
+alcalde ordinario de primera nominación del partido de Sensentí, con testigos a falta de
+escribano, […] de agosto de mil setecientos…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media. Es seguro: el mandato de comparecencia de <strong>Fernando Molina</strong>, la
+mención de <strong>Ramón Molina</strong>, la fórmula de suscripción del alcalde <strong>Juan Josef Carrejón</strong>,
+su título de <strong>alcalde ordinario de primera nominación del partido de Sensentí</strong>, y la
+cláusula <strong>«con testigos a falta de escribano»</strong> —dato social del archivo: Sensentí no tiene
+escribano y el alcalde actúa con testigos de asistencia. También es seguro el apellido
+completo del coronel, <strong>Josef de Ballesteros y Naba[s]</strong>, que aquí aparece por primera vez
+entero. <strong>El día del mes no se deja fijar</strong>: el renglón empieza con «dose», que es el final de
+un numeral cuyo principio queda bajo el borrón del renglón anterior (podría ser «[veinte y]
+dose» o «[a] doce»); no lo completo. El año se cierra en IMG_1623.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1623">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 12 de 23</span><h3>IMG_1623</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1623" aria-label="Ampliar la lámina IMG_1623">
+        <img src="../img/guzman1794/p012.jpg" alt="Fotografía de la lámina IMG_1623" loading="lazy">
+      </button>
+      <figcaption>Mismo papel. Plana sin sello. **Traspaso fortísimo y tachaduras en casi todos
+los renglones del cuerpo**; las firmas del encabezamiento están además emborronadas. Tinta
+negra muy cargada. <strong>Nota marginal izquierda: «Razon»</strong>, con rúbrica corta. Dos rayas: una de
+separación bajo las firmas y otra de cierre al pie. Papel de conservación arriba a la
+izquierda; borde izquierdo en sombra por el lomo. El pie de la plana no está roto: la
+escritura continúa hasta la última línea, lo que confirma que **el expediente sigue más allá
+de IMG_1623**. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Fol. 6v, última plana del tramo. Completa la data («…noventa y cuatro años»), da
+las <strong>firmas</strong>: el alcalde <strong>Juan Josef Carrejón</strong> y dos testigos de asistencia. Bajo raya de
+separación y con la llamada marginal «<strong>Razón</strong>», el mismo día, mes y año, en cumplimiento de
+lo mandado en el auto antecedente, el juez razona **por qué la provisión de la Audiencia no
+ha podido cumplirse**: la causa criminal seguida contra Mariano Guzmán pasó al oficio del
+coronel don Josef de Ballesteros y Naba[s], jefe del batallón de milicias, **por tocarle su
+conocimiento por ser Guzmán sargento de su cuerpo**, y lo que para en el archivo del juzgado
+es sólo eso; y como el interesado no le ha presentado el provi[sional]… (el texto sigue más
+allá del tramo).</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">nobenta y quatro Años = Juan</span>
+<span class="ln">Josef Carrejon = Andres <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Josef</span>
+<span class="ln">de Serna = Josef <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Car-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">______________________________</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen: Razon]</u> En el mismo dia, mes y año, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">cumplimiento de lo mandado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">el Antecedente probeido <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> del mismo Juez que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">do <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> este Mariano Guz-</span>
+<span class="ln">man, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en este Partido</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> se hallaba en el D<u class="exp" title="abreviatura desarrollada">[o]</u>n Josef</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[de]</u> Ballesteros y D<u class="exp" title="abreviatura desarrollada">[o]</u>n Nabas Coronel de</span>
+<span class="ln">este <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Batallon de Milicias, quien</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> se le ha seguido su</span>
+<span class="ln">Causa Criminal, q<u class="exp" title="abreviatura desarrollada">[ue]</u> este Juzga<u class="exp" title="abreviatura desarrollada">[do]</u></span>
+<span class="ln">de ynicio <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> paso en juicio <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">oficio de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Coronel es<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">endo tocarle su conosimiento</span>
+<span class="ln">p<u class="exp" title="abreviatura desarrollada">[o]</u>r ser Sargento de su Cuerpo el</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> para en el Archibo de mi Car-</span>
+<span class="ln">go: Y como no haver el yntere-</span>
+<span class="ln">sado presentadome el provi-</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…noventa y cuatro años. — Juan Josef Carrejón. — Andrés [José] de Serna. — Josef […]
+Cár[denas].</p>
+<p><strong>Razón.</strong> En el mismo día, mes y año, en cumplimiento de lo mandado en el antecedente
+proveído […] del mismo juez que […] este Mariano Guzmán […] en este partido […] se hallaba en
+[poder de]l don Josef de Ballesteros y Nabas, coronel de este […] batallón de milicias, a
+quien […] se le ha seguido su causa criminal, que este juzgado […] pasó al oficio de dicho
+coronel, […] por tocarle su conocimiento por ser [Guzmán] sargento de su cuerpo; el que para
+en el archivo de mi cargo. Y como no haberme el interesado presentado el provi[sional]…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media. Lo esencial de la <em>Razón</em> se lee y es el hallazgo del tramo: **la
+provisión de la Audiencia no se cumple porque la causa está bajo fuero militar**, en el oficio
+del coronel del batallón de milicias, por ser Guzmán sargento de su cuerpo. Son seguros
+«Coronel de este […] Batallon de Milicias», «por ser Sargento de su Cuerpo» y «el que para en
+el Archibo de mi Cargo». <strong>Las firmas de los testigos son el punto flojo</strong>: el alcalde
+<strong>Juan Josef Carrejón</strong> se lee bien; el primer testigo se lee «Andres [de] Josef de Serna»
+—hay una tachadura entre «Andres» y «Josef» que impide saber si son dos nombres de un mismo
+testigo o dos personas—; y del segundo sólo veo «Josef […] Car-» con la continuación cortada
+por la raya, probablemente «Cárdenas», pero <strong>no lo completo</strong>. **Nadie declara aquí no saber
+firmar**: ni en esta plana ni en ninguna del tramo aparece la fórmula «no firmó porque dijo no
+saber». Todos los que suscriben —Hurtado, Guzmán, Carrejón y los dos testigos— firman.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1624">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 13 de 23</span><h3>IMG_1624</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1624" aria-label="Ampliar la lámina IMG_1624">
+        <img src="../img/guzman1794/p013.jpg" alt="Fotografía de la lámina IMG_1624" loading="lazy">
+      </button>
+      <figcaption>Papel de trapo, oscurecido y con manchas de humedad; fuerte traspaso ("bleed-through") de la tinta del reverso, que se superpone al texto del recto y dificulta la lectura de buena parte de las diez u once primeras líneas. En el margen superior, muy tenue y cortado por el borde del encuadre fotográfico, se distingue un resto de foliación antigua a tinta ("fol. ...[...]"), ilegible con certeza. En el margen izquierdo hay anotaciones modernas a lápiz, ajenas al texto (numeración de archivo/inventario) y un pequeño garabato en espiral, también moderno. El borde inferior del folio está roto y con pérdida de soporte (faltan esquinas), sin que ello afecte al texto, que termina antes del borde dañado. No se aprecia sello ni marca de agua en el encuadre fotografiado. La plana está fotografiada en tres tercios superpuestos y ampliados (b1, b2, b3) además de la vista completa.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">La plana es la continuación directa de un texto ya iniciado en el folio anterior (1623): comienza a media frase ("...no procedí..."), sin encabezamiento ni fecha propios, y termina con una fórmula de cierre y firma. Por su contenido —una "razón" en primera persona, dada por el alcalde para justificar por qué no pudo verificar o cumplir una diligencia dentro del plazo, alegando que se hallaba en el pueblo de Cucuyagua practicando unos inventarios— encaja como pieza dentro del testimonio de 1794 sobre Mariano Guzmán: es el alcalde ordinario de Sensentí, don Juan Josef Carrejón, quien firma. La plana no contiene el nombre de Guzmán ni menciona explícitamente la cárcel o el hurto; lo que registra es una disculpa/justificación del propio juez por una demora, cerrada con su firma autógrafa "Juan Jo[sef] Carrejón", coherente con que actuaba "a falta de escribano" (no hay signo ni rúbrica de escribano en la plana, solo la firma del alcalde).</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">señal, no procedi a<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> cumplimi</span>
+<span class="ln">ento. Recibiendo los autos p<u class="exp" title="abreviatura desarrollada">[ar]</u>a</span>
+<span class="ln">su n<u class="exp" title="abreviatura desarrollada">[otifica]</u>cion al siguiente havil <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">real ni en el dia tampoco se</span>
+<span class="ln">pudo verificar, p<u class="exp" title="abreviatura desarrollada">[or]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> en q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">sentavion ha sido pasados dose</span>
+<span class="ln">dias, se hauer <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> practicad<u class="exp" title="abreviatura desarrollada">[o]</u>s</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> escuadrado</span>
+<span class="ln">Coxones ponjendoce en dia</span>
+<span class="ln">para la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> leerá tanto</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> importe el interesado en</span>
+<span class="ln">su <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> no lo verifiqé p<u class="exp" title="abreviatura desarrollada">[or]</u> no</span>
+<span class="ln">hallarme en mi caza que tenea</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> docupada <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en virtud de</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> me hallaba en el pueblo de</span>
+<span class="ln">Cucuyagua<u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿?]</u></u> distante quatro legu<u class="exp" title="abreviatura desarrollada">[as]</u></span>
+<span class="ln">de esta cabecera practicand<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">do unos ymbentarios q<u class="exp" title="abreviatura desarrollada">[ue]</u> no se</span>
+<span class="ln">le ocurrió al interesado, pues es</span>
+<span class="ln">tando yo alli ocupado en d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho</span>
+<span class="ln">pueblo, y p<u class="exp" title="abreviatura desarrollada">[or]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> conste, sobre</span>
+<span class="ln">lo efecto q<u class="exp" title="abreviatura desarrollada">[ue]</u> haya lugar siento</span>
+<span class="ln">esta razon q<u class="exp" title="abreviatura desarrollada">[ue]</u> firmé = Juan Jo</span>
+<span class="ln">sef Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><strong>Notas a la transcripción.</strong> El renglón "Cucuyagua" presenta un borrón de tinta que cubre las letras centrales del topónimo; se lee con claridad "Cucuy..." al inicio y "...gua" al final, coherente con "Cucuyagua". Las líneas 1–14 están gravemente afectadas por el traspaso de tinta del reverso, que se superpone en diagonal sobre la escritura del recto; varios grupos de letras no se dejan fijar con seguridad y se han dejado como [...]. No hay notas marginales de mano contemporánea al documento; el único elemento en el margen izquierdo es un garabato/anotación moderna ajena al texto.</p>
+<p class="note"><strong>Firma.</strong> Firma únicamente don Juan Josef Carrejón, alcalde ordinario ("Juan Jo[sef] Carrejon", con rúbrica y línea de subrayado debajo). No hay testigo de asistencia que firme en esta plana ni fórmula de "no firmó por no saber" para ningún otro compareciente; el texto se presenta como razón dada y firmada por el propio alcalde.</p>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[Continuando del folio anterior] ...no procedí aún al cumplimiento, recibiendo los autos para su notificación al siguiente [día] hábil; ni [en el día] real, ni en el día tampoco se pudo verificar, porque en que se [...] ha sido pasados doce días, sin haber [...] practicado [...] de [...] esquadrado, [...] poniéndose en día para la [...]; y que importe al interesado en su [...] no lo verifiqué por no hallarme en mi casa, que tenía ocupada [...], en virtud de que me hallaba en el pueblo de Cucuyagua, distante cuatro leguas de esta cabecera, practicando unos inventarios, que no se le ocurrió al interesado, pues estando yo allí ocupado en dicho pueblo. Y para que conste, sobre lo [que en] efecto haya lugar, asiento esta razón, que firmé. Juan Josef Carrejón [rúbrica].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta en conjunto, con dos zonas muy distintas. El tercio inferior de la plana —desde "que me hallaba en el pueblo de Cucuyagua distante quatro leguas de esta cabecera practicando unos ymbentarios" hasta la firma de Juan Josef Carrejón— se lee con confianza alta: la caligrafía es clara y el sentido es coherente; ahí se confirma la cifra de <strong>cuatro leguas</strong> entre Sensentí (esta cabecera) y Cucuyagua, tal como decía el catálogo. Las líneas 1 a 14 (aprox. dos tercios superiores) tienen confianza baja: el traspaso de tinta del reverso se superpone casi por completo al texto del recto y no permite fijar con seguridad varias palabras clave (p. ej. lo que se lee como "Coxones ponjendoce en dia", "escuadrado" o el objeto exacto que "no se pudo verificar"); esos pasajes se han dejado señalados con [...] o con lectura dudosa en vez de completarse por conjetura. El propio topónimo "Cucuyagua" presenta un borrón de tinta sobre sus letras centrales, aunque el inicio y el final del trazo son compatibles con esa lectura.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1625">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 14 de 23</span><h3>IMG_1625</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1625" aria-label="Ampliar la lámina IMG_1625">
+        <img src="../img/guzman1794/p014.jpg" alt="Fotografía de la lámina IMG_1625" loading="lazy">
+      </button>
+      <figcaption>Papel de trapo verjurado, tono crema oscurecido. No se ve sello
+en esta plana (es vuelto de pliego). Tinta ferrogálica parda, muy oxidada y
+con transparencia fortísima del reverso: buena parte de las líneas 6 a 16
+aparecen cruzadas por trazos de la otra cara que simulan tachaduras. Hay
+manchas de humedad en banda vertical hacia el centro. El margen izquierdo
+muestra el lomo y el canto del cuadernillo, con restos de costura. Sin
+foliación legible en el encuadre. La fotografía corta el borde superior y
+deja el inferior en penumbra; el texto se lee entero pero los finales de
+línea de la derecha entran en zona de sombra.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Plana de tres actuaciones breves y el arranque de una cuarta.
+Cierra la notificación al sargento Mariano Guzmán de un proveído anterior
+(la parte inicial queda fuera del tramo); sigue una <em>Razón</em> del actuario
+haciendo constar que se entregaron los oficios dirigidos a don Ramón Molina
+y a don Josef Jacinto Mejía, despachados por correo propio y a costa del
+interesado; y sigue el <em>Auto</em> de catorce de agosto por el que, en
+cumplimiento de lo mandado, comparece el testigo don Fernando de Molina,
+cuya declaración empieza en la última línea y continúa en IMG_1626. Es la
+plana que arma la mecánica probatoria del final del expediente: Guzmán pide,
+el juzgado escribe a dos personas, y sólo una comparece en persona.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen: Notif[icació]</u>n]</span>
+<span class="ln">En el citado dia mes, y año hize</span>
+<span class="ln">saber lo probeido al Sargento</span>
+<span class="ln">Mariano Guzman quien quedó ynte-</span>
+<span class="ln">ligenciado, y firmó con migo, y testigos</span>
+<span class="ln">Carrejon= Mariano Guzman=</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen: Razon]</u></span>
+<span class="ln">En <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> dias del mismo mes se</span>
+<span class="ln">entregaron los oficios p<u class="exp" title="abreviatura desarrollada">[ar]</u>a D<u class="exp" title="abreviatura desarrollada">[o]</u>n</span>
+<span class="ln">Ramon Molina, y D<u class="exp" title="abreviatura desarrollada">[o]</u>n Josef Ja-</span>
+<span class="ln">cinto Mejia, à <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de Correo propio, p<u class="exp" title="abreviatura desarrollada">[o]</u>r el Ynteresa-</span>
+<span class="ln">do, y p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> conste, esta</span>
+<span class="ln">Razon q<u class="exp" title="abreviatura desarrollada">[ue]</u> firme con testigos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">quienes <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la en-</span>
+<span class="ln">trega de d<u class="exp" title="abreviatura desarrollada">[ic]</u>hos oficios = Carrejon =</span>
+<span class="ln">Manuel <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> = Andres de</span>
+<span class="ln">Toro y Serna = —————</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen: Auto]</u></span>
+<span class="ln">En el Nuebo Poblado de Sensenti</span>
+<span class="ln">catorze del mismo mes, y año, en</span>
+<span class="ln">virtud de lo mandado, p<u class="exp" title="abreviatura desarrollada">[ar]</u>a <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿verific?]</u></u>ar</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ante]</u> mi el mismo Juez, q<u class="exp" title="abreviatura desarrollada">[ue]</u> sigo estas</span>
+<span class="ln">diligencias, el testigo D<u class="exp" title="abreviatura desarrollada">[o]</u>n Fernando</span>
+<span class="ln">de Molina, q<u class="exp" title="abreviatura desarrollada">[ue]</u> certifico conosco, y</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ser]</u> vez<u class="exp" title="abreviatura desarrollada">[in]</u>o de este Partido, aquien</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>En el citado día, mes y año hice saber lo proveído al sargento Mariano
+Guzmán, quien quedó enterado y firmó conmigo y testigos. Carrejón. Mariano
+Guzmán. — Razón: en [...] días del mismo mes se entregaron los oficios para
+don Ramón Molina y don Josef Jacinto Mejía, a [...] de correo propio, por
+cuenta del interesado; y para que conste, esta razón, que firmé con
+testigos, [quienes presenciaron] la entrega de dichos oficios. Carrejón.
+Manuel [...]. Andrés de Toro y Serna. — Auto: en el Nuevo Poblado de
+Sensentí, a catorce del mismo mes y año, en virtud de lo mandado, para
+verificarlo ante mí, el mismo juez que sigo estas diligencias, [compareció]
+el testigo don Fernando de Molina, a quien certifico que conozco y que es
+vecino de este partido, y a quien…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media. Los encabezamientos marginales, la fecha («catorze del
+mismo mes, y año»), el nombre del testigo y los nombres de los dos
+destinatarios de los oficios son seguros. No se dejan fijar: el número del
+día en la <em>Razón</em> (l. 6, borrado por transparencia del reverso); el nombre
+del portador del correo (l. 9), que podría ser un patronímico pero está
+ilegible; y el segundo firmante de la <em>Razón</em>, «Manuel [...]» (l. 15), que
+por las demás planas del tramo casi con certeza es <strong>Manuel de Zelaya</strong>,
+pero aquí el apellido está cegado y no lo doy por leído. La quinta línea,
+con las firmas de la notificación, podría llevar más nombres tras
+«Mariano Guzman»; el borde derecho entra en sombra.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1626">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 15 de 23</span><h3>IMG_1626</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1626" aria-label="Ampliar la lámina IMG_1626">
+        <img src="../img/guzman1794/p015.jpg" alt="Fotografía de la lámina IMG_1626" loading="lazy">
+      </button>
+      <figcaption>Recto de pliego. En la cabecera asoma, cortado por el encuadre,
+el <strong>sello impreso</strong>: se distingue el remate de un óvalo con orla y, dentro,
+las letras `CA` de la leyenda, más a la derecha el pie de una anotación
+manuscrita de habilitación (`…rtillo`). Ni el año ni el valor se leen. Tinta
+parda; escritura muy cursiva y apretada, de 24 líneas. Transparencia del
+reverso severa en el tercio central (líneas 5 a 9 y 14 a 16 quedan
+semicubiertas). Mancha de humedad en el ángulo superior derecho y una
+rozadura vertical en el margen derecho, con pequeña pérdida de soporte en el
+canto. Sin foliación legible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Cuerpo de la declaración de <strong>don Fernando de Molina</strong>, testigo
+citado por Guzmán. Es sustancialmente importante: Molina declara que vio a
+Guzmán presentarse al coronel de milicias con un documento traído de la
+capital de Guatemala, y que el coronel le respondió que su causa la había
+remitido aquel mismo día a la administración de correos de Guatemala. Sitúa
+el hecho en el mes de julio pasado, sin precisar día. Es el testimonio que
+acredita las gestiones de Guzmán tras volver con la provisión real.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">le Reciui Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to q<u class="exp" title="abreviatura desarrollada">[ue]</u> hiso p<u class="exp" title="abreviatura desarrollada">[o]</u>r Dios</span>
+<span class="ln">N<u class="exp" title="abreviatura desarrollada">[uest]</u>ro Señor, y una Señal de Cruz <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ba]</u>xo <u class="exp" title="abreviatura desarrollada">[de]</u>l q<u class="exp" title="abreviatura desarrollada">[ue]</u> ofreció desir</span>
+<span class="ln">verdad en lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> supiere, y fuere</span>
+<span class="ln">preguntado, y haviendola sido</span>
+<span class="ln">segun el tenor de la cita q<u class="exp" title="abreviatura desarrollada">[ue]</u> en su</span>
+<span class="ln">escrito, le hase <u class="exp" title="abreviatura desarrollada">[el]</u> Sar<u class="exp" title="abreviatura desarrollada">[g]</u>ento Ma-</span>
+<span class="ln">riano Guzman <u class="exp" title="abreviatura desarrollada">[Dijo:]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ten<u class="exp" title="abreviatura desarrollada">[er]</u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r ciert<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> este se presentó al Coronel de</span>
+<span class="ln">Milicia<u class="exp" title="abreviatura desarrollada">[s]</u>, D<u class="exp" title="abreviatura desarrollada">[o]</u>n Javer de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Ballecillos?]</u></u></span>
+<span class="ln">y <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Nabarrete?]</u></u>, de q<u class="exp" title="abreviatura desarrollada">[ue]</u> se <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿ratificare?]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[en]</u> su marcha p<u class="exp" title="abreviatura desarrollada">[ar]</u>a Leon, haciendole</span>
+<span class="ln">ver un documento q<u class="exp" title="abreviatura desarrollada">[ue]</u> traia, de la</span>
+<span class="ln">Capital de Guatem<u class="exp" title="abreviatura desarrollada">[al]</u>a, en el q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho</span>
+<span class="ln">Coronel, le dijo q<u class="exp" title="abreviatura desarrollada">[ue]</u> su causa <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">aquel mismo dia, la havia Remiti-</span>
+<span class="ln">do à la Adm<u class="exp" title="abreviatura desarrollada">[inistracio]</u>n de Correos de Guat<u class="exp" title="abreviatura desarrollada">[emal]</u>a</span>
+<span class="ln">p<u class="exp" title="abreviatura desarrollada">[o]</u>r q<u class="exp" title="abreviatura desarrollada">[ue]</u> de allá le dieron la direccion</span>
+<span class="ln">de Guatem<u class="exp" title="abreviatura desarrollada">[al]</u>a, q<u class="exp" title="abreviatura desarrollada">[ue]</u> no tiene presente</span>
+<span class="ln">en q<u class="exp" title="abreviatura desarrollada">[ue]</u> dia fue esto, si se acuerda</span>
+<span class="ln">fue en el mes pasado de Julio</span>
+<span class="ln">siendo quando puede desir en el</span>
+<span class="ln">particular q<u class="exp" title="abreviatura desarrollada">[ue]</u> la verdad, p<u class="exp" title="abreviatura desarrollada">[o]</u>r el</span>
+<span class="ln">Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to q<u class="exp" title="abreviatura desarrollada">[ue]</u> ha hecho, y leida que</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…le recibí juramento, que hizo por Dios Nuestro Señor y una señal de cruz,
+bajo del cual ofreció decir verdad en lo que supiere y fuere preguntado. Y
+habiéndolo sido según el tenor de la cita que en su escrito le hace el
+sargento Mariano Guzmán, dijo: que tiene por cierto que éste se presentó al
+coronel de milicias don Javer de Ballecillos y Nabarrete [...] en su marcha
+para León, haciéndole ver un documento que traía de la capital de
+Guatemala; en el que [...] dicho coronel le dijo que su causa aquel mismo
+día la había remitido a la administración de correos de Guatemala, porque de
+allá le dieron la dirección de Guatemala. Que no tiene presente en qué día
+fue esto; si se acuerda, fue en el mes pasado de julio. Que eso es cuanto
+puede decir en el particular, y es la verdad por el juramento que ha hecho.
+Y leída que…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media. El armazón (fórmula de juramento, coronel de milicias,
+documento traído de Guatemala, remisión a la administración de correos, mes
+de julio) es seguro. No se dejan fijar con rigor: **el apellido del
+coronel** (l. 10-11), que leo <em>Ballecillos y Nabarrete</em> pero cuyas letras
+admiten otras particiones — no lo normalizo ni lo completo; el verbo de la
+l. 11, que podría ser <em>ratificare</em>, <em>retirase</em> o <em>verificase</em>, y de él
+depende el sentido exacto de la frase; y el final de la l. 8 y el de la
+l. 15, borrados por transparencia. La l. 2-3 va partida por una mancha y
+reconstruyo sólo lo que el trazo permite.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1627">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 16 de 23</span><h3>IMG_1627</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1627" aria-label="Ampliar la lámina IMG_1627">
+        <img src="../img/guzman1794/p016.jpg" alt="Fotografía de la lámina IMG_1627" loading="lazy">
+      </button>
+      <figcaption>Vuelto de pliego; sin sello. Tinta parda, más aguada en el
+tercio inferior (el <em>Proveído</em> está claramente escrito con pluma más seca y
+trazo más fino, casi gris). Transparencia del reverso fuerte en las líneas
+1 a 8, que son justamente las de las firmas. Margen izquierdo con lomo y
+costura visibles, y una banda de sombra profunda del encuadre. Papel
+ondulado en la cabecera, con un pliegue que levanta el ángulo superior
+izquierdo y sale movido en la foto. Sin foliación legible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Tres piezas. Cierra la declaración de don Fernando de Molina con
+la ratificación, la edad y las firmas. Sigue, copiado íntegro, el **oficio
+de respuesta de José Jacinto Mejía**, fechado a trece de agosto de 1794, en
+el que dice que entregará la certificación en cuanto Guzmán remita los doce
+reales que vale, que el oficio del juzgado queda en su poder, y que lo mismo
+dice don Ramón Molina, «que se halla en casa». Y empieza el <em>Proveído</em> que
+manda agregar ese oficio al expediente. Es la plana que explica por qué el
+expediente se atasca: los dos requeridos no comparecen, contestan por
+escrito y ponen precio.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">le fue esta declaracion en ella</span>
+<span class="ln">se afirmó, y ratificó expresa<u class="exp" title="abreviatura desarrollada">[ndo]</u></span>
+<span class="ln">ser de edad de beinte y siete años</span>
+<span class="ln">y <u class="exp" title="abreviatura desarrollada">[la]</u> firmó con migo, y los testigos</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> me asisten en falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no</span>
+<span class="ln">Juan Josef Carrejon= D<u class="exp" title="abreviatura desarrollada">[o]</u>n Fer-</span>
+<span class="ln">nando de Molina= Andres</span>
+<span class="ln">de Toro y Serna= <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Josef Carrejon?]</u></u>—</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen: Oficio]</u></span>
+<span class="ln">Contesta el Oficio de V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d dig<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> siempre q<u class="exp" title="abreviatura desarrollada">[ue]</u> Mariano Guzman</span>
+<span class="ln">Remita los doze r<u class="exp" title="abreviatura desarrollada">[eale]</u>s q<u class="exp" title="abreviatura desarrollada">[ue]</u> vale <u class="exp" title="abreviatura desarrollada">[la]</u> Cer-</span>
+<span class="ln">tificacion estoy promptó à darlo</span>
+<span class="ln">quedando su Oficio en mi po-</span>
+<span class="ln">der, y p<u class="exp" title="abreviatura desarrollada">[ar]</u>a quando se verifique lo</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> digo, y esto mismo dice D<u class="exp" title="abreviatura desarrollada">[o]</u>n Ra-</span>
+<span class="ln">mon Molina, que se halla en</span>
+<span class="ln">Casa. N<u class="exp" title="abreviatura desarrollada">[uest]</u>ro S<u class="exp" title="abreviatura desarrollada">[eño]</u>r gu<u class="exp" title="abreviatura desarrollada">[ard]</u>e à V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d m<u class="exp" title="abreviatura desarrollada">[ucho]</u>s a<u class="exp" title="abreviatura desarrollada">[ño]</u>s S<u class="exp" title="abreviatura desarrollada">[a]</u>n</span>
+<span class="ln">Josef de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Talam?]</u></u>, y Ag<u class="exp" title="abreviatura desarrollada">[os]</u>to trece de</span>
+<span class="ln">mil setez<u class="exp" title="abreviatura desarrollada">[ientos]</u> nobenta, y quatro= Jo-</span>
+<span class="ln">sef Jacinto Mejia= —————</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen: Probeido]</u></span>
+<span class="ln">Visto lo Respondido, en el antese-</span>
+<span class="ln">dente oficio, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> mando se agre-</span>
+<span class="ln">gue al expediente de la mate-</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…le fue esta declaración, en ella se afirmó y ratificó, expresando ser de
+edad de veintisiete años, y la firmó conmigo y los testigos que me asisten
+en falta de escribano. Juan Josef Carrejón. Don Fernando de Molina. Andrés
+de Toro y Serna. Josef Carrejón. — Oficio: contesta el oficio de vuestra
+merced. Digo que siempre que Mariano Guzmán remita los doce reales que vale
+la certificación, estoy pronto a darla, quedando su oficio en mi poder y
+para cuando se verifique lo que digo. Y esto mismo dice don Ramón Molina,
+que se halla en casa. Nuestro Señor guarde a vuestra merced muchos años. San
+Josef de Talam, y agosto trece de mil setecientos noventa y cuatro. Josef
+Jacinto Mejía. — Proveído: visto lo respondido en el antecedente oficio,
+mando se agregue al expediente de la materia…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta para el oficio de Mejía (los doce reales, la
+certificación, la mención de don Ramón Molina, la fecha de trece de agosto
+de 1794 y la firma se leen sin esfuerzo), <strong>media</strong> para el resto. No se
+dejan fijar: <strong>el topónimo de la data del oficio</strong> (l. 18), que leo
+<em>S[a]n Josef de Talam</em> — la palabra final admite <em>Talam / Talan / Tulam</em> y
+no la normalizo; y <strong>el cuarto nombre del pie de la declaración</strong> (l. 8),
+que leo <em>Josef Carrejón</em>, lectura que me incomoda porque en todas las demás
+planas del tramo los testigos de asistencia son Andrés de Toro y Serna y
+Manuel de Zelaya, y porque el juez ya firma arriba como Juan Josef Carrejón;
+lo dejo con signo de duda antes que sustituirlo por conjetura.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1628">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 17 de 23</span><h3>IMG_1628</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1628" aria-label="Ampliar la lámina IMG_1628">
+        <img src="../img/guzman1794/p017.jpg" alt="Fotografía de la lámina IMG_1628" loading="lazy">
+      </button>
+      <figcaption>Recto de pliego. <strong>Sello impreso</strong> en la cabecera, cortado por
+el encuadre: se ve el arranque de la orla y las letras `CA`; a la derecha,
+restos de la anotación manuscrita de habilitación, ilegible. Tinta parda
+intensa. Ésta es la plana peor servida por la conservación del tramo: la
+transparencia del reverso es casi total en las líneas 4 a 14, que quedan
+convertidas en una maraña donde sólo emergen palabras sueltas. Manchas de
+humedad en banda diagonal. Borde derecho con pérdida de soporte y una
+rasgadura vertical de unos dedos de largo. Margen izquierdo con lomo. Sin
+foliación legible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">El <strong>auto que advierte que los dos requeridos son militares</strong>, y
+que por esa razón el juzgado no se halla con jurisdicción para apremiarlos.
+Es la pieza que el catálogo anunciaba, y conviene leerla con cuidado porque
+nombra a <strong>don Jacinto Mesía y don Ramón Molina</strong> — no a don Fernando de
+Molina. Manda que se haga saber a Guzmán el oficio de Mejía para que acuda
+donde le convenga. El auto se fecha en el Nuevo Poblado de Sensentí a
+dieciséis de agosto y lo firma el alcalde don Juan Josef Carrejón con los
+dos testigos de asistencia. Al pie arranca la notificación a Guzmán.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">ria, y Respecto, à que asi D<u class="exp" title="abreviatura desarrollada">[o]</u>n Ja-</span>
+<span class="ln">cinto Mesia, como D<u class="exp" title="abreviatura desarrollada">[o]</u>n Ramon</span>
+<span class="ln">Molina, son Militares, y <u class="exp" title="abreviatura desarrollada">[cuia]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> este Juzgado no halla <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> compeler<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en los <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">oficio se les <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">pedido p<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Mariano Guzman</span>
+<span class="ln">hagasele saber, à este <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de el citado Oficio <u class="exp" title="abreviatura desarrollada">[de D[o]</u>n] Jacin-</span>
+<span class="ln">to Mesia, p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> combenga <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> saber mando, y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan Josef Carrejon actu-</span>
+<span class="ln">ando con testigos, à falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no</span>
+<span class="ln">en este Nuebo Poblado de Sensen-</span>
+<span class="ln">ti, à diez y seis de Ag<u class="exp" title="abreviatura desarrollada">[os]</u>to del mis-</span>
+<span class="ln">mo Año= Juan Josef Carrejon=</span>
+<span class="ln">Andres de Toro y Serna= Ma-</span>
+<span class="ln">nuel de Zelaya —————</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen: Notif[icacio]</u>n]</span>
+<span class="ln">En el mismo dia mes y año sien-</span>
+<span class="ln">do presente el Sarjento Ma-</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…-ria. Y respecto a que así don Jacinto Mesía como don Ramón Molina son
+militares, [por cuya razón] este juzgado no halla [manera de] compelerlos
+[...] en los [...] oficio se les [...] pedido por [...] Mariano Guzmán,
+hágasele saber a éste [...] del citado oficio de don Jacinto Mesía, para que
+[acuda a pedir] lo que convenga [a su derecho]. [Así lo] mando y [firmo, yo
+el] alcalde [...] don Juan Josef Carrejón, actuando con testigos a falta de
+escribano, en este Nuevo Poblado de Sensentí, a dieciséis de agosto del
+mismo año. Juan Josef Carrejón. Andrés de Toro y Serna. Manuel de Zelaya. —
+Notificación: en el mismo día, mes y año, siendo presente el sargento
+Ma[riano Guzmán]…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-baja para el cuerpo, alta para el remate. La
+declaración de que ambos son militares (l. 1-3), la data —Nuevo Poblado de
+Sensentí, dieciséis de agosto del mismo año— y los tres nombres del pie son
+inequívocos. El centro del auto (l. 4 a 14), que es donde estaría la razón
+jurídica precisa del no apremio y la fórmula del fuero militar, **no se deja
+leer**: la transparencia del reverso lo borra y no lo reconstruyo. Es la
+pérdida más lamentable del tramo, porque ahí estaba el argumento.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1629">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 18 de 23</span><h3>IMG_1629</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1629" aria-label="Ampliar la lámina IMG_1629">
+        <img src="../img/guzman1794/p018.jpg" alt="Fotografía de la lámina IMG_1629" loading="lazy">
+      </button>
+      <figcaption>Vuelto de pliego; sin sello. Tinta parda. Transparencia del
+reverso muy fuerte en las líneas 4 a 13, con tachones aparentes que en
+realidad son escritura de la otra cara. El tercio inferior, en cambio, está
+notablemente limpio y el auto se lee casi entero. Ángulo superior izquierdo
+con el pliegue del cuadernillo levantado y fuera de foco; margen izquierdo
+con lomo, costura y una banda negra de sombra. En el margen derecho hay
+marcas de tinta que podrían ser numeración, pero pertenecen a la hoja
+contigua y no las doy por foliación. Sin foliación legible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Dos piezas. Termina la notificación a Guzmán del auto anterior:
+se le lee el oficio de José Jacinto Mejía y responde que con el citado ya
+tenía hablado lo que el oficio contiene y que no tiene más que añadir. Sigue
+el <strong>auto que manda sacar testimonio íntegro del expediente</strong> —la orden que
+produjo materialmente estas mismas planas— visto que Guzmán indica no querer
+practicar más diligencias que las hasta aquí corridas, y que el original se
+le entregue.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">riano Guzman, y estando acom-</span>
+<span class="ln">pañado de los testigos q<u class="exp" title="abreviatura desarrollada">[ue]</u> me asis-</span>
+<span class="ln">ten en falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no, le noti-</span>
+<span class="ln">fiqué, e hize saber, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r mi <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> leyendole el oficio de <u class="exp" title="abreviatura desarrollada">[D[o]</u>n]</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Jo]</u>sef Jacinto Mejia, de q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Dijo: que ya con el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">citado tenia hablado lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> no tenia q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[su]</u> Respuesta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> testigos de mi asistencia= <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Mariano Guzman= <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de Toro y Serna= Manuel</span>
+<span class="ln">de Zelaya —————</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen: Auto]</u></span>
+<span class="ln">En vista de lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> expresa el</span>
+<span class="ln">Sarjento Mariano Guzman,</span>
+<span class="ln">en su <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> yndica, no</span>
+<span class="ln">determinar, se practiquen <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">diligencias, q<u class="exp" title="abreviatura desarrollada">[ue]</u> las hasta aqui</span>
+<span class="ln">corridas, saquese testimonio yn-</span>
+<span class="ln">tegro de este expediente, p<u class="exp" title="abreviatura desarrollada">[o]</u>r Ra-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> del Juzgado, y el</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…-riano Guzmán, y estando acompañado de los testigos que me asisten en falta
+de escribano, le notifiqué e hice saber [lo] por mí [proveído], leyéndole el
+oficio de don Josef Jacinto Mejía; de que [enterado] dijo: que ya con el
+citado tenía hablado lo que [el oficio] contiene, y que no tenía que [añadir
+otra cosa]. [Ésta fue] su respuesta, [que firmó con los] testigos de mi
+asistencia. [...] Mariano Guzmán. [Andrés] de Toro y Serna. Manuel de
+Zelaya. — Auto: en vista de lo que expresa el sargento Mariano Guzmán en su
+[respuesta], que indica no determinar se practiquen [más] diligencias que
+las hasta aquí corridas, sáquese testimonio íntegro de este expediente por
+[el registro] del juzgado, y el…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media. El auto (l. 15-22) es lo mejor conservado de la plana
+y su sentido —no más diligencias, sáquese testimonio íntegro— es seguro. No
+se deja fijar: la palabra de la l. 21-22 tras «p[o]r Ra-», que gobierna <em>de
+qué</em> se saca el testimonio (¿registro?, ¿ramo?) y que corta el renglón; y
+casi toda la línea de firmas de la notificación (l. 11-13), de la que sólo
+salvo <em>Mariano Guzmán</em>, <em>…de Toro y Serna</em> y <em>Manuel de Zelaya</em>. La l. 4-7
+está tan cruzada por el reverso que sólo doy las palabras que emergen
+limpias.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1630">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 19 de 23</span><h3>IMG_1630</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1630" aria-label="Ampliar la lámina IMG_1630">
+        <img src="../img/guzman1794/p019.jpg" alt="Fotografía de la lámina IMG_1630" loading="lazy">
+      </button>
+      <figcaption>Recto de pliego. <strong>Sello impreso</strong> en cabecera, cortado por el
+encuadre; se adivina la orla y, a la derecha, el pie de la anotación de
+habilitación (`…rtillo`), ilegible. Tinta parda. Transparencia del reverso
+fuerte en las líneas 3 a 10 y 13 a 16. El tercio inferior está limpio y la
+respuesta de Guzmán se lee bien. Mancha de humedad en banda vertical central
+y otra en el ángulo inferior izquierdo. Margen derecho con arrugas y un
+plegado que curva las últimas letras de cada línea. Sin foliación legible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Fin del auto anterior —se le entregue el original sellado ante
+la presencia del juez, para que acuda donde le convenga, **haciendo ante
+todas cosas pago por planilla**— y la notificación de ese auto a Guzmán.
+Aquí está el episodio humano del tramo: Guzmán se da por enterado pero
+declara **que no tiene con qué satisfacer las costas, por estar embargados
+sus bienes**, y añade que se le venda una de las reses que tiene. Es la
+plana que justifica que exista la planilla y explica de dónde debía salir el
+dinero.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">original entreguesele <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y sellado ante mi presencia, p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> donde le combenga</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> antes <u class="exp" title="abreviatura desarrollada">[todas]</u> cosas <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">pague p<u class="exp" title="abreviatura desarrollada">[o]</u>r planilla, p<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> asi lo probeió, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y firmó <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Juez en</span>
+<span class="ln">el citado dia mes y año <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Carrejon= Andres de Toro</span>
+<span class="ln">y Serna= Manuel de Zelaya ——</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen: Notif[icacio]</u>n]</span>
+<span class="ln">Yncontinenti estando presente</span>
+<span class="ln">el Sarjento Mariano Guzman</span>
+<span class="ln">y en presencia de los <u class="exp" title="abreviatura desarrollada">[testigos]</u></span>
+<span class="ln">de mi asistencia, le notifiqué <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">p<u class="exp" title="abreviatura desarrollada">[o]</u>r mi probeido, à q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">quedar ympuesto <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[pa]</u>ra</span>
+<span class="ln">las Costas no tiene con q<u class="exp" title="abreviatura desarrollada">[ue]</u> sa-</span>
+<span class="ln">tisfacerlas, p<u class="exp" title="abreviatura desarrollada">[o]</u>r estar embargado</span>
+<span class="ln">sus bienes, esto dijo, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> su Resp<u class="exp" title="abreviatura desarrollada">[uest]</u>a</span>
+<span class="ln">otra, añadiendo no <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿ben?]</u></u>-</span>
+<span class="ln">den, uno de los animales q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">tiene; Y dijo à mi el Juez</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…el original entréguesele [...] y sellado ante mi presencia, para que [acuda]
+donde le convenga, haciendo ante todas cosas [que] pague por planilla [...].
+Así lo proveyó y firmó [el dicho] juez, en el citado día, mes y año. [...]
+Carrejón. Andrés de Toro y Serna. Manuel de Zelaya. — Notificación:
+incontinenti, estando presente el sargento Mariano Guzmán y en presencia de
+los testigos de mi asistencia, le notifiqué lo por mí proveído; a que
+[respondió] que queda impuesto [de todo], y que para las costas no tiene con
+qué satisfacerlas, por estar embargados sus bienes. Esto dijo, [y ésta fue]
+su respuesta, añadiendo no [tener] otra [cosa], y que vendan uno de los
+animales que tiene. Y dijo a mí, el juez…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta en la respuesta de Guzmán, media en el resto. «Las
+costas no tiene con que satisfacerlas, por estar embargado sus bienes» se
+lee con nitidez y es el dato de más peso de la plana; también «uno de los
+animales que tiene». No se dejan fijar: el participio de la l. 1 (<em>sellado</em>
+va repetido en la l. 2, y el primero puede ser otra cosa); la fórmula del
+apremio en las l. 4-6; y el verbo de la l. 21, que leo <em>[ben]den</em> por el
+contexto pero cuyo arranque está cegado — lo marco como duda y no lo doy por
+leído.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1631">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 20 de 23</span><h3>IMG_1631</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1631" aria-label="Ampliar la lámina IMG_1631">
+        <img src="../img/guzman1794/p020.jpg" alt="Fotografía de la lámina IMG_1631" loading="lazy">
+      </button>
+      <figcaption>Vuelto de pliego; sin sello. Tinta parda, aguada en las últimas
+líneas. La transparencia del reverso castiga sobre todo las líneas 5 a 14.
+Papel arrugado en la cabecera, con un pliegue que atraviesa el ángulo
+superior izquierdo y sale desenfocado. Margen izquierdo con lomo, costura y
+banda de sombra. Borde derecho con marcas de tinta que asoman de la hoja
+contigua. El tercio final es el más limpio de la plana. Sin foliación
+legible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Cierra la notificación anterior con la fórmula de no firma —**el
+notificado no quiso firmar**, y firman en su lugar el juez y los dos
+testigos— y sigue un <strong>auto</strong> que da por concluidas las diligencias, manda
+entregarlas al interesado y razona la remisión a la Real Audiencia: que es
+el Supremo Tribunal, a cuyas determinaciones se obedece, y lo que en su
+virtud piden las partes. Es, en lo sustancial, la despedida jurisdiccional
+del juzgado de Sensentí: se desprende del asunto y lo manda arriba.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">no querer firmar lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> ha <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">puesto= Juan Josef Carrejon</span>
+<span class="ln">Andres de Toro y Serna= Ma-</span>
+<span class="ln">nuel de Zelaya —————</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen: Auto]</u></span>
+<span class="ln">En el <u class="exp" title="abreviatura desarrollada">[mismo]</u> dia mes y año</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> por concluidas estas <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> llebar à <u class="exp" title="abreviatura desarrollada">[debido]</u> efec-</span>
+<span class="ln">to <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">lo mandado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> entregarse estas</span>
+<span class="ln">diligencias al Ynteresado, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[Tomado]</u> à <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Mariano <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> no siendo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> redi-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> à <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la</span>
+<span class="ln">Costas, p<u class="exp" title="abreviatura desarrollada">[o]</u>r q<u class="exp" title="abreviatura desarrollada">[ue]</u> el Supremo</span>
+<span class="ln">Tribunal de la R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Aud<u class="exp" title="abreviatura desarrollada">[ienci]</u>a, à que</span>
+<span class="ln">de cierto se obedecen sus <u class="exp" title="abreviatura desarrollada">[de]</u>-</span>
+<span class="ln">terminaciones, y lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> en su vir-</span>
+<span class="ln">tud piden las partes, con lo q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">no habrá lugar à <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> sub-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Ynforme, q<u class="exp" title="abreviatura desarrollada">[ue]</u> el Ynte-</span>
+<span class="ln">resado haga, con el q<u class="exp" title="abreviatura desarrollada">[ue]</u> contra</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…no querer firmar lo que ha [ex]puesto. Juan Josef Carrejón. Andrés de Toro
+y Serna. Manuel de Zelaya. — Auto: en el mismo día, mes y año, [dándose] por
+concluidas estas [diligencias y para] llevar a debido efecto lo mandado,
+[...] entregarse estas diligencias al interesado [...] Mariano [Guzmán] [...]
+don Juan [...] las costas; porque el Supremo Tribunal de la Real Audiencia,
+a quien de cierto se obedecen sus determinaciones y lo que en su virtud
+piden las partes, con lo que no habrá lugar a [nuevo] [...] informe que el
+interesado haga, con el que contra…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja-media. Seguro: la fórmula de no firma (l. 1-2), los tres
+firmantes, y el pasaje sobre el Supremo Tribunal de la Real Audiencia y la
+obediencia a sus determinaciones (l. 15-20). No se deja fijar el cuerpo
+central del auto (l. 6 a 14), donde estaría la orden concreta de entrega y
+probablemente la mención nominal del interesado y de una segunda persona
+(«D[o]n Juan…»), ni la cláusula final (l. 20-23). Es la plana que transcribo
+con más reservas del tramo, y prefiero dejar los vacíos a rellenarlos.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1632">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 21 de 23</span><h3>IMG_1632</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1632" aria-label="Ampliar la lámina IMG_1632">
+        <img src="../img/guzman1794/p021.jpg" alt="Fotografía de la lámina IMG_1632" loading="lazy">
+      </button>
+      <figcaption>Recto de pliego. <strong>Sello impreso</strong> en cabecera, cortado por el
+encuadre: fragmento de orla, letras `CA`, y a la derecha restos de la
+habilitación manuscrita; ni año ni valor legibles. Tinta parda, y un cambio
+de pluma perceptible al empezar la planilla (trazo más fino y regular, y
+renglones guiados). Transparencia del reverso moderada arriba, escasa abajo:
+<strong>la mitad inferior es la zona mejor conservada de todo el tramo</strong>, y por eso
+las cifras se leen. Columna de cantidades trazada a la derecha con raya
+vertical y raya horizontal de suma al pie. Margen izquierdo con lomo. Sin
+foliación legible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Plana bisagra. Termina el auto anterior con las firmas del juez
+y los testigos, y a media plana **empieza la planilla de derechos
+judiciales**, con su encabezamiento —lo que el sargento Mariano Guzmán
+adeuda en las diligencias seguidas a su instancia sobre el provisional que
+pretende para que se remitan a la Real Audiencia los autos criminales en que
+fue acusado de ladrón— y las <strong>dos primeras partidas</strong>, con la suma de pie
+de plana arrastrada al folio siguiente. Aquí se declara además, de pasada y
+con toda crudeza, el fondo del asunto: que la acusación fue gratuita.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">p<u class="exp" title="abreviatura desarrollada">[o]</u>r el escrito del <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> ha presentado, lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> mas</span>
+<span class="ln">claro <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de lo proveer que</span>
+<span class="ln">se le ha seguido. Asi lo mando,</span>
+<span class="ln">y firmó yo el <u class="exp" title="abreviatura desarrollada">[mencionado]</u> Juez</span>
+<span class="ln">con los mismos testigos q<u class="exp" title="abreviatura desarrollada">[ue]</u> me</span>
+<span class="ln">asisten en falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no Carre-</span>
+<span class="ln">jon= Andres de Toro y Serna=</span>
+<span class="ln">Manuel de Zelaya —————</span>
+<span class="ln">Planilla de los <u class="exp" title="abreviatura desarrollada">[derechos]</u> Judiciales q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">el Sarjento Mariano Guzman</span>
+<span class="ln">adeuda en <u class="exp" title="abreviatura desarrollada">[las diligencias]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> à su yns-</span>
+<span class="ln">tancia se ha<u class="exp" title="abreviatura desarrollada">[n]</u> seguido <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> del Provisional, q<u class="exp" title="abreviatura desarrollada">[ue]</u> pretend<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln">en este Juzg<u class="exp" title="abreviatura desarrollada">[ad]</u>o, <u class="exp" title="abreviatura desarrollada">[para]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> se Remitan</span>
+<span class="ln">à la R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Aud<u class="exp" title="abreviatura desarrollada">[ienci]</u>a, los <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> crimi-</span>
+<span class="ln">nales, q<u class="exp" title="abreviatura desarrollada">[ue]</u> le estan seguidos, y</span>
+<span class="ln">en ellos acusado de Ladron gra-</span>
+<span class="ln">tuero, q<u class="exp" title="abreviatura desarrollada">[ue]</u> a saber e<u class="exp" title="abreviatura desarrollada">[s]</u> como ve<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>:</span>
+<span class="ln">Por 4.. autos à 6 r<u class="exp" title="abreviatura desarrollada">[eale]</u>s cada uno - - - - - 03.. 0</span>
+<span class="ln">Por 3 Notif<u class="exp" title="abreviatura desarrollada">[icacione]</u>s à dos r<u class="exp" title="abreviatura desarrollada">[eale]</u>s - - - - - - 00.. 6</span>
+<span class="ln">y Razon de haver presentado el</span>
+<span class="ln">————————</span>
+<span class="ln">03.. 6</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…por el escrito del [procurador] que ha presentado, lo que más claro [consta]
+de lo proveer que se le ha seguido. Así lo mando y firmo yo, el mencionado
+juez, con los mismos testigos que me asisten en falta de escribano.
+Carrejón. Andrés de Toro y Serna. Manuel de Zelaya. —</p>
+<p>Planilla de los derechos judiciales que el sargento Mariano Guzmán adeuda en
+las diligencias que a su instancia se han seguido [...] del provisional que
+pretende en este juzgado, para que se remitan a la Real Audiencia los autos
+criminales que se le están siguiendo, y en ellos acusado de ladrón gratuito;
+que, a saber, es como se ve:</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta para la planilla, media para el auto que la precede. Las
+dos partidas y la suma de plana se leen sin duda, y **cuadran
+aritméticamente**: 4 × 6 r = 24 r = 3 pesos; 3 × 2 r = 6 r; total 30 reales
+= 3 pesos 6 reales, que es exactamente la cifra arrastrada al pie. Esa
+comprobación interna me da confianza sobre la lectura de la columna. No se
+dejan fijar: la palabra del encabezamiento de la l. 14 («del Provisional»
+va precedido de un término borrado); el sustantivo tachado de la l. 16
+(«los […] criminales», probablemente <em>autos</em>, pero está cancelado con trazo
+y no lo doy por leído); y el cierre de la l. 19, que leo «q[ue] a saber e[s]
+como ve[…]» sin poder rematar la fórmula. Señalo también que «gra-tuero»
+(l. 18-19) es la grafía del papel; su sentido es <em>gratuito</em>.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1633">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 22 de 23</span><h3>IMG_1633</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1633" aria-label="Ampliar la lámina IMG_1633">
+        <img src="../img/guzman1794/p022.jpg" alt="Fotografía de la lámina IMG_1633" loading="lazy">
+      </button>
+      <figcaption>Vuelto de pliego; sin sello. Tinta parda clara, trazo fino y
+renglones bien espaciados: **es la plana más legible del tramo en cuanto al
+texto<strong>. Y, a la vez, la peor encuadrada: </strong>la fotografía corta el margen
+derecho**, de modo que la columna de cantidades queda fuera del campo. Los
+puntos suspensivos de guía llegan al borde de la imagen y las cifras no
+aparecen. Por fortuna, casi todas las partidas enuncian su importe en
+palabras dentro del propio concepto, y eso salva la pieza. Ángulo superior
+izquierdo con el pliegue del cuadernillo levantado; margen izquierdo con
+lomo, costura y sombra. Sin foliación legible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">**El corazón del tramo: la planilla de derechos judiciales,
+partida por partida**, desde la razón de haber presentado el provisional
+hasta el oficio al escribano de cámara, con el importe total y la data. Es
+una tarifa de arancel de un juzgado rural cobrada a un particular en 1794,
+con precio por auto, por notificación, por declaración, por oficio
+despachado, por foja escrita, por rúbrica y por pliego de papel sellado
+según su sello. Documentación de este tipo casi nunca sobrevive.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Provisional ocho r<u class="exp" title="abreviatura desarrollada">[eale]</u>s - - - - - - <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Una declaracion seis r<u class="exp" title="abreviatura desarrollada">[eale]</u>s - - - - <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Una Razon de la entrega de O<u class="exp" title="abreviatura desarrollada">[fi]</u>-</span>
+<span class="ln">cios dos r<u class="exp" title="abreviatura desarrollada">[eale]</u>s - - - - - - - - <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Dos Oficios despachados à D<u class="exp" title="abreviatura desarrollada">[o]</u>n Jacin-</span>
+<span class="ln">to Mejia, y D<u class="exp" title="abreviatura desarrollada">[o]</u>n Ramon Molina</span>
+<span class="ln">8 r<u class="exp" title="abreviatura desarrollada">[eale]</u>s cada uno - - - - - - <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Una Razon de la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> del <u class="exp" title="abreviatura desarrollada">[Testimo]</u>-</span>
+<span class="ln">nio dos r<u class="exp" title="abreviatura desarrollada">[eale]</u>s - - - - - - - <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Por onze f<u class="exp" title="abreviatura desarrollada">[oja]</u>s de lo escrito del <u class="exp" title="abreviatura desarrollada">[Testimo]</u>-</span>
+<span class="ln">nio à dos r<u class="exp" title="abreviatura desarrollada">[eale]</u>s cada una - - - - <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Por quatro r<u class="exp" title="abreviatura desarrollada">[eale]</u>s de la Concuerda - - - <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Por un pliego de papel del sello</span>
+<span class="ln">segundo - - - - - - - - - <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Por un r<u class="exp" title="abreviatura desarrollada">[ea]</u>l de papel blanco - - - - <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Por onze Rubricas, un r<u class="exp" title="abreviatura desarrollada">[ea]</u>l - - - - <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Por quatro y medio pliegos de</span>
+<span class="ln">papel del sello 3º - - - - - - <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Por un oficio al Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no de Camara . <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Ymporta segun parece trece <u class="exp" title="abreviatura desarrollada">[13.. 7]</u></span>
+<span class="ln">pesos siete r<u class="exp" title="abreviatura desarrollada">[eale]</u>s S<u class="exp" title="abreviatura desarrollada">[ensen]</u>ti y Agos-</span>
+<span class="ln">to diez y seis de mil setez<u class="exp" title="abreviatura desarrollada">[ientos]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Planilla (continuación), con los importes que el propio texto enuncia:</p>
+<p>Sensentí, y agosto dieciséis de mil setecientos [noventa y cuatro — sigue en
+IMG_1634].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en los conceptos y en el total; media en el reparto
+interno. El total —«<em>Ymporta segun parece trece pesos siete r[eale]s</em>»— y
+la data son inequívocos, y los conceptos se leen uno a uno. La limitación es
+material y hay que decirla sin adornos: **la columna de cifras está fuera
+del encuadre fotográfico en esta plana**, de modo que sólo conozco los
+importes que el escribano repitió en palabras dentro del concepto. Quedan
+por tanto <strong>sin cifra</strong> tres partidas: el pliego del sello segundo, los
+cuatro pliegos y medio del sello tercero, y el oficio al escribano de
+cámara. Como control, sumando lo legible (30 reales arrastrados de IMG_1632
++ 8 + 6 + 2 + 16 + 2 + 22 + 4 + 1 + 1 = 92 reales) contra el total declarado
+de 13 pesos 7 reales = 111 reales, el hueco de esas tres partidas es de **19
+reales**; no lo reparto entre ellas porque sería conjetura, y además depende
+de si «Por onze Rubricas, un r[ea]l» significa un real en total o un real
+cada una. Dos lecturas concretas que marco: <em>fojas</em> en la l. 10 va abreviado
+y lo suplo; y la palabra que leo <em>Testimonio</em> (l. 8 y 10, partida como
+«Testimo-/nio») presenta un grupo central que también admitiría <em>término</em>,
+pero sólo <em>testimonio</em> casa con la partición del renglón y con el sentido.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1634">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 23 de 23</span><h3>IMG_1634</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1634" aria-label="Ampliar la lámina IMG_1634">
+        <img src="../img/guzman1794/p023.jpg" alt="Fotografía de la lámina IMG_1634" loading="lazy">
+      </button>
+      <figcaption>Recto de pliego. <strong>Sello impreso</strong> en cabecera, cortado por el
+encuadre; se distinguen el arranque de la orla y las letras `CA`, sin año ni
+valor. Tinta parda; las firmas, de tres manos claramente distintas y con
+rúbricas desarrolladas, están en tinta algo más negra y fresca que el cuerpo
+— coherente con ser lo único original de la plana. El papel muestra en el
+margen derecho una <strong>rasgadura vertical larga con pérdida de soporte</strong> y el
+canto deshilachado, que afecta a los finales de las líneas 3 a 8 sin llegar
+a comerse palabras enteras. Manchas de humedad dispersas y salpicaduras de
+tinta en el margen izquierdo, procedentes de la hoja enfrentada. Mitad
+inferior en blanco, con manchas de foxing. Sin foliación legible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Última plana escrita del tramo y <strong>cierre del testimonio</strong>.
+Remata la data de la planilla con el año y la firma del actuario, y sigue la
+<strong>certificación de concordancia</strong>: que concuerda con su original, que queda
+en el archivo a su cargo, con el que se corrigió y concertó; que lo hizo
+sacar y sacó a dieciséis de agosto de 1794; y que lo firma con testigos a
+falta de escribano. Debajo, <strong>las tres firmas autógrafas con rúbrica</strong>. La
+mitad inferior de la plana está en blanco: aquí acaba el expediente.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">nobenta, y quatro= Carrejon=</span>
+<span class="ln">Concuerda con su original que queda en</span>
+<span class="ln">el Archibo a mi cargo, con el q<u class="exp" title="abreviatura desarrollada">[ue]</u> se co-</span>
+<span class="ln">rrijió, y concertó à q<u class="exp" title="abreviatura desarrollada">[ue]</u> me Remito, el que</span>
+<span class="ln">hize sacar, y saque en diez, y seis de Agos-</span>
+<span class="ln">to de mil setez<u class="exp" title="abreviatura desarrollada">[ientos]</u> nobenta, y quatro años,</span>
+<span class="ln">firmandolo en este papel b<u class="exp" title="abreviatura desarrollada">[lanc]</u>o <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿de ...?]</u></u></span>
+<span class="ln">con testigos en falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no —————</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Juan Jose Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Andres de Toro y Serna <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>     Manuel de Zelaya <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[resto de la plana en blanco]</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…noventa y cuatro. Carrejón. — Concuerda con su original, que queda en el
+archivo a mi cargo, con el que se corrigió y concertó, a que me remito; el
+que hice sacar y saqué en dieciséis de agosto de mil setecientos noventa y
+cuatro años, firmándolo en este papel blanco [de ...], con testigos en falta
+de escribano.</p>
+<p>Juan José Carrejón (rúbrica). Andrés de Toro y Serna (rúbrica). Manuel de
+Zelaya (rúbrica).</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta. Es la plana mejor conservada y legible del tramo. La
+fórmula de concordancia, la fecha —dieciséis de agosto de mil setecientos
+noventa y cuatro— y los tres nombres firmantes son seguros, y las tres
+rúbricas son autógrafas y distintas entre sí. <strong>Todos firman</strong>: no hay aquí
+fórmula de no firma. Dos reservas menores: la última palabra de la l. 7,
+tras «en este papel b[lanc]o», no se deja leer —descarto proponerle sentido,
+aunque debería nombrar la clase o la falta de papel sellado—; y la firma
+autógrafa del juez, que en el texto se escribe siempre <em>Carrejon</em>, trazada
+de su puño parece leerse más bien <em>Courejon</em>, sin que pueda decidir entre
+una y otra forma.</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4><strong>Mariano Guzmán</strong></h4>
+  <p class="papel">el quejoso; preso un año y dos meses en la Real Cárcel de Corte por imputación de hurto</p>
+  <p class="calidad">vecino de Sensentí; <strong>sargento</strong> del batallón de milicias. <strong>Firma de su mano</strong> en todo el expediente — y se niega expresamente a firmar la planilla de costas</p>
+</div>
+<div class="persona">
+  <h4><strong>Don Juan Josef Carrejón</strong></h4>
+  <p class="papel">alcalde ordinario del partido de Sensentí; ejecuta la provisión</p>
+  <p class="calidad">actúa con testigos de asistencia a falta de escribano. <strong>Firma</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Juan Hurtado</strong></h4>
+  <p class="papel">escribano de cámara de la Real Audiencia; certifica y da fe</p>
+  <p class="calidad">Nueva Guatemala, julio de 1794</p>
+</div>
+<div class="persona">
+  <h4><strong>Regente Villalengua</strong></h4>
+  <p class="papel">preside la Sala que provee el auto de 5 de junio de 1794</p>
+  <p class="calidad">Real Audiencia de Guatemala</p>
+</div>
+<div class="persona">
+  <h4><strong>Oidores Vasco, Robledo, Villa Urrutia, del Campo</strong></h4>
+  <p class="papel">firman el auto con el regente</p>
+  <p class="calidad">Real Audiencia</p>
+</div>
+<div class="persona">
+  <h4><strong>Coronel Josef de Ballesteros y Nabas</strong></h4>
+  <p class="papel">reclama la causa por fuero militar, por ser Guzmán sargento de su cuerpo</p>
+  <p class="calidad">batallón de milicias</p>
+</div>
+<div class="persona">
+  <h4><strong>Don Fernando de Molina</strong></h4>
+  <p class="papel">testigo; declara sobre la remisión de los autos por el correo de Guatemala</p>
+  <p class="calidad">27 años; vecino del partido. Militar</p>
+</div>
+<div class="persona">
+  <h4><strong>José Jacinto Mejía</strong></h4>
+  <p class="papel">responde por oficio; pide doce reales por la certificación</p>
+  <p class="calidad">militar</p>
+</div>
+<div class="persona">
+  <h4><strong>Don Ramón Molina</strong></h4>
+  <p class="papel">nombrado en el auto de 16 de agosto</p>
+  <p class="calidad">militar</p>
+</div>
+<div class="persona">
+  <h4><strong>Toro y Serna</strong>, <strong>Zelaya</strong></h4>
+  <p class="papel">testigos de asistencia</p>
+  <p class="calidad">firman con Carrejón</p>
+</div></div>
+</section>
+
+<section class="extra wrap">
+  <h2>Nota final sobre lecturas y sobre el catálogo</h2>
+  <p><strong>En la fecha, el catálogo acierta:</strong> 1794, probado tres veces — la habilitación circular «SELLO 2.º 6 Rs … 1794» estampada sobre papel del bienio 1792-93, el auto de la Audiencia de cinco de junio de 1794, y la data de Hurtado en julio con las actuaciones de Sensentí en agosto. Es el primer expediente de esta serie en que el catálogo no se equivoca.</p>
+<p><strong>Donde sí conviene corregirlo</strong> es en dos detalles. El papel dice <strong>«un año y dos meses»</strong> de prisión, no catorce meses. Y no nombra ni Gracias ni el «Nuevo Poblado»; Ahuachapán aparece como <strong>«Aguachapa[n]»</strong>. La única calidad declarada en todo el expediente es la de «persona blanca que sepa leer y escribir», habilitada para notificar en ausencia de escribano — una categoría de aptitud, no de origen, pero reveladora de cómo se distribuía la alfabetización en el partido.</p>
+<p><strong>IMG_1624</strong> trae, de paso, un dato geográfico que vale la pena anotar: el alcalde se excusa de no haber cumplido a tiempo porque <strong>«me hallaba en el pueblo de Cucuyagua, distante quatro leguas de esta cabecera, practicando unos ymbentarios»</strong>. Cuatro leguas de Sensentí a Cucuyagua, dicho por quien hacía el camino.</p>
+<p>Sobre el estado material: <strong>IMG_1614 y las planas 1617 a 1623 están muy dañadas</strong> por traspaso de tinta del reverso y por tachaduras. En IMG_1633, el encuadre fotográfico corta la columna de cifras de la planilla, de modo que tres partidas quedan sin importe —un hueco de diecinueve reales entre las partidas y el total—. <strong>No se ha repartido ese hueco entre las partidas que lo pudieran llevar</strong>, porque sería inventar. El total, trece pesos siete reales, sí se lee. El sello impreso está cortado en todas las planas del segundo tramo, de modo que el bienio del papel no puede verificarse allí.</p>
+</section>
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

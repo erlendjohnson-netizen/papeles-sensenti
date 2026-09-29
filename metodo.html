@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Método — Papeles de Sensentí</title>
+<meta name="description" content="Convenciones de transcripción, signos diplomáticos y correcciones al catálogo previo.">
+<meta property="og:title" content="Método — Papeles de Sensentí">
+<meta property="og:description" content="Convenciones de transcripción, signos diplomáticos y correcciones al catálogo previo.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#ece9e2; --panel:#f7f5f0; --panel2:#e2ded4;
+  --ink:#191714; --ink2:#4e4a42; --ink3:#7d786e;
+  --rule:#d3cec2; --rule2:#c0b9aa;
+  --accent:#6b3a1f; --accent2:#8a5433; --accent-ink:#4a2713;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#14120f; --panel:#1c1a16; --panel2:#24211c;
+  --ink:#ece9e2; --ink2:#b5afa3; --ink3:#867f73;
+  --rule:#312d26; --rule2:#3d382f;
+  --accent:#d79a6e; --accent2:#c08654; --accent-ink:#e7b389;
+}}
+:root[data-theme="dark"]{
+  --bg:#14120f; --panel:#1c1a16; --panel2:#24211c;
+  --ink:#ece9e2; --ink2:#b5afa3; --ink3:#867f73;
+  --rule:#312d26; --rule2:#3d382f;
+  --accent:#d79a6e; --accent2:#c08654; --accent-ink:#e7b389;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:400 16.5px/1.65 Spectral,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+ -webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:22px}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{color:var(--accent-ink)}
+
+.mast{padding-block:64px 30px}
+.kicker{font:500 11.5px/1.5 ui-monospace,"SF Mono",Menlo,monospace;letter-spacing:.17em;
+ text-transform:uppercase;color:var(--accent2);margin:0 0 18px}
+h1{font:600 clamp(38px,7.5vw,74px)/1.02 inherit;letter-spacing:-.022em;margin:0 0 20px;text-wrap:balance}
+.lede{margin:0;max-width:60ch;font-size:19.5px;color:var(--ink2)}
+.lede strong{color:var(--ink);font-weight:600}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;
+ background:var(--rule);border:1px solid var(--rule);margin:38px 0 0}
+.stat{background:var(--panel);padding:16px 17px 17px}
+.stat b{display:block;font:600 30px/1 inherit;color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.stat span{display:block;margin-top:7px;font:400 10.5px/1.4 ui-monospace,Menlo,monospace;
+ letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+
+nav.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 92%,transparent);
+ backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);margin-top:44px}
+nav.top .in{display:flex;gap:18px;align-items:center;padding-block:12px;flex-wrap:wrap}
+nav.top a{font:500 13px/1 ui-monospace,Menlo,monospace;letter-spacing:.06em;text-transform:uppercase;
+ color:var(--ink2);text-decoration:none}
+nav.top a:hover{color:var(--accent)}
+nav.top .brand{font-weight:600;color:var(--ink);margin-right:auto;text-transform:none;letter-spacing:0;
+ font-family:inherit;font-size:15.5px}
+
+h2{font:600 clamp(24px,4vw,34px)/1.18 inherit;letter-spacing:-.015em;margin:60px 0 10px}
+.sec-intro{margin:0 0 26px;max-width:66ch;color:var(--ink2)}
+
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 26px}
+.filters button{font:500 12.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.04em;
+ background:var(--panel);color:var(--ink2);border:1px solid var(--rule2);
+ padding:8px 12px;cursor:pointer;border-radius:2px}
+.filters button:hover{border-color:var(--accent2);color:var(--ink)}
+.filters button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+
+.grid{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--panel);padding:22px 22px 24px;display:flex;flex-direction:column;
+ text-decoration:none;color:inherit}
+.card:hover{background:var(--panel2)}
+.card .yr{font:500 12px/1 ui-monospace,Menlo,monospace;letter-spacing:.09em;color:var(--accent2)}
+.card h3{font:600 21px/1.24 inherit;margin:9px 0 9px;letter-spacing:-.012em;color:var(--ink)}
+.card p{margin:0;font-size:15.2px;color:var(--ink2);line-height:1.58}
+.card .foot{margin-top:15px;padding-top:12px;border-top:1px solid var(--rule2);
+ font:400 11.5px/1 ui-monospace,Menlo,monospace;color:var(--ink3);
+ display:flex;gap:12px;flex-wrap:wrap;letter-spacing:.04em}
+.tag{color:var(--ink3)}
+
+.note{background:var(--panel);border-left:3px solid var(--accent2);padding:18px 20px;margin:26px 0;max-width:72ch}
+.note p{margin:0 0 10px}.note p:last-child{margin:0}
+.prose{max-width:68ch}
+.prose p{margin:0 0 16px}
+.prose h3{font:600 19px/1.3 inherit;margin:30px 0 8px;color:var(--accent-ink)}
+.prose ul{padding-left:1.15em;margin:0 0 16px}
+.prose li{margin:0 0 7px}
+code{font:400 14px ui-monospace,Menlo,monospace;background:var(--panel2);padding:1px 5px;border-radius:2px}
+blockquote{margin:16px 0;padding:12px 18px;background:var(--panel);border-left:3px solid var(--rule2);
+ font-style:italic;color:var(--ink2)}
+blockquote p{margin:0}
+
+footer{margin:70px 0 50px;padding-top:22px;border-top:1px solid var(--rule);
+ font-size:14.5px;color:var(--ink3);max-width:72ch}
+footer a{color:var(--accent2)}
+@media(max-width:640px){.wrap{padding-inline:16px}.mast{padding-block:44px 22px}}
+</style>
+</head><body>
+<nav class="top"><div class="in wrap" style="max-width:1120px;margin:0 auto">
+<a class="brand" href="index.html">Papeles de Sensentí</a>
+<a href="index.html#documentos">Documentos</a>
+<a href="index.html#archivo">El archivo</a>
+<a href="metodo.html">Método</a>
+<a href="index.html#citar">Citar</a>
+</div></nav>
+<div class="wrap">
+<header class="mast">
+<p class="kicker">Papeles de Sensentí</p>
+<h1>Método</h1>
+<p class="lede">Cómo se ha transcrito, qué significan los corchetes, y por qué en cada lámina
+se declara un grado de confianza.</p>
+</header>
+
+<div class="prose">
+<h3>Dos textos por lámina</h3>
+<p>Cada plana lleva dos transcripciones. La <strong>semidiplomática</strong> respeta el original:
+un renglón del papel es un renglón del texto, y se conservan la ortografía, la separación de palabras
+y la puntuación tal como están —«esclaba», «biruelas», «Valverdi», «qui[nient]os»—. La
+<strong>lectura en español de hoy</strong> es el mismo texto en prosa corrida, con puntuación y
+acentuación modernas y las abreviaturas desatadas en silencio; en ella los nombres propios y los
+topónimos se dejan como están en el papel.</p>
+
+<h3>Los signos</h3>
+<ul>
+<li><code>[ ]</code> letras suplidas por abreviatura: <code>q[ue]</code>, <code>d[ic]ho</code>, <code>V[uestra] M[erce]d</code></li>
+<li><code>[¿ ?]</code> lectura dudosa</li>
+<li><code>[...]</code> perdido o ilegible</li>
+<li><code>[rúbrica]</code> firma con rúbrica</li>
+<li><code>[al margen: …]</code> nota marginal</li>
+</ul>
+
+<h3>La regla que gobierna todo lo demás</h3>
+<p><strong>No se completa nada por conjetura.</strong> Ni un nombre, ni una cifra, ni una fecha.
+Donde no se ve, se dice que no se ve. En un archivo así se sabe perfectamente lo que suele decir
+una fórmula de escribanía, pero saberlo no es verlo, y una cifra restituida de memoria en un
+inventario o en un padrón destruye el documento para quien venga después.</p>
+<p>Por la misma razón, cuando una suma no cuadra con sus partidas se deja como está y se señala:
+el error es del escribiente, no del editor, y es un dato.</p>
+
+<h3>El grado de confianza</h3>
+<p>Cada lámina termina con una declaración de confianza —alta, media-alta, media o baja— y con la
+razón concreta: tinta desvaída, traspaso del verso, borrón, rotura, encuadre que corta el renglón.
+Sirve para saber cuánto peso puede cargar cada pasaje.</p>
+
+<h3>Sobre el catálogo previo</h3>
+<p>Existía un catálogo de las 385 planas hecho a partir de las fotografías. Ha sido muy útil para
+orientarse, pero <strong>se equivoca con frecuencia</strong>, y conviene no fiarse de él sin ir al papel.
+Los errores comprobados hasta ahora:</p>
+<ul>
+<li>Fechas mal leídas: 1797-98 por 1799-1800; 1816 por 1810; octubre de 1795 por enero; 1797 por 1796;
+1793 por <strong>1804</strong> —once años, engañado por un pliego de papel sellado viejo rehabilitado—;
+1836 por los años 1820; 1848-49 por <strong>1847</strong>; 1861 por 1851.</li>
+<li>Costuras mal puestas: unidades documentales que empiezan una plana antes de donde se decía,
+casi siempre por dejar fuera la carátula.</li>
+<li>Nombres: el cura de Ocotepeque es <strong>Recuenco</strong>, no Recinos; la mujer de Felipe Chévez
+es <strong>Cartejón</strong>, no Cartagena.</li>
+<li>Una palabra que no existe: el catálogo leía «cuadrilla» donde el papel dice
+<strong>«cierta Cuantilla»</strong>.</li>
+<li>Dos planas que son la misma: IMG_1415 e IMG_1416 son la misma cara fotografiada dos veces,
+de modo que el archivo tiene 384 planas únicas, no 385.</li>
+</ul>
+<p>Cada una de estas correcciones se razona en la página del documento correspondiente.</p>
+
+<h3>Lo que falta</h3>
+<p>Quedan <strong>31 láminas sin transcribir</strong>, IMG_1421 a IMG_1451: un bloque de circulares
+impresas de la Intendencia Departamental de Gracias de 1848 —elecciones, listas de vagos, nombramientos
+ministeriales—. Son de interés para la historia administrativa del Estado de Honduras, pero no para
+este proyecto, y se han dejado fuera deliberadamente.</p>
+</div>
+
+<footer>
+<p>← <a href="index.html">Volver a los documentos</a></p>
+</footer>
+</div>
+
+</body></html>

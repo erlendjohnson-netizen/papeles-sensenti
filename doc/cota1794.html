@@ -1,0 +1,1516 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>María Ascensión Cota, de quien todos hablan — Papeles de Sensentí</title>
+<meta name="description" content="Una información sumaria abierta el día después de una boda, y el informe que el cura de Ocotepeque manda en respuesta. Entre los dos suman trece planas sobre una mujer a la que se deposita tres veces en tres casas distintas y a la que, en ninguna de ellas, se le toma declaración.">
+<meta property="og:title" content="María Ascensión Cota, de quien todos hablan">
+<meta property="og:description" content="Una información sumaria abierta el día después de una boda, y el informe que el cura de Ocotepeque manda en respuesta. Entre los dos suman trece planas sobre una mujer a la que se deposita tres veces en tres casas distintas y a la que, en ninguna de ellas, se le toma declaración.">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Ocotepeque, 30 de mayo de 1794</p>
+  <h1>María Ascensión Cota, de quien todos hablan</h1>
+  <p class="dek">Una información sumaria abierta el día después de una boda, y el informe que el cura de Ocotepeque manda en respuesta. Entre los dos suman trece planas sobre una mujer a la que se deposita tres veces en tres casas distintas y a la que, en ninguna de ellas, se le toma declaración.</p>
+  <div class="meta"><span><strong>13 láminas</strong> · IMG_1635 – IMG_1647</span><span>30 de mayo de 1794</span><span>Papel sellado 4.º de 1792-93, resellado para 1793 y 1794, y papel sin sello</span><span>Ocotepeque · Sensentí · Tejutla</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">13</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>Trece planas de un mismo día —<strong>30 de mayo de 1794</strong>, en Ocotepeque— y de un mismo asunto, aunque en dos manos y dos papeles distintos.</p>
+<p><strong>La información sumaria (IMG_1635–1640).</strong> El comisionado <strong>don Jacinto Escamilla</strong>, actuando por el alcalde ordinario de segunda nominación don Dionicio Pineda y Bran, prende a <strong>Manuel Gonsales</strong> y abre información de vida y costumbres. Declaran tres testigos: <strong>Miguel Sagastume</strong>, cuñado del reo, que no firmó porque «no savia»; <strong>José Castañeda</strong>, oficial de sastre, de veintinueve años, que sí firmó; y <strong>Miguel Gutiérrez</strong>, vecino del partido de <strong>Tejutla</strong> residente en el pueblo, de veinticinco años, que no firmó «por no saver». Se habla de una amistad ilícita, de una boda celebrada el veintinueve —el día antes—, de bofetadas, de celos, y del depósito de una mujer.</p>
+<p><strong>El oficio al cura y su informe (IMG_1641–1647).</strong> Escamilla escribe al cura y vicario juez eclesiástico pidiéndole informe sobre las denuncias y sobre el depósito. El cura contesta punto por punto: relata las comparecencias del marido, el primer depósito de la mujer en casa de su padre, sus propias gestiones, el término de quince días que concedió, y cómo al saber que ella «había caminado para los Valles, o Sensentí» escribió al alcalde. Advierte al final que el cómplice es forastero y que, depositada la mujer en casa del alcalde —su hermano—, «queda obviado todo peligro».</p>
+<p><strong>La mujer se llama María Ascensión Cota.</strong> Es mujer de Miguel Sagastume y cuñada de Manuel Gonsales, que está casado con María Cota. <strong>En ninguna de las trece planas se le toma declaración.</strong> No jura, no comparece, no firma. Hablan de ella su marido, su cuñado, el comisionado, dos testigos que no la conocen y el cura. Se la deposita tres veces: primero el padre Domingo de Lima, estando ausente el marido; después el cura ordena al alcalde ordinario de Ocotepeque, Juan Contreras, ponerla «en caso de seguridad»; y queda finalmente «puesta para mayor seguridad en casa del dicho Alcalde, su hermano». El cura dice haberla «llamado» y que «quedó convenida» — sin acta, sin constancia, sin firma suya ni de nadie por ella.</p>
+<p>Es el mismo silencio que se oye en la petición sobre Juana Diega, que está en este archivo cinco meses después. La diferencia es que a Juana Diega el papel al menos la describe. A María Ascensión Cota la traslada de casa en casa sin decir nunca qué dijo ella.</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>El interés del expediente está en un procedimiento: el <strong>depósito</strong> de una mujer casada. Depositar era sacar a una mujer de su casa y ponerla, mientras durase una causa que la tocaba, bajo la custodia de un tercero tenido por seguro. No se consideraba pena ni prisión, y por eso se hacía «para mayor seguridad», fórmula que aparece literalmente. La justificación era protectora y el efecto era custodial. María Ascensión Cota es depositada tres veces en tres casas distintas, y en ninguna diligencia habla ella.</p>
+<p>También deja ver el reparto de competencias, con nitidez porque las dos autoridades se escriben. La amistad ilícita, la boda y el estado del matrimonio corresponden al cura, juez eclesiástico. Los golpes, la prisión del reo y la información de vida y costumbres corresponden al juez real, aquí el comisionado <strong>don Jacinto Escamilla</strong>. No hay conflicto, hay coordinación por oficio: el depósito lo ordena el eclesiástico y lo ejecuta el civil. Sirve para estudiar la jurisdicción compartida en un partido rural.</p>
+<p>Hay que señalar el silencio. En las trece planas no se le toma declaración: no jura, no comparece, no firma. El cura dice que la había «llamado» y que «quedó convenida», pero no hay acta ni firma, así que su consentimiento existe sólo en el relato de quien la depositó. Eso no prueba que se la tuviera por incapaz, porque otras mujeres de este archivo litigan en nombre propio. Indica que en un depósito la voluntad de la mujer no era una pieza que hubiera que documentar. Léase junto a la petición sobre Juana Diega, de cinco meses después.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#f1635">35</a><a href="#f1636">36</a><a href="#f1637">37</a><a href="#f1638">38</a><a href="#f1639">39</a><a href="#f1640">40</a><a href="#f1641">41</a><a href="#f1642">42</a><a href="#f1643">43</a><a href="#f1644">44</a><a href="#f1645">45</a><a href="#f1646">46</a><a href="#f1647">47</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="f1635">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 13</span><h3>IMG_1635</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1635" aria-label="Ampliar la lámina IMG_1635">
+        <img src="../img/cota1794/p001.jpg" alt="Fotografía de la lámina IMG_1635" loading="lazy">
+      </button>
+      <figcaption>Papel sellado: sello impreso arriba, «Un quartillo / SELLO QUARTO, VN QUAR-
+TILLO, AÑOS DE MIL SETE- CIENTOS NOVENTA Y DOS Y NOVENTA Y TRES», con el escudo real
+circular («CAROLUS… HISPANIARUM REX») a la izquierda; debajo, el **resello de
+habilitación**, circular, con corona, dos columnas coronadas y «S 4», leyenda «… PARA LOS
+AÑOS DE 179[3]… / 1794». Tinta ferrogálica pardo oscura, bastante desvaída en el tercio
+medio por humedad. Sin foliación visible. El papel está arrugado en pliegues verticales y
+tiene el <strong>margen derecho perdido/fuera de cuadro</strong>: la fotografía corta entre dos y seis
+letras al final de casi todos los renglones, que es la limitación mayor de todo el tramo.
+En el margen izquierdo corre una anotación vertical desvaída, ilegible. Costura de cuaderno
+visible al pie.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Primera plana del expediente y cabeza de la información sumaria. Contiene dos
+actos: (a) el auto por el que <strong>D[o]n Jacinto Escamilla</strong>, comisionado del alcalde de
+segunda nominación <strong>D[o]n Dionicio Pineda y Bran</strong>, capitán de milicias del batallón de
+Gracias a Dios, da cuenta de haber prendido a <strong>Manuel Gonsales</strong>, casado con **María
+Cota**, vecino, y tenerlo en la Cárcel Real del partido «asta el dia de oi que Contamos
+treinta de mayo de este presente año», y de proceder a información de vida y costumbres;
+y (b) el encabezamiento de la <strong>primera declaración</strong>, la de <strong>Miguel Sagastum[e]</strong>, del
+mismo vecindario, casado con María As[c]ensión. No se toma aquí declaración a ninguna
+mujer.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[sello impreso:]</u> Un quartillo</span>
+<span class="ln">SELLO QUARTO, VN QUAR-</span>
+<span class="ln">TILLO, AÑOS DE MIL SETE-</span>
+<span class="ln">CIENTOS NOVENTA Y DOS Y</span>
+<span class="ln">NOVENTA Y TRES.</span>
+<span class="ln">[resello circular: corona, dos columnas coronadas, «S 4»; leyenda «… PARA LOS / AÑOS DE 179<u class="exp" title="abreviatura desarrollada">[3]</u> … 1794»]</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[al margen izquierdo, en vertical: <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ilegible]</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Yo D<u class="exp" title="abreviatura desarrollada">[o]</u>n Jacinto Escamilla Comicionado</span>
+<span class="ln">por el S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e de Segunda Nominac<u class="exp" title="abreviatura desarrollada">[ión]</u></span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n Dionicio Pineda y Bran Capitan</span>
+<span class="ln">de milicias del Batayon de Gr<u class="exp" title="abreviatura desarrollada">[aci]</u>as a Dios,</span>
+<span class="ln">prosedí Con la mayor Cautela que se pueda <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">apricionar a la persona de Manuel Gon<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">zales Casado con Maria Cota de este be<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">sindario por los ecsesos que este a Come<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">do mande arrestar en la Carsel R<u class="exp" title="abreviatura desarrollada">[ea]</u>l de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">este partido endonde se mantiene, asta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">el dia de oi que Contamos treinta de ma<u class="exp" title="abreviatura desarrollada">[yo]</u></span>
+<span class="ln">de este presente año y para tomar <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿es?]</u></u><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ta providencia de remitirle al Sagrado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ta que suseda alo esos asundos prosigo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">arencia y ynformacion de la bida y Constu<u class="exp" title="abreviatura desarrollada">[m]</u></span>
+<span class="ln">bres de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho suseto y para que Conste <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">firma en d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho dia mes y año</span>
+<span class="ln">Jacinto Escamilla <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En treinta de Mayo del presente año <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">el Comicionado yse Conpareser ante mi <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">testigos a Miguel Sagastum de este mismo</span>
+<span class="ln">besindario Casado Con Maria Assio<u class="exp" title="abreviatura desarrollada">[n]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Yo, don Jacinto Escamilla, comisionado por el señor alcalde de segunda nominación don
+Dionisio Pineda y Bran, capitán de milicias del batallón de Gracias a Dios, procedí con la
+mayor cautela que se pueda [...] a aprisionar a la persona de Manuel Gonzales, casado con
+María Cota, de este vecindario, por los excesos que éste ha cometido; mandé arrestarle en
+la cárcel real de este partido, donde se mantiene hasta el día de hoy, que contamos treinta
+de mayo de este presente año. Y para tomar esta providencia de remitirle al sagrado [...],
+hasta que suceda [lo que haya de suceder en] esos asuntos, prosigo [...] y a la información
+de la vida y costumbres de dicho sujeto; y para que conste, lo firma en dicho día, mes y
+año. Jacinto Escamilla [rúbrica].</p>
+<p>En treinta de mayo del presente año, el comisionado hice comparecer ante mí [y los]
+testigos a Miguel Sagastume, de este mismo vecindario, casado con María Asención [...].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media-alta.</strong> La mano es clara y el formulario, reconocible. Lo que impide
+subir la nota es el corte del margen derecho: se pierde el cierre de catorce renglones
+seguidos. Concretamente no se dejan fijar: la palabra tras «que se pueda» (¿«a»?
+¿«apricionar» repetido?); la voz que empieza en «[...]arencia» (¿«aberiguación»?
+¿«aparencia»? — no la completo); el complemento de «remitirle al Sagrado [...]»; y el
+final del nombre «Maria Assio[n]», que sólo se cierra gracias a IMG_1641 («Maria Sunsion
+Cota»). La nota marginal vertical es ilegible en esta toma.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1636">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 13</span><h3>IMG_1636</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1636" aria-label="Ampliar la lámina IMG_1636">
+        <img src="../img/cota1794/p002.jpg" alt="Fotografía de la lámina IMG_1636" loading="lazy">
+      </button>
+      <figcaption>Vuelto del pliego anterior, sin sello (el sello va sólo en la primera plana
+del pliego). Misma tinta y mano. Papel fuertemente ondulado, con pliegue vertical en el
+centro que desvía los renglones. Una mancha de humedad oscurece el ángulo superior
+derecho. Otra vez, <strong>margen derecho fuera de cuadro</strong>: se pierden los finales de renglón.
+Al pie se ve la costura y el canto del cuaderno.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Cuerpo de la <strong>declaración primera, la de Miguel Sagastume</strong>, cuñado del preso.
+Es la plana donde se plantean, en forma de preguntas recogidas por el escribiente, los tres
+hechos del caso: la <strong>amistad ilícita</strong>, las <strong>bofetadas de la noche del casamiento</strong> y los
+<strong>celos con D[o]n Thomas</strong>. El testigo alega las generales de la ley por ser cuñado de
+Gonsales. La mujer aparece aquí nombrada como «su muger Maria [...]» y como «su
+Concubina», en boca de terceros; <strong>no declara</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Dios N<u class="exp" title="abreviatura desarrollada">[uest]</u>ro S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or y una señal de la C<u class="exp" title="abreviatura desarrollada">[ruz]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">quien prometio desir berdad en lo que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y siendo preguntado disiendole si Conoc<u class="exp" title="abreviatura desarrollada">[e a Ma]</u></span>
+<span class="ln">nuel Gonsales diso que si y que le toCan <u class="exp" title="abreviatura desarrollada">[las ge]</u></span>
+<span class="ln">nerales de la lei por ser su Cuñado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">si la noche del Casamiento le dio <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">el d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Gonsales a su muger Maria <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">si su muger tiene amista ylisita <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">reconviniendola por que le dava <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ria y tambien a Gonsales le respondi<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">que era su Concubina por selos que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">que la bio ablando Con D<u class="exp" title="abreviatura desarrollada">[o]</u>n Thomas <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">da y que entró d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Gonsales adent<u class="exp" title="abreviatura desarrollada">[ro]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">despues de haverle dado los dos bofe<u class="exp" title="abreviatura desarrollada">[tadas]</u></span>
+<span class="ln">que fue una atez que el mencionado D<u class="exp" title="abreviatura desarrollada">[on Thomas]</u></span>
+<span class="ln">mas la estaba enamorando y Como <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">que el a este d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho D<u class="exp" title="abreviatura desarrollada">[o]</u>n Thomas Carm<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">sin ninguna malicia por estar <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">se en la misma Casa no hizo Caso <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">bien diso que haviendo salido al Camp<u class="exp" title="abreviatura desarrollada">[o]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">la buelta que hizo paso por la Casa <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">referido Gonsales y que por una bent<u class="exp" title="abreviatura desarrollada">[ana]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[Juró por] Dios Nuestro Señor y una señal de la cruz, y prometió decir verdad en lo que
+[...]. Y siendo preguntado, diciéndole si conoce a Manuel Gonsales, dijo que sí, y que le
+tocan las generales de la ley por ser su cuñado. [Preguntado] si la noche del casamiento
+le dio [bofetadas] el dicho Gonsales a su mujer María [...]; si su mujer tiene amistad
+ilícita [...], reconviniéndola porque le daba [...]; y también a Gonsales, le respondió que
+era su concubina, por celos que [tuvo] de que la vio hablando con don Thomas [...], y que
+entró dicho Gonsales adentro después de haberle dado las dos bofetadas; que fue una vez que
+el mencionado don Thomas la estaba enamorando, y como [...] que él a este dicho don Thomas
+Carm[...] sin ninguna malicia, por estar [...] en la misma casa, no hizo caso. También dijo
+que habiendo salido al campo, a la vuelta que hizo pasó por la casa del referido Gonsales, y
+que por una ventana [...].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media.</strong> El sentido general es seguro (generales de la ley por cuñado;
+bofetadas la noche del casamiento; celos con don Thomas; la palabra «Concubina» puesta en
+boca de Gonsales). Pero el corte de margen se come aquí precisamente los complementos: no
+se puede fijar <strong>el apellido de don Thomas</strong> (la plana da «Carm[...]», mientras IMG_1639
+y IMG_1640 dan «D[o]n Thomas de Pineda»: pueden ser el mismo o no, y no lo doy por
+resuelto); tampoco el <strong>nombre completo de la mujer golpeada</strong> («su muger Maria [...]»);
+ni el número exacto de bofetadas en el primer renglón donde se menciona (más abajo dice
+«los dos bofe[tadas]»). El renglón «que el a este d[ic]ho D[o]n Thomas Carm[...]» queda sin
+verbo legible.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1637">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 13</span><h3>IMG_1637</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1637" aria-label="Ampliar la lámina IMG_1637">
+        <img src="../img/cota1794/p003.jpg" alt="Fotografía de la lámina IMG_1637" loading="lazy">
+      </button>
+      <figcaption>Recto del segundo folio del mismo pliego, sin sello. Tinta algo más pálida y
+aguada que en IMG_1635; el papel muestra verjuras marcadas y un pliegue vertical central
+que parte el texto. Hay una rotura pequeña y una mancha oscura redondeada a media plana
+derecha. <strong>Margen derecho de nuevo fuera de cuadro.</strong> En el margen izquierdo asoma el canto
+del folio contiguo con restos de escritura ajena a esta plana.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Continuación de la declaración de Sagastume. Es la plana más sustanciosa del
+conjunto: el testigo cuenta (a) la escena nocturna —separó cama de su mujer, y a
+medianoche sintió levantarse a Gonsales e irse a la cama de ella, encendiendo un cigarro—;
+(b) que <strong>estando él ausente, en el B[...] de Sensentí en busca de maíz</strong>, supo que **el
+padre Luna [Lima] había depositado a su mujer<strong>, y fue a preguntarle por qué; (c) que </strong>su
+propia suegra** le dijo que su esposa estaba amancebada con Gonsales; (d) que ha dado parte
+dos veces al padre; y (e) que Gonsales dio unos **cinchazos al padre D[o]n Domingo de
+L[una/Lima]<strong> la mañana del casamiento, «que contamos </strong>beinte y nuebe del presente mes**».
+Ese dato fecha la boda: 29 de mayo, víspera de todo el expediente. La mujer es objeto del
+depósito; <strong>no declara</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Gonzales preguntandole que si havia ydo alg<u class="exp" title="abreviatura desarrollada">[uno]</u></span>
+<span class="ln">alguno a su Casa que su puerta no la havia <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ayado Como la dejo y entonses bolvio el de<u class="exp" title="abreviatura desarrollada">[cla]</u></span>
+<span class="ln">rante a su muger y le dijo que Como le havia <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho que era Gonsales y entonses respondio</span>
+<span class="ln">que serian las <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿?]</u></u>: mas diso que una</span>
+<span class="ln">noche separó Cama de su muger y que a la</span>
+<span class="ln">media noche sintió que se libantó el men<u class="exp" title="abreviatura desarrollada">[cio]</u></span>
+<span class="ln">sionado Gonsales y se fue a la Cama d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha y que</span>
+<span class="ln">havia sacado fuego y estaban los dos llamand<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">de un sigarro y a poco se apiaron el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">lo Juntos y entonses se libantó él y se fue</span>
+<span class="ln">para la Cama ablandole a su muger que</span>
+<span class="ln">donde havia ydo respondio que a orinar</span>
+<span class="ln">y advirtió que Gonsales se fue a Costar</span>
+<span class="ln">que haviendo ydo este año presente al B<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de Sensentí en busca de mais luego que</span>
+<span class="ln">no tubo notisia que el padre Luna le avia</span>
+<span class="ln">depositado su muger y fue apresurarsele qu<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln">por que las avia depositado le respondio qu<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln">por que la del y de otros sujetos y que asta</span>
+<span class="ln">en las provincias estrañas era publico a<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">mas de que su misma suegra le diso <u class="exp" title="abreviatura desarrollada">[que estaba]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[amance]</u>bada su Esposa Con el referi<u class="exp" title="abreviatura desarrollada">[do]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Gonza]</u>les fuera de esto se aber <u class="exp" title="abreviatura desarrollada">[certi]</u></span>
+<span class="ln">ficado que en otras ocaciones a bosiferado ser su Con</span>
+<span class="ln">cubina del Espresado y a dado de este p<u class="exp" title="abreviatura desarrollada">[ar]</u></span>
+<span class="ln">te por dos ocaciones al padre Luna <u class="exp" title="abreviatura desarrollada">[y]</u></span>
+<span class="ln">que le Consta tambien aver dado dos <u class="exp" title="abreviatura desarrollada">[sin]</u></span>
+<span class="ln">chasos al Padre D<u class="exp" title="abreviatura desarrollada">[o]</u>n Domingo de L<u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿una/ima?]</u></u></span>
+<span class="ln">la mañana del Casamiento que Contam<u class="exp" title="abreviatura desarrollada">[os]</u></span>
+<span class="ln">beinte y nuebe del presente mes y que sab<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] dicho Gonsales, preguntándole que si había ido alguno a su casa, que su puerta no la
+había hallado como la dejó. Y entonces volvió el declarante a su mujer y le dijo que cómo
+le había dicho que era Gonsales; y entonces respondió que serían las [...]. Mas dijo que
+una noche separó cama de su mujer, y que a la medianoche sintió que se levantó el
+mencionado Gonsales y se fue a la dicha cama; y que había sacado fuego y estaban los dos
+encendiendo un cigarro, y al poco se apearon [...] juntos; y entonces se levantó él y se
+fue para la cama, hablándole a su mujer que dónde había ido; respondió que a orinar, y
+advirtió que Gonsales se fue a acostar.</p>
+<p>Que habiendo ido este año presente al B[...] de Sensentí en busca de maíz, luego que [volvió]
+no tuvo [sino] noticia de que el padre Luna le había depositado a su mujer, y fue a
+requerirle que por qué las había depositado; le respondió que porque la de él y la de otros
+sujetos, y que hasta en las provincias extrañas era público; además de que su misma suegra
+le dijo que estaba amancebada su esposa con el referido Gonsales. Fuera de esto, se ha
+certificado que en otras ocasiones ha vociferado ser su concubina del expresado, y ha dado
+parte de esto por dos ocasiones al padre Luna. Y que le consta también haber dado dos
+cinchazos al padre don Domingo de L[una/Lima] la mañana del casamiento, que contamos
+veintinueve del presente mes; y que sabe [...].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media-alta</strong> para el relato, <strong>media</strong> para tres puntos concretos. No se
+deja fijar: <strong>el topónimo tras «al B[...] de Sensentí»</strong> —se lee con claridad la B inicial
+y luego el encuadre lo corta; no lo completo, aunque el informe del cura hable después de
+«los Valles de Sensentí»—; <strong>la palabra tras «que serian las»</strong>, que el papel escribe con
+trazo ambiguo y no arriesgo; y <strong>el apellido del padre</strong>, que en esta plana parece «Luna»
+y en IMG_1639 lleva punto sobre la vocal y parece «Lima». Es un mismo hombre, don Domingo,
+y dejo las dos formas como las escribe el papel. La secuencia de renglones cortados a media
+plana («se aber [certi]ficado») la restituyo sólo en lo que el corte de página garantiza.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1638">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 13</span><h3>IMG_1638</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1638" aria-label="Ampliar la lámina IMG_1638">
+        <img src="../img/cota1794/p004.jpg" alt="Fotografía de la lámina IMG_1638" loading="lazy">
+      </button>
+      <figcaption><strong>Primera plana de un segundo pliego</strong>: vuelve a aparecer el sello impreso
+completo —«Un quartillo / SELLO QUARTO, VN QUAR- TILLO, AÑOS DE MIL SETE- CIENTOS NOVENTA
+Y DOS Y NOVENTA Y [T]RES»— con el escudo real circular a la izquierda y, debajo, el
+<strong>resello de habilitación</strong> muy nítido: círculo con corona, dos columnas coronadas y «S 4»
+al centro, leyenda «1794 ✠ PARA LOS AÑOS DE 179[3]». Este es el ejemplar donde mejor se lee
+la habilitación de todo el tramo. Tinta pardo oscura. Papel limpio en la mitad superior,
+con ondulación al pie. <strong>Margen derecho, otra vez, recortado por la toma.</strong> En la parte
+superior izquierda de la foto asoman dedos y un papel de protección del fotógrafo.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Cierre de la declaración de Sagastume —Gonsales anda acompañado de gente de su
+laya, maltrata a sus suegros y a los de casa, y «luego que le bieron [preso] todos estaban
+contentos»— con la <strong>fórmula de no firma</strong> y el bloque de firmas; y, en la mitad inferior,
+<strong>apertura de la declaración segunda</strong>, la del <strong>oficial de sastre Jo[seph Cas]tañeda</strong>, de
+este vecindario, que declara <strong>no tocarle las generales de la ley</strong>. La mujer no interviene.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[sello impreso:]</u> ✠</span>
+<span class="ln">Un quartillo</span>
+<span class="ln">SELLO QUARTO, VN QUAR-</span>
+<span class="ln">TILLO, AÑOS DE MIL SETE-</span>
+<span class="ln">CIENTOS NOVENTA Y DOS Y</span>
+<span class="ln">NOVENTA Y <u class="exp" title="abreviatura desarrollada">[T]</u>RES.</span>
+<span class="ln">[resello circular: «1794 ✠ PARA LOS AÑOS DE 179<u class="exp" title="abreviatura desarrollada">[3]</u>», corona y dos columnas coronadas, «S 4»]</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> no ser ocacionado ni peleador <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y no havia otro que tubiera a<u class="exp" title="abreviatura desarrollada">[rmas]</u></span>
+<span class="ln">Cortas ni largas solo el tenia su <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y que anda acompañado de Juan <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ques y otros sujetos de la laya que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ta que a su Suegro y Suegra y demas <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de Casa que los maltrata por reprendo<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">maldades que luego que le bieron <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">todos estaban Contentos y siendo que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">la Justisia nolo sacara y que esta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">d<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> so Cargo de su Juramento en que <u class="exp" title="abreviatura desarrollada">[se afir]</u></span>
+<span class="ln">mo y rratifico siendole leida su de<u class="exp" title="abreviatura desarrollada">[cla]</u></span>
+<span class="ln">racion y expreso ser de edad de tre<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">años quien no firmó p<u class="exp" title="abreviatura desarrollada">[o]</u>r<u class="exp" title="abreviatura desarrollada">[que]</u> no savia y se l<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln">Con los testigos de q<u class="exp" title="abreviatura desarrollada">[ue]</u> sertifico.</span>
+<span class="ln">Juan Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l Medina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        Jacinto Escamilla <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Ju<u class="exp" title="abreviatura desarrollada">[an]</u> Miguel Sob<u class="exp" title="abreviatura desarrollada">[erano]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">J<u class="exp" title="abreviatura desarrollada">[ose]</u>ph Gonsales <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho dia mes y año yo el Comicionado y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y testigos yse Conpareser ante mi a Jo<u class="exp" title="abreviatura desarrollada">[seph Cas]</u></span>
+<span class="ln">tañeda ofisial de Sastre de este ve<u class="exp" title="abreviatura desarrollada">[cindario]</u></span>
+<span class="ln">a quien resiví Juramento en la forma <u class="exp" title="abreviatura desarrollada">[acostumbrada]</u></span>
+<span class="ln">quien prometió desir berdad en <u class="exp" title="abreviatura desarrollada">[lo]</u></span>
+<span class="ln">que le fuere preguntado y siendole <u class="exp" title="abreviatura desarrollada">[preguntado si]</u></span>
+<span class="ln">Conose a Manuel Gonzales diso que <u class="exp" title="abreviatura desarrollada">[si y que]</u></span>
+<span class="ln">no le tocan las generales de la <u class="exp" title="abreviatura desarrollada">[lei]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] no ser ocasionado ni peleador; y no había otro que tuviera armas cortas ni largas, sólo
+él tenía su [...]; y que anda acompañado de Juan [...]ques y de otros sujetos de la laya;
+[...] que a su suegro y suegra y demás de casa, que los maltrata por reprenderle sus
+maldades; que luego que le vieron [preso] todos estaban contentos, [y temiendo] que la
+justicia no lo sacara. Y esto dijo so cargo de su juramento, en que se afirmó y ratificó,
+siéndole leída su declaración; y expresó ser de edad de tre[inta...] años. **Quien no firmó
+porque no sabía**, y se le [leyó], con los testigos de que certifico. Juan Manuel Medina —
+Jacinto Escamilla — Juan Miguel Sob[erano] — Joseph Gonsales.</p>
+<p>En dicho día, mes y año, yo el comisionado y testigos hice comparecer ante mí a Joseph
+Castañeda, oficial de sastre, de este vecindario, a quien recibí juramento en la forma
+acostumbrada, quien prometió decir verdad en lo que le fuere preguntado; y siéndole
+preguntado si conoce a Manuel Gonzales, dijo que sí, y que no le tocan las generales de la
+ley.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media-alta.</strong> La fórmula de no firma es literal y segura: «quien no firmó
+p[or]q[ue] no savia». La habilitación se lee con seguridad («1794», «PARA LOS AÑOS DE»,
+«S 4»); la cifra final de la leyenda («179[3]») queda medio comida por la impresión. No se
+dejan fijar: <strong>la edad de Sagastume</strong>, cortada en «tre[...]»; **el apellido del acompañante
+«Juan [...]ques»**; y el apellido del testigo de asistencia que firma a la derecha, que
+leo «Sob[erano]» con reservas porque la rúbrica lo invade. El nombre del segundo testigo,
+«Jo[seph Cas]tañeda», se restituye por el corte de margen y se confirma con su firma
+autógrafa en IMG_1640.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1639">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 13</span><h3>IMG_1639</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1639" aria-label="Ampliar la lámina IMG_1639">
+        <img src="../img/cota1794/p005.jpg" alt="Fotografía de la lámina IMG_1639" loading="lazy">
+      </button>
+      <figcaption>Segunda plana con <strong>sello impreso y resello visibles</strong> en el tercio superior
+—el escribano escribió los primeros renglones por encima del bloque impreso y siguió
+rodeándolo—, lo que confirma que se trata de un nuevo medio pliego habilitado. El resello
+es aquí el más legible: se lee de corrido «PARA LOS AÑOS DE 1793 Y 1794» en torno a las
+columnas coronadas y el «S 4». Tinta parda, trazo algo más suelto. Papel con mancha de
+humedad en banda diagonal y pliegue vertical central. <strong>Margen derecho recortado.</strong></figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Declaración segunda completa, la del <strong>sastre Castañeda</strong>. Aporta lo más
+concreto del caso: que <strong>venía de Esquipulas</strong> y supo que había casamiento **en casa de
+Manuel Coto<strong>, y estuvo tocando por la noche; que oyó que </strong>Gonsales dio [las bofetadas] a
+la mujer de Sagastume por celos que tuvo con don Thomas, estando su marido presente**; que
+<strong>le consta que el padre Luna la depositó</strong>; que se dice y sabe que Gonsales está
+<strong>amancebado con su cuñada, mujer de Sagastume</strong>; que a don Domingo de Lima le tiró dos
+cinchazos; que pidió «en voces bajas» que le dieran <strong>el volante a don Thomas de Pineda</strong>;
+que maltrató a sus suegros y les da mala vida; y que ha oído decir que su suegro es
+delincuente. La mujer es nombrada tres veces, siempre como «la muger de Sagastum» o «su
+cuñada»; <strong>no declara</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">[sello impreso y resello circular «PARA LOS AÑOS DE 1793 Y 1794», «S 4»]</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> sabe que d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Gonzales es hombre <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">peleador diso que le Consta serlo y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">tambien si le dio dos bofetadas a la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">muger de Miguel Sagastum diso que el</span>
+<span class="ln">bemia de Esquipulas y supo que havia un</span>
+<span class="ln">Casamiento en Casa de Manuel Coto y estu<u class="exp" title="abreviatura desarrollada">[vo]</u></span>
+<span class="ln">tocando en la Noche y supo por oirseles</span>
+<span class="ln">que le dio Gonzales a la muger de Sagast<u class="exp" title="abreviatura desarrollada">[um]</u></span>
+<span class="ln">por selos que tubo con D<u class="exp" title="abreviatura desarrollada">[o]</u>n Thomas estando <u class="exp" title="abreviatura desarrollada">[su]</u></span>
+<span class="ln">marido p<u class="exp" title="abreviatura desarrollada">[re]</u>sente y le Consta que el padre Lu<u class="exp" title="abreviatura desarrollada">[na]</u></span>
+<span class="ln">la deposito y que disen y sabe estar amanse<u class="exp" title="abreviatura desarrollada">[bado]</u></span>
+<span class="ln">con su Cuñada muger de Sagastum y si vio</span>
+<span class="ln">tirarla en la mañana del Casamiento</span>
+<span class="ln">al padre D<u class="exp" title="abreviatura desarrollada">[o]</u>n Domingo de Lima respondi<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">que le tiró dos sin chasos y que sabe que a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">nadie ocaciona ni es peleador solo le diso en</span>
+<span class="ln">bores basas que le dieran el bolante a D<u class="exp" title="abreviatura desarrollada">[o]</u>n</span>
+<span class="ln">Thomas de Pineda que se yban amista<u class="exp" title="abreviatura desarrollada">[dos]</u></span>
+<span class="ln">y que ninguno tenia arma Corta ni la<u class="exp" title="abreviatura desarrollada">[r]</u></span>
+<span class="ln">ga solo el y que maltrató a sus Suegros</span>
+<span class="ln">y les da mala vida y que quedaron Conten<u class="exp" title="abreviatura desarrollada">[tos]</u></span>
+<span class="ln">tos por que solo era el el peleador y que</span>
+<span class="ln">aqui a oido desir que su suegro es delin</span>
+<span class="ln">quente estando en Canselado esto diso so Car</span>
+<span class="ln">go de su Juramento haviendosele</span>
+<span class="ln">leido su declaracion en que se afirm<u class="exp" title="abreviatura desarrollada">[ó]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[Preguntado si] sabe que dicho Gonzales es hombre [pendenciero y] peleador, dijo que le
+consta serlo; y [preguntado] también si le dio dos bofetadas a la [...] mujer de Miguel
+Sagastume, dijo que él venía de Esquipulas y supo que había un casamiento en casa de Manuel
+Coto, y estuvo tocando por la noche, y supo por oírselo que le dio Gonzales a la mujer de
+Sagastume por celos que tuvo con don Thomas, estando su marido presente; y le consta que el
+padre Luna la depositó; y que dicen, y sabe, estar amancebado con su cuñada, mujer de
+Sagastume. Y [preguntado] si vio tirarle, la mañana del casamiento, al padre don Domingo de
+Lima, respondió que le tiró dos cinchazos; y que sabe que a nadie ocasiona ni es peleador,
+sólo le dijo en voces bajas que le dieran el volante a don Thomas de Pineda, que se iban
+amistados; y que ninguno tenía arma corta ni larga, sólo él; y que maltrató a sus suegros y
+les da mala vida; y que quedaron contentos porque sólo él era el peleador; y que aquí ha
+oído decir que su suegro es delincuente, estando en Cancelado. Esto dijo so cargo de su
+juramento, habiéndosele leído su declaración, en que se afirmó [...].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media-alta.</strong> Lo nuclear (Esquipulas, casa de Manuel Coto, celos con don
+Thomas, marido presente, depósito por el padre, amancebamiento con la cuñada, cinchazos,
+volante a don Thomas de Pineda) se lee bien. Dudoso: la palabra cortada del primer renglón
+(el adjetivo que precede a «peleador»); el objeto del renglón «si le dio dos bofetadas a la
+[...] muger» —no sé si hay un sustantivo intercalado o es corte limpio—; y el topónimo
+final, que leo «Canselado» y no identifico. «Lima» aquí lleva punto sobre la vocal, frente
+al «Luna» de IMG_1637: lo dejo como está en cada plana.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1640">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 13</span><h3>IMG_1640</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1640" aria-label="Ampliar la lámina IMG_1640">
+        <img src="../img/cota1794/p006.jpg" alt="Fotografía de la lámina IMG_1640" loading="lazy">
+      </button>
+      <figcaption>Papel sellado sin sello visible (vuelto de pliego). Tinta parda. El folio está
+más deteriorado: pliegue vertical fuerte, canto derecho desflecado y, sobre todo, **el
+bloque de firmas del tercer testigo está escrito de costado en el margen izquierdo**,
+girado 90°, por falta de caja al pie —rasgo poco común que conviene registrar. Al pie, la
+costura del cuaderno y restos de papel. <strong>Margen derecho fuera de cuadro.</strong></figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Plana bisagra de la información. Arriba, **cierre de la declaración de
+Castañeda<strong>, con su edad —</strong>veintinueve años<strong>— y la fórmula </strong>de firma**: es el único de
+los tres testigos que sabe escribir, y firma. Abajo, <strong>declaración tercera y última</strong>, la
+del <strong>forastero</strong>: **Miguel Gutierres, vecino del partido de Tejutla y residente en este
+pueblo**, que declara que Gonsales es ocasionado y peleador, que vio dar una [bofetada] a
+la que dicen era mujer de Sagastume —a quien <strong>él no conoce</strong>—, y que dio un chicotazo y
+dos cinchazos al padre Lima al pedirle un volante en voces bajas y sin maltratarle. Cierra
+con su edad —<strong>veinticinco años</strong>— y la fórmula de no firma. **Última plana de la
+información sumaria: el corte con la segunda unidad cae aquí, al pie de esta plana.** La
+mujer sigue sin declarar; ni siquiera se la nombra por su nombre, sólo «la que disen era
+muger de Sagastume».</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho dia mes y año que Comparesier<u class="exp" title="abreviatura desarrollada">[on]</u></span>
+<span class="ln">y testigos a Miguel Gutieres vezino <u class="exp" title="abreviatura desarrollada">[del par]</u></span>
+<span class="ln">tido de Tejutla y residente en este Pue<u class="exp" title="abreviatura desarrollada">[blo]</u></span>
+<span class="ln">quien resiví Juramento Conforme a <u class="exp" title="abreviatura desarrollada">[d]</u>i</span>
+<span class="ln">cho y prometie desir berdad en lo qu<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln">era y le fuere preguntado y siendol<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln">nose a Manuel Gonzales diso que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ocasionado peleador que vio dar una <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">sen que disen era muger de Sagas<u class="exp" title="abreviatura desarrollada">[tume]</u></span>
+<span class="ln">a quien no Conose y que dio una c<u class="exp" title="abreviatura desarrollada">[hicota]</u></span>
+<span class="ln">da y dos sin chasos al Padre Lim<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln">que le pidió un bolante en bores baj<u class="exp" title="abreviatura desarrollada">[as]</u></span>
+<span class="ln">y sin maltratarle y que otro no h<u class="exp" title="abreviatura desarrollada">[avía]</u></span>
+<span class="ln">que tuviera arma Corta que maltra<u class="exp" title="abreviatura desarrollada">[ta]</u></span>
+<span class="ln">a sus Suegros que nos citaba <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">nó necesitaba de esos y le respondi<u class="exp" title="abreviatura desarrollada">[ó]</u></span>
+<span class="ln">d<u class="exp" title="abreviatura desarrollada">[i]</u>jo que no lo necesitaba mas <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Casa y esto diso so Cargo de su Jura<u class="exp" title="abreviatura desarrollada">[mento]</u></span>
+<span class="ln">mento en que se afirmo y rratific<u class="exp" title="abreviatura desarrollada">[ó]</u></span>
+<span class="ln">haviendosele leida su declaracion</span>
+<span class="ln">y expreso ser de edad de beinte y</span>
+<span class="ln">sinco años quien no firmó por no saver</span>
+<span class="ln">yo Con los testigos de que sertifico</span>
+<span class="ln">Jacinto Escamilla <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[al margen izquierdo, escrito en vertical:]</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Juan]</u> Miguel Sob<u class="exp" title="abreviatura desarrollada">[erano]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Juan Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l Medina</span>
+<span class="ln">J<u class="exp" title="abreviatura desarrollada">[ose]</u>ph Gonsales <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[en la parte superior de la plana, cierre de la declaración anterior:]</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> expreso ser de edad de bein<u class="exp" title="abreviatura desarrollada">[te y]</u></span>
+<span class="ln">nuebe años quien firmó Conmigo y <u class="exp" title="abreviatura desarrollada">[los testi]</u></span>
+<span class="ln">gos de que sertifico</span>
+<span class="ln">Jacinto Escamilla <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>   Jose Castañeda <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Juan Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l Medina          J<u class="exp" title="abreviatura desarrollada">[ose]</u>ph Gonsales <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[En el] dicho día, mes y año, comparecieron [ante mí] y testigos, Miguel Gutierres, vecino
+del partido de Tejutla y residente en este pueblo, a quien recibí juramento conforme a
+derecho, y prometió decir verdad en lo que fuere y le fuere preguntado; y siéndole
+[preguntado si] conoce a Manuel Gonzales, dijo que [sí, y que es] ocasionado y peleador;
+que vio dar una [bofetada] a la que dicen era mujer de Sagastume, a quien él no conoce; y
+que dio un chicotazo y dos cinchazos al padre Lima, que le pidió un volante en voces bajas
+y sin maltratarle; y que no había otro que tuviera arma corta; que maltrata a sus suegros
+[...]. Y esto dijo so cargo de su juramento, en que se afirmó y ratificó, habiéndosele leído
+su declaración; y expresó ser de edad de veinticinco años. <strong>Quien no firmó por no saber</strong>;
+yo, con los testigos, de que certifico. Jacinto Escamilla [rúbrica]; al margen, Juan Miguel
+Sob[erano], Juan Manuel Medina, Joseph Gonsales.</p>
+<p>[Arriba:] […] expresó ser de edad de veintinueve años. <strong>Quien firmó conmigo y los testigos</strong>,
+de que certifico. Jacinto Escamilla — Jose Castañeda — Juan Manuel Medina — Joseph Gonsales.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media-alta</strong> en los datos de estado civil, vecindad, edades y fórmulas de
+firma, que son lo que más importa aquí y se leen sin ambigüedad: Tejutla, residente en este
+pueblo, veinticinco años, «no firmó por no saver»; y, para el sastre, veintinueve años,
+«firmó Conmigo». <strong>Media</strong> en el tramo central de la declaración del forastero (los
+renglones «que nos citaba… / nó necesitaba de esos…»), donde el corte de margen y una
+repetición del escribiente dejan el sentido incompleto. El apellido «Sob[erano]» del testigo
+de asistencia sigue sin poder fijarse.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1641">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 7 de 13</span><h3>IMG_1641</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1641" aria-label="Ampliar la lámina IMG_1641">
+        <img src="../img/cota1794/p007.jpg" alt="Fotografía de la lámina IMG_1641" loading="lazy">
+      </button>
+      <figcaption><strong>Papel sin sello</strong>, más blanco y delgado que el del cuaderno anterior: es el
+cambio material que marca el corte. Dos tintas y dos manos: la de Escamilla, fina y
+cursiva, con rúbrica de lazos; y la del cura, mucho más gruesa y redonda. El folio está
+roto y desflecado en todo el canto derecho, con pérdida real de papel (no sólo de encuadre).
+Pliegue vertical central. Al pie, la costura. En el ángulo superior derecho de la foto asoma
+un papel moderno, ajeno al expediente, con un croquis y la anotación «Terreno N.º … 5.65…».</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Plana doble, y aquí está la costura verdadera.</strong> En la cabecera, la dirección:
+«[Señ]or Cura y Vicario Juez Eclesiástico D[octo]r Eug[eni]o Cristobal de Recuenco». Debajo,
+el <strong>oficio de Jacinto Escamilla al cura</strong>, que expone que tiene comisión bastante para
+seguir información contra Manuel Gonzales «por que se dise y es publico tener amistad
+ylisita con <strong>Maria Sunsion Cota cuñada</strong> de d[ic]ho Gonzales, según resulta de la
+declaración tomada a su esposo Miguel Sagastum[e]», y le pide razón de las denuncias
+puestas ante él como vicario y **del depósito que mandó ejecutar el alcalde Juan
+Contreras**; fecha en «Ocotepeque y Mayo 30 de 1794 a[ño]s», cortesía «Dios gu[ard]e a
+V[uestra] m[erce]d m[uchos] a[ño]s», «B[esa] L[a] M[ano] de V[uestra] M[erce]d», firma y
+rúbrica. Y en el <strong>tercio inferior, en la mano nueva y gruesa del cura</strong>, arranca ya la
+<strong>respuesta</strong>: «Sobre estos particulares referidos en este escrito…». Es, pues, la plana
+donde acaba una unidad y empiezan dos textos más. **Aquí se nombra por fin a la mujer con
+nombre y apellido: María Sunsión Cota. No se le toma declaración: quien declara sobre ella
+es su esposo.**</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[S]</u>or Cura y Vicario Juez Eclesi<u class="exp" title="abreviatura desarrollada">[astic]</u>o D<u class="exp" title="abreviatura desarrollada">[octo]</u>r Eug<u class="exp" title="abreviatura desarrollada">[eni]</u>o Cri</span>
+<span class="ln">stobal de Recuenco.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Ayudandome Como me ayo Con Comicion bas<u class="exp" title="abreviatura desarrollada">[tante]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> para seguir ynformacion Contra</span>
+<span class="ln">Manuel Gonzales por que se dise y es</span>
+<span class="ln">publico tener amistad ylisita Con Ma</span>
+<span class="ln">ria Sunsion Cota Cuñada de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Gon</span>
+<span class="ln">zales segun resulta de la declaracion</span>
+<span class="ln">tomada a su Esposo Miguel Sagast<u class="exp" title="abreviatura desarrollada">[ume]</u></span>
+<span class="ln">dise aber puesto el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ante mi <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">dio de V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d; ygualmente de rrazon</span>
+<span class="ln">de las denuncias que an puesto al <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Como Vicario. Como tanvien en el depo</span>
+<span class="ln">sito que mandó que esecutará el Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e</span>
+<span class="ln">Juan Contreras. Ocotepeque y May<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">30 d<u class="exp" title="abreviatura desarrollada">[e]</u> 1794 a<u class="exp" title="abreviatura desarrollada">[ño]</u>s.</span>
+<span class="ln">Dios gu<u class="exp" title="abreviatura desarrollada">[ard]</u>e a V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d m<u class="exp" title="abreviatura desarrollada">[uchos]</u> a<u class="exp" title="abreviatura desarrollada">[ño]</u>s</span>
+<span class="ln">B<u class="exp" title="abreviatura desarrollada">[esa]</u> L<u class="exp" title="abreviatura desarrollada">[a]</u> M<u class="exp" title="abreviatura desarrollada">[ano]</u> de V<u class="exp" title="abreviatura desarrollada">[uestra]</u> M<u class="exp" title="abreviatura desarrollada">[erce]</u>d</span>
+<span class="ln">Jacinto Escamilla <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[otra mano, más gruesa:]</u></span>
+<span class="ln">Sobre estos particulares referidos en</span>
+<span class="ln">este escrito de<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> desir y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que</span>
+<span class="ln">menos puedo por mi para lo<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Señor cura y vicario juez eclesiástico, doctor Eugenio Cristóbal de Recuenco.</p>
+<p>Hallándome con comisión bastante para seguir información contra Manuel Gonzales, porque se
+dice y es público tener amistad ilícita con María Sunsión Cota, cuñada de dicho Gonzales,
+según resulta de la declaración tomada a su esposo Miguel Sagastume —que dice haber puesto
+el [caso] ante vuestra merced—, igualmente [suplico a vuestra merced se sirva darme] razón
+de las denuncias que han puesto ante vuestra merced como vicario, y asimismo del depósito
+que mandó que ejecutase el alcalde Juan Contreras. Ocotepeque, y mayo 30 de 1794 años. Dios
+guarde a vuestra merced muchos años. Besa la mano de vuestra merced, Jacinto Escamilla
+[rúbrica].</p>
+<p>[Respuesta, de otra mano:] Sobre estos particulares referidos en este escrito debo decir
+[...] que menos puedo, por mí, para lo[s] [...].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Alta</strong> para lo esencial: el nombre completo de la mujer («Maria Sunsion
+Cota Cuñada de d[ic]ho Gonzales»), el nombre del alcalde (Juan Contreras), la data
+(Ocotepeque, 30 de mayo de 1794) y la firma de Escamilla. <strong>Baja</strong> para los tres renglones
+iniciales de la respuesta del cura, que están escritos con tinta que ha calado y sobre
+papel arrugado: «este escrito de[...] desir y [...] que / menos puedo por mi para lo[...]»
+no se deja cerrar y no lo conjeturo. También queda sin fijar el objeto del renglón «dise
+aber puesto el [...] ante mi». El apellido del cura lo leo <strong>Recuenco</strong> aquí y en IMG_1647;
+no veo «Recinos» por ningún lado.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1642">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 8 de 13</span><h3>IMG_1642</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1642" aria-label="Ampliar la lámina IMG_1642">
+        <img src="../img/cota1794/p008.jpg" alt="Fotografía de la lámina IMG_1642" loading="lazy">
+      </button>
+      <figcaption>Papel sin sello, blanco, delgado, con verjuras marcadas. Tinta gris-parda muy
+diluida en la mitad superior (hay renglones casi perdidos) y más negra al pie. Dos aspas o
+cruces de plumada atraviesan el texto —marcas de cotejo, no tachaduras. Canto derecho roto.
+Al pie, la costura y el canto deshilachado del cuaderno. La foto incluye dedos y papel de
+protección en el ángulo superior izquierdo, y <strong>corta el margen derecho</strong>.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Primera plana entera del <strong>informe del cura Recuenco</strong>, que responde punto por
+punto. Empieza a narrar sus tratos con Sagastume: que **un miércoles vino de noche a
+decirle que su mujer estaba con su hermano [o hermana] en casa de su padre, en este
+pueblo, y que por tanto la depositara**; que, como las palabras venían de hombre alterado,
+<strong>determinó llamarla para entregársela</strong>, y ella [...], con que se fue; y que **en otra
+ocasión ocurrió diciendo que le habían hallado in fraganti a su mujer y a Manuel Gonzales**,
+llegando entonces <strong>Manuel Gonzales y la esposa de éste</strong>, querellándose. Es la plana donde
+la mujer aparece más veces —depositada, llamada, entregada— y **donde queda más claro que
+nunca se le toma declaración: el cura la llama y la despacha, sin acta**.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>cion ante<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">verdaderamente son los sigui<u class="exp" title="abreviatura desarrollada">[entes]</u></span>
+<span class="ln">Conforme a sus diferentes <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">estas veles <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y repitada<u class="exp" title="abreviatura desarrollada">[s]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> son a el saber: en un Miercoles <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">vino de Noche a decirme que <u class="exp" title="abreviatura desarrollada">[su mu]</u></span>
+<span class="ln">ger estaba Con su hermano <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">nado en la Casa de su padre <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">este pueblo, y que por tanto l<u class="exp" title="abreviatura desarrollada">[a de]</u></span>
+<span class="ln">positara: Como estas palab<u class="exp" title="abreviatura desarrollada">[ras]</u></span>
+<span class="ln">o pantoso <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la Concepto ni in<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ban de ebio, determiné llam<u class="exp" title="abreviatura desarrollada">[ar]</u></span>
+<span class="ln">la para entregarsela y ella <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Con q<u class="exp" title="abreviatura desarrollada">[ue]</u> se fue: En otra oca<u class="exp" title="abreviatura desarrollada">[sion]</u></span>
+<span class="ln">ocurrio diciendo que le havi<u class="exp" title="abreviatura desarrollada">[an ha]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>lado in fraganti a su Muger y a <u class="exp" title="abreviatura desarrollada">[Ma]</u></span>
+<span class="ln">nuel Gonzalez; a esta sazon <u class="exp" title="abreviatura desarrollada">[lle]</u></span>
+<span class="ln">garon Manuel Gonzalez y la <u class="exp" title="abreviatura desarrollada">[Es]</u></span>
+<span class="ln">posa de este, querellandose l<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Con el de haver venido a pe<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Contra Manuel Gonzalez y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] porque [...] de la [...] antes. Verdaderamente son los siguientes, conforme a sus
+diferentes [...]; estas veces [...] y repetidas [...] son, a saber: en un miércoles vino de
+noche a decirme que su mujer estaba con su hermano [o hermana] [...] en la casa de su padre
+[...] este pueblo, y que por tanto la depositara. Como estas palabras [venían de hombre]
+espantoso [...] —no las conceptué ni [...] de ebrio—, determiné llamarla para entregársela,
+y ella [...], con que se fue. En otra ocasión ocurrió diciendo que le habían hallado in
+fraganti a su mujer y a Manuel Gonzalez; a esta sazón llegaron Manuel Gonzalez y la esposa
+de éste, querellándose [...] con él de haber venido a pedir contra Manuel Gonzalez y [...].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Baja-media.</strong> Es la plana peor conservada del tramo: tinta pálida, papel
+arrugado y margen derecho cortado, todo a la vez. Lo que sí sostengo: «vino de Noche a
+decirme que [su mu]ger estaba Con su hermano … en la Casa de su padre … y que por tanto
+l[a de]positara»; «determiné llamarla para entregarsela»; «le havi[an ha]llado in fraganti
+a su Muger y a [Ma]nuel Gonzalez»; y la llegada de «Manuel Gonzalez y la [Es]posa de este».
+No se dejan fijar: si el papel dice «hermano» o «hermana» (la abreviatura y el corte lo
+impiden, y es un dato que importa); la voz «o pantoso … la Concepto ni in[...] ban de
+ebio», donde sólo aventuro el sentido en la lectura modernizada y lo marco como tal; y el
+final de los tres últimos renglones.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1643">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 9 de 13</span><h3>IMG_1643</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1643" aria-label="Ampliar la lámina IMG_1643">
+        <img src="../img/cota1794/p009.jpg" alt="Fotografía de la lámina IMG_1643" loading="lazy">
+      </button>
+      <figcaption>Papel sin sello. Tinta gris-negra, trazo grueso. Un aspa de plumada cruza el
+segundo renglón. Canto derecho roto y desflecado, con pérdida de papel. Pliegue vertical.
+En el ángulo superior aparece de nuevo el papel moderno del croquis «Terreno N.º … 5.65».
+<strong>Margen derecho recortado.</strong></figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Continuación del informe. El cura cuenta que Sagastume llegó **a decir que no
+hacía vida maridable con él su mujer** y que pusiera remedio; que, viendo que no
+permanecía ni había subsistencia en sus propuestas verbales, **le dijo que se presentase
+por escrito<strong>, lo que ejecutó después de largo tiempo; que </strong>el escrito sólo contenía queja
+de la falta de asistencia de su esposa para con él<strong> —</strong>sin especificar persona**—; y que,
+con ese recelo, **la llamó, y en virtud de [lo que expuso] su marido y de sus razones,
+quedó convenida en vivir [unidamente], haciéndole [...] a su marido**. Es el pasaje central
+para la cuestión: **la mujer es llamada por el cura y «queda convenida», pero no se recoge
+declaración suya ni se consigna una sola palabra en su boca.**</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">entonces <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> haciendo no ten<u class="exp" title="abreviatura desarrollada">[er]</u></span>
+<span class="ln">ni de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> cosa alguna Contra ellos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">En otra ocasion llegó a decir no ha<u class="exp" title="abreviatura desarrollada">[cer]</u></span>
+<span class="ln">vida Maridable Con el su muger <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y que pariera remedio, entonces <u class="exp" title="abreviatura desarrollada">[en]</u></span>
+<span class="ln">atencion a que el no Permanecia n<u class="exp" title="abreviatura desarrollada">[i]</u></span>
+<span class="ln">havia Subsistencia en sus propues<u class="exp" title="abreviatura desarrollada">[t]</u></span>
+<span class="ln">o pedazos Verbales, le dije <u class="exp" title="abreviatura desarrollada">[que pue]</u></span>
+<span class="ln">s<u class="exp" title="abreviatura desarrollada">[e]</u> entase por escrito, lo que executa<u class="exp" title="abreviatura desarrollada">[ría]</u></span>
+<span class="ln">despues de largo tiempo, y Como <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">su escrito Solo Contenia que se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de la falta de asistencia de su</span>
+<span class="ln">esposa para Con el, y que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">mia. Recelo de Caso de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Cu<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">(sin especificar persona) la</span>
+<span class="ln">llame, y en virtud de la que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">su Marido y mis Razones quedó</span>
+<span class="ln">Convenida en vivir <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>mente <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">haciendole <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a su Marido <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Entonces [...] haciendo no tener ni de [...] cosa alguna contra ellos. En otra ocasión llegó
+a decir que no hacía vida maridable con él su mujer, y que pusiera remedio. Entonces, en
+atención a que él no permanecía ni había subsistencia en sus propuestas o pedazos verbales,
+le dije que se presentase por escrito, lo que ejecutó después de largo tiempo; y como su
+escrito sólo contenía [queja] de la falta de asistencia de su esposa para con él, y que
+[...] —recelo de caso de [...]—, **sin especificar persona, la llamé; y en virtud de lo que
+[expuso] su marido y de mis razones, quedó convenida en vivir [unida]mente, haciéndole
+[...] a su marido**.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media.</strong> Sostengo con seguridad: «no ha[cer] vida Maridable Con el su
+muger»; «le dije [que se pr]esentase por escrito»; «su escrito solo Contenia … de la falta
+de asistencia de su esposa para Con el»; «(sin especificar persona) la llame»; «quedó
+Convenida en vivir [...]mente … a su Marido». Es decir: el punto que importa —que la llamó
+y que no hay acta— está fijado. No se dejan fijar: el adverbio tras «vivir» (leo la
+terminación «-mente» y no el cuerpo); el participio tras «haciendole»; y el renglón «mia.
+Recelo de Caso de [...] Cu[...]», que está a la vez borroso y cortado.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1644">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 10 de 13</span><h3>IMG_1644</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1644" aria-label="Ampliar la lámina IMG_1644">
+        <img src="../img/cota1794/p010.jpg" alt="Fotografía de la lámina IMG_1644" loading="lazy">
+      </button>
+      <figcaption>Papel sin sello. Tinta gris-parda, aguada arriba y más negra abajo. Un aspa de
+plumada sobre el segundo renglón. Papel muy ondulado; canto derecho roto. Al pie, costura.
+Dedos y papel de protección en el ángulo superior izquierdo de la toma. **Margen derecho
+cortado.**</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Sigue el informe. El cura refiere que, <strong>para obviar todo riesgo</strong>, dio [orden
+o recado] a **Escamilla, como comisario, para que mandase a Miguel Sagastume habitar en
+este pueblo<strong>, mandato que </strong>no tuvo efecto<strong>; que </strong>posteriormente se le denunció por
+tercera persona**, y entonces, habiéndole llamado, [Sagastume] vino a decirle que vuestra
+merced le [...] «(no me acuerdo a qué)», y que **en el término de quince días saldría su
+mujer para otra parte**, ínterin él estaría con [él / consigo]. La mujer, otra vez, es
+objeto de traslado decidido entre varones; <strong>no declara</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">a obviar todo riesgo, por lo qu<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Se<u class="exp" title="abreviatura desarrollada">[ñ]</u>or, dando Escami<u class="exp" title="abreviatura desarrollada">[lla]</u></span>
+<span class="ln">a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Comisario para q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">mandara a Migu<u class="exp" title="abreviatura desarrollada">[el]</u> Sagast<u class="exp" title="abreviatura desarrollada">[ume]</u></span>
+<span class="ln">habitase en este pueblo, Cuy<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[man]</u>dado o orden de V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d no tu<u class="exp" title="abreviatura desarrollada">[vo]</u></span>
+<span class="ln">efecto. Posteriorm<u class="exp" title="abreviatura desarrollada">[en]</u>te se m<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln">nuncio por tercera perso<u class="exp" title="abreviatura desarrollada">[na]</u></span>
+<span class="ln">entonces haciendole llamad<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">a decirme que V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d le p<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">(no me acuerdo a que) y que en <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> termino de quince dias Sald<u class="exp" title="abreviatura desarrollada">[ria]</u></span>
+<span class="ln">su Muger para otra parte <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ynterin el estaria Conm<u class="exp" title="abreviatura desarrollada">[igo]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] a obviar todo riesgo; por lo que [...] señor, dando [orden a] Escamilla como comisario,
+para que mandase a Miguel Sagastume que habitase en este pueblo; cuyo mandato u orden de
+vuestra merced no tuvo efecto. Posteriormente se me denunció por tercera persona, y
+entonces, habiéndole llamado, [vino] a decirme que vuestra merced le [había dicho] —no me
+acuerdo a qué [propósito]— y que en el término de quince días saldría su mujer para otra
+parte, ínterin él estaría conmigo.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media.</strong> Seguro: «habitase en este pueblo», «no tu[vo] efecto»,
+«Posteriorm[en]te se m[e] [de]nuncio por tercera perso[na]», «(no me acuerdo a que)», «en
+[el] termino de quince dias Sald[ria] su Muger para otra parte». Inseguro: el sujeto y el
+verbo de los dos primeros renglones (el aspa de plumada cae justo encima); si el cura
+escribe «dando» o «mandando» a Escamilla; y el cierre «ynterin el estaria Conm[igo]», donde
+el pronombre puede ser «conmigo» o «con [ella]» y no lo resuelvo.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1645">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 11 de 13</span><h3>IMG_1645</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1645" aria-label="Ampliar la lámina IMG_1645">
+        <img src="../img/cota1794/p011.jpg" alt="Fotografía de la lámina IMG_1645" loading="lazy">
+      </button>
+      <figcaption>Papel sin sello, blanco. Tinta negra, trazo grueso, muy legible: la mejor
+plana del bloque del cura. Papel ondulado con pliegue vertical; canto derecho roto con
+pérdida. Arriba asoma otra vez el papel moderno del croquis «Terreno N.º … 5.65». Al pie,
+costura y cantos deshilachados. <strong>Margen derecho recortado</strong>, aunque aquí la pérdida es
+menor.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Sigue el informe, y aquí está el <strong>depósito de Ocotepeque</strong>. El cura dice que,
+habiendo pasado más de los quince días <strong>sin salir</strong>, convino en que **bajase a este poblado
+con su mujer<strong>, y de no, que </strong>la mandaría bajar él**; y que, estando esperando que la
+trajese al poblado para quitarle recelos, **supo que había caminado para los Valles de
+Sensentí<strong>, por cuyo motivo escribió al </strong>Alcalde Ordinario de este pueblo para que la
+pusiera en caso de seguridad y satisfacción, lo que practicó inmediatamente**; y que
+[Sagastume] se le quejó, <strong>amenazándole con el señor obispo y el provincial</strong>, pidiéndole
+las causas del depósito, a lo que respondió con el contenido de su escrito. Éste es el
+segundo depósito, el eclesiástico. <strong>La mujer no declara; se la traslada.</strong></p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">y haviendo pasado mas de los quin<u class="exp" title="abreviatura desarrollada">[ce]</u></span>
+<span class="ln">dias sin Salir, me Convine para</span>
+<span class="ln">que se bajara a este Poblado Con</span>
+<span class="ln">su Muger, y de no que la manda</span>
+<span class="ln">ria bajar yo, que es en hacerle a<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y estando esperando que la traje<u class="exp" title="abreviatura desarrollada">[se]</u></span>
+<span class="ln">al Poblado para quitarlo de rezelo<u class="exp" title="abreviatura desarrollada">[s]</u></span>
+<span class="ln">Supe que havia Caminado para los</span>
+<span class="ln">Valles d<u class="exp" title="abreviatura desarrollada">[e]</u> Sensenti, por Cuyo motivo</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[es]</u>Crivi al Alcalde Ordinario de este</span>
+<span class="ln">Pueblo, para q<u class="exp" title="abreviatura desarrollada">[ue]</u> la pusiera en Caso</span>
+<span class="ln">de Seguridad y Satisfaccion, lo</span>
+<span class="ln">que practicó inmediatam<u class="exp" title="abreviatura desarrollada">[en]</u>te <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">se me quejó amenazandome Con el</span>
+<span class="ln">S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Ob<u class="exp" title="abreviatura desarrollada">[is]</u>po y Prov<u class="exp" title="abreviatura desarrollada">[inci]</u>al, pidiendome las Causas</span>
+<span class="ln">del deposito, a que le respondi</span>
+<span class="ln">Con el Contenido de Su escrito.</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Y habiendo pasado más de los quince días sin salir, convine en que se bajara a este poblado
+con su mujer, y de no, que la mandaría bajar yo —que es en hacerle [agravio]—. Y estando
+esperando que la trajese al poblado, para quitarlo de recelos, supe que había caminado para
+los Valles de Sensentí; por cuyo motivo escribí al alcalde ordinario de este pueblo para
+que la pusiera en caso de seguridad y satisfacción, lo que practicó inmediatamente. [Y
+luego] se me quejó, amenazándome con el señor obispo y el provincial, pidiéndome las causas
+del depósito, a que le respondí con el contenido de su escrito.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Alta</strong> (la mayor del bloque del cura). Se lee de corrido y sin
+ambigüedades el núcleo: «los Valles d[e] Sensenti», «Alcalde Ordinario de este Pueblo»,
+«la pusiera en Caso de Seguridad y Satisfaccion», «amenazandome Con el S[eño]r Ob[is]po y
+Prov[inci]al», «pidiendome las Causas del deposito». Sólo queda sin cerrar el final del
+renglón «que es en hacerle a[...]», que el canto roto se lleva.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1646">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 12 de 13</span><h3>IMG_1646</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1646" aria-label="Ampliar la lámina IMG_1646">
+        <img src="../img/cota1794/p012.jpg" alt="Fotografía de la lámina IMG_1646" loading="lazy">
+      </button>
+      <figcaption>Papel sin sello. Tinta negra gruesa. Papel ondulado, con manchas oscuras de
+tinta corrida en dos puntos del tercio superior y canto derecho roto. La foto incluye dedos
+y papel de protección arriba a la izquierda y, a la derecha, el canto escrito de la plana
+siguiente. <strong>Margen derecho cortado.</strong></figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Penúltima plana del informe. Cierra el capítulo de Manuel Gonzales —el cura
+dice haber estado <strong>continuamente informado</strong> de sus cosas, que <strong>le dio permiso</strong> para
+[que viniese de fuera] a hacer vida maridable con él [ella], y cierra: **«Asta aquí sobre
+los particulares de Manuel Gonz[ález]»<strong>— y abre los dos últimos capítulos: </strong>sobre las
+denuncias puestas**, que no hay necesidad de repetir por ahora, «pues en todas [ellas se
+ha] puesto remedio»; y **sobre el depósito que ejecutó Contreras, alcalde, de mi orden,
+debo decir que con él se ha puesto remedio o reparo**. La mujer aparece como aquella a
+quien se le permite o no hacer vida maridable; <strong>no declara</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[con]</u>tinuam<u class="exp" title="abreviatura desarrollada">[en]</u>te ynformado del <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de Manuel Gonzalez, y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>e ella en las Casas de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ne Segunmento, el d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">gastarme; le di permiso para q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">de fuera ha hacer vida ma<u class="exp" title="abreviatura desarrollada">[rida]</u></span>
+<span class="ln">ble Con el, haviendolo So ido <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">tado a ella. Asta aqui Sobr<u class="exp" title="abreviatura desarrollada">[e los]</u></span>
+<span class="ln">Particulares de Manuel Gonz<u class="exp" title="abreviatura desarrollada">[alez]</u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Sobre las denuncias Puesta<u class="exp" title="abreviatura desarrollada">[s ...]</u></span>
+<span class="ln">no ay necesidad de repe<u class="exp" title="abreviatura desarrollada">[tir]</u></span>
+<span class="ln">Por ahora pues en todas <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Puesto remedio.</span>
+<span class="ln">Sobre el deposito, que executo</span>
+<span class="ln">Contreras alcalde de mi ord<u class="exp" title="abreviatura desarrollada">[en]</u></span>
+<span class="ln">Debo decir que Con el Se ha</span>
+<span class="ln">Puesto remedio o reparo. Sobr<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] continuamente informado del [proceder] de Manuel Gonzalez, y [...] ella en las casas de
+[...]; el dicho [...] gastarme, le di permiso para que [viniese] de fuera a hacer vida
+maridable con él, habiéndolo [...] a ella. Hasta aquí, sobre los particulares de Manuel
+Gonzalez.</p>
+<p>Sobre las denuncias puestas [...], no hay necesidad de repetirlas por ahora, pues en todas
+[ellas se ha] puesto remedio.</p>
+<p>Sobre el depósito que ejecutó Contreras, alcalde, de mi orden, debo decir que con él se ha
+puesto remedio o reparo. Sobre [...].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media</strong>, salvo los tres epígrafes finales, que son <strong>altos</strong>: «Asta aqui
+Sobr[e los] Particulares de Manuel Gonz[alez]», «Sobre las denuncias Puesta[s]… no ay
+necesidad de repe[tir] Por ahora pues en todas … Puesto remedio», «Sobre el deposito, que
+executo Contreras alcalde de mi ord[en] Debo decir que Con el Se ha Puesto remedio o
+reparo». En cambio los cinco primeros renglones están a la vez manchados y cortados, y no
+se deja fijar quién es el sujeto de «gastarme» ni qué se le permitió exactamente; lo dejo
+con lagunas antes que inventarlo.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1647">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 13 de 13</span><h3>IMG_1647</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1647" aria-label="Ampliar la lámina IMG_1647">
+        <img src="../img/cota1794/p013.jpg" alt="Fotografía de la lámina IMG_1647" loading="lazy">
+      </button>
+      <figcaption>Papel sin sello, blanco. Tinta negra, trazo grueso y seguro; la rúbrica es
+amplia, de lazos cruzados. Los dos tercios inferiores de la plana están <strong>en blanco</strong>, lo
+que confirma que es fin de texto y no falta continuación. Canto derecho roto y con un
+pequeño orificio. Arriba asoma, una vez más, el papel moderno del croquis «Terreno N.º …
+5.65». Al pie, la costura del cuaderno.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Última plana del expediente.</strong> Remate del informe —**«Sobre que se denunció,
+pues siendo forastero el compadre, y puesta para mayor seguridad en casa del dicho alcalde,
+su hermano, está obviado todo peligro»**— seguido de la data, «fecho en Ocotepeque en 30 de
+Mayo de 1794 a[ño]s», y la **firma autógrafa con rúbrica del D[octo]r Eugenio Cristhoval de
+Recuenco**. Es la plana que fija la fecha de todo el conjunto. Y es también la plana donde
+se dice dónde acaba la mujer: <strong>en casa del alcalde [Juan Contreras], «su hermano»</strong>.
+<strong>Tampoco aquí declara; ni siquiera se la nombra: es «puesta», en participio, sin sujeto.</strong></p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Sobre que Se denunció, pues</span>
+<span class="ln">siendo forastero el Compa<u class="exp" title="abreviatura desarrollada">[d]</u></span>
+<span class="ln">re, y Puesta Para mayor</span>
+<span class="ln">Seguridad en Casa del D<u class="exp" title="abreviatura desarrollada">[ic]</u>h<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">Alcalde, Su hermano, esta</span>
+<span class="ln">obviado todo Peligro.</span>
+<span class="ln">fecho en Ocotepeque</span>
+<span class="ln">en 30 de Mayo de 1794 a<u class="exp" title="abreviatura desarrollada">[ño]</u>s</span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[octo]</u>r Eugenio Cristhoval de</span>
+<span class="ln">Recuenco <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[resto de la plana en blanco]</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Sobre lo que se denunció: pues siendo forastero el compadre, y [estando ella] puesta, para
+mayor seguridad, en casa del dicho alcalde, su hermano, está obviado todo peligro.</p>
+<p>Fecho en Ocotepeque, en 30 de mayo de 1794 años. Doctor Eugenio Cristóbal de Recuenco
+[rúbrica].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Alta</strong> en la data y la firma: «en 30 de Mayo de 1794 a[ño]s» está escrito
+con cifras grandes y subrayado, y la firma «D[octo]r Eugenio Cristhoval de Recuenco» es
+autógrafa y nítida; el apellido termina en -o, no en -s, y la secuencia «-cuen-» es
+inequívoca. <strong>Media</strong> en un punto, y es un punto que importa: **de quién es hermano el
+alcalde**. «Puesta para mayor seguridad en Casa del D[ic]ho Alcalde, Su hermano» admite dos
+lecturas —que Juan Contreras sea hermano de ella, o del compadre forastero—; la
+construcción favorece lo primero, pero el papel no lo desambigua y no lo doy por resuelto.
+Tampoco se identifica quién es «el Compadre» forastero: podría ser el tercer testigo,
+Miguel Gutierres, vecino de Tejutla y residente en el pueblo, pero el papel no lo dice y no
+lo afirmo.</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4><strong>María Ascensión Cota</strong></h4>
+  <p class="papel">la mujer del caso; depositada tres veces</p>
+  <p class="calidad">mujer de Miguel Sagastume. <strong>Nunca declara, nunca comparece, nunca firma</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Manuel Gonsales</strong></h4>
+  <p class="papel">el preso, en la Cárcel Real</p>
+  <p class="calidad">casado con María Cota, hermana de la anterior. El cura le llama forastero</p>
+</div>
+<div class="persona">
+  <h4><strong>Miguel Sagastume</strong></h4>
+  <p class="papel">marido de María Ascensión; cuñado del reo; primer testigo</p>
+  <p class="calidad"><strong>No firmó</strong> — «no savia»</p>
+</div>
+<div class="persona">
+  <h4><strong>José Castañeda</strong></h4>
+  <p class="papel">segundo testigo; oficial de sastre</p>
+  <p class="calidad">29 años. <strong>Firmó</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Miguel Gutiérrez</strong></h4>
+  <p class="papel">tercer testigo</p>
+  <p class="calidad">vecino del partido de <strong>Tejutla</strong>, residente en el pueblo; 25 años. <strong>No firmó</strong>, «por no saver»</p>
+</div>
+<div class="persona">
+  <h4><strong>Don Jacinto Escamilla</strong></h4>
+  <p class="papel">comisionado; prende al reo, abre la información y oficia al cura</p>
+  <p class="calidad">el mismo comisionado del pleito de la milpa de 1793. <strong>Firma</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Don Dionicio Pineda y Bran</strong></h4>
+  <p class="papel">alcalde ordinario de 2.ª nominación, que comisiona</p>
+  <p class="calidad">el mismo juez de la causa de Calisto de Lara y de la petición sobre Juana Diega, ambas de 1795</p>
+</div>
+<div class="persona">
+  <h4><strong>Doctor Eugenio Cristóbal de Recuenco</strong></h4>
+  <p class="papel">cura y vicario juez eclesiástico de Ocotepeque; informa</p>
+  <p class="calidad"><strong>Firma autógrafa</strong> en IMG_1647</p>
+</div>
+<div class="persona">
+  <h4><strong>Padre don Domingo de Lima</strong></h4>
+  <p class="papel">deposita a la mujer la primera vez, en casa de su padre</p>
+  <p class="calidad"></p>
+</div>
+<div class="persona">
+  <h4><strong>Juan Contreras</strong></h4>
+  <p class="papel">alcalde ordinario de Ocotepeque; ejecuta el segundo depósito; hermano de la mujer</p>
+  <p class="calidad">en su casa queda ella depositada</p>
+</div></div>
+</section>
+
+<section class="extra wrap">
+  <h2>Nota final: dos correcciones al catálogo, y una advertencia</h2>
+  <p><strong>El cura no se llama Recinos.</strong> El catálogo previo daba «doctor Eugenio Cristóbal de Recinos». La firma autógrafa de IMG_1647 dice <strong>RECUENCO</strong>. Es un nombre, y los nombres se copian como están.</p>
+<p><strong>El corte entre las dos piezas cae donde el catálogo lo ponía</strong> —entre IMG_1640 y IMG_1641— pero por una razón que el catálogo no daba y que es más firme que la suya: <strong>cambia el papel.</strong> Hasta 1640 es papel sellado cuarto de un cuartillo, del bienio 1792-93, con el resello «PARA LOS AÑOS DE 1793 Y 1794»; desde 1641, papel sin sello. Con una salvedad: <strong>IMG_1641 es plana mixta</strong> —lleva la dirección, el oficio firmado por Escamilla, y ya el arranque, en otra mano, de la respuesta del cura—. No hay carátula en ninguna parte del tramo.</p>
+<p><strong>La fecha está leída en el papel</strong> dos veces: «fecho en Ocotepeque en 30 de Mayo de 1794 a[ño]s» al pie de IMG_1647, y «Ocotepeque y Mayo 30 de 1794» en IMG_1641. La boda de la que todos hablan fue el día veintinueve, la víspera.</p>
+<p>Sobre el estado material: <strong>la fotografía corta el margen derecho en las trece planas.</strong> Las lagunas van como `[...]` y no se han completado por fórmula, aunque en varios pasajes se sepa lo que la escribanía suele decir. Una nueva toma con encuadre completo recuperaría probablemente el final de muchos renglones.</p>
+</section>
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

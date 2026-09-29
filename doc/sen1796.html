@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La que se desdijo y el que desistió — Papeles de Sensentí</title>
+<meta name="description" content="Una señora se querella porque la difamaron ante el cura y le estorbaron el casamiento; el difamador reconoce el papel y se retracta. Siete años después, un vecino de Corquín preso por herrar una ternera ajena sale bajo fianza, y el dueño acaba desistiendo. En ninguna de las dos hay condena.">
+<meta property="og:title" content="La que se desdijo y el que desistió">
+<meta property="og:description" content="Una señora se querella porque la difamaron ante el cura y le estorbaron el casamiento; el difamador reconoce el papel y se retracta. Siete años después, un vecino de Corquín preso por herrar una ternera ajena sale bajo fianza, y el dueño acaba desistiendo. En ninguna de las dos hay condena.">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Dos piezas breves, 1796 y 1802-1803</p>
+  <h1>La que se desdijo y el que desistió</h1>
+  <p class="dek">Una señora se querella porque la difamaron ante el cura y le estorbaron el casamiento; el difamador reconoce el papel y se retracta. Siete años después, un vecino de Corquín preso por herrar una ternera ajena sale bajo fianza, y el dueño acaba desistiendo. En ninguna de las dos hay condena.</p>
+  <div class="meta"><span><strong>7 láminas</strong> · IMG_1696 – 1699 y IMG_1704 – 1706</span><span>1796 · diciembre de 1802 – agosto de 1803</span><span>Papel sellado 3.º de 1788-89 y de 1796-97</span><span>Sensentí · barrio de Corquín · Tegucigalpa</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">7</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>Dos piezas breves, separadas por siete años, unidas aquí porque las dos enseñan cómo se arreglaban en Sensentí los agravios que no llegaban a sangre: <strong>retractándose</strong> el que ofendió, o <strong>fiando</strong> el que se llevó lo ajeno.</p>
+<p><strong>La querella de doña Rita Bueso (IMG_1696–1699, 1796).</strong> <strong>Doña Rita Bueso</strong> se querella de <strong>don José Benito de Rivera</strong> por haberla difamado ante el padre cura del partido, con lo que impidió su matrimonio con <strong>don Andrés de Rivera</strong>. El alcalde ordinario de segunda nominación, Josef Antonio de [¿Cholina?] y Bran, manda que Rivera reconozca el papel; y en la diligencia <strong>Rivera lo reconoce y se desdice</strong>. Es un pleito de honra que se resuelve en tres actuaciones y sin más pena que la retractación.</p>
+<p>El catálogo previo situaba esta unidad en 1797 y la hacía empezar en IMG_1697. <strong>Ambas cosas se corrigen aquí.</strong> La carátula dice «1796»; el auto, «este presente año de mil setecientos noventa y seis»; la diligencia, «en siete días de dicho mes y año». Y la unidad <strong>empieza en IMG_1696</strong>, que es su cubierta rotulada: en el borde inferior de esa plana asoma ya el primer renglón del escrito que va entero en IMG_1697. El papel es sellado tercero del bienio 1788-89, habilitado para 1795 y 96 — lo que cierra la fecha por otro camino.</p>
+<p>Nótese, además, quién es aquí el demandado: <strong>don José Benito de Rivera firma de su mano</strong>, y el hombre con quien el matrimonio se frustró es <strong>don Andrés de Rivera</strong>. El pleito se mueve dentro de una sola parentela de «don».</p>
+<p><strong>La fianza carcelera de Pablo López (IMG_1704–1706, 1802-1803).</strong> <strong>Pablo López</strong>, vecino del barrio de <strong>Corquín</strong>, está preso por haber herrado una ternera ajena, de [¿Luis?] o Francisco Guebara. <strong>Don José Miguel de Lara</strong> otorga por él <strong>escritura de fianza carcelera</strong> ante don Juan José Castejón, teniente de milicias del batallón de infantería de <strong>Tegucigalpa</strong> y teniente de gobernador intendente — el mismo Castejón que siete años antes había pedido que le devolviesen a Juana Diega. Siguen el auto de soltura, la diligencia de entrega del preso a su fiador, y, ocho meses después, el <strong>desistimiento del querellante</strong> y el auto de archivo.</p>
+<p><strong>También aquí el catálogo se matiza</strong>: la unidad no se cierra en diciembre de 1802. La escritura y el auto de soltura son de <strong>treinta de diciembre de mil ochocientos dos</strong>, pero el desistimiento y el archivo son de «<strong>dies y [¿siete?] días de Agosto de Mil ochosientos tres años</strong>». El papel es sellado tercero del bienio 1796-1797.</p>
+<p><strong>Lo que las dos piezas tienen en común.</strong> En ninguna de las dos hay condena. La justicia del partido funciona aquí como registro de acuerdos: se documenta que el difamador se desdijo y que el querellante desistió, y con eso se archiva. Y en las dos firma casi todo el mundo —a diferencia de la causa criminal de 1795, donde no firmaba ningún declarante—: son pleitos entre vecinos con tratamiento de «don», y el saber escribir corre con la calidad.</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>La querella de <strong>doña Rita Bueso</strong> muestra qué era un pleito de honra en un partido rural. La injuria se trata como un perjuicio con consecuencia comprobable: la difamación ante el padre cura <strong>impidió su matrimonio</strong>. El párroco instruía las diligencias matrimoniales y podía detener una boda si le llegaba noticia de impedimento o de mala fama, así que difamar ante él era accionar el único filtro que cerraba el paso al matrimonio. Léase junto a la causa de Cololaca de 1809, donde otro cura, negando unas diligencias, produce el mismo efecto por otra vía.</p>
+<p>El remedio es escueto. El alcalde manda que el demandado reconozca el papel, éste lo reconoce y <strong>se desdice</strong>, y ahí acaba: ninguna pena, ninguna indemnización. La retractación asentada ante el juez era la reparación. El juzgado levanta acta de un arreglo y funciona como registro público de acuerdos más que como tribunal. La fianza carcelera de Pablo López de 1802-1803, segunda pieza de esta unidad, termina igual, con el desistimiento del querellante. Las dos dan un patrón: los agravios que no llegan a sangre se cierran por acuerdo documentado.</p>
+<p>Doña Rita litiga <strong>en nombre propio</strong>, sin curador ni marido que la represente, y el expediente no lo comenta como cosa extraña. Compárese con Luisa Cartagena, que en 1814 litiga sin tratamiento, sin calidad declarada y sin saber firmar: el contraste mide qué añadía la posición, y qué no, a la capacidad de pleitear. Lo que se conserva es la constancia de que alguien se desdijo, no una sentencia.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#f1696">96</a><a href="#f1697">97</a><a href="#f1698">98</a><a href="#f1699">99</a><a href="#f1704">04</a><a href="#f1705">05</a><a href="#f1706">06</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="f1696">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 7</span><h3>IMG_1696</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1696" aria-label="Ampliar la lámina IMG_1696">
+        <img src="../img/sen1796/p001.jpg" alt="Fotografía de la lámina IMG_1696" loading="lazy">
+      </button>
+      <figcaption>Papel doblado, más sucio y frotado que el resto, con el rótulo escrito en tinta muy
+aguada o casi borrada por el roce, apenas recuperable ni con sustracción de fondo. En el encuadre se
+ven además restos de papel sellado tercero de otro pliego y varias marcas circulares de habilitación.
+Toma legible sólo en el tercio central.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Carátula o cubierta doblada</strong> de la unidad siguiente, fotografiada de costado (el
+original está en apaisado y el rótulo corre en vertical respecto de la toma). Lleva un rótulo
+archivístico de época, muy desvaído, con el nombre de la parte demandada y el año, y **al pie del
+encuadre asoma el primer renglón del escrito que se transcribe íntegro en IMG_1697**, lo que prueba
+que esta cubierta pertenece a la queja de 1697-1699 y <strong>no</strong> al final de la causa criminal.
+Por tanto <strong>aquí empieza la segunda unidad del tramo</strong>, y el corte propuesto por el catálogo previo
+(1693-1696 = causa criminal) debe correrse una plana.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Bueso con</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n Josef Benito <u class="exp" title="abreviatura desarrollada">[de]</u> Rivera</span>
+<span class="ln">1796.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[al pie del encuadre, renglones de la hoja siguiente:]</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> mejor proceda en d<u class="exp" title="abreviatura desarrollada">[e]</u>r<u class="exp" title="abreviatura desarrollada">[ech]</u>o ante Vm. <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> habrá un año poco mas o menos, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[Querella] de […] Bueso con don José Benito de Rivera. 1796.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja para el rótulo, alta sólo para dos elementos: el nombre **«D.n Josef Benito
+[de] Rivera»**, que se recupera con nitidez por sustracción de fondo y coincide con el demandado de
+IMG_1697-1699, y la cifra <strong>«1796»</strong>. El apellido «Bueso» en el renglón superior es lectura
+probable, no segura, apoyada en que ése es el apellido de la demandante en IMG_1697.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1697">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 7</span><h3>IMG_1697</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1697" aria-label="Ampliar la lámina IMG_1697">
+        <img src="../img/sen1796/p002.jpg" alt="Fotografía de la lámina IMG_1697" loading="lazy">
+      </button>
+      <figcaption><strong>Papel sellado, sello tercero.</strong> Leyenda impresa: Vn real. · SELLO TERCERO, VN REAL, · AÑOS DE MIL SETECIENTOS · OCHENTA Y OCHO, Y OCHEN- · TA Y NVEVE.
+
+Tres marcas al margen izquierdo: el sello redondo de armas `CAROLVS III D.G. HISPANIAR. REX`; un
+circular con la cifra «3» y la leyenda de habilitación `PARA LOS AÑOS DE 1795 Y 96`; y el óvalo
+`VALGA POR EL REYNADO DEL S[eñor] D. CARLOS IV Y POR LOS A[ÑO]S [DE] 1795 Y 96`. Tinta parda, letra
+caligráfica y clara. El margen derecho de la hoja se curva hacia la sombra del lomo y la toma **corta
+o ensombrece el final de casi todos los renglones**. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Primera plana del escrito de queja</strong> de <strong>doña Rita Bueso</strong>, vecina de este partido,
+ante el alcalde. <strong>Aquí empieza el cuerpo de la segunda unidad.</strong> Expone que hará cosa de un año se
+levantaron esquelas [matrimoniales] con don Andrés de Rivera y que, tratando éste de contraer
+matrimonio con ella, suspendió la ejecución su hermano don Josef Benito de Rivera diciendo
+falsamente al padre cura del partido que había tenido con ella ilícita amistad; y que ahora el mismo
+don Benito, desdiciéndose, ha exhibido con juramento ante el alcalde de primer voto un papel en que
+confiesa lo infundado de la imputación.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Alcalde</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>ña Rita Bueso de este Vecindario, co-</span>
+<span class="ln">mo mejor proceda en d<u class="exp" title="abreviatura desarrollada">[e]</u>r<u class="exp" title="abreviatura desarrollada">[ech]</u>o. ante Vm. paresco, y digo:</span>
+<span class="ln">Q<u class="exp" title="abreviatura desarrollada">[ue]</u> habrá un año poco mas o menos, q<u class="exp" title="abreviatura desarrollada">[ue]</u> se leba<u class="exp" title="abreviatura desarrollada">[nt]</u>ó esq<u class="exp" title="abreviatura desarrollada">[ue]</u>-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[l]</u>as <u class="exp" title="abreviatura desarrollada">[matrimoni]</u>ales con D<u class="exp" title="abreviatura desarrollada">[o]</u>n Andres de Ribera, y tratando este <u class="exp" title="abreviatura desarrollada">[de]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[co]</u>ntraer el Matrimonio conmigo, suspendió la</span>
+<span class="ln">execucion el S<u class="exp" title="abreviatura desarrollada">[eñ]</u>o<u class="exp" title="abreviatura desarrollada">[r]</u> hermano D<u class="exp" title="abreviatura desarrollada">[o]</u>n Josef Benito d<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln">Ribera diciendo al Padre Cura de este Partido</span>
+<span class="ln">falsam<u class="exp" title="abreviatura desarrollada">[en]</u>te y sin conciencia, que conmigo havia <u class="exp" title="abreviatura desarrollada">[teni]</u>-</span>
+<span class="ln">do ylicita amistad, y p<u class="exp" title="abreviatura desarrollada">[o]</u>r prueba del dolo, y ma<u class="exp" title="abreviatura desarrollada">[licia]</u></span>
+<span class="ln">con que entonces procedio el Citado D<u class="exp" title="abreviatura desarrollada">[o]</u>n Benito, ah<u class="exp" title="abreviatura desarrollada">[ora]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[nue]</u>bam<u class="exp" title="abreviatura desarrollada">[en]</u>te (instimulado quiza de la Conciencia) exivió</span>
+<span class="ln">al S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Alcalde de primero Voto ofisiosamente de<u class="exp" title="abreviatura desarrollada">[sdi]</u>-</span>
+<span class="ln">ciendose, con Juramento un Papel, el qual pruevo</span>
+<span class="ln">debidamente y con la solemnidad necesaria, Conf<u class="exp" title="abreviatura desarrollada">[e]</u>-</span>
+<span class="ln">sando el Juntamente el infundamentable motibo</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> tubo p<u class="exp" title="abreviatura desarrollada">[ar]</u>a suponer una quimera tan grabe, y</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[per]</u>judicial a mi Onor; mas despues de haber escrito</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[el]</u> citado Papel y Ratificadose ante S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Alcal<u class="exp" title="abreviatura desarrollada">[de]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Señor alcalde: doña Rita Bueso, de este vecindario, como mejor proceda en derecho, ante vuestra
+merced parezco y digo: que hará un año, poco más o menos, que se levantaron esquelas matrimoniales
+con don Andrés de Rivera; y que, tratando éste de contraer matrimonio conmigo, suspendió la ejecución
+su hermano don José Benito de Rivera, diciendo al padre cura de este partido, falsamente y sin
+conciencia, que conmigo había tenido ilícita amistad. Y por prueba del dolo y malicia con que
+entonces procedió el citado don Benito, ahora nuevamente —instigado quizá de la conciencia— exhibió
+ante el señor alcalde de primer voto, oficiosamente y desdiciéndose, un papel bajo juramento, el cual
+pruebo debidamente y con la solemnidad necesaria, confesando en él juntamente lo infundado del motivo
+que tuvo para suponer una quimera tan grave y perjudicial a mi honor. Mas después de haber escrito el
+citado papel y de haberse ratificado ante el señor alcalde…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta. La mano es clara y el nombre <strong>«D.ña Rita Bueso»</strong> se lee sin dificultad en
+ampliación. Media-alta para los finales de renglón de la derecha, que la toma corta: las letras
+suplidas ahí son restituciones por sentido y van señaladas. La palabra abreviada del renglón 4
+(«esq[ue]-/[l]as … ales») se restituye como <em>esquelas matrimoniales</em> por el contexto, no por lectura
+completa.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1698">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 7</span><h3>IMG_1698</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1698" aria-label="Ampliar la lámina IMG_1698">
+        <img src="../img/sen1796/p003.jpg" alt="Fotografía de la lámina IMG_1698" loading="lazy">
+      </button>
+      <figcaption>Misma mano, misma tinta y mismo tipo de pliego que IMG_1697 (segunda plana del mismo
+bifolio). La hoja se curva fuertemente hacia el lomo y **la toma pierde el extremo derecho de casi
+todos los renglones**; la zona de la firma está agrietada y desvaída. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Continuación y cierre del escrito de queja</strong> de Rita Bueso: pide que se le tome
+declaración al susodicho sobre el papel, su firma y lo que en él contiene, y que, resultando la
+falsedad, se le imponga el castigo correspondiente para escarmiento de quienes arriesgan la honra
+ajena; concluye con la súplica de estilo («A Vm. pido y Suplico así lo probea; Juro en forma no
+proceder de malicia y lo Necesario &amp;c.»). Al pie va una firma. <strong>No acaba aquí la unidad</strong>: sigue en
+IMG_1699 con las actuaciones del juez.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a decir <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> contra <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> llevo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la fal<u class="exp" title="abreviatura desarrollada">[ta]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> faltar<u class="exp" title="abreviatura desarrollada">[le]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> falsedad <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> sobre <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> ha <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a las <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> muy ser-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> al susodi-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[cho]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> firma y</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> lo que tie-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ne]</u> en ella <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> car-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[go]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> su-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> castigo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ariesg<u class="exp" title="abreviatura desarrollada">[uen]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">A Vm<u class="exp" title="abreviatura desarrollada">[d]</u> pido y Suplico así lo probea, Juro en</span>
+<span class="ln">forma no proceder de malicia, y lo Necesario &amp;c<u class="exp" title="abreviatura desarrollada">[eter]</u>a</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[firma, muy desvaída: <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>]</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…[pide que se le tome declaración] al susodicho sobre el papel, su firma y lo que en ella contiene,
+haciéndole cargo de la falsedad, y que se le imponga el castigo que corresponda, para que escarmienten
+quienes arriesgan [la honra ajena]. A vuestra merced pido y suplico así lo provea; juro en forma no
+proceder de malicia, y lo necesario, etc.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja-media para el cuerpo de la plana: la combinación de curvatura de la hoja,
+sombra del lomo y tinta muy aguada deja legibles sólo palabras sueltas, que transcribo sin forzar
+sentido. Alta sólo para la cláusula final de súplica y juramento, que es fórmula fija y se lee entera.
+<strong>La firma del pie no se deja identificar</strong>: hay trazo y rúbrica, pero el nombre no se recupera ni con
+sustracción de fondo; no afirmo, por tanto, que firme la propia Rita Bueso ni un tercero a su ruego.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1699">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 7</span><h3>IMG_1699</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1699" aria-label="Ampliar la lámina IMG_1699">
+        <img src="../img/sen1796/p004.jpg" alt="Fotografía de la lámina IMG_1699" loading="lazy">
+      </button>
+      <figcaption>Pliego de papel sellado; en el borde derecho del encuadre asoma la cabecera impresa del
+pliego contiguo (`… VN REAL … CIENTOS … Y VNO`). Tinta parda; mano del alcalde, algo más suelta que la
+del escrito. Manchas de humedad en la mitad inferior; algunos agujeros de insecto. Buena toma.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Dos actuaciones judiciales</strong> que cierran la unidad de la queja, con las firmas:
+(1) el <strong>auto</strong> del alcalde ordinario de segunda nominación mandando lo que procede, fechado en
+«este presente año de mil setecientos noventa y seis», actuando con testigos de asistencia por falta
+de escribano; y (2) la <strong>diligencia de reconocimiento</strong>, «en siete días de dicho mes y año», en la
+que comparece <strong>don José Benito de Rivera</strong>, se le hace reconocer el papel citado en el escrito, y
+habiéndolo leído <strong>dijo ser suyo y de su puño y firma</strong>, que cuanto en él se expresa es la verdad,
+que se afirma y ratifica, y <strong>que se desiste de todo lo que antes tenía dicho</strong>; firma con el juez y
+los testigos. Al margen, la nota «libro el mandamiento». <strong>Aquí acaba la unidad.</strong></p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en este presente año de Mil setec<u class="exp" title="abreviatura desarrollada">[ien]</u>tos Nov<u class="exp" title="abreviatura desarrollada">[en]</u>-</span>
+<span class="ln">ta y S<u class="exp" title="abreviatura desarrollada">[ei]</u>s <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> as<u class="exp" title="abreviatura desarrollada">[i]</u> lo proveo, mando y firmo Yo el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y Bran, Cap<u class="exp" title="abreviatura desarrollada">[ita]</u>n de Ynf<u class="exp" title="abreviatura desarrollada">[anterí]</u>a Milic<u class="exp" title="abreviatura desarrollada">[ian]</u>a y Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e</span>
+<span class="ln">ordinario de 2.ª No<u class="exp" title="abreviatura desarrollada">[mi]</u>nac<u class="exp" title="abreviatura desarrollada">[io]</u>n de este Partido, Ac-</span>
+<span class="ln">tuando con testigos de asistenc<u class="exp" title="abreviatura desarrollada">[i]</u>a en falta de</span>
+<span class="ln">Escriv<u class="exp" title="abreviatura desarrollada">[an]</u>o q<u class="exp" title="abreviatura desarrollada">[ue]</u> no le ay; Vale =</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al margen:]</u> libro el mandami<u class="exp" title="abreviatura desarrollada">[en]</u>to</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Josef Anto<u class="exp" title="abreviatura desarrollada">[nio]</u> de</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Cholina?]</u></u> y Bran <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Migu<u class="exp" title="abreviatura desarrollada">[e]</u>l Fern<u class="exp" title="abreviatura desarrollada">[an]</u>do            Jose Ponc<u class="exp" title="abreviatura desarrollada">[ian]</u>o</span>
+<span class="ln">de Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>            Ca<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>on <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En siete dias de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho mes y año, en cumplim<u class="exp" title="abreviatura desarrollada">[ien]</u>to <u class="exp" title="abreviatura desarrollada">[del]</u></span>
+<span class="ln">mandado en el aucto q<u class="exp" title="abreviatura desarrollada">[ue]</u> antesede, parecio pre<u class="exp" title="abreviatura desarrollada">[sente]</u></span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n Jose Benito de Ribera, a quien estando pre<u class="exp" title="abreviatura desarrollada">[sen]</u>-</span>
+<span class="ln">tes los testigos q<u class="exp" title="abreviatura desarrollada">[ue]</u> me asisten, le hise Reconoser <u class="exp" title="abreviatura desarrollada">[el]</u></span>
+<span class="ln">papel q<u class="exp" title="abreviatura desarrollada">[ue]</u> se sita en el escrito, quien haviendo<u class="exp" title="abreviatura desarrollada">[lo]</u></span>
+<span class="ln">leido y Reconosido dijo ser suyo, y de su pu<u class="exp" title="abreviatura desarrollada">[ño]</u></span>
+<span class="ln">y firma, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> q<u class="exp" title="abreviatura desarrollada">[uan]</u>to en el se expresa es la verda<u class="exp" title="abreviatura desarrollada">[d]</u>,</span>
+<span class="ln">lo qual se afirma y Ratifica; porque quan<u class="exp" title="abreviatura desarrollada">[do lo]</u></span>
+<span class="ln">hacia d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho del <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la presentada fue conve<u class="exp" title="abreviatura desarrollada">[ncido]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>, y desde luego se desiste de todo lo q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[an]</u>tes tenia d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho, y que esta hes la lexitima ver<u class="exp" title="abreviatura desarrollada">[dad]</u>:</span>
+<span class="ln">esto dijo y firmo conmigo d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Juez y los t<u class="exp" title="abreviatura desarrollada">[estigos]</u></span>
+<span class="ln">con q<u class="exp" title="abreviatura desarrollada">[ue]</u> actuo. En falta de escriv<u class="exp" title="abreviatura desarrollada">[an]</u>o =</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Josef Anto<u class="exp" title="abreviatura desarrollada">[nio]</u> de</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Cholina?]</u></u> y Bran <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">J<u class="exp" title="abreviatura desarrollada">[ose]</u>f Benito de Ribera <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Jose Ponc<u class="exp" title="abreviatura desarrollada">[ian]</u>o</span>
+<span class="ln">Ca<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>on <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…en este presente año de mil setecientos noventa y seis. […] Así lo proveo, mando y firmo yo, el […]
+y Bran, capitán de infantería miliciana y alcalde ordinario de segunda nominación de este partido,
+actuando con testigos de asistencia por falta de escribano, que no lo hay. Vale. [Al margen: libró el
+mandamiento.]</p>
+<p>En siete días de dicho mes y año, en cumplimiento de lo mandado en el auto que antecede, compareció
+don José Benito de Rivera, a quien, estando presentes los testigos que me asisten, le hice reconocer
+el papel que se cita en el escrito; el cual, habiéndolo leído y reconocido, **dijo ser suyo y de su
+puño y firma**, y que cuanto en él se expresa es la verdad, lo cual afirma y ratifica; y desde luego
+<strong>se desiste de todo lo que antes tenía dicho</strong>, y que ésta es la legítima verdad. Esto dijo y
+<strong>firmó conmigo</strong>, dicho juez, y los testigos con que actúo, por falta de escribano.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta para el año (<strong>1796</strong>), para el día de la diligencia (<strong>siete</strong>), para la
+condición del juez (capitán de infantería miliciana y alcalde ordinario de 2.ª nominación) y para el
+hecho capital de que <strong>don José Benito de Rivera firma de su mano</strong>. Media para los nombres de los
+firmantes: el apellido del alcalde se lee con una inicial que parece «Ch» (`[¿Cholina?] y Bran`) y no
+lo doy por fijado —adviértase que el alcalde de <em>primera</em> nominación de este mismo partido es
+<strong>Dionisio de Pineda y Bran</strong> (IMG_1694, 1703, 1705), de modo que ambos comparten el segundo apellido
+<strong>Bran</strong>; el segundo testigo firma «Jose Ponc[ian]o Ca[…]on», cuyo apellido no se resuelve.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1704">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 7</span><h3>IMG_1704</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1704" aria-label="Ampliar la lámina IMG_1704">
+        <img src="../img/sen1796/p005.jpg" alt="Fotografía de la lámina IMG_1704" loading="lazy">
+      </button>
+      <figcaption><strong>Papel sellado, sello tercero.</strong> Leyenda impresa: Vn real. · SELLO TERCERO, VN REAL, · AÑOS DE MIL SETECIENTOS · NOVENTA Y SEIS, Y NOVEN- · TA Y SIETE.
+
+Al margen, el sello redondo de armas `CAROLVS IV D.G. HISPANIAR. REX` y un circular con la cifra «3».
+Tinta muy pálida, casi lavada en zonas. **Gran desgarro en forma de lengua en el tercio inferior
+central**, por el que se ve la escritura de la hoja subyacente (se distinguen las palabras «Govierno»
+y «Dios» de otro documento). La primera línea manuscrita arranca a la derecha del bloque impreso y
+<strong>el lugar y el día del otorgamiento no aparecen en el encuadre</strong>. Toma buena, tinta difícil.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Primera plana de una escritura de fianza carcelera</strong>, otorgada ante el teniente de
+gobernador intendente del partido. <strong>Aquí empieza la cuarta y última unidad del tramo.</strong> Ante **don
+Juan José Castejón, teniente de milicias del batallón de infantería de Tegucigalpa y teniente de
+gobernador intendente en este partido**, con testigos de asistencia por falta de escribano,
+comparece <strong>don José Miguel de Lara</strong>, de este vecindario, y dice que, por cuanto tiene noticia de
+que <strong>Pablo López, vecino del barrio de Corquín</strong>, se halla preso en esta real cárcel por haber
+marcado o herrado una ternera montesa en concepto de que era suya, como producida de su ganado,
+resultando ahora ser de <strong>[¿Luis?] Guebara, también vecino de Corquín</strong>, sin haberse justificado que
+el hecho fuese con malicia; y que por esta causa está preso con manifiesto perjuicio de sus bienes,
+por la precisa asistencia personal que debe dar a la hacienda que posee con competente número de
+ganados y labranzas de granos, que tiene con peligro de perderse; y **deseando remediar este daño,
+se constituye fiador y carcelero comentariense** del dicho Pablo López para que se le ponga en
+libertad, obligándose a entregarlo en este juzgado siempre que sea requerido, y si no lo hiciere, a
+pagar cuanto por esta causa sea juzgado y sentenciado contra él, haciendo de causa y negocio ajeno
+propio, con renuncia de las leyes <em>sancimus</em> y demás de estos casos. <strong>No acaba aquí:</strong> sigue en
+IMG_1705.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de Diciembre de mil ochocientos y dos años, an-</span>
+<span class="ln">te mi D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan Jose Castejon Teniente de Milicias del Ba-</span>
+<span class="ln">tallon de Infanteria de Tegucigalpa, y Teniente de Go-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[bernador]</u> Intendente en este Partido; testigos de mi</span>
+<span class="ln">asistencia por falta de Escrivano, y demas que iran</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[no]</u>minados, parecio presente D<u class="exp" title="abreviatura desarrollada">[o]</u>n José Miguel de Lara,</span>
+<span class="ln">de este becindario, que certifico conozco y dijo: que</span>
+<span class="ln">por quanto tiene noticia que Pablo Lopez vecino del</span>
+<span class="ln">Barrio de Corquin se halla preso en esta Real Carsel</span>
+<span class="ln">por haver marcado, ō herrado una ternera montesa</span>
+<span class="ln">en concepto que era suya, como producida de su ganado,</span>
+<span class="ln">resultando ahora ser de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Luis?]</u></u> Guebara tambien vecino</span>
+<span class="ln">de Corquin, sin haverse justificado que el hecho fuese</span>
+<span class="ln">con malicia, y por esta causa esta preso el arriba dicho</span>
+<span class="ln">Pablo Lopez con manifiesto perjuicio de sus <u class="exp" title="abreviatura desarrollada">[bienes]</u> por</span>
+<span class="ln">la precisa personal asistencia que debe dar a la haci-</span>
+<span class="ln">enda que posee con competente numero de ganados, y</span>
+<span class="ln">labranzas de granos que tiene con peligro de perderse</span>
+<span class="ln">por falta del <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> necesario; y deseando remediar</span>
+<span class="ln">este daño el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> D<u class="exp" title="abreviatura desarrollada">[o]</u>n Jose Miguel de Lara, otor-</span>
+<span class="ln">ga por la pre<u class="exp" title="abreviatura desarrollada">[sente que]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> se constituye fiador y carcele-</span>
+<span class="ln">ro comentarien<u class="exp" title="abreviatura desarrollada">[se]</u> <u class="exp" title="abreviatura desarrollada">[del expre]</u>sado Pablo Lopez para que</span>
+<span class="ln">se le ponga en <u class="exp" title="abreviatura desarrollada">[libertad]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> obligandose a que lo entrega-</span>
+<span class="ln">ra en este Juzg<u class="exp" title="abreviatura desarrollada">[ado siempre]</u> que para ello sea reque-</span>
+<span class="ln">rido, y si no lo h<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> pagará quanto por esta <u class="exp" title="abreviatura desarrollada">[causa]</u></span>
+<span class="ln">sea jusgado y senten<u class="exp" title="abreviatura desarrollada">[ciado]</u> contra el indicado Pablo Lo-</span>
+<span class="ln">pez, sobre que de causa y negocio ageno hace suyo</span>
+<span class="ln">propio, renunciando, como expresamente renunc<u class="exp" title="abreviatura desarrollada">[ia]</u></span>
+<span class="ln">las leyes sancimus, y demas que tratan de estos casos</span>
+<span class="ln">dando poder y facultad à los señores Jueces y Justi<u class="exp" title="abreviatura desarrollada">[cias]</u></span>
+<span class="ln">de Su Magestad para que al cumplimiento <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] de diciembre de mil ochocientos dos años, ante mí, don Juan José Castejón, teniente de milicias
+del batallón de infantería de Tegucigalpa y teniente de gobernador intendente en este partido, con
+testigos de mi asistencia por falta de escribano y los demás que irán nominados, compareció presente
+don José Miguel de Lara, de este vecindario, a quien certifico que conozco, y dijo: que por cuanto
+tiene noticia de que Pablo López, vecino del barrio de Corquín, se halla preso en esta real cárcel
+por haber marcado o herrado una ternera montesa en el concepto de que era suya, como producida de su
+ganado, resultando ahora ser de [¿Luis?] Guevara, también vecino de Corquín, sin haberse justificado
+que el hecho fuese con malicia; y que por esta causa está preso el sobredicho Pablo López, con
+manifiesto perjuicio de sus bienes, por la precisa asistencia personal que debe dar a la hacienda que
+posee, con competente número de ganados y labranzas de granos que tiene con peligro de perderse por
+falta de lo necesario; y deseando remediar este daño, otorga por la presente que se constituye
+<strong>fiador y carcelero comentariense</strong> del expresado Pablo López para que se le ponga en libertad,
+obligándose a entregarlo en este juzgado siempre que para ello sea requerido; y si no lo hiciere, a
+pagar cuanto por esta causa sea juzgado y sentenciado contra el indicado Pablo López, sobre lo que de
+causa y negocio ajeno hace suyo propio, renunciando, como expresamente renuncia, las leyes <em>sancimus</em>
+y demás que tratan de estos casos, y dando poder y facultad a los señores jueces y justicias de Su
+Majestad para que al cumplimiento […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Alta</strong> para el cuerpo del acto, para la leyenda del papel sellado, para el nombre y
+cargos de <strong>Juan José Castejón</strong> (verificado a ×12: se lee «Castejon» sin lugar a duda, lo que permite
+además corregir la lectura de su apellido en IMG_1700-1702), para <strong>José Miguel de Lara</strong>, para
+<strong>Pablo López</strong> y para el topónimo <strong>Corquín</strong> (ampliado a ×12: se ve la <em>r</em>, no «Coiquín»). <strong>Media</strong>
+para el nombre de pila del dueño de la ternera, «[¿Luis?] Guebara»; en IMG_1706 el mismo apellido va
+precedido de «F[ranciſ]co». <strong>El lugar y el día del otorgamiento no se leen en esta plana</strong>: la línea
+de data empieza ya en «de Diciembre», a la derecha del bloque impreso. El día lo da IMG_1705.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1705">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 7</span><h3>IMG_1705</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1705" aria-label="Ampliar la lámina IMG_1705">
+        <img src="../img/sen1796/p006.jpg" alt="Fotografía de la lámina IMG_1705" loading="lazy">
+      </button>
+      <figcaption>Segunda plana del mismo pliego. Tinta parda clara, mano muy legible. La hoja está
+abarquillada y el margen derecho, roto y descompuesto, se pierde en la sombra del lomo; en la toma se
+ven los dedos y el papel de seda del fotógrafo en el ángulo superior izquierdo. Gran **desgarro
+central en la mitad inferior** —el mismo de IMG_1704, visto por el reverso— que se come parte de la
+diligencia de entrega. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">**Segunda plana: cierre y firmas de la escritura de fianza, auto de soltura y diligencia
+de entrega.** Acaba la escritura con la cláusula ejecutiva y la renuncia de leyes, y se declaran
+testigos <strong>el capitán don Dionisio de Pineda y Bran, don Fernando Molina y don Máximino Núñez</strong>.
+Firman el otorgante y los testigos de asistencia. Sigue, en **«Sensenti, treinta de Diciembre de mil
+ochocientos dos años»<strong>, el </strong>auto**: «Póngase en libertad a Pablo López, y entréguese a su fiador,
+mediante la escritura que antecede». Y, en el mismo día, la <strong>diligencia de entrega</strong>: se le sacó de
+la cárcel a Pablo López y se le entregó a don [José] Miguel de Lara, quien se dio por recibido y
+firmó. <strong>No acaba aquí:</strong> el expediente se cierra en IMG_1706.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> le compelan, y apremien con todo rigor</span>
+<span class="ln">de derecho, y via executiba, como si fuese por Sen-</span>
+<span class="ln">tencia executoriada, à que se obliga con su perso-</span>
+<span class="ln">na y bienes presentes, y futuros, para cuya firme-</span>
+<span class="ln">za, y seguridad, renuncia todas las demas leyes,</span>
+<span class="ln">fueros, y derechos de su favor con la general que lo</span>
+<span class="ln">prohibe, en cuyo testimonio assi lo d<u class="exp" title="abreviatura desarrollada">[ij]</u>o, otorg<u class="exp" title="abreviatura desarrollada">[ó]</u> y</span>
+<span class="ln">firmó, siendo testigos el Capitan D<u class="exp" title="abreviatura desarrollada">[o]</u>n Dionisi<u class="exp" title="abreviatura desarrollada">[o de]</u></span>
+<span class="ln">Pineda y Bran, D<u class="exp" title="abreviatura desarrollada">[o]</u>n Fernando Molina, y D<u class="exp" title="abreviatura desarrollada">[on]</u> <u class="exp" title="abreviatura desarrollada">[Maxi]</u>-</span>
+<span class="ln">mino Nuñez, con los susodichos de mi asiste<u class="exp" title="abreviatura desarrollada">[ncia]</u></span>
+<span class="ln">todo lo que certifico =</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Juan José Castejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Jose Carlos</span>
+<span class="ln">de Lara <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Andres Enriquez <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        Ambrocio Estrada <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Sensenti, treinta de Diciembre de mil ochocientos dos años =</span>
+<span class="ln">Pongase en libertad à Pablo Lopez, y entreguese à</span>
+<span class="ln">su fiador, mediante la Escritura que antecede =</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Cas<u class="exp" title="abreviatura desarrollada">[tejon]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Andres Enriquez              Ambrocio Estrada <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En el mismo d<u class="exp" title="abreviatura desarrollada">[ia]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[sa]</u>car de la Carcel à Pablo Lo<u class="exp" title="abreviatura desarrollada">[pez]</u></span>
+<span class="ln">y lo entregue <u class="exp" title="abreviatura desarrollada">[à d]</u>on Miguel de Lara, quien se <u class="exp" title="abreviatura desarrollada">[lo]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[dio]</u> por recivido, y firmó con migo =</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Castejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        Jose Carlos <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">de Lara</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…le compelan y apremien con todo rigor de derecho y vía ejecutiva, como si fuese por sentencia pasada
+en autoridad de cosa juzgada, a lo que se obliga con su persona y bienes presentes y futuros; para
+cuya firmeza y seguridad renuncia todas las demás leyes, fueros y derechos de su favor, con la general
+que lo prohíbe. En cuyo testimonio así lo dijo, otorgó y firmó, siendo testigos el capitán don Dionisio
+de Pineda y Bran, don Fernando Molina y don Máximino Núñez, con los susodichos de mi asistencia; de
+todo lo cual certifico. — Juan José Castejón; José Carlos de Lara; Andrés Enríquez; Ambrosio Estrada.</p>
+<p><strong>Sensentí, treinta de diciembre de mil ochocientos dos años.</strong> Póngase en libertad a Pablo López y
+entréguese a su fiador, mediante la escritura que antecede. — Castejón; Andrés Enríquez; Ambrosio
+Estrada.</p>
+<p>En el mismo día […] sacar de la cárcel a Pablo López, y lo entregué a don [José] Miguel de Lara,
+quien se dio por recibido y firmó conmigo. — Castejón; José Carlos de Lara.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Alta</strong>, la mejor plana del tramo junto con IMG_1701. La data —**«Sensenti, treinta
+de Diciembre de mil ochocientos dos años»**— se lee entera y sin duda, y fija el día que faltaba en
+IMG_1704. Altas también las firmas: <strong>Juan José Castejón</strong>, <strong>José Carlos de Lara</strong>, **Andrés
+Enríquez<strong> y </strong>Ambrosio Estrada** (los cuatro firman de su mano), y los tres testigos nombrados en el
+texto. Media sólo para los renglones que atraviesa el desgarro en la diligencia de entrega.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1706">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 7 de 7</span><h3>IMG_1706</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1706" aria-label="Ampliar la lámina IMG_1706">
+        <img src="../img/sen1796/p007.jpg" alt="Fotografía de la lámina IMG_1706" loading="lazy">
+      </button>
+      <figcaption>Papel sin sello en esta cara (tercera plana del pliego). Tinta parda, bastante pálida en
+el auto de archivo. <strong>Numerosas manchas de tinta y de humedad en el margen izquierdo</strong>; el borde
+superior está desfibrado y roto; <strong>gran desgarro en forma de lengua en el centro</strong>, por el que asoman
+grandes letras de la hoja subyacente («…Dio[s]…», «…Gover[nador]…»). Buena toma.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">**Última plana del expediente: el desistimiento de la parte querellante, el auto de
+archivo y la nota de archivación.<strong> En </strong>«este Poblado de Sensenti, en dies y [¿siete?] dias de Agosto
+de Mil ochosientos tres años»**, ante el mismo juez de la causa y testigos de su asistencia por falta
+de escribano, comparece <strong>F[rancis]co Guebara</strong> y dice que, respecto de haberse transado con Pablo
+López en el asunto que contra él seguía, <strong>se aparta y retira de su querella</strong>; en cuya virtud, estando
+presente dicho Pablo López, el juez <strong>le reprendió su exceso y le apercibió para en lo sucesivo</strong>,
+quedando, respecto de esta diligencia, <strong>en entera libertad</strong>. Sigue el auto: respecto de estar
+transadas estas partes, que se archiven estas diligencias para que en todo tiempo conste; lo firma
+**don Juan José Castejón, capitán y gobernador interino, administrador de la real renta del tabaco y
+teniente de infantería miliciana<strong>. Al pie, la nota: </strong>«En seguida se harchivaron estas diligencias
+con quatro fojas utiles.»<strong> </strong>Aquí acaba la unidad y el tramo.**</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[En]</u> este Poblado de Sensenti en dies y <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿siete?]</u></u> dias</span>
+<span class="ln">de Agosto de Mil ocho sientos tres años. Ante Mi el m<u class="exp" title="abreviatura desarrollada">[is]</u>-</span>
+<span class="ln">mo Juez de esta causa, y testigos de mi asistencia</span>
+<span class="ln">en falta de Escribano, parecio presente F<u class="exp" title="abreviatura desarrollada">[ranciſ]</u>co Guebar<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln">y dijo: Que respecto à hauerse transado con Pablo</span>
+<span class="ln">Lopez en el asunto que contra el seguia, se apar-</span>
+<span class="ln">taba, y retiraba de su querella; en cuia virtud</span>
+<span class="ln">siendo presente d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Pablo Lopez, le reprendí su ex-</span>
+<span class="ln">ceso, y le aperzebí para en lo subcesivo, quedando</span>
+<span class="ln">respecto de esta diligencia, en entera libertad; y para</span>
+<span class="ln">que conste lo firmo con mis citados Testigos en falta</span>
+<span class="ln">de Escriv<u class="exp" title="abreviatura desarrollada">[an]</u>o de que certifico =</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Juan Jose Castejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Respecto de estar transados estas Partes, y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">harchiven estas diligencias para q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[c]</u>on todo tiempo</span>
+<span class="ln">conste; Assi lo proveo, mando, y firmo yo D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan</span>
+<span class="ln">Jose Casteso<u class="exp" title="abreviatura desarrollada">[n]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Cap<u class="exp" title="abreviatura desarrollada">[ita]</u>n y Gov<u class="exp" title="abreviatura desarrollada">[ernado]</u>r Interino, y Administrad<u class="exp" title="abreviatura desarrollada">[or]</u></span>
+<span class="ln">de la Real <u class="exp" title="abreviatura desarrollada">[Renta de]</u> Tabaco, y teniente de Infanteri<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln">Miliciana <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en el mismo dia Actuando</span>
+<span class="ln">con testigos.</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En seguida se harchivaron estas diligencias con</span>
+<span class="ln">quatro fojas utiles = <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>En este poblado de Sensentí, en diecisiete días de agosto de mil ochocientos tres años, ante mí, el
+mismo juez de esta causa, y testigos de mi asistencia por falta de escribano, compareció presente
+Francisco Guevara y dijo: que, respecto de haberse transado con Pablo López en el asunto que contra
+él seguía, se apartaba y retiraba de su querella. En cuya virtud, estando presente dicho Pablo López,
+le reprendí su exceso y le apercibí para en lo sucesivo, quedando, respecto de esta diligencia, en
+entera libertad. Y para que conste, lo firmo con mis citados testigos por falta de escribano, de que
+certifico. — Juan José Castejón.</p>
+<p>Respecto de estar transadas estas partes […], que se archiven estas diligencias para que en todo
+tiempo conste. Así lo proveo, mando y firmo yo, don Juan José Castejón, capitán y gobernador
+interino, y administrador de la real renta del tabaco, y teniente de infantería miliciana, en el
+mismo día, actuando con testigos.</p>
+<p>En seguida se archivaron estas diligencias, con cuatro fojas útiles.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Alta</strong> para el año (<strong>mil ochocientos tres</strong>), el mes (<strong>agosto</strong>), el lugar
+(<strong>Sensentí</strong>, aquí escrito con <em>s</em> inicial y <em>s</em> medial), el nombre <strong>F[ranciſ]co Guebara</strong>
+—verificado a ×12: la abreviatura es «F.co»—, y el hecho del desistimiento y del apercibimiento.
+<strong>Media</strong> para el día: leo `dies y [¿siete?]`, y no descarto «nueve». Media para los cargos que
+Castejón se atribuye en el auto de archivo, que la mancha y el desgarro recortan.</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4><strong>Doña Rita Bueso</strong></h4>
+  <p class="papel">querellante por difamación</p>
+  <p class="calidad">«este Partido» (Sensentí), 1796</p>
+</div>
+<div class="persona">
+  <h4><strong>Don José Benito de Rivera</strong></h4>
+  <p class="papel">demandado; reconoce el papel y se desdice</p>
+  <p class="calidad">1796. <strong>Firma de su mano</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Don Andrés de Rivera</strong></h4>
+  <p class="papel">aquel con quien se frustró el matrimonio</p>
+  <p class="calidad">1796</p>
+</div>
+<div class="persona">
+  <h4><strong>El padre cura del partido</strong></h4>
+  <p class="papel">ante quien se profirió la difamación</p>
+  <p class="calidad">1796</p>
+</div>
+<div class="persona">
+  <h4><strong>Josef Antonio de [¿Cholina?] y Bran</strong></h4>
+  <p class="papel">alcalde ordinario de 2.ª nominación</p>
+  <p class="calidad">1796</p>
+</div>
+<div class="persona">
+  <h4><strong>Miguel Fernando de Molina</strong> y <strong>José Ponciano Ca[…]ón</strong></h4>
+  <p class="papel">testigos de asistencia</p>
+  <p class="calidad">1796</p>
+</div>
+<div class="persona">
+  <h4><strong>Pablo López</strong></h4>
+  <p class="papel">preso por herrar una ternera ajena</p>
+  <p class="calidad">vecino del barrio de Corquín, 1802-03</p>
+</div>
+<div class="persona">
+  <h4><strong>Don José Miguel de Lara</strong></h4>
+  <p class="papel">fiador; otorga la fianza carcelera</p>
+  <p class="calidad">1802. <strong>Firma</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Don Juan José Castejón</strong></h4>
+  <p class="papel">teniente de milicias del batallón de Tegucigalpa y teniente de gobernador intendente; ante quien se otorga</p>
+  <p class="calidad">Sensentí, 1802-03</p>
+</div>
+<div class="persona">
+  <h4><strong>[¿Luis?] / Francisco Guebara</strong></h4>
+  <p class="papel">dueño de la ternera; querellante que después desiste</p>
+  <p class="calidad">1802-03</p>
+</div>
+<div class="persona">
+  <h4><strong>Capitán don Dionisio de Pineda y Bran</strong></h4>
+  <p class="papel">testigo</p>
+  <p class="calidad">1802</p>
+</div>
+<div class="persona">
+  <h4><strong>Don Fernando Molina, don Máximino Núñez, Andrés Enríquez, Ambrosio Estrada, José Carlos de Lara</strong></h4>
+  <p class="papel">testigos</p>
+  <p class="calidad">1802-03</p>
+</div></div>
+</section>
+
+<section class="extra wrap">
+  <h2>Nota final sobre el corte entre unidades</h2>
+  <p>El catálogo previo hacía acabar la causa criminal de Calisto de Lara en IMG_1696. <strong>IMG_1696 no pertenece a esa causa</strong>: es la cubierta rotulada de la querella de Rita Bueso. El corte correcto en todo este sector del archivo es <strong>1693-1695 / 1696-1699 / 1700-1703 / 1704-1706</strong>; es decir, el final de la causa criminal, la querella de 1796, la petición sobre Juana Diega de octubre de 1795, y la fianza de 1802-03.</p>
+<p>Obsérvese que el orden de encuadernación <strong>no es el cronológico</strong>: la petición de octubre de 1795 va detrás de la querella de 1796. Las piezas se cosieron al legajo según fueron llegando al archivo, no según ocurrieron.</p>
+</section>
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

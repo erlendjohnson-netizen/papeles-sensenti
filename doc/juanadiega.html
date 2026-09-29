@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Juana Diega — Papeles de Sensentí</title>
+<meta name="description" content="Cuatro planas en que un vecino de Sensentí pide a la justicia que le devuelvan a una mujer que huyó de su casa en mayo. Para que pueda ser aprehendida, la describe entera: la edad, el pelo, la cara, las marcas de la viruela. Es el retrato más completo de una persona esclavizada en todo este archivo,">
+<meta property="og:title" content="Juana Diega">
+<meta property="og:description" content="Cuatro planas en que un vecino de Sensentí pide a la justicia que le devuelvan a una mujer que huyó de su casa en mayo. Para que pueda ser aprehendida, la describe entera: la edad, el pelo, la cara, las marcas de la viruela. Es el retrato más completo de una persona esclavizada en todo este archivo,">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Petición de octubre de 1795</p>
+  <h1>Juana Diega</h1>
+  <p class="dek">Cuatro planas en que un vecino de Sensentí pide a la justicia que le devuelvan a una mujer que huyó de su casa en mayo. Para que pueda ser aprehendida, la describe entera: la edad, el pelo, la cara, las marcas de la viruela. Es el retrato más completo de una persona esclavizada en todo este archivo, y existe porque alguien la reclamaba como cosa suya.</p>
+  <div class="meta"><span><strong>4 láminas</strong> · IMG_1700 – IMG_1703</span><span>Octubre de 1795 (día ilegible)</span><span>Papel sellado 3.º de 1790-1791, habilitado para 1795 y 96</span><span>Nuevo Establecimiento de Sensentí · Chiquimula · Esquipulas</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">4</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>Cuatro planas. Un hombre pide a la justicia que le devuelvan a una mujer. La mujer se llama <strong>Juana Diega</strong>, y éste es, hasta donde alcanza el archivo de Sensentí, el documento que más dice de una persona esclavizada de este partido: su nombre, su edad aproximada, su cara, su pelo, las marcas de la viruela en su piel, el mes en que se fue y el nombre de la casa en que la encontraron. Todo ello escrito por quien la reclamaba como propiedad suya, y con el fin de que la trajeran de vuelta.</p>
+<p><strong>Lo que el papel dice de ella, y sólo lo que dice.</strong> Se llama <strong>Juana Diega</strong>; el nombre aparece dos veces, en IMG_1700 al declararse el dominio y en IMG_1701 al pedirse su busca, y se ha verificado con ampliación fuerte en ambas planas. El papel la llama, en este orden, «mulata», «de color trigueña» y «esclaba»; en IMG_1702 ya sólo «la Esclaba» / «mi Esclaba». No se le da apellido, ni oficio, ni estado civil, ni lugar de nacimiento. Tiene «<strong>como de veinte Años de edad</strong>» —la única cifra que se le concede, y aproximada, como advierte el propio «como».</p>
+<p>Las señas, en IMG_1701, se dan expresamente «para que por su aspecto y señales pueda ser aprehendida donde quiera que se encuentre»: «<strong>Como de veinte Años de edad, color trigueño, pelo castaño anillado, picada de biruelas, gruesa de Cuerpo, Cara Redonda, y estatura Regular.</strong>»</p>
+<p><strong>Quién la reclama.</strong> <strong>Don Juan Josef Castejón</strong>, vecino del Nuevo Establecimiento de Sensentí, hermano legítimo de doña Margarita. Firma la petición de su puño. Dice haberla comprado a «don […] Vicente […]» —el nombre del vendedor no se deja leer y no se inventa aquí— <strong>en Chiquimula, hacia el año de noventa y uno</strong>, y acredita el dominio con la escritura, que presenta junto con la carta y que el alcalde manda devolverle «luego». Añade que, además del precio, corrieron de su cuenta los derechos de alcabala, los fletes y la conducción de Chiguimula a Esquipulas, que ascendieron a <strong>dieciséis pesos</strong>.</p>
+<p><strong>Cuándo y con quién huyó.</strong> De la casa de Castejón, en el vecindario de Sensentí, <strong>en mayo de 1795</strong>, cinco meses antes del escrito. El papel dice que se le ausentó «sin mas causa ni motibo» y que «hiso fuga», estando «en mi servicio como sujeta por su esclavitud». Huyó <strong>acompañada de Paulino y Thomas</strong>. La lectura de los dos nombres es buena; la vocal final del primero podría ser -a (<em>Paulina</em>), y el dueño de ellos no se deja fijar.</p>
+<p><strong>Dónde apareció.</strong> El rastro lleva a <strong>Chiquimula</strong>. Consta que estuvo «tanto tiempo oculta, en una Cueba», y de esa ocultación se acusa a un tal <strong>Flores</strong>, a quien se pide tomar confesión, embargarle bienes para cubrir los costos de la búsqueda y el tiempo de servicio perdido, y, no teniéndolos, condenarlo al trabajo. La carta de <strong>don Francisco Sanchinel</strong> avisa de que la mujer se halla en casa de <strong>doña Rosalía —o Rosa— Mum</strong>, y que ésta <strong>se allana a comprarla en doscientos pesos</strong>.</p>
+<p><strong>La venta que él rechaza.</strong> Es el pasaje más revelador del expediente. Ofreciéndosele doscientos pesos, Castejón <strong>no consiente en la venta</strong>, y razona que para que pudiese tener efecto sería menester que «la enunciada Esclaba justificase lexitima causa para ello, <strong>como es la de excesivo trabajo, ō castigo, falta de alimento ō bestuario, ō otra operacion apartada de la Relisión Catholica</strong>, lo que no podrá justificar en ninguna manera». Son, una por una, las causales por las que el derecho permitía a una persona esclavizada forzar el cambio de amo. El dueño las enumera sólo para negárselas todas por adelantado. Pide en cambio que se libre «Ruego y encargo» para que doña Rosa Mum haga la entrega, y que se entregue la mujer a un <strong>sargento</strong> que la conduzca, «<strong>à efecto de que siga la esclabitud en que está constituida</strong>».</p>
+<p><strong>Cómo se resolvió, hasta donde llega el papel.</strong> El alcalde ordinario de primera nominación, <strong>don Dionisio de Pineda y Bran</strong> —el mismo juez que en enero de ese año había procesado a Calisto de Lara—, proveyó: «Por presentado con la Carta, y Escritura, que luego se debolveran à la Parte, y en lo demas, <strong>como lo pide</strong>.» Es decir: concedió lo pedido.</p>
+<p><strong>El expediente no dice qué fue de Juana Diega después de ese auto.</strong></p>
+<p><strong>Lo que el papel no dice.</strong> No dice su apellido, ni su lugar de nacimiento, ni si sabía firmar —nunca se le toma declaración: habla de ella su dueño, nunca ella—, ni si declaró con intérprete o sin él, ni si tenía hijos, ni por qué huyó. La única voz suya que el expediente deja entrever es indirecta y por negación: la lista de agravios que su dueño se adelanta a decir que ella «no podrá justificar».</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>La esclavitud que deja ver este papel no corresponde a la plantación. En el partido de Sensentí no hay ingenio ni cuadrilla. Hay una mujer sola en la casa de un vecino principal, comprada lejos y traída por el camino de Chiquimula a Esquipulas. Además del precio, <strong>don Juan Josef Castejón</strong> pagó alcabala, fletes y conducción, dieciséis pesos. Esa partida describe el régimen: una persona esclavizada era un bien titulado, que se compraba con escritura, se trasladaba pagando el impuesto de las ventas y se reclamaba ante el alcalde igual que una res del propio hierro.</p>
+<p>La segunda particularidad es de método. La esclavitud doméstica en números pequeños casi no deja padrones ni listas, y deja constancia cuando se rompe. Por eso éste es, en todo el archivo, el documento que más dice de una persona esclavizada, y lo dice de la peor manera. La descripción del cuerpo se da expresamente «para que por su aspecto y señales pueda ser aprehendida donde quiera que se encuentre». Es una ficha de captura. El memorial de Castejón, además, cierra de antemano las causas por las que una persona esclavizada podía forzar el traspaso a otro amo: la fuga fue «sin mas causa ni motibo». Es una cláusula, y funciona antes de que nadie pregunte.</p>
+<p>Lo que no se sabe hay que decirlo. El expediente no dice qué fue de ella. No hay auto de entrega, ni comparecencia, ni una línea dictada por ella. Nunca declara. Para cotejar hay un segundo nombre, José Luis Ramírez, «mulato esclavo» del cura de Ocotepeque, muerto de una estocada en 1787 y presente en otro expediente de este archivo.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#f1700">00</a><a href="#f1701">01</a><a href="#f1702">02</a><a href="#f1703">03</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="f1700">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 4</span><h3>IMG_1700</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1700" aria-label="Ampliar la lámina IMG_1700">
+        <img src="../img/juanadiega/p001.jpg" alt="Fotografía de la lámina IMG_1700" loading="lazy">
+      </button>
+      <figcaption><strong>Papel sellado, sello tercero.</strong> Leyenda impresa: Vn real. · SELLO TERCERO, VN REAL, · AÑOS DE MIL SETECIENTOS · NOVENTA Y NOVENTA Y VNO.
+
+Al margen izquierdo, el sello redondo de armas (`CAROLVS III D.G. HISPANIAR. REX`), un circular con
+la cifra «3» y leyenda `PARA LOS AÑOS DE 1795 Y 96`, y el óvalo `VALGA POR EL REYNADO DEL S[eñor]
+D. CARLOS IV Y POR LOS A[ÑO]S DE 1795 Y 96`. **Nótese que el pliego impreso es de 1790-1791, no de
+«179[?]» indeterminado, y está habilitado para 1795-96.** Tinta muy aguada y desvaída, la más difícil
+del tramo; la mitad inferior está casi lavada. Rotura en el ángulo inferior derecho. Sin foliación
+visible. La toma es nítida, pero la tinta obliga a realce fuerte.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Primera plana de la petición de don Juan Josef Castejón</strong> sobre **la fuga de una mujer
+esclavizada de su propiedad<strong>. </strong>Aquí empieza la tercera unidad del tramo, y es la pieza central.**
+El peticionario se presenta como vecino de este vecindario y hermano legítimo de doña Margarita;
+alega tener comprada y acreditar el dominio sobre <strong>Juana Diega, mulata de color trigueño, esclava</strong>
+que compró a don […] Vicente […] y cuya escritura se otorgó <strong>en Chiquimula</strong> en el año de noventa y
+[uno]; que hallándose ella en su servicio, sujeta por su esclavitud, **sin más causa ni motivo se le
+ausentó e hizo fuga de su casa en el mes de mayo del presente año<strong>, acompañada de </strong>Paulino** y
+<strong>Tomás</strong>; y que según le consta extrajudicialmente ha sido asistida y ocultada, siguiendo el rastro
+hasta <strong>Chiquimula</strong>, de donde pide que se la devuelvan a <strong>Sensentí</strong>. Cierra con la cláusula de
+poder y facultad a los señores jueces y justicias de Su Majestad. <strong>No acaba aquí:</strong> sigue en IMG_1701.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Alcalde de 1.º Voto</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan Joseph Caste<u class="exp" title="abreviatura desarrollada">[jo]</u>n de este Vecindario,</span>
+<span class="ln">hermano lexitimo Y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de D<u class="exp" title="abreviatura desarrollada">[oñ]</u>a Margarita <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ante Vm<u class="exp" title="abreviatura desarrollada">[d]</u> paresco diciendo: Que teniendo com-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[pra]</u>da <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> no me <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Comprue<u class="exp" title="abreviatura desarrollada">[b]</u>e con e<u class="exp" title="abreviatura desarrollada">[l]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de los dominios en Juana</span>
+<span class="ln">Diega mulata de color trigueña esclaba q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">compré à D<u class="exp" title="abreviatura desarrollada">[o]</u>n <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Vicente <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> es Chiqui-</span>
+<span class="ln">mula en el año de Nobenta y <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿uno?]</u></u>, como cons-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ta]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> citado y<u class="exp" title="abreviatura desarrollada">[n]</u>m<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>, la q<u class="exp" title="abreviatura desarrollada">[ue]</u> hallandose en mi</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[s]</u>erui<u class="exp" title="abreviatura desarrollada">[ci]</u>o como sujeta p<u class="exp" title="abreviatura desarrollada">[o]</u>r su <u class="exp" title="abreviatura desarrollada">[esclabitud]</u>, sin mas</span>
+<span class="ln">causa ni motibo, y <u class="exp" title="abreviatura desarrollada">[en]</u> su a<u class="exp" title="abreviatura desarrollada">[rrojo]</u> hiso fuga de mi</span>
+<span class="ln">casa en el mes de mayo del presente año acom-</span>
+<span class="ln">pañada de Paulino<u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿a?]</u></u> y Thomas mulato esclabo de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">en d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Vecind<u class="exp" title="abreviatura desarrollada">[ari]</u>o, segun <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ha declarado, e-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[xtraju]</u>dicialm<u class="exp" title="abreviatura desarrollada">[en]</u>te <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> ha sido asisti<u class="exp" title="abreviatura desarrollada">[da]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Jacobo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> hasta el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Chiquimula <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> pasada la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> como <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">en casa <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">se venir<u class="exp" title="abreviatura desarrollada">[a]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> libran<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a Sencenti, luego q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">las leyes <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[firmar?]</u></span>
+<span class="ln">dando poder y facultad à los señores Juezes y Justi<u class="exp" title="abreviatura desarrollada">[cias]</u></span>
+<span class="ln">de Su Magestad para que al cumplimient<u class="exp" title="abreviatura desarrollada">[o]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Señor alcalde de primer voto: don Juan José Castejón, de este vecindario, hermano legítimo y […] de
+doña Margarita […], ante vuestra merced parezco diciendo que, teniendo comprada […], compruebo con
+[la escritura] el dominio sobre **Juana Diega, mulata de color trigueño, esclava que compré a don
+[…] Vicente […] en Chiquimula, en el año de noventa y [uno]**, como consta del citado instrumento;
+la cual, hallándose en mi servicio como sujeta por su esclavitud, **sin más causa ni motivo, y por
+su propio arrojo, hizo fuga de mi casa en el mes de mayo del presente año**, acompañada de Paulino y
+Tomás, mulato esclavo de […] en dicho vecindario, según se ha declarado. Y extrajudicialmente consta
+que ha sido asistida […], siguiéndole el rastro hasta […] Chiquimula […], para que se la devuelva a
+Sensentí. […] Dando poder y facultad a los señores jueces y justicias de Su Majestad para que al
+cumplimiento […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Desigual y lo digo sin adornos. <strong>Alta</strong> para los datos que más importan, verificados
+uno a uno con ampliación de hasta ×16 y realce por sustracción de fondo: el nombre <strong>Juana Diega</strong>,
+la calidad <strong>mulata</strong>, el color <strong>trigueña</strong>, la palabra <strong>esclaba</strong>, la compra en <strong>Chiquimula</strong>, la
+fuga <strong>en el mes de mayo del presente año</strong>, la fórmula <strong>«sin mas causa ni motibo»</strong> y el topónimo
+<strong>Sencenti</strong> (así escrito). <strong>Media</strong> para el nombre del peticionario en esta plana: la firma cursiva
+lo deja en «Ca…on», y sólo por comparación con IMG_1704, donde se escribe con claridad <strong>Castejon</strong>,
+lo restituyo aquí. <strong>Media-baja</strong> para los acompañantes: leo «Paulino» (la vocal final podría ser -a)
+y «Thomas», seguidos de «mulato esclabo de …», sin que el dueño de éstos se deje fijar. <strong>Baja</strong> para
+el tercio inferior de la plana, donde la tinta está prácticamente lavada y sólo se recuperan
+topónimos y palabras sueltas; <strong>no</strong> he restituido ahí nada por conjetura. El nombre del vendedor
+—«D.n […] Vicente […]»— <strong>no se deja fijar</strong>, y no lo invento.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1701">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 4</span><h3>IMG_1701</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1701" aria-label="Ampliar la lámina IMG_1701">
+        <img src="../img/juanadiega/p002.jpg" alt="Fotografía de la lámina IMG_1701" loading="lazy">
+      </button>
+      <figcaption>Segunda plana del mismo pliego sellado de IMG_1700. Tinta algo más cargada y mano más
+firme que en la primera plana, de modo que esta cara se lee mucho mejor. El borde derecho se curva al
+lomo y <strong>la toma corta el final de bastantes renglones</strong>. En la mitad inferior derecha hay estampado
+un <strong>sello ovalado moderno en tinta roja</strong> (marca de inventario reciente, ajena al documento). El pie
+de la hoja está roto en el ángulo izquierdo. Sin foliación de época visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Segunda plana de la misma petición: el pedimento y las señas de Juana Diega.</strong> Pide que
+se la solicite en la casa del susodicho <strong>Sanchinel</strong> o en otra en que se halle, que se la entregue al
+sargento para que la conduzca y se la entregue a él, **«à efecto de q[ue] siga la esclabitud en que
+está constituida»<strong>, y —para que pueda ser aprehendida dondequiera que se encuentre— </strong>da sus señas
+personales<strong>. Pide después que se le tome confesión al susodicho </strong>Flores**, y, resultando cierto haber
+sido el actor, que se le embarguen bienes competentes para que le cubra los costos erogados en
+solicitar a su esclava y el tiempo perdido de su servicio; y, no teniendo bienes, que se le condene al
+trabajo, con el castigo que por su delito merezca, por el crimen y por **haberla tenido tanto tiempo
+oculta en una cueva<strong>. </strong>Ni empieza ni acaba aquí la unidad.<strong> · </strong>Las señas, que son el corazón de esta plana:** · <em>«Como de veinte Años de edad, color trigueño, pelo castaño anillado, picada de biruelas, gruesa de · Cuerpo, Cara Redonda, y estatura Regular.»</em></p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> solicite la enunciada Juana Diega, q<u class="exp" title="abreviatura desarrollada">[ue]</u> mi Esclab<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln">en la casa del predicho Sanchi<u class="exp" title="abreviatura desarrollada">[nel]</u>, ō otra e<u class="exp" title="abreviatura desarrollada">[n]</u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> se halle, lo que verificado se la entregue</span>
+<span class="ln">à d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Sarg<u class="exp" title="abreviatura desarrollada">[en]</u>to, p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> la condusga à entre-</span>
+<span class="ln">garmela, à efecto de q<u class="exp" title="abreviatura desarrollada">[ue]</u> siga la esclabitud en</span>
+<span class="ln">que está constituida; y para q<u class="exp" title="abreviatura desarrollada">[ue]</u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r su aspecto</span>
+<span class="ln">y señales pueda ser aprehendida donde quie-</span>
+<span class="ln">ra que se encuentre, son las siguientes: Co-</span>
+<span class="ln">mo de veinte Años de edad, color trigueño,</span>
+<span class="ln">pelo castaño anillado, picada de biruelas,</span>
+<span class="ln">gruesa de Cuerpo, Cara Redonda, y estatura</span>
+<span class="ln">Regular: Evacuado q<u class="exp" title="abreviatura desarrollada">[ue]</u> sea esta dilig<u class="exp" title="abreviatura desarrollada">[encia]</u>, en pri-</span>
+<span class="ln">mer lugar, se ha de servir Vm<u class="exp" title="abreviatura desarrollada">[d]</u> tomarle</span>
+<span class="ln">su confesion al predicho Flores, y confe<u class="exp" title="abreviatura desarrollada">[s]</u>an-</span>
+<span class="ln">do ser cierto hauia sido el actor, embarga<u class="exp" title="abreviatura desarrollada">[r]</u>-</span>
+<span class="ln">le bienes competentes, p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> me cubra los</span>
+<span class="ln">Costos que he erogado en solicitar mi Escla-</span>
+<span class="ln">ba, y mas el tiempo q<u class="exp" title="abreviatura desarrollada">[ue]</u> he perdido de su servi-</span>
+<span class="ln">cio, de que estoi pronto ante tiempo pre-</span>
+<span class="ln">sentar relacion jurada, ō justificante de</span>
+<span class="ln">los gastos; y no teniendo bienes, sea condena-</span>
+<span class="ln">do al trabajo q<u class="exp" title="abreviatura desarrollada">[ue]</u> sea mas util, p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">de el se me haga la satisfaccion; con lo qual</span>
+<span class="ln">y el castigo q<u class="exp" title="abreviatura desarrollada">[ue]</u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r su delito merese se le</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[a]</u>plique, escarmentaran otros que le sean</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> no incurrisan en lo susodi<u class="exp" title="abreviatura desarrollada">[cho]</u></span>
+<span class="ln">en <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> crimen, y el de hauerla ten<u class="exp" title="abreviatura desarrollada">[ido]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> tiempo oculta, en una Cueba</span>
+<span class="ln">segu<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…se solicite a la enunciada <strong>Juana Diega</strong>, que es mi esclava, en la casa del susodicho Sanchinel, o
+en otra en que se halle; y, verificado, se la entregue a dicho sargento para que la conduzca y me la
+entregue, <strong>a efecto de que siga la esclavitud en que está constituida</strong>. Y para que por su aspecto y
+señas pueda ser aprehendida dondequiera que se encuentre, son las siguientes: **como de veinte años
+de edad, color trigueño, pelo castaño anillado, picada de viruelas, gruesa de cuerpo, cara redonda y
+estatura regular**.</p>
+<p>Evacuada que sea esta diligencia, en primer lugar se ha de servir vuestra merced tomarle su confesión
+al susodicho Flores; y, confesando ser cierto que había sido el autor, embargarle bienes competentes
+para que me cubra los costos que he erogado en solicitar a mi esclava, y además el tiempo que he
+perdido de su servicio, de lo que estoy pronto a presentar relación jurada o justificante de los
+gastos. Y no teniendo bienes, sea condenado al trabajo que sea más útil, para que de él se me haga la
+satisfacción; con lo cual, y con el castigo que por su delito merece, escarmentarán otros […] y no
+incurrirán en lo susodicho […] crimen, y el de <strong>haberla tenido tanto tiempo oculta en una cueva</strong>…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Alta.</strong> Las señas de Juana Diega se han verificado renglón por renglón con
+ampliación fuerte y se leen sin duda razonable, igual que su edad («como de veinte años»), la frase
+«à efecto de q[ue] siga la esclabitud en que está constituida» y «oculta en una Cueba». Media-alta
+para el apellido <strong>Sanchinel</strong>, que aquí se escribe con una abreviatura apretada y sólo se fija con
+seguridad gracias a IMG_1702, donde aparece completo como «D[o]n Fran[cis]co Sanchinel». Media para
+los renglones finales, rotos por el ángulo del pie, y para el nombre <strong>Flores</strong>, que se lee bien pero
+del que el documento no da ni calidad ni vecindad en esta plana.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1702">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 4</span><h3>IMG_1702</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1702" aria-label="Ampliar la lámina IMG_1702">
+        <img src="../img/juanadiega/p003.jpg" alt="Fotografía de la lámina IMG_1702" loading="lazy">
+      </button>
+      <figcaption>Tercera plana del mismo pliego. Tinta parda bien conservada, mano clara. **El borde
+derecho de la hoja está gastado y la toma pierde el final de la línea de data, de modo que el día y
+el año no son legibles en esta plana** (se recuperan del auto de IMG_1703). En la parte inferior
+derecha, el mismo <strong>sello ovalado moderno en tinta roja</strong>. Buena toma.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Tercera plana: cierre del pedimento, firma, y un «otrosí» decisivo.</strong> Cierra el escrito
+principal («A Vm. Suplico se sirva probeer como llebo pedido; juro lo necesario, protexto Costas
+&amp;c.») y lo <strong>firma de su mano Juan José Castejón</strong>. A continuación, por otrosí, presenta con la debida
+solemnidad <strong>una carta que acaba de recibir de don Francisco Sanchinel</strong>, en que le da noticia de la
+esclava que solicita y le comunica <strong>haber tratado con doña Rosalía Mum, en cuya casa se halla</strong>, la
+cual se allana a comprarla en <strong>doscientos pesos</strong>; a lo que el peticionario opone que, además de esa
+cantidad, fueron de su cuenta los **derechos de alcabala y fletes y la conducción de Chiguimula a
+Esquipulas, que ascendieron a dieciséis pesos**, y que para que la venta pudiese tener efecto la
+enunciada esclava habría de justificar legítima causa para ello —**«como es la de excesivo trabajo, ō
+castigo, falta de alim[en]to ō bestuario, ō otra operacion apartada de la Relisión Catholica»**—, lo
+que no podrá justificar en manera alguna; por lo que no consiente en la venta y pide que se entienda
+el ruego y encargo para que dicha doña Rosa Mum haga la entrega. Al pie, la <strong>data</strong>: «Nuevo
+Establesim[ien]to de Sencenti, y Octubre …». <strong>No acaba aquí:</strong> el proveído va en IMG_1703.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> mas de tres meses, se deja ver en <u class="exp" title="abreviatura desarrollada">[d]</u>ic<u class="exp" title="abreviatura desarrollada">[h]</u>a am<u class="exp" title="abreviatura desarrollada">[is]</u>-</span>
+<span class="ln">tad, y p<u class="exp" title="abreviatura desarrollada">[o]</u>rq<u class="exp" title="abreviatura desarrollada">[ue]</u> todo es de Justicia =</span>
+<span class="ln">A Vm<u class="exp" title="abreviatura desarrollada">[d]</u> Suplico, se sirva probeer, como llebo pe-</span>
+<span class="ln">dido, juro lo neresario, protexto Costas &amp;c<u class="exp" title="abreviatura desarrollada">[eter]</u>a.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Juan Jose Castejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Otrosi digo: Presento con la deuida solemnidad una</span>
+<span class="ln">carta q<u class="exp" title="abreviatura desarrollada">[ue]</u> acabo de Reciuir de D<u class="exp" title="abreviatura desarrollada">[o]</u>n Fran<u class="exp" title="abreviatura desarrollada">[cis]</u>co Sanchinel,</span>
+<span class="ln">en q<u class="exp" title="abreviatura desarrollada">[ue]</u> me da noticia de la Esclaba q<u class="exp" title="abreviatura desarrollada">[ue]</u> solicito, co-</span>
+<span class="ln">municandome hauer buscado por medio <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">à D<u class="exp" title="abreviatura desarrollada">[oñ]</u>a Rosalia Mum, en cuia Casa se halla, y de</span>
+<span class="ln">llano à comprarla en los Doscientos p<u class="exp" title="abreviatura desarrollada">[es]</u>os q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">salen, pero como quiera q<u class="exp" title="abreviatura desarrollada">[ue]</u> a mas de esta can-</span>
+<span class="ln">tidad, fueron de mi cuenta los d<u class="exp" title="abreviatura desarrollada">[e]</u>r<u class="exp" title="abreviatura desarrollada">[echo]</u>s de Alcabala</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[y]</u> fletes, y su condusion de Chiguimula à Esquipu-</span>
+<span class="ln">las, que asendieron à dies y seis p<u class="exp" title="abreviatura desarrollada">[esos]</u>; y tambien</span>
+<span class="ln">p<u class="exp" title="abreviatura desarrollada">[o]</u>rq<u class="exp" title="abreviatura desarrollada">[ue]</u> su venta pudiese tener efecto q<u class="exp" title="abreviatura desarrollada">[ue]</u> la enun-</span>
+<span class="ln">ciada Esclaba justificase lexitima causa para</span>
+<span class="ln">ello, como es la de excesivo trabajo, ō castigo, falta</span>
+<span class="ln">de alim<u class="exp" title="abreviatura desarrollada">[en]</u>to ō bestuario, ō otra operacion aparta-</span>
+<span class="ln">da de la Relisión Catholica, lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> no podrá jus-</span>
+<span class="ln">tificar en ninguna manera, no consediendo en</span>
+<span class="ln">la venta q<u class="exp" title="abreviatura desarrollada">[ue]</u> se solicita; y si pido q<u class="exp" title="abreviatura desarrollada">[ue]</u> ya q<u class="exp" title="abreviatura desarrollada">[ue]</u> tam<u class="exp" title="abreviatura desarrollada">[bié]</u>n</span>
+<span class="ln">se entienda el Ruego, y emcargo p<u class="exp" title="abreviatura desarrollada">[o]</u>r q<u class="exp" title="abreviatura desarrollada">[ue]</u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha D<u class="exp" title="abreviatura desarrollada">[oñ]</u>a</span>
+<span class="ln">Rosa Mum haga la entrega. pido Justicia <u class="exp" title="abreviatura desarrollada">[etcétera]</u> ut</span>
+<span class="ln">supra =</span>
+<span class="ln">Castejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Nuevo Establesim<u class="exp" title="abreviatura desarrollada">[ien]</u>to de Sencenti, y Octubre d<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…más de tres meses, se deja ver en dicha amistad; y porque todo es de justicia: a vuestra merced
+suplico se sirva proveer como llevo pedido. Juro lo necesario, protesto costas, etc. — **Juan José
+Castejón.**</p>
+<p>Otrosí digo: presento con la debida solemnidad **una carta que acabo de recibir de don Francisco
+Sanchinel**, en que me da noticia de la esclava que solicito, comunicándome haber tratado, por medio
+[…], con <strong>doña Rosalía Mum, en cuya casa se halla</strong>, la cual **se allana a comprarla en los
+doscientos pesos** que […]. Pero como quiera que, además de esa cantidad, fueron de mi cuenta los
+derechos de alcabala y fletes, y su conducción <strong>de Chiguimula a Esquipulas</strong>, que ascendieron a
+<strong>dieciséis pesos</strong>; y también porque, para que su venta pudiese tener efecto, la enunciada esclava
+habría de justificar legítima causa para ello —como es la de excesivo trabajo, o castigo, falta de
+alimento o vestuario, u otra operación apartada de la religión católica—, lo que no podrá justificar
+de ninguna manera: no consiento en la venta que se solicita. Y sí pido que se entienda el ruego y
+encargo para que dicha doña Rosa Mum haga la entrega. Pido justicia, etc., ut supra. — <strong>Castejón.</strong></p>
+<p>Nuevo Establecimiento de Sensentí, y octubre […]</p>
+<p><strong>Lo que esto significa.</strong> El «otrosí» es el pasaje jurídicamente más denso de la unidad: Juana Diega, escondida en casa de una
+mujer en Chiquimula, tiene ya quien ofrezca comprarla en doscientos pesos —lo que habría supuesto
+cambiar de amo, no libertad—, y su dueño lo rechaza, invocando de pasada, para negarlas, **las
+causales por las que el derecho indiano permitía a una persona esclavizada forzar su venta**: exceso
+de trabajo, castigo, falta de alimento o vestuario, o impedimento del ejercicio de la religión
+católica. El papel dice, sin rodeos, que ella no podrá justificar ninguna.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Alta</strong> para todo el otrosí: «Fran[cis]co Sanchinel», «Doscientos p[es]os»,
+«Alcabala», «Chiguimula à Esquipulas» (nótese la <strong>g</strong> en Chiguimula, que respeto), «dies y seis
+p[esos]», la enumeración de causales y la palabra <strong>Esclaba</strong>. Alta para la firma <strong>Castejon</strong> y para
+la data «Nuevo Establesim[ien]to de Sencenti, y Octubre». <strong>Media</strong> para el apellido de la mujer que
+la tiene en su casa: se lee «Mum» con un rasgo superpuesto, y podría ser una abreviatura de <em>Muñoz</em>
+o de <em>Munguía</em>; transcribo lo que veo y no resuelvo. **El día y el año de la data se pierden en el
+borde desgastado de la hoja**; el año lo aporta IMG_1703.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1703">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 4</span><h3>IMG_1703</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1703" aria-label="Ampliar la lámina IMG_1703">
+        <img src="../img/juanadiega/p004.jpg" alt="Fotografía de la lámina IMG_1703" loading="lazy">
+      </button>
+      <figcaption><strong>Papel sellado, sello tercero</strong>, mismo tipo que IMG_1700. Leyenda impresa: Vn real. · SELLO TERCERO, VN REAL, · AÑOS DE MIL SETECIENTOS · NOVENTA Y NOVENTA Y VNO.
+
+Al margen izquierdo, tres marcas: el redondo de armas `CAROLVS III D.G. HISPANIAR. REX`; el circular
+con la cifra «3» y leyenda de habilitación con el año <strong>1796</strong>; y el óvalo `VALGA POR EL REYNADO DEL
+S[eñor] D. CARLOS IV Y POR LOS A[ÑO]S DE 1795 Y 96`. Papel arrugado y roto en el margen izquierdo, con
+el fragmento sujeto por el fotógrafo. La mitad inferior está en blanco, con fuerte trasminado de la
+escritura de la plana enfrentada. Buena toma.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Última plana de la unidad: el auto del alcalde proveyendo la petición.</strong> Arranca con la
+cola de la data —«à mil setecientos, noventa, y sinco»—, es decir <strong>1795</strong>; y provee: «Por presentado
+con la Carta y Escritura, que luego se devolverán a la parte, y en lo demás, como lo pide.» Lo firma
+**don Dionisio de Pineda y Bran, capitán de infantería miliciana por Su Majestad y alcalde ordinario
+de primera nominación de este partido**, actuando con testigos por falta de escribano; firman con él
+dos testigos de asistencia. <strong>Aquí acaba la tercera unidad.</strong> Los dos tercios inferiores de la plana
+quedan en blanco.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">à mil setecientos, noventa, y sinco =</span>
+<span class="ln">Por presentado con la Carta, y Escrit<u class="exp" title="abreviatura desarrollada">[ur]</u>a</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> luego se debolveran à la Parte, y en</span>
+<span class="ln">lo demas, como lo pide. Assi lo proveo,</span>
+<span class="ln">mando, y firmo Yo D<u class="exp" title="abreviatura desarrollada">[o]</u>n Dionisio de Pine-</span>
+<span class="ln">da, y Bran, Capitan de Infanteria Mi-</span>
+<span class="ln">liciana p<u class="exp" title="abreviatura desarrollada">[o]</u>r S. M. y Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e ord<u class="exp" title="abreviatura desarrollada">[inari]</u>o de 1.ª No-</span>
+<span class="ln">minac<u class="exp" title="abreviatura desarrollada">[io]</u>n de este Part<u class="exp" title="abreviatura desarrollada">[id]</u>o. Auctuando con tes-</span>
+<span class="ln">tigos p<u class="exp" title="abreviatura desarrollada">[o]</u>r falta de Escriv<u class="exp" title="abreviatura desarrollada">[an]</u>o.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Dionisio Pineda</span>
+<span class="ln">y Bran <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Felis?]</u></u> Pineda <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>     Gabriel Joseph de Rivera <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…a mil setecientos noventa y cinco. Por presentado, con la carta y escritura, que luego se devolverán
+a la parte; y en lo demás, como lo pide. Así lo proveo, mando y firmo yo, don Dionisio de Pineda y
+Bran, capitán de infantería miliciana por Su Majestad y alcalde ordinario de primera nominación de
+este partido, actuando con testigos por falta de escribano. — Dionisio Pineda y Bran; [testigos]
+[¿Felis?] Pineda y Gabriel Joseph de Rivera.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Alta</strong> para el año <strong>mil setecientos noventa y cinco</strong>, escrito con todas sus letras
+y verificado en ampliación; alta para el nombre y los títulos del alcalde y para la firma «Gabriel
+Joseph de Rivera». Alta también para las tres marcas del papel sellado. <strong>Media</strong> para el nombre de
+pila del primer testigo, que leo `[¿Felis?] Pineda`. La data completa —lugar y día— queda repartida
+entre el pie de IMG_1702 («Nuevo Establecimiento de Sensentí, y octubre…») y este arranque; el **día
+del mes no se conserva legible en ninguna de las dos planas**.</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4><strong>Juana Diega</strong></h4>
+  <p class="papel">la persona reclamada; fugada en mayo de 1795</p>
+  <p class="calidad">«mulata de color trigueña esclaba»; como de veinte años; pelo castaño anillado; picada de viruelas; gruesa de cuerpo, cara redonda, estatura regular. <strong>Nunca declara</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Don Juan Josef Castejón</strong></h4>
+  <p class="papel">peticionario; se declara su dueño</p>
+  <p class="calidad">vecino del Nuevo Establecimiento de Sensentí; hermano legítimo de doña Margarita; dice haberla comprado en Chiquimula hacia 1791. <strong>Firma de su mano</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Doña Margarita</strong></h4>
+  <p class="papel">hermana del peticionario</p>
+  <p class="calidad">nombrada sólo de pasada</p>
+</div>
+<div class="persona">
+  <h4><strong>Paulino y Thomas</strong></h4>
+  <p class="papel">huyen con ella</p>
+  <p class="calidad">«mulato esclabo de […] en dicho Vecindario»; sin edad ni más señas</p>
+</div>
+<div class="persona">
+  <h4><strong>Don Francisco Sanchinel</strong></h4>
+  <p class="papel">de Chiquimula; escribe la carta que da con su paradero</p>
+  <p class="calidad">la carta se presenta con la petición y se manda devolver</p>
+</div>
+<div class="persona">
+  <h4><strong>Doña Rosalía (Rosa) Mum</strong></h4>
+  <p class="papel">en cuya casa de Chiquimula se halla</p>
+  <p class="calidad"><strong>ofrece doscientos pesos por comprarla</strong>; la oferta es rechazada</p>
+</div>
+<div class="persona">
+  <h4><strong>Flores</strong></h4>
+  <p class="papel">acusado de haberla tenido oculta</p>
+  <p class="calidad">se pide tomarle confesión y embargarle bienes</p>
+</div>
+<div class="persona">
+  <h4><strong>Un sargento</strong></h4>
+  <p class="papel">ha de conducirla y entregarla a su dueño</p>
+  <p class="calidad">sin nombre</p>
+</div>
+<div class="persona">
+  <h4><strong>Don Dionisio de Pineda y Bran</strong></h4>
+  <p class="papel">alcalde ordinario de 1.ª nominación; provee el auto</p>
+  <p class="calidad">concede lo pedido. <strong>Firma</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>[¿Felis?] Pineda</strong> y <strong>Gabriel Joseph de Rivera</strong></h4>
+  <p class="papel">testigos de asistencia</p>
+  <p class="calidad">por falta de escribano</p>
+</div></div>
+</section>
+
+<section class="extra wrap">
+  <h2>Nota final sobre la datación y sobre el uso de estas planas</h2>
+  <p>La data se lee «<strong>Nuevo Establecimiento de Sencenti, y Octubre</strong> […]» seguido de «à mil setecientos, noventa, y <strong>sinco</strong>»: <strong>octubre de 1795</strong>, sin que el día se deje leer. El papel es sellado tercero; el impreso, que el catálogo previo leía como «179[?]», dice en realidad «<strong>NOVENTA Y NOVENTA Y VNO</strong>» —es decir, del bienio 1790-1791—, habilitado después para 1795 y 96.</p>
+<p>Sobre el nombre de la mujer: se ha transcrito <strong>Juana Diega</strong>, en dos palabras, tal como el papel lo parte en IMG_1700 («Juana / Diega»). No se ha normalizado a «Juana Diego» ni se le ha añadido apellido alguno. Tampoco se ha corregido «esclaba» por «esclava», ni «biruelas» por «viruelas»: en la transcripción paleográfica la grafía es la del escribiente, y en la lectura modernizada se regulariza.</p>
+<p>Estas cuatro planas se publican como unidad propia, y no dentro de un expediente mayor, por una razón deliberada: en un archivo municipal donde las personas esclavizadas aparecen casi siempre como una línea en un inventario o como una palabra suelta en una escritura, aquí hay una descrita de cuerpo entero. Que la descripción exista porque alguien quería recuperarla como cosa suya es exactamente lo que el documento enseña, y lo que conviene que se lea entero y de una vez.</p>
+</section>
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La vaca barrosa del Río Grande — Papeles de Sensentí</title>
+<meta name="description" content="Ignacio Valencia mata una vaca sin enseñar la piel ni la marca, contra el bando. Era de don José Máximo Bueso, perdida en las vegas del Río Grande. Padre e hijo van presos de Cucuyagua a Sensentí — y el expediente se corta antes de la sentencia.">
+<meta property="og:title" content="La vaca barrosa del Río Grande">
+<meta property="og:description" content="Ignacio Valencia mata una vaca sin enseñar la piel ni la marca, contra el bando. Era de don José Máximo Bueso, perdida en las vegas del Río Grande. Padre e hijo van presos de Cucuyagua a Sensentí — y el expediente se corta antes de la sentencia.">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Causa criminal de 1815</p>
+  <h1>La vaca barrosa del Río Grande</h1>
+  <p class="dek">Ignacio Valencia mata una vaca sin enseñar la piel ni la marca, contra el bando. Era de don José Máximo Bueso, perdida en las vegas del Río Grande. Padre e hijo van presos de Cucuyagua a Sensentí — y el expediente se corta antes de la sentencia.</p>
+  <div class="meta"><span><strong>10 láminas</strong> · IMG_1544 – IMG_1553</span><span>18 a 25 de julio de 1815</span><span>Papel sellado habilitado, Fernando VII</span><span>Sensentí · Cucuyagua · Hacienda de San José de [¿Sulán?]</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">10</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>El 18 de julio de 1815, en el Nuevo Poblado de Sensentí, el Teniente de Gobernador interino don Juan José Carrejón abre causa criminal al recibir dos presos que le manda desde Cucuyagua el Juez Preventivo de aquel pueblo, don Pedro Cordón. Son Marcos Valencia —mulato libre, labrador, casado, mayor de cincuenta años, natural y vecino de Cucuyagua— y José Manuel Ramírez —mulato, jornalero, casado, de treinta y tres años, natural de Chalatenango y avecindado en Cucuyagua—. El cargo es haber matado y destazado res ajena sin manifestarla: un hijo soltero de Marcos Valencia, Ignacio Valencia, mató en el rancho de su padre, a inmediaciones del pueblo, animales vacunos que no eran suyos, contraviniendo el bando que obligaba a manifestar toda res que se matase y a presentar la piel para que se reconociera el hierro y la marca. La carátula del expediente lo resume en una línea: «1815. Contra Marcos Valencia por una res agena que destazó».</p>
+<p>Ese mismo día Carrejón toma las dos confesiones. Marcos Valencia reconoce que su hijo mató una vaca en su casa sin manifestarla, dice que era de don José Máximo Bueso y que respondería en cualquier momento en que se le hiciera cargo; la confesión se interrumpe y él no firma, por no saber. José Manuel Ramírez, reconvenido con la amenaza de cargos de perjurio, declara que jamás ha tenido trato con dichos hurtos, que supo que la vaca era de don José Máximo Bueso porque se lo oyó decir a don Andrés Rivera, quien le enseñó un pedazo del cuero, y que fue por Francisco Rodríguez —muerto quince días antes— que condujo la vaca a su casa, acompañado de su hermano menor Antolino. Acto seguido Carrejón provee auto: que se tome información en Cucuyagua sobre la conducta de Ramírez a don Andrés Rivera y a don Mariano Bueso, sus antiguos amos; que se haga cargo también al hermano menor Antolino y al reo soltero Ignacio Valencia; y que se escriba carta con inserción del auto al Juez Preventivo de Cucuyagua para que remita a Antolino y averigüe lo demás. El oficio sale ese mismo 18 de julio, dirigido a don Pedro Cordón, y va firmado con los testigos de asistencia José Manuel de Soto y Miguel Carrejón.</p>
+<p>En Cucuyagua, Pedro Cordón cumple. El 24 de julio anota que pasa a la hacienda de don Mariano Bueso, y el 29 recibe allí, en la Hacienda de San José de [¿Sulán?], la declaración del propio don Mariano Bueso: en diez años de conocerlo, andando con sus mulas, nunca le ha visto malicia al indio José Manuel Ramírez, y lo tiene por hombre de conducta honrada. Otro testigo, que sirvió ocho años a don Mariano Bueso y tiene treinta y siete años, declara que tampoco le conoció mala inclinación, y desmiente a Ignacio Valencia: la vaca que éste mató y no manifestó no puede ser del hierro de doña Margarita, hermana de Bueso, ni del ganado que él cuida, porque en ese ganado no falta ninguna cabeza. El propio Cordón certifica además que en el mes de abril pasó a casa de don José Máximo Bueso, a quien se le había perdido, en el paraje de las [¿Celavacas?], una vaca de las vegas del Río Grande, de color barroso, hacia junio; y que don Andrés Rivera decía que esa vaca no pertenecía a su hermana, y le suplicaba que se le pagase para socorrer las necesidades que padecía.</p>
+<p>El 25 de julio de 1815 Cordón cierra la información y la remite al señor Teniente «para que proceda a lo más que haya lugar». <strong>Ahí se interrumpe lo conservado en estas diez planas: no hay sentencia, ni careo, ni constancia de que Antolino llegara a ser remitido a Sensentí.</strong> El expediente se queda en fase sumaria, con las dos confesiones tomadas, el oficio cursado y la información de abono practicada en Cucuyagua, que en conjunto juega a favor de José Manuel Ramírez y deja el peso del hecho sobre Ignacio Valencia y su padre. Conviene advertir que el orden físico de las hojas no coincide con el de las fotografías: IMG_1547 empalma directamente con IMG_1553 (auto de la sumaria y su autorización), mientras IMG_1548 y IMG_1549 forman el oficio dirigido a Cucuyagua, que repite el auto insertado.</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>Este expediente documenta <strong>el control administrativo del destace de ganado</strong>. El cargo contra Marcos Valencia consiste en haber matado y destazado una res <strong>sin manifestarla</strong>, contra el bando que obligaba a declarar toda res que se matase y a <strong>presentar la piel para que se reconociera el hierro y la marca</strong>. Esa obligación convierte el cuero en el documento probatorio del animal: mientras la piel se exhibe, la propiedad es verificable. Un testigo supo de quién era la vaca porque don Andrés Rivera <strong>le enseñó un pedazo del cuero</strong>. Se persigue tanto el hurto como la evasión de un registro, y el caso indica que hacia 1815 había en el partido una norma de manifestación con vigencia real.</p>
+<p>El segundo eje es <strong>la calidad y lo poco fija que era</strong>. Los dos presos entran como mulatos, pero don Mariano Bueso se refiere a uno de ellos como <strong>«el indio José Manuel Ramírez»</strong>. La calidad que consta en unos autos es la que declara el interesado o la que le asigna quien habla, y ambas podían no coincidir. Leído junto al expediente de limpieza de sangre de 1795 y junto al pleito de Cucuyagua en que un hombre litigó años para que se le declarase mestizo, este papel muestra que fuera del trámite formal la categoría se usaba con soltura y podía cambiar de una plana a otra.</p>
+<p>La inocencia se prueba con <strong>información de conducta pedida a los antiguos amos</strong>, y la reputación certificada por un patrón es prueba procesal, igual que en la causa de 1787-89. La causa se queda en la fase de información, y no hay que darle un final que no tiene.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#f1544">44</a><a href="#f1545">45</a><a href="#f1546">46</a><a href="#f1547">47</a><a href="#f1548">48</a><a href="#f1549">49</a><a href="#f1550">50</a><a href="#f1551">51</a><a href="#f1552">52</a><a href="#f1553">53</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="f1544">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 10</span><h3>IMG_1544</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1544" aria-label="Ampliar la lámina IMG_1544">
+        <img src="../img/sen1815/p001.jpg" alt="Fotografía de la lámina IMG_1544" loading="lazy">
+      </button>
+      <figcaption>Folio suelto de papel de hilo, el peor conservado de la serie. No se ve leyenda impresa de papel sellado: la cabecera de la plana está tapada por otra hoja doblada que cae en diagonal sobre el ángulo superior derecho y que oculta el final de los renglones 1 y 2 (justamente donde iban el día y el mes, y el título completo del juez). La tinta ferrogálica está muy desvaída en toda la mitad izquierda, con una gran mancha de humedad que ha lavado el trazo; hay perforaciones de insecto, pliegues marcados y suciedad. La hoja está fotografiada inclinada unos 5° (los renglones suben hacia la derecha). No se aprecia foliación. La toma es nítida, pero el original es el que no da más.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Auto cabeza de proceso. En el Nuevo Poblado de Sensentí, a 18 de julio de 1815, ante el Teniente de Gobernador interino don <strong>Juan José Carrejón</strong>, se reciben los dos presos que le remite desde Cucuyagua el Juez Preventivo don <strong>Pedro Cordón</strong>: <strong>Marcos Valencia</strong> y <strong>José Manuel Ramírez</strong>. Contra el primero se dice que contribuyó a que un hijo suyo, soltero, llamado <strong>Ignacio Valencia</strong>, matase en su rancho —a inmediaciones de aquel pueblo— animales vacunos ajenos, contraviniendo el bando publicado para evitar robos, que manda que toda res que se mate se manifieste y se enseñe la piel para que se reconozca la marca y la propiedad. Contra el segundo, Ramírez, hay acusación de haberle hecho entrega de dicha res. Carrejón manda recibirles confesión y firma con los testigos de asistencia, por falta de escribano.
+
+En el margen izquierdo, escrita a lo largo del pliegue y en sentido vertical, va la carátula o docket del expediente: «1815. — Contra Marcos Valencia por una res agena que destazó».</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">[margen izquierdo, en vertical:] 1815. = Contra Marcos Valencia</span>
+<span class="ln">por una res agena que destazo.</span>
+</div>
+<div class="dipl">
+<span class="ln">En el <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Nuebo Pueblo?]</u></u> de Sensenti a diez y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[de mil ochocientos]</u> quince: ante mi: el Th<u class="exp" title="abreviatura desarrollada">[enien]</u>te de Gov<u class="exp" title="abreviatura desarrollada">[ernad]</u>or <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Ynterino?]</u></u> D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan Jose Carrejon, siendo re-</span>
+<span class="ln">mitidos por el Juez Preventivo de Cucuyagua D<u class="exp" title="abreviatura desarrollada">[o]</u>n Pedro Cor-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[don]</u> los Reos M<u class="exp" title="abreviatura desarrollada">[arc]</u>os Valencia, y Jose Manuel Ramirez, el pri-</span>
+<span class="ln">mero por haver contribuido en que por un su hijo</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿es?]</u></u> Soltero nombrado Ignacio Valencia se mataran <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">en su Rancho que esta a immediaciones de aquel Pueblo animales</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Vacunos, y Contraviniendo con el bando q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> por razon de</span>
+<span class="ln">la <u class="exp" title="abreviatura desarrollada">[¿G[ue]</u>rra?] <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[ar]</u>a evitar Robos, se ha publicado a fin</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[de que]</u> toda Res q<u class="exp" title="abreviatura desarrollada">[ue]</u> se mate sea manifestada, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> se haga ver</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[la]</u> propiedad que a ella se tenga, y no solo anunciar</span>
+<span class="ln">ella, sino que la piel <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[ar]</u>a conocer la ma<u class="exp" title="abreviatura desarrollada">[rca]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> al siguiente dia. Segun lo manifestara aquel</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> pudo acreditarse que en quanto al segundo</span>
+<span class="ln">Ramirez, que le hace acusacion el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">el quien le hizo entrega de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha Res <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">que deba <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> suceder <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">padecia <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> por <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> hallandome <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">recivirles sus confesiones <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y con lo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">convenga —</span>
+<span class="ln">Juan Jose Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>En el Nuevo Poblado de Sensentí, a dieciocho de julio de mil ochocientos quince, ante mí, el Teniente de Gobernador interino don Juan José Carrejón, habiendo sido remitidos por el Juez Preventivo de Cucuyagua, don Pedro Cordón, los reos Marcos Valencia y José Manuel Ramírez —el primero por haber contribuido a que un hijo suyo, soltero, llamado Ignacio Valencia, matase en su rancho, situado en las inmediaciones de aquel pueblo, animales vacunos ajenos, contraviniendo el bando que por razón de [la guerra] se publicó para evitar robos, y que manda que toda res que se mate sea manifestada y se haga ver la propiedad que sobre ella se tenga, y no sólo eso, sino que se presente la piel para reconocer la marca y se dé cuenta al día siguiente, según lo manifestase aquel dueño; y el segundo, Ramírez, contra quien hay acusación de haberle hecho entrega de dicha res—, hallándome con ello dispuse recibirles sus confesiones y practicar lo demás que convenga. Lo firmo con los testigos de mi asistencia, por falta de escribano.</p>
+<p>Juan José Carrejón [rúbrica]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja a media. Doy por seguros la fecha implícita, el lugar, los nombres (Juan José Carrejón, Marcos Valencia, José Manuel Ramírez, Ignacio Valencia, Pedro Cordón, Cucuyagua), la carátula marginal «1815 – Contra Marcos Valencia por una res agena que destazó» y el sentido general: bando que obliga a manifestar toda res que se mata y a enseñar la piel para reconocer la marca. No doy por seguros: la lectura «Nuebo Pueblo» del primer renglón (el papel está lavado ahí), la palabra «Ynterino» al principio del renglón 3 (la deduzco de IMG_1553, donde el mismo título aparece completo), «Guerra» y buena parte de los seis últimos renglones, donde la tinta casi ha desaparecido. Los renglones 1 y 2 están además físicamente tapados por una hoja doblada.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1545">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 10</span><h3>IMG_1545</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1545" aria-label="Ampliar la lámina IMG_1545">
+        <img src="../img/sen1815/p002.jpg" alt="Fotografía de la lámina IMG_1545" loading="lazy">
+      </button>
+      <figcaption>Papel de hilo. No se ve leyenda impresa de sello: el borde superior del pliego queda fuera del encuadre. Tinta ferrogálica parda, de buen cuerpo y letra cursiva clara en los dos tercios superiores. El tercio inferior está en sombra y sobre un abarquillamiento del papel: los últimos cinco o seis renglones se leen mal. Hay una palabra interlineada sobre el renglón de la prisión («Ygnacio»), que al final se salva en la fórmula «entre líneas = llamado = vale». Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Dos piezas. Arriba, los tres últimos renglones del auto cabeza de proceso de IMG_1544 —la fórmula de cierre («… de Gobernador interino … con falta de escribano») y las firmas de los dos testigos de asistencia, <strong>José Manuel de Soto</strong> y <strong>Miguel Carrejón</strong>—. Debajo, y ocupando casi toda la plana, la <strong>confesión de Marcos Valencia</strong>, tomada el mismo 18 de julio de 1815 en Sensentí. Declara llamarse como va dicho, ser <strong>mayor de cincuenta años</strong>, de <strong>calidad mulato libre</strong>, de <strong>oficio labrador</strong>, de <strong>estado casado</strong>, y <strong>natural y vecino de Cucuyagua</strong>, de esta jurisdicción. Dice que lo prendió el Juez Preventivo de aquel pueblo, don Pedro Cordón, y que la causa de su prisión la motivó su hijo Ignacio, por haber matado una vaca en su casa sin manifestarla como era debido. Preguntado de quién era la vaca, responde que era de <strong>don José Máximo Bueso</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">de Gov<u class="exp" title="abreviatura desarrollada">[ernad]</u>or. Int<u class="exp" title="abreviatura desarrollada">[erin]</u>o <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[co]</u>n falta de esc<u class="exp" title="abreviatura desarrollada">[riban]</u>o <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Jose Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l de Soto <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>     Miguel <u class="exp" title="abreviatura desarrollada">[Carrejon]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<div class="dipl">
+<span class="ln">En el mismo dia, y quando quedaban <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿de?]</u></u> arresto en este Pue-</span>
+<span class="ln">blo el Reo Marcos Valencia le hice venir a mi presencia, y</span>
+<span class="ln">ante los testigos q<u class="exp" title="abreviatura desarrollada">[ue]</u> me asisten en defecto de Escriv<u class="exp" title="abreviatura desarrollada">[an]</u>o. le recivi <u class="exp" title="abreviatura desarrollada">[el Ju-]</u></span>
+<span class="ln">ramento que hizo por Dios Nuestro S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or., y una Señal de</span>
+<span class="ln">Cruz, por el qual siendole explicada su gravedad ofrecio de-</span>
+<span class="ln">cir verdad en lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> sepa y se le pregunte, y siendolo por su Nom-</span>
+<span class="ln">bre, edad, Calidad, oficio, estado, naturaleza, y vecind<u class="exp" title="abreviatura desarrollada">[ad]</u> dixo: lla-</span>
+<span class="ln">marse el nombre q<u class="exp" title="abreviatura desarrollada">[ue]</u> va d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho., que es mayor de cinq<u class="exp" title="abreviatura desarrollada">[uen]</u>ta años de</span>
+<span class="ln">edad, Calidad mulato libre, oficio labrador, estado Casado, na-</span>
+<span class="ln">tural y vecino de Cucuyagua, de esta jurisdiccion.—</span>
+<span class="ln">Preguntado quien lo remitio a esta Cavez<u class="exp" title="abreviatura desarrollada">[er]</u>a. en calidad de Reo, p<u class="exp" title="abreviatura desarrollada">[o]</u>r</span>
+<span class="ln">que Causa, o si lo presume dixo: Que fue aprendido por</span>
+<span class="ln">el Juez Preventivo de aquel Pueblo D<u class="exp" title="abreviatura desarrollada">[o]</u>n P<u class="exp" title="abreviatura desarrollada">[edr]</u>o. Cordon, y que</span>
+<span class="ln">Causa de su prision la motivo su hijo <u class="exp" title="abreviatura desarrollada">[interlineado: Ygnacio]</u> por haver matado una</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ba]</u>ca en su Casa sin haverla Manifestad<u class="exp" title="abreviatura desarrollada">[o]</u> como era <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> por lo dicho que la mataran, q<u class="exp" title="abreviatura desarrollada">[ue]</u> el responderia en qua-</span>
+<span class="ln">lesquier <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> le hicieran cargo.—</span>
+<span class="ln">Preguntado si sabe de quien fuese la Baca, y por q<u class="exp" title="abreviatura desarrollada">[ue]</u> razon</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[la]</u> havia trahido a su Casa, pues en el caso de no hacerla ma-</span>
+<span class="ln">nifiesta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> presumia Sacrificarian con el; a lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> Respon-</span>
+<span class="ln">dio: que la Citada Baca era de Don Jose Maximo Bueso, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> aq<u class="exp" title="abreviatura desarrollada">[uel]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que el Otro la hizo pedazos por que se lo pi<u class="exp" title="abreviatura desarrollada">[dio]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[ar]</u>a hacer unos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y quedando parte de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha Carne en <u class="exp" title="abreviatura desarrollada">[su]</u> Casa <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> como hace su hijo la referida Baca, a q<u class="exp" title="abreviatura desarrollada">[ue]</u> hora del <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Casa, y quien <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[Cierre del auto anterior:] … de Gobernador interino, con falta de escribano. José Manuel de Soto [rúbrica]. Miguel Carrejón [rúbrica].</p>
+<p>En el mismo día, y estando aún arrestado en este pueblo el reo Marcos Valencia, lo hice venir a mi presencia, y ante los testigos que me asisten a falta de escribano le recibí juramento, que hizo por Dios Nuestro Señor y una señal de cruz. Explicada su gravedad, ofreció decir verdad en cuanto sepa y se le pregunte. Preguntado por su nombre, edad, calidad, oficio, estado, naturaleza y vecindad, dijo: llamarse como queda dicho; que es mayor de cincuenta años de edad; de calidad mulato libre; de oficio labrador; de estado casado; natural y vecino de Cucuyagua, de esta jurisdicción.</p>
+<p>Preguntado quién lo remitió a esta cabecera en calidad de reo, por qué causa, o si la presume, dijo: que fue aprendido por el Juez Preventivo de aquel pueblo, don Pedro Cordón, y que la causa de su prisión la motivó su hijo Ignacio, por haber matado una vaca en su casa sin haberla manifestado como era debido; que por eso se dijo que la habían matado, y que él respondería en cualquier momento en que se le hiciera cargo.</p>
+<p>Preguntado si sabe de quién era la vaca, y por qué razón la había traído a su casa, pues al no hacerla manifiesta se presumiría que la habían sacrificado de acuerdo con él, respondió: que la citada vaca era de don José Máximo Bueso; y que el otro la hizo pedazos porque se lo pidió … para hacer unos … quedando parte de dicha carne en la casa…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta en los dos tercios superiores: los datos de filiación de Marcos Valencia (mayor de cincuenta años, mulato libre, labrador, casado, natural y vecino de Cucuyagua), el nombre del Juez Preventivo don Pedro Cordón, la interlineación «Ygnacio» y el nombre de don José Máximo Bueso son firmes. Media-baja en los cinco o seis últimos renglones, que caen sobre el abarquillado del papel y quedan en sombra: ahí sólo garantizo palabras sueltas («la hizo pedazos», «porque se lo pidió», «parte de dicha carne»). La palabra tras «quedaban» del primer renglón de la confesión la leo «de arresto», con reserva.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1546">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 10</span><h3>IMG_1546</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1546" aria-label="Ampliar la lámina IMG_1546">
+        <img src="../img/sen1815/p003.jpg" alt="Fotografía de la lámina IMG_1546" loading="lazy">
+      </button>
+      <figcaption>Papel de hilo. Un pliego doblado cae sobre el ángulo superior derecho y sobre la cabecera, dejando ilegibles los cuatro o cinco primeros renglones; el mismo doblez cruza en diagonal y arruga el papel. No se ve leyenda de papel sellado. El tercio inferior vuelve a quedar en sombra y sobre un pliegue, con pérdida de legibilidad. Tinta parda, letra de la misma mano que IMG_1545. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Tres piezas. Arriba, el final de la confesión de Marcos Valencia —muy dañado—, con la fórmula de ratificación («no firmó por no saber, hícelo yo»), la salvedad de la interlineación («entre líneas = llamado = vale») y las firmas: <strong>Carrejón</strong>, <strong>José Manuel de Soto</strong> y <strong>Miguel Carrejón</strong>. A continuación, y seguidamente, la <strong>confesión de José Manuel Ramírez</strong>, que declara llamarse como va dicho, tener <strong>treinta y tres años</strong>, ser de <strong>calidad mulato</strong>, de <strong>oficio jornalero</strong>, de <strong>estado casado</strong>, <strong>natural del pueblo de Chalatenango</strong> y <strong>avecindado en el pueblo de Cucuyagua y su anexo</strong>. Preguntado por quién fue aprehendido, dice que por don Pedro Cordón, Juez Preventivo de aquel pueblo.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> harian <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y lo que le dixo fue q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[e]</u>lla <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> con trato de pagarsela despues, a cuyo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Re]</u>conveni<u class="exp" title="abreviatura desarrollada">[do]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[uienes]</u> le acompañaban no supo. Y q<u class="exp" title="abreviatura desarrollada">[ue]</u> se le hicie-</span>
+<span class="ln">ron <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> mas preguntas, y Repreguntas, se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> por lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> se suspendio <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> quando convenga, y leida que le fue, se afir-</span>
+<span class="ln">mo y ratifico: no firmo por no saver, hicelo yo = Entre lineas = llamado = <u class="exp" title="abreviatura desarrollada">[Vale]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> = <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> = <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Jose Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l de Soto <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>     Miguel Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<div class="dipl">
+<span class="ln">Seguidamente y en cumplim<u class="exp" title="abreviatura desarrollada">[ien]</u>to del auto que an-</span>
+<span class="ln">tece<u class="exp" title="abreviatura desarrollada">[de]</u> se presento el Reo Jose Manuel Ramirez, y</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[fue]</u> juramentado en lo<u class="exp" title="abreviatura desarrollada">[s]</u> mismos terminos q<u class="exp" title="abreviatura desarrollada">[ue]</u> el anterior, <u class="exp" title="abreviatura desarrollada">[y explicada]</u></span>
+<span class="ln">su gravedad ofrecio decir verdad en quanto sepa y fuere</span>
+<span class="ln">preguntado, y siendolo por su nombre, edad, Calidad,</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[oficio,]</u> estado, naturaleza, y vecind<u class="exp" title="abreviatura desarrollada">[ad]</u> dixo: que se llama</span>
+<span class="ln">como d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho, su edad treinta y tres años, su calidad mula-</span>
+<span class="ln">to, oficio Jornalero, estado Casado, Natural del Pue-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[blo de]</u> Chalatenango, y avecindado en el Pueblo de Cucuyagua</span>
+<span class="ln">y su anex<u class="exp" title="abreviatura desarrollada">[o]</u>.—</span>
+<span class="ln">Preguntado por quien fue aprehendido, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> causa p<u class="exp" title="abreviatura desarrollada">[ar]</u>a ello</span>
+<span class="ln">presume, dixo: que su prision <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> D<u class="exp" title="abreviatura desarrollada">[o]</u>n Pedro Cordon, Juez</span>
+<span class="ln">Preventivo de aquel Pueblo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de haver declarado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> una <u class="exp" title="abreviatura desarrollada">[Baca]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ante el citado Juez, q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y lo que se le hacia cargo, q<u class="exp" title="abreviatura desarrollada">[ue]</u> haver <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> manifestarla <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">que si una <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[Final de la confesión de Marcos Valencia:] … y lo que le dijo fue que … con trato de pagársela después; … reconvenido sobre quiénes le acompañaban, no lo supo. Y aunque se le hicieron muchas más preguntas y repreguntas, … por lo cual se suspendió esta confesión para continuarla cuando convenga. Leída que le fue, se afirmó y ratificó en ella; no firmó por no saber: hícelo yo. Entre líneas, «llamado»: vale.</p>
+<p>Carrejón [rúbrica]. José Manuel de Soto [rúbrica]. Miguel Carrejón [rúbrica].</p>
+<p>Seguidamente, y en cumplimiento del auto que antecede, se presentó el reo José Manuel Ramírez, y fue juramentado en los mismos términos que el anterior. Explicada la gravedad del juramento, ofreció decir verdad en cuanto sepa y fuere preguntado. Preguntado por su nombre, edad, calidad, oficio, estado, naturaleza y vecindad, dijo: que se llama como queda dicho; que su edad es de treinta y tres años; su calidad, mulato; su oficio, jornalero; su estado, casado; natural del pueblo de Chalatenango y avecindado en el pueblo de Cucuyagua y su anexo.</p>
+<p>Preguntado por quién fue aprehendido y qué causa presume para ello, dijo que su prisión se debe a don Pedro Cordón, Juez Preventivo de aquel pueblo … por haber declarado … que una vaca … ante el citado juez … y que lo que se le hacía cargo era haberla muerto … sin manifestarla…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta en el bloque central: la filiación de José Manuel Ramírez (treinta y tres años, mulato, jornalero, casado, natural de Chalatenango, avecindado en Cucuyagua) está clara, y el nombre «Chalatenango» se lee sin margen de duda. También son firmes las tres firmas. Baja en la cabecera (tapada por el pliego doblado) y en los cinco últimos renglones (sombra y pliegue). La palabra final «anexo» la leo con reserva.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1547">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 10</span><h3>IMG_1547</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1547" aria-label="Ampliar la lámina IMG_1547">
+        <img src="../img/sen1815/p004.jpg" alt="Fotografía de la lámina IMG_1547" loading="lazy">
+      </button>
+      <figcaption>Papel de hilo. La toma es la mejor de la serie para la letra. Un pliego doblado vuelve a cruzar el ángulo superior izquierdo y la parte alta, pero afecta poco al texto. No se ve leyenda impresa de sello (el borde superior del pliego queda fuera de cuadro). Tinta parda, bien conservada. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Dos piezas. Primero, el resto de la <strong>confesión de José Manuel Ramírez</strong>: reconvenido para que diga verdad so pena de cargos de perjurio, responde que no ignora la gravedad del juramento y que jamás ha tenido trato ni correspondencia con dichos hurtos. Preguntado de quién era la vaca y si alguien le ayudó a cogerla y conducirla a su casa, dice que ciertamente era de <strong>don José Máximo Bueso</strong>, por habérselo oído decir a <strong>don Andrés Rivera</strong>, que le mostró un pedazo del cuero de dicha vaca; y que fue por <strong>Francisco Rodríguez</strong> —difunto hace quince días— que la condujo a su casa, acompañado de su <strong>hermano menor Antolino</strong>. Se suspende la confesión; leída, se afirma y ratifica y no firma por no saber. Firman Carrejón, José Manuel de Soto y Miguel Carrejón.
+
+Después, el <strong>auto de 18 de julio de 1815</strong>: mediante haberse tomado las dos confesiones y haber explicado uno de los confesantes, José Manuel Ramírez, se manda tomar información en el pueblo de su domicilio sobre su conducta a don Andrés Rivera y don Mariano Bueso, como sirviente que fue de ellos.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> reconviniendole sobre q<u class="exp" title="abreviatura desarrollada">[ue]</u> diga<u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿se?]</u></u> verdad, por q<u class="exp" title="abreviatura desarrollada">[ue]</u> se le ha-</span>
+<span class="ln">rian cargos de perjuro por el juramento que ha-</span>
+<span class="ln">via prestado, Respondio: que no ignoraba la gravedad</span>
+<span class="ln">del, y obligacion de decir verdad, y que jamas ha tenido tra-</span>
+<span class="ln">to, ni correspond<u class="exp" title="abreviatura desarrollada">[enci]</u>a. con d<u class="exp" title="abreviatura desarrollada">[ic]</u>hos. <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Hurtados?]</u></u> —</span>
+<span class="ln">Preguntado si save de quien era la baca, y si hubo</span>
+<span class="ln">alguno que se la ayudara a coger y conducirla a su Casa</span>
+<span class="ln">dixo: que ciertamente fuese de Don Jose Maximo Bueso, por</span>
+<span class="ln">haverselo oid<u class="exp" title="abreviatura desarrollada">[o]</u> decir a Don And<u class="exp" title="abreviatura desarrollada">[re]</u>s Rivera, quien <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿le reconocio?]</u></u></span>
+<span class="ln">un pedazo del Cuero de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha. baca, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> por Francisco Ro-</span>
+<span class="ln">driguez q<u class="exp" title="abreviatura desarrollada">[ue]</u> hace quince dias q<u class="exp" title="abreviatura desarrollada">[ue]</u> murio, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> luego q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">conduxo a su Casa la referida baca, acompañado de su her-</span>
+<span class="ln">mano menor llamado Antolino. Y en este estado se suspende</span>
+<span class="ln">esta Confesion, <u class="exp" title="abreviatura desarrollada">[para]</u> continuarla siempre <u class="exp" title="abreviatura desarrollada">[q[ue]</u> convenga], en</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> siendole leida dixo ser lo mismo q<u class="exp" title="abreviatura desarrollada">[ue]</u> tiene expuesto, en</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> se afirma y ratifica; no firma por no saver, hago</span>
+<span class="ln">Lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> con los de mi asistencia por falta de Escri<u class="exp" title="abreviatura desarrollada">[ban]</u>o —</span>
+<span class="ln">Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Jose Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l de Soto <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>  :  Miguel Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<div class="dipl">
+<span class="ln">Sensenti y Julio diez y ocho de mil ochocientos quince =</span>
+<span class="ln">Mediante a haverse tomado las dos Confesion<u class="exp" title="abreviatura desarrollada">[es]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> in-</span>
+<span class="ln">dica el auto q<u class="exp" title="abreviatura desarrollada">[ue]</u> va por Cabeza de esta Sumaria, y haver ex-</span>
+<span class="ln">plicad<u class="exp" title="abreviatura desarrollada">[o]</u> uno de los Confesantes llamado Jose Manuel Ra-</span>
+<span class="ln">mirez se tome informacion en el Pueblo de su domicilio</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[acer]</u>ca de su conducta de D<u class="exp" title="abreviatura desarrollada">[o]</u>n And<u class="exp" title="abreviatura desarrollada">[re]</u>s Rivera, y D<u class="exp" title="abreviatura desarrollada">[o]</u>n Mar<u class="exp" title="abreviatura desarrollada">[ian]</u>o</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Bueso]</u> como sirvientes q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[ha si]</u>do de ellos, con q<u class="exp" title="abreviatura desarrollada">[ue]</u> se ha<u class="exp" title="abreviatura desarrollada">[ce]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>… reconviniéndole sobre que dijese verdad, porque se le harían cargos de perjurio por el juramento que había prestado, respondió que no ignoraba su gravedad ni la obligación de decir verdad, y que jamás ha tenido trato ni correspondencia con dichos hurtos.</p>
+<p>Preguntado si sabe de quién era la vaca, y si hubo alguien que se la ayudara a coger y a conducirla a su casa, dijo que ciertamente era de don José Máximo Bueso, por habérselo oído decir a don Andrés Rivera, quien le [mostró] un pedazo del cuero de dicha vaca; y que fue por Francisco Rodríguez —que murió hace quince días— que condujo a su casa la referida vaca, acompañado de su hermano menor llamado Antolino. Y en este estado se suspende esta confesión, para continuarla siempre que convenga. Leída que le fue, dijo ser lo mismo que tiene expuesto, en lo que se afirma y ratifica; no firma por no saber. Lo hago yo con los de mi asistencia, por falta de escribano.</p>
+<p>Carrejón [rúbrica]. José Manuel de Soto [rúbrica]. Miguel Carrejón [rúbrica].</p>
+<p><strong>Auto.</strong> Sensentí, y julio dieciocho de mil ochocientos quince. Mediante haberse tomado las dos confesiones que indica el auto que va por cabeza de esta sumaria, y haber explicado uno de los confesantes, llamado José Manuel Ramírez, tómese información en el pueblo de su domicilio acerca de su conducta a don Andrés Rivera y a don Mariano Bueso, como sirviente que ha sido de ellos, con lo que se hace…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta. Es la plana más legible del expediente. Son firmes los nombres (José Máximo Bueso, Andrés Rivera, Francisco Rodríguez, Antolino, Mariano Bueso), la fecha «Sensentí y julio diez y ocho de mil ochocientos quince» y el dato de que Francisco Rodríguez había muerto quince días antes. Dudo de dos palabras: la que leo «Hurtados» al final del renglón 5 («ni correspondencia con dichos hurtados/hurtos») y el verbo del renglón 9, que interpreto como «le reconoció» o «le enseñó» un pedazo del cuero.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1548">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 10</span><h3>IMG_1548</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1548" aria-label="Ampliar la lámina IMG_1548">
+        <img src="../img/sen1815/p005.jpg" alt="Fotografía de la lámina IMG_1548" loading="lazy">
+      </button>
+      <figcaption>Papel de hilo. La caja de escritura aparece desplazada a la derecha porque la mitad izquierda de la foto la ocupa otro pliego que se superpone. No hay leyenda de sello visible: la cabecera es margen manchado y un doblez diagonal. Tinta parda de buen cuerpo; letra menuda y apretada, algo distinta de la de IMG_1545-1547 (parece la misma mano, escribiendo más deprisa). Al pie, una rúbrica; debajo asoma el borde de otro folio de la misma causa. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">El <strong>oficio</strong> que el Teniente de Gobernador interino dirige al Juez Preventivo de Cucuyagua, insertando literalmente el auto de 18 de julio: «En esta fecha se ha proveído el auto del tenor siguiente…». Repite el mandato de tomar información sobre la conducta de José Manuel Ramírez a don Andrés Rivera y don Mariano Bueso, «como sirviente que fue de ellos»; y añade a quiénes se hace cargo: al principal, al hermano menor <strong>Antolino</strong> y al reo soltero <strong>Ignacio Valencia</strong>. Termina mandando escribir carta con inserción de este auto al Juez Preventivo.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">En esta f<u class="exp" title="abreviatura desarrollada">[ec]</u>ha. se ha proveido [el auto del tenor siguiente =]</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Media]</u>nte a haverse tomado las dos Confesio-</span>
+<span class="ln">nes que indica el auto q<u class="exp" title="abreviatura desarrollada">[ue]</u> va por Cabeza <u class="exp" title="abreviatura desarrollada">[de]</u></span>
+<span class="ln">esta Sumaria y haver explicado uno</span>
+<span class="ln">de los Confesantes llamado Jose Manuel Ra-</span>
+<span class="ln">mirez se tome informacion en el</span>
+<span class="ln">Pueblo de su Domicilio acerca de su Con-</span>
+<span class="ln">ducta de D<u class="exp" title="abreviatura desarrollada">[o]</u>n Andres Rivera,</span>
+<span class="ln">y Don Mariano Bueso; como sir-</span>
+<span class="ln">vientes q<u class="exp" title="abreviatura desarrollada">[ue]</u> fue de ellos, con q<u class="exp" title="abreviatura desarrollada">[ue]</u> se le</span>
+<span class="ln">hace al principal, y al hermano menor</span>
+<span class="ln">Antolino, del Reo Soltero Ignacio</span>
+<span class="ln">Valencia; Escrivase Carta con inser-</span>
+<span class="ln">cion de este auto al Juez Preven<u class="exp" title="abreviatura desarrollada">[tivo]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>En esta fecha se ha proveído el auto del tenor siguiente:</p>
+<p>«Mediante haberse tomado las dos confesiones que indica el auto que va por cabeza de esta sumaria, y haber explicado uno de los confesantes, llamado José Manuel Ramírez, tómese información en el pueblo de su domicilio acerca de su conducta a don Andrés Rivera y a don Mariano Bueso, como sirviente que fue de ellos; con lo que se hace cargo al principal, y al hermano menor Antolino, y al reo soltero Ignacio Valencia. Escríbase carta con inserción de este auto al Juez Preventivo [de Cucuyagua]…»</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta. El cuerpo se lee bien y coincide casi palabra por palabra con IMG_1547 y IMG_1553, lo que permite comprobar las lecturas. Doy por seguro «Escrívase Carta con inserción» (en una primera lectura parecía un nombre propio, y no lo es) y la forma «Antolino». El primer renglón está desvaído y la restitución «el auto del tenor siguiente» es por sentido; el final del último renglón se pierde en el borde.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1549">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 10</span><h3>IMG_1549</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1549" aria-label="Ampliar la lámina IMG_1549">
+        <img src="../img/sen1815/p006.jpg" alt="Fotografía de la lámina IMG_1549" loading="lazy">
+      </button>
+      <figcaption>Papel de hilo, con la hoja <strong>enrollada sobre sí misma</strong>: casi la mitad izquierda de la toma es sombra profunda y el papel forma un cilindro que corta los principios de renglón. Sin leyenda de sello visible. Tinta parda, clara donde se ve. Rúbricas amplias. Sin foliación visible. Es la toma más comprometida por la forma en que está el documento, no por la fotografía.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">El final del mismo <strong>oficio</strong> de IMG_1548, con su despedida, fecha y sobrescrito. Manda al Juez Preventivo de Cucuyagua que a la mayor brevedad remita a esta causa al citado <strong>Antolino</strong> y que proceda a la averiguación de los hurtos citados, con lo demás que aparezca sobre esta materia. Fecha en Sensentí a 18 de julio de 1815 y firma <strong>Juan José Carrejón</strong>. El sobrescrito va dirigido al «Señor Juez Preventivo de Cucuyagua don Pedro Cordón».</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[Preven]</u>tivo de Cucuyag<u class="exp" title="abreviatura desarrollada">[u]</u>a. p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> a la ma<u class="exp" title="abreviatura desarrollada">[yor]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[posible]</u> brevedad remita a esta <u class="exp" title="abreviatura desarrollada">[Causa]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> al enunciado Antolino,</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[y proceda]</u> a la averiguacion de la d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>hos hur<u class="exp" title="abreviatura desarrollada">[tos]</u> citad<u class="exp" title="abreviatura desarrollada">[os]</u>; Como igualm<u class="exp" title="abreviatura desarrollada">[ente]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> lo mas q<u class="exp" title="abreviatura desarrollada">[ue]</u> aparezca sobre esta ma-</span>
+<span class="ln">teria. Carrejon =</span>
+<span class="ln">Lo comunico a V<u class="exp" title="abreviatura desarrollada">[uestra]</u> <u class="exp" title="abreviatura desarrollada">[merced]</u> p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> diligencia<u class="exp" title="abreviatura desarrollada">[s]</u> de su contenid<u class="exp" title="abreviatura desarrollada">[o]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">con lo mandad<u class="exp" title="abreviatura desarrollada">[o]</u>.</span>
+<span class="ln">Dios gu<u class="exp" title="abreviatura desarrollada">[ard]</u>e. a V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erced]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Sensenti y Julio 18 de 18<u class="exp" title="abreviatura desarrollada">[15]</u></span>
+<span class="ln">Juan Jose Carrejon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Juez Preven<u class="exp" title="abreviatura desarrollada">[tivo]</u>. de Cucu-</span>
+<span class="ln">yagua Don Ped<u class="exp" title="abreviatura desarrollada">[r]</u>o Cordon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>«… [Juez Preven]tivo de Cucuyagua, para que a la mayor brevedad posible remita a esta causa al enunciado Antolino, y proceda a la averiguación de dichos hurtos citados, como igualmente de lo demás que aparezca sobre esta materia. Carrejón.»</p>
+<p>Lo comunico a vuestra merced para que practique las diligencias de su contenido y cumpla con lo mandado. Dios guarde a vuestra merced muchos años. Sensentí, y julio 18 de 1815.</p>
+<p>Juan José Carrejón [rúbrica]</p>
+<p>Señor Juez Preventivo de Cucuyagua, don Pedro Cordón.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta para lo que se ve: el nombre «Antolino», la fecha «Sensentí y julio 18», la firma «Juan José Carrejón» y el sobrescrito «Señor Juez Preventivo de Cucuyagua don Pedro Cordón» son seguros. Baja para los comienzos de renglón, que el enrollamiento del papel oculta materialmente; ahí he puesto [...] antes que inventar. El año, al final del renglón de la fecha, se corta: leo «18 de 18…» y lo completo por el contexto.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1550">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 7 de 10</span><h3>IMG_1550</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1550" aria-label="Ampliar la lámina IMG_1550">
+        <img src="../img/sen1815/p007.jpg" alt="Fotografía de la lámina IMG_1550" loading="lazy">
+      </button>
+      <figcaption>Papel de hilo, fotografiado con la hoja curvada y en sombra: toda la plana tiene un velo oscuro y bandas verticales de luz rasante que dificultan la lectura. No hay leyenda de sello visible. Tinta parda, letra distinta de la de Sensentí: más redonda, con abreviaturas propias. Al pie, tres firmas: <strong>Pedro Cordón</strong> y los testigos <strong>Juan Albarado</strong> y <strong>José María Mor[en]o</strong>. Sin foliación visible. Es, junto con IMG_1544, la plana más difícil de la serie.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Dos piezas, ya de la mano del Juez Preventivo de Cucuyagua, <strong>don Pedro Cordón</strong>. Arriba, la diligencia de cumplimiento del oficio recibido, fechada en <strong>Cucuyagua a veinticuatro de julio de 1815</strong>, en que dice que pasó a la hacienda de don Mariano Bueso a tomarle su declaración. Debajo, la <strong>declaración de don Mariano Bueso</strong>, recibida en la <strong>Hacienda de San José de [¿Sulán?]</strong> a <strong>veintinueve</strong> [de julio]. Declara que en los diez años que conoce al «indio» <strong>José Manuel Ramírez</strong>, andando con sus mulas, no le ha conocido la menor malicia, y que siempre lo ha tenido por de conducta honrada; que estando en sus haciendas no ha oído decir de él cosa alguna, salvo lo que ha declarado el mencionado <strong>Ignacio Valencia</strong>. Dice ser de cuarenta y tantos años; no firmó por no saber.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que antecede y continuando <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> pase a su Hacienda a tomarle su decla<u class="exp" title="abreviatura desarrollada">[racion]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Cucuyagua <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> veinte y quatro de mil ochocientos quince.</span>
+</div>
+<div class="dipl">
+<span class="ln">En la Hacienda de S<u class="exp" title="abreviatura desarrollada">[a]</u>n. J<u class="exp" title="abreviatura desarrollada">[ose]</u>ph. de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Sulan?]</u></u> en beinte y nuebe</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> parecio presente D<u class="exp" title="abreviatura desarrollada">[o]</u>n Mariano Bueso, <u class="exp" title="abreviatura desarrollada">[a quien]</u></span>
+<span class="ln">certifico Conozco, a q<u class="exp" title="abreviatura desarrollada">[uie]</u>n recibi juram<u class="exp" title="abreviatura desarrollada">[en]</u>to <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r Dios <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el qual ofrecio decir verdad en lo que sepa y fuere</span>
+<span class="ln">pregu<u class="exp" title="abreviatura desarrollada">[n]</u>tado, y siendolo dixo: q<u class="exp" title="abreviatura desarrollada">[ue]</u> en diez años que le cono-</span>
+<span class="ln">cio el Indio Jose Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l Ramirez andando con sus</span>
+<span class="ln">mulas y d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho<u class="exp" title="abreviatura desarrollada">[s]</u> que le compro q<u class="exp" title="abreviatura desarrollada">[ue]</u> no <u class="exp" title="abreviatura desarrollada">[le]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ha <u class="exp" title="abreviatura desarrollada">[con]</u>ocido en el la menor malicia, y que siempre</span>
+<span class="ln">lo ha <u class="exp" title="abreviatura desarrollada">[tenido]</u> de Conducta honrada; que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que estando hacendado a sus haciendas</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[no]</u> ha oido decir del citado Indio Cosa <u class="exp" title="abreviatura desarrollada">[alguna]</u> sino lo</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[que]</u> mencionad<u class="exp" title="abreviatura desarrollada">[o]</u> Ignacio Valencia <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> han declarado; y el perjuicio que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[ratifi]</u>co y asimismo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> es su edad de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿quarenta?]</u></u> y tantos años; no</span>
+<span class="ln">firmo q<u class="exp" title="abreviatura desarrollada">[ue]</u> no sabe, y lo <u class="exp" title="abreviatura desarrollada">[hice yo]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Pedro Cordon]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Juan Albarado <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>     Jose Maria Mor<u class="exp" title="abreviatura desarrollada">[en]</u>o <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[Diligencia:] … el [oficio] que antecede, y continuando [en su cumplimiento] … pasé a su hacienda a tomarle su declaración. Cucuyagua, veinticuatro de [julio] de mil ochocientos quince.</p>
+<p>En la hacienda de San José de [¿Sulán?], en veintinueve [de julio], pareció presente don Mariano Bueso, a quien certifico conozco, y de quien recibí juramento que hizo por Dios [Nuestro Señor y una señal de cruz], por el cual ofreció decir verdad en lo que sepa y fuere preguntado. Y siéndolo, dijo: que en los diez años que conoce al indio José Manuel Ramírez, andando con sus mulas … que le compró … no le ha conocido la menor malicia, y que siempre lo ha tenido por de conducta honrada; y que estando [él] en sus haciendas, no ha oído decir del citado indio cosa alguna, sino lo que el mencionado Ignacio Valencia ha declarado; y el perjuicio que … Se ratificó, y asimismo expresó ser su edad de cuarenta y tantos años. No firmó porque no sabe; lo hice yo con los de mi asistencia.</p>
+<p>Pedro Cordón [rúbrica]. Juan Albarado [rúbrica]. José María Mor[en]o [rúbrica].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja a media. Doy por seguros: que la declaración se recibe en una «Hacienda de San Joseph», que el declarante es don Mariano Bueso, la fecha de la diligencia previa («Cucuyagua … veinte y quatro de mil ochocientos quince»), el dato de los <strong>diez años</strong> de conocimiento, la calificación de <strong>indio</strong> aplicada a José Manuel Ramírez (que él mismo había declarado ser mulato) y las tres firmas del pie. No doy por seguro el topónimo de la hacienda: leo «S[a]n J[ose]ph de …an», y la terminación admite «Sulán»; tampoco la edad exacta («cuarenta y tantos»), ni buena parte de los renglones centrales, que la sombra y la curvatura del papel dejan en el límite de lo legible.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1551">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 8 de 10</span><h3>IMG_1551</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1551" aria-label="Ampliar la lámina IMG_1551">
+        <img src="../img/sen1815/p008.jpg" alt="Fotografía de la lámina IMG_1551" loading="lazy">
+      </button>
+      <figcaption>Papel de hilo. El borde superior del pliego queda cortado por el encuadre, de modo que se pierde el encabezamiento de la declaración (y con él la identidad del testigo). El tercio inferior vuelve a caer sobre un abarquillado en sombra. Sin leyenda de sello visible. Tinta parda; la letra es la del escribiente de Cucuyagua, clara y redonda en la mitad superior. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Dos piezas. Primero, la <strong>declaración de un testigo</strong> —cuyo encabezamiento, con su nombre, queda fuera del encuadre por arriba— que dice haber servido a <strong>don Mariano Bueso</strong> y haber vivido junto a él ocho años poco más o menos, sin conocerle mala inclinación; que aunque <strong>Ignacio Valencia</strong> dice que la vaca que mató en su casa, y que no manifestó, era del hierro de <strong>doña Margarita</strong>, hermana [de Bueso], y del ganado que él cuida, eso no puede ser como dice, porque en el ganado de su cargo no faltan cabezas. Declara tener <strong>treinta y siete años</strong> y no firmar por no saber. Firman Pedro Cordón, Juan Albarado y José María Mor[en]o.
+
+Después, una <strong>certificación del propio Pedro Cordón</strong>: que en el mes de abril de este año pasó a la casa de <strong>don José Máximo Bueso</strong>…</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[qu]</u>e conosco, y ante los de mi asistencia le re-</span>
+<span class="ln">civi juram<u class="exp" title="abreviatura desarrollada">[en]</u>to que hizo Conforme a D<u class="exp" title="abreviatura desarrollada">[e]</u>r<u class="exp" title="abreviatura desarrollada">[ech]</u>o. p<u class="exp" title="abreviatura desarrollada">[o]</u>r. el q<u class="exp" title="abreviatura desarrollada">[ue]</u> ofre-</span>
+<span class="ln">cio decir verdad en todo lo que le fuere preguntado,</span>
+<span class="ln">y siendolo dijo: q<u class="exp" title="abreviatura desarrollada">[ue]</u> en todo el tiempo que le sirvio a</span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n Mariano Bueso, y en ocho años poco mas o me-</span>
+<span class="ln">nos, que bivio junto a el, no le a conosido mala in-</span>
+<span class="ln">clinacion alguna, y que haunque Ignacio Valencia dise</span>
+<span class="ln">que una Baca que mato en su Casa, la q<u class="exp" title="abreviatura desarrollada">[ue]</u> no manifes-</span>
+<span class="ln">to, hera del fierro de su Hermana D<u class="exp" title="abreviatura desarrollada">[oñ]</u>a. Margarita, y</span>
+<span class="ln">del Ganado que cuyda, el qual <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y la <u class="exp" title="abreviatura desarrollada">[ba]</u>ca <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> del</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Y]</u>ndio Jose Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l Ramirez; no puede ser como dise, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[or]</u>q<u class="exp" title="abreviatura desarrollada">[ue]</u> en el Ganado de su cargo, no falta<u class="exp" title="abreviatura desarrollada">[n]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Ca]</u>bezas, y si le consta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> al expresado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que D<u class="exp" title="abreviatura desarrollada">[o]</u>n Jose Maximo Bueso, se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> se le perdio una Baca en <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">mato la que se dice despues, y del mismo Color de la</span>
+<span class="ln">citada, que es quanto <u class="exp" title="abreviatura desarrollada">[save]</u> y declara <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ba]</u>jo el juramento que tiene, en que ratificandose</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[en lo expu]</u>esto y ratifico leida que le fue su declaracion, ex-</span>
+<span class="ln">preso ser de edad de treinta y ciete años, no</span>
+<span class="ln">firmo p<u class="exp" title="abreviatura desarrollada">[or]</u>q<u class="exp" title="abreviatura desarrollada">[ue]</u> no save, y lo <u class="exp" title="abreviatura desarrollada">[hice]</u> yo con los de mi asis-</span>
+<span class="ln">tencia.</span>
+<span class="ln">Pedro Cordon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Juan Albarado <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>     Jose Maria Mor<u class="exp" title="abreviatura desarrollada">[en]</u>o <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> en el mes de Abril de es-</span>
+<span class="ln">te <u class="exp" title="abreviatura desarrollada">[año]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> pase a la Casa de D<u class="exp" title="abreviatura desarrollada">[o]</u>n Jose Maximo</span>
+<span class="ln">Bueso, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a mi presencia <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ni vaca <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de mi cargo, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Ygnacio <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y q<u class="exp" title="abreviatura desarrollada">[ue]</u> ha</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> refiere <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que <u class="exp" title="abreviatura desarrollada">[Marcos Valencia]</u> mato una Baca <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>… a quien conozco, y ante los de mi asistencia le recibí juramento, que hizo conforme a derecho, por el cual ofreció decir verdad en todo lo que le fuere preguntado. Y siéndolo, dijo: que en todo el tiempo que sirvió a don Mariano Bueso —ocho años poco más o menos, viviendo junto a él— no le ha conocido mala inclinación alguna; y que aunque Ignacio Valencia dice que la vaca que mató en su casa, y que no manifestó, era del hierro de su hermana doña Margarita y del ganado que él cuida, [y que fue] la vaca [robada] del indio José Manuel Ramírez, no puede ser como dice, porque en el ganado de su cargo no faltan cabezas; y le consta … que a don José Máximo Bueso se le perdió una vaca … y del mismo color que la citada. Que es cuanto sabe y declara bajo el juramento que tiene prestado, en lo que se ratifica. Leída que le fue su declaración, se ratificó en ella. Expresó ser de edad de treinta y siete años; no firmó porque no sabe, y lo hice yo con los de mi asistencia.</p>
+<p>Pedro Cordón [rúbrica]. Juan Albarado [rúbrica]. José María Mor[en]o [rúbrica].</p>
+<p>[Certificación:] … que en el mes de abril de este año … pasé a la casa de don José Máximo Bueso … a mi presencia … ni vaca … de mi cargo … Ignacio … y que se refiere a que Marcos Valencia mató una vaca…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta en la declaración (dos tercios superiores). Doy por firmes: los <strong>ocho años</strong> de servicio a don Mariano Bueso, la mención del <strong>hierro de su hermana doña Margarita</strong>, la edad de <strong>treinta y siete años</strong>, el «no firmó porque no sabe» y las tres firmas. No puedo dar el <strong>nombre del declarante</strong>: su encabezamiento queda materialmente fuera de la fotografía. Baja confianza en la certificación del pie, escrita sobre el pliegue y en sombra.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1552">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 9 de 10</span><h3>IMG_1552</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1552" aria-label="Ampliar la lámina IMG_1552">
+        <img src="../img/sen1815/p009.jpg" alt="Fotografía de la lámina IMG_1552" loading="lazy">
+      </button>
+      <figcaption>Papel de hilo. En el borde superior de la toma asoma la cabecera de otro pliego con <strong>leyenda impresa de papel sellado</strong>, de la que sólo se conserva dentro de cuadro el final: «[…]n real.» —es decir, el valor del sello, de un real—, con trazos manuscritos de habilitación a su derecha. El resto de la leyenda (sello, años) queda fuera del encuadre. La mitad inferior de la plana está limpia y blanca, con la tinta muy contrastada; es de las mejores tomas. Hay pliegues verticales. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Dos piezas, ambas de <strong>don Pedro Cordón</strong>, Juez Preventivo de Cucuyagua. Primero, el final de su certificación: que en el <strong>paraje de las [¿Celavacas?]</strong> se le perdió a [don José Máximo Bueso] una vaca de las <strong>vegas del Río Grande</strong>, hacia el mes de junio, de <strong>color barroso</strong>, y que no podía ser otra sino la suya; que en estas circunstancias, y diciendo <strong>don Andrés Rivera</strong> que dicha vaca no pertenecía a su hermana, le suplicaba que se le pagase para socorrer las necesidades que estaba padeciendo. Lo pone por verdad según la autoridad que obtiene. Fecha: <strong>Cucuyagua, julio veinticinco de mil ochocientos quince</strong>. Firman Pedro Cordón y los testigos Juan Albarado y José María Mor[en]o.
+
+Segundo, la diligencia de remisión: por estar concluida esta información, que pase al señor Teniente para que proceda a lo más que haya lugar. Cucuyagua, dicho julio veinticinco de mil ochocientos quince. Pedro Cordón.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">[sello impreso, cortado por el encuadre:] <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>n real.</span>
+</div>
+<div class="dipl">
+<span class="ln">en el parage de las <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Cela vacas?]</u></u> se le perdi<u class="exp" title="abreviatura desarrollada">[d]</u>o</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[a]</u> el una Baca de las vegas del Rio grande, hai</span>
+<span class="ln">a la <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿parte?]</u></u> de Junio, y de color barroso, y</span>
+<span class="ln">que no podia ser otra sino es la suya; <u class="exp" title="abreviatura desarrollada">[en]</u></span>
+<span class="ln">estas circunstancias y decir D<u class="exp" title="abreviatura desarrollada">[o]</u>n Andres</span>
+<span class="ln">Rivera q<u class="exp" title="abreviatura desarrollada">[ue]</u> la d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha Baca no pertenecia a</span>
+<span class="ln">su Hermana, y me suplicava y si<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> es-</span>
+<span class="ln">p<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> se le pagase p<u class="exp" title="abreviatura desarrollada">[ar]</u>a socorrer las necesida-</span>
+<span class="ln">des que estava padeciendo; lo que p<u class="exp" title="abreviatura desarrollada">[on]</u>g<u class="exp" title="abreviatura desarrollada">[o]</u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r verd<u class="exp" title="abreviatura desarrollada">[ad]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[y]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> segun la Autoridad que obtengo, y</span>
+<span class="ln">doy p<u class="exp" title="abreviatura desarrollada">[ar]</u>a que obre los efectos que convenga.</span>
+<span class="ln">Cucuyagua Julio beinte y cinco de mil</span>
+<span class="ln">ochocientos quinze.</span>
+<span class="ln">Pedro Cordon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Juan Albarado <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Jose Maria Mor<u class="exp" title="abreviatura desarrollada">[en]</u>o <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Por es]</u>tar Concluida esta informacion q<u class="exp" title="abreviatura desarrollada">[ue]</u> pa<u class="exp" title="abreviatura desarrollada">[se]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[al S]</u>or. Ten<u class="exp" title="abreviatura desarrollada">[ien]</u>te. p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> proceda a lo mas que haya <u class="exp" title="abreviatura desarrollada">[lugar]</u></span>
+<span class="ln">Cucuyagua d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho. Julio beinte y cinco de <u class="exp" title="abreviatura desarrollada">[mil]</u></span>
+<span class="ln">ochocientos quinze.</span>
+<span class="ln">Pedro Cordon <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>… en el paraje de las [¿Celavacas?] se le perdió una vaca de las vegas del Río Grande, hacia la parte de junio, y de color barroso; y que no podía ser otra sino la suya. En estas circunstancias, y diciendo don Andrés Rivera que dicha vaca no pertenecía a su hermana, me suplicaba que se le pagase, para socorrer las necesidades que estaba padeciendo. Lo cual pongo por verdad según la autoridad que obtengo, y doy para que obre los efectos que convenga.</p>
+<p>Cucuyagua, julio veinticinco de mil ochocientos quince. Pedro Cordón [rúbrica]. Juan Albarado [rúbrica]. José María Mor[en]o [rúbrica].</p>
+<p>Por estar concluida esta información, pase al señor Teniente para que proceda a lo más que haya lugar. Cucuyagua, dicho julio veinticinco de mil ochocientos quince. Pedro Cordón [rúbrica].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta. Los topónimos «vegas del Río Grande» y el nombre del juez, las dos fechas de 25 de julio de 1815, el color «barroso» de la vaca y las firmas no admiten duda. Dos reservas: el nombre del paraje, que leo con claridad de trazo pero cuya partición de palabras no es evidente («las Cela vacas» / «Celavacas»); y la fórmula del renglón 3, que leo «a la parte de Junio» (es decir, hacia junio), sin poder descartar «a la salida de Junio». La leyenda impresa del sello está cortada: sólo se lee «…n real.».
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1553">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 10 de 10</span><h3>IMG_1553</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1553" aria-label="Ampliar la lámina IMG_1553">
+        <img src="../img/sen1815/p010.jpg" alt="Fotografía de la lámina IMG_1553" loading="lazy">
+      </button>
+      <figcaption>Papel de hilo. En el borde superior de la toma asoma, igual que en IMG_1552, la cabecera de otro pliego con <strong>leyenda impresa de papel sellado</strong> cortada por el encuadre: «[…]n real.», en tipo redondo, con rasgos manuscritos de habilitación a la derecha. La plana está bien iluminada y la tinta parda es firme; hay pliegues y un doblez horizontal. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">El final del <strong>auto de 18 de julio de 1815</strong> en el cuerpo de la sumaria (continuación directa de IMG_1547): se hace cargo al primero, al hermano menor <strong>Antolino</strong> y al reo soltero <strong>Ignacio Valencia</strong>; se manda escribir carta con inserción de este auto al <strong>Juez Preventivo de Cucuyagua</strong>, para que a la mayor brevedad posible remita a esta causa al citado Antolino y proceda a la averiguación de la otra [res] de las expresadas, y con lo demás que aparezca sobre esta materia. Sigue la diligencia de autorización: «El auto que antecede proveyó y firmó el señor <strong>Teniente de Gobernador interino</strong>, con testigos, en falta de escribano», con la firma de <strong>José Manuel de Soto</strong>. Y por último, la nota: «En seguida se puso el oficio que se manda, con inserción del auto anterior». La mitad inferior de la plana está en blanco.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">[sello impreso, cortado por el encuadre:] <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>n real.</span>
+</div>
+<div class="dipl">
+<span class="ln">al prim<u class="exp" title="abreviatura desarrollada">[er]</u>o., y al hermano menor Antolino; <u class="exp" title="abreviatura desarrollada">[y]</u> al Reo Solt<u class="exp" title="abreviatura desarrollada">[er]</u>o</span>
+<span class="ln">Ygnacio Valencia; Escrivase Carta con insercion de este</span>
+<span class="ln">auto. al Juez Preventivo de Cucuyagua, p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> a la mayor</span>
+<span class="ln">posible brevedad Remita a esta Causa al citad<u class="exp" title="abreviatura desarrollada">[o]</u> Antolino,</span>
+<span class="ln">y proceda a la averiguacion de la otra <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de los <u class="exp" title="abreviatura desarrollada">[ex]</u>presados;</span>
+<span class="ln">Ygualmente con lo mas q<u class="exp" title="abreviatura desarrollada">[ue]</u> aparezca sobre esta m<u class="exp" title="abreviatura desarrollada">[ateri]</u>a. —</span>
+<span class="ln">El auto q<u class="exp" title="abreviatura desarrollada">[ue]</u> antecede proveyo y firmo el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r. Ten<u class="exp" title="abreviatura desarrollada">[ien]</u>te. de Gov<u class="exp" title="abreviatura desarrollada">[ernad]</u>or.</span>
+<span class="ln">Ynterino, con testigos en falta de Escri<u class="exp" title="abreviatura desarrollada">[ban]</u>o —</span>
+<span class="ln">Jose Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l de Soto <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">En seguida se puso el oficio q<u class="exp" title="abreviatura desarrollada">[ue]</u> se manda con inser-</span>
+<span class="ln">cion del auto anterior —</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>… al primero, y al hermano menor Antolino, y al reo soltero Ignacio Valencia. Escríbase carta con inserción de este auto al Juez Preventivo de Cucuyagua, para que a la mayor brevedad posible remita a esta causa al citado Antolino, y proceda a la averiguación de la otra [res] de las expresadas, e igualmente de lo demás que aparezca sobre esta materia.</p>
+<p>El auto que antecede lo proveyó y firmó el señor Teniente de Gobernador interino, con testigos, a falta de escribano. José Manuel de Soto [rúbrica].</p>
+<p>En seguida se puso el oficio que se manda, con inserción del auto anterior.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta. El título del juez —«Teniente de Gobernador interino»— se lee aquí con claridad, y es la clave que permite reconstruir la cabecera arruinada de IMG_1544. Son firmes «Antolino», «reo soltero Ignacio Valencia», «Escrívase carta con inserción», «Juez Preventivo de Cucuyagua» y la firma de José Manuel de Soto. Una sola laguna real: el sustantivo del renglón 5 («la averiguación de la otra … de los expresados»), donde el papel está lavado; por el contexto debe ser «res» o «baca», pero no lo afirmo. La leyenda impresa del sello está cortada: sólo «…n real.».
+
+---</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4>Juan José Carrejón</h4>
+  <p class="papel">Teniente de Gobernador interino del Nuevo Poblado de Sensentí; abre la causa, toma las confesiones, provee el auto de 18 de julio y firma el oficio a Cucuyagua</p>
+  <p class="calidad">Tratado de «don»; español o ladino principal; vecino de Sensentí. El documento no da edad</p>
+</div>
+<div class="persona">
+  <h4>Pedro Cordón</h4>
+  <p class="papel">Juez Preventivo de Cucuyagua; prende y remite a los reos, recibe el oficio, toma la información de abono y la certificación de 25 de julio</p>
+  <p class="calidad">Tratado de «don»; vecino de Cucuyagua. No consta edad ni calidad</p>
+</div>
+<div class="persona">
+  <h4>Marcos Valencia</h4>
+  <p class="papel">Reo principal. Confiesa el 18 de julio; se le acusa de haber contribuido a que se matase res ajena en su rancho y de destazarla sin manifestarla</p>
+  <p class="calidad">Mulato libre; labrador; casado; mayor de cincuenta años; natural y vecino de Cucuyagua. No sabe firmar</p>
+</div>
+<div class="persona">
+  <h4>José Manuel Ramírez</h4>
+  <p class="papel">Reo. Confiesa el 18 de julio; dice haber conducido la vaca a su casa por encargo de Francisco Rodríguez. La información de Cucuyagua lo abona</p>
+  <p class="calidad">Mulato (así se declara); en IMG_1550 se le llama «indio»; jornalero; casado; treinta y tres años; natural de Chalatenango, avecindado en Cucuyagua y su anexo. No sabe firmar</p>
+</div>
+<div class="persona">
+  <h4>Ignacio Valencia</h4>
+  <p class="papel">Hijo soltero de Marcos Valencia; mató la vaca en el rancho de su padre sin manifestarla. Se manda hacerle cargo; no llega a declarar en lo conservado</p>
+  <p class="calidad">Soltero; hijo de mulato libre; vecino de Cucuyagua. No consta edad</p>
+</div>
+<div class="persona">
+  <h4>Antolino</h4>
+  <p class="papel">Hermano menor de José Manuel Ramírez; le acompañó a conducir la vaca. Se manda remitirlo a la causa; no consta que llegara</p>
+  <p class="calidad">Hermano menor de un mulato de Cucuyagua. No consta edad ni oficio</p>
+</div>
+<div class="persona">
+  <h4>José Máximo Bueso</h4>
+  <p class="papel">Dueño de la vaca muerta, según las dos confesiones y la certificación de Pedro Cordón; se le perdió una vaca barrosa de las vegas del Río Grande</p>
+  <p class="calidad">Tratado de «don»; hacendado; vecino de la jurisdicción de Cucuyagua</p>
+</div>
+<div class="persona">
+  <h4>Mariano Bueso</h4>
+  <p class="papel">Antiguo amo de José Manuel Ramírez; declara en su abono el 29 [de julio] en la Hacienda de San José de [¿Sulán?]</p>
+  <p class="calidad">Tratado de «don»; hacendado. Edad dada en IMG_1550 como «cuarenta y tantos años» (lectura dudosa). No firma</p>
+</div>
+<div class="persona">
+  <h4>Andrés Rivera</h4>
+  <p class="papel">Antiguo amo de José Manuel Ramírez; le enseñó un pedazo del cuero de la vaca y dijo que no pertenecía a su hermana; pedía que se le pagase</p>
+  <p class="calidad">Tratado de «don». No declara por escrito en lo conservado</p>
+</div>
+<div class="persona">
+  <h4>Doña Margarita</h4>
+  <p class="papel">Hermana [de Mariano Bueso]; se le atribuye el hierro de la vaca, según Ignacio Valencia, extremo que el testigo de IMG_1551 desmiente</p>
+  <p class="calidad">Tratada de «doña»; no consta más</p>
+</div>
+<div class="persona">
+  <h4>Francisco Rodríguez</h4>
+  <p class="papel">Difunto quince días antes del 18 de julio de 1815; por encargo suyo dice Ramírez haber conducido la vaca a su casa</p>
+  <p class="calidad">No consta calidad ni vecindad</p>
+</div>
+<div class="persona">
+  <h4>Testigo de IMG_1551 (nombre perdido)</h4>
+  <p class="papel">Sirviente de don Mariano Bueso durante ocho años; declara en abono de Ramírez y desmiente a Ignacio Valencia sobre el hierro</p>
+  <p class="calidad">Treinta y siete años; vecino de Cucuyagua; no sabe firmar. El encabezamiento con su nombre queda fuera de la fotografía</p>
+</div>
+<div class="persona">
+  <h4>José Manuel de Soto</h4>
+  <p class="papel">Testigo de asistencia del Teniente de Gobernador, en falta de escribano</p>
+  <p class="calidad">Vecino de Sensentí; sabe firmar</p>
+</div>
+<div class="persona">
+  <h4>Miguel Carrejón</h4>
+  <p class="papel">Testigo de asistencia del Teniente de Gobernador, en falta de escribano</p>
+  <p class="calidad">Vecino de Sensentí; sabe firmar</p>
+</div>
+<div class="persona">
+  <h4>Juan Albarado</h4>
+  <p class="papel">Testigo de asistencia del Juez Preventivo de Cucuyagua</p>
+  <p class="calidad">Vecino de Cucuyagua; sabe firmar</p>
+</div>
+<div class="persona">
+  <h4>José María Mor[en]o</h4>
+  <p class="papel">Testigo de asistencia del Juez Preventivo de Cucuyagua</p>
+  <p class="calidad">Vecino de Cucuyagua; sabe firmar</p>
+</div></div>
+</section>
+
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

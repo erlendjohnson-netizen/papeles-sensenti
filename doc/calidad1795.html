@@ -1,0 +1,1311 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Limpieza de sangre, y cincuenta años después — Papeles de Sensentí</title>
+<meta name="description" content="Dos piezas separadas por medio siglo y unidas por la misma pregunta: quién puede ocupar un cargo y con qué se prueba. Una real orden de 1794 que exige cristiandad, limpieza de sangre y legitimidad en treinta días; y un cuadernillo de juicios verbales del juzgado de Sensentí que resulta ser de 1847, ">
+<meta property="og:title" content="Limpieza de sangre, y cincuenta años después">
+<meta property="og:description" content="Dos piezas separadas por medio siglo y unidas por la misma pregunta: quién puede ocupar un cargo y con qué se prueba. Una real orden de 1794 que exige cristiandad, limpieza de sangre y legitimidad en treinta días; y un cuadernillo de juicios verbales del juzgado de Sensentí que resulta ser de 1847, ">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* tablas dentro del estudio */
+table{border-collapse:collapse;width:100%;margin:20px 0;font-size:.92em;
+  background:var(--card,transparent);display:block;overflow-x:auto}
+@media(min-width:620px){table{display:table}}
+th,td{border:1px solid var(--rule);padding:9px 11px;text-align:left;vertical-align:top;line-height:1.5}
+th{background:var(--rule2);color:var(--ink);font-weight:600;font-size:.86em;
+  letter-spacing:.02em;text-transform:none}
+tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--rule) 22%,transparent)}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · 1795 y 1847</p>
+  <h1>Limpieza de sangre, y cincuenta años después</h1>
+  <p class="dek">Dos piezas separadas por medio siglo y unidas por la misma pregunta: quién puede ocupar un cargo y con qué se prueba. Una real orden de 1794 que exige cristiandad, limpieza de sangre y legitimidad en treinta días; y un cuadernillo de juicios verbales del juzgado de Sensentí que resulta ser de 1847, no de 1848-49.</p>
+  <div class="meta"><span><strong>11 láminas</strong> · IMG_1395 – IMG_1405</span><span>5 de enero y 19 de abril de 1795 · abril y julio de 1847</span><span>Papel sellado de 1792-93 con resello de Carlos IV, y sello del Estado de Honduras</span><span>Comayagua · Gracias · Sensentí · valle Callejas</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">11</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>Once planas, dos piezas, y medio siglo entre ellas. Lo que las une, sin que nadie lo dispusiera, es que las dos tratan de <strong>quién puede ocupar un cargo y con qué se prueba</strong>.</p>
+<h3>La real orden de 1794, y lo que exige probar</h3>
+<p>Certificación del escribano <strong>Joaquín Fernández Lindo</strong>, dada en <strong>Comayagua el 5 de enero de 1795</strong>, de un auto del intendente de <strong>2 de enero de 1795</strong> que manda cumplir la <strong>real orden de 8 de junio de 1794</strong>. Papel sellado de 1792-93, con resello circular «CAROLUS IV…» y una habilitación menor con cifra «4» medio metida en el lomo. Sigue el <strong>obedecimiento en Gracias, el 19 de abril de 1795</strong>, por <strong>Pablo Vargas de Monciel</strong>.</p>
+<p>La real orden manda que virreyes, audiencias, gobernadores e intendentes no confieran oficios a sujetos sin las circunstancias debidas, ni a sus familiares o allegados. Y lo que se exige acreditar, en treinta días, es esto:</p>
+<ul>
+<li><strong>cristiandad</strong></li>
+<li><strong>limpieza de sangre</strong></li>
+<li><strong>legitimidad</strong></li>
+<li><strong>no ser familiar, dependiente ni allegado</strong> de gobernadores o corregidores</li>
+</ul>
+<p>La prueba se articula en dos niveles: <strong>el certificado de partida de bautismo, inserto por el cura</strong>, para lo que consta en libro; y <strong>la notoriedad de vecindad antigua</strong> para lo demás.</p>
+<p>Vale la pena leerlo junto al expediente de Cucuyagua que el proyecto transcribió antes, donde <strong>Felipe Valencia pleiteó quince años para que se le declarase mestizo y dejar de tributar</strong>, y donde la prueba decisiva fue la misma —la partida de bautismo certificada por el cura, que decía «Felipe, mulato»— y donde Cucuyagua respondió que los libros se habían quemado. El mismo aparato probatorio, en los mismos años y en el mismo partido, sirve arriba para calificar a quien aspira a un oficio y abajo para retener a quien quiere salir del padrón.</p>
+<h3>Las actas de juicio verbal, que no son de 1848-49 sino de 1847</h3>
+<p><strong>Corrección de fecha.</strong> El sello impreso dice «PARA LOS AÑOS D 1847 Y 1848, SELLO 3.ª CLASE, V[N] M[EDIO] R[EAL], EST. DE HOND.», sin habilitación ninguna encima, e IMG_1402 está fechada <strong>6 de abril de 1847</strong>. El expediente es <strong>de 1847</strong>.</p>
+<p>Son actas del juzgado de Sensentí, y los pleitos son de vecinos corrientes:</p>
+<ul>
+<li><strong>injurias y amenazas</strong> — veinte pesos de multa más daños, por los artículos 125 y 126 de la ley de 17 de abril de 1843;</li>
+<li><strong>Tomás Méndez contra Juan Ares</strong>, por golpes e insultos;</li>
+<li><strong>Victoriano Pérez contra Juan Peraza</strong>, por cuatro pesos tres reales y un pañuelo — dos meses de obras públicas, artículos 51 a 54;</li>
+<li><strong>Miguel Castejón contra Mauricio Reyes y Lázaro Juárez</strong>, por los mismos artículos;</li>
+<li>un acta de julio sobre <strong>entrega de bienes</strong>, con <strong>Carlos Ribera</strong>, el <strong>valle Callejas</strong>, y vecinos de <strong>San Marcos</strong>.</li>
+</ul>
+<p>Un juzgado de pueblo aplicando por número los artículos de una ley del Estado de Honduras, cincuenta años después de que el mismo juzgado pidiera a sus tenientes certificados de limpieza de sangre.</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>Las dos piezas cosidas juntas tratan del mismo asunto desde dos regímenes distintos: quién puede ocupar un cargo y con qué se prueba. La real orden de 1794 exige a quien aspire a un oficio acreditar cristiandad, <strong>limpieza de sangre</strong>, legitimidad y no ser familiar ni allegado de gobernadores o corregidores. Esa lista es la puerta de entrada al sistema de calidades. La «calidad» era una condición jurídica y social compuesta por ascendencia, legitimidad, religión y reputación pública. Determinaba obligaciones, como tributar, y capacidades, como ocupar oficios de república.</p>
+<p>Lo que rara vez se ve es el <strong>procedimiento probatorio</strong>. Aquí tiene dos niveles: la partida de bautismo, inserta por el cura, para lo que consta en libro, y la notoriedad de vecindad antigua para lo que no consta en ninguna parte.</p>
+<p>El aparato era de doble filo, como muestra el cotejo ya hecho con el expediente de Cucuyagua. Felipe Valencia pleiteó quince años para que se le declarase mestizo y dejar de tributar, y la prueba decisiva era una partida que decía «Felipe, mulato». El mismo libro parroquial sirve <strong>arriba</strong> para calificar a quien aspira a un oficio y <strong>abajo</strong> para retener en el padrón a quien quiere salir.</p>
+<p>La segunda pieza, de 1847, permite medir el cambio. Son actas de juicio verbal del juzgado de Sensentí sobre pleitos de vecinos corrientes. El juez cita artículos numerados de una ley de 1843 y gradúa la pena en multa o en obras públicas. En medio siglo, el criterio de la persona ha sido sustituido por el artículo del código, al menos en la forma del acta.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#fIMG_1395">95</a><a href="#fIMG_1396">96</a><a href="#fIMG_1397">97</a><a href="#fIMG_1398">98</a><a href="#fIMG_1399">99</a><a href="#fIMG_1400">00</a><a href="#fIMG_1401">01</a><a href="#fIMG_1402">02</a><a href="#fIMG_1403">03</a><a href="#fIMG_1404">04</a><a href="#fIMG_1405">05</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="fIMG_1395">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 11</span><h3>IMG_1395</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1395-0" aria-label="Ampliar la lámina"><img src="../img/calidad1795/p001.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Papel verjurado, timbre impreso en el ángulo superior izquierdo:
+«Un quartillo / SELLO QUARTO, VN QUARTILLO, AÑOS DE MIL SETECIENTOS NOVENTA Y DOS Y NOVENTA
+Y TRES». Sobre el pliego, dos estampaciones circulares: la mayor, escudo real con leyenda
+<strong>«CAROLUS IV D. G. HISPANIARUM REX»</strong>; debajo y a su izquierda, medio metida en el lomo,
+una <strong>habilitación circular menor</strong> con una cifra <strong>«4»</strong> en el centro, columna coronada, y
+leyenda arciforme de la que sólo se leen <strong>«PARA LO[S] … AÑOS …»</strong>; el resto queda en el
+doblez y no se deja fijar. Tinta ferrogálica parda, bien conservada en esta plana. Letra
+humanística cursiva de escribanía, una sola mano. Sin foliación visible. El margen izquierdo
+recoge, por transparencia y por el encuadre, letras impresas de la plana enfrentada
+(«…VA», «…OCH», «…CIE»). Pequeña palabra tachada en el cuerpo del texto (línea 6). Encuadre:
+entra la plana entera; el borde derecho se curva hacia la sombra y come el final de dos o
+tres renglones.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Primera plana de la certificación de 1795. Encabezamiento del escribano
+Joaquín Fernández Lindo y comienzo del auto del gobernador intendente de Comayagua (2 de
+enero de 1795) que manda guardar y cumplir el superior despacho y la real orden de 8 de
+junio de 1794 sobre provisión de oficios, y que ordena a subdelegados y tenientes presentar,
+en treinta días, documentos de cristiandad, limpieza de sangre y legitimidad.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Un quartillo</span>
+<span class="ln">SELLO QUARTO, VN QUAR-</span>
+<span class="ln">TILLO, AÑOS DE MIL SETE-</span>
+<span class="ln">CIENTOS NOVENTA Y DOS Y</span>
+<span class="ln">NOVENTA Y TRES.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Don Joaquin fernandez Lindo Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no p<u class="exp" title="abreviatura desarrollada">[úbli]</u>co</span>
+<span class="ln">de Gob<u class="exp" title="abreviatura desarrollada">[ier]</u>no R<u class="exp" title="abreviatura desarrollada">[ea]</u>l, R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Hacienda Mina<u class="exp" title="abreviatura desarrollada">[s]</u> y Novenos</span>
+<span class="ln">Certifico q<u class="exp" title="abreviatura desarrollada">[u]</u>e aconsecuencia de la R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Orden de</span>
+<span class="ln">ocho de Junio de mil setecientos nov<u class="exp" title="abreviatura desarrollada">[en]</u>ta y quatro comu-</span>
+<span class="ln">nicada por el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Pardoqui?]</u></u> sobre q<u class="exp" title="abreviatura desarrollada">[u]</u>e los Vis-Reyes</span>
+<span class="ln">Audiencias, Governadores, é Yntendentes, no confieran</span>
+<span class="ln">oficios a Sugetos en quienes no concurran las circuns-</span>
+<span class="ln">tancias <u class="exp" title="abreviatura desarrollada">[tachado: ...]</u>, ni en aquellos q<u class="exp" title="abreviatura desarrollada">[u]</u>e fueren sus familia-</span>
+<span class="ln">res, ò allegados, se proveyò por S<u class="exp" title="abreviatura desarrollada">[u]</u> S<u class="exp" title="abreviatura desarrollada">[eñoría]</u> el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Gov<u class="exp" title="abreviatura desarrollada">[ernad]</u>or Ynten-</span>
+<span class="ln">dente el Auto del tenor siguiente = Comayagua ene-</span>
+<span class="ln">ro dos de mil setecientos nov<u class="exp" title="abreviatura desarrollada">[en]</u>ta y cinco = Guardese</span>
+<span class="ln">y cumplase el Superior Despacho, y R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Orden q<u class="exp" title="abreviatura desarrollada">[u]</u>e s<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿le?]</u></u> incerta, librandose provisional à cada Sub<u class="exp" title="abreviatura desarrollada">[delega]</u>do, y Te-</span>
+<span class="ln">niente de la Prov<u class="exp" title="abreviatura desarrollada">[inci]</u>a con las incerciones cor-</span>
+<span class="ln">respondientes, para q<u class="exp" title="abreviatura desarrollada">[u]</u>e dentro del <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ter-</span>
+<span class="ln">mino de treinta Dias presenten en este Gov<u class="exp" title="abreviatura desarrollada">[ier]</u>no los</span>
+<span class="ln">Documentos q<u class="exp" title="abreviatura desarrollada">[u]</u>e justifiquen su Christiandad, limpieza</span>
+<span class="ln">de Sangre, lexitimidad, y q<u class="exp" title="abreviatura desarrollada">[u]</u>e no son familiares, de-</span>
+<span class="ln">pendientes, ni allegados de los Governadores, y Corre<u class="exp" title="abreviatura desarrollada">[gi]</u>-</span>
+<span class="ln">dores con apercivim<u class="exp" title="abreviatura desarrollada">[ien]</u>to q<u class="exp" title="abreviatura desarrollada">[u]</u>e pasados los treinta Dias re-</span>
+<span class="ln">feridos sin haver puesto en manos del presen<u class="exp" title="abreviatura desarrollada">[te]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Don Joaquín Fernández Lindo, escribano público de Gobierno Real, Real Hacienda, Minas y
+Novenos, certifico que, a consecuencia de la real orden de ocho de junio de mil setecientos
+noventa y cuatro, comunicada por el señor [¿Pardoqui?], sobre que los virreyes, audiencias,
+gobernadores e intendentes no confieran oficios a sujetos en quienes no concurran las
+circunstancias [necesarias], ni a aquellos que fueren sus familiares o allegados, se proveyó
+por su señoría el señor gobernador intendente el auto del tenor siguiente: «Comayagua, enero
+dos de mil setecientos noventa y cinco. Guárdese y cúmplase el superior despacho y real orden
+que se inserta, librándose provisión a cada subdelegado y teniente de la provincia, con las
+inserciones correspondientes, para que dentro del término de treinta días presenten en este
+Gobierno los documentos que justifiquen su cristiandad, limpieza de sangre y legitimidad, y
+que no son familiares, dependientes ni allegados de los gobernadores y corregidores, con
+apercibimiento de que, pasados los treinta días referidos sin haber puesto en manos del
+presente [escribano]…».</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta para el cuerpo del auto (las cuatro pruebas exigidas —cristiandad,
+limpieza de sangre, legitimidad y no ser familiar, dependiente ni allegado— se leen sin
+duda). Media en el apellido del ministro comunicante («Pardoqui» no es seguro: el rasgo
+inicial admite otra lectura), en la palabra tachada de la línea 6 y en los finales de renglón
+que la curvatura del papel deja en sombra. La cifra de la habilitación («4») es segura; su
+leyenda, no.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1396">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 11</span><h3>IMG_1396</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1396-0" aria-label="Ampliar la lámina"><img src="../img/calidad1795/p002.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Mismo pliego y misma mano. Sin sello impreso en esta cara (es la vuelta del
+pliego sellado). Tinta parda, algo más pálida en el tercio inferior. No se ven
+habilitaciones ni rúbricas marginales. Encuadre deficiente: **el margen derecho queda fuera
+de cuadro o en sombra profunda**, de modo que se pierden entre tres y ocho letras al final de
+casi todos los renglones; un pliegue vertical cruza la mitad derecha. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Segunda plana del mismo expediente. Acaba la certificación (cláusulas sobre que
+no se dé título alguno sin que antes se agreguen al expediente los justificativos, y sobre
+la copia de la real orden en el archivo), con la data **«Comayagua a los cinco de Enero de
+mil setecientos noventa y cinco»** y la firma de Joaquín Lindo. A media plana empieza una
+diligencia nueva: **«En la Ciudad de Gracias a diez y nueve de Abril de mil setecientos
+noventa y cinco»**, obedecimiento del despacho por don Pablo Vargas de Monciel, teniente de
+gobernador y subdelegado de la Intendencia de Comayagua en aquel partido, recién llegado de
+la capital de Guatemala.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> los Documentos se dec<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la Vacacion, è Ynterin<u class="exp" title="abreviatura desarrollada">[idad ...]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en el Sugeto q<u class="exp" title="abreviatura desarrollada">[u]</u>e concurran las circu<u class="exp" title="abreviatura desarrollada">[nstancias]</u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[u]</u>e previene la R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Orden incerta, y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Yndias no deviendo el Esc<u class="exp" title="abreviatura desarrollada">[riban]</u>o en lo Subcesi<u class="exp" title="abreviatura desarrollada">[vo ...]</u></span>
+<span class="ln">tender titulo alguno, sin q<u class="exp" title="abreviatura desarrollada">[u]</u>e prim<u class="exp" title="abreviatura desarrollada">[er]</u>o se ag<u class="exp" title="abreviatura desarrollada">[regue]</u></span>
+<span class="ln">al expediente donde dimana, los justific<u class="exp" title="abreviatura desarrollada">[ativos ...]</u></span>
+<span class="ln">tenidos, y Copiada esta R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Orden en el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">la Oficina Archivero Original = Alexo <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Jaru...?]</u></u>-</span>
+<span class="ln">quin Lindo = Y para q<u class="exp" title="abreviatura desarrollada">[u]</u>e asi se cumpla por <u class="exp" title="abreviatura desarrollada">[el Sub]</u>-</span>
+<span class="ln">delegado del Partido de Gracias, doy la presen<u class="exp" title="abreviatura desarrollada">[te en]</u></span>
+<span class="ln">Comayag<u class="exp" title="abreviatura desarrollada">[u]</u>a à los cinco de Enero de mil Setecie<u class="exp" title="abreviatura desarrollada">[ntos no]</u>-</span>
+<span class="ln">venta, y cinco</span>
+<span class="ln">Joaq<u class="exp" title="abreviatura desarrollada">[uí]</u>n Lindo <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En la Ciudad de Gracias a diez y nueve de Ab<u class="exp" title="abreviatura desarrollada">[ri]</u>l de</span>
+<span class="ln">mil Setecientos noventa y Cinco años Y<u class="exp" title="abreviatura desarrollada">[o]</u> D<u class="exp" title="abreviatura desarrollada">[o]</u>n Pablo <u class="exp" title="abreviatura desarrollada">[Vargas]</u></span>
+<span class="ln">de Monciel Teniente de Gov<u class="exp" title="abreviatura desarrollada">[ernad]</u>or y Subdeleg<u class="exp" title="abreviatura desarrollada">[a]</u>do de <u class="exp" title="abreviatura desarrollada">[la Ynten]</u>-</span>
+<span class="ln">dencia de Comayag<u class="exp" title="abreviatura desarrollada">[u]</u>a en este Partido, Aviendo <u class="exp" title="abreviatura desarrollada">[lle]</u>-</span>
+<span class="ln">gado de la Capital de Guat<u class="exp" title="abreviatura desarrollada">[emal]</u>a à donde <u class="exp" title="abreviatura desarrollada">[pasé]</u></span>
+<span class="ln">con licencia del S<u class="exp" title="abreviatura desarrollada">[eño]</u>r</span>
+<span class="ln">Gov<u class="exp" title="abreviatura desarrollada">[ernad]</u>or Yntendente, y <u class="exp" title="abreviatura desarrollada">[reci]</u>-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[bi]</u>do el despacho q<u class="exp" title="abreviatura desarrollada">[u]</u>e antecede en q<u class="exp" title="abreviatura desarrollada">[u]</u>e se man<u class="exp" title="abreviatura desarrollada">[da]</u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[u]</u>e los Subdelegados, y Tenientes de esta P<u class="exp" title="abreviatura desarrollada">[rovincia]</u></span>
+<span class="ln">manifiesten los documentos correspondientes q<u class="exp" title="abreviatura desarrollada">[u]</u>e</span>
+<span class="ln">acrediten Su christiandad, Limpieza de San-</span>
+<span class="ln">gre, Legitimidad, y no Ser familiares, Depend<u class="exp" title="abreviatura desarrollada">[ien]</u>tes <u class="exp" title="abreviatura desarrollada">[ni]</u></span>
+<span class="ln">allegados de los Governadores, ni Oydores; <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[dé]</u>sele Su devido Cumplimiento <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>… los documentos, se declarará [nula] la vacación e interinidad […] en el sujeto en quien
+concurran las circunstancias que previene la real orden inserta, y […] Indias, no debiendo el
+escribano en lo sucesivo extender título alguno sin que primero se agreguen al expediente de
+donde dimana los justificativos [pre]venidos; y copiada esta real orden en el [libro de] la
+oficina, el archivero [devolvió el] original. = Alexo [¿Marro?]quín Lindo. = Y para que así
+se cumpla por el subdelegado del partido de Gracias, doy la presente en Comayagua a los cinco
+de enero de mil setecientos noventa y cinco. Joaquín Lindo.</p>
+<p>En la ciudad de Gracias, a diecinueve de abril de mil setecientos noventa y cinco años, yo,
+don Pablo Vargas de Monciel, teniente de gobernador y subdelegado de la Intendencia de
+Comayagua en este partido, habiendo llegado de la capital de Guatemala, adonde pasé con
+licencia del señor gobernador intendente, y recibido el despacho que antecede, en que se
+manda que los subdelegados y tenientes de esta provincia manifiesten los documentos
+correspondientes que acrediten su cristiandad, limpieza de sangre, legitimidad y no ser
+familiares, dependientes ni allegados de los gobernadores ni oidores, […] désele su debido
+cumplimiento…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta para la data de Comayagua (5 de enero de 1795), para la data y el
+otorgante de la diligencia de Gracias (19 de abril de 1795, Pablo Vargas de Monciel) y para
+la enumeración de lo que hay que acreditar. <strong>Baja para el nombre del archivero</strong>: se lee
+«Alexo» y, tras él, un vocablo que el doblez corta después de cuatro o cinco letras, cuyo
+arranque es una mayúscula de lazo (¿J? ¿G? ¿M?), y que continúa en el renglón siguiente en
+«quin Lindo»; el «Marroquín» del catálogo es compatible pero <strong>no está verificado</strong>. «ni
+Oydores» es lectura probable pero no segura (en IMG_1395 el paralelo dice «Governadores y
+Corregidores»). Todos los finales de renglón marcados quedan fuera de cuadro.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1397">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 11</span><h3>IMG_1397</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1397-0" aria-label="Ampliar la lámina"><img src="../img/calidad1795/p003.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Mismo pliego, vuelta. Sin sello impreso. Tinta parda, buena legibilidad en los
+dos tercios superiores. Rotura/desgaste en el borde superior que se lleva parte del primer
+renglón. Tres firmas autógrafas con rúbrica al pie. Debajo de la última línea, la cifra
+manuscrita <strong>«12»</strong>, probablemente foliación o numeración de pieza. Encuadre correcto; el
+borde derecho vuelve a perderse en sombra en los primeros renglones.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Tercera y última plana del expediente de 1795: alegación personal del
+subdelegado. Ofrece el certificado de su partida de bautismo, sacado del original por el
+cura, para las tres primeras circunstancias (cristiandad, limpieza de sangre, legitimidad);
+para las restantes alega <strong>notoria y antigua vecindad</strong> en la ciudad y **no haber sido jamás
+allegado ni dependiente** de los señores [gobernadores], ofreciendo acreditarlo con
+certificaciones si el señor gobernador intendente lo juzga necesario. Firma y actúa
+<strong>ante testigos de asistencia, a falta de escribano</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">las tres primeras Circunstancias pas<u class="exp" title="abreviatura desarrollada">[o]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿ante?]</u></u>rior al Certificado de mi partida de Bau-</span>
+<span class="ln">tismo Original, al S<u class="exp" title="abreviatura desarrollada">[eño]</u>r B<u class="exp" title="abreviatura desarrollada">[achille]</u>r D<u class="exp" title="abreviatura desarrollada">[o]</u>n Josef Man<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Salon Cura R<u class="exp" title="abreviatura desarrollada">[ec]</u>tor y Vicario de este Partido p<u class="exp" title="abreviatura desarrollada">[ar]</u>a</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[u]</u>e Sirva Certificar Su insercion en terminos</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[u]</u>e haga fe, Cuio documento se a Compañar</span>
+<span class="ln">a este Exped<u class="exp" title="abreviatura desarrollada">[ien]</u>te y por lo q<u class="exp" title="abreviatura desarrollada">[u]</u>e Respecta a las res-</span>
+<span class="ln">tantes Circunstancias contenidas en el citado Des-</span>
+<span class="ln">pacho, es notoria mi Antig<u class="exp" title="abreviatura desarrollada">[u]</u>a Vecindad en esta Ciud<u class="exp" title="abreviatura desarrollada">[ad]</u></span>
+<span class="ln">y q<u class="exp" title="abreviatura desarrollada">[u]</u>e Jamas he sido allegado, ni dependiente de los S<u class="exp" title="abreviatura desarrollada">[eño]</u>r<u class="exp" title="abreviatura desarrollada">[e]</u>s</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[u]</u>e Se esperan, lo mismo q<u class="exp" title="abreviatura desarrollada">[u]</u>e podré acreditar</span>
+<span class="ln">Con Certificaciones Siempre q<u class="exp" title="abreviatura desarrollada">[u]</u>e el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Governad<u class="exp" title="abreviatura desarrollada">[or]</u> Ynten-</span>
+<span class="ln">dente lo Juzg<u class="exp" title="abreviatura desarrollada">[u]</u>e neces<u class="exp" title="abreviatura desarrollada">[ari]</u>o. Sin embargo de la d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha notorie-</span>
+<span class="ln">dad. Asi lo obedesco, y firmo ante testigos</span>
+<span class="ln">de Asistencia, à <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿non?]</u></u> falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no los q<u class="exp" title="abreviatura desarrollada">[ue]</u> Certifico</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Pablo Varg<u class="exp" title="abreviatura desarrollada">[a]</u>s de</span>
+<span class="ln">Monciel <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Fran<u class="exp" title="abreviatura desarrollada">[cis]</u>co Cobos <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Juan Galan <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">12</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>… [para] las tres primeras circunstancias paso […] al certificado de mi partida de bautismo,
+[sacado del] original, al señor bachiller don Josef Man[uel] Salón, cura rector y vicario de
+este partido, para que sirva certificar su inserción en términos que hagan fe; cuyo documento
+se ha de acompañar a este expediente. Y por lo que respecta a las restantes circunstancias
+contenidas en el citado despacho, es notoria mi antigua vecindad en esta ciudad, y que jamás
+he sido allegado ni dependiente de los señores que se expresan, lo mismo que podré acreditar
+con certificaciones siempre que el señor gobernador intendente lo juzgue necesario, sin
+embargo de la dicha notoriedad. Así lo obedezco y firmo ante testigos de asistencia, a falta
+de escribano, los que certifico. — Pablo Vargas de Monciel. Francisco Cobos. Juan Galán.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta para el núcleo probatorio (partida de bautismo para las tres primeras
+circunstancias; vecindad notoria y antigua más no ser allegado ni dependiente, para las
+demás; oferta de certificaciones). Media-alta para las firmas: «Pablo Vargas de Monciel» se
+lee así, con <strong>-ciel</strong> y no <strong>-tiel</strong>; «Francisco Cobos» es claro; el tercer testigo se lee
+«Juan Galan», pero la terminación admite «Galán / Galeas». Media para el nombre del cura:
+el renglón anterior acaba en «Josef Man» junto al borde en sombra y el siguiente arranca en
+«Salon», de modo que no puede decidirse entre «Josef Manuel Salón» y un apellido partido
+(«Man-salón» o similar). No se deja fijar la palabra entre «à» y «falta de escribano»
+(¿«non»? ¿«mi»?). <strong>Nadie deja de firmar en esta plana</strong>: firman el otorgante y los dos
+testigos de asistencia, y la fórmula que suple al escribano es «ante testigos de Asistencia,
+à […] falta de Es[criba]no los q[ue] Certifico».
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1398">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 11</span><h3>IMG_1398</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1398-0" aria-label="Ampliar la lámina"><img src="../img/calidad1795/p004.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Papel verjurado, sellado del Estado de Honduras: círculo con triángulo radiante
+y torres, leyenda arciforme «… R. PARA LOS AÑOS D 18[..] Y 18[..] · SELLO … · EST. DE HOND.»
+—en esta plana el timbre cae justo en el lomo y <strong>la parte de los años no se lee</strong>; por el
+tipo y por las planas gemelas (IMG_1399, 1402, 1403, 1404) es el de <strong>1847 y 1848</strong>.
+<strong>No hay habilitación estampada encima.</strong> Tinta muy desvaída, casi perdida en la mitad
+derecha de los primeros renglones (lavado/decoloración, no rotura). Manchas de humedad
+pardas en el tercio inferior. Dos firmas al pie, gravemente desvaídas. Encuadre: plana
+entera, lomo a la izquierda, bordes exteriores deshilachados a la derecha.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Primera plana del expediente republicano, <strong>recto</strong>: acta de juicio verbal por
+palabras injuriosas y amenazas, ante Gregorio Gonzales. Contiene la relación de los hechos,
+la contestación, la cita de la ley y la condena: <strong>veinte pesos de multa</strong> y pago al
+querellante de daños y perjuicios. Su notificación está en IMG_1400, no en IMG_1399.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">En el pueblo de Sensenti a los dos dias del mes</span>
+<span class="ln">de Enero de mil ochocientos cuarenta y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ante mi Greg<u class="exp" title="abreviatura desarrollada">[ori]</u>o Gonzales Juez <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> comparecio</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Rey<u class="exp" title="abreviatura desarrollada">[es?]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> estando <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> del</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> demandado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> por <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> le dio en la Cabeza y otros <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ba <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y como <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> te havian <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">palabras <u class="exp" title="abreviatura desarrollada">[a]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> varias d<u class="exp" title="abreviatura desarrollada">[ic]</u>has <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y</span>
+<span class="ln">la contestacion <u class="exp" title="abreviatura desarrollada">[que]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el q<u class="exp" title="abreviatura desarrollada">[ue]</u> por <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">mas <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> pueblo q<u class="exp" title="abreviatura desarrollada">[ue]</u> se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">este Cuyo ofens<u class="exp" title="abreviatura desarrollada">[a]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>, y <u class="exp" title="abreviatura desarrollada">[dijo]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> el</span>
+<span class="ln">le fuera a pagar<u class="exp" title="abreviatura desarrollada">[?]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> es <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>; mas q<u class="exp" title="abreviatura desarrollada">[ue]</u> el Juez atendiendo q<u class="exp" title="abreviatura desarrollada">[ue]</u> este hecho</span>
+<span class="ln">esta comprendido en la Ley de 17 de Abril de</span>
+<span class="ln">1843, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> deve satisfacer<u class="exp" title="abreviatura desarrollada">[se]</u> la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> con-</span>
+<span class="ln">ducta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[en]</u> nombre del Estado de Honduras, y con arre<u class="exp" title="abreviatura desarrollada">[glo]</u></span>
+<span class="ln">a los articulos 125 y 126 de <u class="exp" title="abreviatura desarrollada">[d]</u>ich<u class="exp" title="abreviatura desarrollada">[a]</u> Ley</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[c]</u>itad<u class="exp" title="abreviatura desarrollada">[o]</u>s condeno a dicho <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a vein-</span>
+<span class="ln">te pesos de multa, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> pague al que-</span>
+<span class="ln">rellante los daños y perjuicios q<u class="exp" title="abreviatura desarrollada">[ue]</u> le</span>
+<span class="ln">ha causado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> por esta <u class="exp" title="abreviatura desarrollada">[mi]</u> sent<u class="exp" title="abreviatura desarrollada">[encia]</u></span>
+<span class="ln">definitivam<u class="exp" title="abreviatura desarrollada">[en]</u>te <u class="exp" title="abreviatura desarrollada">[juzgando]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Hagase saber</span>
+<span class="ln">a las partes para q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">les convenga en los <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> proveyó <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">ante los Socios <u class="exp" title="abreviatura desarrollada">[que]</u> me acompañan</span>
+<span class="ln">por falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Gregorio <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Gonzales?]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        Juan Damaso Sarmiento <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>En el pueblo de Sensentí, a los dos días del mes de enero de mil ochocientos cuarenta y […],
+ante mí, Gregorio Gonzales, juez […], compareció […] Reyes, […] demandado […] por […] que le
+dio en la cabeza y otros […] palabras […], y la contestación […]. Mas el juez, atendiendo a
+que este hecho está comprendido en la ley de [1]7 de abril de 1843 […], en nombre del Estado
+de Honduras y con arreglo a los artículos 125 y 126 de dicha ley citados, condenó al dicho
+[…] a veinte pesos de multa, y a que pague al querellante los daños y perjuicios que le ha
+causado […]. Por esta mi sentencia, definitivamente juzgando, hágase saber a las partes para
+que […] les convenga […]. Lo proveyó ante los socios que me acompañan por falta de escribano.
+— Gregorio [Gonzales]. Juan Dámaso Sarmiento.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Baja</strong> en el relato de los hechos: la tinta de la mitad derecha de los
+primeros quince renglones está prácticamente perdida y no se recupera ni forzando el
+contraste; los nombres del querellante y del condenado <strong>no se dejan fijar</strong> (sólo se
+insinúa un «Rey[es]» en el renglón 4, que no doy por bueno). <strong>Alta</strong>, en cambio, para el
+núcleo dispositivo: «Ley de 17 de Abril de 1843», «articulos 125 y 126», «veinte pesos de
+multa», «pague al querellante los daños y perjuicios». Del día y mes no hay duda («dos de
+Enero»); <strong>el año queda ilegible</strong> tras «cuarenta y». En la cita de la ley se ve un trazo
+vertical antes del 7 que leo como «1», pero en las demás planas del mismo expediente la
+misma ley se cita «de 7 de Abril de 1843»: puede tratarse de un solo texto legal. La firma
+izquierda es casi invisible; la leo «Gregorio [Gonzales]» <strong>por comparación con IMG_1400</strong>,
+donde la misma firma aparece legible. La derecha, «Juan Damaso Sarmiento», es segura.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1399">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 11</span><h3>IMG_1399</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1399-0" aria-label="Ampliar la lámina"><img src="../img/calidad1795/p005.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Papel verjurado con el timbre impreso en el ángulo superior izquierdo, muy
+nítido: círculo con <strong>triángulo radiante, volcán y torres</strong>, leyenda
+<strong>«[E.] M. R. PARA LOS AÑOS D 1847 · Y 1848 · SELLO 3ª … EST. DE HOND.»</strong>.
+<strong>No hay habilitación estampada encima</strong>; el pliego se usa dentro de su bienio. Tinta parda
+intensa arriba, muy desvaída en el tercio inferior. Manchas de tinta derramada en el tercio
+superior (una goterona que borra media docena de palabras). Borde exterior derecho
+deshilachado, con pérdidas de 1-2 cm que se comen finales de renglón. Lomo a la izquierda,
+con la plana de IMG_1400 asomando.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Recto siguiente</strong>: acta nueva de juicio verbal ante Gregorio [¿Santos?],
+alcalde 2º constitucional, con testigos de asistencia. Comparecen <strong>Tomás Me[ndez]</strong> y
+<strong>Juan Ares</strong>, vecinos del lugar; pleito por golpes e insultos (se menciona una burra, un
+«no supiera», y que «repitió a [¿Yzaguirre?] por su mala crianza»). El juez toma dictamen de
+los asociados, oídas las objeciones de una y otra parte, y, viendo el delito comprendido en
+la ley de [1]7 de abril de 1843, condena en nombre del Estado de Honduras con arreglo a los
+artículos que cita.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Gregorio S<u class="exp" title="abreviatura desarrollada">[an]</u>tos Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e 2<u class="exp" title="abreviatura desarrollada">[º]</u> Const<u class="exp" title="abreviatura desarrollada">[itucional]</u> y t<u class="exp" title="abreviatura desarrollada">[estig]</u>os de asis-</span>
+<span class="ln">tencia comparecieron los Señor<u class="exp" title="abreviatura desarrollada">[e]</u>s <u class="exp" title="abreviatura desarrollada">[tachado]</u> Tomas Me-</span>
+<span class="ln">ndez y Juan Ares, todos de esta <u class="exp" title="abreviatura desarrollada">[vecindad]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> esto los her<u class="exp" title="abreviatura desarrollada">[manos?]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> le reconvino el</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> espone q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> era su Burra en q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el Juzgado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> su contesta<u class="exp" title="abreviatura desarrollada">[ción]</u> de Medio<u class="exp" title="abreviatura desarrollada">[?]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> no <u class="exp" title="abreviatura desarrollada">[supiera]</u> Jacon<u class="exp" title="abreviatura desarrollada">[?]</u>, y otros insultos</span>
+<span class="ln">a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> repitió a <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Yzaguirre?]</u></u> por su</span>
+<span class="ln">mala crianza. En este estado <u class="exp" title="abreviatura desarrollada">[tomé]</u> el</span>
+<span class="ln">Dictamen de los asociados, previas las</span>
+<span class="ln">objeciones q<u class="exp" title="abreviatura desarrollada">[ue]</u> una, y otra parte se ha-</span>
+<span class="ln">cian; y viendo este delito ser los comprendi-</span>
+<span class="ln">dos en la Ley de <u class="exp" title="abreviatura desarrollada">[1]</u>7 de Abril de 1843,</span>
+<span class="ln">y estar cometido el <u class="exp" title="abreviatura desarrollada">[acusado]</u>, A nom-</span>
+<span class="ln">bre del Estado de Honduras, y con</span>
+<span class="ln">arreglo a los art<u class="exp" title="abreviatura desarrollada">[ículo]</u>s <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> condeno</span>
+<span class="ln">a Juan A<u class="exp" title="abreviatura desarrollada">[res]</u> a q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> me de pre-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> por esta mi sentencia definiti-</span>
+<span class="ln">va<u class="exp" title="abreviatura desarrollada">[mente]</u> Juzgando hagan saver, y dan-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> copia q<u class="exp" title="abreviatura desarrollada">[ue]</u> hare a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el libro de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> veinte <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ochocientos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>… Gregorio S[an]tos, alcalde 2º constitucional, y testigos de asistencia. Comparecieron los
+señores Tomás Méndez y Juan Ares, todos de esta vecindad […]. [Dijo el primero que] […] le
+reconvino; el que expone que […] era su burra, en que […] el juzgado […]; su contestación […]
+fue que no […], y otros insultos […], y repitió a [¿Yzaguirre?] por su mala crianza. En este
+estado tomé el dictamen de los asociados, previas las objeciones que una y otra parte se
+hacían; y viendo este delito ser de los comprendidos en la ley de [1]7 de abril de 1843, y
+estar cometido por el acusado, a nombre del Estado de Honduras y con arreglo a los artículos
+[…], condeno a Juan A[res] a que […]. Por esta mi sentencia, definitivamente juzgando,
+hágase saber […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta para el encabezamiento (alcalde 2º constitucional y testigos de
+asistencia), para los dos litigantes —<strong>Tomás Me[nde]z</strong> y <strong>Juan Ares</strong>— y para la fórmula
+del dictamen de los asociados. Alta para «Ley de … de Abril de 1843» (el año es
+inequívoco); <strong>el ordinal del día se lee «7», sin el «1» que sí parece verse en IMG_1398</strong>,
+y no puedo decidir si son la misma ley mal citada o dos. Media-baja para el apellido del
+juez: se lee «Gregorio S.tos», que resolvería en «Santos», pero quien firma las actas
+gemelas es <strong>Gregorio Gonzales</strong>; puede ser abreviatura del escribiente. <strong>Baja</strong> para el
+tercio inferior (tinta casi perdida): los artículos citados y la cuantía de la condena **no
+se dejan fijar**, y el nombre del condenado se lee sólo como «Juan A…». La goterona del
+tercio superior borra irremediablemente parte del relato.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1400">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 11</span><h3>IMG_1400</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1400-0" aria-label="Ampliar la lámina"><img src="../img/calidad1795/p006.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Vuelta del mismo pliego; sin timbre. Tinta parda, más firme que en el recto.
+<strong>Rotura importante</strong> en forma de media luna en el centro de la plana (falta de soporte de
+unos 8 × 5 cm) que se lleva el arranque de dos renglones y parte de una firma; los bordes de
+la rotura son antiguos. Manchas pardas y perforaciones pequeñas hacia el centro-bajo. En la
+toma se ve, a la derecha, la plana de IMG_1399 con su sello: **IMG_1400 es la plana izquierda
+(vuelto) de esa abertura**. Dedo enguantado del fotógrafo en el ángulo superior izquierdo.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Vuelto de IMG_1398</strong> (va inmediatamente después, pese al número de foto):
+diligencia de notificación de la sentencia anterior a los comparecientes, que dijeron estar
+conformes, y firmas. El resto de la plana va en blanco. Es la costura que el catálogo
+equivoca.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[En]</u> la misma fecha se hizo saver la S<u class="exp" title="abreviatura desarrollada">[entencia]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[an]</u>terior segun se manda a los com<u class="exp" title="abreviatura desarrollada">[parecientes]</u></span>
+<span class="ln">en ella q<u class="exp" title="abreviatura desarrollada">[ue]</u> enterados dijeron estar c<u class="exp" title="abreviatura desarrollada">[onformes]</u></span>
+<span class="ln">y firmaron por M<u class="exp" title="abreviatura desarrollada">[í]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> un <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> al Juez actuante</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Juan Villegas <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de Damaso<u class="exp" title="abreviatura desarrollada">[?]</u>        <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> al S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Alcalde <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Gregorio Gonzales <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Juan Damaso S<u class="exp" title="abreviatura desarrollada">[armiento]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>En la misma fecha se hizo saber la sentencia anterior, según se manda, a los comparecientes
+en ella, que, enterados, dijeron estar conformes y firmaron por mí […] ante el juez actuante.
+— Juan Villegas. […] Gregorio Gonzales. Juan Dámaso S[armiento].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta para la naturaleza de la diligencia («la misma fecha se hizo saver la
+sentencia anterior… dijeron estar conformes») y para las firmas de <strong>Gregorio Gonzales</strong> y
+<strong>Juan Villegas</strong>, ambas legibles aquí. Media para «Juan Damaso S.», cortada por la rotura.
+Baja para las dos líneas intermedias, que la rotura y el desvaído dejan en fragmentos.
+Es dato de primer orden que <strong>esta plana sea la continuación de IMG_1398</strong>: lo dicen a la vez
+el texto («la sentencia anterior») y la posición en la abertura.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1401">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 7 de 11</span><h3>IMG_1401</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1401-0" aria-label="Ampliar la lámina"><img src="../img/calidad1795/p007.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Vuelta del pliego, sin timbre. Tinta muy desvaída, casi fantasma, salvo la
+firma, trazada con pluma gruesa y gran floreo. <strong>Rotura en media luna</strong> en el centro (la
+misma lesión que afecta a las planas vecinas del cuadernillo, por lo que es una pérdida que
+atraviesa varios folios), y pequeñas perforaciones. Manchas de humedad. Dedo enguantado del
+fotógrafo arriba a la izquierda; el ángulo superior izquierdo queda además en sombra.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Vuelto</strong> de la plana anterior: cierre del acta de IMG_1399 —tres o cuatro
+renglones— y firma con rúbrica caligráfica de <strong>Juan Villegas</strong>. El resto de la plana, en
+blanco. En la toma se ve a la derecha la plana de IMG_1402 con su sello.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ante ———— <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Juan?]</u></u> Villegas <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">[resto de la plana en blanco]</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[Ante mí…] … Juan Villegas. [El resto de la plana queda en blanco.]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Baja para los renglones de texto: la tinta está tan desvaída que sólo se
+adivinan palabras sueltas, y <strong>prefiero no reconstruirlas</strong>. Media-alta para la firma, que
+coincide en trazo y floreo con la que en IMG_1400 se lee «Juan Villegas». Alta para el hecho
+material de que la plana queda en blanco a partir del quinto renglón.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1402">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 8 de 11</span><h3>IMG_1402</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1402-0" aria-label="Ampliar la lámina"><img src="../img/calidad1795/p008.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Papel verjurado; timbre impreso nítido en el ángulo superior izquierdo:
+círculo con triángulo radiante, volcán y dos torres, leyenda **«SELLO 3ª CLASE · V[N]
+M[EDIO] R[EAL] · PARA LOS AÑOS D 1847 · Y 1848 · EST. DE HOND.»<strong>. </strong>Sin habilitación
+estampada encima.<strong> Tinta parda oscura, muy legible. </strong>Rotura grande, con pérdida de
+soporte, en el tercio superior-centro** (unos 10 × 7 cm), que se lleva palabras enteras de
+seis u ocho renglones; bordes de rotura antiguos, ennegrecidos. Manchas de humedad en el
+margen izquierdo y en el pie. Bordes exteriores deshilachados. Lomo a la izquierda. Sin
+foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">La plana mejor conservada del expediente y la que fecha todo el conjunto: acta de
+juicio verbal **«En el pueblo de Sensentí, seis de abril de mil ochocientos cuarenta y
+siete»<strong>, ante </strong>Justo Pineda, alcalde 1º constitucional<strong>. Comparece </strong>Victoriano Pérez**
+demandando a <strong>Juan Peraza</strong> por <strong>cuatro pesos tres reales y un pañuelo</strong>. El demandado
+contesta negando; se habla de un potrero, de «Coleal» y de un «Ante-Portán». El juez manda
+probar, el demandante manifiesta no tener con qué comprobar su demanda, y aun así, vistas las
+pruebas que aparecen, <strong>condena a Juan Peraza</strong> con arreglo a la ley y a los artículos que
+cita.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">En el pueblo de Sensenti seis de abril de mil</span>
+<span class="ln">ochocientos cuarenta y siete: ante mi</span>
+<span class="ln">Justo Pineda Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e 1º Constitucional</span>
+<span class="ln">comparecio el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Victoriano Perez</span>
+<span class="ln">demandandos al S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Juan Peraza p<u class="exp" title="abreviatura desarrollada">[o]</u>r</span>
+<span class="ln">cuatro p<u class="exp" title="abreviatura desarrollada">[eso]</u>s tres r<u class="exp" title="abreviatura desarrollada">[eale]</u>s, y un pañuelo, q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">estando presente el demandado contes-</span>
+<span class="ln">ta: q<u class="exp" title="abreviatura desarrollada">[ue]</u> no ha tomado el d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho p<u class="exp" title="abreviatura desarrollada">[es]</u>o por</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> se le <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> ocurriese a q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> el pañuelo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> no hace referencia, y</span>
+<span class="ln">parte de dem<u class="exp" title="abreviatura desarrollada">[anda]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> al S<u class="exp" title="abreviatura desarrollada">[eño]</u>r J<u class="exp" title="abreviatura desarrollada">[ue]</u>z <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">tan en el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> potrero <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a</span>
+<span class="ln">Coleal, y previn<u class="exp" title="abreviatura desarrollada">[iendo]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Ante-Portan dijo: q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">no ha tenido <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho S<u class="exp" title="abreviatura desarrollada">[eño]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">le acusa, ni menos <u class="exp" title="abreviatura desarrollada">[saber]</u> del pañuelo q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>, y</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> asi q<u class="exp" title="abreviatura desarrollada">[ue]</u> le pruebe tal <u class="exp" title="abreviatura desarrollada">[imputación]</u>, en</span>
+<span class="ln">tal estado Mandó a la<u class="exp" title="abreviatura desarrollada">[?]</u> Peraza provar su</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[demanda]</u>, quien manifesto no tener <u class="exp" title="abreviatura desarrollada">[con]</u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> comprovar su d<u class="exp" title="abreviatura desarrollada">[emand]</u>a. en este estado ———</span>
+<span class="ln">aparecieron las clases de pañuelo, y d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho</span>
+<span class="ln">de q<u class="exp" title="abreviatura desarrollada">[ue]</u> se hace referencia, en la <u class="exp" title="abreviatura desarrollada">[razón]</u> a</span>
+<span class="ln">al Peraza, y no aparecer q<u class="exp" title="abreviatura desarrollada">[ue]</u> este los hubiere</span>
+<span class="ln">ganados al S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Ante-Portan, viendo</span>
+<span class="ln">este comprendido <u class="exp" title="abreviatura desarrollada">[en]</u> la Ley de <u class="exp" title="abreviatura desarrollada">[1]</u>7 de</span>
+<span class="ln">Abril de 1843. a nombre del Estado</span>
+<span class="ln">de Honduras, y con arreglo a los art<u class="exp" title="abreviatura desarrollada">[ículo]</u>s</span>
+<span class="ln">51, 52, 53, y 54 de la Ley citada con-</span>
+<span class="ln">deno al S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Juan Peraza, pague el ———</span>
+<span class="ln">pañuelo q<u class="exp" title="abreviatura desarrollada">[ue]</u> se le acusa, y el dem<u class="exp" title="abreviatura desarrollada">[ás]</u></span>
+<span class="ln">se parece justam<u class="exp" title="abreviatura desarrollada">[en]</u>te tomar, y ade-</span>
+<span class="ln">mas, q<u class="exp" title="abreviatura desarrollada">[ue]</u> sufra dos meses de</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>En el pueblo de Sensentí, seis de abril de mil ochocientos cuarenta y siete, ante mí, Justo
+Pineda, alcalde 1º constitucional, compareció el señor Victoriano Pérez demandando al señor
+Juan Peraza por cuatro pesos tres reales y un pañuelo. Estando presente el demandado,
+contesta que no ha tomado el dicho peso porque se le […], y que ocurriese a que […]; que del
+pañuelo […] no hace referencia […] al señor juez […] en el potrero […] a Coleal; y,
+previniéndose […] Ante-Portán, dijo que no ha tenido […] lo que el dicho señor le acusa, ni
+menos saber del pañuelo, y que así, que le pruebe tal imputación. En tal estado mandó al
+Peraza probar su demanda, quien manifestó no tener con qué comprobarla. En este estado
+aparecieron las clases de pañuelo y dicho de que se hace referencia […] al Peraza, y no
+apareciendo que éste los hubiere ganado al señor Ante-Portán, viendo esto comprendido en la
+ley de [1]7 de abril de 1843, a nombre del Estado de Honduras y con arreglo a los artículos
+51, 52, 53 y 54 de la ley citada, condeno al señor Juan Peraza a que pague el pañuelo de que
+se le acusa y lo demás que parece justamente tomar, y además que sufra dos meses de…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Alta</strong> para el encabezamiento y la data —«seis de abril de mil ochocientos
+cuarenta y siete» se lee sin sombra de duda y es la clave cronológica del expediente—, para
+los nombres <strong>Justo Pineda</strong>, <strong>Victoriano Pérez</strong> y <strong>Juan Peraza</strong>, para la cuantía
+demandada (<strong>cuatro pesos tres reales y un pañuelo</strong>), para la cita de ley y **artículos 51,
+52, 53 y 54<strong> y para la pena de </strong>dos meses** que continúa en IMG_1403. Media para «Coleal»
+y para «Ante-Portan», que podrían ser topónimo y apodo/apellido, o una sola expresión;
+los doy con la grafía del papel. Baja para lo que la rotura se lleva en los renglones 8-14.
+El ordinal del día de la ley se lee «7» tras un punto, sin «1» claro.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1403">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 9 de 11</span><h3>IMG_1403</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1403-0" aria-label="Ampliar la lámina"><img src="../img/calidad1795/p009.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Vuelta del pliego, sin timbre impreso. **Estampación circular/ovalada en seco o
+con tinta agotada** junto a las firmas, en el margen superior derecho, de unos 6 cm, con
+leyenda arciforme <strong>ilegible</strong> (podría ser sello del juzgado o resello; no se lee ni forzando
+el contraste). Tinta parda; el texto es legible en la mitad superior, con traspaso fuerte de
+la plana siguiente en la inferior. <strong>Misma rotura en media luna</strong> del cuadernillo, aquí en el
+centro-izquierda, con pérdida de palabras en cinco renglones; perforaciones pequeñas en el
+tercio inferior. En la toma se ve a la derecha la plana de IMG_1404 con su sello, que es donde
+mejor se lee <strong>«PARA LOS AÑOS D 1847 · Y 1848 … EST. DE HOND.»</strong>.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Vuelto de IMG_1402</strong>: final de la sentencia (los dos meses «en obras
+públicas»), fórmula de definitiva, firma de <strong>Justo Pineda</strong> y del asociado <strong>Agatón Loro</strong>;
+y a continuación la <strong>diligencia de notificación</strong>: notificada la sentencia al señor Peraza,
+dijo estar conforme con la [pena] y, en cuanto a lo demás, que «hurtadamente no parece», y
+<strong>no firma por no saber hacerlo</strong>. El resto de la plana, en blanco.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">prision en obras Publicas; y por <u class="exp" title="abreviatura desarrollada">[esta]</u></span>
+<span class="ln">mi sent<u class="exp" title="abreviatura desarrollada">[encia]</u> definitivam<u class="exp" title="abreviatura desarrollada">[en]</u>te <u class="exp" title="abreviatura desarrollada">[juzgando]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">hagan saver. Provincial<u class="exp" title="abreviatura desarrollada">[?]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">falta de Esc<u class="exp" title="abreviatura desarrollada">[riba]</u>no.</span>
+<span class="ln">Justo Pineda <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Ante mí?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>     El Agaton Loro <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En la misma <u class="exp" title="abreviatura desarrollada">[fecha]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> se notifico la S<u class="exp" title="abreviatura desarrollada">[entencia]</u></span>
+<span class="ln">anterior al S<u class="exp" title="abreviatura desarrollada">[eño]</u>r <u class="exp" title="abreviatura desarrollada">[Per]</u>aza, y d<u class="exp" title="abreviatura desarrollada">[ij]</u>o estar</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[con]</u>forme con la <u class="exp" title="abreviatura desarrollada">[pena]</u>, y en cuanto <u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> tiene q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> bolver esta a</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> hurtam<u class="exp" title="abreviatura desarrollada">[en]</u>te no parece, y no firm<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln">por no saver hacerlo, y con<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Justo Pineda <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">[resto de la plana en blanco]</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>… prisión en obras públicas. Y por esta mi sentencia, definitivamente juzgando […], hágase
+saber […], a falta de escribano. — Justo Pineda. […] El Agatón Loro.</p>
+<p>En la misma fecha se notificó la sentencia anterior al señor Peraza, y dijo estar conforme
+con la [pena], y en cuanto a […] que tiene que […] volver ésta a […], que hurtadamente no
+parece; <strong>y no firma por no saber hacerlo</strong>, y con[testó] […]. — Justo Pineda.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta para la pena («prision en obras Publicas», que completa los «dos meses»
+de IMG_1402), para la firma de Justo Pineda y para la **fórmula de no firmar: «no firma por
+no saver hacerlo»**, que es exactamente lo que pide anotarse. Media para «Agaton Loro»
+(nombre poco común; la grafía es la del papel) y para «Provincial» en el renglón 3, que no me
+convence. Baja para los renglones que cruza la rotura. El sello ovalado junto a las firmas
+<strong>no se deja leer</strong>: no puedo decir si es habilitación del papel o sello del juzgado, y no lo
+doy por ninguna de las dos cosas.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1404">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 10 de 11</span><h3>IMG_1404</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1404-0" aria-label="Ampliar la lámina"><img src="../img/calidad1795/p010.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Papel verjurado con timbre impreso en el ángulo superior izquierdo, legible:
+<strong>«… R. PARA LOS AÑOS D 1847 · Y 1848 · SELLO 3ª … EST. DE HOND.»</strong>, triángulo radiante con
+volcán y torres. <strong>Sin habilitación encima.</strong> Tinta parda desvaída en toda la plana, muy
+pálida en los dos tercios inferiores. <strong>Mancha de humedad grande</strong> en el centro (con halo
+pardo) y <strong>rotura con pérdida</strong> en el centro-alto; el margen exterior derecho está muy
+deshilachado, con varias capas de papel levantado y pérdidas que se comen los finales de
+renglón. Lomo a la izquierda, con otra plana escrita asomando.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Recto siguiente</strong>: acta de juicio verbal de abril, ante **Justo Pineda, alcalde
+1º constitucional<strong>. Compare </strong>Miguel Castejón<strong> demandando a </strong>Mauricio Reyes<strong> y </strong>Lázaro
+Juárez** por hechos ocurridos en una hacienda —se habla de animales, de dos puñaladas y de
+matar—; el juez, considerando que estos delitos merecen satisfacción pública y estando el
+hecho comprendido en la ley de [1]7 de abril de 1843, **condena a Mauricio Reyes y Lázaro
+Juárez<strong> a pagar lo que robaron y a </strong>dos meses de obras públicas**, con arreglo a los
+<strong>artículos 51, 52, 53 y 54</strong> y al <strong>artículo 54</strong> en particular.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">En el Pueblo de Sensenti <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> dias <u class="exp" title="abreviatura desarrollada">[del mes de]</u></span>
+<span class="ln">Abril de mil ochocientos cuarenta y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Ante</span>
+<span class="ln">mi Justo Pineda Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e 1º Const<u class="exp" title="abreviatura desarrollada">[itucional]</u> compare-</span>
+<span class="ln">cio el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Miguel Castejon demandan<u class="exp" title="abreviatura desarrollada">[do]</u></span>
+<span class="ln">a los Señores Mauricio Reyes, y Lazaro Jua<u class="exp" title="abreviatura desarrollada">[rez]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r un <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a repasar<u class="exp" title="abreviatura desarrollada">[?]</u> el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">a su casa, y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> presente <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de una a otra <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> llevar<u class="exp" title="abreviatura desarrollada">[?]</u></span>
+<span class="ln">de la hazienda de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> havia<u class="exp" title="abreviatura desarrollada">[n]</u></span>
+<span class="ln">animas, y el otro <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> el otro havia</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de q<u class="exp" title="abreviatura desarrollada">[ue]</u> se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en ellas, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">dos puñaladas <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y matandole<u class="exp" title="abreviatura desarrollada">[?]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> lo cual <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Castejon<u class="exp" title="abreviatura desarrollada">[?]</u></span>
+<span class="ln">Visto <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la Hazienda a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Mas y q<u class="exp" title="abreviatura desarrollada">[ue]</u> el Juez considerando q<u class="exp" title="abreviatura desarrollada">[ue]</u> este de-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> delitos no se dan<u class="exp" title="abreviatura desarrollada">[?]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ———</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> merita <u class="exp" title="abreviatura desarrollada">[ocasionan]</u>te p<u class="exp" title="abreviatura desarrollada">[ar]</u>a satisfaccion</span>
+<span class="ln">Publica, y estando<u class="exp" title="abreviatura desarrollada">[?]</u> este <u class="exp" title="abreviatura desarrollada">[hecho comprendido]</u></span>
+<span class="ln">en la Ley de <u class="exp" title="abreviatura desarrollada">[1]</u>7 de Abril de 1843 a nombre</span>
+<span class="ln">del Estado, y con arreglo a los art<u class="exp" title="abreviatura desarrollada">[ículo]</u>s 51, 52,</span>
+<span class="ln">53, y 54 de la Ley citada <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> condeno a Mau-</span>
+<span class="ln">ricio Reyes, y Lazaro Juarez, a q<u class="exp" title="abreviatura desarrollada">[ue]</u> paguen</span>
+<span class="ln">lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> robaron <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a prision</span>
+<span class="ln">y no pagar <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> un mes a<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y dos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">en obras publicas, p<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> los <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> art<u class="exp" title="abreviatura desarrollada">[ículo]</u> 54 y art<u class="exp" title="abreviatura desarrollada">[ículo]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y por esta <u class="exp" title="abreviatura desarrollada">[mi]</u> sentencia definitivam<u class="exp" title="abreviatura desarrollada">[en]</u>te</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[juzgando]</u> hagase saver, y d<u class="exp" title="abreviatura desarrollada">[e]</u>n <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>En el pueblo de Sensentí, a […] días del mes de abril de mil ochocientos cuarenta y […], ante
+mí, Justo Pineda, alcalde 1º constitucional, compareció el señor Miguel Castejón demandando a
+los señores Mauricio Reyes y Lázaro Juárez […] de la hacienda de […]; […] dos puñaladas […]
+y matándole […], lo cual […] Castejón […]. Y el juez, considerando que estos delitos […]
+merecen satisfacción pública, y estando este hecho comprendido en la ley de [1]7 de abril de
+1843, a nombre del Estado y con arreglo a los artículos 51, 52, 53 y 54 de la ley citada,
+condeno a Mauricio Reyes y Lázaro Juárez a que paguen lo que robaron […], y a prisión […] en
+obras públicas […] conforme al artículo 54 […]. Y por esta mi sentencia, definitivamente
+juzgando, hágase saber […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta para el juzgado (Justo Pineda, alcalde 1º constitucional), para el
+mes (abril), para los tres nombres —<strong>Miguel Castejón</strong> demandante, <strong>Mauricio Reyes</strong> y
+<strong>Lázaro Juárez</strong> demandados— y para la cita de <strong>ley de abril de 1843</strong> y **artículos 51,
+52, 53 y 54<strong>. </strong>Baja** para el relato de los hechos: la conjunción de tinta desvaída, mancha
+de humedad y desgarro del margen derecho deja media plana en fragmentos; las «dos puñaladas»
+y el «matándole» los leo con reservas y <strong>no reconstruyo a quién se refieren</strong>. **El día del
+mes y el año no se dejan fijar** (el renglón se pierde por el borde). La pena parece ser
+pago de lo robado más prisión/obras públicas, pero <strong>la duración exacta no es segura</strong>
+(se leen «dos meses» y «un mes» en pasajes distintos y no puedo asignarlos).
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1405">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 11 de 11</span><h3>IMG_1405</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1405-0" aria-label="Ampliar la lámina"><img src="../img/calidad1795/p011.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Vuelta del pliego, sin timbre (en la toma asoma a la derecha el del folio
+siguiente, «… PARA LOS AÑOS D 1847 Y 1848 … DE HOND.»). Tinta parda; la mitad superior
+legible, el resto desvaído. <strong>Rotura grande con pérdida de soporte</strong> en el centro de la
+plana —la misma lesión del cuadernillo, aquí en su forma más severa—, que se lleva el
+principio de ocho o nueve renglones, entre ellos **el que contiene el día y el año de la
+segunda acta**. Manchas de humedad en el pie y en el margen izquierdo, que está además
+desprendido y curvado. Papel de seda de manipulación en el ángulo superior izquierdo.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Vuelto de IMG_1404</strong>, con dos cosas: (a) cierre del acta anterior —remisión de
+la sentencia al alcalde 2º, costas, falta de escribano— con las firmas de <strong>Justo Pineda</strong> y
+<strong>Matías Molina</strong>; y (b) <strong>un acta nueva, de julio</strong>, ante el mismo Justo Pineda, en que
+comparece el señor <strong>José N[…]</strong>: se trata de bienes adquiridos, de un <strong>Carlos Ribera</strong>, del
+paraje/valle <strong>Callejas</strong> y de <strong>los vecinos de San Marcos</strong>, que lo han comprobado; se manda
+entregar en esta fecha, reservando a la parte su derecho a reclamar ante el juzgado
+correspondiente. Firman <strong>Justo Pineda</strong>, <strong>Rafael de [¿Mata?]</strong>, <strong>Juan Villegas</strong> y
+<strong>Matías Molina</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a esta Sentencia el mis<u class="exp" title="abreviatura desarrollada">[mo]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> del Alcalde 2<u class="exp" title="abreviatura desarrollada">[º]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[veinte]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Alcalde <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> las primeras man<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Costa de C<u class="exp" title="abreviatura desarrollada">[ámara]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r f<u class="exp" title="abreviatura desarrollada">[alta]</u> de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no</span>
+<span class="ln">Justo Pineda <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Matias Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En <u class="exp" title="abreviatura desarrollada">[Sensenti a ...]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de Julio de mil o<u class="exp" title="abreviatura desarrollada">[chocientos]</u></span>
+<span class="ln">cuarenta y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ante mi Justo Pineda <u class="exp" title="abreviatura desarrollada">[Alc.e]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> comparecio el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Jose N<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> virtud de aver comp<u class="exp" title="abreviatura desarrollada">[arecido]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> bien<u class="exp" title="abreviatura desarrollada">[es]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> se ha<u class="exp" title="abreviatura desarrollada">[n]</u> adquiri<u class="exp" title="abreviatura desarrollada">[do]</u></span>
+<span class="ln">a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>m<u class="exp" title="abreviatura desarrollada">[en]</u>te leg<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">este Juzg<u class="exp" title="abreviatura desarrollada">[a]</u>do los<u class="exp" title="abreviatura desarrollada">[?]</u> Carlos Ribera el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">valle Callejas, como lo ha comprovad<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">los vecinos de S<u class="exp" title="abreviatura desarrollada">[a]</u>n Marcos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de el, pide</span>
+<span class="ln">le entregue, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> reconocim<u class="exp" title="abreviatura desarrollada">[ien]</u>to q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho del Solicitante, en esta fecha se</span>
+<span class="ln">manda entregar, y si esta parte tubier<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> reclamar, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>tas q<u class="exp" title="abreviatura desarrollada">[ue]</u> omisa al Ju<u class="exp" title="abreviatura desarrollada">[zgado]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> correspond<u class="exp" title="abreviatura desarrollada">[ien]</u>te. como <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> sea castigado por el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">a este <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r no <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> los vecinos. Jos<u class="exp" title="abreviatura desarrollada">[é]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>aron q<u class="exp" title="abreviatura desarrollada">[ue]</u> firme con<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Justo Pineda <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">a ruego del S<u class="exp" title="abreviatura desarrollada">[eño]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Rafael de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Mata?]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Juan Villegas <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Matias Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>… a esta sentencia el mismo […] del alcalde 2º […]; […] costas de cámara […] por falta de
+escribano. — Justo Pineda. Matías Molina.</p>
+<p>En [Sensentí], a […] de julio de mil ochocientos cuarenta y […], ante mí, Justo Pineda,
+alcalde […], compareció el señor José N[…] en virtud de haber comparecido […] los bienes que
+se han adquirido […] legítimamente […] este juzgado […] Carlos Ribera […] el valle de
+Callejas, como lo han comprobado los vecinos de San Marcos […]; pide que se le entregue, y
+que el […] reconocimiento que […] dicho del solicitante. En esta fecha se manda entregar; y
+si esta parte tuviera que reclamar […] lo que omitió al juzgado correspondiente […]. —
+Justo Pineda. A ruego del señor […], Rafael de [¿Mata?]. Juan Villegas. Matías Molina.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta para las firmas —<strong>Justo Pineda</strong> y <strong>Matías Molina</strong> son claras;
+<strong>Juan Villegas</strong> coincide con la de IMG_1400/1401— y para la fórmula **«a ruego del señor
+[…]»<strong>, que indica que uno de los comparecientes </strong>no firmó por sí**. Alta para el mes de la
+segunda acta (<strong>julio</strong>) y para <strong>«los vecinos de San Marcos»</strong> y <strong>«valle Callejas»</strong>.
+<strong>Baja</strong> para el día y el año de esa acta (los arranca la rotura), para el nombre del
+compareciente («Jose N…») y para el apellido «Rafael de [¿Mata?]». El nombre **Carlos
+Ribera** lo leo con reserva: el renglón está cruzado por el borde de la rotura. No hay en
+esta plana ninguna cuantía ni multa legible.</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4><strong>Joaquín Fernández Lindo</strong></h4>
+  <p class="papel">escribano que certifica</p>
+  <p class="calidad">Comayagua, 5 de enero de 1795</p>
+</div>
+<div class="persona">
+  <h4><strong>Pablo Vargas de Monciel</strong></h4>
+  <p class="papel">obedece la real orden</p>
+  <p class="calidad">Gracias, 19 de abril de 1795</p>
+</div>
+<div class="persona">
+  <h4><strong>Alexo [¿Marro?]quín Lindo</strong></h4>
+  <p class="papel">nombrado en la pieza de 1795</p>
+  <p class="calidad">apellido <strong>sin verificar</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Tomás Méndez</strong> y <strong>Juan Ares</strong></h4>
+  <p class="papel">partes, por golpes e insultos</p>
+  <p class="calidad">Sensentí, 1847</p>
+</div>
+<div class="persona">
+  <h4><strong>Victoriano Pérez</strong> y <strong>Juan Peraza</strong></h4>
+  <p class="papel">partes, por 4 p 3 r y un pañuelo</p>
+  <p class="calidad">Sensentí, 1847</p>
+</div>
+<div class="persona">
+  <h4><strong>Miguel Castejón</strong>, <strong>Mauricio Reyes</strong>, <strong>Lázaro Juárez</strong></h4>
+  <p class="papel">partes</p>
+  <p class="calidad">Sensentí, 1847</p>
+</div>
+<div class="persona">
+  <h4><strong>Carlos Ribera</strong></h4>
+  <p class="papel">comparece en el acta de julio sobre entrega de bienes</p>
+  <p class="calidad">valle Callejas; vecinos de San Marcos</p>
+</div></div>
+</section>
+
+<section class="extra wrap">
+  <h2>Nota final sobre las costuras y sobre lo que no se lee</h2>
+  <p><strong>El corte mayor cae entre IMG_1397 e IMG_1398</strong>, y es limpio: acaba la pieza de 1795 y empieza el cuadernillo republicano.</p>
+<p><strong>Dentro del segundo expediente, el orden de las fotografías no es el del papel.</strong> El orden real es <strong>1398 → 1400 → 1399 → 1401 → 1402 → 1403 → 1404 → 1405</strong>: la plana IMG_1400 empieza «la misma fecha se hizo saver la sentencia anterior», de modo que es <strong>la notificación de IMG_1398</strong>, y el catálogo las separaba como si fueran actas distintas.</p>
+<p>Sobre la lectura: <strong>alta confianza en IMG_1395, 1397, 1402 y 1403; baja en 1398, 1399, 1404 y 1405</strong>, por tinta lavada y por <strong>una rotura que atraviesa el cuadernillo</strong>. Quedan sin verificar el apellido del archivero «Alexo [¿Marro?]quín Lindo» y varias fechas de data.</p>
+</section>
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

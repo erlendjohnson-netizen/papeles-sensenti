@@ -1,0 +1,1136 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Las cien reses de Luisa Cartagena — Papeles de Sensentí</title>
+<meta name="description" content="Una mujer criada desde niña en casa del cura de Cucuyagua reclama ante el juzgado el ganado que él le dejó en pago de toda una vida de servicio.">
+<meta property="og:title" content="Las cien reses de Luisa Cartagena">
+<meta property="og:description" content="Una mujer criada desde niña en casa del cura de Cucuyagua reclama ante el juzgado el ganado que él le dejó en pago de toda una vida de servicio.">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Expediente de 1814</p>
+  <h1>Las cien reses de Luisa Cartagena</h1>
+  <p class="dek">Una mujer criada desde niña en casa del cura de Cucuyagua reclama ante el juzgado el ganado que él le dejó en pago de toda una vida de servicio.</p>
+  <div class="meta"><span><strong>12 láminas</strong> · IMG_1454 – IMG_1465</span><span>Junio de 1814</span><span>Papel sellado 4.º de 1811–1812, habilitado para 1813 y 1814</span><span>Sensentí y Cucuyagua, occidente de Honduras</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">12</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>En junio de 1814, Luisa Cartagena, vecina de Cucuyagua, se presentó ante el juzgado de Sensentí para reclamar el ganado que decía suyo. Contaba que el cura don Juan de Zepeda y Rubio la había recogido en su casa cuando era muy pequeña, que había servido allí hasta que él murió sin más paga que la comida y un vestuario al año, y que, bastante antes de morir, el cura le había entregado cien reses en retribución de ese servicio, mandando herrarlas en público con un fierro hecho a propósito para ella, distinto del de la hacienda —según el capitán Pineda, con la forma de una culebrilla—. Seis años antes de este pleito, don José Antonio Aranda, administrador de la hacienda del Aguacatillo, le había quitado sesenta de aquellas reses alegando una orden del dueño, don Pablo, vecino de Comayagua; y cuando Luisa acudió a la justicia, Aranda tenía ya viaje emprendido con cierto número de animales, por lo que ella pidió expresamente que se le contuviese hasta el final del juicio. El memorial va firmado con la fórmula «No sé firmar»: Luisa era iletrada, y así consta también en la notificación que se le hizo. El 11 de junio el teniente de gobernador intendente Juan José Carrejón mandó pasar el asunto al encargado del juzgado, don Manuel de Molina, que el mismo día proveyó que se recibiera la información y se notificara a Aranda para suspender el viaje. Declararon entonces tres hombres: Dionisio Orellana, de setenta años, mayordomo que había sido de la hacienda y que fue quien materialmente herró las reses con la ayuda de Marcos Valencia, de Juan Bey[de] y del ya difunto Juan Máximo Orellana; el propio Marcos Valencia, mayor de cincuenta años y mozo sirviente entonces, que recordó cómo el cura advirtió a los presentes que lo hacía «en aquella forma pública» para que la gracia constase y fuese valedera en todo tiempo; y Faustino Tábora, de Cucuyagua, que lo sabía por voz pública y porque el mismo cura se lo había contado. Los tres coincidieron en lo esencial: la entrega existió, fue anterior en varios años a la muerte del cura, y el hierro era distinto del de la hacienda. Orellana añadió que Aranda había vendido las reses y también las crías nacidas después del fallecimiento, aunque él ignoraba con qué razón, por no haberse hallado presente. La información se cierra el 22 de junio de 1814; la resolución del juez no se conserva en estas doce hojas, de modo que no sabemos si Luisa Cartagena recuperó su ganado.</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>Este expediente importa por quién reclama y cómo. <strong>Luisa Cartagena</strong> litiga sola ante el juzgado de Sensentí, sin apoderado, sin marido y sin curador. El papel no le da «doña», calidad ni edad, solo «vecina de Cucuyagua». Al pie de su memorial figura «No sé firmar», sin el «a su ruego» habitual. La capacidad para litigar no dependía de saber leer: una mujer iletrada pudo pedir medidas cautelares y sostener una información de testigos contra un hombre con «don» y cargo de administrador.</p>
+<p>El ganado nace de una forma de servicio doméstico por crianza. Luisa sirvió en casa del cura hasta su muerte <strong>sin más paga que la comida y un vestuario al año</strong>. El archivo no la llama esclava ni criada asalariada. La retribución, si llegaba, llegaba como donación al final, y eso es lo que se litiga. Sin escritura, el instrumento fue el acto público de herrar ante testigos con un hierro propio, distinto del de la hacienda, que hacía las veces de título. Frente a la petición sobre Juana Diega, donde la escritura de compra lo decide todo, aquí la prueba es un acto visible y la memoria de quienes lo vieron.</p>
+<p>Hay dos advertencias de uso. El número de reses <strong>no es estable</strong>: varía entre las piezas y entre los escritos de cada parte. Y el final no consta: la información se cierra el 22 de junio de 1814 y la resolución no se conserva.</p>
+<p>Hay una lista de vecinos depositarios del ganado, donde cuatro de diecisiete son mujeres, y una carta sin fecha dirigida a ella, suelta en el mismo archivo, que permite mirar el asunto desde fuera del juzgado.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#f1454">54</a><a href="#f1455">55</a><a href="#f1456">56</a><a href="#f1457">57</a><a href="#f1458">58</a><a href="#f1459">59</a><a href="#f1460">60</a><a href="#f1461">61</a><a href="#f1462">62</a><a href="#f1463">63</a><a href="#f1464">64</a><a href="#f1465">65</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="f1454">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 12</span><h3>IMG_1454</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1454" aria-label="Ampliar la lámina IMG_1454">
+        <img src="../img/cartagena1814/p001.jpg" alt="Fotografía de la lámina IMG_1454" loading="lazy">
+      </button>
+      <figcaption>Papel de trapo sin sello impreso; folio suelto, muy dañado. Un desgarro grande en el tercio central-izquierdo se ha llevado el arranque de tres o cuatro líneas y ha dejado un colgajo desplazado que altera la alineación del texto. El margen derecho está deteriorado y la fotografía corta el borde exterior del folio, de modo que se pierde el final de la línea 22. En el margen izquierdo, escrito a 90º, hay un rótulo archivístico (cubierta o carátula del expediente) de lectura muy parcial. No hay leyenda impresa de papel sellado en esta hoja.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Certificación jurada del capitán retirado Dionisio de Pineda y Brán, dada en una hacienda el 13 de junio de 1814 a petición de Luisa Cartagena, en la que declara que el cura difunto don Juan de Zepeda la recogió de niña y le dio ganado vacuno y caballar herrado con un fierro distinto en forma de culebrilla.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Dionisio de Pineda, y Brán, Capitan de <u class="exp" title="abreviatura desarrollada">[los R[eale]</u>s Ex<u class="exp" title="abreviatura desarrollada">[érci]</u>tos de]</span>
+<span class="ln">S. M. con titulo R<u class="exp" title="abreviatura desarrollada">[ea]</u>l de Retiro, goze de fuero, y u<u class="exp" title="abreviatura desarrollada">[ni]</u></span>
+<span class="ln">niforme correspondiente &amp;<u class="exp" title="abreviatura desarrollada">[cetera]</u> =</span>
+<span class="ln">Certifico en la forma que puedo, y devo,</span>
+<span class="ln">a los SS<u class="exp" title="abreviatura desarrollada">[eño]</u>res que la presente vieren, q<u class="exp" title="abreviatura desarrollada">[ue]</u> me consta</span>
+<span class="ln">por ser publico, y notorio, q<u class="exp" title="abreviatura desarrollada">[ue]</u> el finado Cura D<u class="exp" title="abreviatura desarrollada">[o]</u>n</span>
+<span class="ln">Juan de Zepeda recogió en su Casa a Luisa</span>
+<span class="ln">Cartagena, quando esta estava de pocos años: tam-</span>
+<span class="ln">bien me consta (por haverlo oydo dezir) que el</span>
+<span class="ln">d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Cura le dió Ganado Bacuno, y Cavallar</span>
+<span class="ln">a la expresada Luiza, señalandolo todo con</span>
+<span class="ln">distinto <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Fierro, lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> verifiqué ser cierto, quando por</span>
+<span class="ln">el fallesi<u class="exp" title="abreviatura desarrollada">[miento d]</u>el sitado Cura fui como Jues a formar el</span>
+<span class="ln">Ynb<u class="exp" title="abreviatura desarrollada">[entari]</u>o y reconosim<u class="exp" title="abreviatura desarrollada">[ien]</u>to G<u class="exp" title="abreviatura desarrollada">[ene]</u>ral de los Vienes que dejó, pues vi</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ganado vacuno, y Vestias Cavallares herrados con el fie-</span>
+<span class="ln">rro de la referida Luisa, q<u class="exp" title="abreviatura desarrollada">[ue]</u> hera como una Culebrilla, y</span>
+<span class="ln">supe q<u class="exp" title="abreviatura desarrollada">[ue]</u> harian como tres años sobre un poco más, ó menos,</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> el finado Cura le havia donado los Vienes referidos, y</span>
+<span class="ln">presumo lo haría por remunerarle el mucho t<u class="exp" title="abreviatura desarrollada">[iem]</u>po que</span>
+<span class="ln">le sirvió, pues la referida Luisa no salió de la Casa, hasta</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> el Cura fallesió; lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> por ser verdad juro seg<u class="exp" title="abreviatura desarrollada">[ú]</u>n mi fuero, y</span>
+<span class="ln">la doy a pedim<u class="exp" title="abreviatura desarrollada">[ien]</u>to de la expresada, en esta Hacienda del A<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">co a los trese de Junio de mil ochos<u class="exp" title="abreviatura desarrollada">[cient]</u>os catorse #</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Dionisio de Pineda</span>
+<span class="ln">y Brán <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><strong>Rótulo del margen izquierdo</strong> (escrito a 90º; el desgarro se ha llevado el centro de cada renglón):</p>
+<div class="dipl">
+<span class="ln">Pedime<u class="exp" title="abreviatura desarrollada">[n]</u>to de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[A]</u>randa p<u class="exp" title="abreviatura desarrollada">[o]</u>r haver<u class="exp" title="abreviatura desarrollada">[le]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[con]</u>tra José Antoni<u class="exp" title="abreviatura desarrollada">[o]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que le crió entre nu<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">este sesenta reses <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Don Juan de Zep<u class="exp" title="abreviatura desarrollada">[eda]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Dionisio de Pineda y Brán, capitán de los Reales Ejércitos de Su Majestad con título real de retiro, con goce de fuero y del uniforme correspondiente, etcétera.</p>
+<p>Certifico, en la forma que puedo y debo, a los señores que la presente vieren, que me consta por ser público y notorio que el finado cura don Juan de Zepeda recogió en su casa a Luisa Cartagena cuando ésta era de pocos años. También me consta, por habérselo oído decir, que dicho señor cura dio ganado vacuno y caballar a la expresada Luisa, señalándolo todo con un fierro distinto. Comprobé que esto era cierto cuando, por el fallecimiento del citado cura, fui como juez a formar el inventario y reconocimiento general de los bienes que dejó, pues vi ganado vacuno y bestias caballares herrados con el fierro de la referida Luisa, que era como una culebrilla. Supe que haría como tres años, poco más o menos, que el finado cura le había donado los bienes referidos, y presumo que lo haría para remunerarle el mucho tiempo que le sirvió, pues la referida Luisa no salió de la casa hasta que el cura falleció. Y por ser verdad lo juro según mi fuero, y doy esta certificación a petición de la expresada, en esta hacienda del A[…] a trece de junio de mil ochocientos catorce.</p>
+<p>Dionisio de Pineda y Brán.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media-alta. El cuerpo del texto se lee con seguridad; lo flojo es (a) el nombre de la hacienda donde se expide, cortado por el borde de la fotografía, del que sólo queda «del A…» y la sílaba «co» al comenzar el renglón siguiente; (b) las tres líneas mutiladas por el desgarro (12–15), cuya restitución —«Ynbentario», «General», el «ganado» de la línea 15— se apoya en fragmentos visibles y en la fórmula notarial, no en lectura completa; y (c) el rótulo del margen, del que sólo se recuperan palabras sueltas.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1455">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 12</span><h3>IMG_1455</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1455" aria-label="Ampliar la lámina IMG_1455">
+        <img src="../img/cartagena1814/p002.jpg" alt="Fotografía de la lámina IMG_1455" loading="lazy">
+      </button>
+      <figcaption>Pliego de papel sellado. Leyenda impresa, en cinco renglones bajo una crucecita de imprenta: Un quartillo. · SELLO QUARTO, UN QUARTI- · LLO, AÑOS DE MIL OCHOCIEN- · TOS Y ONCE, Y MIL OCHOCIEN- · TOS Y DOCE.   DE PARTES.
+
+A la izquierda, dos sellos circulares en seco/tinta: el superior con las armas reales y leyenda «FERDIN. VII. D. G. HISP[…] REX»; el inferior, de habilitación, con leyenda sólo parcialmente legible («[…]EYN[…] VA[…] AÑO[…]»), en parte dentro del pliegue de encuadernación. El borde exterior derecho está desgarrado y un colgajo de papel roto cubre el arranque de varias líneas en la mitad izquierda. La tinta es pálida en la parte baja; el último renglón queda en el doblez y bajo el borde inferior de la fotografía.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Primera plana del memorial de Luisa Cartagena, vecina del partido, dirigido al juez: expone que hace seis años que don José Antonio Aranda, administrador de la hacienda del Aguacatillo, le quitó reses alegando orden del dueño, y que el finado cura don Juan de Zepeda y Rubio le había hecho entrega de cien reses en pago de sus servicios.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[sello de armas reales]</u>   Un quartillo.</span>
+<span class="ln">SELLO QUARTO, UN QUARTI-</span>
+<span class="ln">LLO, AÑOS DE MIL OCHOCIEN-</span>
+<span class="ln">TOS Y ONCE, Y MIL OCHOCIEN-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[sello de habilitación]</u>   TOS Y DOCE.   DE PARTES.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Luisa Cartagena Vecina de este Part<u class="exp" title="abreviatura desarrollada">[i]</u>do y pre-</span>
+<span class="ln">vias las solemnidades de d<u class="exp" title="abreviatura desarrollada">[erech]</u>o ante V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d pares-</span>
+<span class="ln">co diciendo: Que hase el tiempo de seis años q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[D[o]</u>]n Jose An<u class="exp" title="abreviatura desarrollada">[toni]</u>o Aranda, Adm<u class="exp" title="abreviatura desarrollada">[inistra]</u>d<u class="exp" title="abreviatura desarrollada">[o]</u>r q<u class="exp" title="abreviatura desarrollada">[ue]</u> fue de la Hac<u class="exp" title="abreviatura desarrollada">[ien]</u>-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[da d]</u>el Aguacatillo, perteneciente a D<u class="exp" title="abreviatura desarrollada">[o]</u>n Pablo</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la Ciudad de Comayagua, me quitó <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> es-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ta Veces, suponiendo orden librada p<u class="exp" title="abreviatura desarrollada">[o]</u>r el</span>
+<span class="ln">expresado D<u class="exp" title="abreviatura desarrollada">[o]</u>n Pablo, seg<u class="exp" title="abreviatura desarrollada">[ú]</u>n se vé p<u class="exp" title="abreviatura desarrollada">[o]</u>r las adjuntas car-</span>
+<span class="ln">tas, q<u class="exp" title="abreviatura desarrollada">[u]</u>e se servirá agregarlas p<u class="exp" title="abreviatura desarrollada">[o]</u>r Comprobante, si-</span>
+<span class="ln">endo notorio q<u class="exp" title="abreviatura desarrollada">[ue]</u> el finado Padre Cura D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan</span>
+<span class="ln">de Zepeda y Rubio, desde mucho antes de su</span>
+<span class="ln">fallesimiento, p<u class="exp" title="abreviatura desarrollada">[o]</u>r un efecto de retribucion me hiso</span>
+<span class="ln">entrega de cien Reses, como provaré desde lue-</span>
+<span class="ln">go con el Mayordomo, y otros q<u class="exp" title="abreviatura desarrollada">[u]</u>e p<u class="exp" title="abreviatura desarrollada">[re]</u>sen<u class="exp" title="abreviatura desarrollada">[cia]</u>-</span>
+<span class="ln">ron la entrega, y fierro distinto q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> havía criado havia mandad<u class="exp" title="abreviatura desarrollada">[o]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Hac<u class="exp" title="abreviatura desarrollada">[ienda]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Sello cuarto, un cuartillo, años de mil ochocientos once y mil ochocientos doce. De partes.</p>
+<p>Luisa Cartagena, vecina de este partido, previas las solemnidades de derecho, ante vuestra merced parezco diciendo: que hace seis años que don José Antonio Aranda, administrador que fue de la hacienda del Aguacatillo —perteneciente a don Pablo […], de la ciudad de Comayagua—, me quitó […] veces, suponiendo una orden librada por el expresado don Pablo, según se ve por las cartas adjuntas, que se servirá vuestra merced agregar como comprobante; siendo notorio que el finado padre cura don Juan de Zepeda y Rubio, desde mucho antes de su fallecimiento y en retribución de mis servicios, me hizo entrega de cien reses, como probaré desde luego con el mayordomo y con otros que presenciaron la entrega y el fierro distinto que […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media. La leyenda impresa, el nombre del demandado, el de la hacienda, el del cura y la cifra de «cien Reses» son seguros. Es dudoso: el apellido de «D[o]n Pablo», que cae exactamente sobre el desgarro del margen derecho y no se recupera en ninguna otra hoja; el final de la línea «me quitó […] es-» y el arranque «[…]ta Veces» (probablemente «distintas veces» o «estas veces», pero el colgajo de papel cubre la sílaba); y la última línea, en el doblez y cortada por el encuadre.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1456">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 12</span><h3>IMG_1456</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1456" aria-label="Ampliar la lámina IMG_1456">
+        <img src="../img/cartagena1814/p003.jpg" alt="Fotografía de la lámina IMG_1456" loading="lazy">
+      </button>
+      <figcaption>Vuelto del mismo pliego, sin leyenda impresa. Es la plana peor conservada en cuanto a legibilidad: la tinta está muy desvaída y la fotografía muestra el papel abombado, de modo que los finales de línea se hunden en la curvatura del margen derecho. Hay un pequeño agujero de tinta/roedura hacia el centro-izquierda. Ningún texto perdido por rotura mayor, pero sí mucho perdido por palidez.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Segunda plana del memorial. Luisa argumenta que la donación fue una gracia debida al parentesco y servicio con que se mantuvo a su lado desde pequeña, y acusa a Aranda de creerse dueño absoluto de la hacienda y de haberle quitado sesenta reses con una orden supuesta.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">se por mi, asegurando yo q<u class="exp" title="abreviatura desarrollada">[ue]</u> heredase con el</span>
+<span class="ln">gracia que fue <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿juzgada?]</u></u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r Rason del paren-</span>
+<span class="ln">tesco con q<u class="exp" title="abreviatura desarrollada">[ue]</u> me mantuve a su lado desde</span>
+<span class="ln">pequeña, pero como el citado Aranda <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">creido absolu<u class="exp" title="abreviatura desarrollada">[to]</u> dueño de la mencionada Hacien-</span>
+<span class="ln">da, y p<u class="exp" title="abreviatura desarrollada">[o]</u>r consiguiente <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿libertad?]</u></u> exorbi<u class="exp" title="abreviatura desarrollada">[tante]</u></span>
+<span class="ln">de ella, como lo acostumbra, de aquí es q<u class="exp" title="abreviatura desarrollada">[ue]</u> to-</span>
+<span class="ln">mó orden supuesta p<u class="exp" title="abreviatura desarrollada">[ar]</u>a quitarme las <u class="exp" title="abreviatura desarrollada">[expre]</u>-</span>
+<span class="ln">sadas sesenta Reses, y procurar <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿agotarlas?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> satisfecho de incomodarme mucho <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r llamar semejante agravio <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">criaturas, p<u class="exp" title="abreviatura desarrollada">[o]</u>r Rason de mi <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿estado?]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> me abstengo, pues <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> aquella vio-</span>
+<span class="ln">lencia cada día <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> presente, en</span>
+<span class="ln">consideracion a la injusticia y falta de carida<u class="exp" title="abreviatura desarrollada">[d]</u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> este hombre me ha <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿mirado?]</u></u>: estoy en la <u class="exp" title="abreviatura desarrollada">[fir]</u>-</span>
+<span class="ln">me inteli<u class="exp" title="abreviatura desarrollada">[genci]</u>a de q<u class="exp" title="abreviatura desarrollada">[ue]</u> agarrado de sus embusti<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y sus solicitudes falsas, procura quedarse con</span>
+<span class="ln">lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> es mío, pues lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> primeram<u class="exp" title="abreviatura desarrollada">[en]</u>te a conse-</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿gui?]</u></u>do, es lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> me quitó, p<u class="exp" title="abreviatura desarrollada">[o]</u>r lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> no siendo</span>
+<span class="ln">posible q<u class="exp" title="abreviatura desarrollada">[ue]</u> se me despoje de una gracia, q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">se me hiso como v<u class="exp" title="abreviatura desarrollada">[erdader]</u>o salario, aun servicio</span>
+<span class="ln">continuo, y de tiempo en q<u class="exp" title="abreviatura desarrollada">[ue]</u> puedo dar <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">quantos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> huviera sido la voluntad <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] asegurando yo que heredase con ella la gracia que se me juzgó por razón del parentesco con que me mantuve a su lado desde pequeña. Pero como el citado Aranda se ha creído dueño absoluto de la mencionada hacienda, y por consiguiente con una libertad exorbitante sobre ella, como lo acostumbra, de aquí es que tomó una orden supuesta para quitarme las expresadas sesenta reses y procurar agotarlas, […] satisfecho de incomodarme mucho […] por llamar semejante agravio […] criaturas, por razón de mi estado, de que […] me abstengo, pues […] aquella violencia cada día […]. En consideración a la injusticia y a la falta de caridad con que este hombre me ha mirado, estoy en la firme inteligencia de que, agarrado de sus embustes y de sus solicitudes falsas, procura quedarse con lo que es mío: pues lo que primeramente ha conseguido es lo que me quitó. Por lo que, no siendo posible que se me despoje de una gracia que se me hizo como verdadero salario por un servicio continuo y de tanto tiempo, del que puedo dar […] cuantos […] hubiera sido la voluntad […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> baja. Se leen con seguridad las palabras clave del pleito —«parentesco», «Aranda», «dueño», «sesenta Reses», «orden supuesta», «injusticia», «salario»— y el sentido general del alegato. Media docena de sintagmas del centro de la plana (líneas 10 a 14 y las dos últimas) quedan por debajo del umbral de lectura: la tinta está tan desvaída que ni el realce por canal azul ni el filtrado de fondo los recuperan. No se ha completado ninguno por conjetura.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1457">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 12</span><h3>IMG_1457</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1457" aria-label="Ampliar la lámina IMG_1457">
+        <img src="../img/cartagena1814/p004.jpg" alt="Fotografía de la lámina IMG_1457" loading="lazy">
+      </button>
+      <figcaption>Vuelto del segundo folio del memorial, sin leyenda impresa. Tinta algo más firme que en la plana anterior. Margen derecho abarquillado; algunas terminaciones de línea se pierden en la curvatura. Sin desgarros importantes.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Tercera plana del memorial: el súplico propiamente dicho (que se reciban declaraciones juradas del mayordomo y de los testigos sobre la legalidad de la entrega de cien reses, y que se le repongan las sesenta reses con sus productos), la nota «No sé firmar», y un otrosí pidiendo que se contenga a Aranda, que tiene viaje emprendido, hasta la finalización del juicio.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> estar en sana salud ni sin <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">torvarse, y desde mucho antes de su <u class="exp" title="abreviatura desarrollada">[falle]</u>-</span>
+<span class="ln">cimiento, como q<u class="exp" title="abreviatura desarrollada">[ue]</u> en su <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> protesta ni nada <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">sobre este particular, como <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ena, en esta virtud y considerando q<u class="exp" title="abreviatura desarrollada">[ue]</u> Aran-</span>
+<span class="ln">da quede <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿acaval?]</u></u> aun con lo poco q<u class="exp" title="abreviatura desarrollada">[ue]</u> hai en</span>
+<span class="ln">la Hacienda:</span>
+<span class="ln">A V<u class="exp" title="abreviatura desarrollada">[uestra]</u> m<u class="exp" title="abreviatura desarrollada">[erce]</u>d suplico se sirva Recibir las declaraciones Jura-</span>
+<span class="ln">das del mayordomo, y los <u class="exp" title="abreviatura desarrollada">[test]</u>igos q<u class="exp" title="abreviatura desarrollada">[ue]</u> se presentare<u class="exp" title="abreviatura desarrollada">[n]</u></span>
+<span class="ln">sobre la legalidad de la entrega de cien Reses</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> me hiso el citado Cura, y <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿otro?]</u></u> paresca:</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>nte a este punto, y concluida man-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[de]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> me Repongan junto las sesenta Reses,</span>
+<span class="ln">como sus <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿productos?]</u></u> desde aquel tiempo, &amp;<u class="exp" title="abreviatura desarrollada">[cetera]</u></span>
+<span class="ln">es justicia q<u class="exp" title="abreviatura desarrollada">[ue]</u> pido en forma y lo necesario</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">No se firmar</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">&amp; Otro <u class="exp" title="abreviatura desarrollada">[¿nego[cio]</u>?]: q<u class="exp" title="abreviatura desarrollada">[ue]</u> atendiendo, a q<u class="exp" title="abreviatura desarrollada">[ue]</u> el citado Aran-</span>
+<span class="ln">da tiene viage emprendido p<u class="exp" title="abreviatura desarrollada">[ar]</u>a <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Valadolid?]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> se me ha d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho, y con cierto numero</span>
+<span class="ln">de animales, suplico se le contenga y ha<u class="exp" title="abreviatura desarrollada">[ga]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> los <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿…?]</u></u> el juicio hasta su finalisacion, e<u class="exp" title="abreviatura desarrollada">[n]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> prevencion <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] estar en sana salud y sin […] estorbarse, y desde mucho antes de su fallecimiento, como que en su […] no protesta ni nada […] sobre este particular […]. En esta virtud, y considerando que Aranda quede cabal aun con lo poco que hay en la hacienda:</p>
+<p>A vuestra merced suplico se sirva recibir las declaraciones juradas del mayordomo y de los testigos que se presenten sobre la legalidad de la entrega de cien reses que me hizo el citado cura, y […]; y, concluido, mande que me repongan juntas las sesenta reses con sus productos desde aquel tiempo, etcétera, que es justicia que pido en forma y lo necesario.</p>
+<p>No sé firmar.</p>
+<p>Otrosí digo: que atendiendo a que el citado Aranda tiene viaje emprendido para Valladolid, según se me ha dicho, y con cierto número de animales, suplico se le contenga y se le haga […] el juicio hasta su finalización […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media. El súplico central —declaraciones juradas, cien reses, reposición de las sesenta con sus productos— y la nota <strong>«No se firmar»</strong> son firmes; esa nota es el dato de mayor valor de la plana, pues declara que Luisa Cartagena era iletrada. Es dudoso el destino del viaje de Aranda: se lee «p[ar]a Valadoli[d]», que sería Valladolid de Comayagua, coherente con que el dueño de la hacienda sea vecino de Comayagua, pero las últimas letras tocan el borde abarquillado. También son inseguras la fórmula que abre el otrosí y las dos líneas finales.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1458">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 12</span><h3>IMG_1458</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1458" aria-label="Ampliar la lámina IMG_1458">
+        <img src="../img/cartagena1814/p005.jpg" alt="Fotografía de la lámina IMG_1458" loading="lazy">
+      </button>
+      <figcaption>Pliego de papel sellado, bien conservado y bien enfocado. Leyenda impresa: Un quartillo. · SELLO QUARTO, UN QUARTI- · LLO, AÑOS DE MIL OCHOCIEN- · TOS Y ONCE, Y MIL OCHOCIEN- · TOS Y DOCE.   DE PARTES.
+
+A la izquierda, el sello de armas reales de Fernando VII y, debajo, el sello de habilitación circular con las armas coronadas, las letras «S» y «4» a los lados y la leyenda <strong>«AÑOS DE 1813 Y 1814 · VALGA»</strong>. Bajo el encabezamiento impreso corre la nota manuscrita de habilitación con rúbrica.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Auto del teniente de gobernador intendente Juan José Carrejón, dado en Sensentí el 11 de junio de 1814, mandando pasar el memorial al encargado del juzgado don Manuel de Molina; la fe de los testigos de asistencia; y, a continuación, el auto del mismo día de este último («Visto…»), que manda recibir la información pedida y poner el asunto en noticia de José Antonio Aranda para la suspensión de su viaje.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[sello de armas reales]</u>   Un quartillo.</span>
+<span class="ln">SELLO QUARTO, UN QUARTI-</span>
+<span class="ln">LLO, AÑOS DE MIL OCHOCIEN-</span>
+<span class="ln">TOS Y ONCE, Y MIL OCHOCIEN-</span>
+<span class="ln">[sello: AÑOS DE 1813 Y 1814 · VALGA]   TOS Y DOCE.   DE PARTES.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Co]</u>rresponde p<u class="exp" title="abreviatura desarrollada">[o]</u>r virtud <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿del cargo?]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Sensenti y Jun<u class="exp" title="abreviatura desarrollada">[i]</u>o onse de mil ocho<u class="exp" title="abreviatura desarrollada">[cien]</u>tos catorse.</span>
+<span class="ln">Pase este memorial al conocim<u class="exp" title="abreviatura desarrollada">[ien]</u>to del Encarga-</span>
+<span class="ln">do del Jusgado D<u class="exp" title="abreviatura desarrollada">[o]</u>n Manuel de Molina para q<u class="exp" title="abreviatura desarrollada">[ue]</u> obre</span>
+<span class="ln">segun corresponda, en el asunto de que se trata.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Juan José Carrejón <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Assí lo probeyó, mandó y firmó el S<u class="exp" title="abreviatura desarrollada">[eño]</u>r ten<u class="exp" title="abreviatura desarrollada">[ien]</u>te</span>
+<span class="ln">de Gov<u class="exp" title="abreviatura desarrollada">[ernado]</u>r Intend<u class="exp" title="abreviatura desarrollada">[en]</u>te de est<u class="exp" title="abreviatura desarrollada">[e]</u> Partido con test<u class="exp" title="abreviatura desarrollada">[igo]</u>s de</span>
+<span class="ln">assistencia por falta de Es<u class="exp" title="abreviatura desarrollada">[criva]</u>no de q<u class="exp" title="abreviatura desarrollada">[ue]</u> Certifico</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Mariano Peña <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      José Ygn<u class="exp" title="abreviatura desarrollada">[aci]</u>o Salazar <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Sensenti Jun<u class="exp" title="abreviatura desarrollada">[i]</u>o onse</span>
+<span class="ln">de ocho<u class="exp" title="abreviatura desarrollada">[cien]</u>tos catorse</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Visto, dese q<u class="exp" title="abreviatura desarrollada">[ue]</u> p<u class="exp" title="abreviatura desarrollada">[re]</u>sentad<u class="exp" title="abreviatura desarrollada">[o]</u> con los comproba<u class="exp" title="abreviatura desarrollada">[n]</u>-</span>
+<span class="ln">tes q<u class="exp" title="abreviatura desarrollada">[ue]</u> se agregan, <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿H?]</u></u>ibiendose la informac<u class="exp" title="abreviatura desarrollada">[ion]</u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> se pide, y poniendose en noticia de Jose</span>
+<span class="ln">Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o Aranda p<u class="exp" title="abreviatura desarrollada">[ar]</u>a la suspension de viaje</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Sello cuarto, un cuartillo, años de mil ochocientos once y mil ochocientos doce. De partes. [Sello de habilitación: años de 1813 y 1814, valga.] Corresponde por virtud [del cargo].</p>
+<p>Sensentí, once de junio de mil ochocientos catorce. Pase este memorial al conocimiento del encargado del juzgado, don Manuel de Molina, para que obre según corresponda en el asunto de que se trata. — Juan José Carrejón.</p>
+<p>Así lo proveyó, mandó y firmó el señor teniente de gobernador intendente de este partido, con testigos de asistencia por falta de escribano, de que certifico. — Mariano Peña. José Ignacio Salazar.</p>
+<p>Sensentí, once de junio de ochocientos catorce. Visto: désele por presentado con los comprobantes que se agregan, recibiéndose la información que se pide y poniéndose en noticia de José Antonio Aranda para la suspensión de su viaje […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> alta. Es la plana más legible del expediente. Sólo queda incierta la palabra final de la nota de habilitación manuscrita bajo la leyenda impresa, y el verbo abreviado «[H]ibiendose» del segundo auto, que por el sentido ha de valer «recibiéndose».
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1459">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 12</span><h3>IMG_1459</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1459" aria-label="Ampliar la lámina IMG_1459">
+        <img src="../img/cartagena1814/p006.jpg" alt="Fotografía de la lámina IMG_1459" loading="lazy">
+      </button>
+      <figcaption>Vuelto del pliego anterior. Un colgajo de papel roto cubre parcialmente el margen izquierdo de las líneas centrales; hay una rotura en forma de cuña a la izquierda que se ha llevado el comienzo de dos o tres renglones y el primer apellido de uno de los firmantes. El renglón final queda cortado por el borde inferior de la fotografía, y con él el día del mes en que se recibió la primera declaración.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Continuación y cierre del auto del encargado del juzgado, firmado «Man[ue]l de Molina»; la fe de que lo proveyó y firmó el teniente interino por enfermedad del propietario, con testigos de asistencia; la diligencia de haberse librado los oficios correspondientes; la notificación a la interesada, que quedó entendida y no firmó por no saber; y el encabezamiento de la primera declaración.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> se anuncia, y <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Reclamo?]</u></u> de lo interesada</span>
+<span class="ln">a quien se le hará saver esta Providencia</span>
+<span class="ln">a el comparendo de los t<u class="exp" title="abreviatura desarrollada">[estig]</u>os q<u class="exp" title="abreviatura desarrollada">[ue]</u> ofrese</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l de Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Assí lo pr<u class="exp" title="abreviatura desarrollada">[o]</u>veyó y firmó el S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Ten<u class="exp" title="abreviatura desarrollada">[ien]</u>te Ynt<u class="exp" title="abreviatura desarrollada">[eri]</u>no q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[por]</u> Enfermed<u class="exp" title="abreviatura desarrollada">[a]</u>d del Propietario con t<u class="exp" title="abreviatura desarrollada">[estig]</u>os de asis-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[tenc]</u>ia y falta de Es<u class="exp" title="abreviatura desarrollada">[criva]</u>no.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Salazar <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Ygnacio M<u class="exp" title="abreviatura desarrollada">[arí]</u>a de Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">El mismo dia se libraron los ofisios corres-</span>
+<span class="ln">pondientes al cumplim<u class="exp" title="abreviatura desarrollada">[ien]</u>to de la ant<u class="exp" title="abreviatura desarrollada">[eceden]</u>te Providen-</span>
+<span class="ln">cia <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En seguida se le Notificó a la p<u class="exp" title="abreviatura desarrollada">[re]</u>sentada, que-</span>
+<span class="ln">dó entendida y no firma p<u class="exp" title="abreviatura desarrollada">[o]</u>r no saver</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En el Pueblo de Sensenti en <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] que se anuncia, y reclamo de la interesada, a quien se le hará saber esta providencia para el comparendo de los testigos que ofrece. — Manuel de Molina.</p>
+<p>Así lo proveyó y firmó el señor teniente interino, que ejerce por enfermedad del propietario, con testigos de asistencia y a falta de escribano. — […] Salazar. Ignacio María de Molina.</p>
+<p>El mismo día se libraron los oficios correspondientes al cumplimiento de la antecedente providencia.</p>
+<p>En seguida se le notificó a la presentada; quedó entendida y no firma por no saber.</p>
+<p>En el pueblo de Sensentí, en […]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media-alta. Firmes: el nombre de Manuel de Molina, la causa de la interinidad («por enfermedad del propietario»), la diligencia de oficios y —dato importante— la nota de que Luisa quedó entendida y no firmó por no saber, que confirma el «No sé firmar» de IMG_1457. Dudosos: la palabra «Reclamo» de la primera línea, y el nombre de pila del primer firmante, perdido en la rotura (por IMG_1458 y IMG_1462 es con toda probabilidad José Ignacio Salazar). El día del mes de la primera declaración se ha perdido entre esta hoja y la siguiente.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1460">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 7 de 12</span><h3>IMG_1460</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1460" aria-label="Ampliar la lámina IMG_1460">
+        <img src="../img/cartagena1814/p007.jpg" alt="Fotografía de la lámina IMG_1460" loading="lazy">
+      </button>
+      <figcaption>Folio sin leyenda impresa. La fotografía está desenfocada en la mitad izquierda, lo que limita el rendimiento de la ampliación: pasado 1,4× el aumento no añade información. El margen derecho se pierde en la curvatura del lomo y con él el final de casi todas las líneas.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Primera declaración de la información: la de Dionisio Orellana, vecino del pueblo de Cucuyagua y mayordomo que fue de la hacienda del Aguacatillo, recibida bajo juramento ante el juez y los testigos de asistencia. Declara haber presenciado la entrega de las cien reses hechas por el cura Zepeda y Rubio a Luisa Cartagena, y haberlas herrado él mismo con ayuda de Marcos Valencia, Juan Bey[de] y Juan Máximo Orellana, ya difunto.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de Junio del citado año Ante mi el Ten<u class="exp" title="abreviatura desarrollada">[ien]</u>te <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[y t[estig]</u>]os de asistencia p<u class="exp" title="abreviatura desarrollada">[ar]</u>a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y para informar<u class="exp" title="abreviatura desarrollada">[se]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Dionisio Orellana, ve<u class="exp" title="abreviatura desarrollada">[cino del Pue]</u>-</span>
+<span class="ln">blo de Cucuyagua y Mayordomo q<u class="exp" title="abreviatura desarrollada">[ue]</u> fue de la Haci-</span>
+<span class="ln">enda del Aguacatillo, a quien se le Recivió jura-</span>
+<span class="ln">mento q<u class="exp" title="abreviatura desarrollada">[ue]</u> hiso q<u class="exp" title="abreviatura desarrollada">[ue]</u> Dios Nuestro Señor y u<u class="exp" title="abreviatura desarrollada">[na]</u></span>
+<span class="ln">señal de Cruz bajo de cuya gravedad ofr<u class="exp" title="abreviatura desarrollada">[eció]</u></span>
+<span class="ln">desir verdad en lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> supiere y le fuere pre<u class="exp" title="abreviatura desarrollada">[gun]</u>-</span>
+<span class="ln">ta<u class="exp" title="abreviatura desarrollada">[do]</u>, y siendolo q<u class="exp" title="abreviatura desarrollada">[ue]</u> el tenor del p<u class="exp" title="abreviatura desarrollada">[rese]</u>nte</span>
+<span class="ln">escrito, y quanto en su tenor se le hiso exam<u class="exp" title="abreviatura desarrollada">[en]</u></span>
+<span class="ln">Dijo: que es cierto ha<u class="exp" title="abreviatura desarrollada">[ver]</u> presenciad<u class="exp" title="abreviatura desarrollada">[o]</u> la</span>
+<span class="ln">entrega de las cien Reses q<u class="exp" title="abreviatura desarrollada">[ue]</u> mencionan <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> el finado Padre Cura D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan de Ze-</span>
+<span class="ln">peda y Rubio, à la p<u class="exp" title="abreviatura desarrollada">[re]</u>sentada Luisa Cartage-</span>
+<span class="ln">na, en la qual no tiene <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[or]</u>-</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> el q<u class="exp" title="abreviatura desarrollada">[ue]</u> declara como Mayordomo de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha Hac<u class="exp" title="abreviatura desarrollada">[ien]</u>da <u class="exp" title="abreviatura desarrollada">[hi]</u>-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[so]</u> la llegada de ellas y las herró con el fi-</span>
+<span class="ln">erro q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿usaba?]</u></u> la d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿…?]</u></u> cuya operacion</span>
+<span class="ln">le ayudaron Marcos Valencia, Juan <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Beyde?]</u></u>,</span>
+<span class="ln">Juan Maximo Orellana ya difunto, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] de junio del citado año, ante mí el teniente […] y los testigos de asistencia, para informarse […], compareció Dionisio Orellana, vecino del pueblo de Cucuyagua y mayordomo que fue de la hacienda del Aguacatillo, a quien se le recibió juramento, que hizo por Dios Nuestro Señor y una señal de cruz, bajo cuya gravedad ofreció decir verdad en lo que supiere y le fuere preguntado. Y siéndolo por el tenor del presente escrito, y examinado sobre cuanto en él se contiene,</p>
+<p>Dijo: que es cierto haber presenciado la entrega de las cien reses que se mencionan, que el finado padre cura don Juan de Zepeda y Rubio hizo a la presentada Luisa Cartagena, de la cual no tiene ninguna duda, porque el que declara, como mayordomo de dicha hacienda, hizo el apartado de ellas y las herró con el fierro que usaba dicha […]; en cuya operación le ayudaron Marcos Valencia, Juan Bey[de] y Juan Máximo Orellana, ya difunto […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media. El nombre y la condición del testigo (Dionisio Orellana, vecino de Cucuyagua, mayordomo de la hacienda), la cifra de cien reses y los nombres de Marcos Valencia y Juan Máximo Orellana son seguros. Flojo: el apellido «Juan Bey[de]», cuya terminación se pierde en un rasgo de pluma; la frase «con el fierro que […] la dicha […]», donde dos palabras resisten toda ampliación por el desenfoque; y el día del mes, que venía del pie de IMG_1459.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1461">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 8 de 12</span><h3>IMG_1461</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1461" aria-label="Ampliar la lámina IMG_1461">
+        <img src="../img/cartagena1814/p008.jpg" alt="Fotografía de la lámina IMG_1461" loading="lazy">
+      </button>
+      <figcaption>Vuelto del folio anterior. Es la hoja más dañada del expediente: un boquete y un desgarro en «V» en el centro-izquierda destruyen el arranque o el cuerpo de unas seis líneas, y el margen derecho está roído. La fotografía, además, está tomada con luz muy rasante, que realza el relieve del papel y dificulta distinguir trazo de sombra.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Continuación y cierre de la declaración de Dionisio Orellana: las reses quedaron a libre disposición de Luisa unos cinco o seis años antes del fallecimiento del cura; el testigo cree que la donación fue en pago del tiempo servido; Aranda le quitó las reses y las crías nacidas después de la muerte del cura, y el testigo ignora la razón por no haberse hallado presente. Ratificación.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> siendo <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿estas?]</u></u> completadas y sertadas q<u class="exp" title="abreviatura desarrollada">[ue]</u> se</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> quedó <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿…?]</u></u> de ellas à la referida Luisa</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> libremente a su disposicion, havien<u class="exp" title="abreviatura desarrollada">[do]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> como cinco ó seis</span>
+<span class="ln">años à el fallesim<u class="exp" title="abreviatura desarrollada">[ien]</u>to de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Padre, segun hace</span>
+<span class="ln">Memoria, con cuyo motivo cree el q<u class="exp" title="abreviatura desarrollada">[ue]</u> decla-</span>
+<span class="ln">ra q<u class="exp" title="abreviatura desarrollada">[ue]</u> la d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> las <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> lo p<u class="exp" title="abreviatura desarrollada">[re]</u>senta, p<u class="exp" title="abreviatura desarrollada">[o]</u>r gracia ó paga q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">el tiempo q<u class="exp" title="abreviatura desarrollada">[ue]</u> le havia servid<u class="exp" title="abreviatura desarrollada">[o]</u> y vien se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> pues el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> su testam<u class="exp" title="abreviatura desarrollada">[en]</u>to <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> se le habló de este</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>pre se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de los demas Vienes, d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha q<u class="exp" title="abreviatura desarrollada">[ue]</u> José</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el <u class="exp" title="abreviatura desarrollada">[citado]</u> Aranda vendió, quitando las Reses</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> se hisieron, después del fallesim<u class="exp" title="abreviatura desarrollada">[ien]</u>to de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho</span>
+<span class="ln">Padre, pero ignora la Razon q<u class="exp" title="abreviatura desarrollada">[ue]</u> tuvo p<u class="exp" title="abreviatura desarrollada">[ar]</u>a ello</span>
+<span class="ln">p<u class="exp" title="abreviatura desarrollada">[o]</u>r no haverse hallado presente: que es<u class="exp" title="abreviatura desarrollada">[to]</u></span>
+<span class="ln">es quanto sabe y la verdad en fuerza del</span>
+<span class="ln">juramento q<u class="exp" title="abreviatura desarrollada">[ue]</u> ha interpuesto, en el q<u class="exp" title="abreviatura desarrollada">[ue]</u> se</span>
+<span class="ln">afirma y Ratifica en virtud de quedar</span>
+<span class="ln">enterado de esta su deposicion q<u class="exp" title="abreviatura desarrollada">[ue]</u> se le</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ha]</u> leido, expresando no <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿…?]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] quedando así completadas y apartadas, se le quedaron a la referida Luisa, libremente a su disposición, habiendo […] como cinco o seis años antes del fallecimiento de dicho padre, según hace memoria. Con cuyo motivo cree el que declara que dicha [donación se hizo] a la que lo presenta por gracia o paga del tiempo que le había servido; y bien se supo, pues […] su testamento […] se le habló de esto […] de los demás bienes. Dice que José […] el citado Aranda vendió, quitando las reses y las crías que se hicieron después del fallecimiento de dicho padre, pero ignora la razón que tuvo para ello, por no haberse hallado presente.</p>
+<p>Que esto es cuanto sabe y la verdad, en fuerza del juramento que ha interpuesto, en el que se afirma y ratifica, quedando enterado de esta su deposición, que se le ha leído […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> baja. Lo que sí queda establecido es el hecho: las reses quedaron a libre disposición de Luisa unos cinco o seis años antes de morir el cura; Aranda las vendió, quitando también las crías nacidas después; y el testigo se ratifica. En cambio, al menos cinco renglones del centro de la plana están destruidos o son ilegibles, y en dos de ellos ni siquiera es posible fijar el orden de las palabras supervivientes. No se ha reconstruido nada por conjetura.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1462">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 9 de 12</span><h3>IMG_1462</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1462" aria-label="Ampliar la lámina IMG_1462">
+        <img src="../img/cartagena1814/p009.jpg" alt="Fotografía de la lámina IMG_1462" loading="lazy">
+      </button>
+      <figcaption>Pliego nuevo de papel sellado, en buen estado. Leyenda impresa: Un quartillo. · SELLO QUARTO, UN QUARTI- · LLO, AÑOS DE MIL OCHOCIEN- · TOS Y ONCE, Y MIL OCHOCIEN- · TOS Y DOCE.   DE PARTES.
+
+A la izquierda, el sello de armas reales de Fernando VII («FERDIN. VII. D. G. HISP. ET IND. REX») y, debajo, el sello circular de habilitación con las armas coronadas entre las letras «S» y «4» y la leyenda <strong>«AÑOS DE 1813 Y 1814 · VALGA»</strong>, aquí perfectamente legible. Borde exterior derecho desgarrado y con pérdida de los finales de línea; el ángulo superior derecho tiene el papel arrugado y levantado.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Cierre formal de la declaración de Dionisio Orellana —dice ser de setenta años de edad, no tocarle las generales de la ley, y firman el juez y los testigos de asistencia— y comienzo de la segunda declaración: la de Marcos Valencia, citado en la anterior, que declara haber presenciado la entrega de las cien reses.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[sello de armas reales]</u>   Un quartillo.</span>
+<span class="ln">SELLO QUARTO, UN QUARTI-</span>
+<span class="ln">LLO, AÑOS DE MIL OCHOCIEN-</span>
+<span class="ln">[sello: AÑOS DE 1813 Y 1814 · VALGA]   TOS Y ONCE, Y MIL OCHOCIEN-</span>
+<span class="ln">TOS Y DOCE.   DE PARTES.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">añadir ni quitar, y no <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿serle?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[las gene]</u>-</span>
+<span class="ln">rales de la ley con la q<u class="exp" title="abreviatura desarrollada">[ue]</u> lo p<u class="exp" title="abreviatura desarrollada">[re]</u>sencia<u class="exp" title="abreviatura desarrollada">[ron]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de setenta años de edad y no otra <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">en cuya virtud lo hise yo el p<u class="exp" title="abreviatura desarrollada">[rese]</u>nt<u class="exp" title="abreviatura desarrollada">[e]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">y t<u class="exp" title="abreviatura desarrollada">[esti]</u>g<u class="exp" title="abreviatura desarrollada">[o]</u>s de asistencia en falta de Es<u class="exp" title="abreviatura desarrollada">[criva]</u>no.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Jose Ygn<u class="exp" title="abreviatura desarrollada">[aci]</u>o Salazar <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Ygn<u class="exp" title="abreviatura desarrollada">[aci]</u>o M<u class="exp" title="abreviatura desarrollada">[arí]</u>a de Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En el mismo d<u class="exp" title="abreviatura desarrollada">[í]</u>a pareció Marcos Valenci<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln">t<u class="exp" title="abreviatura desarrollada">[esti]</u>g<u class="exp" title="abreviatura desarrollada">[o]</u> presentado p<u class="exp" title="abreviatura desarrollada">[o]</u>r la interesada, y citado en</span>
+<span class="ln">la ant<u class="exp" title="abreviatura desarrollada">[eceden]</u>te declaracion, a quien en union de los</span>
+<span class="ln">de mi Asistencia se le Recivió juram<u class="exp" title="abreviatura desarrollada">[en]</u>to en la</span>
+<span class="ln">forma ordinaria y ofreció como el an-</span>
+<span class="ln">terior, y p<u class="exp" title="abreviatura desarrollada">[re]</u>guntado como el anterior <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Dijo: Que es constante haver presenci<u class="exp" title="abreviatura desarrollada">[ado]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la entrega de las cien Reses q<u class="exp" title="abreviatura desarrollada">[ue]</u> le h<u class="exp" title="abreviatura desarrollada">[iso]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Sello cuarto, un cuartillo, años de mil ochocientos once y mil ochocientos doce. De partes. [Sello: años de 1813 y 1814, valga.]</p>
+<p>[…] sin añadir ni quitar; y no tocándole las generales de la ley, con lo que lo presenciaron […]. Dijo ser de setenta años de edad y no otra cosa. En cuya virtud lo hice yo el presente […] y los testigos de asistencia, a falta de escribano. — Molina. José Ignacio Salazar. Ignacio María de Molina.</p>
+<p>En el mismo día compareció Marcos Valencia, testigo presentado por la interesada y citado en la antecedente declaración, a quien, en unión de los de mi asistencia, se le recibió juramento en la forma ordinaria, y ofreció como el anterior. Y preguntado como el anterior, dijo: que es constante haber presenciado […] la entrega de las cien reses que le hizo […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media-alta. Firmes: la leyenda del sello de habilitación de 1813 y 1814; la edad de setenta años del primer testigo; los tres firmantes; el nombre del segundo testigo, Marcos Valencia; y la cifra de cien reses. Dudosas las dos primeras líneas de la plana (final de la fórmula de ratificación, con el margen roto) y la palabra que sigue a «yo el p[rese]nt[e]».
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1463">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 10 de 12</span><h3>IMG_1463</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1463" aria-label="Ampliar la lámina IMG_1463">
+        <img src="../img/cartagena1814/p010.jpg" alt="Fotografía de la lámina IMG_1463" loading="lazy">
+      </button>
+      <figcaption>Pliego de papel sellado con la misma leyenda impresa que las hojas anteriores: Un quartillo. · SELLO QUARTO, UN QUARTY- · LLO, AÑOS DE MIL OCHOCIEN- · TOS Y ONCE, Y MIL OCHOCIEN- · TOS Y DOCE.   DE PARTES.
+
+Sello de armas reales de Fernando VII a la izquierda, parcialmente en el pliegue. El ángulo superior derecho está deshecho, con el papel desgarrado en tiras, y el margen derecho se pierde a partir de la mitad de la plana. Dos pequeños boquetes de tinta/roedura en el centro.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Cuerpo de la declaración de Marcos Valencia: estaba de mozo sirviente en la hacienda cuando su amo, el finado cura don Juan de Zepeda y Rubio, dueño de ella, ejecutó la entrega; se herraron las reses con un fierro distinto, hecho a propósito, en presencia del mayordomo y de otros; el cura advirtió que lo hacía en aquella forma pública para que en todo tiempo constase y fuese valedera la gracia que hacía a Luisa Cartagena por el tiempo que le había servido sin más salario que la manutención y un vestuario.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[sello de armas reales]</u>   Un quartillo.</span>
+<span class="ln">SELLO QUARTO, UN QUARTY-</span>
+<span class="ln">LLO, AÑOS DE MIL OCHOCIEN-</span>
+<span class="ln">TOS Y ONCE, Y MIL OCHOCIEN-</span>
+<span class="ln">TOS Y DOCE.   DE PARTES.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[men]</u>cionan, á motivo de <u class="exp" title="abreviatura desarrollada">[h]</u>allarse de Mozo sirvien<u class="exp" title="abreviatura desarrollada">[te]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en la Hacienda q<u class="exp" title="abreviatura desarrollada">[ue]</u> se cita, la qual <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[p[o]</u>r orden]</span>
+<span class="ln">de su Amo el finado Padre Cura D<u class="exp" title="abreviatura desarrollada">[o]</u>n Juan de</span>
+<span class="ln">Zepeda y Rubio, dueño de la mencionada Hac<u class="exp" title="abreviatura desarrollada">[ienda]</u></span>
+<span class="ln">se executó la entrega en los terminos q<u class="exp" title="abreviatura desarrollada">[ue]</u> le</span>
+<span class="ln">Relacionan en el p<u class="exp" title="abreviatura desarrollada">[rese]</u>nt<u class="exp" title="abreviatura desarrollada">[e]</u> escrito, y se herró</span>
+<span class="ln">el ganado <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿á inmediato?]</u></u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho con el fierro q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">se <u class="exp" title="abreviatura desarrollada">[h]</u>iso destinar y dirigir q<u class="exp" title="abreviatura desarrollada">[ue]</u> el uso de</span>
+<span class="ln">la q<u class="exp" title="abreviatura desarrollada">[ue]</u> lo p<u class="exp" title="abreviatura desarrollada">[re]</u>senta, cuya entrega presenció</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el Mayordomo y otros q<u class="exp" title="abreviatura desarrollada">[ue]</u> asistieron, con</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> duda, q<u class="exp" title="abreviatura desarrollada">[ue]</u> fue le hiso <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Prebencion?]</u></u> el citad<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">Padre de q<u class="exp" title="abreviatura desarrollada">[ue]</u> esto lo hasía en aquella forma</span>
+<span class="ln">publica, p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> en todos tiempos constase</span>
+<span class="ln">y fuese baledera la gracia q<u class="exp" title="abreviatura desarrollada">[ue]</u> le hasía á</span>
+<span class="ln">la <u class="exp" title="abreviatura desarrollada">[ex]</u>presada Luisa Cartagena, q<u class="exp" title="abreviatura desarrollada">[ue]</u> el tiem-</span>
+<span class="ln">po q<u class="exp" title="abreviatura desarrollada">[ue]</u> le havía servido sin mas salario q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">la manutencion y un bestuario p<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] que se mencionan, por hallarse de mozo sirviente en la hacienda que se cita, la cual […] por orden de su amo el finado padre cura don Juan de Zepeda y Rubio, dueño de la mencionada hacienda, se ejecutó la entrega en los términos que se relacionan en el presente escrito. Y se herró el ganado, inmediatamente, con el fierro que se hizo destinar para el uso de la que lo presenta. Presenciaron dicha entrega el mayordomo y otros que asistieron, sin ninguna duda, porque el citado padre les hizo la prevención de que esto lo hacía en aquella forma pública para que en todo tiempo constase y fuese valedera la gracia que le hacía a la expresada Luisa Cartagena por el tiempo que le había servido, sin más salario que la manutención y un vestuario […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media-alta. Es la declaración mejor conservada y la más explícita del expediente: queda establecido que el cura era dueño de la hacienda, que el fierro se hizo <em>ex profeso</em> para Luisa, y que el acto se hizo en forma pública y con advertencia expresa a los presentes. Dudosos: la frase «el ganado á inmediato dicho»; la palabra que leo «Prebencion»; y la última palabra de la plana, cortada por el borde.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1464">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 11 de 12</span><h3>IMG_1464</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1464" aria-label="Ampliar la lámina IMG_1464">
+        <img src="../img/cartagena1814/p011.jpg" alt="Fotografía de la lámina IMG_1464" loading="lazy">
+      </button>
+      <figcaption>Vuelto del folio anterior, sin leyenda impresa. Tinta muy pálida y papel muy arrugado, con pliegues verticales que atraviesan el texto; dos borrones grandes de tinta (uno de ellos, un largo goterón vertical) tachan parcialmente el centro de cuatro renglones. El margen derecho se pierde en la curvatura. La mitad inferior de la plana está en blanco.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Cierre de la declaración de Marcos Valencia: recuerda que el cura recogió a Luisa de edad pequeña, afianza la certeza de la entrega, y declara que cuando Aranda quitó las reses él ya no estaba de sirviente, por lo que sólo lo supo de oídas. Se afirma y ratifica, dice ser mayor de cincuenta años, no tocarle las generales de la ley y no saber firmar. Firman el juez y los dos testigos de asistencia.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de edad pequeña, <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿de quien?]</u></u> la Recogi<u class="exp" title="abreviatura desarrollada">[ó]</u></span>
+<span class="ln">á su Casa q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> nacida, con cuyo motivo el q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">declara afiansa la certesa de la entrega <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> le <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> uno Jose Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o Aran-</span>
+<span class="ln">da, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> las Reses q<u class="exp" title="abreviatura desarrollada">[ue]</u> se mencionan</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ignora<u class="exp" title="abreviatura desarrollada">[n]</u> p<u class="exp" title="abreviatura desarrollada">[ue]</u>s q<u class="exp" title="abreviatura desarrollada">[uan]</u>do lo hiso, no estaba</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[y]</u>a p<u class="exp" title="abreviatura desarrollada">[o]</u>r sirviente el q<u class="exp" title="abreviatura desarrollada">[ue]</u> declara, y solo supo</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> havia quitado d<u class="exp" title="abreviatura desarrollada">[ic]</u>has Reses: que esta e<u class="exp" title="abreviatura desarrollada">[s la]</u></span>
+<span class="ln">verdad y quanto sabe en el particular</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[so]</u>b<u class="exp" title="abreviatura desarrollada">[re]</u> el juram<u class="exp" title="abreviatura desarrollada">[en]</u>to q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[ll]</u>eba p<u class="exp" title="abreviatura desarrollada">[re]</u>stado, en el q<u class="exp" title="abreviatura desarrollada">[ue]</u> se afir-</span>
+<span class="ln">ma y Ratifica, leida q<u class="exp" title="abreviatura desarrollada">[ue]</u> le fue esta su decl<u class="exp" title="abreviatura desarrollada">[aracion]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> expresando ser mayor de sinquen-</span>
+<span class="ln">ta años de e<u class="exp" title="abreviatura desarrollada">[dad]</u>, no tocarle las genera<u class="exp" title="abreviatura desarrollada">[les]</u></span>
+<span class="ln">de la ley, y no saver firmar, y lo hise y<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">con los de mi asistencia á falta de Es<u class="exp" title="abreviatura desarrollada">[criva]</u>no.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Jose Ygn<u class="exp" title="abreviatura desarrollada">[aci]</u>o Salazar <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Ygn<u class="exp" title="abreviatura desarrollada">[aci]</u>o Maria de Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>[…] de edad pequeña, de quien la recogió a su casa, que […] nacida; con cuyo motivo el que declara afianza la certeza de la entrega […]. Que uno, José Antonio Aranda, […] las reses que se mencionan; e ignora, pues cuando lo hizo ya no estaba de sirviente el que declara, y sólo supo que había quitado dichas reses.</p>
+<p>Que ésta es la verdad y cuanto sabe en el particular, bajo el juramento que lleva prestado, en el que se afirma y ratifica, leída que le fue esta su declaración. Expresando ser mayor de cincuenta años de edad, no tocarle las generales de la ley y no saber firmar; y lo hice yo, con los de mi asistencia, a falta de escribano. — Molina. José Ignacio Salazar. Ignacio María de Molina.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media. La ratificación, la edad («mayor de cincuenta años»), el «no saber firmar» y las tres firmas son seguros. Las cuatro primeras líneas, con tinta pálida bajo los goterones, sólo se leen a medias: se reconoce el sentido (el cura recogió a Luisa de niña; Aranda quitó las reses cuando el testigo ya no servía allí), pero no la letra exacta de varias palabras.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1465">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 12 de 12</span><h3>IMG_1465</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1465" aria-label="Ampliar la lámina IMG_1465">
+        <img src="../img/cartagena1814/p012.jpg" alt="Fotografía de la lámina IMG_1465" loading="lazy">
+      </button>
+      <figcaption>Folio sin leyenda impresa. Papel arrugado y con roturas: un desgarro en forma de gancho en el centro-izquierda, dos boquetes pequeños y el borde exterior derecho deshecho, con pérdida del final de varias líneas. El pie de la plana queda fuera del encuadre de la fotografía, de modo que faltan la edad del testigo, la cláusula de las generales de la ley y las firmas de cierre.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Tercera y última declaración de la información, tomada el veintidós de junio: la de Faustino Tábora, del vecindario de Cucuyagua, que declara de noticias ciertas —y por habérselo referido el propio cura— que don Juan de Zepeda y Rubio hizo a Luisa Cartagena la donación de cien reses en satisfacción del tiempo que le servía, mucho antes de su fallecimiento, y que le consta el fierro distinto del de la hacienda que se hizo para herrarlas.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[En]</u> veinte y dos del mismo Ante mi el <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Ju]</u>es y t<u class="exp" title="abreviatura desarrollada">[esti]</u>g<u class="exp" title="abreviatura desarrollada">[o]</u>s pareció <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Faustino?]</u></u> Tabora del vecin-</span>
+<span class="ln">dario de Cucuyagua, aquien Certifico conoser,</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Re]</u>sivi juram<u class="exp" title="abreviatura desarrollada">[en]</u>to q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[p[re]</u>]stó en la forma</span>
+<span class="ln">ordinaria, y examinado como la ant<u class="exp" title="abreviatura desarrollada">[e]</u>ceden-</span>
+<span class="ln">te Dijo: Que le consta p<u class="exp" title="abreviatura desarrollada">[o]</u>r noticias ciertas q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">el finado Padre Cura Don Juan de Zepeda y Ru-</span>
+<span class="ln">vio hiso á la q<u class="exp" title="abreviatura desarrollada">[ue]</u> lo p<u class="exp" title="abreviatura desarrollada">[re]</u>senta, la donacion</span>
+<span class="ln">de cien Reses, pues a mas de haverlo oido</span>
+<span class="ln">publicam<u class="exp" title="abreviatura desarrollada">[en]</u>te en su citada Vecindad, el mismo</span>
+<span class="ln">Padre se lo Refirió al q<u class="exp" title="abreviatura desarrollada">[ue]</u> declara, co-</span>
+<span class="ln">mo dandole á entender q<u class="exp" title="abreviatura desarrollada">[ue]</u> esta gracia se la</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ha]</u>sia en terminos de una satisfacion al</span>
+<span class="ln">tiempo q<u class="exp" title="abreviatura desarrollada">[ue]</u> le servia, la qual fue efectuada</span>
+<span class="ln">mucho tiempo antes de su fallesimiento</span>
+<span class="ln">y q<u class="exp" title="abreviatura desarrollada">[ue]</u> tambien le consta el fierro distinto</span>
+<span class="ln">al de la Hac<u class="exp" title="abreviatura desarrollada">[ien]</u>da q<u class="exp" title="abreviatura desarrollada">[ue]</u> se hiso p<u class="exp" title="abreviatura desarrollada">[ar]</u>a herrar d<u class="exp" title="abreviatura desarrollada">[ic]</u>has</span>
+<span class="ln">Reses: que esto es quanto sabe y la verdad</span>
+<span class="ln">en fuerza del juram<u class="exp" title="abreviatura desarrollada">[en]</u>to q<u class="exp" title="abreviatura desarrollada">[ue]</u> f<u class="exp" title="abreviatura desarrollada">[ec]</u>ho tiene, en el</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> se afirmó y Ratificó leida q<u class="exp" title="abreviatura desarrollada">[ue]</u> le fue <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>En veintidós del mismo, ante mí el juez y los testigos, compareció Faustino Tábora, del vecindario de Cucuyagua, a quien certifico conocer. Le recibí juramento, que prestó en la forma ordinaria; y examinado como el antecedente,</p>
+<p>Dijo: que le consta por noticias ciertas que el finado padre cura don Juan de Zepeda y Rubio hizo a la que lo presenta la donación de cien reses, pues, además de haberlo oído públicamente en su citada vecindad, el mismo padre se lo refirió al que declara, dándole a entender que esta gracia se la hacía en términos de una satisfacción por el tiempo que le servía; la cual fue efectuada mucho tiempo antes de su fallecimiento. Y que también le consta el fierro distinto del de la hacienda que se hizo para herrar dichas reses.</p>
+<p>Que esto es cuanto sabe y la verdad, en fuerza del juramento que fecho tiene, en el que se afirmó y ratificó, leída que le fue […].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media-alta. El cuerpo de la declaración se lee con seguridad, incluido el dato decisivo de que el fierro era <strong>distinto del de la hacienda</strong>. El apellido Tábora es claro; el nombre de pila es el punto flojo: la mayúscula admite lectura como <em>F</em> o como <em>J</em>, de modo que puede ser Faustino o Justino. El pie de la plana —edad, generales de la ley, firmas— está fuera del encuadre.
+
+---</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4><strong>Luisa Cartagena</strong></h4>
+  <p class="papel">Demandante. Presenta el memorial (IMG_1455–1457) reclamando las sesenta reses quitadas y sus productos.</p>
+  <p class="calidad">Vecina del partido / de Cucuyagua. Criada desde muy niña en casa del cura Zepeda; sirvió hasta la muerte de éste sin más salario que la manutención y un vestuario. <strong>No sabe firmar</strong> (IMG_1457, IMG_1459).</p>
+</div>
+<div class="persona">
+  <h4><strong>D. Juan de Zepeda y Rubio</strong></h4>
+  <p class="papel">Cura difunto. Recogió a Luisa de niña y le hizo la donación de cien reses, herradas con fierro distinto. Dueño de la hacienda del Aguacatillo según IMG_1463.</p>
+  <p class="calidad">«Finado padre cura». Su fallecimiento dio lugar al inventario general de bienes.</p>
+</div>
+<div class="persona">
+  <h4><strong>D. José Antonio Aranda</strong></h4>
+  <p class="papel">Demandado. Administrador que fue de la hacienda del Aguacatillo; quitó a Luisa sesenta reses suponiendo orden del dueño, y vendió también las crías. Tenía viaje emprendido, por lo que se pidió su retención.</p>
+  <p class="calidad">Tratado de «don».</p>
+</div>
+<div class="persona">
+  <h4><strong>D. Pablo [apellido perdido]</strong></h4>
+  <p class="papel">Propietario a quien pertenecía la hacienda del Aguacatillo; en cuyo nombre alegó Aranda haber obrado.</p>
+  <p class="calidad">Vecino de la ciudad de Comayagua. El apellido cae sobre el desgarro del margen de IMG_1455 y no vuelve a aparecer.</p>
+</div>
+<div class="persona">
+  <h4><strong>Dionisio de Pineda y Brán</strong></h4>
+  <p class="papel">Firma la certificación de IMG_1454, a petición de Luisa. Había actuado como juez en el inventario y reconocimiento general de los bienes del cura.</p>
+  <p class="calidad">Capitán de los Reales Ejércitos de S. M. con título real de retiro, goce de fuero y uniforme.</p>
+</div>
+<div class="persona">
+  <h4><strong>Juan José Carrejón</strong></h4>
+  <p class="papel">Teniente de gobernador intendente del partido. Provee el auto de 11 de junio de 1814 (IMG_1458).</p>
+  <p class="calidad">—</p>
+</div>
+<div class="persona">
+  <h4><strong>D. Manuel de Molina</strong></h4>
+  <p class="papel">Encargado del juzgado, a quien se remite el memorial; provee el auto de la información y firma «Molina» las declaraciones. Actúa como teniente interino por enfermedad del propietario (IMG_1459).</p>
+  <p class="calidad">Tratado de «don».</p>
+</div>
+<div class="persona">
+  <h4><strong>Mariano Peña</strong></h4>
+  <p class="papel">Testigo de asistencia en el auto de Carrejón (IMG_1458).</p>
+  <p class="calidad">—</p>
+</div>
+<div class="persona">
+  <h4><strong>José Ignacio Salazar</strong></h4>
+  <p class="papel">Testigo de asistencia; firma en IMG_1458, IMG_1459 (con el nombre de pila perdido), IMG_1462 y IMG_1464.</p>
+  <p class="calidad">—</p>
+</div>
+<div class="persona">
+  <h4><strong>Ignacio María de Molina</strong></h4>
+  <p class="papel">Testigo de asistencia; firma en IMG_1459, IMG_1462 y IMG_1464.</p>
+  <p class="calidad">—</p>
+</div>
+<div class="persona">
+  <h4><strong>Dionisio Orellana</strong></h4>
+  <p class="papel">Primer testigo de la información (IMG_1460–1462). Presenció y ejecutó el herraje de las cien reses.</p>
+  <p class="calidad">Vecino del pueblo de Cucuyagua; mayordomo que fue de la hacienda del Aguacatillo; <strong>setenta años</strong> de edad.</p>
+</div>
+<div class="persona">
+  <h4><strong>Marcos Valencia</strong></h4>
+  <p class="papel">Segundo testigo (IMG_1462–1464). Ayudó a herrar las reses; estaba entonces de mozo sirviente en la hacienda.</p>
+  <p class="calidad"><strong>Mayor de cincuenta años</strong>; no le tocan las generales de la ley; <strong>no sabe firmar</strong>.</p>
+</div>
+<div class="persona">
+  <h4><strong>Juan Bey[de]</strong></h4>
+  <p class="papel">Nombrado en IMG_1460 entre quienes ayudaron a herrar las reses. No declara.</p>
+  <p class="calidad">Apellido de lectura insegura.</p>
+</div>
+<div class="persona">
+  <h4><strong>Juan Máximo Orellana</strong></h4>
+  <p class="papel">Nombrado en IMG_1460 entre quienes ayudaron a herrar las reses.</p>
+  <p class="calidad"><strong>Ya difunto</strong> al tiempo de la información.</p>
+</div>
+<div class="persona">
+  <h4><strong>Faustino [¿Justino?] Tábora</strong></h4>
+  <p class="papel">Tercer testigo, declara el 22 de junio de 1814 (IMG_1465). Lo sabe por voz pública y por relación del propio cura.</p>
+  <p class="calidad">Del vecindario de Cucuyagua; conocido del juez («a quien certifico conocer»). El pie de la plana, con su edad, está fuera del encuadre.</p>
+</div></div>
+</section>
+
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

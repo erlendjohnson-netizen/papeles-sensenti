@@ -1,0 +1,1498 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La yegua de la cuesta del Barreno — Papeles de Sensentí</title>
+<meta name="description" content="Diecisiete años después de una pelea a espada junto a la quebrada del Agua Blanca, el alcalde de Sensentí prende en Cucuyagua a un labrador mulato libre que había vuelto al partido y vivía sin recelo. Diecisiete planas en las que ni el reo ni ninguno de los cuatro testigos sabe firmar.">
+<meta property="og:title" content="La yegua de la cuesta del Barreno">
+<meta property="og:description" content="Diecisiete años después de una pelea a espada junto a la quebrada del Agua Blanca, el alcalde de Sensentí prende en Cucuyagua a un labrador mulato libre que había vuelto al partido y vivía sin recelo. Diecisiete planas en las que ni el reo ni ninguno de los cuatro testigos sabe firmar.">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Causa criminal de oficio, enero de 1795</p>
+  <h1>La yegua de la cuesta del Barreno</h1>
+  <p class="dek">Diecisiete años después de una pelea a espada junto a la quebrada del Agua Blanca, el alcalde de Sensentí prende en Cucuyagua a un labrador mulato libre que había vuelto al partido y vivía sin recelo. Diecisiete planas en las que ni el reo ni ninguno de los cuatro testigos sabe firmar.</p>
+  <div class="meta"><span><strong>17 láminas</strong> · IMG_1679 – IMG_1695</span><span>12 y 13 de enero de 1795</span><span>Papel sellado 4.º de 1788-1789, habilitado para 1795 y 96, Carlos IV</span><span>Cucuyagua · partido de Sensentí · aldea del Jocomico</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">17</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>Es una <strong>causa criminal de oficio</strong> —abierta por la propia justicia, sin que nadie se querellase— seguida en el partido de Sensentí («Sementi», en la pluma del escribiente) por <strong>don Dionicio de Pineda y Bran, alcalde ordinario de primera nominación</strong>, que actúa <strong>en el pueblo de Cucuyagua</strong> y <strong>con testigos de asistencia por falta de escribano</strong>, fórmula que se repite al pie de cada plana.</p>
+<p>El reo es <strong>Calisto de Lara</strong> —<strong>Calixto</strong> en el dictamen final—, mulato libre, labrador, de treinta y ocho años, oriundo del valle de los Llanos de Santa Flora y avecindado en el mineral del Chinar de San Andrés. Se le procesa por la muerte que dio a <strong>Andrés Mejía</strong> y por las heridas que dio a <strong>Silverio Mejía</strong>, pariente consanguíneo del difunto. El hecho no es reciente: ocurrió, según la propia confesión, <strong>diecisiete o dieciocho años antes</strong>, esto es hacia 1777-1778, en la <strong>quebrada del Agua Blanca</strong>, inmediata a la <strong>aldea del Jocomico</strong>.</p>
+<p>Lo que lo desencadena es una yegua. Los Mejía, siguiendo el rastro de un macho perdido en la cuesta del Barreno, dieron con Calisto llevando una yegua que tomaron por robada y que no quisieron devolverle. De la disputa se pasó a las armas: Calisto hirió de punta en la frente a Andrés, dio un machetazo en la frente a Silverio —que huyó y fue recogido en casa de María Mejía—, y volvió sobre Andrés, caído, para rematarlo <strong>con la espada del propio herido</strong>. Recogió las dos espadas, se llevó la yegua, la devolvió a su dueño Marco Calderón y <strong>se ausentó del partido cosa de ocho años</strong>. La causa se abre en 1795 no porque el delito se descubra, sino porque el reo ha vuelto y vive sin recelo, «con menosprecio y respeto de la Real Justicia».</p>
+<p><strong>La fecha corrige al catálogo.</strong> El auto cabeza de proceso está fechado «a doce días del mes de [enero] de mil setecientos noventa y cinco», y la prisión y la confesión a trece del mismo mes; las cuatro declaraciones se toman «el mismo día». El catálogo previo daba <strong>octubre</strong> de 1795 para la declaración de Silverio Mejía. El nombre del mes está muy desvaído en IMG_1680 —se lee «Henero»—, pero el dato decisivo es objetivo: en IMG_1681 sobrevive de ese mismo mes la terminación «…ro de mil setecientos noventa, y cinco años», que excluye <em>octubre</em> y deja sólo <em>enero</em> o <em>febrero</em>. El año es seguro y lo corrobora la habilitación del papel sellado, «por los años 1795 y 96».</p>
+<p><strong>El papel.</strong> Todo el expediente corre en papel sellado del sello cuarto, un cuartillo, de los años de mil setecientos ochenta y ocho y ochenta y nueve, rehabilitado con estampilla de placa: «UALGA POR EL REYNADO DEL S. D. CARLOS IV. Y POR LOS AÑES 1795 Y 96», junto a la estampilla circular de armas reales. La cabecera impresa aparece en la primera y en la última plana de cada pliego: IMG_1680 y 1683; 1684 y 1687; 1688 y 1691; 1692 abre pliego nuevo.</p>
+<p><strong>Nadie de los declarantes firma.</strong> El reo y los cuatro testigos declaran todos no saber escribir, y en todos los casos firma el alcalde por ellos con los dos testigos de asistencia. Un testigo de setenta y un años, al final del tramo, tampoco firma por no saber. Ningún acto menciona intérprete: de Silverio Mejía se hace constar expresamente que es «de buena comprensión», es decir, que declara sin él.</p>
+<p><strong>Cómo acaba.</strong> Las tres últimas planas contienen el auto de remisión al asesor y el <strong>dictamen del asesor letrado</strong>, don José Mariano Balexo (?), que llega desde la audiencia de Guatemala por auto acordado. El tramo conservado no alcanza a la sentencia.</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p><strong>El homicidio ocurrió diecisiete o dieciocho años antes de que se abriera el proceso</strong>, hacia 1777 o 1778. La causa se incoa en enero de 1795 porque el reo ha vuelto al partido y vive en él sin recelo, «con menosprecio y respeto de la Real Justicia». Calisto de Lara se ausentó cosa de ocho años después de los hechos y durante ese tiempo nadie instruyó nada. <strong>La ausencia funcionaba como pena de hecho.</strong> A esa distancia no quedaba ningún indicio material, de modo que el expediente descansa en lo que cuatro vecinos y el propio reo recuerdan. Se abre de oficio, sin querellante: la presencia visible del reo obligó al alcalde ordinario a actuar.</p>
+<p>Ninguno de los cinco declarantes firma. Todo el proceso lo sostiene la mano de un escribiente y la fórmula <strong>«con testigos de asistencia a falta de escribano»</strong>: el partido no tenía escribano público y el alcalde actuaba con dos vecinos como fedatarios. Las voces son reales, pero la redacción no es suya, y eso condiciona el uso del expediente como fuente de habla.</p>
+<p>El reo, mulato libre y labrador, está avecindado en <strong>el mineral del Chinar de San Andrés</strong>. El caso permite preguntarse cuánto tiempo podía pasar entre un homicidio y su persecución en un partido rural, y qué hacía falta para reabrirlo.</p>
+<p>Advertencia de datación: el año se asegura por la terminación «…ro de mil setecientos noventa, y cinco años» y por la habilitación del papel sellado para 1795 y 96, no por el mes, que está desvaído. El catálogo previo daba octubre; el papel dice otra cosa.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#f1679">79</a><a href="#f1680">80</a><a href="#f1681">81</a><a href="#f1682">82</a><a href="#f1683">83</a><a href="#f1684">84</a><a href="#f1685">85</a><a href="#f1686">86</a><a href="#f1687">87</a><a href="#f1688">88</a><a href="#f1689">89</a><a href="#f1690">90</a><a href="#f1691">91</a><a href="#f1692">92</a><a href="#f1693">93</a><a href="#f1694">94</a><a href="#f1695">95</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="f1679">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 17</span><h3>IMG_1679</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1679" aria-label="Ampliar la lámina IMG_1679">
+        <img src="../img/lara1795/p001.jpg" alt="Fotografía de la lámina IMG_1679" loading="lazy">
+      </button>
+      <figcaption>Hoja suelta de papel de trapo, sin sello impreso visible; el ángulo superior derecho y toda la banda derecha están muy desgastados y aclarados, con pérdida de tinta. Tinta ferrogálica muy diluida o muy lavada en la zona del nombre del difunto. Doblez horizontal marcado hacia el tercio inferior. Sin foliación visible. La toma es nítida y bien iluminada, pero la luz rasante sobre el papel curvado ensombrece el ángulo derecho.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Carátula o cubierta del expediente. En letra grande y espaciada declara el año, la clase de causa («criminal de oficio», es decir, seguida por la propia justicia y no a instancia de parte), el nombre del reo —Calisto de Lara— y el delito: la muerte que dio a un Mejía. El nombre del difunto, que ocupaba el final del tercer renglón, está hoy comido por la abrasión del margen derecho; el cuerpo del proceso (IMG_1684, 1689, 1691) prueba que era <strong>Andrés Mejía</strong>. No lleva fecha de día ni firma: es rótulo de archivo, no acto judicial.
+
+La hoja de cubierta es más corta que el pliego que protege, de modo que la fotografía recoge además, por debajo de su borde inferior, <strong>los últimos siete renglones del folio siguiente</strong> (los mismos que cierran IMG_1680). Se transcriben aquí por fidelidad a la plana, pero <strong>no deben contarse dos veces</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Año de 1795</span>
+<span class="ln">Criminal de oficio Contra Calis-</span>
+<span class="ln">to de Lara, p<u class="exp" title="abreviatura desarrollada">[o]</u>r muerte que dio a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Mexia.</span>
+</div>
+<p class="note"><em>(bajo el borde de la carátula, pie del folio siguiente:)</em></p>
+<div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>resca, devia de mandar, y mando, se pon-</span>
+<span class="ln">ga en prizion, y en ella sele tome su con-</span>
+<span class="ln">fes<u class="exp" title="abreviatura desarrollada">[io]</u>n. y con su vista pasar a las mas dilig<u class="exp" title="abreviatura desarrollada">[encia]</u>s</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> hallar lug<u class="exp" title="abreviatura desarrollada">[ar]</u> y p<u class="exp" title="abreviatura desarrollada">[o]</u>r esto que proveo, a<u class="exp" title="abreviatura desarrollada">[si]</u></span>
+<span class="ln">lo mando y firmo en este Puebl<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">de Cucuyagua a los doce dias de<u class="exp" title="abreviatura desarrollada">[l]</u></span>
+<span class="ln">mes de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Henero?]</u></u> de mil setecientos noventa y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Año de 1795. Causa criminal de oficio contra Calisto de Lara, por la muerte que dio a [Andrés] Mejía.</p>
+<p>(Y, asomando por debajo de la cubierta, el pie del auto siguiente:) «…merezca, debía de mandar y mando se ponga en prisión, y en ella se le tome su confesión, y a la vista de ella pasar a las demás diligencias que hubiere lugar; y por este que proveo, así lo mando y firmo en este pueblo de Cucuyagua, a doce días del mes de enero de mil setecientos noventa y [cinco].»</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media-alta para los tres primeros renglones (el apellido «de Lara» y la palabra «muerte» son inequívocos; la partición «Calis-/to» es segura por el cuerpo del proceso); <strong>baja</strong> para el nombre del difunto, que no se deja fijar y que por eso dejo en blanco antes que inventarlo; alta para el pie que se ve por debajo, cotejado con IMG_1680.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1680">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 17</span><h3>IMG_1680</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1680" aria-label="Ampliar la lámina IMG_1680">
+        <img src="../img/lara1795/p002.jpg" alt="Fotografía de la lámina IMG_1680" loading="lazy">
+      </button>
+      <figcaption>Papel sellado con la cabecera impresa del <strong>sello cuarto</strong> y dos estampillas circulares de habilitación en el margen izquierdo: la de armas reales («CAROLVS III D G HISPAN REX / VN QVARTILLO») y la de rehabilitación por reinado. Tinta ferrogálica parda, bien conservada en el cuerpo, muy desvaída en los tres últimos renglones —justamente los de la fecha—. El borde derecho del pliego se curva hacia la sombra y recorta las últimas sílabas de casi todos los renglones. Sin foliación visible. Toma excelente, pero la iluminación rasante arruina el pie de la plana.
+
+Leyenda impresa de cabecera: ✠ · Un quartillo. · SELLO QVARTO, VN QVAR- · TILLO, AÑOS DE MIL SETE- · CIENTOS OCHENTA Y OCHO, · Y OCHENTA Y NUEVE.
+
+Habilitación manuscrita/estampada (sello de placa, margen izquierdo): · ✠ UALGA · POR EL REY- · NADO DEL S. · D. CARLOS IV. · Y POR LOS A[ñ]E[s] · 1795 Y 96.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Auto cabeza de proceso</strong>, el acto que abre la causa. Lo dicta don Dionicio de Pineda y Bran, alcalde ordinario de primera nominación del partido de Sensentí («Sementi» escribe el amanuense) y su distrito. Habiéndosele dado noticia de que Calisto de Lara anda suelto en la jurisdicción, con menosprecio de la Real Justicia, pese a haber hecho una muerte años atrás sin castigo ni satisfacción a la vindicta pública, manda prenderlo, tomarle confesión en la cárcel y seguir las demás diligencias. Firmado en el pueblo de <strong>Cucuyagua</strong>, a <strong>doce de enero de 1795</strong> (véase abajo la discusión de la fecha).</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n Dionicio de Pineda, y Bra<u class="exp" title="abreviatura desarrollada">[n]</u></span>
+<span class="ln">Alcalde Ordinario de primera</span>
+<span class="ln">Nominac<u class="exp" title="abreviatura desarrollada">[io]</u>n en este Partido de Sementi,</span>
+<span class="ln">y su distrito &amp;<u class="exp" title="abreviatura desarrollada">[c]</u>a.</span>
+<span class="ln">Por quanto seme ha dado noticia de que</span>
+<span class="ln">Calisto de Lara de esta Jurisdiccion</span>
+<span class="ln">con menos precio, y respeto de la R<u class="exp" title="abreviatura desarrollada">[ea]</u>l Justicia</span>
+<span class="ln">se halla andando libremente, sin embargo</span>
+<span class="ln">de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿traber?]</u></u> hecho una muerte, en años pa-</span>
+<span class="ln">sados, Cuio delito no sele ha castigado, ni</span>
+<span class="ln">Dado satisfa<u class="exp" title="abreviatura desarrollada">[ccio]</u>n de el <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿a la?]</u></u> vindicta pub<u class="exp" title="abreviatura desarrollada">[lic]</u>a. y</span>
+<span class="ln">Para <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿aberiguar?]</u></u> lo cierto, y caso de salir</span>
+<span class="ln">culpado aplicandole el condigno que me-</span>
+<span class="ln">resca, devia de mandar, y mando, se pon-</span>
+<span class="ln">ga en prizion, y en ella sele tome su con-</span>
+<span class="ln">fes<u class="exp" title="abreviatura desarrollada">[io]</u>n. y con su vista pasar a las mas dilig<u class="exp" title="abreviatura desarrollada">[encia]</u>s</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> hallar lug<u class="exp" title="abreviatura desarrollada">[ar]</u> y p<u class="exp" title="abreviatura desarrollada">[o]</u>r esto que proveo, a<u class="exp" title="abreviatura desarrollada">[si]</u></span>
+<span class="ln">lo mando y firmo en este Puebl<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">de Cucuyagua a los doce dias de<u class="exp" title="abreviatura desarrollada">[l]</u></span>
+<span class="ln">mes de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Henero?]</u></u> de mil setecientos noventa y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Don Dionisio de Pineda y Bran, alcalde ordinario de primera nominación en este partido de Sensentí y su distrito, etcétera.</p>
+<p>Por cuanto se me ha dado noticia de que Calisto de Lara, de esta jurisdicción, con menosprecio y falta de respeto a la Real Justicia, anda libremente pese a haber hecho una muerte en años pasados, delito que no se le ha castigado ni por el cual se ha dado satisfacción a la vindicta pública; y para averiguar lo cierto, y, en caso de salir culpado, aplicarle el castigo condigno que merezca, debía de mandar y mando que se le ponga en prisión, y que en ella se le tome su confesión, y que a la vista de ella se pase a las demás diligencias a que hubiere lugar. Y por este que proveo, así lo mando y firmo en este pueblo de Cucuyagua, a doce días del mes de enero de mil setecientos noventa y [cinco].</p>
+      </div>
+      <p class="conf"><span>Confianza</span> alta para el cuerpo del auto; <strong>media</strong> para la fecha. El día («doce») y el año («mil setecientos noventa y…») son claros. El nombre del mes está en el renglón más desvaído de la plana; con sustracción de fondo se lee un trazo de seis letras que interpreto <strong>«Henero»</strong> (enero), y el auto inmediato siguiente (IMG_1681) conserva de ese mismo mes la terminación <strong>«…ro de mil setecientos noventa, y cinco años»</strong>, lo que descarta <em>octubre</em> y deja sólo <em>enero</em> o <em>febrero</em>. <strong>Discrepa, pues, del catálogo previo, que sitúa estas diligencias en octubre de 1795.</strong>
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1681">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 17</span><h3>IMG_1681</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1681" aria-label="Ampliar la lámina IMG_1681">
+        <img src="../img/lara1795/p003.jpg" alt="Fotografía de la lámina IMG_1681" loading="lazy">
+      </button>
+      <figcaption>Segunda plana del pliego: <strong>sin cabecera impresa</strong> (el sello va en la primera y en la última plana de cada pliego). Tinta parda, buena conservación. El margen derecho del pliego cae en sombra y queda fuera de encuadre, con pérdida de las últimas sílabas de casi todos los renglones —la merma más grave de este tramo—. Toma nítida; al ángulo superior izquierdo asoman los dedos y el papel de protección de quien sostiene el legajo.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Tres actos seguidos, todos del mismo alcalde y del día siguiente al auto cabeza de proceso.
+1) El cierre y las firmas del auto de IMG_1680 («…con los testigos que me asisten por falta de escribano, y certifico»), suscrito por Dionicio de Pineda y Bran con dos testigos de asistencia: Josef B[eni]to Mejía y Tomás José de Muñoz.
+2) <strong>Auto de prisión y de confesión</strong>: habiéndosele dado parte por Dionicio [¿Ríos?], alcalde de este pueblo, de que en virtud de lo mandado se prendió a Calisto de Lara y queda asegurado en la cárcel pública, manda pasar a ella con testigos y tomarle confesión juramentado en forma. Fechado <strong>en Cucuyagua, a trece de [enero] de mil setecientos noventa y cinco años</strong>.
+3) <strong>Cabeza de la confesión</strong>: el alcalde, asociado de los testigos, se constituye en la casa de cabildo, donde en la cárcel está preso Calisto de Lara.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">[... testigos con q<u class="exp" title="abreviatura desarrollada">[uienes]</u> me asisten p<u class="exp" title="abreviatura desarrollada">[o]</u>r]</span>
+<span class="ln">falta de Escrivano y Certifico =</span>
+<span class="ln">Dionicio de Pinedal <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">y Bran <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Josef B<u class="exp" title="abreviatura desarrollada">[eni]</u>to Mexia <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Tomas Jose de</span>
+<span class="ln">Muñoz <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Despues de averseme dado parte p<u class="exp" title="abreviatura desarrollada">[o]</u>r Dionicio <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Rios?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">de este Pueblo, de que en virtud de lo mandado en el</span>
+<span class="ln">anterior proveido a la prision de Calisto de Lara <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">qual se pasa aseg<u class="exp" title="abreviatura desarrollada">[u]</u>rado en la Carcel publica; mand<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">asociado de testig<u class="exp" title="abreviatura desarrollada">[o]</u>s se pase a la Citada Carc<u class="exp" title="abreviatura desarrollada">[el]</u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> en hella sele tome su confecion Juramenta<u class="exp" title="abreviatura desarrollada">[do]</u></span>
+<span class="ln">en forma, y conforme a d<u class="exp" title="abreviatura desarrollada">[e]</u>r<u class="exp" title="abreviatura desarrollada">[ech]</u>o. Lo proveo, man<u class="exp" title="abreviatura desarrollada">[do]</u></span>
+<span class="ln">y firmo Yo el Citado Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e con testig<u class="exp" title="abreviatura desarrollada">[o]</u>s <u class="exp" title="abreviatura desarrollada">[por falta de]</u></span>
+<span class="ln">Escriv<u class="exp" title="abreviatura desarrollada">[an]</u>o en Cucuyagua a los trese dias d<u class="exp" title="abreviatura desarrollada">[e]</u>l mes</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[de ...]</u>ro de mil setecientos noventa, y cinco añ<u class="exp" title="abreviatura desarrollada">[os]</u></span>
+<span class="ln">Dionicio de Pinedal <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">y Bran <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Josef B<u class="exp" title="abreviatura desarrollada">[eni]</u>to Mexia <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Tomas Jose de</span>
+<span class="ln">Muñoz <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Pueblo, mes, dia, y año Yo <u class="exp" title="abreviatura desarrollada">[el Alc[ald]</u>e]</span>
+<span class="ln">Ordinario D<u class="exp" title="abreviatura desarrollada">[o]</u>n Dionicio de Pineda asocia<u class="exp" title="abreviatura desarrollada">[do de]</u></span>
+<span class="ln">los <u class="exp" title="abreviatura desarrollada">[testigos]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> me asisten por falta de Esc<u class="exp" title="abreviatura desarrollada">[rivano]</u></span>
+<span class="ln">me constitui en la Casa de Cavildo en <u class="exp" title="abreviatura desarrollada">[que de]</u></span>
+<span class="ln">Carcel se halla preso Calisto de Lar<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>(…con los testigos que me asisten por falta de escribano, y certifico.) <em>Firmado:</em> Dionisio de Pineda y Bran; testigos Josef Benito Mejía y Tomás José de Muñoz.</p>
+<p>Después de habérseme dado parte por Dionisio [¿Ríos?], alcalde de este pueblo, de que en virtud de lo mandado en el proveído anterior se procedió a la prisión de Calisto de Lara, el cual queda asegurado en la cárcel pública, mando que, asociado de testigos, se pase a la dicha cárcel y que en ella se le tome su confesión, juramentado en forma y conforme a derecho. Lo proveo, mando y firmo yo, el citado alcalde, con testigos por falta de escribano, en Cucuyagua, a trece días del mes de [enero] de mil setecientos noventa y cinco años.</p>
+<p>En dicho pueblo, mes, día y año, yo, el alcalde ordinario don Dionisio de Pineda, asociado de los testigos que me asisten por falta de escribano, me constituí en la casa de cabildo, en cuya cárcel se halla preso Calisto de Lara…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media-alta. El sentido de los tres actos es firme y las firmas son legibles. Lo que rebaja la nota es puramente material: <strong>el margen derecho quedó fuera del encuadre</strong>, de modo que las últimas sílabas van reconstruidas por la fórmula notarial. El apellido del alcalde del pueblo que da parte («Dionicio …») se corta justo en el borde; la primera parte de la fecha («trese dias del mes») es segura, y del mes sólo sobrevive la terminación «-ro».
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1682">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 17</span><h3>IMG_1682</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1682" aria-label="Ampliar la lámina IMG_1682">
+        <img src="../img/lara1795/p004.jpg" alt="Fotografía de la lámina IMG_1682" loading="lazy">
+      </button>
+      <figcaption>Tercera plana del pliego, <strong>sin cabecera impresa</strong>. Papel limpio, tinta parda uniforme y letra cursiva menuda y regular; es de las planas mejor conservadas. El borde superior está desgarrado en dientes, con pequeñas pérdidas que no afectan al texto. Margen derecho parcialmente recortado por la curvatura. Sin foliación visible. Toma muy buena.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Confesión de Calisto de Lara</strong>, tomada en la cárcel el trece del mes. Recibe juramento por Dios Nuestro Señor y una señal de cruz, y le pregunta por su nombre, patria, calidad, oficio y vecindad. Es la plana más rica del tramo en datos de persona y de lugar: el reo se declara <strong>oriundo del valle de los Llanos de Santa Flora</strong>, de <strong>calidad mulato libre</strong>, de <strong>oficio labrador</strong>, y avecindado en el <strong>Chinar de San Andrés</strong> (el mineral). Presume que su prisión es por una muerte que hizo años atrás <strong>en la quebrada del Agua Blanca, inmediata a la aldea del Jocomico</strong>. Cuenta el origen: iba a <strong>Ocotepeque</strong> a bautizar un niño y, no teniendo cabalgadura, pidió prestada una yegua a <strong>Marco Calderón</strong>, vecino del mineral; llegado al Agua Blanca se echó a sestear.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Quien aciendole parecer presente, y ante los</span>
+<span class="ln">testig<u class="exp" title="abreviatura desarrollada">[o]</u>s Citados le Recivi Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to que hizo en toda</span>
+<span class="ln">forma de d<u class="exp" title="abreviatura desarrollada">[e]</u>r<u class="exp" title="abreviatura desarrollada">[ech]</u>o p<u class="exp" title="abreviatura desarrollada">[o]</u>r Dios N<u class="exp" title="abreviatura desarrollada">[uestro]</u> S<u class="exp" title="abreviatura desarrollada">[eño]</u>r y una señal de Cruz</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[por]</u> cuia gravedad prometio decir verdad de</span>
+<span class="ln">quanto sepa, y sele pregu<u class="exp" title="abreviatura desarrollada">[n]</u>te. y siendolo p<u class="exp" title="abreviatura desarrollada">[o]</u>r su nombre,</span>
+<span class="ln">patria, Calidad, oficio, y vecindad: dixo que su</span>
+<span class="ln">nombre es el de Calisto de Lara, oriundo del va-</span>
+<span class="ln">lle de los Llanos de S<u class="exp" title="abreviatura desarrollada">[an]</u>ta Flora, Jurisdicion de <u class="exp" title="abreviatura desarrollada">[Prov[inci]</u>a]</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> su calidad la de Mulato libre su oficio el de la-</span>
+<span class="ln">brador, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> actualm<u class="exp" title="abreviatura desarrollada">[en]</u>te se halla avecindado en la</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Chinar?]</u></u> de San Andres, y R<u class="exp" title="abreviatura desarrollada">[espon]</u>de. Preg<u class="exp" title="abreviatura desarrollada">[unta]</u>do: si save</span>
+<span class="ln">la Causa de su prision o la ynfiere dixo: que pre-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[su]</u>me el motivo de su prision sea vna muerte, que</span>
+<span class="ln">hizo en este Valle en años pasados en la Quebrada</span>
+<span class="ln">de la Agua blanca Inmediata a la Aldea de el</span>
+<span class="ln">Jocomico, y R<u class="exp" title="abreviatura desarrollada">[espon]</u>de. Preguntado, q<u class="exp" title="abreviatura desarrollada">[ue]</u> le movio a</span>
+<span class="ln">hacerla, y con que Armas dixo: que haviendo de-</span>
+<span class="ln">terminado el ir al Pueblo de Ocotepeque a</span>
+<span class="ln">bautisar un Niño, no teniendo en q<u class="exp" title="abreviatura desarrollada">[ue]</u> conducirse</span>
+<span class="ln">suplico a Marco Calderon Vecino de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Mineral</span>
+<span class="ln">que le prestase una Vestia, quien le franqueo una</span>
+<span class="ln">Yegua en la qual sepuso a Camino p<u class="exp" title="abreviatura desarrollada">[ar]</u>a el Citado</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[des]</u>tino, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> haviendo llegado a la Aguablanca</span>
+<span class="ln">tuvo a vien Sestiar alli; y que aviendose dor-</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Al cual, haciéndole comparecer y ante los testigos citados, le recibí juramento, que hizo en toda forma de derecho por Dios Nuestro Señor y una señal de cruz, bajo cuya gravedad prometió decir verdad de cuanto supiere y se le preguntare. Y siéndolo por su nombre, patria, calidad, oficio y vecindad, dijo: que su nombre es el de Calisto de Lara, oriundo del valle de los Llanos de Santa Flora, jurisdicción de [la provincia de …]; que su calidad es la de mulato libre; su oficio, el de labrador; y que actualmente está avecindado en el Chinar de San Andrés. Y responde.</p>
+<p>Preguntado si sabe la causa de su prisión, o la infiere, dijo: que presume que el motivo sea una muerte que hizo en este valle años pasados, en la quebrada del Agua Blanca, inmediata a la aldea del Jocomico. Y responde.</p>
+<p>Preguntado qué le movió a hacerla y con qué armas, dijo: que habiendo determinado ir al pueblo de Ocotepeque a bautizar un niño, y no teniendo en qué conducirse, suplicó a Marco Calderón, vecino de dicho mineral, que le prestase una bestia; el cual le franqueó una yegua, en la que se puso en camino para el citado destino. Y que, habiendo llegado al Agua Blanca, tuvo a bien sestear allí; y que habiéndose dormi[do]…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> alta para el conjunto. Reservas puntuales: <strong>«Chinar»</strong> (de San Andrés) es lectura segura en las letras pero topónimo que no sé cotejar —podría ser <em>Chinal</em>—; el renglón que sigue a «Jurisdicion de Prov[inci]a» pierde la provincia en el margen derecho; <strong>«S[an]ta Flora»</strong> es nítido letra a letra y lo dejo como está pese a su rareza.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1683">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 17</span><h3>IMG_1683</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1683" aria-label="Ampliar la lámina IMG_1683">
+        <img src="../img/lara1795/p005.jpg" alt="Fotografía de la lámina IMG_1683" loading="lazy">
+      </button>
+      <figcaption>Cuarta y última plana del pliego: <strong>lleva de nuevo la cabecera impresa del sello cuarto</strong> y las dos estampillas circulares (armas reales y habilitación de Carlos IV para 1795 y 96), en la esquina superior izquierda. Papel algo más sucio, con la estampilla en parte tapada por el papel de protección y los dedos del portador. Borde derecho recortado por la curvatura. Toma buena, con luz rasante que acentúa el grano del papel.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Continuación de la confesión. Calisto refiere que, despertado al buen rato, no halló la yegua donde la había amarrado; presumiendo que se hubiera vuelto a la querencia, echó a andar tras ella y de nuevo encontró a <strong>Andrés Mejía y Silverio Mejía</strong>, que traían la yegua. La amarraron a doce pasos y fueron a saludarle; él les preguntó cómo la habían topado y ellos respondieron que aquella que traían era la suya, pero que no se la entregarían hasta ir primero con ella ante la justicia, porque presumían que la llevase robada. El reo condescendió.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">✠  Un quartillo.</span>
+<span class="ln">SELLO QVARTO, VN QVAR-</span>
+<span class="ln">TILLO, AÑOS DE MIL SETE-</span>
+<span class="ln">CIENTOS OCHENTA Y OCHO,</span>
+<span class="ln">Y OCHENTA Y NUEVE.</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[sello de placa:]</u> ✠ UALGA / POR EL REY- / NADO DEL S. /</span>
+<span class="ln">D. CARLOS IV. / Y POR LOS A<u class="exp" title="abreviatura desarrollada">[ñ]</u>E<u class="exp" title="abreviatura desarrollada">[s]</u> / 1795 Y 96.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[dor]</u>mido, abuen arato recordó, y no encontró</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[la]</u> Yegua donde la havia amarrado, por lo que</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[pre]</u>sumiendo se le bolviese a la querencia hecho</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[a andar p[ar]</u>a ella], y q<u class="exp" title="abreviatura desarrollada">[ue]</u> aviendo andado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[de]</u> nuevo encontro a Andres Mexia, y Silverio=</span>
+<span class="ln">Mexia quienes traillan la Citada Yegua la qu<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln">al q<u class="exp" title="abreviatura desarrollada">[ue]</u> deClara amarraron a dis-</span>
+<span class="ln">tancia de dose pasos, y se fueron a saludarlo en</span>
+<span class="ln">cuyo tiempo les pregunto Como le avian topado</span>
+<span class="ln">a tal Yegua a q<u class="exp" title="abreviatura desarrollada">[ue]</u> le respondieron, q<u class="exp" title="abreviatura desarrollada">[ue]</u> aquella</span>
+<span class="ln">trayan hera, pero q<u class="exp" title="abreviatura desarrollada">[ue]</u> no se la entregavan has-</span>
+<span class="ln">ta tanto no fuesen primero con hella ante</span>
+<span class="ln">la Justicia, pues presumian, q<u class="exp" title="abreviatura desarrollada">[ue]</u> la llevase ro-</span>
+<span class="ln">bada, a lo qual condescendió el q<u class="exp" title="abreviatura desarrollada">[ue]</u> declara, y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…dormido, al buen rato despertó y no encontró la yegua donde la había amarrado. Presumiendo que se le hubiese vuelto a la querencia, echó a andar tras ella; y habiendo andado [un trecho] encontró de nuevo a Andrés Mejía y a Silverio Mejía, que traían la citada yegua. Al ver al que declara la amarraron a distancia de doce pasos y fueron a saludarlo. Entonces él les preguntó cómo habían topado con aquella yegua, a lo que respondieron que la que traían era aquélla, pero que no se la entregarían hasta que fueran primero con ella ante la justicia, pues presumían que la llevase robada. A lo cual condescendió el que declara…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media-alta. La secuencia narrativa es segura y los dos nombres —Andrés Mejía y Silverio Mejía— inequívocos. La reconstrucción de los renglones 3.º-4.º del cuerpo («hecho a andar para ella, y que habiendo andado…») descansa en parte en el margen derecho perdido; el enlace exacto entre «la qual» y «al que declara amarraron» no se deja fijar del todo.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1684">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 17</span><h3>IMG_1684</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1684" aria-label="Ampliar la lámina IMG_1684">
+        <img src="../img/lara1795/p006.jpg" alt="Fotografía de la lámina IMG_1684" loading="lazy">
+      </button>
+      <figcaption>Primera plana de un pliego nuevo: <strong>cabecera impresa del sello cuarto</strong> visible en lo alto, con el borde superior desgarrado en dientes que se come parte de la palabra «quartillo». Estampillas circulares al margen izquierdo. El pie de la plana cae en sombra profunda y el papel se curva: los dos últimos renglones son apenas legibles. Toma correcta, con los dedos del portador en el ángulo superior izquierdo.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">El núcleo del hecho, en boca del propio reo. Refiere que hirió de punta en la frente a <strong>Andrés Mejía</strong>; que, visto eso, arremetió contra <strong>Silverio Mejía</strong>, a quien dio un machetazo sobre la frente de bastante consideración, por lo que Silverio echó a huir; que en ese momento el que declara volvió —por haberse apartado algún trecho con la riña de Silverio— adonde estaba Andrés, a quien halló en el suelo, bastante desangrado, y <strong>tomando su misma espada le dio otro machetazo en la cabeza</strong>, donde mismo estaba tendido. Luego recogió las espadas de ambos Mejías, tomó la yegua y volvió al mineral de donde había salido el día antes, que era viernes; entregada la yegua a su dueño legítimo, <strong>se ausentó del partido cosa de ocho años</strong>, al cabo de los cuales volvió y se ha mantenido sin recelo alguno.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">✠  Un quart<u class="exp" title="abreviatura desarrollada">[ill]</u>o.</span>
+<span class="ln">SELLO QVARTO, VN QVAR-</span>
+<span class="ln">TILLO, AÑOS DE MIL SETE-</span>
+<span class="ln">CIENTOS OCHENTA Y OCHO,</span>
+<span class="ln">Y OCHENTA Y NUEVE.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> vna herida de punta en la frente <u class="exp" title="abreviatura desarrollada">[a]</u> Andres</span>
+<span class="ln">Mexia: que haviendose visto por lo d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho</span>
+<span class="ln">libre de este arremitio contra Silverio Mexia</span>
+<span class="ln">a quien le dio un machetaso: sobre la frente</span>
+<span class="ln">de bastante concideracion por cuio motivo hecho</span>
+<span class="ln">a fuir, y en esta ocassion bolvio el q<u class="exp" title="abreviatura desarrollada">[ue]</u> declara</span>
+<span class="ln">por averse retirado algun trecho con la riña</span>
+<span class="ln">de Silverio) para donde estava Andres a quien</span>
+<span class="ln">hayo en el suelo bastante desangrado, y tomando</span>
+<span class="ln">su misma Espada ledio otro machetaso en la Ca-</span>
+<span class="ln">vesa donde mismo estava <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿vatirado?]</u></u>, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> luego reco-</span>
+<span class="ln">giendo las Espadas de ambos Mexias tomó</span>
+<span class="ln">la Yegua, y se vino al mineral donde avia sa-</span>
+<span class="ln">lido el dia antes, q<u class="exp" title="abreviatura desarrollada">[ue]</u> hera viernes, y aviendola en-</span>
+<span class="ln">tregado a su legitimo dueño se ausentó de este</span>
+<span class="ln">Part<u class="exp" title="abreviatura desarrollada">[id]</u>o. Cosa de ôcho años al cabo de los quales bol-</span>
+<span class="ln">vio, y se a mantenido sin ninguna recerva m<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>ndo no se pensava en castigarle, Cuia Cau<u class="exp" title="abreviatura desarrollada">[sa]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ledio <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿merito?]</u></u> a la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y en el dia de <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…una herida de punta en la frente a Andrés Mejía. Que, habiéndose visto por lo dicho libre de éste, arremetió contra Silverio Mejía, a quien dio un machetazo sobre la frente, de bastante consideración, por cuyo motivo echó a huir. Y que en esa ocasión el que declara volvió —pues se había apartado algún trecho con la riña de Silverio— adonde estaba Andrés, a quien halló en el suelo bastante desangrado; y tomando su misma espada le dio otro machetazo en la cabeza, allí donde estaba tendido. Y que luego, recogiendo las espadas de ambos Mejías, tomó la yegua y se vino al mineral de donde había salido el día antes, que era viernes; y habiéndola entregado a su legítimo dueño, se ausentó de este partido cosa de ocho años, al cabo de los cuales volvió y se ha mantenido sin ningún recelo, [entendiendo] que no se pensaba en castigarle…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> alta para el relato del homicidio (los dos machetazos, las espadas, la yegua, el viernes, los ocho años de ausencia). <strong>Baja para los dos últimos renglones</strong>, que la sombra y la curvatura del papel dejan casi ilegibles; los dejo con lagunas antes que completarlos de memoria. `[¿vatirado?]`: la palabra tras «estava» admite también la lectura «ya tirado», que es la que da mejor sentido.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1685">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 7 de 17</span><h3>IMG_1685</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1685" aria-label="Ampliar la lámina IMG_1685">
+        <img src="../img/lara1795/p007.jpg" alt="Fotografía de la lámina IMG_1685" loading="lazy">
+      </button>
+      <figcaption>Segunda plana del pliego, <strong>sin cabecera impresa</strong>. Papel limpio; tinta parda; dos bloques de firmas con rúbricas amplias. Margen derecho recortado por la curvatura. Sin foliación visible. Toma nítida.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Dos actos. (1) <strong>Cierre de la confesión</strong>: preguntado por las armas, dice que las que se usaron en la riña y con que dio las heridas fueron <strong>espadas</strong>, de largo regular. Declara ser <strong>de edad de treinta y ocho años</strong>, y que <strong>hace cosa de diecisiete a dieciocho años que sucedió la muerte</strong>. <strong>No firmó porque dijo no saber</strong>; firmó el alcalde por él, tras leerle su deposición, en que se afirmó y ratificó, con los testigos de asistencia por falta de escribano. (2) <strong>Auto de citación</strong>: como de la confesión resulta cita contra <strong>Marco Calderón</strong> y <strong>Silverio Mejía</strong>, manda hacerlos comparecer en el juzgado y examinarlos juramentados sobre los puntos de la cita.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">en este estado: q<u class="exp" title="abreviatura desarrollada">[ue]</u> las Armas Con que se ofreci<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">la Riña, y dio las heridas, q<u class="exp" title="abreviatura desarrollada">[ue]</u> Confiesa dar fue<u class="exp" title="abreviatura desarrollada">[ron]</u></span>
+<span class="ln">Espadas, y del largo Regular, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> todo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">es la verdad de quanto puede de Clarar so Carg<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">del Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to q<u class="exp" title="abreviatura desarrollada">[ue]</u> f<u class="exp" title="abreviatura desarrollada">[ec]</u>ho tiene. espresó Ser de hedad d<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln">Treinta, y ocho años, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> hay q<u class="exp" title="abreviatura desarrollada">[ue]</u> susedio la mu-</span>
+<span class="ln">erte cosa de Diez y siete a die<u class="exp" title="abreviatura desarrollada">[z y]</u> ocho años. no firm<u class="exp" title="abreviatura desarrollada">[ó]</u></span>
+<span class="ln">porque dixo no saver, hiselo Yo. despues de aver-</span>
+<span class="ln">le leido esta su depocission en que se afirmo, y</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Ra]</u>tifico Con los testig<u class="exp" title="abreviatura desarrollada">[o]</u>s q<u class="exp" title="abreviatura desarrollada">[ue]</u> me acisten en falta de Es-</span>
+<span class="ln">crivano.=</span>
+<span class="ln">Dionicio de Pinedal <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">y Bran <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Josef B<u class="exp" title="abreviatura desarrollada">[eni]</u>to Mexia <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Tomas Jose de</span>
+<span class="ln">Muñoz <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Respeto a que por la anterior depocission <u class="exp" title="abreviatura desarrollada">[resulta]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[cita]</u> a Marco Calderon, y Silverio Mexia de<u class="exp" title="abreviatura desarrollada">[vo]</u></span>
+<span class="ln">mandar, y mando se ayan Comparecer en este <u class="exp" title="abreviatura desarrollada">[Juz]</u>-</span>
+<span class="ln">gado, y Juramentados en toda forma se Ex<u class="exp" title="abreviatura desarrollada">[a]</u>-</span>
+<span class="ln">minen sobre los puntos a que se contrae</span>
+<span class="ln">la cita que se les hare, y p<u class="exp" title="abreviatura desarrollada">[o]</u>r este q<u class="exp" title="abreviatura desarrollada">[ue]</u> proveo <u class="exp" title="abreviatura desarrollada">[asi lo]</u></span>
+<span class="ln">mando, y firmo en el Citado Pueblo dia, mes,</span>
+<span class="ln">y año Con los testig<u class="exp" title="abreviatura desarrollada">[o]</u>s <u class="exp" title="abreviatura desarrollada">[de mi asistencia]</u> en falta de</span>
+<span class="ln">Escriv<u class="exp" title="abreviatura desarrollada">[an]</u>o.=</span>
+<span class="ln">Dionicio de Pinedal <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">y Bran <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Josef B<u class="exp" title="abreviatura desarrollada">[eni]</u>to Mexia <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Tomas Jose de</span>
+<span class="ln">Muñoz <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…en este estado: que las armas con que se ofreció la riña, y con que dio las heridas que confiesa, fueron espadas, y de largo regular; y que todo [lo dicho] es la verdad de cuanto puede declarar, so cargo del juramento que tiene hecho. Expresó ser de edad de treinta y ocho años, y que hace cosa de diecisiete a dieciocho años que sucedió la muerte. <strong>No firmó porque dijo no saber; lo hice yo</strong>, después de haberle leído esta su deposición, en la que se afirmó y ratificó, con los testigos que me asisten por falta de escribano.</p>
+<p>Respecto a que por la anterior deposición resulta cita contra Marco Calderón y Silverio Mejía, debo mandar y mando que se les haga comparecer en este juzgado, y que, juramentados en toda forma, sean examinados sobre los puntos a que se contrae la cita que se les hará. Y por este que proveo, así lo mando y firmo en el citado pueblo, día, mes y año, con los testigos de mi asistencia por falta de escribano.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> alta. Los dos datos que más importan —<strong>38 años de edad</strong> y <strong>no sabe firmar</strong>— se leen sin esfuerzo, igual que el intervalo de 17 a 18 años transcurridos desde la muerte, que sitúa el homicidio hacia 1777-1778. El único renglón dudoso es el tercero, cuyo final se pierde en el margen.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1686">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 8 de 17</span><h3>IMG_1686</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1686" aria-label="Ampliar la lámina IMG_1686">
+        <img src="../img/lara1795/p008.jpg" alt="Fotografía de la lámina IMG_1686" loading="lazy">
+      </button>
+      <figcaption>Tercera plana del pliego, <strong>sin cabecera impresa</strong>. Papel limpio, tinta parda; hacia el centro hay una zona de pliegue vertical que aclara algunas palabras. Borde superior dentado. Margen derecho recortado. Toma buena.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees"><strong>Declaración de Marco Calderón</strong>, el dueño de la yegua, tomada el mismo día. Vecino de este vecindario, conocido del alcalde, jura en forma. Al tenor de la cita que le hace Calisto de Lara, dice que <strong>es cierto que le prestó la yegua</strong>; que al día siguiente de habérsela entregado vino a devolvérsela diciendo que no había ido adonde pensaba porque le habían salido al camino Andrés Mejía y Silverio Mejía, quienes se la quitaron presumiendo que la llevaba robada, y que por tal causa habían tenido pleito y los dejaba tendidos; y que el mismo día se ausentó. Declara <strong>ser de edad de sesenta años</strong>, y que <strong>aunque le tocan por afinidad las generales de la ley</strong>, no por eso ha faltado a la gravedad de su juramento.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">El mismo dia cumpliendo con lo mandado en</span>
+<span class="ln">el auto anterior parecio presente Marco Cal-</span>
+<span class="ln">deron de este Vecindario, q<u class="exp" title="abreviatura desarrollada">[ue]</u> Certifico Conosco a</span>
+<span class="ln">quien por ante testig<u class="exp" title="abreviatura desarrollada">[o]</u>s le Recivi Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to que</span>
+<span class="ln">hizo en toda forma de d<u class="exp" title="abreviatura desarrollada">[e]</u>r<u class="exp" title="abreviatura desarrollada">[ech]</u>o p<u class="exp" title="abreviatura desarrollada">[o]</u>r Dios N<u class="exp" title="abreviatura desarrollada">[uestr]</u>o S<u class="exp" title="abreviatura desarrollada">[eño]</u>r y una</span>
+<span class="ln">señal de Cruz p<u class="exp" title="abreviatura desarrollada">[o]</u>r el qual prometio decir Ver-</span>
+<span class="ln">dad en q<u class="exp" title="abreviatura desarrollada">[uan]</u>to sepa, y se le pregu<u class="exp" title="abreviatura desarrollada">[n]</u>te, y ciendolo <u class="exp" title="abreviatura desarrollada">[al tenor]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[de la]</u> cita, q<u class="exp" title="abreviatura desarrollada">[ue]</u> le hase Calisto de Lara en su depoci-</span>
+<span class="ln">cion dixo: que es Cierto haverle prestado</span>
+<span class="ln">la Yegua que se refiere la qual al dia siguie-</span>
+<span class="ln">ente de habersela entregado vino a debol-</span>
+<span class="ln">bersela diciendole, q<u class="exp" title="abreviatura desarrollada">[ue]</u> no havia ydo donde pen-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[sa]</u>va por averle salido al Camino Andres</span>
+<span class="ln">Mexia, y Silverio Mexia a quienes le quitar<u class="exp" title="abreviatura desarrollada">[on]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[la]</u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha Yegua presumiendo la llevaba robada</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[y q]</u>ue p<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿tal?]</u></u> Causa avian tenido pleito, y <u class="exp" title="abreviatura desarrollada">[que]</u></span>
+<span class="ln">los dexava tendidos Como acimismo la esta-</span>
+<span class="ln">va de las manos el referido Calisto, q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">en el mismo dia seausento: q<u class="exp" title="abreviatura desarrollada">[ue]</u> es lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> save</span>
+<span class="ln">y puede declarar en Cargo de su Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to en q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">se afirmo, y Ratifico leida q<u class="exp" title="abreviatura desarrollada">[ue]</u> le fue esta su decla<u class="exp" title="abreviatura desarrollada">[ra]</u>-</span>
+<span class="ln">cion espresó Ser de hedad de secenta años, y q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">aunque le tocan por afinidad las Generales</span>
+<span class="ln">de la Ley no por eso a faltado a la gravedad</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>El mismo día, cumpliendo con lo mandado en el auto anterior, compareció Marco Calderón, de este vecindario, a quien certifico conozco; y por ante testigos le recibí juramento, que hizo en toda forma de derecho por Dios Nuestro Señor y una señal de cruz, por el cual prometió decir verdad en cuanto supiere y se le preguntare. Y siéndolo al tenor de la cita que le hace Calisto de Lara en su deposición, dijo: que es cierto haberle prestado la yegua de que se trata; la cual, al día siguiente de habérsela entregado, vino a devolvérsela, diciéndole que no había ido adonde pensaba porque le habían salido al camino Andrés Mejía y Silverio Mejía, quienes le quitaron dicha yegua presumiendo que la llevaba robada; y que por tal causa habían tenido pleito, y que los dejaba tendidos, como asimismo [la yegua] la estaba [suelta] de las manos, según el referido Calisto; y que el mismo día se ausentó. Que es lo que sabe y puede declarar a cargo de su juramento, en el que se afirmó y ratificó, leída que le fue esta su declaración. Expresó ser de edad de sesenta años, y que aunque le tocan por afinidad las generales de la ley, no por eso ha faltado a la gravedad…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media-alta. Los datos personales (vecino, sesenta años, afinidad con las partes) son seguros. El renglón «Como acimismo la esta-/va de las manos el referido Calisto» resiste: las letras son claras pero la frase queda oscura; la traduzco con reservas y no fuerzo el sentido.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1687">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 9 de 17</span><h3>IMG_1687</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1687" aria-label="Ampliar la lámina IMG_1687">
+        <img src="../img/lara1795/p009.jpg" alt="Fotografía de la lámina IMG_1687" loading="lazy">
+      </button>
+      <figcaption>Cuarta plana del pliego: <strong>lleva de nuevo la cabecera impresa del sello cuarto</strong> y las estampillas circulares. Papel con manchas claras de humedad en la mitad inferior y un pliegue diagonal. Margen derecho recortado. Toma buena, con sombra creciente hacia el pie.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Dos actos. (1) <strong>Cierre de la declaración de Marco Calderón</strong>: a cargo del juramento, <strong>no firmó porque no sabía hacerlo</strong>; firmó el alcalde con los testigos citados por falta de escribano. (2) <strong>Comienzo de la declaración de Silverio Mejía</strong>, el herido superviviente: se le hace comparecer, se le describe como persona <strong>«de buena comprensión»</strong> —es decir, declara <strong>sin intérprete</strong>— y jura por Dios Nuestro Señor y una señal de su santa cruz. Con arreglo a lo declarado por Calisto de Lara, empieza a referir cómo, habiéndosele extraviado un macho en la <strong>cuesta del Barreno</strong>, trató de seguirle el rastro en compañía de <strong>Andrés Mejía</strong>, y anduvieron cerca de tres leguas hasta llegar a una [quebrada].</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">✠  Un quartillo.</span>
+<span class="ln">SELLO QVARTO, VN QVAR-</span>
+<span class="ln">TILLO, AÑOS DE MIL SETE-</span>
+<span class="ln">CIENTOS OCHENTA Y OCHO,</span>
+<span class="ln">Y OCHENTA Y NUEVE.</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[sello de placa:]</u> ✠ UALGA / POR EL REY- / NADO DEL S. /</span>
+<span class="ln">D. CARLOS IV. / Y POR LOS A<u class="exp" title="abreviatura desarrollada">[ñ]</u>E<u class="exp" title="abreviatura desarrollada">[s]</u> / 1795 Y 96.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">del Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to no firmo p<u class="exp" title="abreviatura desarrollada">[or]</u>q<u class="exp" title="abreviatura desarrollada">[ue]</u> no saverlo h<u class="exp" title="abreviatura desarrollada">[a]</u>-</span>
+<span class="ln">cer hiselo Yo. Con los Testig<u class="exp" title="abreviatura desarrollada">[o]</u>s Citados <u class="exp" title="abreviatura desarrollada">[por]</u></span>
+<span class="ln">falta de Escriv<u class="exp" title="abreviatura desarrollada">[an]</u>o.=</span>
+<span class="ln">Dionicio de Pinedal <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">y Bran <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Josef B<u class="exp" title="abreviatura desarrollada">[eni]</u>to Mexia <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Tomas Jose de</span>
+<span class="ln">Muñoz <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En seguida hise parecer presente a Silverio M<u class="exp" title="abreviatura desarrollada">[e]</u>-</span>
+<span class="ln">xia de buena Comprencion, q<u class="exp" title="abreviatura desarrollada">[ue]</u> Certifico Conosco</span>
+<span class="ln">a quien p<u class="exp" title="abreviatura desarrollada">[o]</u>r ante los t<u class="exp" title="abreviatura desarrollada">[estig]</u>os de mi asistencia le</span>
+<span class="ln">Recivi Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to q<u class="exp" title="abreviatura desarrollada">[ue]</u> hizo en toda forma de d<u class="exp" title="abreviatura desarrollada">[e]</u>r<u class="exp" title="abreviatura desarrollada">[ech]</u>o p<u class="exp" title="abreviatura desarrollada">[o]</u>r</span>
+<span class="ln">Dios N<u class="exp" title="abreviatura desarrollada">[uestr]</u>o S<u class="exp" title="abreviatura desarrollada">[eño]</u>r y una señal de su santa Cruz <u class="exp" title="abreviatura desarrollada">[so]</u></span>
+<span class="ln">cuyo Cargo prometio decir verdad en lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> se<u class="exp" title="abreviatura desarrollada">[pa]</u></span>
+<span class="ln">y se le pregu<u class="exp" title="abreviatura desarrollada">[n]</u>te, y ciendole Con arreglo a lo de<u class="exp" title="abreviatura desarrollada">[cla]</u>-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ra]</u>do p<u class="exp" title="abreviatura desarrollada">[o]</u>r Calisto de Lara en su declaracion <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> dixo: q<u class="exp" title="abreviatura desarrollada">[ue]</u> haviendose<u class="exp" title="abreviatura desarrollada">[le ex]</u>-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[travi]</u>ado un macho de la Cuesta del <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Barreno?]</u></u></span>
+<span class="ln">trato de seguirlo p<u class="exp" title="abreviatura desarrollada">[o]</u>r el rastro en Comp<u class="exp" title="abreviatura desarrollada">[añia]</u></span>
+<span class="ln">de Andres Mexia, y al cavo de aver andad<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[cosa]</u> de tres leguas hasta llegar a una <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…del juramento. No firmó porque no sabía hacerlo; lo hice yo, con los testigos citados por falta de escribano.</p>
+<p>En seguida hice comparecer a Silverio Mejía, persona de buena comprensión, a quien certifico conozco; y por ante los testigos de mi asistencia le recibí juramento, que hizo en toda forma de derecho por Dios Nuestro Señor y una señal de su santa cruz, bajo cuyo cargo prometió decir verdad en lo que supiere y se le preguntare. Y siéndole [preguntado] con arreglo a lo declarado por Calisto de Lara en su declaración, dijo: que habiéndosele extraviado un macho en la cuesta del Barreno, trató de seguirlo por el rastro en compañía de Andrés Mejía; y al cabo de haber andado cosa de tres leguas, hasta llegar a una…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media-alta. La fórmula <strong>«de buena comprensión»</strong> —que es la manera en que este juzgado hace constar que el declarante entiende y responde <strong>sin intérprete</strong>— se lee con seguridad. El topónimo <strong>«cuesta del [¿Barreno?]»</strong> es la lectura menos firme de la plana: las letras finales quedan en la zona manchada.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1688">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 10 de 17</span><h3>IMG_1688</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1688" aria-label="Ampliar la lámina IMG_1688">
+        <img src="../img/lara1795/p010.jpg" alt="Fotografía de la lámina IMG_1688" loading="lazy">
+      </button>
+      <figcaption>Primera plana de pliego nuevo: <strong>cabecera impresa del sello cuarto</strong> completa y las dos estampillas circulares muy nítidas en el margen izquierdo. Papel en buen estado, con desgarro dentado en el borde superior. Margen derecho recortado por la curvatura. Toma muy buena.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Continuación de la declaración de Silverio Mejía. Siguiendo el rastro llegaron a <strong>una quebrada llamada la Agua Blanca</strong>, donde la huella se perdió del todo; maliciaron que el ladrón se hubiese echado al monte y, batiendo aquellas inmediaciones, <strong>encontraron una yegua amarrada a un lado de la quebrada</strong> y, al otro, a considerable distancia, el macho que buscaban. Hallada la yegua caminaron en busca del macho, llevándola consigo por considerar que también la llevaban robada; y al tiempo de soltar el macho de donde estaba amarrado <strong>les salió al encuentro Calisto de Lara</strong>, preguntándoles si no habían encontrado una yegua y dando las señas de la que ellos traían.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">✠  Un quartillo.</span>
+<span class="ln">SELLO QVARTO, VN QVAR-</span>
+<span class="ln">TILLO, AÑOS DE MIL SETE-</span>
+<span class="ln">CIENTOS OCHENTA Y OCHO,</span>
+<span class="ln">Y OCHENTA Y NUEVE.</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[sello de placa:]</u> ✠ UALGA / POR EL REY- / NADO DEL S. /</span>
+<span class="ln">D. CARLOS IV. / Y POR LOS A<u class="exp" title="abreviatura desarrollada">[ñ]</u>E<u class="exp" title="abreviatura desarrollada">[s]</u> / 1795 Y 96.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Que]</u>brada llamada la Aguablanca en don-</span>
+<span class="ln">de enteram<u class="exp" title="abreviatura desarrollada">[en]</u>te se le perdio la huella q<u class="exp" title="abreviatura desarrollada">[ue]</u> Segui-</span>
+<span class="ln">an p<u class="exp" title="abreviatura desarrollada">[o]</u>r Cuya Causa maliciaron, q<u class="exp" title="abreviatura desarrollada">[ue]</u> el Ladron</span>
+<span class="ln">huviese hechadose al monte por lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> Burlan-</span>
+<span class="ln">dolo en aquellas inmediaciones encontraron</span>
+<span class="ln">Con una Yegua amarrada a un lado de la Quebra-</span>
+<span class="ln">da, y al otro a Conciderable distancia el macho pre-</span>
+<span class="ln">tendido: Que luego de aver hayado la Yegua</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Caminaron en solicitud del ma-</span>
+<span class="ln">cho trayendolo Consigo p<u class="exp" title="abreviatura desarrollada">[o]</u>r Conciderar la llevaron</span>
+<span class="ln">tambien robada, y que al tiempo de llegar a<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">soltar el Macho de donde estava amarrado les</span>
+<span class="ln">salio al encuentro Calisto de Lara pregun-</span>
+<span class="ln">tandoles ci no avian encontrado una Yegua</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[dandoles las]</u> señas de la q<u class="exp" title="abreviatura desarrollada">[ue]</u> hellos traillan</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…quebrada llamada la Agua Blanca, donde enteramente se les perdió la huella que seguían. Por lo cual maliciaron que el ladrón se hubiese echado al monte, y batiendo aquellas inmediaciones encontraron una yegua amarrada a un lado de la quebrada, y al otro, a considerable distancia, el macho que buscaban. Que luego de haber hallado la yegua caminaron en busca del macho, llevándola consigo por considerar que también la llevaban robada; y que al tiempo de llegar a soltar el macho de donde estaba amarrado, les salió al encuentro Calisto de Lara, preguntándoles si no habían encontrado una yegua y dándoles las señas de la que ellos traían.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> alta. La grafía <strong>«Aguablanca»</strong>, aquí en una sola palabra, es nítida; en IMG_1682 el mismo escribano la parte en dos («la Agua blanca»). Sólo un renglón interior queda con laguna por el margen recortado.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1689">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 11 de 17</span><h3>IMG_1689</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1689" aria-label="Ampliar la lámina IMG_1689">
+        <img src="../img/lara1795/p011.jpg" alt="Fotografía de la lámina IMG_1689" loading="lazy">
+      </button>
+      <figcaption>Segunda plana del pliego, <strong>sin cabecera impresa</strong>. Papel con pliegues verticales que aclaran palabras; tinta parda. Borde superior dentado y margen derecho recortado. Toma buena.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">El momento de la riña, contado por la víctima superviviente. Determinaron amarrar a Calisto; se le enfrentaron, y resistiéndose él, <strong>Andrés Mejía trabó con él cuerpo a cuerpo, a la lucha</strong>, y mandó al que declara que trajese un lazo. Cuando volvió de buscarlo encontró a Andrés en el suelo con una herida en la frente, y a Calisto ya viniendo sobre el declarante, tirándole machetazos, de los que no pudo defenderse por haber dejado su espada cuando fue por el lazo; y al salir huyendo <strong>le dio un fuerte machetazo sobre la frente, como consta de la cicatriz que a esta hora manifiesta</strong>. Huyendo como pudo se subió a una loma, desde donde vio que Calisto dio otro machetazo al que quedaba en el suelo y, recogiendo las espadas, echó a huir. Fue a dar parte a la justicia. Todo sucedió <strong>a hora de la una de la tarde</strong>, y el herido <strong>murió como a las siete de la noche</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">determinaron amararlo para Cuyo efecto</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[se]</u> enfrentaron sobre el Citado Calisto q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">Rusistiendose a eyo, travo Andres Mexia</span>
+<span class="ln">de Cuerpo a lo lucha, y le mando al q<u class="exp" title="abreviatura desarrollada">[ue]</u> declara</span>
+<span class="ln">que tragese un laso para amararlo, y qu<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln">haviendo Corrido por el dexandolos en la</span>
+<span class="ln">lucha, quando bolvio ya encontro en el</span>
+<span class="ln">suelo Con una herida en la frente a An-</span>
+<span class="ln">dres Mexia, y ya Calisto que venia sobre</span>
+<span class="ln">el de<u class="exp" title="abreviatura desarrollada">[c]</u>larante, tirandole de machetasos a q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">no se pudo defender por aver dexado su Es<u class="exp" title="abreviatura desarrollada">[pa]</u>-</span>
+<span class="ln">da quando fue por el laso, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> ultimam<u class="exp" title="abreviatura desarrollada">[en]</u>te</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[le acome]</u>tio a la huida a q<u class="exp" title="abreviatura desarrollada">[ue]</u> aviendosele escapado</span>
+<span class="ln">al salir uyendo le dio un fuerte machetaso</span>
+<span class="ln">sobre la frente Como Consta del q<u class="exp" title="abreviatura desarrollada">[ue]</u> a esta</span>
+<span class="ln">hora manifiesta: Que aviendo huido Como</span>
+<span class="ln">pudo se subio a una loma desde donde bi<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> Calisto dio otro machetaso al q<u class="exp" title="abreviatura desarrollada">[ue]</u> queda<u class="exp" title="abreviatura desarrollada">[va]</u></span>
+<span class="ln">en el suelo, y Recogiendo las Espadas <u class="exp" title="abreviatura desarrollada">[de los dos]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> hecho a huir; y q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> declaro dar parte a la Justicia, q<u class="exp" title="abreviatura desarrollada">[ue]</u> todo prece-</span>
+<span class="ln">dio a hora de la una de la tarde, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> el mesmo</span>
+<span class="ln">murio Como a las ciete de la noche, q<u class="exp" title="abreviatura desarrollada">[ue]</u> es quan<u class="exp" title="abreviatura desarrollada">[to]</u></span>
+<span class="ln">save, y puede declarar mediante su Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to</span>
+<span class="ln">en q<u class="exp" title="abreviatura desarrollada">[ue]</u> se afirmo, y Ratifico leido que l<u class="exp" title="abreviatura desarrollada">[e]</u> <u class="exp" title="abreviatura desarrollada">[fue]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…determinaron amarrarlo, para cuyo efecto se le enfrentaron; y resistiéndose él a ello, Andrés Mejía trabó con él cuerpo a cuerpo, a la lucha, y mandó al que declara que trajese un lazo para amarrarlo. Y que habiendo corrido por él, dejándolos en la lucha, cuando volvió encontró ya en el suelo, con una herida en la frente, a Andrés Mejía, y a Calisto que venía sobre el declarante tirándole machetazos, de los que no se pudo defender por haber dejado su espada cuando fue por el lazo; y que últimamente [le acometió] en la huida, y habiéndosele escapado, al salir huyendo le dio un fuerte machetazo sobre la frente, como consta de la [cicatriz] que a esta hora manifiesta. Que habiendo huido como pudo se subió a una loma, desde donde vio que Calisto dio otro machetazo al que quedaba en el suelo, y que, recogiendo las espadas de los dos, echó a huir. Y que [él] declaró dar parte a la justicia. Que todo sucedió a hora de la una de la tarde, y que el mismo murió como a las siete de la noche. Que es cuanto sabe y puede declarar mediante su juramento, en que se afirmó y ratificó, leído que le fue…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media-alta. La secuencia y las dos horas —la una de la tarde y las siete de la noche— son seguras. Quedan dos renglones con laguna por el margen recortado, y la palabra que designa lo que Silverio «manifiesta» a esta hora (evidentemente la cicatriz de la frente) no se lee: el escribano usa un pronombre, «el que a esta hora manifiesta».
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1690">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 12 de 17</span><h3>IMG_1690</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1690" aria-label="Ampliar la lámina IMG_1690">
+        <img src="../img/lara1795/p012.jpg" alt="Fotografía de la lámina IMG_1690" loading="lazy">
+      </button>
+      <figcaption>Tercera plana del pliego, <strong>sin cabecera impresa</strong>. Papel más oscurecido y con manchas de humedad en la banda inferior; los últimos renglones están además en sombra y sobre papel arrugado, lo que los hace los más difíciles de la plana. Margen derecho recortado. Toma correcta.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Dos actos. (1) <strong>Cierre de la declaración de Silverio Mejía</strong>: expresó ser <strong>de edad de cuarenta y cinco años</strong>, y que aunque es <strong>consanguíneo con el muerto</strong> no por eso ha faltado a la gravedad de su juramento y a la verdad prometida; <strong>no firmó porque dijo no saberlo hacer</strong>. Y declaró que <strong>Román Ramírez y Juan Rrosa</strong> fueron los primeros que encontraron al muerto. (2) <strong>Declaración de Román Ramírez</strong>, del mismo vecindario, juramentado en forma; con arreglo a lo depuesto por Silverio Mejía dijo que hará <strong>como catorce años, poco más o menos</strong>, que con motivo de haber llegado a casa de <strong>María Juana Mejía</strong> el cabo de escuadra […] Silverio Mejía herido en la cabeza de un machetazo en que le dieron <strong>siete puntadas</strong>…</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">[esta su declaracion espresó Ser] de edad</span>
+<span class="ln">de quarenta, y cinco años, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> aunq<u class="exp" title="abreviatura desarrollada">[ue]</u> es <u class="exp" title="abreviatura desarrollada">[con]</u>-</span>
+<span class="ln">sanguinio con el muerto no por eso a faltado a l<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln">gravedad de su Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to y verdad prometida, no fir-</span>
+<span class="ln">mó p<u class="exp" title="abreviatura desarrollada">[or]</u>q<u class="exp" title="abreviatura desarrollada">[ue]</u> dixo no saverlo aser, y declaro que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Roman Ramirez y Juan <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Rrosa?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> fue-</span>
+<span class="ln">ron los primeros, q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en-</span>
+<span class="ln">contraron al muerto los q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> firmo</span>
+<span class="ln">con los testig<u class="exp" title="abreviatura desarrollada">[o]</u>s de mi asistencia p<u class="exp" title="abreviatura desarrollada">[o]</u>r falta de Escriv<u class="exp" title="abreviatura desarrollada">[an]</u>o</span>
+<span class="ln">Dionicio de Pinedal <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">y Bran <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Josef B<u class="exp" title="abreviatura desarrollada">[eni]</u>to Mexia <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Tomas Jose de</span>
+<span class="ln">Muñoz <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En el mismo dia mes, y año hise Comparecer pre-</span>
+<span class="ln">sente a Roman Ramirez de este vecindario, que</span>
+<span class="ln">Certifico Conosco a quien p<u class="exp" title="abreviatura desarrollada">[o]</u>r ante los testigos</span>
+<span class="ln">de mi asistencia le Recivi Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to p<u class="exp" title="abreviatura desarrollada">[o]</u>r Dios N<u class="exp" title="abreviatura desarrollada">[uestr]</u>o S<u class="exp" title="abreviatura desarrollada">[eño]</u>r</span>
+<span class="ln">y una señal de su S<u class="exp" title="abreviatura desarrollada">[an]</u>ta Cruz so cuyo Cargo pro-</span>
+<span class="ln">metio decir verdad en lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> sepa, y se le pregu<u class="exp" title="abreviatura desarrollada">[n]</u>te. y</span>
+<span class="ln">ciendole Con arreglo a lo depuesto por Silverio</span>
+<span class="ln">Mexia, dixo: Que hara Como Catorce años po-</span>
+<span class="ln">co mas o menos q<u class="exp" title="abreviatura desarrollada">[ue]</u> Con motivo de haver llegado a Ca-</span>
+<span class="ln">sa de Maria. <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Juana?]</u></u> Mexia, el Cabo de esquadra</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Silverio Mexia herido en la Cavesa de un Mache-</span>
+<span class="ln">tasso en q<u class="exp" title="abreviatura desarrollada">[ue]</u> le dieron ciete puntadas, y haver e<u class="exp" title="abreviatura desarrollada">[l]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>(…leída esta su declaración,) expresó ser de edad de cuarenta y cinco años, y que aunque es consanguíneo con el muerto, no por eso ha faltado a la gravedad de su juramento y a la verdad prometida. <strong>No firmó porque dijo no saberlo hacer.</strong> Y declaró que Román Ramírez y Juan Rrosa [Ramírez] fueron los primeros que encontraron al muerto, [de] lo que pidió que constase. Firmo con los testigos de mi asistencia por falta de escribano.</p>
+<p>En el mismo día, mes y año hice comparecer a Román Ramírez, de este vecindario, a quien certifico conozco; y por ante los testigos de mi asistencia le recibí juramento por Dios Nuestro Señor y una señal de su santa cruz, bajo cuyo cargo prometió decir verdad en lo que supiere y se le preguntare. Y siéndole [preguntado] con arreglo a lo depuesto por Silverio Mejía, dijo: que hará como catorce años, poco más o menos, que con motivo de haber llegado a casa de María Juana Mejía el cabo de escuadra […] a Silverio Mejía herido en la cabeza de un machetazo en que le dieron siete puntadas, y haber él…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media. Los datos de Silverio —<strong>45 años, consanguíneo del muerto, no sabe firmar</strong>— son seguros, y también los «catorce años poco más o menos» y las «siete puntadas». En cambio el renglón de «casa de María [¿Juana?] Mejía, el cabo de escuadra» queda sintácticamente trunco por la sombra del pie de plana, y el apellido de <strong>Juan [¿Rrosa?]</strong> se lee aquí más bien «Rrora»; lo doy como <em>Rrosa</em> porque en IMG_1691 el mismo nombre aparece partido con toda claridad «Juan Rro-/sa Ramires». Nótese además que los «catorce años» de Román Ramírez no cuadran con los «diecisiete a dieciocho» de Calisto ni con los «ocho años de ausencia»: son recuerdos aproximados, y así los dejo.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1691">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 13 de 17</span><h3>IMG_1691</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1691" aria-label="Ampliar la lámina IMG_1691">
+        <img src="../img/lara1795/p013.jpg" alt="Fotografía de la lámina IMG_1691" loading="lazy">
+      </button>
+      <figcaption>Cuarta plana del pliego: <strong>lleva de nuevo la cabecera impresa del sello cuarto</strong>, aquí muy pálida, con las dos estampillas circulares. Es la plana con más daño físico del tramo: el papel está muy arrugado y ondulado, con un desgarro en el ángulo superior, manchas de humedad generalizadas y tinta desvaída. En la esquina superior izquierda aparecen los dedos y el papel de protección del portador. Toma buena, pero la ondulación del papel crea bandas de sombra.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Continuación de la declaración de Román Ramírez. Habiéndole dado noticia el dicho Silverio de que lo había herido Calisto de Lara, y de que <strong>en peor estado quedaba Andrés Mejía en las quebradas del Agua Blanca</strong>, herido por el mismo Calisto, acudieron el que declara y otros varios vecinos, porque fue <strong>Juan Rrosa Ramírez</strong> a buscar al citado Andrés; <strong>al cual encontró el declarante primero que ningún otro</strong> de los que lo buscaban, <strong>con una herida de punta en la frente, otro machetazo grande con que tenía cortada parte de la oreja y el casquillo, dos [machetazos] cruzados en la cabeza, y otras heridas en los dedos y palmas de las manos</strong>, cuyo número no tiene presente por haber pasado tanto tiempo. Que lo halló todavía vivo, y que el difunto le dijo que <strong>un ladrón lo había matado</strong>, pero que no le habló más por ir a dar aviso a los demás, que andaban esparcidos buscando al herido por aquella loma; y que cuando se hubieron de juntar todos trataron de <strong>cubrir al herido con chamarras, porque venía mucha agua</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">✠  Un quartill<u class="exp" title="abreviatura desarrollada">[o]</u>.</span>
+<span class="ln">SELLO QVARTO, VN QVAR-</span>
+<span class="ln">TILLO, AÑOS DE MIL SETE-</span>
+<span class="ln">CIENTOS OCHENTA Y OCHO,</span>
+<span class="ln">Y OCHENTA Y NUEVE.</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[sello de placa:]</u> ✠ UALGA / POR EL REY- / NADO DEL S. /</span>
+<span class="ln">D. CARLOS IV. / Y POR LOS A<u class="exp" title="abreviatura desarrollada">[ñ]</u>E<u class="exp" title="abreviatura desarrollada">[s]</u> / 1795 Y 96.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[dich]</u>o Silverio dado noticia, que lo</span>
+<span class="ln">havia herido Calisto de Lara, y que en</span>
+<span class="ln">peor estado, quedava Andres Mexia en la<u class="exp" title="abreviatura desarrollada">[s]</u></span>
+<span class="ln">Quebradas del Aguablanca herido por el</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[mis]</u>mo Calisto, con cuya noticia ocurrieron el q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">de Clara, y otros Varios Vecinos p<u class="exp" title="abreviatura desarrollada">[or]</u>que fue Juan Rro-</span>
+<span class="ln">sa Ramires a buscar al Citado Andres, al qual</span>
+<span class="ln">encontró el declarante primero que otro ninguno</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[de los]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> le buscaban Con vna herida de punta en</span>
+<span class="ln">la frente, otro machetaso Grande Con que teni<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln">cortada parte de la oreja, y el Casquillo, ⟨otro⟩ dos</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Cruzados en la Cabesa, y otras heridas en</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[los]</u> dedos, y palmas de las Manos, q<u class="exp" title="abreviatura desarrollada">[ue]</u> como a pasado ta<u class="exp" title="abreviatura desarrollada">[n]</u>-</span>
+<span class="ln">to tiempo no tiene presente su num<u class="exp" title="abreviatura desarrollada">[er]</u>o. que</span>
+<span class="ln">le hayó todavia vivo, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> le dixo el Difunto q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">un Ladron lo havia matado; pero q<u class="exp" title="abreviatura desarrollada">[ue]</u> no le hablo m<u class="exp" title="abreviatura desarrollada">[as]</u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿precto?]</u></u> mas por ir a dar aviso a los demas, q<u class="exp" title="abreviatura desarrollada">[ue]</u> han-</span>
+<span class="ln">davan esparcidos buscando al herido por aque-</span>
+<span class="ln">lla Loma, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> quando se huvieron de Juntar to-</span>
+<span class="ln">dos trataron de Cubrir al herido Con chamarras</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿sa lean?]</u></u> p<u class="exp" title="abreviatura desarrollada">[or]</u>q<u class="exp" title="abreviatura desarrollada">[ue]</u> venia mucha Agua, q<u class="exp" title="abreviatura desarrollada">[ue]</u> serian lo<u class="exp" title="abreviatura desarrollada">[s]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…habiéndole dado noticia el dicho Silverio de que lo había herido Calisto de Lara, y que en peor estado quedaba Andrés Mejía en las quebradas del Agua Blanca, herido por el mismo Calisto. Con cuya noticia acudieron el que declara y otros varios vecinos, porque fue Juan Rrosa Ramírez a buscar al citado Andrés; al cual encontró el declarante antes que ningún otro de los que lo buscaban, con una herida de punta en la frente, otro machetazo grande con que tenía cortada parte de la oreja y el casquillo, dos [machetazos] cruzados en la cabeza, y otras heridas en los dedos y palmas de las manos, cuyo número no tiene presente por haber pasado tanto tiempo. Que lo halló todavía vivo, y que el difunto le dijo que un ladrón lo había matado; pero que no le habló más, por ir a dar aviso a los demás, que andaban esparcidos buscando al herido por aquella loma. Y que cuando se hubieron de juntar todos trataron de cubrir al herido con chamarras, porque venía mucha agua; que serían las…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media-alta para el inventario de heridas, que es lo más valioso de la plana y se lee bien pese al estado del papel. <strong>Media-baja</strong> para dos puntos: la palabra que abre el renglón «[¿precto?] mas por ir a dar aviso» y el sintagma «q[ue] [¿sa lean?]» del último renglón, ambos sobre pliegue y con tinta desvaída. El escribano tachó una palabra («otro») antes de «dos».
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1692">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 14 de 17</span><h3>IMG_1692</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1692" aria-label="Ampliar la lámina IMG_1692">
+        <img src="../img/lara1795/p014.jpg" alt="Fotografía de la lámina IMG_1692" loading="lazy">
+      </button>
+      <figcaption>Primera plana de pliego nuevo: <strong>cabecera impresa del sello cuarto</strong> y las dos estampillas circulares, aquí las más legibles de todo el tramo (la de armas se lee «CAROLVS … HISPAN REX» en la orla). El borde superior está muy desgarrado, con pérdida de la palabra «quartillo». La mitad inferior está arrugada, con trasluz fuerte de la escritura del reverso y del pliego subyacente, lo que hace confusos los últimos renglones. En el margen izquierdo asoma la plana contigua del legajo. Toma buena.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Dos actos. (1) <strong>Cierre de la declaración de Román Ramírez</strong>: serían las <strong>cuatro de la tarde</strong>; que ésta es la verdad a cargo del juramento, en que se afirmó y ratificó, leída que le fue esta su deposición. Expresó ser <strong>de edad de cuarenta y dos años</strong>, y que <strong>no le tocan las generales de la ley</strong>; <strong>no firmó porque dijo no saberlo hacer</strong>, lo hizo el alcalde con los testigos, todo por falta de escribano. Firman el alcalde y los dos testigos de asistencia. (2) <strong>Comienzo de la declaración de Juan Rrosa Ramírez</strong>, del mismo vecindario, a quien el alcalde certifica conocer: juramentado por Dios Nuestro Señor y una señal de su santa cruz, prometió decir verdad; y siéndole preguntado sobre si concurrió a solicitar […].</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">✠  Un quartill<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">SELLO QVARTO, VN QVAR-</span>
+<span class="ln">TILLO, AÑOS DE MIL SETE-</span>
+<span class="ln">CIENTOS OCHENTA Y OCHO,</span>
+<span class="ln">Y OCHENTA Y NUEVE.</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[sello de placa:]</u> ✠ UALGA / POR EL REY- / NADO DEL S. /</span>
+<span class="ln">D. CARLOS IV. / Y POR LOS A.E / 1795 Y 96.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Quatro de la tarde, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> de las <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> una<u class="exp" title="abreviatura desarrollada">[s]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>rio, q<u class="exp" title="abreviatura desarrollada">[ue]</u> esta es la verdad en Cargo de<u class="exp" title="abreviatura desarrollada">[l]</u> Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[en]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> se afirmo, y Ratifico leida, q<u class="exp" title="abreviatura desarrollada">[ue]</u> le fue <u class="exp" title="abreviatura desarrollada">[es]</u>-</span>
+<span class="ln">ta su depocicion espreso Ser de hedad de</span>
+<span class="ln">quarenta, y dos años, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> no le tocan las Ge-</span>
+<span class="ln">nerales de la Ley, no firmo porq<u class="exp" title="abreviatura desarrollada">[ue]</u> dixo no sa-</span>
+<span class="ln">verlo àser hiselo Yo. Con los testigos, y asi</span>
+<span class="ln">todo por falta de Escriv<u class="exp" title="abreviatura desarrollada">[an]</u>o.=</span>
+<span class="ln">Dionicio de Pinedal <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">y Bran <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Josef B<u class="exp" title="abreviatura desarrollada">[eni]</u>to Mexia <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>      Tomas Jose de</span>
+<span class="ln">Muñoz <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Ynmediatam<u class="exp" title="abreviatura desarrollada">[en]</u>te hise Comparecer <u class="exp" title="abreviatura desarrollada">[ante mi]</u> a Juan Rro-</span>
+<span class="ln">sa Ramires de este mismo vecindario, que</span>
+<span class="ln">Certifico Conos<u class="exp" title="abreviatura desarrollada">[c]</u>o, a quien por ante los testig<u class="exp" title="abreviatura desarrollada">[os]</u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> me asisten le Recivi Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to, q<u class="exp" title="abreviatura desarrollada">[ue]</u> hizo p<u class="exp" title="abreviatura desarrollada">[o]</u>r Dio<u class="exp" title="abreviatura desarrollada">[s]</u></span>
+<span class="ln">N<u class="exp" title="abreviatura desarrollada">[uestr]</u>o S<u class="exp" title="abreviatura desarrollada">[eño]</u>r y vna señal de su Santa Cruz so</span>
+<span class="ln">cuyos Cargos prometio decir verdad en lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[se]</u>-</span>
+<span class="ln">pa, y se le pregunte, y ciendolo sobre <u class="exp" title="abreviatura desarrollada">[si]</u></span>
+<span class="ln">Concurrio a solicitar a <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Como</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…las cuatro de la tarde; y que […] ésta es la verdad, a cargo del juramento en que se afirmó y ratificó, leída que le fue esta su deposición. Expresó ser de edad de cuarenta y dos años, y que no le tocan las generales de la ley. <strong>No firmó porque dijo no saberlo hacer; lo hice yo</strong>, con los testigos, y todo por falta de escribano. <em>Firmado:</em> Dionisio de Pineda y Bran; Josef Benito Mejía; Tomás José de Muñoz.</p>
+<p>Inmediatamente hice comparecer ante mí a Juan Rrosa Ramírez, de este mismo vecindario, a quien certifico conozco; y por ante los testigos que me asisten le recibí juramento, que hizo por Dios Nuestro Señor y una señal de su santa cruz, bajo cuyo cargo prometió decir verdad en lo que supiere y se le preguntare. Y siéndolo sobre si concurrió a solicitar a […]…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> media-alta para el cierre (edad de 42 años, generales de la ley, no sabe firmar) y para las firmas; <strong>baja</strong> para los dos primeros renglones y para los dos últimos, que el trasluz y las arrugas dejan sin fijar.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1693">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 15 de 17</span><h3>IMG_1693</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1693" aria-label="Ampliar la lámina IMG_1693">
+        <img src="../img/lara1795/p015.jpg" alt="Fotografía de la lámina IMG_1693" loading="lazy">
+      </button>
+      <figcaption>Papel de tina, tinta ferrogálica parda, caja de escritura única, sin filigrana
+visible. El <strong>ángulo superior izquierdo está roto y perdido</strong>, y en la toma aparecen los dedos
+y un papel de seda del fotógrafo sujetando el fragmento suelto; por eso faltan los comienzos de
+los primeros cuatro renglones. El margen izquierdo queda en sombra profunda y ha habido que
+recuperarlo por realce. Debajo de la hoja asoma un pliego de papel sellado impreso (el de
+IMG_1695 o similar), cuyas letras de molde se transparentan en la foto. Sin foliación visible.
+Toma nítida salvo la sombra del lomo.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Plana interior de una <strong>causa criminal</strong> seguida ante el alcalde ordinario de
+Sensentí. Contiene el final de una declaración testifical sobre el hallazgo de un hombre
+malherido —<strong>Andrés Mexía</strong>— y la imputación del hecho a <strong>Calixto de Lara</strong>; sigue la fórmula
+de cierre de la declaración (juramento, ratificación, edad del testigo, generales de la ley y
+la advertencia de que <strong>no firma porque dijo no saberlo hacer</strong>). No empieza ni acaba aquí una
+unidad: es plana de en medio; la primera mitad del expediente va en planas anteriores.
+
+El dato cronológico interno más fuerte de esta plana es que el testigo declara que el homicidio
+sucedió <strong>«hara cosa de catorse ō quinse años»</strong>: el hecho juzgado es muy anterior a la causa.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">mo <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Cuidando?]</u></u> lo hayò todaví ablava</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> le dixo, q<u class="exp" title="abreviatura desarrollada">[u]</u>e heridas tenia, qu<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en q<u class="exp" title="abreviatura desarrollada">[u]</u>e partes, y con que Armas dadas</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Que concurrio en solicitud de Andres</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>a, y q<u class="exp" title="abreviatura desarrollada">[u]</u>e lo encontró, despues, que otros</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> las Quebradas del Agua blanca <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el qual tenia vna herida en la frente</span>
+<span class="ln">la q<u class="exp" title="abreviatura desarrollada">[ue]</u> segun su figura parecia dada con punta ō <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>a, otra grande con q<u class="exp" title="abreviatura desarrollada">[ue]</u> tenia cortada parte de</span>
+<span class="ln">la oreja, y Caxillo, dos en la Cavesa, y otra</span>
+<span class="ln">en los dedos, y palmas de Manos, cuyo numero</span>
+<span class="ln">no tiene presente: Que save lo hirió Calixto La-</span>
+<span class="ln">ra porq<u class="exp" title="abreviatura desarrollada">[u]</u>e era<u class="exp" title="abreviatura desarrollada">[n]</u> el muerto, y Silverio Men-</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿do?]</u></u>sia traerlo amarrado Ante la Justicia p<u class="exp" title="abreviatura desarrollada">[o]</u>r</span>
+<span class="ln">presumir fuese Ladron: Que quando lo ha-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[lla]</u>ron serian las quatro de la tarde, y q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">murió aheso de las seis ō siete de la misma</span>
+<span class="ln">tarde, q<u class="exp" title="abreviatura desarrollada">[ue]</u> hara cosa de catorse ō quinse años que</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[e]</u>s<u class="exp" title="abreviatura desarrollada">[t]</u>o susedio, que lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho, es la verdad</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[por el jura]</u>m<u class="exp" title="abreviatura desarrollada">[en]</u>to q<u class="exp" title="abreviatura desarrollada">[ue]</u> tiene f<u class="exp" title="abreviatura desarrollada">[ec]</u>ho en q<u class="exp" title="abreviatura desarrollada">[ue]</u> se afirmo, y Ratifico le-</span>
+<span class="ln">ida q<u class="exp" title="abreviatura desarrollada">[ue]</u> le fue esta su dipocicion, expreso ser</span>
+<span class="ln">de hedad de <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Setenta?]</u></u>, y Un<u class="exp" title="abreviatura desarrollada">[o]</u> años, y que no</span>
+<span class="ln">le tocan las Generales de la ley, no fi<u class="exp" title="abreviatura desarrollada">[r]</u>-</span>
+<span class="ln">mo porque dijo no saverlo hac<u class="exp" title="abreviatura desarrollada">[er]</u> =</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…cuando lo halló todavía hablaba. […] le dijo qué heridas tenía, […] en qué partes y con qué
+armas dadas. […] Que concurrió en busca de Andrés […], y que lo encontró después de que otros
+[…] las quebradas del Agua Blanca […]; el cual tenía una herida en la frente, la que, según su
+figura, parecía dada con punta o […]; otra grande, con que tenía cortada parte de la oreja y el
+carrillo; dos en la cabeza, y otras en los dedos y palmas de las manos, cuyo número no tiene
+presente. Que sabe que lo hirió Calixto Lara, porque eran el muerto y Silverio Mendoza quienes
+iban a traerlo amarrado ante la justicia por presumir que fuese ladrón. Que cuando lo hallaron
+serían las cuatro de la tarde, y que murió a eso de las seis o siete de esa misma tarde; que
+hará cosa de catorce o quince años que esto sucedió; y que lo dicho es la verdad, por el
+juramento que tiene hecho, en que se afirmó y ratificó, leída que le fue esta su deposición.
+Expresó ser de edad de setenta y un años, y que no le tocan las generales de la ley.
+<strong>No firmó porque dijo no saberlo hacer.</strong></p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta para el cuerpo del relato y alta para la fórmula final. Baja para los
+cuatro primeros renglones, cuyo arranque está físicamente roto. Tres puntos concretos quedan sin
+fijar: la palabra que sigue a «mo» en el renglón 1 (`[¿Cuidando?]`); el arranque del renglón que
+continúa «Silverio Men-» (se lee «[do]sia traerlo», que sólo tiene sentido como <em>Mendosa ía [a]
+traerlo</em>); y la decena de la edad del testigo, que leo «Setenta» pero podría ser «Sesenta».
+El arma («con punta ō …») no se deja leer.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1694">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 16 de 17</span><h3>IMG_1694</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1694" aria-label="Ampliar la lámina IMG_1694">
+        <img src="../img/lara1795/p016.jpg" alt="Fotografía de la lámina IMG_1694" loading="lazy">
+      </button>
+      <figcaption>Mismo papel y misma tinta que IMG_1693. Roto y desfibrado el borde superior y el
+derecho; manchas de humedad. La hoja está fotografiada sobre otras hojas sueltas, cuyos
+renglones invaden la parte baja del encuadre. Sin foliación visible. Toma buena; el tercio
+inferior está en sombra.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Cierre de la actuación anterior y <strong>auto de remisión al asesor letrado</strong>. El alcalde
+ordinario firma con dos testigos de asistencia por falta de escribano; acto seguido, «en catorse
+de d[ic]ho mes», visto el estado de los autos, manda <strong>cometerlos al señor asesor de la provincia</strong>
+para que dictamine. Al pie, nota de remisión («se remitieron con ocho fojas útiles») y, cruzando
+el borde inferior, renglones que pertenecen a otras hojas del legajo que quedaron debajo en la
+toma —uno de ellos menciona expresamente a <strong>Calixto de Lara</strong>, y el último coincide palabra por
+palabra con el renglón final de IMG_1697. <strong>Aquí no acaba la unidad</strong>: continúa en IMG_1695.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">hiselo y<u class="exp" title="abreviatura desarrollada">[o]</u>. Con los testigos c<u class="exp" title="abreviatura desarrollada">[on]</u> <u class="exp" title="abreviatura desarrollada">[q]</u>ue <u class="exp" title="abreviatura desarrollada">[actuo]</u> p<u class="exp" title="abreviatura desarrollada">[o]</u>r fal-</span>
+<span class="ln">ta de Escrivano =</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Dionisio <u class="exp" title="abreviatura desarrollada">[de]</u> Pineda<u class="exp" title="abreviatura desarrollada">[l]</u></span>
+<span class="ln">y Bran <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">J<u class="exp" title="abreviatura desarrollada">[ose]</u>f D<u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿?]</u></u>to Mexia <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Tomas?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En el citado Pueblo en Catorse de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho mes <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Yo el ci-</span>
+<span class="ln">tado Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e visto los antecedentes Autos, y pareciendome</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[hallarse en estado]</u> deliverativo, devia de mandar, y man-</span>
+<span class="ln">do Cometirlos al S<u class="exp" title="abreviatura desarrollada">[eño]</u>r Asesor de la Provincia D<u class="exp" title="abreviatura desarrollada">[o]</u>n</span>
+<span class="ln">Josef Mariano <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Balexo?]</u></u>, p<u class="exp" title="abreviatura desarrollada">[ar]</u>a q<u class="exp" title="abreviatura desarrollada">[ue]</u> en bista de ellos, dicta-</span>
+<span class="ln">mine lo que tenga por conveniente. Así lo proveo,</span>
+<span class="ln">mando, y firmo Autuando con testigos en falta de</span>
+<span class="ln">Escriv<u class="exp" title="abreviatura desarrollada">[an]</u>o =</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Dionisio de Pineda <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">J<u class="exp" title="abreviatura desarrollada">[ose]</u>f D<u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿?]</u></u>to Mexia <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Tomas?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Se remitieron con ocho fojas utiles q<u class="exp" title="abreviatura desarrollada">[ue]</u> qued<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln">conocimiento <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[renglones de otra hoja, visibles por debajo:]</span>
+<span class="ln">El Assesor dise: Que de estos autos <u class="exp" title="abreviatura desarrollada">[res]</u>ulta contra Calixto de Lara <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> primero el omicidio que <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> violenta mente executo en la per<u class="exp" title="abreviatura desarrollada">[sona]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> favorables con <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> mas tiempo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>setado Papel y Ratificado<u class="exp" title="abreviatura desarrollada">[se]</u> <u class="exp" title="abreviatura desarrollada">[ante]</u> S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Alcal<u class="exp" title="abreviatura desarrollada">[de]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…hícelo yo, con los testigos con que actúo por falta de escribano. [Firma] Dionisio de Pineda y
+Bran; [testigos] Josef D… Mejía y [¿Tomás?]…</p>
+<p>En el citado pueblo, en catorce de dicho mes, yo el citado alcalde, vistos los autos que
+anteceden, y pareciéndome hallarse en estado deliberativo, debía de mandar y mando remitirlos al
+señor asesor de la provincia, don José Mariano [¿Vallejo?], para que, en vista de ellos, dictamine
+lo que tenga por conveniente. Así lo proveo, mando y firmo, actuando con testigos por falta de
+escribano. — Se remitieron con ocho fojas útiles, de que queda constancia.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta para la estructura del auto y para el nombre del alcalde, **Dionisio de Pineda
+y Bran**, cuya firma es idéntica a la de IMG_1703 y IMG_1705. Media para el nombre del asesor: se
+lee «D.n Josef Mariano» y un apellido que transcribo `[¿Balexo?]` (B/V + ale + xo), y que podría
+ser <em>Vallejo</em> o <em>Valenzuela</em>; no lo doy por fijado. Baja para los renglones intrusos del pie, que
+pertenecen a otras hojas y sólo se leen a trozos.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1695">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 17 de 17</span><h3>IMG_1695</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1695" aria-label="Ampliar la lámina IMG_1695">
+        <img src="../img/lara1795/p017.jpg" alt="Fotografía de la lámina IMG_1695" loading="lazy">
+      </button>
+      <figcaption><strong>Papel sellado, sello cuarto.</strong> Leyenda impresa de cabecera: Vn quartillo. · SELLO QVARTO, VN QVAR- · TILLO, AÑOS DE MIL SETE- · CIENTOS OCHENTA Y OCHO, · Y OCHENTA Y NVEVE.
+
+Con tres marcas de habilitación estampadas al margen izquierdo: el sello redondo de armas
+(`CAROLVS III D.G. HISPANIAR. REX`), otro circular con la cifra «4», y el óvalo manuscrito-tipográfico · VALGA / POR EL REY- / NADO DEL S[eñor] / D. CARLOS IV / Y POR LOS A[ÑO]S [DE] / 179[5] Y 96.
+
+Es decir: pliego de 1788-89 <strong>habilitado para 1795 y 1796</strong>. Tinta parda, letra menuda y muy
+cursiva de mano forense, distinta de la del alcalde. Bordes desfibrados; pequeña rotura a la
+izquierda. Sin foliación visible.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">El <strong>dictamen del asesor letrado</strong> sobre la causa: manda ampliar la sumaria (razón del
+tamaño y sitio de las heridas, embargo de bienes, nuevo examen de los testigos sobre el día, mes y
+año del homicidio y el lugar de la sepultura, si las heridas de Andrés Mexía fueron de necesidad
+mortal, si el difunto se quejaba de que Calixto lo había herido y si dijo que éste era el ladrón que
+traía robado el macho, con qué fierro estaba señalado y de quién era), y ordena después recibirle
+confesión al reo, hacerle los cargos, carearlo con Silverio sobre el robo, admitir la acusación del
+herido y de los herederos de Andrés, dar traslado, recibir la causa a prueba por término de seis
+días con cargo de publicación y conclusión, ratificar los testigos de la sumaria, examinar los del
+reo y oír los alegatos de bien probado hasta la sentencia definitiva. Cita la <em>Curia [Philípica],
+Juicio criminal, §. 34, acusación, n.º 30</em>. <strong>Aquí acaba la unidad documental de la causa criminal.</strong></p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> se ampliara la Sumaria pon<u class="exp" title="abreviatura desarrollada">[iendo]</u></span>
+<span class="ln">razon del tamaño y sitio de la herida y <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿muerte?]</u></u> de</span>
+<span class="ln">Silberio, procediendo al enbargo de bienes; bolbiendo</span>
+<span class="ln">a examinar a los mismos t<u class="exp" title="abreviatura desarrollada">[esti]</u>g<u class="exp" title="abreviatura desarrollada">[o]</u>s sobre q<u class="exp" title="abreviatura desarrollada">[ue]</u> hagan memo-</span>
+<span class="ln">ria del dia, mes y año de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho omicidio y el lugar de</span>
+<span class="ln">su sepultura, si las heridas q<u class="exp" title="abreviatura desarrollada">[ue]</u> obserbaron en Andres</span>
+<span class="ln">Mexia fueron de necesidad mortal, si el difunto Mexia</span>
+<span class="ln">se quejaba de q<u class="exp" title="abreviatura desarrollada">[ue]</u> Calixto lo havia herido, si desia por</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> motivo, y si expreso q<u class="exp" title="abreviatura desarrollada">[ue]</u> este era el ladron q<u class="exp" title="abreviatura desarrollada">[ue]</u> traia</span>
+<span class="ln">robado el macho, qual era el fierro con q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[lo]</u> señalase</span>
+<span class="ln">ō de quien era su dueño, y si saben los t<u class="exp" title="abreviatura desarrollada">[esti]</u>g<u class="exp" title="abreviatura desarrollada">[o]</u>s q<u class="exp" title="abreviatura desarrollada">[ue]</u> lo</span>
+<span class="ln">hecho de menos, q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> robo Calixto, ō si lo encontraron</span>
+<span class="ln">los Mexia en poder de este: Recibiendole en seguida al</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[R]</u>eo sus <u class="exp" title="abreviatura desarrollada">[confesiones]</u> haciendole los cargos q<u class="exp" title="abreviatura desarrollada">[ue]</u> resultaren</span>
+<span class="ln">y careandole sobre el robo con Silberio, evacuando las</span>
+<span class="ln">citas q<u class="exp" title="abreviatura desarrollada">[ue]</u> resulten; admitiendo la acusacion ō que<u class="exp" title="abreviatura desarrollada">[rella]</u></span>
+<span class="ln">de este herido y de los herederos de Andres si la quisie-</span>
+<span class="ln">ren presentar, y no hubiere pre<u class="exp" title="abreviatura desarrollada">[ced]</u>ido su dia, dando tras-</span>
+<span class="ln">lado de ella al Reo, en <u class="exp" title="abreviatura desarrollada">[cuyo]</u> estado de recibir a prueba</span>
+<span class="ln">la causa por termino de seis dias y con cargo de publ<u class="exp" title="abreviatura desarrollada">[icacio]</u>n</span>
+<span class="ln">y concl<u class="exp" title="abreviatura desarrollada">[usio]</u>n, se ratificaran los t<u class="exp" title="abreviatura desarrollada">[esti]</u>g<u class="exp" title="abreviatura desarrollada">[o]</u>s de <u class="exp" title="abreviatura desarrollada">[la]</u> sumaria, se</span>
+<span class="ln">examinaran los del Reo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la defensa, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="exp" title="abreviatura desarrollada">[oi]</u>dos</span>
+<span class="ln">los alegatos de bien probado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la sent<u class="exp" title="abreviatura desarrollada">[enci]</u>a definitiba,</span>
+<span class="ln">todo con arreglo al auto acordado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Guat<u class="exp" title="abreviatura desarrollada">[emal]</u>a y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">como lo funda la Curia, Juic<u class="exp" title="abreviatura desarrollada">[io]</u> crim<u class="exp" title="abreviatura desarrollada">[inal]</u> §. 34. acusac<u class="exp" title="abreviatura desarrollada">[ion]</u> n. 30 <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">S<u class="exp" title="abreviatura desarrollada">[eñ]</u>or Vale<u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿nzuela?]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…se ampliará la sumaria, poniendo razón del tamaño y sitio de la herida y [¿muerte?] de Silverio, y
+procediendo al embargo de bienes; volviendo a examinar a los mismos testigos sobre que hagan memoria
+del día, mes y año de dicho homicidio y del lugar de su sepultura; si las heridas que observaron en
+Andrés Mejía fueron de necesidad mortal; si el difunto Mejía se quejaba de que Calixto lo había
+herido y si decía por qué motivo; si expresó que éste era el ladrón que traía robado el macho, cuál
+era el fierro con que estaba señalado y de quién era su dueño; y si saben los testigos que lo echó
+de menos, o si los Mejía lo encontraron en poder de Calixto. Recibiéndole en seguida al reo su
+confesión, haciéndole los cargos que resultaren y careándolo sobre el robo con Silverio, y evacuando
+las citas que resulten; admitiendo la acusación o querella de este herido y de los herederos de
+Andrés, si la quisieren presentar, y dando traslado de ella al reo; en cuyo estado, recibir la causa
+a prueba por término de seis días, con cargo de publicación y conclusión; se ratificarán los testigos
+de la sumaria, se examinarán los del reo y los de la defensa, y, oídos los alegatos de bien probado,
+se dictará la sentencia definitiva, todo con arreglo al auto acordado de Guatemala y como lo funda
+la <em>Curia [Filípica]</em>, Juicio criminal, § 34, «acusación», n.º 30.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta para el contenido dispositivo y para los nombres <strong>Andrés Mexía</strong>, <strong>Calixto</strong> y
+<strong>Silberio</strong>, que aparecen escritos con claridad. Alta para la leyenda del papel sellado y para la
+habilitación «1795 y 96». Media para la firma del asesor al pie: se lee «Vale…» con rúbrica envolvente
+y no la doy por fijada; es presumiblemente el mismo apellido del asesor nombrado en IMG_1694.</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4><strong>Calisto (Calixto) de Lara</strong></h4>
+  <p class="papel">reo confeso</p>
+  <p class="calidad">mulato libre; labrador; 38 años; oriundo del valle de los Llanos de Santa Flora; avecindado en el Chinar de San Andrés (mineral). <strong>No firma</strong>: «no firmó porque dijo no saber»</p>
+</div>
+<div class="persona">
+  <h4><strong>Andrés Mejía (Mexía)</strong></h4>
+  <p class="papel">difunto</p>
+  <p class="calidad">vecino del valle; muerto a machetazos hacia 1777-78, «como a las siete de la noche»</p>
+</div>
+<div class="persona">
+  <h4><strong>Silverio Mejía</strong></h4>
+  <p class="papel">ofendido y testigo</p>
+  <p class="calidad">consanguíneo del difunto; 45 años; de este vecindario; declara «de buena comprensión», sin intérprete. <strong>No firma</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Marco Calderón</strong></h4>
+  <p class="papel">testigo, dueño de la yegua</p>
+  <p class="calidad">vecino del mineral; 60 años; le tocan <strong>por afinidad</strong> las generales de la ley. <strong>No firma</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Román Ramírez</strong></h4>
+  <p class="papel">testigo; halló al herido antes que nadie</p>
+  <p class="calidad">de este vecindario; 42 años; no le tocan las generales de la ley. <strong>No firma</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Juan Rrosa Ramírez</strong></h4>
+  <p class="papel">testigo; fue a buscar a Andrés Mejía</p>
+  <p class="calidad">de este mismo vecindario. <strong>No firma</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Don Dionicio de Pineda y Bran</strong></h4>
+  <p class="papel">alcalde ordinario de 1.ª nominación del partido de Sensentí; juez de la causa</p>
+  <p class="calidad">español (tratamiento de «don»); actúa en Cucuyagua. <strong>Firma</strong>, con rúbrica</p>
+</div>
+<div class="persona">
+  <h4><strong>Dionicio [¿Ríos?]</strong></h4>
+  <p class="papel">alcalde del pueblo; ejecuta la prisión y da parte</p>
+  <p class="calidad">vecindad no expresada</p>
+</div>
+<div class="persona">
+  <h4><strong>Josef B[eni]to Mejía</strong></h4>
+  <p class="papel">testigo de asistencia, por falta de escribano</p>
+  <p class="calidad"><strong>Firma</strong>, con rúbrica</p>
+</div>
+<div class="persona">
+  <h4><strong>Tomás José de Muñoz</strong></h4>
+  <p class="papel">testigo de asistencia, por falta de escribano</p>
+  <p class="calidad"><strong>Firma</strong>, con rúbrica</p>
+</div>
+<div class="persona">
+  <h4><strong>María [¿Juana?] Mejía</strong></h4>
+  <p class="papel">en cuya casa se recogió al herido Silverio</p>
+  <p class="calidad">vecindad no expresada</p>
+</div>
+<div class="persona">
+  <h4><strong>Don Josef Mariano [¿Balexo?]</strong></h4>
+  <p class="papel">asesor letrado que dictamina</p>
+  <p class="calidad">dictamen en IMG_1695</p>
+</div></div>
+</section>
+
+<section class="extra wrap">
+  <h2>Nota final sobre lo que no se ha querido leer</h2>
+  <p>El margen derecho está <strong>sistemáticamente recortado</strong> en IMG_1681, 1683, 1684, 1686, 1689 y 1690, porque el pliego se curva hacia la sombra y sale del encuadre. Las últimas sílabas de muchos renglones van restituidas por la fórmula notarial y se marcan entre corchetes; donde no hay fórmula que las asegure, quedan como `[...]`.</p>
+<p><strong>No se ha completado ningún nombre propio ni ninguna cifra por conjetura.</strong> El nombre del difunto en la carátula (IMG_1679) se deja vacío aunque el cuerpo del proceso lo dé; el apellido de «Juan [¿Rrosa?]» se armoniza entre IMG_1690 y 1691 con la advertencia correspondiente. Una anomalía se deja señalada y sin resolver: en IMG_1693 el herido aparece como <strong>«Silverio Mendoza»</strong>, no Mejía, y en el dictamen el reo es <strong>Calixto</strong>, no Calisto. Ambas variantes se conservan tal como están en el papel.</p>
+<p>Los topónimos, con su grafía original: <strong>Sementi</strong> (= Sensentí), <strong>Cucuyagua</strong>, <strong>Ocotepeque</strong>, <strong>la Agua blanca / la Aguablanca</strong> (en dos palabras en IMG_1682 y 1691, en una sola en IMG_1688), <strong>el Jocomico</strong>, <strong>los Llanos de Santa Flora</strong>, <strong>el [¿Chinar?] de San Andrés</strong>, <strong>la Cuesta del [¿Barreno?]</strong>.</p>
+</section>
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

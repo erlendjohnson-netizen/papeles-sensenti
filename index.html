@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Papeles de Sensentí — Archivo Municipal de Sensentí, Honduras</title>
+<meta name="description" content="Transcripción paleográfica de 348 láminas del archivo municipal de Sensentí (Ocotepeque, Honduras), 1787–1857.">
+<meta property="og:title" content="Papeles de Sensentí — Archivo Municipal de Sensentí, Honduras">
+<meta property="og:description" content="Transcripción paleográfica de 348 láminas del archivo municipal de Sensentí (Ocotepeque, Honduras), 1787–1857.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#ece9e2; --panel:#f7f5f0; --panel2:#e2ded4;
+  --ink:#191714; --ink2:#4e4a42; --ink3:#7d786e;
+  --rule:#d3cec2; --rule2:#c0b9aa;
+  --accent:#6b3a1f; --accent2:#8a5433; --accent-ink:#4a2713;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#14120f; --panel:#1c1a16; --panel2:#24211c;
+  --ink:#ece9e2; --ink2:#b5afa3; --ink3:#867f73;
+  --rule:#312d26; --rule2:#3d382f;
+  --accent:#d79a6e; --accent2:#c08654; --accent-ink:#e7b389;
+}}
+:root[data-theme="dark"]{
+  --bg:#14120f; --panel:#1c1a16; --panel2:#24211c;
+  --ink:#ece9e2; --ink2:#b5afa3; --ink3:#867f73;
+  --rule:#312d26; --rule2:#3d382f;
+  --accent:#d79a6e; --accent2:#c08654; --accent-ink:#e7b389;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:400 16.5px/1.65 Spectral,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+ -webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:22px}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{color:var(--accent-ink)}
+
+.mast{padding-block:64px 30px}
+.kicker{font:500 11.5px/1.5 ui-monospace,"SF Mono",Menlo,monospace;letter-spacing:.17em;
+ text-transform:uppercase;color:var(--accent2);margin:0 0 18px}
+h1{font:600 clamp(38px,7.5vw,74px)/1.02 inherit;letter-spacing:-.022em;margin:0 0 20px;text-wrap:balance}
+.lede{margin:0;max-width:60ch;font-size:19.5px;color:var(--ink2)}
+.lede strong{color:var(--ink);font-weight:600}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;
+ background:var(--rule);border:1px solid var(--rule);margin:38px 0 0}
+.stat{background:var(--panel);padding:16px 17px 17px}
+.stat b{display:block;font:600 30px/1 inherit;color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.stat span{display:block;margin-top:7px;font:400 10.5px/1.4 ui-monospace,Menlo,monospace;
+ letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+
+nav.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 92%,transparent);
+ backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);margin-top:44px}
+nav.top .in{display:flex;gap:18px;align-items:center;padding-block:12px;flex-wrap:wrap}
+nav.top a{font:500 13px/1 ui-monospace,Menlo,monospace;letter-spacing:.06em;text-transform:uppercase;
+ color:var(--ink2);text-decoration:none}
+nav.top a:hover{color:var(--accent)}
+nav.top .brand{font-weight:600;color:var(--ink);margin-right:auto;text-transform:none;letter-spacing:0;
+ font-family:inherit;font-size:15.5px}
+
+h2{font:600 clamp(24px,4vw,34px)/1.18 inherit;letter-spacing:-.015em;margin:60px 0 10px}
+.sec-intro{margin:0 0 26px;max-width:66ch;color:var(--ink2)}
+
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 26px}
+.filters button{font:500 12.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.04em;
+ background:var(--panel);color:var(--ink2);border:1px solid var(--rule2);
+ padding:8px 12px;cursor:pointer;border-radius:2px}
+.filters button:hover{border-color:var(--accent2);color:var(--ink)}
+.filters button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+
+.grid{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--panel);padding:22px 22px 24px;display:flex;flex-direction:column;
+ text-decoration:none;color:inherit}
+.card:hover{background:var(--panel2)}
+.card .yr{font:500 12px/1 ui-monospace,Menlo,monospace;letter-spacing:.09em;color:var(--accent2)}
+.card h3{font:600 21px/1.24 inherit;margin:9px 0 9px;letter-spacing:-.012em;color:var(--ink)}
+.card p{margin:0;font-size:15.2px;color:var(--ink2);line-height:1.58}
+.card .foot{margin-top:15px;padding-top:12px;border-top:1px solid var(--rule2);
+ font:400 11.5px/1 ui-monospace,Menlo,monospace;color:var(--ink3);
+ display:flex;gap:12px;flex-wrap:wrap;letter-spacing:.04em}
+.tag{color:var(--ink3)}
+
+.note{background:var(--panel);border-left:3px solid var(--accent2);padding:18px 20px;margin:26px 0;max-width:72ch}
+.note p{margin:0 0 10px}.note p:last-child{margin:0}
+.prose{max-width:68ch}
+.prose p{margin:0 0 16px}
+.prose h3{font:600 19px/1.3 inherit;margin:30px 0 8px;color:var(--accent-ink)}
+.prose ul{padding-left:1.15em;margin:0 0 16px}
+.prose li{margin:0 0 7px}
+code{font:400 14px ui-monospace,Menlo,monospace;background:var(--panel2);padding:1px 5px;border-radius:2px}
+blockquote{margin:16px 0;padding:12px 18px;background:var(--panel);border-left:3px solid var(--rule2);
+ font-style:italic;color:var(--ink2)}
+blockquote p{margin:0}
+
+footer{margin:70px 0 50px;padding-top:22px;border-top:1px solid var(--rule);
+ font-size:14.5px;color:var(--ink3);max-width:72ch}
+footer a{color:var(--accent2)}
+@media(max-width:640px){.wrap{padding-inline:16px}.mast{padding-block:44px 22px}}
+</style>
+</head><body>
+<nav class="top"><div class="in wrap" style="max-width:1120px;margin:0 auto">
+<a class="brand" href="index.html">Papeles de Sensentí</a>
+<a href="index.html#documentos">Documentos</a>
+<a href="index.html#archivo">El archivo</a>
+<a href="metodo.html">Método</a>
+<a href="index.html#citar">Citar</a>
+</div></nav>
+<div class="wrap">
+<header class="mast">
+<p class="kicker">Archivo Municipal de Sensentí · Ocotepeque, Honduras</p>
+<h1>Papeles de Sensentí</h1>
+<p class="lede">Transcripción paleográfica y edición de <strong>348 láminas</strong> del archivo
+municipal de Sensentí, en el occidente de Honduras. Treinta y un expedientes entre <strong>1787 y 1857</strong>:
+causas criminales, pleitos de tierras y de ganado, mortuales, cuentas municipales y peticiones.
+Cada lámina va con su fotografía, su transcripción renglón a renglón y su lectura en español de hoy.</p>
+
+<div class="stats">
+<div class="stat"><b>31</b><span>expedientes</span></div>
+<div class="stat"><b>348</b><span>láminas</span></div>
+<div class="stat"><b>1787</b><span>el más antiguo</span></div>
+<div class="stat"><b>1857</b><span>el más reciente</span></div>
+</div>
+</header>
+
+<section id="archivo">
+<h2>El archivo</h2>
+<p class="sec-intro">Qué es este fondo, cómo llegaron estas fotografías, y qué hay dentro.</p>
+<div class="prose">
+<p>Sensentí es hoy un municipio del departamento de Ocotepeque, en el occidente de Honduras, cerca de
+la frontera con Guatemala y El Salvador. En el periodo colonial fue cabecera de partido, con jurisdicción
+sobre un conjunto de pueblos de indios y de vecindarios de españoles, mulatos libres y ladinos repartidos
+por los valles del río Cucuyagua y del río Sensentí.</p>
+<p>Su archivo municipal conserva papeles que van desde finales del siglo XVIII hasta bien entrada la
+época republicana. No es un fondo grande ni ordenado: son expedientes cosidos unos a otros, a veces
+descabalados, con pliegos de papel sellado viejo reutilizados años después de impresos, carátulas
+separadas de sus cuerpos, y alguna pieza suelta de otro siglo colada en medio. Se fotografiaron
+<strong>385 planas</strong>, y de ellas se han transcrito <strong>354</strong>.</p>
+
+<h3>Qué clase de papeles son</h3>
+<p>Casi todo es actuación judicial de primera instancia: el alcalde ordinario del partido, o un
+comisionado suyo, sustanciando un pleito con testigos de asistencia «a falta de escribano». Causas
+criminales por riñas, homicidios y hurtos de ganado; pleitos civiles por tierras, por reses y por deudas;
+mortuales con inventario y partición; peticiones de particulares. A partir de la Independencia se suman
+actas de juicio verbal, libros de cuentas municipales y órdenes de pago.</p>
+<p>Lo que estos papeles tienen de valioso no es lo excepcional sino lo corriente. Dicen la edad de la
+gente, su calidad —«español», «mulato libre», «indio», «forastero»—, su oficio, su vecindad, cuántas
+reses tenía y si sabía firmar. Dejan ver la geografía cotidiana del partido: cuatro leguas de Sensentí a
+Cucuyagua, dos de la aldea de La Labor a la cabecera, el camino por la boca de la montaña de Gualcho.
+Y dejan oír, de vez en cuando, a personas que en ninguna otra clase de documento habrían quedado
+registradas.</p>
+
+<h3>Los pueblos que aparecen</h3>
+<p>Sensentí y su «Nuevo Poblado» —nombrado como tal en un auto de 8 de febrero de 1794—, Cucuyagua,
+Ocotepeque, Corquín, Gualcho, Cololaca, Guarita, la aldea del Jocomico, el Chinar de San Andrés,
+los Llanos de Santa Flora, la aldea de La Labor, la hacienda de San José de Sulán, el barrio de
+Esquipulas. Y, fuera del partido pero presentes en los papeles, Gracias, Comayagua, Chiquimula,
+la Antigua Guatemala y San Salvador.</p>
+
+<h3>Las fotografías</h3>
+<p>Las tomó el proyecto PARCS en el propio archivo. Son buenas en general, pero tienen dos defectos
+que se repiten y que conviene conocer antes de usar las transcripciones: en varios expedientes
+el encuadre corta el margen derecho, de modo que se pierden los finales de renglón; y
+algunas planas están fotografiadas giradas noventa grados, o con la mano del operador sobre el papel.
+Donde eso afecta a la lectura se dice en la página del documento, plana por plana.</p>
+<p>Sobre las convenciones de transcripción y la regla de no conjeturar, véase <a href="metodo.html">Método</a>.</p>
+</div>
+</section>
+
+<section id="documentos">
+<h2>Los documentos</h2>
+<p class="sec-intro">En orden cronológico. Cada uno se abre en su propia página, con las láminas
+enfrentadas a la transcripción.</p>
+<div class="filters" id="filtros">
+  <button data-f="" aria-pressed="true">todos</button>
+  <button data-f="calidad" aria-pressed="false">calidad</button><button data-f="cofradía" aria-pressed="false">cofradía</button><button data-f="criminal" aria-pressed="false">criminal</button><button data-f="deudas" aria-pressed="false">deudas</button><button data-f="esclavitud" aria-pressed="false">esclavitud</button><button data-f="escuela" aria-pressed="false">escuela</button><button data-f="ganado" aria-pressed="false">ganado</button><button data-f="milicias" aria-pressed="false">milicias</button><button data-f="mortual" aria-pressed="false">mortual</button><button data-f="mujeres" aria-pressed="false">mujeres</button><button data-f="municipal" aria-pressed="false">municipal</button><button data-f="oficios" aria-pressed="false">oficios</button><button data-f="poblamiento" aria-pressed="false">poblamiento</button><button data-f="pueblos de indios" aria-pressed="false">pueblos de indios</button><button data-f="tierras" aria-pressed="false">tierras</button><button data-f="tributo" aria-pressed="false">tributo</button>
+</div>
+<div class="grid" id="rejilla">
+<a class="card" href="doc/ocotepeque1787.html" data-tags="criminal">
+  <span class="yr">1787–1790</span>
+  <h3>La estocada de Ocotepeque</h3>
+  <p>Un hombre mata de una estocada al esclavo del cura y huye. Año y medio después cae preso en Chiquimula por robar una mula, bajo nombre falso, y allí confiesa el homicidio. Lo devuelven de pueblo en pueblo a Gracias a Dios — y el expediente se cierra sin sentencia.</p>
+  <div class="foot"><span>48 láminas</span><span class="tag">· criminal</span></div>
+</a>
+<a class="card" href="doc/sen1663.html" data-tags="cofradía,tierras">
+  <span class="yr">1793 · 1814 · 1882</span>
+  <h3>Una milpa, una cofradía y un plano intruso</h3>
+  <p>Dieciséis planas que el catálogo daba por dos expedientes y resultan ser cinco: un pleito por calumnia de 1814, un plano de agrimensura de 1882 colado suelto en el legajo, el pleito de una milpa comida por el ganado en 1793, una transcripción moderna y un cuadro estadístico sin fecha.</p>
+  <div class="foot"><span>16 láminas</span><span class="tag">· cofradía</span></div>
+</a>
+<a class="card" href="doc/novillo1794.html" data-tags="criminal,ganado">
+  <span class="yr">enero–marzo 1794</span>
+  <h3>El novillo de Gregorio de Lara</h3>
+  <p>Un hombre que se declara «de calidad indio», natural de Corquín, es preso por llevarse un novillo del hierro de su propio padre camino del pueblo de Gualcha.</p>
+  <div class="foot"><span>21 láminas</span><span class="tag">· criminal</span></div>
+</a>
+<a class="card" href="doc/labor1794.html" data-tags="deudas,poblamiento">
+  <span class="yr">febrero 1794</span>
+  <h3>El nuevo poblado, a ocho de febrero</h3>
+  <p>Una ejecución por trescientos pesos prestados en 1792 que da, de paso, las dos cosas que se buscaban: la fórmula «en el nuebo Poblado de Sensenti» fechada con todas sus letras, y la distancia de la aldea de La Labor a la cabecera. Con una plana añadida que cierra el pleito de Luisa Cartagena.</p>
+  <div class="foot"><span>6 láminas</span><span class="tag">· deudas</span></div>
+</a>
+<a class="card" href="doc/cota1794.html" data-tags="criminal,mujeres">
+  <span class="yr">30 mayo 1794</span>
+  <h3>María Ascensión Cota, de quien todos hablan</h3>
+  <p>Una información sumaria abierta el día después de una boda, y el informe que el cura de Ocotepeque manda en respuesta. Entre los dos suman trece planas sobre una mujer a la que se deposita tres veces en tres casas distintas y a la que, en ninguna de ellas, se le toma declaración.</p>
+  <div class="foot"><span>13 láminas</span><span class="tag">· criminal</span></div>
+</a>
+<a class="card" href="doc/guzman1794.html" data-tags="criminal,milicias">
+  <span class="yr">junio–agosto 1794</span>
+  <h3>El sargento que ganó en Guatemala y perdió en casa</h3>
+  <p>Mariano Guzmán, vecino de Sensentí, pasó un año y dos meses preso en la Real Cárcel de Corte por un hurto del que nadie llegó a acusarle. Llegó hasta la Real Audiencia, volvió con provisión firmada por el regente, y la provisión se estrelló contra el fuero militar del cuerpo al que él mismo pertenecía. Al final le pasaron la cuenta de costas: trece pesos y siete reales.</p>
+  <div class="foot"><span>23 láminas</span><span class="tag">· criminal</span></div>
+</a>
+<a class="card" href="doc/guzman-minuta.html" data-tags="milicias">
+  <span class="yr">después de 1794</span>
+  <h3>La minuta que faltaba</h3>
+  <p>El asiento de salida con que se anotó el envío del recurso de Mariano Guzmán al Supremo Tribunal. No es pieza del proceso sino marca de su tramitación, y la palabra «vindicado» la sitúa después de la exculpación.</p>
+  <div class="foot"><span>1 lámina</span><span class="tag">· milicias</span></div>
+</a>
+<a class="card" href="doc/lara1795.html" data-tags="criminal">
+  <span class="yr">enero 1795</span>
+  <h3>La yegua de la cuesta del Barreno</h3>
+  <p>Diecisiete años después de una pelea a espada junto a la quebrada del Agua Blanca, el alcalde de Sensentí prende en Cucuyagua a un labrador mulato libre que había vuelto al partido y vivía sin recelo. Diecisiete planas en las que ni el reo ni ninguno de los cuatro testigos sabe firmar.</p>
+  <div class="foot"><span>17 láminas</span><span class="tag">· criminal</span></div>
+</a>
+<a class="card" href="doc/juanadiega.html" data-tags="esclavitud,mujeres">
+  <span class="yr">octubre 1795</span>
+  <h3>Juana Diega</h3>
+  <p>Cuatro planas en que un vecino de Sensentí pide a la justicia que le devuelvan a una mujer que huyó de su casa en mayo. Para que pueda ser aprehendida, la describe entera: la edad, el pelo, la cara, las marcas de la viruela. Es el retrato más completo de una persona esclavizada en todo este archivo, y existe porque alguien la reclamaba como cosa suya.</p>
+  <div class="foot"><span>4 láminas</span><span class="tag">· esclavitud</span></div>
+</a>
+<a class="card" href="doc/calidad1795.html" data-tags="calidad,municipal">
+  <span class="yr">1795 y 1847</span>
+  <h3>Limpieza de sangre, y cincuenta años después</h3>
+  <p>Dos piezas separadas por medio siglo y unidas por la misma pregunta: quién puede ocupar un cargo y con qué se prueba. Una real orden de 1794 que exige cristiandad, limpieza de sangre y legitimidad en treinta días; y un cuadernillo de juicios verbales del juzgado de Sensentí que resulta ser de 1847, no de 1848-49.</p>
+  <div class="foot"><span>11 láminas</span><span class="tag">· calidad</span></div>
+</a>
+<a class="card" href="doc/sen1796.html" data-tags="criminal,mujeres">
+  <span class="yr">1796 y 1802–1803</span>
+  <h3>La que se desdijo y el que desistió</h3>
+  <p>Una señora se querella porque la difamaron ante el cura y le estorbaron el casamiento; el difamador reconoce el papel y se retracta. Siete años después, un vecino de Corquín preso por herrar una ternera ajena sale bajo fianza, y el dueño acaba desistiendo. En ninguna de las dos hay condena.</p>
+  <div class="foot"><span>7 láminas</span><span class="tag">· criminal</span></div>
+</a>
+<a class="card" href="doc/sen1799.html" data-tags="criminal,ganado">
+  <span class="yr">1799–1800</span>
+  <h3>La vaca de Joaquín Monrroy</h3>
+  <p>El alcalde de Goarcha mata una res del hierro de un vecino de Sensentí y confiesa. Se la habían vendido los hermanos Reyes en once pesos. Nadie es condenado: se prorratean cinco pesos entre los dos hermanos y pagan cuatro.</p>
+  <div class="foot"><span>6 láminas</span><span class="tag">· criminal</span></div>
+</a>
+<a class="card" href="doc/mortual1804.html" data-tags="ganado,mortual">
+  <span class="yr">1804 · 182_ · 185_</span>
+  <h3>Treinta y ocho reses entre seis herederos</h3>
+  <p>Ocho planas que el catálogo daba por dos expedientes y son cuatro, con las dos fechas equivocadas. La pieza central es una partición de bienes de 1804 —no de 1793— con el inventario de ganado entero y seis herederos que no saben firmar. Y la palabra que se esperaba encontrar en la otra pieza no está.</p>
+  <div class="foot"><span>8 láminas</span><span class="tag">· ganado</span></div>
+</a>
+<a class="card" href="doc/colo1809.html" data-tags="criminal,mujeres">
+  <span class="yr">febrero–agosto 1809</span>
+  <h3>El matrimonio que no se pudo celebrar</h3>
+  <p>Se procesa a un labrador mulato libre por amancebamiento, resistencia y fuga. De las confesiones sale otra cosa: una pareja que se dio palabra de casamiento, un embarazo, un impedimento canónico y un cura que negó tres veces la dispensa. Cuarenta y siete planas en las que firma una sola persona.</p>
+  <div class="foot"><span>47 láminas</span><span class="tag">· criminal</span></div>
+</a>
+<a class="card" href="doc/cartagena1810.html" data-tags="criminal,mujeres">
+  <span class="yr">1809–1810</span>
+  <h3>La viuda y la palabra de casamiento</h3>
+  <p>El final de la declaración de una viuda en una causa por amistad ilícita e incumplimiento de palabra de casamiento. El impedimento es de afinidad, por un trato anterior del reo con una hermana de ella.</p>
+  <div class="foot"><span>1 lámina</span><span class="tag">· criminal</span></div>
+</a>
+<a class="card" href="doc/gualcho1813.html" data-tags="pueblos de indios,tributo">
+  <span class="yr">1813</span>
+  <h3>El tributo que Gualcha no pudo pagar</h3>
+  <p>El cabildo de indios de Nuestra Señora de Belén de Gualcha pide un año de plazo: no ha podido enterar el tributo del tercio de Navidad, «por la mucha nesesidad que ha avido en nuestro Pueblo».</p>
+  <div class="foot"><span>3 láminas</span><span class="tag">· pueblos de indios</span></div>
+</a>
+<a class="card" href="doc/sen1813.html" data-tags="tierras">
+  <span class="yr">1813</span>
+  <h3>El pleito del río Sumpul</h3>
+  <p>Dos vecinos se destrozan las siembras a orillas del Sumpul. Pero bajo el pleito de cercas corre otro: dónde vive realmente Anselmo Pérez, y qué justicia manda sobre él. En el expediente queda su certificación de tributario del pueblo de Chalatenango.</p>
+  <div class="foot"><span>13 láminas</span><span class="tag">· tierras</span></div>
+</a>
+<a class="card" href="doc/cartagena1814.html" data-tags="ganado,mujeres">
+  <span class="yr">1814</span>
+  <h3>Las cien reses de Luisa Cartagena</h3>
+  <p>Una mujer criada desde niña en casa del cura de Cucuyagua reclama ante el juzgado el ganado que él le dejó en pago de toda una vida de servicio.</p>
+  <div class="foot"><span>12 láminas</span><span class="tag">· ganado</span></div>
+</a>
+<a class="card" href="doc/ganado1814.html" data-tags="ganado,mujeres">
+  <span class="yr">julio–septiembre 1814</span>
+  <h3>Diecisiete vecinos y sesenta y cinco reses</h3>
+  <p>El otro extremo del pleito de Luisa Cartagena: el alegato de Aranda, la réplica de ella, y una cuenta del ganado depositado que nombra a diecisiete vecinos del valle con las cabezas de cada uno. Cuatro de los diecisiete son mujeres. El papel escribe sesenta y seis de total y las partidas suman sesenta y cinco.</p>
+  <div class="foot"><span>8 láminas</span><span class="tag">· ganado</span></div>
+</a>
+<a class="card" href="doc/cartagena1814b.html" data-tags="ganado,mujeres">
+  <span class="yr">julio–septiembre 1814</span>
+  <h3>Setenta reses y ninguna firma</h3>
+  <p>Luisa Cartagena, vecina de Cucuyagua, sin «doña» y sin saber escribir, demanda a un hombre con tratamiento por haberla despojado de setenta reses que le donó un cura. Maneja la doctrina del despojo violento, y consigue que el asunto suba a la Intendencia de la provincia. El expediente no dice cómo acabó.</p>
+  <div class="foot"><span>8 láminas</span><span class="tag">· ganado</span></div>
+</a>
+<a class="card" href="doc/carta-luisa.html" data-tags="ganado,mujeres">
+  <span class="yr">sin año</span>
+  <h3>Carta a Luisa Cartagena</h3>
+  <p>Voz privada en un archivo de fórmulas. Va dirigida a la misma Luisa Cartagena que en 1814 litigó por setenta reses sin «doña» y sin saber firmar. Le escribe un padre o tutor desmintiendo una orden que no dio.</p>
+  <div class="foot"><span>1 lámina</span><span class="tag">· ganado</span></div>
+</a>
+<a class="card" href="doc/sen1815.html" data-tags="criminal,ganado">
+  <span class="yr">1815</span>
+  <h3>La vaca barrosa del Río Grande</h3>
+  <p>Ignacio Valencia mata una vaca sin enseñar la piel ni la marca, contra el bando. Era de don José Máximo Bueso, perdida en las vegas del Río Grande. Padre e hijo van presos de Cucuyagua a Sensentí — y el expediente se corta antes de la sentencia.</p>
+  <div class="foot"><span>10 láminas</span><span class="tag">· criminal</span></div>
+</a>
+<a class="card" href="doc/bueso1816.html" data-tags="mortual">
+  <span class="yr">octubre 1816</span>
+  <h3>La casa de San José de Sulán</h3>
+  <p>Catorce planas con el inventario de una casa del valle: camisas de Bretaña y de Ruán, loza, herramienta, diecisiete vacas paridas a nueve pesos, una sortija de oro, un lienzo del Señor Crucificado y dos hierros de herrar, repartidos entre tres herederos a doscientos dieciocho pesos y real y medio cada uno.</p>
+  <div class="foot"><span>14 láminas</span><span class="tag">· mortual</span></div>
+</a>
+<a class="card" href="doc/sanjuan1818.html" data-tags="tierras">
+  <span class="yr">1818</span>
+  <h3>Las tres octavas partes de San Juan</h3>
+  <p>Un vecino reclama la parte de la hacienda de San Juan que heredó su mujer, denuncia que le echan los animales y le cierran la salida, y acaba pidiendo que un juez agrimensor señale a cada uno lo suyo.</p>
+  <div class="foot"><span>9 láminas</span><span class="tag">· tierras</span></div>
+</a>
+<a class="card" href="doc/calderon1819.html" data-tags="criminal,oficios">
+  <span class="yr">mayo–junio 1819</span>
+  <h3>Un sastre de Guatemala y un carpintero de San Salvador</h3>
+  <p>Dos oficiales de oficio, los dos mulatos y los dos alfabetizados, riñen a cuchillo junto a la iglesia de Sensentí después de beber aguardiente. Uno se acoge a sagrado. Seis semanas después piden juntos que se corte la causa porque son amigos. Doce planas de movilidad artesanal entre tres provincias.</p>
+  <div class="foot"><span>12 láminas</span><span class="tag">· criminal</span></div>
+</a>
+<a class="card" href="doc/chevez1828.html" data-tags="mortual,mujeres">
+  <span class="yr">febrero 1828</span>
+  <h3>Cierta cuantilla</h3>
+  <p>Felipe Chévez, oriundo de Nicaragua y casado desde 1826 con Macedonia Cartejón, reclama la herencia de su suegra. El alcalde registra que en su archivo no hay ninguno de los documentos citados.</p>
+  <div class="foot"><span>1 lámina</span><span class="tag">· mortual</span></div>
+</a>
+<a class="card" href="doc/rina1851.html" data-tags="criminal,municipal">
+  <span class="yr">27 junio 1851</span>
+  <h3>Riña a cuchillo en la calle</h3>
+  <p>Un juicio verbal completo, de la comparecencia a la notificación, en tres planas seguidas. Es de lo poco del archivo donde se ve el procedimiento republicano entero, con su fundamento legal citado por artículo.</p>
+  <div class="foot"><span>1 lámina</span><span class="tag">· criminal</span></div>
+</a>
+<a class="card" href="doc/libro1856.html" data-tags="municipal">
+  <span class="yr">1856–1857</span>
+  <h3>Ochenta y dos pesos seis reales</h3>
+  <p>El libro de cargo y data del tesorero de Sensentí para 1856, completo. De qué vive un municipio rural hondureño a mediados del siglo XIX: multas, ejidos, el fondo comunal, lo recogido en la fiesta de la Candelaria — y, gasto tras gasto, el sueldo atrasado del preceptor de la escuela. Contiene además un topónimo que sigue sin resolverse.</p>
+  <div class="foot"><span>10 láminas</span><span class="tag">· municipal</span></div>
+</a>
+<a class="card" href="doc/ordenes1856.html" data-tags="escuela,municipal">
+  <span class="yr">1856</span>
+  <h3>Diez reales al mes para el maestro</h3>
+  <p>Catorce aperturas del libro de órdenes de la municipalidad, con el recibo a la izquierda y la orden nueva a la derecha. Entre ellas se puede reconstruir lo que cobraba el preceptor de la escuela de Sensentí y con cuánto retraso: diez reales la mesada, cuatro veces menos que el secretario, y siempre atrasado.</p>
+  <div class="foot"><span>14 láminas</span><span class="tag">· escuela</span></div>
+</a>
+<a class="card" href="doc/cordova186x.html" data-tags="criminal,municipal">
+  <span class="yr">mayo 186…</span>
+  <h3>Eduardo Córdova, por desobediencia</h3>
+  <p>Un juicio verbal por desobediencia a la autoridad, con su carátula. Es de las piezas más tardías del archivo y la peor conservada: el velo de luz suprime el tercio final de casi todos los renglones.</p>
+  <div class="foot"><span>2 láminas</span><span class="tag">· criminal</span></div>
+</a>
+<a class="card" href="doc/nunez-caratula.html" data-tags="criminal">
+  <span class="yr">sin año</span>
+  <h3>Una carátula sin año</h3>
+  <p>La cubierta de una querella criminal, sin su cuerpo. Que la casilla del año esté en blanco no es una pérdida: es un dato sobre cómo se llevaba el archivo.</p>
+  <div class="foot"><span>1 lámina</span><span class="tag">· criminal</span></div>
+</a>
+</div>
+</section>
+
+<section id="citar">
+<h2>Cómo citar</h2>
+<div class="prose">
+<p>Cada página lleva la signatura de sus láminas. Para citar una transcripción concreta:</p>
+<blockquote><p>Archivo Municipal de Sensentí, IMG_1700–1703, transcripción en
+<em>Papeles de Sensentí</em>, ed. Erlend M. Johnson (PARCS), consultado el [fecha], [URL].</p></blockquote>
+<p>Las transcripciones se ofrecen para uso académico. <strong>Nada de esto sustituye al cotejo con el
+original</strong>: los nombres propios y las cifras son lo primero que conviene verificar antes de citar,
+y en cada lámina se declara el grado de confianza de la lectura.</p>
+</div>
+</section>
+
+<footer>
+<p><strong>Papeles de Sensentí</strong> — Proyecto Arqueológico Río Cucuyagua y Sensentí (PARCS),
+dirigido por Erlend M. Johnson. Las fotografías del archivo municipal fueron tomadas en el marco
+del proyecto; las transcripciones se hicieron entre 2025 y 2026.</p>
+<p>Quedan <strong>31 láminas sin transcribir</strong> —un bloque de circulares impresas del Estado de
+Honduras de 1848— de las 385 fotografiadas.</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var bs=document.querySelectorAll('#filtros button'), cards=document.querySelectorAll('#rejilla .card');
+  bs.forEach(function(b){b.addEventListener('click',function(){
+    var f=b.dataset.f;
+    bs.forEach(function(x){x.setAttribute('aria-pressed', x===b ? 'true':'false');});
+    cards.forEach(function(c){
+      c.style.display = (!f || c.dataset.tags.split(',').indexOf(f)>-1) ? '' : 'none';
+    });
+  });});
+})();
+</script>
+
+</body></html>

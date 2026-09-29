@@ -1,0 +1,1283 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Diez reales al mes para el maestro — Papeles de Sensentí</title>
+<meta name="description" content="Catorce aperturas del libro de órdenes de la municipalidad, con el recibo a la izquierda y la orden nueva a la derecha. Entre ellas se puede reconstruir lo que cobraba el preceptor de la escuela de Sensentí y con cuánto retraso: diez reales la mesada, cuatro veces menos que el secretario, y siempre ">
+<meta property="og:title" content="Diez reales al mes para el maestro">
+<meta property="og:description" content="Catorce aperturas del libro de órdenes de la municipalidad, con el recibo a la izquierda y la orden nueva a la derecha. Entre ellas se puede reconstruir lo que cobraba el preceptor de la escuela de Sensentí y con cuánto retraso: diez reales la mesada, cuatro veces menos que el secretario, y siempre ">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* tablas dentro del estudio */
+table{border-collapse:collapse;width:100%;margin:20px 0;font-size:.92em;
+  background:var(--card,transparent);display:block;overflow-x:auto}
+@media(min-width:620px){table{display:table}}
+th,td{border:1px solid var(--rule);padding:9px 11px;text-align:left;vertical-align:top;line-height:1.5}
+th{background:var(--rule2);color:var(--ink);font-weight:600;font-size:.86em;
+  letter-spacing:.02em;text-transform:none}
+tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--rule) 22%,transparent)}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Libro de órdenes de pago, 1856</p>
+  <h1>Diez reales al mes para el maestro</h1>
+  <p class="dek">Catorce aperturas del libro de órdenes de la municipalidad, con el recibo a la izquierda y la orden nueva a la derecha. Entre ellas se puede reconstruir lo que cobraba el preceptor de la escuela de Sensentí y con cuánto retraso: diez reales la mesada, cuatro veces menos que el secretario, y siempre atrasado.</p>
+  <div class="meta"><span><strong>14 láminas</strong> · IMG_1586 – IMG_1599</span><span>Marzo a diciembre de 1856</span><span>Órdenes 4 a 15, con sus recibos firmados</span><span>Sensentí</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">14</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>Catorce tomas del <strong>libro de órdenes de pago de la municipalidad de Sensentí, 1856</strong> — el papel que respalda las partidas de data del libro de cuentas del tesorero que el proyecto transcribió antes.</p>
+<p><strong>Una advertencia de forma que cambia cómo se leen.</strong> Cada fotografía no es una plana sino <strong>una apertura del libro</strong>: a la izquierda el recibo, que es el dorso de la hoja anterior, y a la derecha la orden nueva. Lo confirman cuatro coincidencias exactas de importe entre la mitad izquierda de una toma y la derecha de la anterior.</p>
+<h3>Las órdenes</h3>
+<p>Todas de 1856. Dos llevan el encabezamiento roto —2 de marzo, 4 pesos; 1 de abril, 1 peso— y las demás van numeradas:</p>
+<h3>Lo que se puede deducir sobre el maestro de escuela</h3>
+<p>La orden 12 es la que da la ecuación: <strong>dos mesadas = veinte reales</strong>, de donde <strong>la mesada del preceptor valía diez reales</strong>, es decir un peso y dos reales.</p>
+<p>Cinco pagos en medio año suman setenta y cinco reales, y son <strong>irregulares y siempre atrasados</strong> — el de septiembre se libra expresamente por dos mensualidades que se le debían. <strong>El secretario municipal cobraba cinco pesos al mes: cuatro veces más que el maestro.</strong></p>
+<p>Y hay un <strong>cambio de preceptor hacia agosto</strong>: en julio firma el recibo «Gregorio S…», y desde agosto lo firma <strong>Matías Molina</strong>.</p>
+<h3>Quién firma</h3>
+<p><strong>Todos los recibos los firma el interesado de su mano, sin ruego.</strong> En las órdenes es distinto: hay firmas a ruego, porque varios de los que mandaban pagar no sabían escribir. No firmaban <strong>Juan Monterola</strong>, <strong>Pablo Toro</strong>, <strong>Francisco Sandoval</strong> ni el síndico <strong>Marcelo Guzmán</strong> — de éste consta la fórmula entera: «A ruego del [Sínd]co Marcelo Gusman y como S[ecreta]rio — Ynasio Villagra». Sí firman <strong>Ruperto Fuentes</strong>, <strong>Quirino Mesías</strong> y <strong>Luis López</strong>.</p>
+<p>Es una inversión de lo que se ve en el resto del archivo: aquí quienes no saben firmar no son los pobres que declaran ante el juez, sino <strong>los miembros de la corporación municipal</strong>, mientras que los asalariados que cobran —el maestro, el secretario— firman todos de su mano.</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>Este libro es el reverso del libro de cuentas de 1856, y juntos muestran <strong>el circuito entero por el que un peso salía de una caja municipal</strong>: orden numerada, pago del tesorero, recibo firmado por el interesado y partida en el libro de data. Aquí están la orden y el recibo, y el libro de cuentas tiene la data. Seguir una misma cantidad por los tres pasos es lo que da valor a los dos cuadernos.</p>
+<p>Advertencia material: cada fotografía recoge una <strong>apertura del libro</strong> y no una plana. A la izquierda va el recibo, escrito en el dorso de la hoja anterior, y a la derecha la orden nueva. Cada orden lleva su descargo en su propio reverso, y basta pasar la hoja para ver si la libranza se cumplió. Confundir la apertura con la plana desordena la secuencia y rompe las correspondencias. Es un control barato y físico, sin copiadores, sin registro aparte y sin escribano.</p>
+<p>Del contenido, lo que más rinde es el maestro. La orden 12 da la ecuación entera, dos mesadas por veinte reales, de modo que la mensualidad del <strong>preceptor</strong> valía <strong>diez reales</strong>. Los pagos son irregulares y atrasados, y el secretario municipal cobraba cinco pesos mensuales. Hacia agosto hay relevo: desde entonces firma el recibo <strong>Matías Molina</strong>. El papel no dice por qué se fue el primero.</p>
+<p>Todos los recibos los firma de su mano el que cobra. Varias órdenes, en cambio, las firman a ruego, entre ellos el síndico <strong>Marcelo Guzmán</strong>. Se invierte lo que muestra el resto del archivo: aquí los iletrados son los miembros de la corporación y quienes escriben son los asalariados.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#fIMG_1586">86</a><a href="#fIMG_1587">87</a><a href="#fIMG_1588">88</a><a href="#fIMG_1589">89</a><a href="#fIMG_1590">90</a><a href="#fIMG_1591">91</a><a href="#fIMG_1592">92</a><a href="#fIMG_1593">93</a><a href="#fIMG_1594">94</a><a href="#fIMG_1595">95</a><a href="#fIMG_1596">96</a><a href="#fIMG_1597">97</a><a href="#fIMG_1598">98</a><a href="#fIMG_1599">99</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="fIMG_1586">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 14</span><h3>IMG_1586</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1586-0" aria-label="Ampliar la lámina"><img src="../img/ordenes1856/p001.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Papel común, sin sello fiscal, de hoja suelta cosida al legajo; tinta ferrogálica
+parda, muy desvaída en la mitad superior de la hoja derecha. La hoja izquierda tiene
+<strong>roturas y pérdidas de soporte en la cabecera</strong>, justo sobre la línea de la data, y una mano
+enguantada sujeta el papel por el ángulo superior izquierdo. La toma está hecha con luz rasante
+desde la derecha y <strong>la hoja derecha se sale del encuadre</strong>: los finales de renglón de la orden
+quedan cortados por el borde de la fotografía, de modo que la persona a quien se manda pagar
+no se lee. Fuerte transparencia de la escritura del dorso en ambas hojas. Orientación correcta.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Apertura. A la izquierda, el pie de un recibo (el de la orden inmediatamente
+anterior a la que abre el tramo, que no se conserva en estas tomas): sólo sobreviven la última
+línea del texto, la data y la firma. A la derecha, una orden de pago completa de la Sala
+Municipal al tesorero, de 4 pesos, con su nómina de firmas.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>Página izquierda (recibo de la orden anterior):</em></p>
+<div class="dipl">
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿que es de la?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Sen]</u>sentí Feb.º 25 de 1856 —</span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><em>Página derecha (orden):</em></p>
+<div class="dipl">
+<span class="ln">Ord.n n.º <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Sa]</u>la munisip.l de Sensentí M<u class="exp" title="abreviatura desarrollada">[arzo]</u> 2 <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">El Tesor.º de la municip.l pagara</span>
+<span class="ln">a<u class="exp" title="abreviatura desarrollada">[l]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de la misma cuatro p.s por l<u class="exp" title="abreviatura desarrollada">[a mesada]</u></span>
+<span class="ln">que tiene devengada que con <u class="exp" title="abreviatura desarrollada">[recibo]</u></span>
+<span class="ln">que de esta ord.n hara buena <u class="exp" title="abreviatura desarrollada">[data]</u></span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Por los Reg.s Juan Monterola</span>
+<span class="ln">Pablo Toro y sindico Marcelo Gusman</span>
+<span class="ln">y como S.rio.</span>
+<span class="ln">Ygnacio Arceo <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>El recibo que <em>sí</em> está en esta plana, el de la orden anterior, se fecha en Sensentí a
+25 de febrero de 1856 y lo <strong>firma de su mano Ruperto Fuentes</strong>, sin fórmula de ruego.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media. La data y las dos firmas son seguras. El número de orden se ha perdido
+en la rotura y <strong>no se suple</strong>: por la serie tendría que ser el 2, pero eso es deducción, no lectura.
+El importe («cuatro p.s») es firme y queda confirmado por el recibo de IMG_1587.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1587">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 14</span><h3>IMG_1587</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1587-0" aria-label="Ampliar la lámina"><img src="../img/ordenes1856/p002.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Como la anterior. La hoja izquierda tiene <strong>dos agujeros de tinta corrosiva</strong>
+en el primer renglón, sobre las palabras centrales. La hoja derecha está arrugada en vertical
+(pliegue de guarda) y <strong>también se corta por el borde derecho del encuadre</strong>, lo que se lleva
+el final de tres renglones y, con ellos, el destinatario del pago. En el ángulo superior izquierdo
+asoma, bajo el dedo enguantado, otro papel del legajo con un <strong>sello en seco gofrado</strong>, que no
+pertenece a estas hojas. Orientación correcta.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Apertura. Izquierda: recibo de los cuatro pesos de la orden anterior (la de IMG_1586),
+fechado el mismo día que ella. Derecha: orden nueva, de un peso.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>Página izquierda (recibo de la orden de IMG_1586):</em></p>
+<div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Recib]</u>í los cuatro p.s q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[es]</u>presa <u class="exp" title="abreviatura desarrollada">[la orden]</u></span>
+<span class="ln">anterior. —</span>
+<span class="ln">Sensentí Marzo 2 <u class="exp" title="abreviatura desarrollada">[de 1856]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Y]</u>nasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><em>Página derecha (orden):</em></p>
+<div class="dipl">
+<span class="ln">Ord.n n.º <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Sala Munisipal de Abril 1.º a 1856</span>
+<span class="ln">El Tesor.º municipal pagara al <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">la misma un p<u class="exp" title="abreviatura desarrollada">[eso]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> que mas <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ha rendido la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>, que con rec<u class="exp" title="abreviatura desarrollada">[ibo]</u></span>
+<span class="ln">al pie de esta hara buena data</span>
+<span class="ln">Ruperto Fuentes ,, Quirino Mesias <u class="exp" title="abreviatura desarrollada">[rúbricas]</u></span>
+<span class="ln">Por los Reg.s Juan Monterola, Pablo Toro Luis Lopez</span>
+<span class="ln">y Sindico Marcelo Gusman y como S.rio</span>
+<span class="ln">Ynasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Recibo de esta plana (el de la orden de 2 de marzo, 4 pesos): fechado en Sensentí a 2 de marzo,
+<strong>firmado por Ynasio Villagra</strong>, de su mano y sin fórmula de ruego.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-baja para el cuerpo de la orden —el destinatario y el motivo se pierden
+en el corte del encuadre— y <strong>alta</strong> para el recibo de la izquierda, la fecha de la orden
+y la nómina de firmantes. El importe «un peso» se apoya además en el recibo de IMG_1588.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1588">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 14</span><h3>IMG_1588</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1588-0" aria-label="Ampliar la lámina"><img src="../img/ordenes1856/p003.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>La toma está girada 90º: para leerla hay que **rotar la imagen 90º en sentido
+antihorario** (el lomo del libro queda arriba en el archivo original). Hecho eso, la apertura
+se lee normalmente. Papel común, tinta parda; la hoja izquierda tiene una **mancha de tinta
+alargada** en el margen y transparencia muy fuerte del dorso. La hoja derecha vuelve a
+<strong>salirse del encuadre por la derecha</strong>, y esta vez el corte se lleva precisamente la cifra
+de la orden.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Apertura, <strong>fotografiada de lado</strong>. Izquierda: recibo del peso de la orden anterior.
+Derecha: <strong>orden n.º 4</strong>, primera del tramo cuyo número se lee sin sombra de duda.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>Página izquierda (recibo de la orden de IMG_1587):</em></p>
+<div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Recib]</u>í <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿el?]</u></u> un p<u class="exp" title="abreviatura desarrollada">[eso]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[espresa]</u> la ord<u class="exp" title="abreviatura desarrollada">[en]</u></span>
+<span class="ln">a<u class="exp" title="abreviatura desarrollada">[nterior]</u></span>
+<span class="ln">Sensentí Ab.l 1.º de 18<u class="exp" title="abreviatura desarrollada">[56]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Y]</u>nasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><em>Página derecha (orden):</em></p>
+<div class="dipl">
+<span class="ln">Orden n.º 4</span>
+<span class="ln">Sala munisip.l de Sensentí Mayo <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">El Tesor.º Munisip.l entrega-</span>
+<span class="ln">ra <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> al S.rio de la misma, p<u class="exp" title="abreviatura desarrollada">[or el]</u></span>
+<span class="ln">mes que tiene devengado, q<u class="exp" title="abreviatura desarrollada">[ue con]</u></span>
+<span class="ln">recibo al pie de esta hara <u class="exp" title="abreviatura desarrollada">[buena]</u></span>
+<span class="ln">data.  Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>  Quirino <u class="exp" title="abreviatura desarrollada">[Mesias]</u></span>
+<span class="ln">Por los Reg.s Juan — Monterola, Pablo Toro Sindico —   Luis <u class="exp" title="abreviatura desarrollada">[Lopez]</u></span>
+<span class="ln">Marcelo Gusman y como S.rio</span>
+<span class="ln">Ynasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Recibo de esta plana (el del peso de la orden de 1.º de abril): <strong>fecha ut supra</strong>, es decir
+el mismo 1.º de abril, y <strong>firmado de su mano por Ynasio Villagra</strong>.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta para el número de orden, el destinatario («al S.rio de la misma») y las firmas.
+Media para el importe, que no se lee en el papel: los cuatro pesos vienen del recibo del dorso
+(IMG_1589 izq.), no de la orden. El día de mayo no se lee.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1589">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 14</span><h3>IMG_1589</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1589-0" aria-label="Ampliar la lámina"><img src="../img/ordenes1856/p004.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Ésta es la toma mejor iluminada del tramo y la más legible. Papel común;
+tinta parda bien conservada en la hoja derecha. La hoja izquierda está <strong>muy desvaída</strong> y la
+cruza una rúbrica enorme que se superpone al texto. En el ángulo superior izquierdo asoma,
+bajo la mano enguantada, el papel con <strong>sello en seco gofrado</strong> del legajo de debajo. La hoja
+derecha se corta otra vez por el borde derecho del encuadre. Orientación correcta.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Apertura. Izquierda: recibo de los cuatro pesos de la orden n.º 4. Derecha:
+<strong>orden n.º 5</strong>, con una <strong>corrección hecha en el momento</strong> —una palabra tachada y sustituida—
+que es lo más interesante de la plana.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>Página izquierda (recibo de la orden n.º 4):</em></p>
+<div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Recib]</u>í los cuatro p.s que <u class="exp" title="abreviatura desarrollada">[es]</u>presa la ord.n ant<u class="exp" title="abreviatura desarrollada">[erior]</u></span>
+<span class="ln">Sensentí Mayo 30 de 18<u class="exp" title="abreviatura desarrollada">[56]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Yg]</u>nacio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><em>Página derecha (orden):</em></p>
+<div class="dipl">
+<span class="ln">Orden n.º 5.º</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Sa]</u>la municip.l de Sensentí Junio 1.º de <u class="exp" title="abreviatura desarrollada">[1856]</u></span>
+<span class="ln">El Tesor.º de la municip.l pagara <u class="exp" title="abreviatura desarrollada">[al ...]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[d]</u>e la misma cuatro p.s por la mesada <u class="exp" title="abreviatura desarrollada">[que]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[ti]</u>ene devengada ~~del mes de abril~~, del pr<u class="exp" title="abreviatura desarrollada">[esente]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> con recibo al pie hara buena entre<u class="exp" title="abreviatura desarrollada">[ga]</u></span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>   Quirino Mesias</span>
+<span class="ln">Luis Lo<u class="exp" title="abreviatura desarrollada">[pez]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[A rue]</u>go de los Rejidores</span>
+<span class="ln">Juan Monterola Pablo Toro <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">y como S.rio</span>
+<span class="ln">Ygnacio Arceo <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Recibo de esta plana (el de los cuatro pesos de la orden n.º 4): <strong>Sensentí, 30 de mayo de 1856</strong>
+—veintitantos días después de la orden—, <strong>firmado de su mano por Ygnacio Villagra</strong>.</p>
+<p>La tachadura merece nota: el escribano puso «del mes de abril», lo tachó y escribió encima
+«del presente». Es decir, se corrigió a sí mismo para que la mesada se imputara a junio y no a abril.</p>
+<p>Nótese también la fórmula del pie, distinta de la de otras planas: aquí **«A ruego de los Rejidores
+Juan Monterola, Pablo Toro»** — los dos regidores no firman, firma por ellos el secretario.
+Y quien firma como secretario en esta plana es <strong>Ygnacio Arceo</strong>, no Villagra.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta. Es la plana más segura del tramo salvo por el destinatario del pago,
+que cae fuera del encuadre.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1590">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 14</span><h3>IMG_1590</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1590-0" aria-label="Ampliar la lámina"><img src="../img/ordenes1856/p005.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Girada 90º como IMG_1588; hay que <strong>rotarla 90º en sentido antihorario</strong>.
+La cabecera de la hoja izquierda queda <strong>tapada por el papel de seda y la mano</strong> que sujetan
+el libro, de modo que el primer renglón del recibo (el que llevaría el «Recibí») no se ve:
+el texto visible empieza ya por «los … p.s». La hoja derecha se corta por el borde del encuadre
+y se lleva el final de los renglones, incluida la cifra. Tinta parda, papel común.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Apertura, <strong>también fotografiada de lado</strong>. Izquierda: recibo de la orden n.º 5.
+Derecha: <strong>orden n.º 6</strong>, de sueldos atrasados del secretario.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>Página izquierda (recibo de la orden n.º 5):</em></p>
+<div class="dipl">
+<span class="ln">[renglón inicial tapado por el papel de conservación]</span>
+<span class="ln">los <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿cuatro?]</u></u> p.s que espresa la orden a<u class="exp" title="abreviatura desarrollada">[nterior]</u></span>
+<span class="ln">Sensentí Junio 17 de 1856</span>
+<span class="ln">Ygnacio Arceo <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><em>Página derecha (orden):</em></p>
+<div class="dipl">
+<span class="ln">Orden n.º 6.º</span>
+<span class="ln">Sala Munisip.l del Pueblo de Sensentí Julio</span>
+<span class="ln">2 a 1856 —</span>
+<span class="ln">El Tesor.º de la munisip.l pagara <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿cinco p.s?]</u></u></span>
+<span class="ln">al S.rio de la misma, de los sueldos q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">tiene devengados, que con recibo al</span>
+<span class="ln">pie de esta hara buena data</span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>  Quirino Mes<u class="exp" title="abreviatura desarrollada">[ias]</u></span>
+<span class="ln">Por los Reg.s Juan Monterola, Pablo Toro y Sin-</span>
+<span class="ln">dico Marcelo Gusman y como S.rio</span>
+<span class="ln">Ynasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Recibo de esta plana (el de la orden n.º 5): <strong>Sensentí, 17 de junio de 1856</strong> —dieciséis días
+después de la orden—, <strong>firmado por Ygnacio Arceo</strong>, de su mano, sin fórmula de ruego.</p>
+<p>Aquí hay un punto que conviene no maquillar: el recibo lo firma <strong>Arceo</strong> y la orden la
+refrenda como secretario <strong>Villagra</strong>. En IMG_1589 ocurre lo contrario. Los dos nombres
+alternan en el oficio de secretario a lo largo de 1856 y las órdenes no explican por qué.
+Las dos rúbricas son inconfundibles entre sí —Arceo traza un lazo compacto entrelazado,
+Villagra un lazo muy abierto que ocupa media plana—, de modo que no es confusión de lectura.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta. El número de orden, la fecha, el destinatario («al S.rio de la misma»)
+y las firmas son seguros. La cifra de la orden se pierde en el corte; los cinco pesos vienen
+del recibo del dorso.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1591">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 14</span><h3>IMG_1591</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1591-0" aria-label="Ampliar la lámina"><img src="../img/ordenes1856/p006.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Papel común; la hoja derecha, entera en el encuadre por una vez, está recorrida
+por <strong>pliegues verticales</strong> que dejan bandas de brillo y bandas de sombra y estropean la lectura
+de la mitad derecha. Sobre la hoja izquierda cae un <strong>foco de luz quemado</strong> que borra el final
+de los renglones. Ángulo superior izquierdo: de nuevo el papel con sello en seco del legajo de debajo.
+Orientación correcta.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Apertura. Izquierda: recibo de los cinco pesos de la orden n.º 6. Derecha:
+<strong>orden n.º 7</strong>, y aquí cambia el tipo de gasto: no es sueldo, es <strong>material de oficina</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>Página izquierda (recibo de la orden n.º 6):</em></p>
+<div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Recib]</u>í los cinco p.s que contiene la ord.n</span>
+<span class="ln">anterior.</span>
+<span class="ln">Sensentí fecha Vt Supra</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Y]</u>nasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><em>Página derecha (orden):</em></p>
+<div class="dipl">
+<span class="ln">Orden n.º 7.º</span>
+<span class="ln">Sala munisip.l del Pueblo de Sensentí Julio 3<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">a 1856 —</span>
+<span class="ln">El Tesor.º de la munisip.l dara al Al-</span>
+<span class="ln">c.e 1.º de la misma cinco p.s cuatro</span>
+<span class="ln">y medio q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿erogó?]</u></u> en papel y obleas que con</span>
+<span class="ln">recibo al pie de esta hara buena entre-</span>
+<span class="ln">ga —</span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>  Quirino Mesias</span>
+<span class="ln">Por los tres Reg.s Juan — Monterola, Pablo Toro</span>
+<span class="ln">Sindico Marcelo Gusman y como S.rio</span>
+<span class="ln">Ynasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Recibo de esta plana (el de los cinco pesos de la orden n.º 6): <strong>«fecha ut supra»</strong>, sin data
+propia —es decir, cobrado el mismo día de la orden, 2 de julio—, <strong>firmado por Ynasio Villagra</strong>.</p>
+<p>Ésta es la primera aparición de la fórmula <strong>«fecha Vt Supra»</strong>, que a partir de aquí se hace
+habitual en los recibos y que explica por qué muchos de ellos parecen no llevar fecha: la llevan
+por remisión a la de la orden.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta. «Al Alc.e 1.º» y «papel y obleas» son lecturas firmes; el importe
+se lee «cinco p.s cuatro y medio», con el «y medio» al principio del renglón siguiente.
+El día del mes queda dudoso entre 3 y 30 y <strong>no se resuelve</strong>.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1592">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 7 de 14</span><h3>IMG_1592</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1592-0" aria-label="Ampliar la lámina"><img src="../img/ordenes1856/p007.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>El papel de seda de conservación y la mano enguantada ocupan todo el ángulo
+superior izquierdo. La hoja izquierda está <strong>fuertemente arqueada</strong> (la fotografía coge la
+curva del cuadernillo) y el texto se deforma hacia el lomo. En el margen derecho del recibo,
+junto a la firma, hay <strong>una anotación de cifras a lápiz o tinta muy fina</strong>, de trazo distinto,
+que no se deja leer. Al pie derecho de la hoja de la orden asoman dos palabras del dorso
+(«Re…», «…»). Orientación correcta.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Apertura. Izquierda: recibo de la orden n.º 7, firmado por el propio alcalde.
+Derecha: <strong>orden n.º 8</strong>, la primera del tramo <strong>a favor del preceptor de la escuela</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>Página izquierda (recibo de la orden n.º 7):</em></p>
+<div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Rec]</u>ibí la cantidad que espresa <u class="exp" title="abreviatura desarrollada">[la]</u></span>
+<span class="ln">ord.n anterior</span>
+<span class="ln">Sensentí Julio fecha Vt Supra</span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>         — <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+<p class="note"><em>Página derecha (orden):</em></p>
+<div class="dipl">
+<span class="ln">Ord.n n.º 8.º</span>
+<span class="ln">Sala Munisip.l de Sensentí Julio 3<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a 1856</span>
+<span class="ln">El Tesor.º de la munisip.l pagara</span>
+<span class="ln">tres p.s al Prensep.r de la Escuela d<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[los]</u> sueldos q<u class="exp" title="abreviatura desarrollada">[ue]</u> tiene devengad.s, que con reci<u class="exp" title="abreviatura desarrollada">[bo]</u></span>
+<span class="ln">al pie de esta hara buena data</span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>  Quirino Mesias</span>
+<span class="ln">Por los Reg.s Juan Monterola, Pablo Toro, Sindico</span>
+<span class="ln">Marcelo Gusman y como S.rio</span>
+<span class="ln">Ynasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Recibo de esta plana (el de los 5 p. 4½ r. de la orden n.º 7): <strong>«Sensentí Julio fecha ut supra»</strong>,
+<strong>firmado de su mano por Ruperto Fuentes</strong> —que era el destinatario del pago en cuanto alcalde 1.º.
+El alcalde cobra y firma él mismo: no hay intermediario ni fórmula de ruego.</p>
+<p>La grafía del papel es <strong>«Prensep.r»</strong> (por <em>Preceptor</em>); se respeta.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta para el importe, el destinatario y las firmas. Media para el día del mes.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1593">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 8 de 14</span><h3>IMG_1593</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1593-0" aria-label="Ampliar la lámina"><img src="../img/ordenes1856/p008.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Hoja izquierda muy desvaída y arqueada, con la escritura del dorso transparentándose
+tanto como la del recto. La hoja derecha está mejor. Por encima del borde superior de la hoja
+derecha <strong>asoma el canto de la hoja de debajo con su propio encabezamiento, «Orden N.º 11»</strong>;
+conviene no confundirlo con el título de esta plana, que es «Orden n.º 9» y va más abajo.
+Mano enguantada al pie izquierdo. Orientación correcta.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Apertura. Izquierda: recibo de los tres pesos del preceptor, y **la única firma
+del tramo que no se identifica con seguridad<strong>. Derecha: </strong>orden n.º 9**.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>Página izquierda (recibo de la orden n.º 8):</em></p>
+<div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Rec]</u>ibí los tres p.s q.e contiene la ord.n</span>
+<span class="ln">anterior. Sensentí Julio fecha Vt Supra</span>
+<span class="ln">Gregorio S<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><em>Página derecha (orden):</em></p>
+<div class="dipl">
+<span class="ln">Orden n.º 9</span>
+<span class="ln">Sala munisip.l del pueblo de Sensen-</span>
+<span class="ln">tí Agosto 2 de 1856 —</span>
+<span class="ln">Los Tesor.s o Tesor.º de la muni-</span>
+<span class="ln">cipalidad, pagaran al <u class="exp" title="abreviatura desarrollada">[S.rio]</u> de la</span>
+<span class="ln">misma <u class="exp" title="abreviatura desarrollada">[cinco]</u> p.s que tiene devengados</span>
+<span class="ln">en el mes de Julio, que con recibo</span>
+<span class="ln">al pie de esta ord.n hara buena en-</span>
+<span class="ln">trega —   Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Por los Reg.s Pablo Toro, Juan Monterola, Sind<u class="exp" title="abreviatura desarrollada">[ico]</u></span>
+<span class="ln">Marcelo Gusman y como S<u class="exp" title="abreviatura desarrollada">[.ri]</u>o</span>
+<span class="ln">Ynasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Recibo de esta plana (el de los tres pesos del preceptor, orden n.º 8): **«Sensentí Julio fecha
+ut supra»<strong>, es decir cobrado el mismo día que se libró la orden, y </strong>firmado de su mano** —sin
+fórmula de ruego— por <strong>«Gregorio S…»</strong>.</p>
+<p>Sobre este nombre hay que ser franco. El nombre de pila, <em>Gregorio</em>, se lee bien. El apellido
+empieza por <strong>S</strong> mayúscula y tiene cinco o seis letras; a máxima ampliación el trazo admite
+<em>San…os</em>, <em>Sanches</em> o <em>Sandoval</em>, y <strong>no se decide</strong>. Lo que sí puede decirse es que **no es
+«González»**, que es el apellido que el catálogo asocia a un Gregorio. Y lo que importa para
+la historia de la escuela: en julio de 1856 quien cobra por el preceptorado <strong>no es Matías Molina</strong>,
+sino este Gregorio S…; Molina aparece a partir de agosto.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta para la orden. <strong>Baja</strong> para el apellido del firmante del recibo,
+que se deja en puntos suspensivos a propósito.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1594">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 9 de 14</span><h3>IMG_1594</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1594-0" aria-label="Ampliar la lámina"><img src="../img/ordenes1856/p009.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Hoja izquierda arqueada y desvaída, con la mano enguantada abajo. Sobre la hoja
+izquierda asoma además el canto de la hoja de debajo con su propio texto («…ibí los tres p.s…»,
+que es el recibo de IMG_1593). En la derecha vuelve a verse arriba el canto con «Orden N.º 11»
+antes del encabezamiento propio, «Orden N.º 10». **En el margen derecho de la hoja de la orden,
+escrita al través, se lee la palabra «Recibí»**: es el comienzo del recibo del dorso, que asoma
+por el canto. Orientación correcta; encuadre completo.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Apertura. Izquierda: recibo de los cinco pesos de la orden n.º 9. Derecha:
+<strong>orden n.º 10</strong>, de <strong>catorce reales al preceptor</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>Página izquierda (recibo de la orden n.º 9):</em></p>
+<div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Rec]</u>ibí los cinco p.s que espresa <u class="exp" title="abreviatura desarrollada">[la]</u></span>
+<span class="ln">ord.n anterior</span>
+<span class="ln">Sensentí fecha Vt Supra</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Y]</u>nasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><em>Página derecha (orden):</em></p>
+<div class="dipl">
+<span class="ln">Orden N.º 10.</span>
+<span class="ln">Sala munisipal del Pueblo de Sensentí</span>
+<span class="ln">Julio 00. de 1856</span>
+<span class="ln">El Tesorero de la municipali-</span>
+<span class="ln">dad entregara al Preceptor de la Escue-</span>
+<span class="ln">la catorce reales q<u class="exp" title="abreviatura desarrollada">[ue]</u> con recibo al pie de</span>
+<span class="ln">dicho S.r hara buena data.</span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>  Quirino Mesias</span>
+<span class="ln">Luis Lopez</span>
+<span class="ln">Por los R.R. Juan Mon-</span>
+<span class="ln">terola, Fran.co Sandoval y Sindico</span>
+<span class="ln">Marcelo Gusman y como S.rio</span>
+<span class="ln">Ynasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">[al margen derecho, del dorso:] Recibi</span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Recibo de esta plana (el de los cinco pesos de la orden n.º 9): <strong>«fecha ut supra»</strong>,
+<strong>firmado de su mano por Ynasio Villagra</strong>.</p>
+<p>Sobre la data de la orden: el papel escribe literalmente <strong>dos ceros</strong>, «Julio 00. de 1856».
+No se corrige ni se interpreta. Dicho esto, la orden n.º 9 es de 2 de agosto y la n.º 11 de
+31 de agosto, de modo que la n.º 10 tiene que caer entre ambas; el «Julio 00» es un descuido
+del escribano y el mes correcto sería agosto. Se deja constancia del error y no se enmienda
+la transcripción.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta para el importe («catorce reales», escrito con todas sus letras), el
+destinatario y las firmas. La data es la que es: ilegible en cuanto a día y equivocada en cuanto a mes.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1595">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 10 de 14</span><h3>IMG_1595</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1595-0" aria-label="Ampliar la lámina"><img src="../img/ordenes1856/p010.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>La mejor pareja de hojas del tramo en cuanto a tinta. Hoja izquierda arqueada,
+con mano enguantada abajo; en el ángulo superior izquierdo, el papel del legajo inferior con
+<strong>sello en seco gofrado</strong> bien visible. Hoja derecha con el canto de la de debajo asomando
+arriba («Orden N.º 11», que aquí sí coincide con el encabezamiento propio) y con la palabra
+«Re…» del dorso asomando por el margen derecho. Manchas de humedad al pie derecho.
+Orientación correcta.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Apertura. Izquierda: recibo de la orden n.º 10, <strong>firmado por Matías Molina</strong> —
+primera aparición del preceptor con nombre y firma propia. Derecha: <strong>orden n.º 11</strong>, de un peso.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>Página izquierda (recibo de la orden n.º 10):</em></p>
+<div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Recibí]</u> la Cantidad espresada — fecha</span>
+<span class="ln">Vt Supra</span>
+<span class="ln">Matias Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><em>Página derecha (orden):</em></p>
+<div class="dipl">
+<span class="ln">Orden N.º 11.</span>
+<span class="ln">Sala munisipal del Pueblo de Sensen-</span>
+<span class="ln">tí Agosto 31. de 1856.</span>
+<span class="ln">El Tesorero de la municipalidad</span>
+<span class="ln">entregara al Preceptor de la Escue-</span>
+<span class="ln">la un peso q<u class="exp" title="abreviatura desarrollada">[ue]</u> con recibo al pie de</span>
+<span class="ln">dicho S.r hara buena entrega</span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>  Quirino Mesias</span>
+<span class="ln">Por los Rejidores Juan Monterola, Luis Lopez</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Fran.co]</u> Sandoval y Sindico Marcelo</span>
+<span class="ln">Gusman y como S.rio</span>
+<span class="ln">Ynasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">[al margen derecho, del dorso:] Re<u class="exp" title="abreviatura desarrollada">[cibí]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Recibo de esta plana (el de los catorce reales de la orden n.º 10): <strong>«fecha ut supra»</strong>,
+<strong>firmado de su mano, con rúbrica amplia y segura, por Matías Molina</strong>. No hay fórmula de ruego:
+el preceptor sabe escribir y firma él.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta. Plana limpia en todos sus elementos.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1596">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 11 de 14</span><h3>IMG_1596</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1596-0" aria-label="Ampliar la lámina"><img src="../img/ordenes1856/p011.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Hoja izquierda desvaída y muy transparentada; hoja derecha bien conservada,
+con luz pareja. <strong>El mes de la data está escrito encima del renglón, interlineado</strong> («Sept.e»),
+señal de que el escribano lo olvidó y lo añadió después. Manchas de humedad y desgarros en el
+papel del fondo, no en estas hojas. Orientación correcta.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Apertura. Izquierda: recibo del peso de la orden n.º 11, de Matías Molina.
+Derecha: <strong>orden n.º 12</strong>, la más explícita del tramo sobre el atraso en que se pagaba al maestro:
+<strong>veinte reales por dos mesadas que se le adeudan</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>Página izquierda (recibo de la orden n.º 11):</em></p>
+<div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Rec]</u>ibí la Cantidad espresada. Sensen-</span>
+<span class="ln">tí fecha Vt Supra</span>
+<span class="ln">Matias Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><em>Página derecha (orden):</em></p>
+<div class="dipl">
+<span class="ln">Sept.e</span>
+<span class="ln">Orden N.º 12</span>
+<span class="ln">Sala Munisipal de Sensentí 13 de 1856</span>
+<span class="ln">El Tesorero de la Munisipalidad pa-</span>
+<span class="ln">gara dos mesadas que se le adeu-</span>
+<span class="ln">dan al Preceptor de la Escuela, ve-</span>
+<span class="ln">inte reales que con recibo de dicho S.r</span>
+<span class="ln">es buena la entrega</span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Luis Lopez <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>   Quirino Mesias</span>
+<span class="ln">Por el R. Monterola, y Sind.º Gusman</span>
+<span class="ln">y como S.rio</span>
+<span class="ln">Ynasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">[al margen derecho, del dorso:] Re<u class="exp" title="abreviatura desarrollada">[cibí]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Recibo de esta plana (el del peso de la orden n.º 11): <strong>«Sensentí fecha ut supra»</strong>,
+<strong>firmado de su mano por Matías Molina</strong>.</p>
+<p>Esta orden es la pieza clave del tramo para la historia de la escuela, porque es la única que
+<strong>pone en ecuación el sueldo</strong>: dos mesadas = veinte reales, luego **la mesada del preceptor
+de Sensentí valía diez reales**, esto es un peso y dos reales al mes. Véase el apartado final.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta. El importe va en letra («veinte reales») y el concepto también
+(«dos mesadas que se le adeudan»): no hay margen de duda en lo esencial.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1597">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 12 de 14</span><h3>IMG_1597</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1597-0" aria-label="Ampliar la lámina"><img src="../img/ordenes1856/p012.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Hoja izquierda muy desvaída; hoja derecha con la tinta **notablemente más pálida
+que en las planas vecinas<strong> y con un </strong>desgarro y pérdida en el margen derecho**, justo donde
+iba el mes de la data. Papel de seda y mano enguantada arriba y abajo a la izquierda.
+La data va en letra, no en cifra, salvo el día. Orientación correcta.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Apertura. Izquierda: recibo de los veinte reales, de Matías Molina. Derecha:
+<strong>orden n.º 13</strong>, de <strong>veinticinco pesos al secretario</strong> — con diferencia la partida mayor del tramo,
+y la que lleva la fórmula de ruego más explícita.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>Página izquierda (recibo de la orden n.º 12):</em></p>
+<div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Rec]</u>ibí la Cantidad espresada en la</span>
+<span class="ln">orden anterior — fecha Vt Supra</span>
+<span class="ln">Matias Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><em>Página derecha (orden):</em></p>
+<div class="dipl">
+<span class="ln">Orden n.º 13</span>
+<span class="ln">Sala Munisipal del Pueblo de Sensentí <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">treinta y uno de mil ochocientos cincuen<u class="exp" title="abreviatura desarrollada">[ta y seis]</u></span>
+<span class="ln">El Tesorero de la Municipalidad pagara al S<u class="exp" title="abreviatura desarrollada">[e]</u>-</span>
+<span class="ln">cretario de la misma 25 pesos de los <u class="exp" title="abreviatura desarrollada">[sueldos que]</u></span>
+<span class="ln">tiene devengados desde el Mes de Agosto <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">sente que con recibo al pie de dicho Señor</span>
+<span class="ln">se tendrá por buena data</span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>  Quirino <u class="exp" title="abreviatura desarrollada">[Mesias]</u></span>
+<span class="ln">A ruego del <u class="exp" title="abreviatura desarrollada">[Sind]</u>co Marcelo        Luis Lope<u class="exp" title="abreviatura desarrollada">[z]</u></span>
+<span class="ln">Gusman y como S.rio</span>
+<span class="ln">Ynasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">[al margen derecho, del dorso:] R<u class="exp" title="abreviatura desarrollada">[ecibí]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Recibo de esta plana (el de los veinte reales de la orden n.º 12): <strong>«fecha ut supra»</strong>,
+<strong>firmado de su mano por Matías Molina</strong>.</p>
+<p>Fórmula de ruego, literal y completa: **«A ruego del [Sind]co Marcelo Gusman y como S.rio —
+Ynasio Villagra»<strong>. Es decir, </strong>el síndico Marcelo Guzmán no sabía firmar**, y el secretario
+firmaba por él además de por sí mismo. La misma mano cubre así dos oficios en la misma rúbrica.
+Esto ilumina retrospectivamente todas las nóminas anteriores: cuando se lee «Por los Reg.s Juan
+Monterola, Pablo Toro y Sindico Marcelo Gusman y como S.rio — Ynasio Villagra», lo que se está
+diciendo es que <strong>ni Monterola, ni Toro, ni Guzmán firmaban de su mano</strong>. Los que sí firman
+siempre por sí mismos son Ruperto Fuentes, Quirino Mesías y Luis López.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media-alta. Los 25 pesos son seguros —van en cifra en la orden y en letra
+(«Veinte y cinco p.s») en el recibo del dorso, IMG_1598—. El <strong>mes de la data no se lee</strong>
+y no se suple; el día es «treinta y uno», en letra.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1598">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 13 de 14</span><h3>IMG_1598</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1598-0" aria-label="Ampliar la lámina"><img src="../img/ordenes1856/p013.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Las dos hojas están <strong>muy pálidas</strong>, con la tinta casi agotada; es, con IMG_1597,
+la peor pareja del tramo en cuanto a densidad de tinta. La hoja derecha tiene un **pliegue
+vertical profundo con pérdida** a la altura del tercio derecho que se traga el final de tres
+renglones —precisamente los que llevan la cifra y el detalle del gasto. Papel de seda y mano
+enguantada a la izquierda. Orientación correcta.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Apertura. Izquierda: recibo de los veinticinco pesos, de Ynasio Villagra.
+Derecha: <strong>orden n.º 14</strong>, otra vez de gastos de oficio al alcalde 1.º.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>Página izquierda (recibo de la orden n.º 13):</em></p>
+<div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Reci]</u>bí los Veinte y cinco p.s que espres<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln">la ord.n anterior</span>
+<span class="ln">Sensentí D.bre 31 de 1856</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Y]</u>nasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><em>Página derecha (orden):</em></p>
+<div class="dipl">
+<span class="ln">Orden n.º 14.</span>
+<span class="ln">Sala Munisipal de Sensentí D.bre 31 de 1856.</span>
+<span class="ln">El Tesorero de la Municipalida<u class="exp" title="abreviatura desarrollada">[d entregara]</u></span>
+<span class="ln">al Señor Alcalde 1.º sinco siete <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">pago de papel, correo, veredas <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">que con recibo de dicho Señor <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> bue-</span>
+<span class="ln">na entrega</span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>  Quirino Mesia<u class="exp" title="abreviatura desarrollada">[s]</u></span>
+<span class="ln">Luis Lope<u class="exp" title="abreviatura desarrollada">[z]</u></span>
+<span class="ln">Por el Sindico y como S.rio</span>
+<span class="ln">Ynasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Recibo de esta plana (el de los 25 pesos de la orden n.º 13): <strong>Sensentí, 31 de diciembre de 1856</strong>,
+con data propia y no «ut supra», <strong>firmado de su mano por Ynasio Villagra</strong>, que era el destinatario
+en cuanto secretario.</p>
+<p>La fórmula del pie se abrevia aquí: <strong>«Por el Sindico y como S.rio — Ynasio Villagra»</strong>,
+sin nombrar ya a Guzmán.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Media. La fecha, el destinatario y el concepto («papel, correo, veredas») son
+seguros; el <strong>importe no lo es</strong>: se leen las dos palabras «sinco siete» y el resto del renglón
+se ha perdido en el pliegue. Por analogía con la orden n.º 7 («cinco p.s cuatro y medio»),
+lo más probable es <em>cinco pesos siete reales</em>, pero <strong>se deja consignado como lectura dudosa</strong>
+y no se da por cierto.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="fIMG_1599">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 14 de 14</span><h3>IMG_1599</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="IMG_1599-0" aria-label="Ampliar la lámina"><img src="../img/ordenes1856/p014.jpg" alt="Fotografía de la lámina" loading="lazy"></button>
+      <figcaption>Como la anterior: tinta muy pálida en las dos hojas, hoja izquierda arqueada
+y prácticamente en blanco por debajo de la firma. Hoja derecha con desgarros en el borde
+superior y derecho, y con manchas oscuras en la cabecera. El dorso de esta hoja —donde estaría
+el recibo de la orden n.º 15— <strong>no entra en este tramo de imágenes</strong>. Papel de seda y mano
+enguantada arriba a la izquierda. Orientación correcta.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Última apertura del tramo. Izquierda: recibo de la orden n.º 14, firmado por el alcalde.
+Derecha: <strong>orden n.º 15</strong>, de <strong>nueve reales al preceptor</strong> — el último asiento del año.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <p class="note"><em>Página izquierda (recibo de la orden n.º 14):</em></p>
+<div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Reci]</u>bí la Cantidad que espresa la Orden <u class="exp" title="abreviatura desarrollada">[anterior]</u></span>
+<span class="ln">Diciembre 31. de 1856</span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+<p class="note"><em>Página derecha (orden):</em></p>
+<div class="dipl">
+<span class="ln">Ord.n N.º 15</span>
+<span class="ln">Sala munisipal de Pueblo de Sensentí D.bre 31</span>
+<span class="ln">de 1856 —</span>
+<span class="ln">El Tesorero de la municipalidad paga-</span>
+<span class="ln">ra nueve reales al Preceptor que con</span>
+<span class="ln">recibo al pie de dicho es buena data</span>
+<span class="ln">Ruperto Fuentes <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">Luis Lopez <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>   Quirino Mesias</span>
+<span class="ln">Por el Sindico y como S.rio</span>
+<span class="ln">Ynasio Villagra <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Recibo de esta plana (el de la orden n.º 14): <strong>31 de diciembre de 1856</strong>,
+<strong>firmado de su mano por Ruperto Fuentes</strong>.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> Alta para el importe —«nueve reales», en letra— y para el destinatario y la fecha.
+La tinta es pálida pero el texto es corto y las palabras clave están limpias.</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4><strong>Matías Molina</strong></h4>
+  <p class="papel">preceptor de la escuela desde agosto de 1856</p>
+  <p class="calidad"><strong>Sí</strong>, todos sus recibos</p>
+</div>
+<div class="persona">
+  <h4><strong>«Gregorio S…»</strong></h4>
+  <p class="papel">preceptor hasta julio de 1856</p>
+  <p class="calidad"><strong>Sí</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Marcelo Guzmán</strong></h4>
+  <p class="papel">síndico</p>
+  <p class="calidad"><strong>No</strong> — firma a su ruego Ygnacio Villagra</p>
+</div>
+<div class="persona">
+  <h4><strong>Juan Monterola</strong></h4>
+  <p class="papel"><strong>regidor</strong> (no tesorero)</p>
+  <p class="calidad"><strong>No</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Pablo Toro</strong></h4>
+  <p class="papel">miembro de la corporación</p>
+  <p class="calidad"><strong>No</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Francisco Sandoval</strong></h4>
+  <p class="papel">miembro de la corporación</p>
+  <p class="calidad"><strong>No</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Ruperto Fuentes</strong></h4>
+  <p class="papel"><strong>Alcalde 1.º</strong> (no preceptor)</p>
+  <p class="calidad"><strong>Sí</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Quirino Mesías</strong></h4>
+  <p class="papel"></p>
+  <p class="calidad"><strong>Sí</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Luis López</strong></h4>
+  <p class="papel"></p>
+  <p class="calidad"><strong>Sí</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Ygnacio Villagra</strong> y <strong>Ygnacio Arceo</strong></h4>
+  <p class="papel">alternan en la secretaría; son las dos firmas más frecuentes del libro</p>
+  <p class="calidad"><strong>Sí</strong></p>
+</div></div>
+</section>
+
+<section class="extra wrap">
+  <h2>Nota final: cuatro correcciones al catálogo, y cómo casa con el libro de cuentas</h2>
+  <p><strong>El catálogo se equivoca en dos cargos.</strong> <strong>Ruperto Fuentes no es preceptor sino Alcalde 1.º</strong>, y <strong>Juan Monterola no es tesorero sino regidor</strong> — el tesorero, de hecho, no se nombra en ninguna de las catorce tomas. «Gregorio González» no se confirma. Y el catálogo <strong>omite a Ygnacio Villagra y a Ygnacio Arceo</strong>, que son las dos firmas más frecuentes del libro y los que alternan en la secretaría.</p>
+<p><strong>Cuatro órdenes casan exactamente con partidas de data del libro de cuentas</strong>: la 10 (14 reales), la 11 (1 peso), la 12 (20 reales, con la frase del atraso) y la 15 (9 reales). Conviene notar que <strong>las órdenes 12 y 15 quedan fuera del rango «3 a 11»</strong> que se creía citado en aquel libro, de modo que la serie de órdenes referida allí era más larga de lo que parecía.</p>
+<p>Sobre las tomas: <strong>IMG_1588 e IMG_1590 están giradas 90°</strong> y hay que rotarlas en sentido antihorario. <strong>El borde derecho del encuadre corta los finales de renglón en IMG_1586, 1587, 1588, 1589 y 1590</strong>, y ahí se pierden algunos destinatarios y algunas cifras, que van como `[...]` sin suplir. Son cinco tomas, y volver a hacerlas cerraría la serie de órdenes por completo.</p>
+</section>
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>

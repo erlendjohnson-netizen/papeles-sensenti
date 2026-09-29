@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La vaca de Joaquín Monrroy — Papeles de Sensentí</title>
+<meta name="description" content="El alcalde de Goarcha mata una res del hierro de un vecino de Sensentí y confiesa. Se la habían vendido los hermanos Reyes en once pesos. Nadie es condenado: se prorratean cinco pesos entre los dos hermanos y pagan cuatro.">
+<meta property="og:title" content="La vaca de Joaquín Monrroy">
+<meta property="og:description" content="El alcalde de Goarcha mata una res del hierro de un vecino de Sensentí y confiesa. Se la habían vendido los hermanos Reyes en once pesos. Nadie es condenado: se prorratean cinco pesos entre los dos hermanos y pagan cuatro.">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f1f2ed; --surface:#fbfbf8; --sunk:#e8eae3;
+  --ink:#1a211e; --ink2:#4b554f; --ink3:#838c85;
+  --rule:#d7dad2; --rule2:#c3c8bd;
+  --iron:#8c3b24; --iron-soft:#efe2dc;
+  --ok:#3c6b4a; --warn:#8a6a1f;
+  --mx:clamp(16px,4vw,40px);
+}
+:root{ --iron2:#b0553a; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+    --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+    --rule:#2d3639; --rule2:#3b4548;
+    --iron-soft:#33241f;
+    --ok:#7fb98d; --warn:#cfa94f;
+  }
+  :root:not([data-theme="light"]){ --iron:#d47a58; --iron2:#e0906f; }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a; --surface:#1b2124; --sunk:#222a2d;
+  --ink:#e4e7e1; --ink2:#b3bcb5; --ink3:#828c86;
+  --rule:#2d3639; --rule2:#3b4548;
+  --iron:#d47a58; --iron2:#e0906f; --iron-soft:#33241f;
+  --ok:#7fb98d; --warn:#cfa94f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--mx);padding-right:var(--mx);padding-block:0}
+h1,h2,h3,h4{margin:0;text-wrap:balance;font-weight:600}
+a{color:var(--iron)}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(38px,8vw,78px) 30px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+h1{font-size:clamp(34px,7.4vw,62px);line-height:1.04;letter-spacing:-.018em;max-width:16ch}
+.dek{font-size:clamp(17px,2.2vw,20px);color:var(--ink2);max-width:62ch;margin:20px 0 0;font-style:italic}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:12.5px;color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 45px);z-index:40;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.barin{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:11px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:2px;overflow:hidden}
+.seg button{font:500 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;padding:8px 13px;background:transparent;
+  color:var(--ink2);border:0;cursor:pointer;border-right:1px solid var(--rule2)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg button:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tog{display:inline-flex;align-items:center;gap:7px;font:400 12.5px/1 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.rail{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.rail a{font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink3);text-decoration:none;
+  padding:6px 5px;border-bottom:2px solid transparent}
+.rail a:hover{color:var(--iron);border-bottom-color:var(--iron)}
+
+/* ---------- prose ---------- */
+.lede{padding-block:clamp(34px,6vw,56px);border-bottom:1px solid var(--rule)}
+.lede h2{font-size:13px;font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.lede p{max-width:66ch;margin:0 0 1.1em;font-size:18px}
+.lede p::first-letter{}
+
+/* ---------- folios ---------- */
+.folio{padding-block:clamp(36px,6vw,62px);border-bottom:1px solid var(--rule);scroll-margin-top:150px}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
+.fnum{display:block;font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.fhead h3{font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:-.01em}
+.chip{font:500 11px/1 "IBM Plex Sans",system-ui,sans-serif;padding:5px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid var(--rule2);color:var(--ink2)}
+.chip-alta{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 42%,transparent)}
+.chip-media{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent)}
+.chip-baja{color:var(--iron);border-color:color-mix(in srgb,var(--iron) 46%,transparent);background:var(--iron-soft)}
+.fgrid{display:grid;grid-template-columns:minmax(0,0.78fr) minmax(0,1fr);gap:clamp(20px,3.4vw,44px);align-items:start}
+.plate{margin:0;position:sticky;top:152px}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--rule2);background:var(--surface);cursor:zoom-in}
+.zoom img{display:block;width:100%;height:auto}
+.zoom:focus-visible{outline:2px solid var(--iron);outline-offset:2px}
+.plate figcaption{font:400 12.5px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);margin-top:10px}
+.quees{margin:0 0 22px;font-size:17.5px;color:var(--ink)}
+.pane{margin-bottom:26px}
+.pane h4{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.dipl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.4px;line-height:1.78;
+  background:var(--sunk);border-left:2px solid var(--rule2);padding:14px 16px;margin:0 0 14px;
+  overflow-x:auto}
+.dipl .ln{display:block;white-space:pre-wrap}
+.pane-mod p{margin:0 0 .95em;max-width:60ch}
+.note{font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0 0 10px}
+.conf{font:400 12.8px/1.62 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2);margin:0;
+  padding-top:14px;border-top:1px solid var(--rule)}
+.conf span{display:inline-block;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-size:10.5px;
+  color:var(--ink3);margin-right:8px}
+
+/* editorial marks */
+u.q,u.lost,u.rub,u.exp{text-decoration:none}
+body.marks u.q{color:var(--iron);border-bottom:1px dotted var(--iron)}
+body.marks u.lost{color:var(--iron);background:var(--iron-soft);padding:0 2px}
+body.marks u.rub{color:var(--ink3);font-style:italic}
+body.marks u.exp{color:var(--ink2);background:color-mix(in srgb,var(--rule) 45%,transparent)}
+
+/* view modes */
+body.only-semi .pane-mod,body.only-mod .pane-semi{display:none}
+
+/* ---------- personas ---------- */
+.people{padding-block:clamp(36px,6vw,62px)}
+.people h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:8px}
+.people .sub{color:var(--ink2);margin:0 0 28px;max-width:60ch}
+.plist{display:grid;gap:0}
+.persona{padding:18px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 28px;align-items:start}
+.persona h4{font-size:17px;grid-row:span 2}
+.persona .papel{margin:0;font-size:15.5px}
+.persona .calidad{margin:0;font:400 13px/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3);grid-column:2}
+
+/* ---------- legend / foot ---------- */
+.legend{padding-block:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.legend h2{font:600 11px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:16px}
+.legend dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 30px;margin:0}
+.legend dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--iron)}
+.legend dd{margin:3px 0 0;font:400 13px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink2)}
+.foot{padding-block:34px 60px;font:400 13px/1.7 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink3)}
+.foot p{max-width:64ch;margin:0 0 .8em}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;max-width:100vw;max-height:100vh;width:100%;height:100%;background:rgba(10,12,11,.94)}
+dialog.lb::backdrop{background:rgba(10,12,11,.9)}
+dialog.lb img{display:block;margin:0 auto;max-width:100%;height:auto}
+.lbbar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px}
+.lbbar button{font:500 12px/1 "IBM Plex Sans",system-ui,sans-serif;background:#f1f2ed;color:#1a211e;
+  border:0;padding:9px 14px;border-radius:2px;cursor:pointer}
+.lbscroll{overflow:auto;height:100%}
+
+@media (max-width:860px){
+  .fgrid{grid-template-columns:1fr}
+  .plate{position:static}
+  .persona{grid-template-columns:1fr}
+  .persona h4{grid-row:auto}
+  .persona .calidad{grid-column:1}
+  .rail{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- extra sections ---------- */
+.extra{padding-block:clamp(30px,5vw,52px);border-top:1px solid var(--rule)}
+.extra h2{font-size:clamp(21px,3vw,27px);margin-bottom:16px}
+.extra h3{font-size:17px;margin:22px 0 8px}
+.extra p{max-width:66ch;margin:0 0 .9em}
+.extra ol,.extra ul{max-width:66ch;padding-left:1.2em}
+.extra li{margin:0 0 .6em}
+.lede ol,.lede ul{max-width:66ch;padding-left:1.2em}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root{
+    --paper:#fff; --surface:#fff; --sunk:#f3f4ef;
+    --ink:#141a18; --ink2:#3f4844; --ink3:#6c7570;
+    --rule:#ccd0c8; --rule2:#b4b9b0;
+    --iron:#7d3320; --iron-soft:#f2e7e2;
+  }
+  @page{ size:A4; margin:16mm 14mm 18mm; }
+  body{background:#fff;font-size:10.4pt;line-height:1.5}
+  .bar,.rail,.tog,.seg,dialog.lb{display:none!important}
+  .wrap{max-width:none;padding-left:0;padding-right:0}
+  .mast{padding-block:0 14pt;border-bottom:1.2pt solid var(--rule2)}
+  h1{font-size:26pt;max-width:none}
+  .dek{font-size:12pt;margin-top:10pt}
+  .meta{margin-top:12pt;font-size:8.6pt;gap:4pt 16pt}
+  .lede{padding-block:14pt;break-after:page}
+  .lede p{font-size:10.8pt;max-width:none}
+  .folio{break-before:page;padding-block:0 0;border-bottom:0}
+  .fhead{margin-bottom:10pt}
+  .fgrid{grid-template-columns:1fr;gap:12pt}
+  .plate{position:static;break-inside:avoid;break-after:avoid;text-align:center}
+  .zoom{border:0.6pt solid var(--rule2);cursor:default;display:inline-block;width:auto;max-width:100%}
+  .zoom img{max-height:115mm;width:auto;max-width:100%}
+  .plate figcaption{font-size:8.2pt;margin-top:6pt;text-align:left;max-width:none}
+  .quees{font-size:10.6pt;margin-bottom:12pt}
+  .pane{margin-bottom:14pt}
+  .pane h4{break-after:avoid}
+  .pane h4{font-size:7.8pt;margin-bottom:7pt}
+  .dipl{font-size:8.5pt;line-height:1.55;padding:8pt 9pt;background:var(--sunk);
+        border-left:1.4pt solid var(--rule2);break-inside:auto;column-count:2;column-gap:14pt}
+  .dipl .ln{break-inside:avoid}
+  .pane-mod p{font-size:10.2pt;max-width:none}
+  .conf{font-size:8.6pt;padding-top:8pt}
+  .legend,.people,.extra,.foot{break-before:page}
+  .persona{break-inside:avoid;padding:9pt 0}
+  .chip{border:0.6pt solid var(--rule2)}
+  u.q{color:var(--iron);border-bottom:0.5pt dotted var(--iron)}
+  u.lost{color:var(--iron);background:var(--iron-soft)}
+  u.exp{background:#eceee8}
+  .pane-mod,.pane-semi{display:block!important}
+  a{color:var(--ink)}
+}
+
+/* --- Relevancia y contexto --- */
+.context{padding-block:clamp(34px,6vw,58px);border-bottom:1px solid var(--rule);
+  background:var(--sunk)}
+.context .inner{max-width:74ch}
+.context h2{margin-top:0}
+.context .tagline{font:500 11px/1.4 var(--mono,ui-monospace,Menlo,monospace);letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.context p{margin:0 0 15px;line-height:1.72}
+.context p:last-child{margin-bottom:0}
+.context .caveat{margin-top:22px;padding-top:14px;border-top:1px solid var(--rule2);
+  font-size:.9em;color:var(--ink3)}
+/* ---------- pestañas ---------- */
+.tabsbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--rule2)}
+.tabsin{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabsin::-webkit-scrollbar{display:none}
+.tb{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;
+  font:600 12px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink3);padding:15px 15px 13px;white-space:nowrap}
+.tb:hover{color:var(--ink2)}
+.tb[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--iron)}
+.tb:focus-visible{outline:2px solid var(--iron);outline-offset:-2px}
+.tb .cnt{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:0;color:var(--ink3);margin-left:6px}
+.panel[hidden]{display:none}
+</style>
+</head><body>
+<div style="background:#1c1a16;border-bottom:1px solid #312d26;font:500 12.5px/1 ui-monospace,Menlo,monospace">
+<div style="max-width:1120px;margin:0 auto;padding:11px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<a href="../index.html" style="color:#ece9e2;text-decoration:none;font-family:Georgia,serif;font-size:15px;font-weight:600;margin-right:auto">Papeles de Sensentí</a>
+<a href="../index.html#documentos" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Todos los documentos</a>
+<a href="../index.html#archivo" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">El archivo</a>
+<a href="../metodo.html" style="color:#b5afa3;text-decoration:none;letter-spacing:.05em;text-transform:uppercase">Método</a>
+</div></div>
+
+<header class="mast wrap">
+  <p class="eyebrow">Archivo Municipal de Sensentí · Causa criminal de 1799–1800</p>
+  <h1>La vaca de Joaquín Monrroy</h1>
+  <p class="dek">El alcalde de Goarcha mata una res del hierro de un vecino de Sensentí y confiesa. Se la habían vendido los hermanos Reyes en once pesos. Nadie es condenado: se prorratean cinco pesos entre los dos hermanos y pagan cuatro.</p>
+  <div class="meta"><span><strong>6 láminas</strong> · IMG_1569 – IMG_1574</span><span>23 de noviembre de 1799 a enero de 1800</span><span>Papel sellado de 1798-1799 y de 1800, habilitados; uno de 1788-1789</span><span>Sensentí y Goarcha</span></div>
+</header>
+
+<div class="tabsbar">
+  <div class="wrap tabsin" role="tablist" aria-label="Secciones del documento">
+    <button class="tb" id="t-caso" role="tab" aria-controls="p-caso" aria-selected="true" tabindex="0">El caso</button>
+    <button class="tb" id="t-rel"  role="tab" aria-controls="p-rel"  aria-selected="false" tabindex="-1">Relevancia</button>
+    <button class="tb" id="t-lam"  role="tab" aria-controls="p-lam"  aria-selected="false" tabindex="-1">Las láminas<span class="cnt">6</span></button>
+  </div>
+</div>
+
+
+
+
+<div class="panel" id="p-caso" role="tabpanel" aria-labelledby="t-caso">
+<section class="lede wrap">
+  <p>Lo que estas seis planas contienen no es un robo de ganado con ladrón y sentencia, sino algo más modesto y más revelador: <strong>el rastro de una vaca vendida dos veces y de un vecino de Sensentí que quiso que se lo aclararan</strong>.</p>
+<p>El 23 de noviembre de 1799, Joaquín Monrroy, vecino de Sensentí, se presenta ante don José Antonio Molina —capitán de milicias y juez teniente y subdelegado de Intendencia del partido— con la noticia de que <strong>el alcalde del pueblo de Goarcha ha matado una res suya</strong>. El juez manda comparecer al alcalde, y dos días después lo tiene delante: <strong>Pablo Marín</strong>, hombre de más de cincuenta años, que declara <strong>en lengua castellana sin necesidad de intérprete</strong> y <strong>no sabe firmar</strong>. Marín no niega nada. Sí, mató la vaca; era <strong>del hierro de Joaquín Monrroy</strong>; era <strong>negra, con la barriga blanca</strong>. Se la llevaron los hermanos Reyes hasta su pueblo; Pedro Reyes le propuso la vaca y un caballo, y por lo visto sólo se cerró trato por el caballo, «en valor de carne». Y añade de suyo que Tomás Reyes, yendo con su mujer, vendió además <strong>otra vaca del mismo Monrroy</strong>.</p>
+<p>El 26 de noviembre el juez, viendo que de esa declaración «sale complicado» Pedro Reyes, lo hace comparecer. <strong>Pedro Reyes, de treinta años</strong>, tampoco sabe firmar, y su defensa es sencilla y consistente: él no vendió nada; fue a Goarcha a vender un caballo, se topó con su hermano cerca del pueblo y de allí siguieron juntos; <strong>quien vendió la vaca fue su hermano Tomás, y en once pesos</strong>. Confirma que la res era de Monrroy y, preguntado por otras ventas, repite lo de la segunda vaca vendida por Tomás con su mujer.</p>
+<p>El expediente se detiene ahí casi dos meses y se reanuda en <strong>enero de 1800</strong> con un tono más duro: se manda <strong>prender a Pedro Reyes</strong> por no haber justificado lo suyo, y hacer comparecer a los dos hermanos. Pero entonces el proceso se desinfla por donde suelen desinflarse estos pleitos de aldea. Llamado y notificado, <strong>Joaquín Monrroy declara que no tiene ya nada más que reclamar a Pedro Reyes</strong>. Y el teniente, acto seguido, razona en un auto que de lo declarado por el alcalde de Goarcha <strong>«no se saca consecuencia en lo tocante a Pedro Reyes»</strong>, puesto que él mismo confiesa sólo haber acompañado a su hermano —que fue el vendedor—; la acción queda apuntando a <strong>Tomás Reyes</strong>.</p>
+<p>El final no es una sentencia condenatoria ni una absolución solemne, sino <strong>un arreglo económico homologado por el juzgado</strong>: Pedro Reyes sale <strong>en libertad</strong>, se fija <strong>una suma de cinco pesos que ha de prorratearse entre ambos hermanos</strong> a satisfacción del juzgado, y en una diligencia del día siguiente los Reyes <strong>pagan cuatro pesos</strong> y se obligan por el resto, bajo apercibimiento. Ninguno de los comparecientes —ni el alcalde de Goarcha, ni Pedro Reyes, ni los hermanos al final— sabe firmar; todas las actuaciones se hacen <strong>«en falta de escribano»</strong>, con testigos de asistencia, que es como funcionaba la justicia en estos partidos. La última firma de la última plana es la de <strong>Manuel de Molina</strong>.</p>
+<p>Así que <strong>no acaba en sentencia</strong>: acaba en composición y pago, con el expediente cerrándose sobre un recibo parcial. Y como toda la documentación siguiente se ha perdido o no está en estas seis planas, no sabemos si los Reyes llegaron a pagar el peso que faltaba.</p>
+<h3>Sobre el topónimo</h3>
+<p>La descripción del expediente daba el topónimo como «[¿Guarcha?]» y apuntaba a <strong>Gualcho / Belén Gualcho</strong>. He ampliado las <strong>seis apariciones</strong> de la palabra —dos en IMG_1569, dos en IMG_1571, una en IMG_1572 (partida en fin de renglón: <em>Goar-</em> / <em>cha</em>) y dos en IMG_1573— hasta ocho aumentos, con el original de 2592 × 3888 px.</p>
+<p>Lo que hay escrito, con toda claridad en al menos tres de esas apariciones, es <strong>G-o-a-r-c-h-a</strong>: la mejor de todas (IMG_1573, «el Alc.e de Goarcha») muestra la G mayúscula con su lazo, una o cerrada, una a, la <strong>r de dos trazos</strong> característica de esta mano, y el grupo <strong>-cha</strong> final con su a de remate. <strong>No hay l</strong> —en esta letra la <em>l</em> se traza con un bucle alto que aquí no existe en ningún caso— <strong>y no termina en -o</strong>. Por tanto la forma manuscrita es <strong>Goarcha</strong> (variante <em>Guarcha</em>), y no «Gualcho».</p>
+<p>Dicho esto, y sin salirme de lo que puedo probar: se trata de un <strong>pueblo con alcalde propio</strong>, a poca distancia de Sensentí —Pedro Reyes va allí a vender un caballo y se vuelve—, con abasto de carne propio. Fonéticamente <em>/gwarʧa/</em> está a un paso de <em>/gwalʧo/</em>, y la identificación con el Gualcho de hoy (Belén Gualcho, Ocotepeque) es <strong>plausible</strong>, pero es una hipótesis de identificación geográfica, no una lectura paleográfica: el papel dice Goarcha. Quien edite esto para los vecinos haría bien en imprimir <strong>Goarcha</strong> y explicar la hipótesis en nota.</p>
+<h3>Sobre el hierro</h3>
+<p>El hierro <strong>no está dibujado</strong> en ninguna de estas seis planas: no hay marca ni viñeta en los márgenes, que sólo llevan los sellos de habilitación y una breve nota archivística en IMG_1569. El hierro se identifica <strong>por su dueño</strong>, que es como se hacía en la práctica corriente: «una Baca, del hierro de Joaquin Monrroy» (IMG_1570). Lo que sí se describe con detalle es el <strong>pelo</strong> del animal: «el color que tenía era negra, […] barriga blanca». Las dos palabras intermedias, que leo aproximadamente como <em>jorro cacata</em>, son casi con seguridad voces locales de pelaje de res y no consigo fijarlas.</p>
+</section>
+</div>
+
+<div class="panel" id="p-rel" role="tabpanel" aria-labelledby="t-rel" hidden>
+<section class="context">
+ <div class="wrap"><div class="inner">
+  <h2>Qué deja ver este expediente</h2>
+  <p>Estas seis planas valen por lo que no tienen: sentencia, ladrón declarado y castigo. Lo que hay es <strong>una causa criminal que termina en un arreglo de dinero homologado por el juzgado</strong>. El dueño de la res declara que <strong>no tiene ya nada más que reclamar</strong>, y el juez razona que de la declaración del alcalde «no se saca consecuencia en lo tocante a Pedro Reyes». La justicia de primera instancia funciona aquí como instancia de composición entre vecinos: restituye y concilia más que castiga, y el desistimiento del agraviado pesa tanto como la prueba.</p>
+<p>El expediente da además una <strong>cifra de precio</strong> difícil de conseguir: la vaca se vendió en once pesos. Puesta al lado de los avalúos de ganado que el sitio conserva para 1816, permite empezar una serie local, con la cautela de que un precio de venta apurada y un avalúo de mortual no son la misma cosa. La res se identifica, como siempre, por el <strong>hierro</strong> y por señas.</p>
+<p>Pablo Marín, alcalde del pueblo de Goarcha, <strong>declara en lengua castellana sin necesidad de intérprete</strong>. La anotación sólo tiene sentido si lo contrario era posible en ese pueblo, cuyo cabildo, escrito Gualcha, acude a la Real Audiencia en 1813 como pueblo de indios. Es una de las escasas huellas directas de la situación lingüística del partido y encaja con lo trabajado por Herranz y por Johnson, Gómez Zúñiga y Kelly sobre la frontera lingüística del occidente de Honduras. También consta que ninguno de los dos declarantes principales sabía firmar, siendo uno de ellos alcalde.</p>
+  <p class="caveat">Esta sección es interpretación, no transcripción: sitúa el documento en su
+  contexto institucional e histórico. Lo que el papel dice está en el estudio y en las láminas;
+  lo que aquí se añade va marcado como tal.</p>
+ </div></div>
+</section>
+</div>
+
+<div class="panel" id="p-lam" role="tabpanel" aria-labelledby="t-lam" hidden>
+<div class="bar">
+  <div class="wrap barin">
+    <div class="seg" role="group" aria-label="Qué versión mostrar">
+      <button data-v="both" aria-pressed="true">Ambas</button>
+      <button data-v="semi" aria-pressed="false">Paleográfica</button>
+      <button data-v="mod" aria-pressed="false">Español de hoy</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="mk" checked> Señalar dudas y pérdidas</label>
+    <nav class="rail" aria-label="Ir a una lámina"><a href="#f1569">69</a><a href="#f1570">70</a><a href="#f1571">71</a><a href="#f1572">72</a><a href="#f1573">73</a><a href="#f1574">74</a></nav>
+  </div>
+</div>
+<main class="wrap">
+<section class="folio" id="f1569">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 1 de 6</span><h3>IMG_1569</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1569" aria-label="Ampliar la lámina IMG_1569">
+        <img src="../img/sen1799/p001.jpg" alt="Fotografía de la lámina IMG_1569" loading="lazy">
+      </button>
+      <figcaption>Papel sellado de la Real Audiencia con la leyenda impresa <strong>«Un real. / SELLO TERCERO, UN REAL, / AÑOS DE MIL SETECIENTOS / NOVENTA Y SEIS, Y NOVEN- / TA Y SIETE.»</strong> En el margen izquierdo, dos <strong>sellos circulares de habilitación</strong> estampados en tinta negra, con las columnas de Hércules coronadas y las letras <strong>S</strong> y <strong>3</strong> (sello tercero) a los lados; la leyenda del anillo se lee «✠ PARA LOS AÑOS DE 1798 Y 1799» en el superior y, en el inferior, una fórmula igual donde se distinguen las cifras 1799/1800. Tinta ferrogálica muy desvaída en toda la plana, con fuerte transparencia del texto del vuelto; hay dos <strong>pérdidas de soporte</strong> (agujeros) hacia el centro-izquierda que se comen palabras enteras en cinco renglones. Sin foliación visible. Nota marginal a media plana, de otra mano y más pequeña, en tres líneas con llave. La fotografía es excelente (2592 × 3888 px) y es lo único que hace legible esta plana; aun así es la peor conservada de las seis.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Primera plana del expediente. Contiene dos actuaciones. La primera es el <strong>auto de cabeza de proceso</strong>: don José Antonio Molina, capitán de milicias y juez teniente y subdelegado de Intendencia del partido de Sensentí, recoge la queja presentada en su juzgado por Joaquín Monrroy, vecino del mismo vecindario, quien tiene noticia de que <strong>el alcalde de Goarcha ha matado una res suya</strong>; para averiguar la verdad manda que dicho alcalde comparezca y se presente en el juzgado. El auto va fechado en Sensentí a 23 de noviembre de 1799 y firmado por el juez con dos testigos de asistencia, a falta de escribano.
+
+La segunda actuación, que empieza en el último tercio de la plana, es la <strong>comparecencia del alcalde</strong>, dos días después: el 25 del mismo mes «pareció presente Pablo Marín, alcalde de Goarcha», a quien el juez recibe juramento en forma de derecho por Dios Nuestro Señor. La declaración misma continúa en IMG_1570 sin solución de continuidad.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[cabecera impresa]</u></span>
+<span class="ln">Un real.</span>
+<span class="ln">SELLO TERCERO, UN REAL,</span>
+<span class="ln">AÑOS DE MIL SETECIENTOS</span>
+<span class="ln">NOVENTA Y SEIS, Y NOVEN-</span>
+<span class="ln">TA Y SIETE.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[al margen izquierdo, dos sellos circulares:] ✠ PARA LOS AÑOS DE 1798 Y 1799 · S 3</span>
+<span class="ln">✠ PARA LOS AÑOS DE 179<u class="exp" title="abreviatura desarrollada">[9]</u> Y 18<u class="exp" title="abreviatura desarrollada">[00]</u> · S 3</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">D<u class="exp" title="abreviatura desarrollada">[o]</u>n Jo<u class="exp" title="abreviatura desarrollada">[se]</u>f Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o Molina Cap<u class="exp" title="abreviatura desarrollada">[ita]</u>n de Milicias</span>
+<span class="ln">p<u class="exp" title="abreviatura desarrollada">[o]</u>r S<u class="exp" title="abreviatura desarrollada">[u]</u> M<u class="exp" title="abreviatura desarrollada">[agestad]</u> Ju<u class="exp" title="abreviatura desarrollada">[e]</u>z Ten<u class="exp" title="abreviatura desarrollada">[ien]</u>te y Sub<u class="exp" title="abreviatura desarrollada">[delegad]</u>o de Yntendencia de este Par-</span>
+<span class="ln">tido de Sensenti <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>quanto <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en este Juzgado Se ha presentado</span>
+<span class="ln">veinte</span>
+<span class="ln">desde el <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿corri?]</u></u>ente <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Joaq<u class="exp" title="abreviatura desarrollada">[ui]</u>n Monrroy, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> de este Vecin<u class="exp" title="abreviatura desarrollada">[dari]</u>o</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>iendo q<u class="exp" title="abreviatura desarrollada">[ue]</u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho teniendo noticia q<u class="exp" title="abreviatura desarrollada">[ue]</u> el Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e d<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln">Goarcha, a matado <u class="exp" title="abreviatura desarrollada">[una]</u> Res Suya, y p<u class="exp" title="abreviatura desarrollada">[ar]</u>a av<u class="exp" title="abreviatura desarrollada">[eri]</u>-</span>
+<span class="ln">guar la Verdad hagase Comparecer a d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Al-</span>
+<span class="ln">calde, Se presente en este Juzgado; assi lo pro-</span>
+<span class="ln">veo, <u class="exp" title="abreviatura desarrollada">[m]</u>ando, y Firmo en este Poblado de Sen-</span>
+<span class="ln">senti En veinte y tres Dias del Mez de Nov<u class="exp" title="abreviatura desarrollada">[iembr]</u>e</span>
+<span class="ln">de mil Setecientos nobenta y nobe años. Con</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[los T[estig]</u>os de mi] asis<u class="exp" title="abreviatura desarrollada">[tenci]</u>a en falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no de q<u class="exp" title="abreviatura desarrollada">[ue]</u> Zertifico.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Jo<u class="exp" title="abreviatura desarrollada">[se]</u> Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o de</span>
+<span class="ln">Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Baltazar Carrejón <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>            Jo<u class="exp" title="abreviatura desarrollada">[se]</u>f Bern<u class="exp" title="abreviatura desarrollada">[ar]</u>do Mexia <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[al margen izquierdo, otra mano:] en el mismo</span>
+<span class="ln">de libro</span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿ojo?]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En este Poblado de Sensenti en veinte y cinco</span>
+<span class="ln">de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Mez, y año, En virtud de lo mandado en</span>
+<span class="ln">el Auto Anterior, pareció presente Pablo Ma-</span>
+<span class="ln">rin, Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e de Goarcha, a q<u class="exp" title="abreviatura desarrollada">[uie]</u>n p<u class="exp" title="abreviatura desarrollada">[o]</u>r ante los Test<u class="exp" title="abreviatura desarrollada">[ig]</u>os</span>
+<span class="ln">de mi as<u class="exp" title="abreviatura desarrollada">[istenci]</u>a en falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no le recivi Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[q]</u>ue en forma <u class="exp" title="abreviatura desarrollada">[hizo]</u> de D<u class="exp" title="abreviatura desarrollada">[e]</u>recho p<u class="exp" title="abreviatura desarrollada">[o]</u>r Dios N<u class="exp" title="abreviatura desarrollada">[uest]</u>ro <u class="exp" title="abreviatura desarrollada">[Señor]</u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>Don José Antonio Molina, capitán de milicias por Su Majestad, juez teniente y subdelegado de Intendencia de este partido de Sensentí: por cuanto en este juzgado se ha presentado Joaquín Monrroy, de este vecindario, diciendo que tiene noticia de que el alcalde de Goarcha ha matado una res suya; y para averiguar la verdad, hágase comparecer a dicho alcalde y preséntese en este juzgado. Así lo proveo, mando y firmo en este poblado de Sensentí, a veintitrés días del mes de noviembre de mil setecientos noventa y nueve años, con los testigos de mi asistencia a falta de escribano, de lo que doy fe.</p>
+<p>José Antonio de Molina. — Baltasar Carrejón. — Josef Bernardo Mexía.</p>
+<p>En este poblado de Sensentí, a veinticinco de dicho mes y año, en virtud de lo mandado en el auto anterior, compareció Pablo Marín, alcalde de Goarcha, a quien, ante los testigos de mi asistencia y a falta de escribano, le recibí juramento, que hizo en forma de derecho por Dios Nuestro Señor…</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media.</strong> La estructura del auto, las fechas, los nombres y el mandato son seguros: los he confirmado ampliando renglón por renglón con realce de canal azul y sustracción de fondo. Lo que no puedo dar por firme son las palabras que quedan sobre los dos agujeros del papel y el arranque del dispositivo («por cuanto… desde el…»), donde sólo se salvan sílabas sueltas; ahí he puesto corchetes y no he completado lo que no veo. Dos lecturas concretas me merecen reserva: la palabra interlineada «veinte» (está clara, pero no sé a qué cifra corrige) y la nota marginal, cuya tercera línea no descifro. El año, en cambio, lo he ampliado cuatro veces y lee «nobenta y nobe», no «siete».
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1570">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 2 de 6</span><h3>IMG_1570</h3></div>
+    <span class="chip chip-media">confianza media-alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1570" aria-label="Ampliar la lámina IMG_1570">
+        <img src="../img/sen1799/p002.jpg" alt="Fotografía de la lámina IMG_1570" loading="lazy">
+      </button>
+      <figcaption>Media plana del mismo pliego (sin cabecera impresa en esta cara). Tinta más negra y mejor conservada que en IMG_1569: es, con IMG_1571, la plana más legible del conjunto. Hay un <strong>borrón de tinta</strong> grande hacia el centro-izquierda, a la altura de los renglones 10-11, que tapa media docena de palabras, y un <strong>desgarrón en el borde derecho</strong> que muerde el final de algunos renglones. Pliegues horizontales del doblado del expediente. Firmas al pie, con rúbricas enérgicas. Toma fotográfica nítida y bien iluminada.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Continuación y cuerpo entero de la <strong>declaración de Pablo Marín, alcalde de Goarcha</strong>. Es la plana más sustanciosa del expediente y la que fija los hechos. Marín declara «en lengua castellana, sin necesidad de intérprete»; reconoce que <strong>mató la vaca</strong> y que era <strong>del hierro de Joaquín Monrroy</strong>; describe su pelo —negra, con la barriga blanca—; cuenta que se la llevaron los hermanos Reyes, que Pedro Reyes le propuso la vaca y un caballo, y que no quisieron más que el caballo; y añade que Tomás Reyes, en compañía de su mujer, vendió además otra vaca del mismo Monrroy. Cierra con las fórmulas de ratificación: dice ser mayor de cincuenta años, que no le tocan las generales de la ley, y <strong>no firma por no saber</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Señor, y una Señal de Cruz, y haviendole hecho el</span>
+<span class="ln">Cargo Corresp<u class="exp" title="abreviatura desarrollada">[ondien]</u>te Con toda la esplicacion necesa-</span>
+<span class="ln">ria vaxo el qual dixo: En Lengua Castellana</span>
+<span class="ln">Sin necesidad de Ynterprete. Preguntado Si es</span>
+<span class="ln">cierto q<u class="exp" title="abreviatura desarrollada">[ue]</u> mató una Baca, del hierro de Joaquin Mon-</span>
+<span class="ln">rroy, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> color tenia: Respondio q<u class="exp" title="abreviatura desarrollada">[ue]</u> Si la mató, y q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">el color q<u class="exp" title="abreviatura desarrollada">[ue]</u> tenia era negra, como <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Jorro?]</u></u> <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Cacata?]</u></u>, va-</span>
+<span class="ln">rriga blanca. Preguntado a q<u class="exp" title="abreviatura desarrollada">[uie]</u>n Compró la d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha Ba-</span>
+<span class="ln">ca, y en q<u class="exp" title="abreviatura desarrollada">[ue]</u> precio d<u class="exp" title="abreviatura desarrollada">[ixo]</u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> llegaron <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Reyes, y To-</span>
+<span class="ln">mas Reyes, Su Herm<u class="exp" title="abreviatura desarrollada">[an]</u>o <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la citada Baca</span>
+<span class="ln">a tomar, le entregó <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">le propuso Pedro Reyes Si queria <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Baca, y un Cavallo, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> le respondio <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> le contestava lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">no quisieron la Baca unicam<u class="exp" title="abreviatura desarrollada">[ente]</u> el Cavallo</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> el <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Mercador?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> en valor de Carne</span>
+<span class="ln">Preguntado Si a parte de Est<u class="exp" title="abreviatura desarrollada">[o]</u> Sabe, ó ha oido de-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[cir]</u> <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿los Cospirado?]</u></u> alguno<u class="exp" title="abreviatura desarrollada">[s]</u> otros Animales</span>
+<span class="ln">Respondio q<u class="exp" title="abreviatura desarrollada">[ue]</u> Tomas Reyes, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> fue el q<u class="exp" title="abreviatura desarrollada">[ue]</u> Compró</span>
+<span class="ln">de Su muger, y bendio una Baca a <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Nazario?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">la Carne de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Pueblo, y no supo en q<u class="exp" title="abreviatura desarrollada">[ue]</u> precio.</span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> esta es lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> Sabe, y la Verdad en Cargo del Jura-</span>
+<span class="ln">m<u class="exp" title="abreviatura desarrollada">[en]</u>to q<u class="exp" title="abreviatura desarrollada">[ue]</u> a hecho, en el q<u class="exp" title="abreviatura desarrollada">[ue]</u> Se afirmó, y Ratificó</span>
+<span class="ln">leyda Su Declaracion, dixo Ser m<u class="exp" title="abreviatura desarrollada">[ayo]</u>r de edad d<u class="exp" title="abreviatura desarrollada">[e]</u></span>
+<span class="ln">cinquenta años y q<u class="exp" title="abreviatura desarrollada">[ue]</u> no le tocan las Gr<u class="exp" title="abreviatura desarrollada">[a]</u>l<u class="exp" title="abreviatura desarrollada">[e]</u>s. de la <u class="exp" title="abreviatura desarrollada">[Ley]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[y]</u> no firma, p<u class="exp" title="abreviatura desarrollada">[o]</u>r no saber, hizolo yo con los</span>
+<span class="ln">T<u class="exp" title="abreviatura desarrollada">[estig]</u>os. de asis<u class="exp" title="abreviatura desarrollada">[tenci]</u>a en falta de Es<u class="exp" title="abreviatura desarrollada">[criva]</u>no.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Jo<u class="exp" title="abreviatura desarrollada">[se]</u>f Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o de</span>
+<span class="ln">Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Baltazar Carrejón <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        Jo<u class="exp" title="abreviatura desarrollada">[se]</u>f Bern<u class="exp" title="abreviatura desarrollada">[ar]</u>do Me<u class="exp" title="abreviatura desarrollada">[xia]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…Señor y una señal de cruz; y habiéndole hecho el cargo correspondiente con toda la explicación necesaria, bajo el cual dijo —en lengua castellana, sin necesidad de intérprete—:</p>
+<p>Preguntado si es cierto que mató una vaca del hierro de Joaquín Monrroy, y qué color tenía, respondió que sí la mató, y que el color que tenía era negra, como [¿…?], con la barriga blanca.</p>
+<p>Preguntado a quién compró dicha vaca y en qué precio, dijo que llegaron [Pedro] Reyes y Tomás Reyes, su hermano, […] la citada vaca; que al tomarla le entregó […]; y que Pedro Reyes le propuso si quería la vaca y un caballo, y que le respondió […]; que no quisieron la vaca, únicamente el caballo […] en valor de carne.</p>
+<p>Preguntado si aparte de esto sabe o ha oído decir que [se hayan llevado] algunos otros animales, respondió que Tomás Reyes fue el que compró, y que, [yendo] con su mujer, vendió una vaca a [¿Nazario?] […] para la carne de dicho pueblo, y no supo en qué precio.</p>
+<p>Que esto es lo que sabe y la verdad, bajo cargo del juramento que ha hecho, en el cual se afirmó y ratificó, leída su declaración. Dijo ser mayor de edad, de cincuenta años, y que no le tocan las generales de la ley. No firma por no saber; hícelo yo con los testigos de asistencia a falta de escribano.</p>
+<p>José Antonio de Molina. — Baltasar Carrejón. — Josef Bernardo Mexía.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media-alta.</strong> Las frases que importan están fijadas con seguridad: «del hierro de Joaquín Monrroy», «era negra… barriga blanca», «en lengua castellana sin necesidad de intérprete», «mayor de edad de cincuenta años», «no firma por no saber». Quedan tres puntos mal resueltos y los dejo marcados en vez de inventarlos. (1) Las dos palabras que siguen a «negra, como…»: leo con claridad las letras, algo como <em>Jorro Cacata</em>, pero no reconozco el término; son casi con certeza voces locales de pelaje de res, y he ampliado la palabra hasta siete aumentos sin dar con una lectura que me convenza. (2) El nombre del comprador de la segunda vaca, donde dudo entre <em>Nazario</em> e <em>Hilario</em>. (3) Los renglones tapados por el borrón, irrecuperables. También dudo entre <em>Casa</em> y <em>Carne</em> en «la Carne de dicho Pueblo», aunque me inclino por <em>Carne</em> (el abasto de carne del pueblo).
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1571">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 3 de 6</span><h3>IMG_1571</h3></div>
+    <span class="chip chip-alta">confianza alta</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1571" aria-label="Ampliar la lámina IMG_1571">
+        <img src="../img/sen1799/p003.jpg" alt="Fotografía de la lámina IMG_1571" loading="lazy">
+      </button>
+      <figcaption>Sin cabecera impresa en esta cara. En el margen izquierdo, los mismos <strong>sellos circulares de habilitación</strong> (se distinguen las cifras y las letras S/3). Tinta bien conservada y letra clara: es la plana más legible de las seis. <strong>Grave pérdida de soporte en el borde derecho y en todo el cuarto inferior</strong>, donde el papel está desgarrado y arrollado, de modo que faltan los finales de renglón de la mitad derecha y las dos o tres últimas líneas. Una palabra tachada por el propio escribano en el renglón de «vendió a …». Toma excelente.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Dos actuaciones más. Arriba, el <strong>auto de 26 de noviembre</strong>: visto que de la declaración anterior sale complicado Pedro Reyes en la venta de la vaca, el juez manda hacerlo comparecer y recibirle declaración sobre el particular; firma con Baltasar Carrejón y Manuel Antonio de Molina.
+
+Abajo, la <strong>declaración de Pedro Reyes</strong>, tomada el mismo 26. Es la pieza que traslada la culpa: Reyes jura, se le advierte de la gravedad del juramento, y declara que <strong>él no vendió la vaca, que quien la vendió fue su hermano Tomás</strong>; que él fue a Goarcha a vender un caballo y que cerca del pueblo se encontró con su hermano y desde allí fueron juntos. Preguntado de quién era la vaca y en cuánto se vendió, dice que <strong>era de Joaquín Monrroy y que se vendió en once pesos al citado alcalde</strong>. Preguntado si sabe que Tomás haya vendido otras reses en dicho pueblo, responde que no sabe, sino que vendió otra del mismo Monrroy, y que fue en compañía de su mujer cuando la vendió. Dice tener <strong>treinta años</strong>. El pie de la declaración se ha perdido con el borde roto y continúa en IMG_1572.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[conv]</u>eniente, yo d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Juez, en vista de Salir Co<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>d<u class="exp" title="abreviatura desarrollada">[o]</u> <u class="exp" title="abreviatura desarrollada">[Pedro]</u></span>
+<span class="ln">Reyes, en la venta de la Baca, Como Consta, p<u class="exp" title="abreviatura desarrollada">[o]</u>r la Decla-</span>
+<span class="ln">racion q<u class="exp" title="abreviatura desarrollada">[ue]</u> antecede: Hagase Comparezer a d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Reyes, y re-</span>
+<span class="ln">civasele Declaracion Sobre el <u class="exp" title="abreviatura desarrollada">[Particular]</u>: assi lo proveo, man-</span>
+<span class="ln">do, y Firmo con los T<u class="exp" title="abreviatura desarrollada">[estig]</u>os de mi as<u class="exp" title="abreviatura desarrollada">[istenci]</u>a en falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Jo<u class="exp" title="abreviatura desarrollada">[se]</u>f Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o de</span>
+<span class="ln">Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Baltazar Carrejón <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o <u class="exp" title="abreviatura desarrollada">[de Molina]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En este Poblado de Sensenti, en veinte, y Seis Dias de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho</span>
+<span class="ln">Mez, y año, yo d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Juez, haviendo Comparecido Pedro</span>
+<span class="ln">Reyes, q<u class="exp" title="abreviatura desarrollada">[ue]</u> Certifico Conosco, ante los T<u class="exp" title="abreviatura desarrollada">[estig]</u>os q<u class="exp" title="abreviatura desarrollada">[ue]</u> me asisten, p<u class="exp" title="abreviatura desarrollada">[o]</u>r</span>
+<span class="ln">en falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no le recivi Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to q<u class="exp" title="abreviatura desarrollada">[ue]</u> hizo p<u class="exp" title="abreviatura desarrollada">[o]</u>r Dios N<u class="exp" title="abreviatura desarrollada">[uest]</u>ro Se<u class="exp" title="abreviatura desarrollada">[ñ]</u>or</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[y]</u> una Señal de Cruz, y advertido de Su Gravedad <u class="exp" title="abreviatura desarrollada">[en]</u></span>
+<span class="ln">todas Sus Circunstancias vaxo el qual ofreció de<u class="exp" title="abreviatura desarrollada">[cir]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[la]</u> verdad en quanto Sepa, y le fuere Preguntado, y Si-</span>
+<span class="ln">endola Sobre q<u class="exp" title="abreviatura desarrollada">[ue]</u> Declare quien le dio una Baca q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[ven]</u>-</span>
+<span class="ln">vendio a <u class="exp" title="abreviatura desarrollada">[tachado]</u> el Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e de Goarcha, dixo q<u class="exp" title="abreviatura desarrollada">[ue]</u> no ha vendido el</span>
+<span class="ln">tal Baca, q<u class="exp" title="abreviatura desarrollada">[ue]</u> q<u class="exp" title="abreviatura desarrollada">[uie]</u>n la vendio fue Su Herm<u class="exp" title="abreviatura desarrollada">[an]</u>o Tomas, q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">el fue a Goarcha, a vender un Cavallo, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> Cerca del</span>
+<span class="ln">Pueblo, Encontró Con d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Su Herm<u class="exp" title="abreviatura desarrollada">[an]</u>o, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> de alli Se fueron lo<u class="exp" title="abreviatura desarrollada">[s]</u></span>
+<span class="ln">ya Juntos: Preguntado Cuya era la Baca, y en q<u class="exp" title="abreviatura desarrollada">[ue]</u> pre-</span>
+<span class="ln">cio Se vendió dixo q<u class="exp" title="abreviatura desarrollada">[ue]</u> de Joaquin Monrroy era, y q<u class="exp" title="abreviatura desarrollada">[ue]</u></span>
+<span class="ln">Se vendió en Onze p<u class="exp" title="abreviatura desarrollada">[eso]</u>s al citado Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e: Preguntado Si Sa-</span>
+<span class="ln">ve q<u class="exp" title="abreviatura desarrollada">[ue]</u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Tomas haiga vendido en el d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Pueblo otra<u class="exp" title="abreviatura desarrollada">[s]</u></span>
+<span class="ln">Reses, Respondio q<u class="exp" title="abreviatura desarrollada">[ue]</u> no Sabe Si q<u class="exp" title="abreviatura desarrollada">[ue]</u> vendió otra del mis-</span>
+<span class="ln">mo Monrroy, q<u class="exp" title="abreviatura desarrollada">[ue]</u> fue en Compañia de Su muger, quan-</span>
+<span class="ln">do la vendió, y aunq<u class="exp" title="abreviatura desarrollada">[ue]</u> Se le hicieron Otras Pregun-</span>
+<span class="ln">tas dixo no Contiene mas que lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> lleva Declarad<u class="exp" title="abreviatura desarrollada">[o]</u></span>
+<span class="ln">En virtud del Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to q<u class="exp" title="abreviatura desarrollada">[ue]</u> ha hecho en el q<u class="exp" title="abreviatura desarrollada">[ue]</u> Se a<u class="exp" title="abreviatura desarrollada">[firmó]</u></span>
+<span class="ln">y Ratificó leyda Su Declaracion, dixo <u class="exp" title="abreviatura desarrollada">[Ser m[ayo]</u>r de edad de]</span>
+<span class="ln">treinta años, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…conveniente. Yo, dicho juez, en vista de salir complicado Pedro Reyes en la venta de la vaca, como consta por la declaración que antecede: hágase comparecer a dicho Reyes y recíbasele declaración sobre el particular. Así lo proveo, mando y firmo con los testigos de mi asistencia a falta de escribano.</p>
+<p>José Antonio de Molina. — Baltasar Carrejón. — Manuel Antonio [de Molina].</p>
+<p>En este poblado de Sensentí, a veintiséis días de dicho mes y año, yo, dicho juez, habiendo comparecido Pedro Reyes —a quien certifico que conozco—, ante los testigos que me asisten y a falta de escribano le recibí juramento, que hizo por Dios Nuestro Señor y una señal de cruz; y advertido de su gravedad en todas sus circunstancias, bajo el cual ofreció decir la verdad en cuanto sepa y le fuere preguntado.</p>
+<p>Y siéndolo sobre que declare quién le dio una vaca que vendió al alcalde de Goarcha, dijo que él no ha vendido tal vaca, que quien la vendió fue su hermano Tomás; que él fue a Goarcha a vender un caballo y que cerca del pueblo se encontró con dicho su hermano, y que de allí se fueron ya juntos.</p>
+<p>Preguntado de quién era la vaca y en qué precio se vendió, dijo que era de Joaquín Monrroy, y que se vendió en once pesos al citado alcalde.</p>
+<p>Preguntado si sabe que dicho Tomás haya vendido otras reses en dicho pueblo, respondió que no sabe, sino que vendió otra del mismo Monrroy, y que fue en compañía de su mujer cuando la vendió.</p>
+<p>Y aunque se le hicieron otras preguntas, dijo que no contiene más que lo que lleva declarado, en virtud del juramento que ha hecho; en el cual se afirmó y ratificó, leída su declaración. Dijo ser mayor de edad, de treinta años, y que […]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Alta</strong> para el cuerpo de la declaración, que es donde está la sustancia del pleito: el nombre de Tomás Reyes, los once pesos, el viaje a Goarcha a vender un caballo, la segunda vaca vendida con la mujer y la edad de treinta años se leen sin forzar nada. <strong>Baja</strong> para el último cuarto de la plana, materialmente destruido, y para los finales de renglón del margen derecho. La única palabra del auto que no fijo es la que califica a Pedro Reyes («salir Co…do»): la interpreto como <em>complicado</em> por el sentido y por el número de letras, pero el papel está roto justo ahí.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1572">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 4 de 6</span><h3>IMG_1572</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1572" aria-label="Ampliar la lámina IMG_1572">
+        <img src="../img/sen1799/p004.jpg" alt="Fotografía de la lámina IMG_1572" loading="lazy">
+      </button>
+      <figcaption>Papel sellado con la cabecera impresa <strong>«Un real. / SELLO TERCERO, UN REAL, / AÑOS DE MIL SETECIENTOS / NOVENTA Y SEIS, Y NOVEN- / TA Y SIETE.»</strong>, acompañada arriba a la izquierda de un <strong>sello circular de armas reales</strong>. En el margen izquierdo, dos <strong>habilitaciones circulares</strong> bien entintadas: la superior, leída girando la imagen, dice <strong>«✠ PARA LOS AÑOS DE 1798 Y 1799»</strong>, con las columnas de Hércules coronadas y las letras <strong>S</strong> y <strong>3</strong>; la inferior repite la fórmula con las cifras <strong>1799 / 1800</strong>. La tinta del auto de enero está <strong>muy lavada</strong>, casi al nivel del papel, y sólo se recupera con realce fuerte; además hay una <strong>rotura larga en el borde derecho</strong> con pérdida y un <strong>agujero</strong> en el centro. La fotografía es buena; el problema aquí es el documento, no la toma.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Plana de transición y de decisión. Arriba, el <strong>cierre de la declaración de Pedro Reyes</strong> que venía de IMG_1571 («no firmó por no saber; hícelo yo con los testigos de mi asistencia a falta de escribano») y las firmas.
+
+Debajo, y ya con salto de casi dos meses, un <strong>nuevo auto fechado en enero de mil ochocientos</strong>. Aquí el procedimiento se endurece: se manda <strong>hacer las prisiones de Pedro Reyes</strong>, por no haberle éste justificado […]; se recuerda que <strong>quien vendió la vaca al alcalde de Goarcha fue Tomás, según dice Joaquín Monrroy</strong>; y el juez manda <strong>hacer comparecer a dichos hermanos</strong> y restituir, entregando lo que conste. Firma con los que le asisten a falta de escribano.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[cabecera impresa]</u></span>
+<span class="ln">Un real.</span>
+<span class="ln">SELLO TERCERO, UN REAL,</span>
+<span class="ln">AÑOS DE MIL SETECIENTOS</span>
+<span class="ln">NOVENTA Y SEIS, Y NOVEN-</span>
+<span class="ln">TA Y SIETE.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[margen izquierdo, sellos circulares:] ✠ PARA LOS AÑOS DE 1798 Y 1799 · S 3</span>
+<span class="ln">✠ PARA LOS AÑOS DE 1799 Y 18<u class="exp" title="abreviatura desarrollada">[00]</u> · S 3</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">no p<u class="exp" title="abreviatura desarrollada">[o]</u>r Es a<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a la Gravedad del Juram<u class="exp" title="abreviatura desarrollada">[en]</u>to; no fir-</span>
+<span class="ln">mo p<u class="exp" title="abreviatura desarrollada">[o]</u>r no Saber, hizolo yo con los T<u class="exp" title="abreviatura desarrollada">[estig]</u>os de mi as<u class="exp" title="abreviatura desarrollada">[istenci]</u>a en fal-</span>
+<span class="ln">ta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Jo[se]</u>f Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o de]</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[Molina]</u> <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Baltazar Carrejón <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l de Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En este Poblado de Sensenti, en <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿veinte?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Dias</span>
+<span class="ln">del Mez de Henero de mil ochocientos <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> El Mis-</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> ordinario Antonio <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> haze Comparez<u class="exp" title="abreviatura desarrollada">[er]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> Se hagan las Prision<u class="exp" title="abreviatura desarrollada">[es]</u> <u class="exp" title="abreviatura desarrollada">[de]</u> Pedro Reyes, p<u class="exp" title="abreviatura desarrollada">[o]</u>r no haber-</span>
+<span class="ln">le a Este Justificado <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">q<u class="exp" title="abreviatura desarrollada">[ue]</u> vendió la <u class="exp" title="abreviatura desarrollada">[Baca]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Tomas, al Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e de Goar-</span>
+<span class="ln">cha, Segun dice Joaquin Monrroy. En Esta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> d<u class="exp" title="abreviatura desarrollada">[e]</u>via de mandar, y mando q<u class="exp" title="abreviatura desarrollada">[ue]</u> haga Com-</span>
+<span class="ln">parezer a d<u class="exp" title="abreviatura desarrollada">[ic]</u>hos Herm<u class="exp" title="abreviatura desarrollada">[an]</u>os, y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> a d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Al-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[cal]</u>de, lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> Conste <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>; assi lo proveo,</span>
+<span class="ln">mando, y firmo Con los q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[me asisten]</u> en fal-</span>
+<span class="ln">ta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>no.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…[advertido] de la gravedad del juramento. No firmó por no saber; hícelo yo con los testigos de mi asistencia a falta de escribano.</p>
+<p>[José Antonio de Molina]. — Baltasar Carrejón. — Manuel de Molina.</p>
+<p>En este poblado de Sensentí, a [¿veinte?] días del mes de enero de mil ochocientos […]: que se hagan las prisiones de Pedro Reyes, por no haberle éste justificado […]; que quien vendió la vaca al alcalde de Goarcha fue Tomás, según dice Joaquín Monrroy. En esta [conformidad] […] debía de mandar y mando que se haga comparecer a dichos hermanos y […] a dicho alcalde, lo que conste […]. Así lo proveo, mando y firmo con los que me asisten, a falta de escribano.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media-baja</strong> para el auto de enero, <strong>media-alta</strong> para la cabecera impresa, los sellos y las firmas. La fecha del mes y el año («Henero de mil ochocientos») la he comprobado con dos realces distintos y la doy por buena; el número del día no lo fijo. En cambio, el sujeto de la tercera línea —donde parece leerse «ordinario Antonio…»— no lo resuelvo: podría ser la mención de un juez o alcalde ordinario llamado Antonio, y por eso no lo he metido en la tabla de personas. La cláusula de restitución y lo que se manda entregar están al borde de lo ilegible; he preferido cortar con corchetes antes que reconstruir una orden judicial que no puedo leer.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1573">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 5 de 6</span><h3>IMG_1573</h3></div>
+    <span class="chip chip-media">confianza media</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1573" aria-label="Ampliar la lámina IMG_1573">
+        <img src="../img/sen1799/p005.jpg" alt="Fotografía de la lámina IMG_1573" loading="lazy">
+      </button>
+      <figcaption>Ésta es la plana del <strong>sello antiguo habilitado</strong> que anunciaba la descripción: la cabecera impresa reza <strong>«Un real. / SELLO TERCERO, UM REAL, / A[ÑOS DE] MIL SETECIENTOS / [OCHENT]A Y OCHO, Y OCHEN- / TA Y NUEVE.»</strong>, es decir papel de <strong>1788-1789</strong> reutilizado once años después. Por eso lleva en el margen izquierdo <strong>tres sellos</strong> superpuestos: uno circular con las columnas coronadas y la leyenda «[VALGA PA]RA LOS AÑOS DE 179[3]…» con las letras S/3; otro <strong>oval</strong> con la leyenda en líneas, «VALGA / POR EL REY / EL / D. / …»; y un tercero circular del mismo tipo que los de las otras planas, donde se distinguen las cifras 1799/1800. Arriba a la izquierda, además, un sello de armas reales. El estado material es malo: <strong>gran borrón de tinta derramada</strong> que atraviesa en diagonal el tercio superior y devora palabras, <strong>pérdida de soporte</strong> en el margen izquierdo a la altura de los sellos, y todo el cuarto inferior con el papel doblado y roto. Tinta desvaída en la mitad inferior.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Dos actuaciones. Arriba, la <strong>notificación a Joaquín Monrroy</strong>: el teniente, en virtud de lo mandado por el auto anterior, hizo comparecer a Monrroy, le hizo saber lo proveído, y <strong>Monrroy declara que no tiene nada más que reclamar a Pedro Reyes</strong> que lo que tiene declarado […] el alcalde de Goarcha; y que el haber […]. No firma por no saber. Firman el juez y los dos testigos de asistencia, ahora Baltasar Carrejón y Manuel de Molina.
+
+Abajo, y ésta es la pieza jurídicamente decisiva, un <strong>auto de «incontinenti»</strong>: el teniente razona que, respecto de la [providencia] precedente, y de lo declarado por el alcalde de Goarcha, <strong>no se saca consecuencia en lo tocante a Pedro Reyes</strong>, pues él mismo confiesa haber ido en compañía de su hermano, que fue quien vendió la vaca; y ordena en consecuencia sobre Tomás Reyes y el término de la ley para demandar.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[cabecera impresa]</u></span>
+<span class="ln">Un real.</span>
+<span class="ln">SELLO TERCERO, UM REAL,</span>
+<span class="ln">A<u class="exp" title="abreviatura desarrollada">[ÑOS DE]</u> MIL SETECIENTOS</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[OCHENT]</u>A Y OCHO, Y OCHEN-</span>
+<span class="ln">TA Y NUEVE.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">[margen izquierdo, tres sellos:] <u class="exp" title="abreviatura desarrollada">[VALGA PA]</u>RA LOS AÑOS DE 179<u class="exp" title="abreviatura desarrollada">[3]</u> · S 3</span>
+<span class="ln">VALGA / POR EL REY / EL / D. / <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> / 17<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[PA]</u>RA LOS AÑOS DE 1<u class="exp" title="abreviatura desarrollada">[799]</u> Y 18<u class="exp" title="abreviatura desarrollada">[00]</u> · S 3</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>niente, yo d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Ten<u class="exp" title="abreviatura desarrollada">[ien]</u>te, en vi<u class="exp" title="abreviatura desarrollada">[r]</u>tud de lo mandado</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[p]</u>or el Auto Anterior, hise Comparecer a Joaquin <u class="exp" title="abreviatura desarrollada">[Mon]</u>-</span>
+<span class="ln">rroy, <u class="exp" title="abreviatura desarrollada">[a]</u> quien le hice Saber lo proveido <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Notificado, dixo: q<u class="exp" title="abreviatura desarrollada">[ue]</u> no Tiene q<u class="exp" title="abreviatura desarrollada">[ue]</u> Recla<u class="exp" title="abreviatura desarrollada">[mar]</u></span>
+<span class="ln">a Pedro Reyes, mas, q<u class="exp" title="abreviatura desarrollada">[ue]</u> lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> Tiene Declar<u class="exp" title="abreviatura desarrollada">[ado]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>do el <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Yndio?]</u></u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e de Goarcha, y q<u class="exp" title="abreviatura desarrollada">[ue]</u> el haver <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Su Pa<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> fue p<u class="exp" title="abreviatura desarrollada">[o]</u>r haber <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> Joachin</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Con <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Tomas a vender la</span>
+<span class="ln">Baca, Con dixo, q<u class="exp" title="abreviatura desarrollada">[ue]</u> no firma p<u class="exp" title="abreviatura desarrollada">[o]</u>r <u class="exp" title="abreviatura desarrollada">[no Sa]</u>ber. En este</span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Termino de la ley manda, hizolo yo Con los</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[T[estig]</u>os de mi as<u class="exp" title="abreviatura desarrollada">[istenci]</u>a]</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Jo<u class="exp" title="abreviatura desarrollada">[se]</u>f Ant<u class="exp" title="abreviatura desarrollada">[oni]</u>o de</span>
+<span class="ln">Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Baltazar Carrejón <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u>        Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l de Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[In]</u>Continenti, yo d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Ten<u class="exp" title="abreviatura desarrollada">[ien]</u>te Respecto de la <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Pro?]</u></u></span>
+<span class="ln"><u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿vi?]</u></u>diente, no ó<u class="exp" title="abreviatura desarrollada">[b]</u>sta ni <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y lo Declarado</span>
+<span class="ln">p<u class="exp" title="abreviatura desarrollada">[o]</u>r el Alc<u class="exp" title="abreviatura desarrollada">[ald]</u>e de Goarcha, ó Con d<u class="exp" title="abreviatura desarrollada">[ic]</u>ha <u class="exp" title="abreviatura desarrollada">[Su]</u> Declaracio<u class="exp" title="abreviatura desarrollada">[n]</u></span>
+<span class="ln">no Se Saca Consecuencia, en lo Tocante, Pedro Reyes</span>
+<span class="ln">pues Ese mismo Confiesa haver hido En Compañi<u class="exp" title="abreviatura desarrollada">[a]</u></span>
+<span class="ln">de Su Herm<u class="exp" title="abreviatura desarrollada">[an]</u>o <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> Ese vendió la Baca, y <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>andose El Auto q<u class="exp" title="abreviatura desarrollada">[ue]</u> Es Tomas Reyes para la <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>uacion de Ese <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> y q<u class="exp" title="abreviatura desarrollada">[ue]</u> d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Pedro Re-</span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[yes]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> fraguando la Accion, En Esta <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> demandar, y mando Se <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…yo, dicho teniente, en virtud de lo mandado por el auto anterior, hice comparecer a Joaquín Monrroy, a quien le hice saber lo proveído; y notificado, dijo que no tiene que reclamar a Pedro Reyes más que lo que tiene declarado […] el [indio] […] alcalde de Goarcha; y que el haber […] fue porque […] Tomás [fue] a vender la vaca. Con esto dijo que no firma por no saber. […] el término de la ley. Hícelo yo con los testigos de mi asistencia.</p>
+<p>José Antonio de Molina. — Baltasar Carrejón. — Manuel de Molina.</p>
+<p>Incontinenti, yo, dicho teniente: respecto de la [providencia] precedente, no obsta […]; y de lo declarado por el alcalde de Goarcha, o con dicha su declaración, no se saca consecuencia en lo tocante a Pedro Reyes, pues ése mismo confiesa haber ido en compañía de su hermano, que fue quien vendió la vaca; y […] el auto, que es Tomás Reyes para la […]; y que dicho Pedro Reyes […] fraguando la acción; en esta […] demandar. Y mando que se […]</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Media.</strong> Tengo por firmes el hecho central de esta plana —Monrroy se da por satisfecho y no reclama más a Pedro Reyes— y el razonamiento del teniente de que de la declaración del alcalde «no se saca consecuencia en lo tocante a Pedro Reyes», porque el propio Pedro confiesa haber ido acompañando a su hermano. También es firme la cabecera impresa de 1788-1789, que he ampliado y leído letra por letra. Lo que no puedo garantizar es el renglón donde aparece la palabra que leo como «el Yndio»: está justo bajo el borrón, y aunque el contexto (un alcalde de pueblo que declara sin intérprete) lo hace verosímil, no lo afirmo. Tampoco fijo las leyendas completas de los tres sellos del margen ni la parte dispositiva final, muy dañada.
+
+---</p>
+    </div>
+  </div>
+</section>
+<section class="folio" id="f1574">
+  <div class="fhead">
+    <div><span class="fnum">Lámina 6 de 6</span><h3>IMG_1574</h3></div>
+    <span class="chip chip-baja">confianza baja</span>
+  </div>
+  <div class="fgrid">
+    <figure class="plate">
+      <button class="zoom" data-n="1574" aria-label="Ampliar la lámina IMG_1574">
+        <img src="../img/sen1799/p006.jpg" alt="Fotografía de la lámina IMG_1574" loading="lazy">
+      </button>
+      <figcaption>Sin cabecera impresa (es el vuelto del pliego). Es la plana en peor estado de tinta: la escritura está <strong>muy lavada</strong>, casi fantasmal en el centro, y hay <strong>tres roturas grandes con pérdida</strong> —una en forma de estrella hacia la mitad y otra que se come toda la esquina inferior derecha—, más el doblez inferior del pliego arrollado y abarquillado. Se aprecian por transparencia las líneas del folio siguiente. Aun con la excelente resolución de la toma, hay renglones enteros que no se dejan leer.</figcaption>
+    </figure>
+    <div class="texts">
+      <p class="quees">Última plana y desenlace. Arriba concluye un auto que <strong>pone a Pedro Reyes en libertad</strong>, con la carga de <strong>cinco pesos que deberán prorratearse entre ambos [hermanos]</strong> a satisfacción de este juzgado, y manda que se le haga saber. Firma el juez y, junto a él, Manuel de Molina.
+
+Sigue una diligencia «en el mismo día de dicho mes y año» y, a continuación, otra: <strong>seguidamente, al día próximo</strong>, comparecidos en el juzgado los hermanos —se nombra a Tomás [Reyes]—, se les cita y <strong>pagan cuatro pesos y se obligan a entregar lo restante</strong> de los cinco, con apercibimiento si no lo verificasen en el plazo; <strong>no firmaron por no saber</strong>, y lo hizo el juez con los testigos a falta de escribano, de lo que da fe. La plana se cierra con la firma de <strong>Manuel de Molina</strong>.</p>
+      <div class="pane pane-semi">
+        <h4>Transcripción paleográfica</h4>
+        <div class="dipl">
+<span class="ln">Pedro Reyes, en Libertad, <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> la Suma de Cin-</span>
+<span class="ln">co Pesos, q<u class="exp" title="abreviatura desarrollada">[ue]</u> devera prorratearse entre Ambos, a la</span>
+<span class="ln">Satisfaccion de Este Juzgado, lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> Se le haga Saber; a-</span>
+<span class="ln">ssi lo proveo, mando, y firmo Con los q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="exp" title="abreviatura desarrollada">[me]</u> as<u class="exp" title="abreviatura desarrollada">[isten]</u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l de Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+<span class="ln">&nbsp;</span>
+<span class="ln">En el mismo Dia de d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho Mez, y año Yo d<u class="exp" title="abreviatura desarrollada">[ic]</u>ho <u class="exp" title="abreviatura desarrollada">[Juez]</u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> los <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Seguidam<u class="exp" title="abreviatura desarrollada">[en]</u>te Hize en el proximo Dia en este Juz<u class="exp" title="abreviatura desarrollada">[gado]</u></span>
+<span class="ln">prender <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> presente<u class="exp" title="abreviatura desarrollada">[s]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Thomas <u class="exp" title="abreviatura desarrollada">[Reyes]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u>taron, Pudieron de Cumplir, Pagaron los Quat<u class="exp" title="abreviatura desarrollada">[ro]</u></span>
+<span class="ln"><u class="exp" title="abreviatura desarrollada">[pes]</u>os, y de Entregarlos, Juntos q<u class="exp" title="abreviatura desarrollada">[ue]</u> Re<u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> lo Restante <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Sobre Cinco Pesos</span>
+<span class="ln">lo q<u class="exp" title="abreviatura desarrollada">[ue]</u> le obligaron Con los <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> q<u class="exp" title="abreviatura desarrollada">[ue]</u> a los Dias no verificaren <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">apremiaran <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Reyes al Menor, y no q<u class="exp" title="abreviatura desarrollada">[ue]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Todas las Leyes q<u class="exp" title="abreviatura desarrollada">[ue]</u> les han Sido <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln">Con la q<u class="exp" title="abreviatura desarrollada">[ue]</u> queda la Pres<u class="exp" title="abreviatura desarrollada">[ente]</u> <u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u></span>
+<span class="ln"><u class="lost" title="ilegible o perdido"><u class="exp" title="abreviatura desarrollada">[…]</u></u> Esta Declaracion, y no firmaron p<u class="exp" title="abreviatura desarrollada">[o]</u>r no Saber, hi-</span>
+<span class="ln">zolo yo Con los T<u class="exp" title="abreviatura desarrollada">[esti]</u>gos <u class="q" title="lectura insegura"><u class="exp" title="abreviatura desarrollada">[¿Numerarios?]</u></u> en falta de Es<u class="exp" title="abreviatura desarrollada">[criba]</u>-</span>
+<span class="ln">no de q<u class="exp" title="abreviatura desarrollada">[ue]</u> Certifico.</span>
+<span class="ln">&nbsp;</span>
+<span class="ln">Man<u class="exp" title="abreviatura desarrollada">[ue]</u>l de Molina <u class="rub"><u class="exp" title="abreviatura desarrollada">[rúbrica]</u></u></span>
+</div>
+      </div>
+      <div class="pane pane-mod">
+        <h4>Lectura en español de hoy</h4>
+        <p>…[póngase a] Pedro Reyes en libertad, [quedando] la suma de cinco pesos, que deberá prorratearse entre ambos, a satisfacción de este juzgado; lo que se le haga saber. Así lo proveo, mando y firmo con los que me asisten.</p>
+<p>Molina. — Manuel de Molina.</p>
+<p>En el mismo día de dicho mes y año, yo, dicho juez […].</p>
+<p>Seguidamente, al día próximo, hice en este juzgado […] presentes […] Tomás [Reyes] […]. Citados, pudieron cumplir: pagaron los cuatro pesos y [se obligaron] a entregarlos juntos […]; y que lo restante […] sobre cinco pesos, a lo que se obligaron […]; que si a los [tantos] días no lo verificaren, se les apremiará […]. Y no firmaron por no saber; hícelo yo con los testigos […] a falta de escribano, de lo que doy fe.</p>
+<p>Manuel de Molina.</p>
+      </div>
+      <p class="conf"><span>Confianza</span> <strong>Baja a media.</strong> Lo que sí queda establecido, porque se lee limpio, es el arco del desenlace: Pedro Reyes queda <strong>en libertad</strong>, hay <strong>cinco pesos que se prorratean entre los dos hermanos</strong> a satisfacción del juzgado, y en una diligencia posterior se <strong>pagan cuatro pesos</strong> y se obligan por el resto, sin que ninguno firme por no saber. El detalle de esas cláusulas —plazos, apercibimientos, a quién se entrega el dinero— está sobre tinta casi borrada y papel roto, y lo he dejado abierto. La firma final, «Manuel de Molina», es nítida.
+
+---</p>
+    </div>
+  </div>
+</section></main>
+</div>
+
+<section class="legend wrap">
+  <h2>Cómo leer la transcripción</h2>
+  <dl>
+    <dt>[¿palabra?]</dt><dd>Lectura insegura. Puede ser otra cosa.</dd>
+    <dt>[…]</dt><dd>Roto, borrado o fuera del encuadre de la fotografía. No se ha inventado nada.</dd>
+    <dt>[que]</dt><dd>Abreviatura del original desarrollada para que se entienda.</dd>
+    <dt>[rúbrica]</dt><dd>Firma o floritura que no es texto.</dd>
+  </dl>
+</section>
+
+<section class="people wrap">
+  <h2>Quién es quién</h2>
+  <p class="sub">Todas las personas nombradas en el expediente, con lo que el propio documento
+  dice de ellas. Muchos vecinos de hoy reconocerán los apellidos.</p>
+  <div class="plist">
+<div class="persona">
+  <h4><strong>José Antonio de Molina</strong> (firma «Josef Anto de Molina»)</h4>
+  <p class="papel">Juez de la causa; dicta todos los autos, toma las declaraciones y certifica a falta de escribano</p>
+  <p class="calidad">Don; <strong>capitán de milicias</strong> por Su Majestad; <strong>juez teniente y subdelegado de Intendencia del partido de Sensentí</strong>; sabe firmar</p>
+</div>
+<div class="persona">
+  <h4><strong>Manuel de Molina</strong> / <strong>Manuel Antonio de Molina</strong></h4>
+  <p class="papel">Testigo de asistencia en IMG_1571, 1572 y 1573; firma solo al pie de la última plana (IMG_1574), lo que sugiere que remata él las diligencias finales</p>
+  <p class="calidad">No se declara calidad; sabe firmar; de Sensentí</p>
+</div>
+<div class="persona">
+  <h4><strong>Baltazar Carrejón</strong></h4>
+  <p class="papel">Testigo de asistencia en todas las actuaciones (IMG_1569 a 1573)</p>
+  <p class="calidad">No se declara calidad; sabe firmar; de Sensentí</p>
+</div>
+<div class="persona">
+  <h4><strong>Josef Bernardo Mexía</strong></h4>
+  <p class="papel">Testigo de asistencia en IMG_1569 y 1570</p>
+  <p class="calidad">No se declara calidad; sabe firmar; de Sensentí</p>
+</div>
+<div class="persona">
+  <h4><strong>Joaquín Monrroy</strong></h4>
+  <p class="papel">Denunciante; dueño de la vaca y del hierro; al final declara que <strong>no tiene ya nada que reclamar</strong> a Pedro Reyes</p>
+  <p class="calidad">«de este vecindario», es decir <strong>vecino de Sensentí</strong>; <strong>no sabe firmar</strong> (IMG_1573); edad no declarada</p>
+</div>
+<div class="persona">
+  <h4><strong>Pablo Marín</strong></h4>
+  <p class="papel">Alcalde que mató la res; primer declarante bajo juramento (IMG_1569-1570)</p>
+  <p class="calidad"><strong>Alcalde de Goarcha</strong>; declara «en lengua castellana, sin necesidad de intérprete» —fórmula que en estos autos se reserva a los indios—; <strong>mayor de cincuenta años</strong>; <strong>no sabe firmar</strong></p>
+</div>
+<div class="persona">
+  <h4><strong>Pedro Reyes</strong></h4>
+  <p class="papel">Segundo declarante (IMG_1571); acusado de complicidad en la venta; se manda su prisión y luego se le pone <strong>en libertad</strong></p>
+  <p class="calidad"><strong>Treinta años</strong>; <strong>no sabe firmar</strong>; se le trata como conocido del juez («que certifico conozco»), luego del partido</p>
+</div>
+<div class="persona">
+  <h4><strong>Tomás Reyes</strong></h4>
+  <p class="papel">Hermano de Pedro; <strong>el que vendió la vaca al alcalde de Goarcha en once pesos</strong>; vendió además otra vaca del mismo Monrroy; comparece al final y paga cuatro pesos</p>
+  <p class="calidad">Hermano de Pedro Reyes; <strong>no firma por no saber</strong>; edad no declarada</p>
+</div>
+<div class="persona">
+  <h4><strong>La mujer de Tomás Reyes</strong></h4>
+  <p class="papel">Acompañaba a Tomás cuando vendió la segunda vaca de Monrroy</p>
+  <p class="calidad">Sin nombre ni calidad en el texto</p>
+</div>
+<div class="persona">
+  <h4><strong>[¿Nazario?]</strong></h4>
+  <p class="papel">Comprador de una vaca vendida por Tomás Reyes, al parecer para el abasto de carne del pueblo</p>
+  <p class="calidad">Nombre inseguro (dudo entre <em>Nazario</em> e <em>Hilario</em>); sin calidad declarada</p>
+</div>
+<div class="persona">
+  <h4><strong>«el Yndio …»</strong> (IMG_1573)</h4>
+  <p class="papel">Mención de calidad en el renglón del alcalde de Goarcha, bajo el borrón</p>
+  <p class="calidad">Lectura insegura; si se confirma, es la única mención explícita de calidad en el expediente</p>
+</div>
+<div class="persona">
+  <h4><strong>Antonio […]</strong> (IMG_1572)</h4>
+  <p class="papel">Aparece en el auto de enero de 1800, al parecer como juez o alcalde ordinario</p>
+  <p class="calidad">Lectura insegura; no doy el apellido porque no lo leo</p>
+</div></div>
+</section>
+
+<footer class="foot wrap">
+  <p><strong>Sobre esta transcripción.</strong> Se conserva la ortografía del original; las
+  abreviaturas van desarrolladas entre corchetes y las palabras dudosas, marcadas. Una
+  transcripción honesta enseña dónde no llega la lectura. Antes de citar un nombre o una cifra
+  conviene cotejarlos con la fotografía, que va al lado de cada lámina precisamente para eso.</p>
+  <p>Proyecto Arqueológico Regional Cucuyagua–Sensentí (PARCS). Las fotografías son del proyecto.</p>
+</footer>
+
+<dialog class="lb" id="lb">
+  <div class="lbscroll">
+    <div class="lbbar"><button id="lbx">Cerrar ✕</button></div>
+    <img id="lbi" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var body=document.body; body.classList.add('marks');
+  var segs=document.querySelectorAll('.seg button');
+  segs.forEach(function(b){
+    b.addEventListener('click',function(){
+      segs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      body.classList.remove('only-semi','only-mod');
+      if(b.dataset.v==='semi') body.classList.add('only-semi');
+      if(b.dataset.v==='mod')  body.classList.add('only-mod');
+      try{localStorage.setItem('tx-view',b.dataset.v);}catch(e){}
+    });
+  });
+  var mk=document.getElementById('mk');
+  mk.addEventListener('change',function(){
+    body.classList.toggle('marks',mk.checked);
+    try{localStorage.setItem('tx-marks',mk.checked?'1':'0');}catch(e){}
+  });
+  try{
+    var v=localStorage.getItem('tx-view');
+    if(v){var t=document.querySelector('.seg button[data-v="'+v+'"]'); if(t) t.click();}
+    if(localStorage.getItem('tx-marks')==='0'){mk.checked=false; body.classList.remove('marks');}
+  }catch(e){}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tb'));
+  function showTab(id){
+    tabs.forEach(function(t){
+      var on=(t.id===id);
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex = on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){showTab(t.id);});
+    t.addEventListener('keydown',function(e){
+      var d = e.key==='ArrowRight'?1 : e.key==='ArrowLeft'?-1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length]; showTab(n.id); n.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash;
+    if(/^#f/.test(h)){
+      showTab('t-lam');
+      var el=document.getElementById(h.slice(1));
+      if(el) el.scrollIntoView();
+    }
+  }
+  fromHash(); window.addEventListener('hashchange',fromHash);
+
+  var lb=document.getElementById('lb'), lbi=document.getElementById('lbi');
+  document.querySelectorAll('.zoom').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var img=btn.querySelector('img'); lbi.src=img.src; lbi.alt=img.alt;
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+</script>
+<div style="max-width:1120px;margin:56px auto 46px;padding:22px 22px 0;border-top:1px solid var(--rule);font:400 14.5px/1.6 Georgia,serif;color:var(--ink3)">
+<p style="margin:0 0 8px">← <a href="../index.html" style="color:var(--accent2)">Volver a todos los documentos</a></p>
+<p style="margin:0"><strong>Papeles de Sensentí</strong> — Archivo Municipal de Sensentí (Ocotepeque, Honduras).
+Proyecto Arqueológico Río Cucuyagua y Sensentí. Las convenciones de transcripción se explican en
+<a href="../metodo.html" style="color:var(--accent2)">Método</a>.</p></div>
+</body></html>
